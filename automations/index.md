@@ -3,15 +3,6 @@
 ## What is Automations?
 Automations let you create hands-free replies and routing across message flows, keyword responses, growth entry points, multi-step workflows, and the web widget that captures visitors and directs them to the right path.
 
-## Sections in Automations
-- [Message Flows](./message-flows.md)
-- [Keywords](./keywords.md)
-- [Growth Tools](./growth-tools.md)
-- [Workflows](./workflows.md)
-- [Web Widget](./web-widget.md)
-- [Smart Delay](./smart-delay.md)
-- [Actions Library](./actions/index.md)
-
 ## When does it trigger?
 - When a contact message matches a keyword you set under `Keywords`.
 - When a visitor engages via the `Web Widget` entry point.
