@@ -15,6 +15,21 @@ Automations let you create hands-free replies and routing across message flows, 
 ### Step 1: Open Automations
 Open `Automations` from the left menu to see tabs for `Message Flows`, `Keywords`, `Growth Tools`, `Workflows`, and `Web Widget`.
 
+## Sections in Automations
+- [Message Flows](./message-flows.md)
+- [Keywords](./keywords.md)
+- [Growth Tools](./growth-tools.md)
+- [Workflows](./workflows.md)
+- [Web Widget](./web-widget.md)
+- [Smart Delay](./smart-delay.md)
+- Fallback & Consent Flows
+  - [Default Flow](./default-flow.md)
+  - [Away Flow](./away-flow.md)
+  - [Absent Flow](./absent-flow.md)
+  - [Opt-In Flow](./opt-in-flow.md)
+  - [Opt-Out Flow](./opt-out-flow.md)
+- [Actions Library](./actions/index.md)
+
 📸 Screenshot placeholder:
 > [Screenshot: Automations page showing tabs for Message Flows, Keywords, Growth Tools, Workflows, Web Widget]
 
