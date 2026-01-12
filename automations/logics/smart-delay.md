@@ -34,6 +34,20 @@ Set the duration (minutes/hours/days) and ensure the `answered` and `not answere
 - Flow stopped: connect both `answered` and `not answered` ports.
 - Reply ignored: verify the channel is connected and the delay window is long enough for a response.
 
+## What happens after it triggers?
+- **Fixed Delay**: After the specified time period (minutes, hours, or days), the flow automatically continues to the next step.
+- **Wait for Reply**: The flow pauses and waits for the customer to respond. Once they send any message, the flow continues on the "answered" path. If no reply arrives, it follows the "not answered" path after the delay period ends.
+
+## Important behavior to know
+- **Reply Detection**: In standard mode, any message from the customer (text, image, or media) counts as a reply. In strict mode, only specific interactions (like clicking a button or submitting a form) will trigger the "answered" path.
+- **24/7 Operation**: Delay timers run continuously, even during weekends or outside business hours. Messages will be sent when the timer expires, regardless of your team's working hours.
+- **Manual Override**: If you manually start a new flow for a contact who is currently waiting in a Smart Delay, the pending delay is automatically cleared to prevent conflicting messages.
+
+## Common issues & solutions
+- **Flow stopped**: Ensure both the "answered" and "not answered" paths are connected to next steps. If either path is missing, the flow will stall.
+- **Reply not detected**: Verify that your channel is connected and the delay window is long enough for the customer to respond. Check if you're using strict mode, which requires specific interactions.
+- **User never replies**: If using "Wait for Reply", the flow will stay paused indefinitely if the customer doesn't respond. Consider using a fixed delay as a fallback or adding a Condition node later to check if a specific goal was reached.
+
 ## Best practice 💡
 - Use Smart Delay after a prompt that expects a reply; send a gentle follow-up on the `not answered` path.
 - Keep durations reasonable to avoid long queue times.

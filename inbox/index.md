@@ -53,6 +53,7 @@ Your reply is sent immediately. Assignments, tags, and list changes apply to the
 - Add a short closing note before closing a conversation so the contact knows it’s resolved.
 
 ## Inbox subpages
+- [Connect your Channel](./connect-channel.md)
 - [Close Conversation](./close-conversation.md)
 - [Add an Internal Note](./internal-note.md)
 - [Quick Reply](./quick-reply.md)

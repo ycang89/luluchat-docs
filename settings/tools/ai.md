@@ -1,35 +1,49 @@
-# Settings: AI
+# AI Settings
 
 ## What is AI Settings?
-Enable and configure AI-powered features, including Model Control Protocol (MCP) for advanced tool automation.
+AI Settings allow you to enable and configure AI-powered features for your workspace, including Model Control Protocol (MCP) which lets AI agents use advanced automation tools.
+
+## When does it trigger?
+These settings take effect whenever a contact interacts with an **AI Agent node** in your Message Flows. The AI agent's capabilities and permissions are determined by what you configure here.
 
 ## How to set it up (Step by Step)
 
-### Step 1: Enable MCP
-Toggle **Enable MCP for AI** to "On" to allow AI agents to use external tools and advanced logic.
+### Step 1: Access AI Settings
+Go to `Settings` in the left menu, then navigate to **Tools > AI**.
 
 📸 Screenshot placeholder:
-> [Screenshot: MCP for AI toggle switch]
+> [Screenshot: Settings menu with Tools > AI highlighted]
 
-### Step 2: Retrieve Connectivity Info
-Once enabled, you will see your **MCP Server URL**.
-- *Note*: You will also need an **MCP Token**, which must be generated in the [Integration](../account/integration.md) tab.
-
-📸 Screenshot placeholder:
-> [Screenshot: MCP Server URL display]
-
-### Step 3: Manage Tool Permissions
-AI agents can be restricted to specific tools. Use the **MCP Tool Permissions** list to toggle individual capabilities on or off.
-- **Enable All**: Grants the agent access to every available tool.
-- **Disable All**: Strips all tool permissions.
+### Step 2: Enable MCP
+Toggle **Enable MCP for AI** to "On" to allow your AI agents to perform complex tasks like checking databases or calling external APIs.
 
 📸 Screenshot placeholder:
-> [Screenshot: List of tool permissions with Enable/Disable All buttons]
+> [Screenshot: MCP for AI toggle switch set to ON]
+
+### Step 3: Configure Connectivity
+View your **MCP Server URL**. You will also need an **MCP Token**, which you can generate in the `Settings > Account > Integration` tab.
+
+📸 Screenshot placeholder:
+> [Screenshot: MCP Server URL display area]
+
+### Step 4: Manage Tool Permissions
+Use the **MCP Tool Permissions** list to specifically enable or disable what the AI agent can do. Use **Enable All** or **Disable All** for quick management.
+
+📸 Screenshot placeholder:
+> [Screenshot: List of tool permissions with toggles]
+
+## What happens after it triggers?
+Once configured, your AI agents will be able to provide more relevant, data-driven responses. If a tool permission is granted, the AI can "call" that tool to perform a specific action during a live chat.
 
 ## Important behavior to know
-- **MCP for Advanced Flows**: MCP is required if you want your AI agent to perform actions like checking databases or calling external APIs during a conversation.
-- **Token Requirement**: AI features will not function until a valid token is generated and configured.
+- **Advanced Flows Only**: AI Agents and MCP are typically used in complex conversation paths where standard "If/Else" logic isn't enough.
+- **Token Security**: Your MCP token is sensitive. Do not share it with anyone outside your trusted administration team.
+- **Integration Required**: AI features require a valid API key from **Praxus AI** to function.
+
+## Common issues & solutions
+- **AI Agent not responding**: Check if the "Enable MCP for AI" toggle is on and verify that your API key in the Integration tab is valid.
+- **Permission Denied errors**: If the AI tries to perform an action but fails, ensure that specific tool is enabled in your **MCP Tool Permissions** list.
 
 ## Best practice 💡
-- **Least Privilege**: Only enable the specific tool permissions an AI agent needs for its current objective.
-- **Test Objective**: Verify AI behavior in a test flow after changing permissions.
+- **Least Privilege**: Only enable the specific tool permissions an AI agent needs. This makes the agent faster and more reliable.
+- **Test Before Launch**: Always test your AI-powered flows with a test contact to ensure the agent follows your instructions correctly.
