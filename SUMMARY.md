@@ -1,5 +1,6 @@
 # Summary
 
+* [Register a Luluchat Account](./register-account.md)
 * [Dashboard](./dashboard.md)
 * [Inbox](./inbox/index.md)
   * [Connect your Channel](./inbox/connect-channel.md)

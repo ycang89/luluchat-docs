@@ -1,54 +1,63 @@
 # Keywords
 
-## What is Keywords?
-Keywords trigger an automated reply or flow when a contact’s message matches the rule you set (e.g., contains, exact match, begins with). Each keyword links to a Message Flow so contacts get an immediate guided response.
+## What is the Keywords Page?
+The Keywords page is a management dashboard that shows you all keyword triggers configured across all your Message Flows. It provides a centralized view to see which keywords trigger which flows, making it easy to review, search, and manage your keyword automation setup.
 
-## When does it trigger?
-- When an incoming message meets the keyword condition (match type you chose) for the active channel.
-- Only if the linked Message Flow is available and the channel is connected.
+## When to use it?
+- **Review All Keywords**: See all keyword triggers across your entire account in one place.
+- **Find Conflicts**: Quickly identify if multiple flows are using the same or overlapping keywords.
+- **Edit Keywords**: Click "Edit" on any keyword to jump directly to its Message Flow's Starting Step.
+- **Export Your List**: Download a spreadsheet of all keywords for backup or analysis.
 
-## Keyword match rules (how each condition works)
-- `is` (exact match): message must match the keyword exactly.
-- `contain`: message includes the keyword anywhere in the text.
-- `contain all`: message includes every keyword you list (all must be present).
-- `begin with`: message starts with the keyword.
-- `end with`: message ends with the keyword.
+## How to use it (Step by Step)
 
-## How to set it up (Step by Step)
-
-### Step 1: Open Keywords
-Go to `Automations` > `Keywords` to see your keyword list and linked flows.
+### Step 1: Open Keywords Page
+Go to `Automations` > `Keywords` from the left menu.
 
 📸 Screenshot placeholder:
-> [Screenshot: Keywords page showing list with keywords and linked flows]
+> [Screenshot: Keywords page showing a list of keyword entries with their match conditions and linked flows]
 
-### Step 2: Add or edit a keyword
-Use the page controls to add or edit a keyword entry, choose the match condition (e.g., contains, exact), and link it to the Message Flow you want to run.
-
-📸 Screenshot placeholder:
-> [Screenshot: Keyword form with fields for keywords, match condition, and flow selection]
-
-### Step 3: Save and test
-Save the keyword, then send a test message that matches the condition to confirm the linked flow starts.
+### Step 2: Review Your Keywords
+Each row in the list shows:
+- **Match Condition**: How the keyword is matched (is, contain, contain all, begin with, end with).
+- **Keywords**: The actual words or phrases (displayed as tags).
+- **Linked Flow**: Which Message Flow will start when this keyword is triggered.
+- **Edit Button**: Click to open the flow's Starting Step and modify the keyword trigger.
 
 📸 Screenshot placeholder:
-> [Screenshot: Keyword list showing the new keyword linked to a flow]
+> [Screenshot: A keyword list item showing "Message contain [sales, discount] tags" and the linked flow name]
 
-## What happens after it triggers?
-The linked Message Flow starts immediately, sending the configured steps and responses to the contact.
+### Step 3: Search for Keywords
+Use the search box at the top right to find specific keywords across all flows.
+
+📸 Screenshot placeholder:
+> [Screenshot: Search box in the Keywords page header]
+
+### Step 4: Export Your List (Optional)
+Click the **Export** button to download an Excel file containing all your keywords and their linked flows.
+
+📸 Screenshot placeholder:
+> [Screenshot: Export button in the Keywords page header]
+
+## What happens after you use it?
+- **Viewing**: You can see all your keyword configurations at a glance.
+- **Editing**: Clicking "Edit" takes you directly to the Message Flow editor where you can modify the keyword trigger in the Starting Step.
+- **Exporting**: You receive an Excel file with all keyword data for offline review or backup.
 
 ## Important behavior to know
-- Matching follows the condition you select (contains, exact, begins with, etc.); choose the narrowest rule to avoid overlaps.
-- Keywords require a linked flow; without it nothing will send.
-- Keywords are channel-specific; ensure you’re in the right channel when testing.
-- Export is available if you need a backup of the keyword list.
+- **Read-Only View**: This page shows keywords but doesn't allow direct editing. To change a keyword, click "Edit" to open the flow's Starting Step.
+- **All Flows**: The list includes keywords from all Message Flows in your account, not just active ones.
+- **Search Functionality**: The search box filters keywords by the actual keyword text, not by flow name.
 
 ## Common issues & solutions
-- No reply: confirm the keyword condition matches the test text and the linked flow is active.
-- Wrong flow fired: check for overlapping keywords and adjust match type or rename to avoid clashes.
-- Can’t see a keyword: refresh or ensure you have access to this channel’s automations.
+- **Can't find a keyword**: Use the search box to filter the list. Remember that keywords are case-insensitive, so search for any variation.
+- **Want to add a new keyword**: Keywords are added in the Message Flow's Starting Step, not on this page. Go to `Automations` > `Message Flows` and edit the flow you want.
+- **See duplicate keywords**: If multiple flows have the same keyword, they will all appear in the list. The first matching flow will trigger when a customer sends that message.
 
 ## Best practice 💡
-- Keep keywords distinct and short; use phrases for specific intents.
-- Pair each keyword with a concise flow designed for that intent.
-- Periodically export and review keywords to retire unused ones.
+- **Regular Reviews**: Check this page monthly to identify and remove unused keywords or resolve conflicts.
+- **Export Before Changes**: Export your keyword list before making major changes as a backup.
+- **Use Search**: When managing many keywords, use the search function to quickly find specific entries.
+
+## Related Documentation
+To learn how to configure keyword triggers, see [Trigger (Starting Step)](./steps/trigger.md#1-keyword-trigger).
