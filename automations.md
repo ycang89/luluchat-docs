@@ -1,0 +1,59 @@
+# Automations
+
+## What is Automations?
+Automations let you create hands-free replies and routing across message flows, keyword responses, growth entry points, multi-step workflows, and the web widget that captures visitors and directs them to the right path.
+
+## When does it trigger?
+- When a contact message matches a keyword you set under `Keywords`.
+- When a visitor engages via the `Web Widget` entry point.
+- When a `Growth Tool` entry point (e.g., embedded form/landing) is submitted.
+- When a scheduled or event-based `Workflow` condition is met (such as new conversation or a defined time window).
+- When a `Message Flow` is invoked by its configured trigger.
+
+## How to set it up (Step by Step)
+
+### Step 1: Open Automations
+Open `Automations` from the left menu to see tabs for `Message Flows`, `Keywords`, `Growth Tools`, `Workflows`, and `Web Widget`.
+
+📸 Screenshot placeholder:
+> [Screenshot: Automations page showing tabs for Message Flows, Keywords, Growth Tools, Workflows, Web Widget]
+
+### Step 2: Choose an automation type
+Select the tab you need (for example, `Message Flows`, `Keywords`, `Growth Tools`, `Workflows`, or `Web Widget`) and click its `Create` action (for flows you may see `Create Message Flow`; for workflows `Create Workflow`).
+
+📸 Screenshot placeholder:
+> [Screenshot: Selected Automations tab with the Create button visible]
+
+### Step 3: Configure trigger and actions
+Set the trigger (keyword, entry point, schedule, or event), then define what should happen (auto-reply content, assign/route, add tags, move to channel, or start a flow). Include targeting such as channel, audience, or time window if available, then save.
+
+📸 Screenshot placeholder:
+> [Screenshot: Automation creation form showing trigger selection, action configuration, and save/publish controls]
+
+### Step 4: Publish and test
+Enable or publish the automation, then test it in a low-traffic channel or with a test contact to confirm the trigger fires and the right action runs.
+
+📸 Screenshot placeholder:
+> [Screenshot: Automation list showing the new automation in enabled/active state]
+
+## What happens after it triggers?
+The automation runs immediately with the defined actions: it sends the configured reply or flow, routes or assigns the conversation, applies tags or updates, and (where available) records the run in its log or history.
+
+## Important behavior to know
+- Automations must be enabled; drafts or disabled items will not run.
+- Access controls apply: some tabs or actions stay hidden without the right permission.
+- Keywords match the text you define; use distinct keywords to avoid overlaps.
+- Workflows follow their configured step order; disabled steps are skipped.
+- Web Widget and Growth Tools need to be embedded/published on the target page to trigger.
+
+## Common issues & solutions
+- Nothing happens: ensure the automation is enabled and the trigger (keyword, entry point, schedule) matches the test exactly.
+- Wrong audience: review channel/audience/time filters and update them.
+- Cannot find a tab: request access from an admin if your role hides it.
+- Widget not firing: confirm the widget snippet is installed on the page and published.
+
+## Best practice 💡
+- Test new automations in a low-traffic channel or with a test contact before broad rollout.
+- Keep names clear (purpose + audience) for easier maintenance.
+- Use unique keywords to prevent conflicts.
+- Review logs or histories after launch to fine-tune replies and routing.
