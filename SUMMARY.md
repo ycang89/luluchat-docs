@@ -1,7 +1,18 @@
 # Summary
 
 * [Dashboard](./dashboard.md)
-* [Inbox](./inbox.md)
+* [Inbox](./inbox/index.md)
+  * [Close Conversation](./inbox/close-conversation.md)
+  * [Add an Internal Note](./inbox/internal-note.md)
+  * [Quick Reply](./inbox/quick-reply.md)
+  * [Incognito Mode](./inbox/incognito-mode.md)
+  * [Sound Settings (Mute/Unmute)](./inbox/sound-settings.md)
+  * [Conversation Controls (Pin, Mute, Unread, Archive)](./inbox/conversation-controls.md)
+  * Contact Info Quick Actions
+    * [Profile (Assignee, Collaborator, Tags, Profile, Custom Attributes, Opt Out)](./inbox/contact-info/profile.md)
+    * [Flows (Manual Send Message Flow)](./inbox/contact-info/flows.md)
+    * [Tickets (Add Ticket)](./inbox/contact-info/tickets.md)
+    * [Notes (Internal Note)](./inbox/contact-info/notes.md)
 * [Automations](./automations/index.md)
   * [Message Flows](./automations/message-flows.md)
   * [Keywords](./automations/keywords.md)
@@ -11,7 +22,7 @@
   * [Smart Delay](./automations/smart-delay.md)
   * [Actions Library](./automations/actions/index.md)
 * [Broadcasts](./broadcasts.md)
-* [Contacts](./contacts.md)
+* [Contacts](./contacts/index.md)
 * [Message Templates](./message-templates.md)
 * [Reports](./reports/index.md)
   * [Conversations](./reports/conversations.md)
