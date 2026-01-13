@@ -45,6 +45,7 @@ In the "General" tab, configure basic calendar information:
 * **Location**: Enter the physical location or address (optional).
 * **Link Google Calendar**: Toggle to enable Google Calendar integration and generate Google Meet links.
   * If enabled, select a **Google Account** and **Google Calendar**.
+  * **Note**: To use this feature, you must first connect your Google Calendar account in [Settings > Integration](settings/account/integration.md). See [Google Calendar Integration](settings/account/google-calendar-integration.md) for detailed setup instructions.
 * **Description**: Add a description that appears on the booking page (max 255 characters).
 * **Sort Order**: Set a number (0-1000) to control calendar display order (higher numbers appear first).
 * **Working Hours**: Click to configure which days and hours appointments are available.
@@ -255,7 +256,7 @@ Click the **Preview** icon (eye icon) to see how the booking page appears to cus
 * **Confirmation Mode**: If set to "Manual", appointments appear in the "Pending" tab until you confirm them.
 * **Booking Window**: Customers cannot book beyond the "Booking Window Limit" you set.
 * **Minimum Notice**: Customers cannot book appointments within the "Minimum Notice" period you set for each service.
-* **Google Calendar Integration**: Requires Google Calendar integration to be set up in Settings > Integration first.
+* **Google Calendar Integration**: Requires Google Calendar integration to be set up in Settings > Integration first. When enabled, appointments are automatically created as events in your Google Calendar, and Google Meet links can be generated for virtual appointments. See [Google Calendar Integration](../settings/account/google-calendar-integration.md) for setup instructions.
 
 ## Common issues & solutions
 
@@ -269,8 +270,9 @@ Click the **Preview** icon (eye icon) to see how the booking page appears to cus
 * **Appointments not confirming automatically**:
   * Check "Appointment Confirmation Mode" in Settings—it may be set to "Manual".
 * **Can't add Google Meet link**:
-  * Ensure Google Calendar integration is connected in Settings > Integration.
-  * Toggle "Link Google Calendar" to "Yes" and select a Google Account and Calendar.
+  * Ensure Google Calendar integration is connected in Settings > Integration. See [Google Calendar Integration](../settings/account/google-calendar-integration.md) for setup instructions.
+  * Toggle "Link Google Calendar" to "Yes" in the General tab of your calendar.
+  * Select a Google Account and Google Calendar from the dropdown menus.
 * **Services not appearing**:
   * Make sure you've added services in the Services tab.
   * Verify services are saved and the calendar is published.
@@ -289,3 +291,4 @@ Click the **Preview** icon (eye icon) to see how the booking page appears to cus
 
 * [Appointments](appointments.md) - Learn how to view and manage customer appointments
 * [Message Flows](../automations/message-flows.md) - Learn how to create automations for booking events
+* [Google Calendar Integration](../settings/account/google-calendar-integration.md) - Learn how to connect Google Calendar to automatically create events for appointments

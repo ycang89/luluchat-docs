@@ -79,4 +79,5 @@ In the **Access Token** section, you can:
 - [Zapier Integration](./zapier-integration.md) - Learn how to set up Zapier workflows with Luluchat
 - [Shopify Integration](./shopify-integration.md) - Learn how to connect your Shopify store
 - [ChatGPT Integration](./chatgpt-integration.md) - Learn how to connect ChatGPT for AI features
+- [Google Calendar Integration](./google-calendar-integration.md) - Learn how to connect Google Calendar for booking appointments
 - [WhatsApp Business App (WABA)](../whatsapp-business-app-waba/index.md) - Learn about WABA features and configuration

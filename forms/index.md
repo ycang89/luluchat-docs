@@ -11,6 +11,11 @@ The Forms module allows you to build custom, no-code web forms to collect inform
 - **WhatsApp Integration**: Responses automatically linked to contacts
 - **Custom Attributes**: Form data maps directly to contact profiles
 - **OTP Verification**: Optional WhatsApp verification for security
+- **File Upload**: Collect documents, receipts, and photos (requires File Storage add-on)
+{% endhint %}
+
+{% hint style="warning" %}
+**File Upload Requirement**: To use the File Upload element in your forms, you need to purchase the "File Storage 200G" add-on. Go to `Settings` > `Account Management` > `Billing` to view and purchase storage add-ons. See [Building Forms](build.md) for more details.
 {% endhint %}
 
 ## Why use Forms?
