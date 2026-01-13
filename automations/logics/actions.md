@@ -21,7 +21,7 @@ The Actions node is a background step that performs specific tasks without sendi
 > [Screenshot: Actions node configuration drawer showing multiple actions added]
 
 ## Actions Library
-For detailed information on each specific action, please refer to the [Actions Library](../actions/index.md).
+For detailed information on each specific action, please refer to the [Actions Library](./actions/index.md).
 
 ## What happens after it triggers?
 All actions within the node are executed immediately and in order (from top to bottom). The contact's profile, tags, and assignments are updated instantly, and the flow continues to the next step.

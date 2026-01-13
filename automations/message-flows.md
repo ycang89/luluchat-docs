@@ -17,6 +17,7 @@ Message Flows are built using different types of nodes and steps:
   - [AI Agent](./content-nodes/ai-agent.md): Handle open-ended inquiries with AI
 - **[Logics](./logics/index.md)**: Control timing, branching, and background actions
   - [Actions](./logics/actions.md): Background tasks (tagging, assignment, webhooks)
+  - [Actions Library](./logics/actions/index.md): Complete reference of all available actions
   - [Round Robin](./logics/round-robin.md): Distribute traffic sequentially
   - [Smart Delay](./logics/smart-delay.md): Pause and branch based on replies
   - [Condition](./logics/condition.md): Create if/else branching logic
@@ -27,7 +28,6 @@ Message Flows are built using different types of nodes and steps:
   - [Absent Flow](./absent-flow.md): When no assignee is available
   - [Opt-In Flow](./opt-in-flow.md): When customer opts in
   - [Opt-Out Flow](./opt-out-flow.md): When customer opts out
-- **[Actions Library](./actions/index.md)**: Complete reference of all available actions
 
 ## When does it trigger?
 - When a linked trigger sends a contact into the flow (e.g., keyword match, growth tool entry, web widget, or workflow action).
