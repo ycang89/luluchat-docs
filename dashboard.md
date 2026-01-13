@@ -20,7 +20,7 @@ If you are new to Luluchat, follow the three guided lessons at the top:
 2. Create your custom Flow: Design your first automation.
 3. Build and launch a Broadcast: Send your first mass message.
 
-📸 Screenshot placeholder:
+<figure><img src=".gitbook/assets/Screenshot 2026-01-13 at 5.55.37 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Onboarding lessons area with steps 1, 2, and 3]
 {% endstep %}
@@ -34,19 +34,13 @@ Check the three key statistic cards:
 * Total Contacts: The size of your current audience.
 * Message Balance: Your remaining message credits.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Overview section with statistic cards for messages and contacts]
+<figure><img src=".gitbook/assets/Screenshot 2026-01-13 at 5.56.32 PM.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 #### Check Important Notices
 
 Scroll down to the Important Notice section to see the latest updates, maintenance alerts, or new feature announcements from the Luluchat team.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Important Notice section showing a list of recent updates]
 {% endstep %}
 {% endstepper %}
 

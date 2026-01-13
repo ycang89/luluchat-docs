@@ -14,43 +14,47 @@ Google Calendar Integration allows you to connect your Google Calendar account w
 
 {% stepper %}
 {% step %}
-### Access Integration Settings
+#### Access Integration Settings
 
 Go to `Settings` from the left menu, then select `Account Management` > `Integration`.
 
 📸 Screenshot placeholder:
-> [Screenshot: Settings page with Integration tab selected]
+
+> \[Screenshot: Settings page with Integration tab selected]
 {% endstep %}
 
 {% step %}
-### Open Apps Section
+#### Open Apps Section
 
 Scroll down to the **Apps** section on the Integration page. You'll see a grid of available integrations.
 
 📸 Screenshot placeholder:
-> [Screenshot: Integration page showing Apps section with integration cards]
+
+> \[Screenshot: Integration page showing Apps section with integration cards]
 {% endstep %}
 
 {% step %}
-### Find Google Calendar
+#### Find Google Calendar
 
 Look for the **Google Calendar** card in the Apps grid. Click on it to open the Google Calendar integration page.
 
 📸 Screenshot placeholder:
-> [Screenshot: Apps grid showing Google Calendar card]
+
+> \[Screenshot: Apps grid showing Google Calendar card]
 {% endstep %}
 
 {% step %}
-### Connect Your Google Account
+#### Connect Your Google Account
 
 On the Google Calendar integration page, click the **"Connect"** or **"Connect Now"** button. This will redirect you to Google's OAuth page.
 
 📸 Screenshot placeholder:
-> [Screenshot: Google Calendar integration page with Connect button]
+
+> \[Screenshot: Google Calendar integration page with Connect button]
 {% endstep %}
 
 {% step %}
-### Authorize Luluchat
+#### Authorize Luluchat
 
 1. You'll be redirected to Google's sign-in page.
 2. Sign in with the Google account that has access to the calendar you want to use.
@@ -62,16 +66,18 @@ On the Google Calendar integration page, click the **"Connect"** or **"Connect N
 {% endhint %}
 
 📸 Screenshot placeholder:
-> [Screenshot: Google OAuth authorization page]
+
+> \[Screenshot: Google OAuth authorization page]
 {% endstep %}
 
 {% step %}
-### Verify Connection
+#### Verify Connection
 
 After authorizing, you'll be redirected back to Luluchat. You should see a success message confirming that your Google Calendar account is connected. The connected account will appear in the "Account Connected" section.
 
 📸 Screenshot placeholder:
-> [Screenshot: Google Calendar integration page showing connected account]
+
+> \[Screenshot: Google Calendar integration page showing connected account]
 {% endstep %}
 {% endstepper %}
 
@@ -88,38 +94,40 @@ Once your Google Calendar is connected, you can use it in your booking calendars
 
 {% stepper %}
 {% step %}
-### Enable Google Calendar in Your Calendar
+#### Enable Google Calendar in Your Calendar
 
 1. Go to `Bookings` > `Calendars`.
 2. Create a new calendar or edit an existing one.
 3. In the **General** tab, toggle **"Link Google Calendar"** to **"Yes"**.
 
 📸 Screenshot placeholder:
-> [Screenshot: Calendar General tab showing Link Google Calendar toggle]
+
+> \[Screenshot: Calendar General tab showing Link Google Calendar toggle]
 {% endstep %}
 
 {% step %}
-### Select Google Account and Calendar
+#### Select Google Account and Calendar
 
 1. After enabling "Link Google Calendar", you'll see dropdown menus for:
    * **Google Account**: Select the connected Google account you want to use.
    * **Google Calendar**: Select the specific calendar within that account where events should be created.
-
 2. Optionally, enable **"Generate Google Meet Link"** if you want to create meeting links for virtual appointments.
 
 📸 Screenshot placeholder:
-> [Screenshot: Calendar General tab showing Google Account and Calendar dropdowns]
+
+> \[Screenshot: Calendar General tab showing Google Account and Calendar dropdowns]
 {% endstep %}
 
 {% step %}
-### Save and Test
+#### Save and Test
 
 1. Click **Save** to save your calendar settings.
 2. When a customer books an appointment and it's confirmed, an event will automatically be created in your selected Google Calendar.
 3. If Google Meet is enabled, a meeting link will be generated and included in the event.
 
 📸 Screenshot placeholder:
-> [Screenshot: Google Calendar showing created appointment event]
+
+> \[Screenshot: Google Calendar showing created appointment event]
 {% endstep %}
 {% endstepper %}
 
@@ -132,8 +140,8 @@ Once your Google Calendar is connected, you can use it in your booking calendars
 3. In the "Account Connected" section, you'll see all connected Google accounts with their email addresses.
 
 📸 Screenshot placeholder:
-> [Screenshot: Google Calendar integration page showing connected accounts list]
-{% endstep %}
+
+> \[Screenshot: Google Calendar integration page showing connected accounts list]
 
 ### Disconnect an Account
 
@@ -148,9 +156,8 @@ Once your Google Calendar is connected, you can use it in your booking calendars
 {% endhint %}
 
 📸 Screenshot placeholder:
-> [Screenshot: Disconnect button on Google account card]
-{% endstep %}
-{% endstepper %}
+
+> \[Screenshot: Disconnect button on Google account card]
 
 ## Important behavior to know
 
@@ -169,28 +176,23 @@ Once your Google Calendar is connected, you can use it in your booking calendars
   * Check your browser's pop-up blocker settings. The OAuth flow may open in a pop-up window.
   * Try using a different browser or clearing your browser cache.
   * Ensure you have a stable internet connection.
-
 * **Authorization failed**:
   * Make sure you're signing in with a Google account that has calendar access.
   * Check that you clicked "Allow" on the Google permissions page.
   * Try disconnecting and reconnecting the account.
-
 * **Account not appearing in booking calendar dropdown**:
   * Ensure the account is successfully connected (check the Integration page).
   * Refresh the booking calendar page.
   * Try disconnecting and reconnecting the Google account.
-
 * **Events not being created**:
   * Verify that "Link Google Calendar" is enabled in your booking calendar's General tab.
   * Ensure a Google Account and Calendar are selected.
   * Check that appointments are being confirmed (events are only created for confirmed appointments).
   * Verify the Google account still has proper permissions.
-
 * **Google Meet link not generated**:
   * Ensure "Generate Google Meet Link" is enabled in your booking calendar settings.
   * Verify that your Google account has permission to create meeting links.
   * Check that the appointment has been confirmed.
-
 * **Can't disconnect account**:
   * Make sure no active booking calendars are using that Google account. Update those calendars first, then disconnect.
   * Try refreshing the page and attempting to disconnect again.
@@ -206,7 +208,7 @@ Once your Google Calendar is connected, you can use it in your booking calendars
 
 ## Related Documentation
 
-- [Integration Settings](./integration.md) - Learn how to manage all integrations
-- [Calendars](../bookings/calendars.md) - Learn how to create and configure booking calendars
-- [Appointments](../bookings/appointments.md) - Learn how to manage appointments
-- [Bookings Overview](../bookings/index.md) - Learn about the Bookings module
+* [Integration Settings](integration.md) - Learn how to manage all integrations
+* [Calendars](../bookings/calendars.md) - Learn how to create and configure booking calendars
+* [Appointments](../bookings/appointments.md) - Learn how to manage appointments
+* [Bookings Overview](../bookings/index.md) - Learn about the Bookings module

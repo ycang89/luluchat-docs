@@ -111,9 +111,7 @@ If you forget your password, you can reset it using the "Forgot Password" on the
 
 On the login page, click the **Forgot Password** link below the password field.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Login page showing "Forgot Password" link]
+<figure><img src=".gitbook/assets/Screenshot 2026-01-13 at 5.51.27 PM.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -125,39 +123,25 @@ In the "Forgot Password" modal, enter your **registered WhatsApp number** (the p
 **Important**: You must use the phone number that was registered during account creation, **not** the connected channel number. The OTP will only be sent to your registered account number.
 {% endhint %}
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Forgot Password modal with phone number input field]
+<figure><img src=".gitbook/assets/Screenshot 2026-01-13 at 5.50.07 PM.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 #### Enter New Password
 
 Enter your new password in the "Enter your new password" field. The password must be at least 6 characters long.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: New password input field]
 {% endstep %}
 
 {% step %}
 #### Confirm New Password
 
 Re-enter your new password in the "Confirm your new password" field. Both passwords must match.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Confirm password input field]
 {% endstep %}
 
 {% step %}
 #### Submit Request
 
 Click the submit button. The system will send an OTP to your registered WhatsApp number.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Submit button in Forgot Password modal]
 {% endstep %}
 
 {% step %}
@@ -165,19 +149,13 @@ Click the submit button. The system will send an OTP to your registered WhatsApp
 
 After submitting, the modal will show an OTP input field. Check your WhatsApp for the one-time password and enter it in the field.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: OTP input field in Forgot Password modal]
+<figure><img src=".gitbook/assets/Screenshot 2026-01-13 at 5.52.28 PM.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 #### Complete Reset
 
 Once you enter the correct OTP, your password will be reset and you'll see a success message. You can now log in with your new password.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Success message confirming password reset]
 {% endstep %}
 {% endstepper %}
 
@@ -238,9 +216,7 @@ You'll see a welcome message: "Welcome, \[Your Name]! Our mission is to make you
 
 Click "Let's do it" to begin.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Onboarding welcome screen with "Let's do it" button]
+<figure><img src=".gitbook/assets/image (1) (1).avif" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -250,10 +226,6 @@ Enter details about your company:
 
 * Company Name (Required): Enter your company or business name.
 * Company Website (Optional): Enter your company website URL (e.g., www.example.com). You can select the protocol (https:// or http://) from the dropdown.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Company information form with name and website fields]
 
 Click Next to continue.
 {% endstep %}
@@ -272,10 +244,6 @@ Select how many people will be working with you in Luluchat:
 * 201-500
 * 501+
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Team size dropdown selector]
-
 Click Next to continue.
 {% endstep %}
 
@@ -292,9 +260,7 @@ Select the channel through which you discovered Luluchat:
 * Word of mouth
 * Other
 
-📸 Screenshot placeholder:
 
-> \[Screenshot: "How did you hear about us" dropdown selector]
 
 Click Next to continue.
 {% endstep %}
@@ -313,10 +279,6 @@ Provide information about your role and security preferences:
   * Other
 * Is Required Two-Factor Authentication (2FA) for login? (Optional): Toggle this on if you want to require OTP verification every time someone logs in to your account.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Role selector and 2FA toggle switch]
-
 Click Next to continue.
 {% endstep %}
 
@@ -328,10 +290,6 @@ Enter your billing contact details. **Note**: This information is only used for 
 * Billing Name (Required): Your name or the billing contact's name.
 * Billing Email (Required): Email address for billing notifications.
 * Billing Contact Number (Required): Contact number with country code (e.g., 60123333333).
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Billing information form with name, email, and contact number fields]
 
 Click Submit to complete onboarding.
 {% endstep %}

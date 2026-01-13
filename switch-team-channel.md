@@ -19,49 +19,31 @@ Team and Channel switching allows you to move between different teams and WhatsA
 
 In the top right corner of the header bar, you'll see your name and avatar icon.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Header bar showing user name and avatar in the top right corner]
+<figure><img src=".gitbook/assets/Screenshot 2026-01-13 at 5.41.18 PM.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 #### Click Your Avatar
 
-Click on your name or avatar icon to open the dropdown menu.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Avatar dropdown menu opened showing "Switch Teams" section]
+Click on your name or avatar icon to open the dropdown menu.&#x20;
 {% endstep %}
 
 {% step %}
 #### View Available Teams
 
-In the dropdown menu, you'll see a "Switch Teams" section (or "Current Team" if you only have one team) listing all teams you're a member of. The current team will have a radio button selected.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Dropdown menu showing list of teams with radio buttons, current team selected]
+In the dropdown menu, you'll see a "Switch Teams" section (or "Current Team" if you only have one team) listing all teams you're a member of. The current team will have a radio button selected.&#x20;
 {% endstep %}
 
 {% step %}
 #### Select a Different Team
 
-Click the radio button next to the team name you want to switch to. A "Switching Team..." message will appear, and the page will reload automatically.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Clicking on a different team's radio button, showing "Switching Team..." message]
+Click the radio button next to the team name you want to switch to. A "Switching Team..." message will appear, and the page will reload automatically.&#x20;
 {% endstep %}
 
 {% step %}
 #### Wait for Page Reload
 
-The page will automatically reload after switching teams. Once reloaded, you'll be in the selected team's workspace.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Page reloading after team switch]
+The page will automatically reload after switching teams. Once reloaded, you'll be in the selected team's workspace.&#x20;
 {% endstep %}
 {% endstepper %}
 
@@ -73,9 +55,7 @@ The page will automatically reload after switching teams. Once reloaded, you'll 
 
 In the header bar, look for the "Channels" button. It shows your current channel's phone number in parentheses (e.g., "Channels (+60123456789)").
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Header bar showing Channels button with phone number]
+<figure><img src=".gitbook/assets/Screenshot 2026-01-13 at 5.45.42 PM.png" alt=""><figcaption></figcaption></figure>
 
 **Note**: If your channel is not connected, you'll see an exclamation mark icon and "Channel not connected" tooltip.
 {% endstep %}
@@ -84,10 +64,6 @@ In the header bar, look for the "Channels" button. It shows your current channel
 #### Click the Channels Button
 
 Click the "Channels" button to open the Channels modal.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Channels modal opened showing list of all channels]
 {% endstep %}
 
 {% step %}
@@ -99,19 +75,13 @@ The modal displays all channels (WhatsApp phone numbers) available in your curre
 * Status: Whether the channel is connected (ready) or needs setup
 * Switch Button: Button to switch to that channel (or "Current Selected" if it's already active)
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Channels modal showing list with status and Switch buttons]
+<figure><img src=".gitbook/assets/Screenshot 2026-01-13 at 5.41.47 PM.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 #### Switch to a Channel
 
-Click the "Switch" button next to the channel you want to use. A "Redirecting to another Channel..." message will appear, and you'll be redirected to the Dashboard or Inbox.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Clicking Switch button on a channel, showing redirect message]
+Click the "Switch" button next to the channel you want to use. A "Redirecting to another Channel..." message will appear, and you'll be redirected to the Dashboard or Inbox.&#x20;
 {% endstep %}
 
 {% step %}
@@ -119,9 +89,7 @@ Click the "Switch" button next to the channel you want to use. A "Redirecting to
 
 After switching, you'll see the new channel's phone number displayed in the Channels button in the header bar.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Header bar showing updated channel phone number after switch]
+<figure><img src=".gitbook/assets/Screenshot 2026-01-13 at 5.48.12 PM.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 
@@ -147,6 +115,63 @@ After switching, you'll see the new channel's phone number displayed in the Chan
 * **Single Team**: If you only belong to one team, the dropdown will show "Current Team" instead of "Switch Teams".
 * **Channel Connection Required**: To use a channel for messaging, it must be connected (status: "ready"). Unconnected channels will show "Connect Now" instead of "Switch".
 {% endhint %}
+
+## How to Add a New Channel
+
+If you need to connect multiple WhatsApp accounts or want to add another channel to your workspace, you can create additional channels:
+
+{% stepper %}
+{% step %}
+**Access Channel Management**
+
+1. Go to `Inbox` in the left menu.
+2. If you have an existing channel connected, look for the channel selector or channel management option in the header or sidebar.
+3. Alternatively, you can access channel management from the channel connection page.
+
+📸 Screenshot placeholder:
+
+> \[Screenshot: Inbox page showing channel selector or channel management option]
+{% endstep %}
+
+{% step %}
+**Click Add Channel**
+
+1. On the channel management page, you'll see a list of all your existing channels.
+2. Click the **"Add Channel"** button at the bottom of the channel list.
+
+📸 Screenshot placeholder:
+
+> \[Screenshot: Channel list page showing "Add Channel" button]
+{% endstep %}
+
+{% step %}
+**Connect Your New Channel**
+
+1. After clicking "Add Channel", a new channel will be created.
+2. You'll see a success message: "New Channel created, please scan and connect to your WhatsApp now."
+3. The new channel will appear in your channel list with a "Not Connected" status.
+4. Click **"Connect Now"** or select the new channel to start the connection process.
+5. Follow the same connection steps as described in the sections above (either WhatsApp Personal or WhatsApp Cloud).
+
+📸 Screenshot placeholder:
+
+> \[Screenshot: New channel created showing "Connect Now" button]
+{% endstep %}
+{% endstepper %}
+
+### Channel Limits
+
+{% hint style="info" %}
+**Channel Limits**: The number of channels you can create depends on your subscription plan. If you've reached your channel limit, you'll see a message indicating you need to upgrade. Click **"Need More Channel?"** to view upgrade options.
+{% endhint %}
+
+### Managing Multiple Channels
+
+Once you have multiple channels:
+
+* **Switch Between Channels**: Use the channel selector to switch between different channels. Each channel operates independently with its own contacts and conversations.
+* **Current Selected Channel**: The channel you're currently using is marked as "Current Selected" in the channel list.
+* **Channel Status**: Each channel shows its connection status (Connected/Not Connected) so you can easily see which channels are active.
 
 ## Common issues & solutions
 
