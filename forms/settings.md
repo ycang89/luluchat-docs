@@ -5,7 +5,7 @@ The **Form Settings** tab is where you control how the form behaves and how resp
 
 ### General Settings
 - **Form Name**: The internal name for your reference.
-- **Form Link (Slug)**: Customize the URL of your form (e.g., `luluchat.io/team/my-survey`).
+- **Form Link (Slug)**: Customize the URL of your form (e.g., `luluchat.io/my-team-survey`).
 - **Is Publish**: Toggle this to make the form live or take it offline.
 
 ### Verification & Delivery
