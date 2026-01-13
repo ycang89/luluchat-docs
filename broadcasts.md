@@ -199,23 +199,23 @@ Use the search box to find specific contacts by WhatsApp number or contact name 
 - **Broadcast not sending**: Check if your channel is connected and if you are within your "Broadcast Sending Hours."
 - **Daily limit reached**: If you exceed your daily quota, the remaining messages will wait until your quota resets. Check the "Remaining" tab in the Message Queue to see queued messages.
 - **CSV upload failed**: Ensure the phone numbers in your file already exist in your Contacts directory.
-- **Contacts not receiving broadcasts**: 
+- **Contacts not receiving broadcasts**:
   - Verify that contacts are imported or added through the Contacts page. Contacts who have only messaged you but haven't been added to Contacts will not receive broadcasts.
   - Check if contacts have opted out. Opted-out contacts are automatically excluded from broadcasts.
   - Ensure contacts match your selection criteria (tags, assignee, etc.).
-- **Fewer recipients than expected**: 
+- **Fewer recipients than expected**:
   - Some contacts may have opted out and are automatically excluded.
   - Contacts who haven't been imported to your Contacts directory are excluded.
   - Check that your selection criteria (tags, assignee, etc.) match the contacts you want to reach.
-- **Many messages in "Failed" tab**: 
+- **Many messages in "Failed" tab**:
   - Review the "Remarks" column to understand why messages failed. Common reasons include invalid phone numbers, opted-out contacts, or temporary delivery issues.
   - Use "Resend to Selected" or "Resend All" to retry failed messages after addressing the underlying issues.
   - Check your channel connection status - a disconnected channel will cause all messages to fail.
-- **Messages stuck in "Remaining" tab**: 
+- **Messages stuck in "Remaining" tab**:
   - Check if the broadcast is paused. If paused, click "Resume" to continue sending.
   - Verify you're within your "Broadcast Sending Hours" - messages only send during configured hours.
   - Check if you've reached your daily message limit - remaining messages will queue until the limit resets.
-- **Can't see "Replied to Given Option" messages**: 
+- **Can't see "Replied to Given Option" messages**:
   - This tab only shows contacts who interacted with interactive elements (buttons, quick replies) in your message flow.
   - If your message flow doesn't include interactive elements, this tab will be empty.
   - Regular text replies appear in the "Replied" tab, not "Replied to Given Option".

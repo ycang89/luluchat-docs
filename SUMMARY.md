@@ -1,7 +1,12 @@
 # Summary
 
+## Getting Started
+
 * [Register a Luluchat Account](./register-account.md)
 * [Switch Team and Channel](./switch-team-channel.md)
+
+## Core Features
+
 * [Dashboard](./dashboard.md)
 * [Inbox](./inbox/index.md)
   * [Connect your Channel](./inbox/connect-channel.md)
