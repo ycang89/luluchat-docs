@@ -23,8 +23,6 @@ Click the `Incognito` toggle/button to enter incognito view.
 **Open the conversation**
 
 In `Inbox`, open the conversation you want to review privately.
-
-<figure><img src="../.gitbook/assets/Screenshot 2026-01-13 at 6.24.25 PM.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
