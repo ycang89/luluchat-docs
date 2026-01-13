@@ -9,17 +9,25 @@ Smart Delay pauses a flow for a set time and then branches based on whether the 
 
 ## How to set it up (Step by Step)
 
-### Step 1: Add a Smart Delay step
+{% stepper %}
+{% step %}
+### Add a Smart Delay step
+
 In `Automations` > `Message Flows`, open a flow and add a `Smart Delay` node from the Logic section.
 
 📸 Screenshot placeholder:
 > [Screenshot: Flow builder showing Smart Delay node added between steps]
+{% endstep %}
 
-### Step 2: Configure the delay
+{% step %}
+### Configure the delay
+
 Set the duration (minutes/hours/days) and ensure the `answered` and `not answered` ports are connected to the next steps.
 
 📸 Screenshot placeholder:
 > [Screenshot: Smart Delay settings with duration and two response ports connected]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 - If the contact replies during the delay, the flow can follow the `answered` branch.

@@ -8,13 +8,19 @@ The Profile tab in contact info lets you manage ownership, collaborators, tags, 
 
 ## How to use (Step by Step)
 
-### Step 1: Open contact info
+{% stepper %}
+{% step %}
+### Open contact info
+
 In `Inbox`, open a conversation and view the contact info panel, then select the `Profile` tab.
 
 📸 Screenshot placeholder:
 > [Screenshot: Contact info Profile tab]
+{% endstep %}
 
-### Step 2: Manage key fields
+{% step %}
+### Manage key fields
+
 - Assign Assignee: pick the primary owner.
 - Add Collaborator: add teammates as collaborators.
 - Add Tags: select/apply tags.
@@ -24,12 +30,17 @@ In `Inbox`, open a conversation and view the contact info panel, then select the
 
 📸 Screenshot placeholder:
 > [Screenshot: Profile tab with assignee, collaborators, tags, profile, custom attributes, opt-out controls]
+{% endstep %}
 
-### Step 3: Save/apply
+{% step %}
+### Save/apply
+
 Save changes (if a save/apply control is present) to update the contact record immediately.
 
 📸 Screenshot placeholder:
 > [Screenshot: Saved state showing updated fields]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 Changes apply to the contact and are visible to teammates; ownership, tags, attributes, and opt-out status update instantly and influence routing/automation where applicable.

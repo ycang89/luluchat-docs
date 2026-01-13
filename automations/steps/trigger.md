@@ -12,30 +12,44 @@ The flow starts when any of the configured triggers fire:
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open the Starting Step
+{% stepper %}
+{% step %}
+### Open the Starting Step
+
 Every new flow starts with a **Starting Step** already on the board. Click on it to open the trigger configuration panel.
 
 📸 Screenshot placeholder:
 > [Screenshot: Starting Step node on the flow board with configuration panel open]
+{% endstep %}
 
-### Step 2: Add a Trigger
+{% step %}
+### Add a Trigger
+
 Click one of the trigger buttons to add it:
-- **Keyword**: For text-based message matching
-- **WhatsApp Link**: For shareable clickable links
-- **App Event**: For integrations with external apps
-- **Webhook**: For custom external system triggers
+- Keyword: For text-based message matching
+- WhatsApp Link: For shareable clickable links
+- App Event: For integrations with external apps
+- Webhook: For custom external system triggers
 
 📸 Screenshot placeholder:
 > [Screenshot: Starting Step configuration showing the four trigger type buttons]
+{% endstep %}
 
-### Step 3: Configure Your Trigger
+{% step %}
+### Configure Your Trigger
+
 Each trigger type has its own configuration. See the sections below for detailed setup instructions.
+{% endstep %}
 
-### Step 4: Add Multiple Triggers (Optional)
+{% step %}
+### Add Multiple Triggers (Optional)
+
 You can add multiple triggers to a single flow. The flow will start if **any** of them fire (e.g., the flow starts if the user types "Hi" OR clicks a specific WhatsApp Link).
 
 📸 Screenshot placeholder:
 > [Screenshot: Starting Step showing multiple triggers configured]
+{% endstep %}
+{% endstepper %}
 
 ---
 

@@ -11,72 +11,106 @@ Team and Channel switching allows you to move between different teams and WhatsA
 
 ## How to switch teams (Step by Step)
 
-### Step 1: Locate Your Avatar
+{% stepper %}
+{% step %}
+### Locate Your Avatar
+
 In the top right corner of the header bar, you'll see your name and avatar icon.
 
 📸 Screenshot placeholder:
 > [Screenshot: Header bar showing user name and avatar in the top right corner]
+{% endstep %}
 
-### Step 2: Click Your Avatar
+{% step %}
+### Click Your Avatar
+
 Click on your name or avatar icon to open the dropdown menu.
 
 📸 Screenshot placeholder:
 > [Screenshot: Avatar dropdown menu opened showing "Switch Teams" section]
+{% endstep %}
 
-### Step 3: View Available Teams
+{% step %}
+### View Available Teams
+
 In the dropdown menu, you'll see a "Switch Teams" section (or "Current Team" if you only have one team) listing all teams you're a member of. The current team will have a radio button selected.
 
 📸 Screenshot placeholder:
 > [Screenshot: Dropdown menu showing list of teams with radio buttons, current team selected]
+{% endstep %}
 
-### Step 4: Select a Different Team
+{% step %}
+### Select a Different Team
+
 Click the radio button next to the team name you want to switch to. A "Switching Team..." message will appear, and the page will reload automatically.
 
 📸 Screenshot placeholder:
 > [Screenshot: Clicking on a different team's radio button, showing "Switching Team..." message]
+{% endstep %}
 
-### Step 5: Wait for Page Reload
+{% step %}
+### Wait for Page Reload
+
 The page will automatically reload after switching teams. Once reloaded, you'll be in the selected team's workspace.
 
 📸 Screenshot placeholder:
 > [Screenshot: Page reloading after team switch]
+{% endstep %}
+{% endstepper %}
 
 ## How to switch channels (Step by Step)
 
-### Step 1: Locate the Channels Button
-In the header bar, look for the **"Channels"** button. It shows your current channel's phone number in parentheses (e.g., "Channels (+60123456789)").
+{% stepper %}
+{% step %}
+### Locate the Channels Button
+
+In the header bar, look for the "Channels" button. It shows your current channel's phone number in parentheses (e.g., "Channels (+60123456789)").
 
 📸 Screenshot placeholder:
 > [Screenshot: Header bar showing Channels button with phone number]
 
 **Note**: If your channel is not connected, you'll see an exclamation mark icon and "Channel not connected" tooltip.
+{% endstep %}
 
-### Step 2: Click the Channels Button
-Click the **"Channels"** button to open the Channels modal.
+{% step %}
+### Click the Channels Button
+
+Click the "Channels" button to open the Channels modal.
 
 📸 Screenshot placeholder:
 > [Screenshot: Channels modal opened showing list of all channels]
+{% endstep %}
 
-### Step 3: View Available Channels
+{% step %}
+### View Available Channels
+
 The modal displays all channels (WhatsApp phone numbers) available in your current team. Each channel shows:
-- **Channel Name/Phone Number**: The display name or phone number
-- **Status**: Whether the channel is connected (ready) or needs setup
-- **Switch Button**: Button to switch to that channel (or "Current Selected" if it's already active)
+- Channel Name/Phone Number: The display name or phone number
+- Status: Whether the channel is connected (ready) or needs setup
+- Switch Button: Button to switch to that channel (or "Current Selected" if it's already active)
 
 📸 Screenshot placeholder:
 > [Screenshot: Channels modal showing list with status and Switch buttons]
+{% endstep %}
 
-### Step 4: Switch to a Channel
-Click the **"Switch"** button next to the channel you want to use. A "Redirecting to another Channel..." message will appear, and you'll be redirected to the Dashboard or Inbox.
+{% step %}
+### Switch to a Channel
+
+Click the "Switch" button next to the channel you want to use. A "Redirecting to another Channel..." message will appear, and you'll be redirected to the Dashboard or Inbox.
 
 📸 Screenshot placeholder:
 > [Screenshot: Clicking Switch button on a channel, showing redirect message]
+{% endstep %}
 
-### Step 5: Verify Channel Switch
+{% step %}
+### Verify Channel Switch
+
 After switching, you'll see the new channel's phone number displayed in the Channels button in the header bar.
 
 📸 Screenshot placeholder:
 > [Screenshot: Header bar showing updated channel phone number after switch]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after you switch?
 - **Team Switch**:

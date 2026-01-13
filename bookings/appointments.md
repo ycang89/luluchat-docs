@@ -12,49 +12,63 @@ Appointments is where you view and manage all customer bookings across your cale
 
 ## How to view appointments (Step by Step)
 
-### Step 1: Open Appointments Page
+{% stepper %}
+{% step %}
+### Open Appointments Page
+
 Go to `Bookings` > `Appointments` from the left menu.
 
 📸 Screenshot placeholder:
 > [Screenshot: Appointments page with tabs for Upcoming, Pending, Past]
+{% endstep %}
 
-### Step 2: Select View Type
+{% step %}
+### Select View Type
+
 Choose how you want to view appointments:
 
-- **List View**: See appointments in a table format (default). Use the tabs:
-  - **Upcoming**: Appointments scheduled for future dates.
-  - **Pending**: Appointments waiting for manual confirmation (if confirmation mode is "Manual").
-  - **Past**: Completed or past appointments.
-- **Calendar View**: Click the **"Calendar"** button in the top right to switch to a visual calendar timeline.
+- List View: See appointments in a table format (default). Use the tabs:
+  - Upcoming: Appointments scheduled for future dates.
+  - Pending: Appointments waiting for manual confirmation (if confirmation mode is "Manual").
+  - Past: Completed or past appointments.
+- Calendar View: Click the "Calendar" button in the top right to switch to a visual calendar timeline.
 
 📸 Screenshot placeholder:
 > [Screenshot: Appointments page showing tabs and Calendar button]
+{% endstep %}
 
-### Step 3: Filter Appointments (List View)
+{% step %}
+### Filter Appointments (List View)
+
 In list view, use the search filters to find specific appointments:
 
-- **Appointment Datetime**: Select a date range to filter by booking date.
-- **Ref No.**: Search by reference number.
-- **Name**: Search by customer name.
-- **Calendar**: Filter by specific calendar.
-- **Staff**: Filter by staff member (if using staff assignment).
+- Appointment Datetime: Select a date range to filter by booking date.
+- Ref No.: Search by reference number.
+- Name: Search by customer name.
+- Calendar: Filter by specific calendar.
+- Staff: Filter by staff member (if using staff assignment).
 
 📸 Screenshot placeholder:
 > [Screenshot: List view with search filters expanded]
+{% endstep %}
 
-### Step 4: View Calendar View (Optional)
+{% step %}
+### View Calendar View (Optional)
+
 To see appointments in calendar format:
 
-1. Click the **"Calendar"** button.
-2. Select a **Calendar** from the dropdown (required).
-3. Optionally select a **Staff** member to filter.
+1. Click the "Calendar" button.
+2. Select a Calendar from the dropdown (required).
+3. Optionally select a Staff member to filter.
 4. Use the view controls to switch between:
-   - **Day**: See appointments for a single day.
-   - **Week**: See appointments for the current week.
-   - **Agenda**: See a list of upcoming appointments.
+   - Day: See appointments for a single day.
+   - Week: See appointments for the current week.
+   - Agenda: See a list of upcoming appointments.
 
 📸 Screenshot placeholder:
 > [Screenshot: Calendar view showing week view with appointments as colored blocks]
+{% endstep %}
+{% endstepper %}
 
 In calendar view, appointments appear as colored blocks:
 - **Green**: Confirmed appointments

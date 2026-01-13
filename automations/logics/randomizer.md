@@ -8,30 +8,44 @@ This node triggers every time a contact reaches it in a Message Flow. The system
 
 ## How to set it up (Step by Step)
 
-### Step 1: Add the Randomizer Node
+{% stepper %}
+{% step %}
+### Add the Randomizer Node
+
 In the Message Flow Editor, click **Add Node (+) > Logics > Randomizer**.
 
 📸 Screenshot placeholder:
 > [Screenshot: Add Node menu with Logics > Randomizer selected]
+{% endstep %}
 
-### Step 2: Create your Variants
+{% step %}
+### Create your Variants
+
 Click the node to open the configuration. Click **+ Add New Variant** to create multiple paths (e.g., Path A, Path B).
 
 📸 Screenshot placeholder:
 > [Screenshot: Randomizer configuration drawer with the 'Add New Variant' button]
+{% endstep %}
 
-### Step 3: Assign Percentages
+{% step %}
+### Assign Percentages
+
 Enter a **Probability %** for each variant.
 **CRITICAL**: The total of all variants must equal exactly **100%**.
 
 📸 Screenshot placeholder:
 > [Screenshot: Variant list with 50% and 50% inputs]
+{% endstep %}
 
-### Step 4: Link to Next Steps
+{% step %}
+### Link to Next Steps
+
 For each variant (A, B, C, etc.), click **Choose Next Step** to link it to a different message or action node on the board.
 
 📸 Screenshot placeholder:
 > [Screenshot: Randomizer node on the board with arrows pointing to different message nodes]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 The contact is silently routed to one of the available paths. There is no visible delay or notification to the customer that they have been part of a randomized split.

@@ -8,17 +8,17 @@ Closes the current conversation in the inbox when this Action runs.
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open the flow and edit the Action node
+{% stepper %}
+{% step %}
+### Open the flow and edit the Action node
 In `Automations` > `Message Flows`, open a flow, select the `Action` step, and choose `Close Inbox Conversation`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Action step showing the Close Inbox Conversation option]
 
-### Step 2: Save and publish
-Add the action where the conversation should end, then save and publish the flow.
+{% endstep %}
 
-📸 Screenshot placeholder:
-> [Screenshot: Flow path showing the Close Inbox Conversation action in the sequence]
+{% endstepper %}
 
 ## What happens after it triggers?
 The conversation is marked closed in the inbox; downstream steps still run if connected after this action.

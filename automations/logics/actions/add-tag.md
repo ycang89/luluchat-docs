@@ -8,17 +8,25 @@ Adds one or more tags to the contact when this Action runs in a Message Flow.
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open the flow and edit the Action node
+{% stepper %}
+{% step %}
+### Open the flow and edit the Action node
+
 In `Automations` > `Message Flows`, open a flow and select the `Action` step. Click `Add Tag`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Action step showing the Add Tag option]
+{% endstep %}
 
-### Step 2: Choose tags
+{% step %}
+### Choose tags
+
 Pick one or more tags to apply to the contact, then save the Action block.
 
 📸 Screenshot placeholder:
 > [Screenshot: Add Tag action form with tag selector]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 The selected tags are added to the contact immediately; the flow continues to the next step.

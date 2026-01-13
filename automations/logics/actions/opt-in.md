@@ -8,17 +8,17 @@ Marks the contact as opted in for messaging when this Action runs.
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open the flow and edit the Action node
+{% stepper %}
+{% step %}
+### Open the flow and edit the Action node
 In `Automations` > `Message Flows`, open a flow, select the `Action` step, and choose `Opt In`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Action step showing the Opt In option]
 
-### Step 2: Place it after consent
-Add this action after the message where the contact grants consent, then save and publish.
+{% endstep %}
 
-📸 Screenshot placeholder:
-> [Screenshot: Flow path showing Opt In action after a consent message]
+{% endstepper %}
 
 ## What happens after it triggers?
 The contact’s opt-in status is set to allow messaging; the flow continues to the next step.

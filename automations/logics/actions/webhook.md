@@ -8,17 +8,17 @@ Calls an external URL (GET/POST) from the flow, sending data and handling succes
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open the flow and edit the Action node
+{% stepper %}
+{% step %}
+### Open the flow and edit the Action node
 In `Automations` > `Message Flows`, open a flow, select the `Action` step, and choose `Webhook`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Action step showing the Webhook option]
 
-### Step 2: Configure request details
-Enter the URL, choose GET or POST, and add headers/parameters and any attributes to send. Define success/fail handling if available.
+{% endstep %}
 
-📸 Screenshot placeholder:
-> [Screenshot: Webhook action form with URL, method, headers, params, and response paths]
+{% endstepper %}
 
 ## What happens after it triggers?
 The webhook fires with your payload. The flow follows the success or fail path based on the response rule you set.

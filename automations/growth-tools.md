@@ -9,23 +9,34 @@ Growth Tools provide shareable links and QR codes that start conversations. They
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open Growth Tools
+{% stepper %}
+{% step %}
+### Open Growth Tools
+
 Go to `Automations` > `Growth Tools` to see the list with stats (impressions, opt-ins, conversion) and links.
 
 📸 Screenshot placeholder:
 > [Screenshot: Growth Tools list showing stats, link, and QR code]
+{% endstep %}
 
-### Step 2: Pick a tool and share it
+{% step %}
+### Pick a tool and share it
+
 Select a Growth Tool, copy its link or download the QR code, and place it where your audience will use it (website, landing page, signage, email).
 
 📸 Screenshot placeholder:
 > [Screenshot: Growth Tool row with Copy/Download options highlighted]
+{% endstep %}
 
-### Step 3: Confirm the linked flow
+{% step %}
+### Confirm the linked flow
+
 Ensure the Growth Tool points to the correct Message Flow, then test the link/QR to verify the right flow starts.
 
 📸 Screenshot placeholder:
 > [Screenshot: Growth Tool detail showing linked flow reference]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 The contact is sent into the linked Message Flow, receives the configured replies, and their interaction counts toward impressions/opt-ins/conversion metrics.

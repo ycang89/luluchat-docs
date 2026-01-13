@@ -9,29 +9,43 @@ Workflows let you run a chain of actions based on conditions and timing—ideal 
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open Workflows
+{% stepper %}
+{% step %}
+### Open Workflows
+
 Go to `Automations` > `Workflows` to view existing workflows and their status.
 
 📸 Screenshot placeholder:
 > [Screenshot: Workflows list with On/Off switches and Create Workflow button]
+{% endstep %}
 
-### Step 2: Create a workflow
+{% step %}
+### Create a workflow
+
 Click `Create Workflow`, name it, and set the initial condition(s) that should start the workflow.
 
 📸 Screenshot placeholder:
 > [Screenshot: Create Workflow form with name and condition setup]
+{% endstep %}
 
-### Step 3: Add actions and save
+{% step %}
+### Add actions and save
+
 Add the actions the workflow should perform (e.g., send, route, tag, start a flow), then save.
 
 📸 Screenshot placeholder:
 > [Screenshot: Workflow builder/listing showing actions configured]
+{% endstep %}
 
-### Step 4: Turn it on and test
+{% step %}
+### Turn it on and test
+
 Use the On/Off switch to activate the workflow, then trigger the condition in a test scenario to confirm it runs.
 
 📸 Screenshot placeholder:
 > [Screenshot: Workflow list with the new workflow toggled On]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 The workflow executes its actions in order—sending messages, routing, or updating records as configured—and records the latest status visible in the list.

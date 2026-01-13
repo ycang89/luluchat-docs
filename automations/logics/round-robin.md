@@ -10,23 +10,34 @@ Round Robin is a distribution logic that ensures traffic or tasks are divided eq
 
 ## How to set it up (Step by Step)
 
-### Step 1: Add the Round Robin Node
+{% stepper %}
+{% step %}
+### Add the Round Robin Node
+
 In the Message Flow Editor, click **Add Node (+) > Logics > Round Robin**.
 
 📸 Screenshot placeholder:
 > [Screenshot: Add Node menu with Logics > Round Robin highlighted]
+{% endstep %}
 
-### Step 2: Configure Rounds
+{% step %}
+### Configure Rounds
+
 Click the node to open the configuration. Click **+ Add New Step** to create a new round (e.g., Round 1, Round 2, Round 3).
 
 📸 Screenshot placeholder:
 > [Screenshot: Round Robin configuration drawer with the 'Add New Step' button]
+{% endstep %}
 
-### Step 3: Link Each Round
+{% step %}
+### Link Each Round
+
 For each round, click **Choose Next Step** to link it to the desired path or teammate assignment.
 
 📸 Screenshot placeholder:
 > [Screenshot: Round Robin node showing several rounds linked to different next steps]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 The contact is automatically routed to the next round in sequence. The first contact goes to Round 1, the second to Round 2, and so on. Once all rounds have been used, it cycles back to Round 1.

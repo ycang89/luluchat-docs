@@ -11,28 +11,40 @@ The Conversations Report provides detailed analytics about your customer convers
 
 ## How to use it (Step by Step)
 
-### Step 1: Open Conversations Report
+{% stepper %}
+{% step %}
+### Open Conversations Report
+
 Go to `Reports` > `Conversations` from the left menu.
 
 📸 Screenshot placeholder:
 > [Screenshot: Conversations report page with date range selector at the top]
+{% endstep %}
 
-### Step 2: Select Date Range
+{% step %}
+### Select Date Range
+
 Choose a date range using the preset options (Last 7 days, Last 30 days, This month, This year) or click the date picker to select a custom range.
 
 📸 Screenshot placeholder:
 > [Screenshot: Date range selector with preset options and custom date picker]
+{% endstep %}
 
-### Step 3: Review Overview Charts
+{% step %}
+### Review Overview Charts
+
 At the top of the page, you'll see three key charts:
-- **Opened vs Closed Conversations**: Shows the volume of conversations opened and closed over the selected period.
-- **Response Time**: Displays average response times, with options to compare specific team members.
-- **Resolution Time**: Shows how long it takes to resolve conversations, with a note that conversations must be manually closed to be tracked.
+- Opened vs Closed Conversations: Shows the volume of conversations opened and closed over the selected period.
+- Response Time: Displays average response times, with options to compare specific team members.
+- Resolution Time: Shows how long it takes to resolve conversations, with a note that conversations must be manually closed to be tracked.
 
 📸 Screenshot placeholder:
 > [Screenshot: Three charts showing opened vs closed, response time, and resolution time]
+{% endstep %}
 
-### Step 4: Compare Team Members (Optional)
+{% step %}
+### Compare Team Members (Optional)
+
 To compare specific team members' performance:
 1. Scroll to the Response Time or Resolution Time chart.
 2. Click "Select an assignee to compare" below the chart.
@@ -41,24 +53,49 @@ To compare specific team members' performance:
 
 📸 Screenshot placeholder:
 > [Screenshot: Assignee selector dropdown and updated chart with multiple lines for comparison]
+{% endstep %}
 
-### Step 5: View Conversation List
+{% step %}
+### View Conversation List
+
 Scroll down to the "Conversation List" table, which shows detailed information for each conversation. Use the tabs at the top to filter by:
-- **Overall Response Time**: Conversations with first responses in the selected period.
-- **[Team Member]'s Response Time**: Conversations where a specific team member responded.
-- **Overall Resolution Time**: Conversations closed in the selected period.
-- **[Team Member]'s Resolution Time**: Conversations closed by a specific team member.
+- Overall Response Time: Conversations with first responses in the selected period.
+- [Team Member]'s Response Time: Conversations where a specific team member responded.
+- Overall Resolution Time: Conversations closed in the selected period.
+- [Team Member]'s Resolution Time: Conversations closed by a specific team member.
 
 📸 Screenshot placeholder:
 > [Screenshot: Conversation List table with tabs for different views]
+{% endstep %}
 
-### Step 6: Review Conversation Details
+{% step %}
+### Review Conversation Details
+
 Each row in the table shows:
-- **Contact**: Customer name (clickable link to their contact profile).
-- **Conversation Time Window**: When the conversation was opened and closed, and by whom.
-- **First Response Time**: How long it took to send the first response, and who sent it.
-- **First Assignee**: The first team member assigned, their response time, and resolution time.
-- **Last Assignee**: The last team member assigned, their response time, and resolution time.
+- Contact: Customer name (clickable link to their contact profile).
+- Conversation Time Window: When the conversation was opened and closed, and by whom.
+- First Response Time: How long it took to send the first response, and who sent it.
+- First Assignee: The first team member assigned, their response time, and resolution time.
+{% endstep %}
+
+{% step %}
+### Export Data (Optional)
+
+Click the Export button at the top right of the Conversation List table to download an Excel file with all conversation data for the selected date range and tab.
+
+📸 Screenshot placeholder:
+> [Screenshot: Export button in the Conversation List toolbar]
+{% endstep %}
+{% endstepper %}
+
+## Export and Filter Options
+
+Each row in the table shows:
+- Contact: Customer name (clickable link to their contact profile).
+- Conversation Time Window: When the conversation was opened and closed, and by whom.
+- First Response Time: How long it took to send the first response, and who sent it.
+- First Assignee: The first team member assigned, their response time, and resolution time.
+- Last Assignee: The last team member assigned, their response time, and resolution time.
 - **Total Resolution Time**: Overall duration and assignee-involved duration.
 - **Last Assigned List**: The inbox tab where the conversation was last assigned.
 - **Tagging Activity**: Tags added or removed during the conversation (hover to see timeline).
@@ -66,12 +103,6 @@ Each row in the table shows:
 
 📸 Screenshot placeholder:
 > [Screenshot: Expanded conversation row showing all detail columns]
-
-### Step 7: Export Data (Optional)
-Click the **Export** button at the top right of the Conversation List table to download an Excel file with all conversation data for the selected date range and tab.
-
-📸 Screenshot placeholder:
-> [Screenshot: Export button in the Conversation List toolbar]
 
 ## What happens after you use it?
 - **Data Displayed**: The report shows all conversations matching your selected filters and date range.

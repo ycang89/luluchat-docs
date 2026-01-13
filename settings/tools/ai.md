@@ -8,29 +8,43 @@ These settings take effect whenever a contact interacts with an **AI Agent node*
 
 ## How to set it up (Step by Step)
 
-### Step 1: Access AI Settings
-Go to `Settings` in the left menu, then navigate to **Tools > AI**.
+{% stepper %}
+{% step %}
+### Access AI Settings
+
+Go to `Settings` in the left menu, then navigate to Tools > AI.
 
 📸 Screenshot placeholder:
 > [Screenshot: Settings menu with Tools > AI highlighted]
+{% endstep %}
 
-### Step 2: Enable MCP
-Toggle **Enable MCP for AI** to "On" to allow your AI agents to perform complex tasks like checking databases or calling external APIs.
+{% step %}
+### Enable MCP
+
+Toggle Enable MCP for AI to "On" to allow your AI agents to perform complex tasks like checking databases or calling external APIs.
 
 📸 Screenshot placeholder:
 > [Screenshot: MCP for AI toggle switch set to ON]
+{% endstep %}
 
-### Step 3: Configure Connectivity
-View your **MCP Server URL**. You will also need an **MCP Token**, which you can generate in the `Settings > Account > Integration` tab.
+{% step %}
+### Configure Connectivity
+
+View your MCP Server URL. You will also need an MCP Token, which you can generate in the `Settings > Account > Integration` tab.
 
 📸 Screenshot placeholder:
 > [Screenshot: MCP Server URL display area]
+{% endstep %}
 
-### Step 4: Manage Tool Permissions
-Use the **MCP Tool Permissions** list to specifically enable or disable what the AI agent can do. Use **Enable All** or **Disable All** for quick management.
+{% step %}
+### Manage Tool Permissions
+
+Use the MCP Tool Permissions list to specifically enable or disable what the AI agent can do. Use Enable All or Disable All for quick management.
 
 📸 Screenshot placeholder:
 > [Screenshot: List of tool permissions with toggles]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 Once configured, your AI agents will be able to provide more relevant, data-driven responses. If a tool permission is granted, the AI can "call" that tool to perform a specific action during a live chat.

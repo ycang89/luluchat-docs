@@ -8,17 +8,17 @@ Assigns the conversation to selected team members when this Action runs in a Mes
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open the flow and edit the Action node
+{% stepper %}
+{% step %}
+### Open the flow and edit the Action node
 In `Automations` > `Message Flows`, open a flow, select the `Action` step, and choose `Add Assignee`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Action step showing the Add Assignee option]
 
-### Step 2: Select assignees and save
-Pick one or more team members to assign the conversation to, then save the Action block.
+{% endstep %}
 
-📸 Screenshot placeholder:
-> [Screenshot: Add Assignee action form with user selector]
+{% endstepper %}
 
 ## What happens after it triggers?
 The conversation is assigned to the chosen users; routing follows your inbox rules and the flow continues.

@@ -8,17 +8,17 @@ Pauses the flow for a set duration before moving to the next step.
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open the flow and edit the Action node
+{% stepper %}
+{% step %}
+### Open the flow and edit the Action node
 In `Automations` > `Message Flows`, open a flow, select the `Action` step, and choose `Delay`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Action step showing the Delay option]
 
-### Step 2: Set the delay duration
-Enter the wait time (minutes/hours/days) and save the Action block.
+{% endstep %}
 
-📸 Screenshot placeholder:
-> [Screenshot: Delay action form with duration fields]
+{% endstepper %}
 
 ## What happens after it triggers?
 The flow pauses for the duration you set, then continues to the next connected step.

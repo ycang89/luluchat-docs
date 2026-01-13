@@ -11,13 +11,18 @@ The Keywords page is a management dashboard that shows you all keyword triggers 
 
 ## How to use it (Step by Step)
 
-### Step 1: Open Keywords Page
+{% stepper %}
+{% step %}
+### Open Keywords Page
+
 Go to `Automations` > `Keywords` from the left menu.
 
 📸 Screenshot placeholder:
 > [Screenshot: Keywords page showing a list of keyword entries with their match conditions and linked flows]
+{% endstep %}
 
-### Step 2: Review Your Keywords
+{% step %}
+### Review Your Keywords
 
 Each row in the list shows:
 
@@ -43,18 +48,26 @@ Each row in the list shows:
 
 📸 Screenshot placeholder:
 > [Screenshot: A keyword list item showing "Message contain [sales, discount] tags" and the linked flow name]
+{% endstep %}
 
-### Step 3: Search for Keywords
+{% step %}
+### Search for Keywords
+
 Use the search box at the top right to find specific keywords across all flows.
 
 📸 Screenshot placeholder:
 > [Screenshot: Search box in the Keywords page header]
+{% endstep %}
 
-### Step 4: Export Your List (Optional)
-Click the **Export** button to download an Excel file containing all your keywords and their linked flows.
+{% step %}
+### Export Your List (Optional)
+
+Click the Export button to download an Excel file containing all your keywords and their linked flows.
 
 📸 Screenshot placeholder:
 > [Screenshot: Export button in the Keywords page header]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after you use it?
 - **Viewing**: You can see all your keyword configurations at a glance.

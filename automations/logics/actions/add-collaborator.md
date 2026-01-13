@@ -8,17 +8,17 @@ Adds selected teammates as collaborators on the conversation when this Action ru
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open the flow and edit the Action node
+{% stepper %}
+{% step %}
+### Open the flow and edit the Action node
 In `Automations` > `Message Flows`, open a flow, select the `Action` step, and choose `Add Collaborator`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Action step showing the Add Collaborator option]
 
-### Step 2: Select collaborators and save
-Choose teammates to add as collaborators, then save the Action block.
+{% endstep %}
 
-📸 Screenshot placeholder:
-> [Screenshot: Add Collaborator action form with user selector]
+{% endstepper %}
 
 ## What happens after it triggers?
 The chosen collaborators are added to the conversation so they can follow and respond; the flow continues.

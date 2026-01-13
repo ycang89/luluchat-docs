@@ -5,23 +5,31 @@ Manage your organization's identity, operational hours, and account lifecycle.
 
 ## How to set it up (Step by Step)
 
-### Step 1: Update Identity
-- **Team Name**: Internal name for your team workspace.
-- **Company Name**: Your organization's official name.
-- **Company Email**: Primary email for business communication.
-- **Company Website**: Your official website URL.
+{% stepper %}
+{% step %}
+### Update Identity
+
+- Team Name: Internal name for your team workspace.
+- Company Name: Your organization's official name.
+- Company Email: Primary email for business communication.
+- Company Website: Your official website URL.
 
 📸 Screenshot placeholder:
 > [Screenshot: Company profile form with identity fields]
+{% endstep %}
 
-### Step 2: Set Working Hours
-Select a **Working Hours** profile to define when your team is active. This affects reporting and can be used in automations.
-- *Note*: If you update working hours, click the **here** link in the description to regenerate your reports.
+{% step %}
+### Set Working Hours
+
+Select a Working Hours profile to define when your team is active. This affects reporting and can be used in automations.
+- Note: If you update working hours, click the here link in the description to regenerate your reports.
 
 📸 Screenshot placeholder:
 > [Screenshot: Working Hours selector dropdown]
+{% endstep %}
 
-### Step 3: Delete Account
+{% step %}
+### Delete Account
 
 {% hint style="danger" %}
 **Danger Zone - Permanent Action**

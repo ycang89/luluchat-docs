@@ -8,17 +8,17 @@ Sets specific attribute values on the contact when this Action runs, letting you
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open the flow and edit the Action node
+{% stepper %}
+{% step %}
+### Open the flow and edit the Action node
 In `Automations` > `Message Flows`, open a flow, select the `Action` step, and choose `Update Attribute`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Action step showing the Update Attribute option]
 
-### Step 2: Pick attributes and set values
-Choose the attributes to change and enter the values you want to store, then save the Action block.
+{% endstep %}
 
-📸 Screenshot placeholder:
-> [Screenshot: Update Attribute action form with attribute and value fields]
+{% endstepper %}
 
 ## What happens after it triggers?
 The selected attributes on the contact record are updated to the values you set; the flow continues to the next step.

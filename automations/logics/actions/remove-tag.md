@@ -8,17 +8,17 @@ Removes selected tags from the contact when this Action runs in a Message Flow.
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open the flow and edit the Action node
+{% stepper %}
+{% step %}
+### Open the flow and edit the Action node
 In `Automations` > `Message Flows`, open a flow, select the `Action` step, and choose `Remove Tag`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Action step showing the Remove Tag option]
 
-### Step 2: Choose tags to remove
-Select the tags to remove from the contact, then save the Action block.
+{% endstep %}
 
-📸 Screenshot placeholder:
-> [Screenshot: Remove Tag action form with tag selector]
+{% endstepper %}
 
 ## What happens after it triggers?
 The chosen tags are removed from the contact record; the flow continues to the next step.

@@ -8,17 +8,17 @@ Marks the contact as opted out of messaging when this Action runs.
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open the flow and edit the Action node
+{% stepper %}
+{% step %}
+### Open the flow and edit the Action node
 In `Automations` > `Message Flows`, open a flow, select the `Action` step, and choose `Opt Out`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Action step showing the Opt Out option]
 
-### Step 2: Place it on unsubscribe paths
-Add this action where users request to stop messages (e.g., after an “opt-out” keyword), then save and publish.
+{% endstep %}
 
-📸 Screenshot placeholder:
-> [Screenshot: Flow path showing Opt Out action on an unsubscribe branch]
+{% endstepper %}
 
 ## What happens after it triggers?
 The contact’s opt-out status is set, preventing further messaging until they opt in again; the flow continues along the path you set.

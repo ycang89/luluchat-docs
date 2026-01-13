@@ -10,35 +10,46 @@ Message Templates are pre-approved message formats used exclusively for **WhatsA
 
 ## How to set it up (Step by Step)
 
-### Step 1: Access Message Templates
+{% stepper %}
+{% step %}
+### Access Message Templates
+
 Click `Message Templates` in the left menu. Here you will see a list of your existing templates and their current approval status.
 
 📸 Screenshot placeholder:
 > [Screenshot: Message Templates list showing template names, status, and languages]
+{% endstep %}
 
-### Step 2: Create a New Template
-Click the **Create Message Template** button.
+{% step %}
+### Create a New Template
 
-Luluchat will show a confirmation dialog explaining that you will be redirected to the **Meta WhatsApp Manager**. This is because all templates must be created and reviewed within Meta's official platform.
+Click the Create Message Template button.
 
-1. Click **Go to Meta WhatsApp Manager**.
+Luluchat will show a confirmation dialog explaining that you will be redirected to the Meta WhatsApp Manager. This is because all templates must be created and reviewed within Meta's official platform.
+
+1. Click Go to Meta WhatsApp Manager.
 2. Log in to your Meta Business account.
 3. Follow Meta's instructions to define your template (Header, Body, Footer, and Buttons).
 4. Submit the template for review.
 
 📸 Screenshot placeholder:
 > [Screenshot: Redirection confirmation dialog to Meta WhatsApp Manager]
+{% endstep %}
 
-### Step 3: Syncing Templates back to Luluchat
+{% step %}
+### Syncing Templates back to Luluchat
+
 Once you have finished creating your template in the Meta WhatsApp Manager, return to Luluchat.
 
 **CRITICAL STEP**: The new template will not appear in Luluchat automatically. You must manually sync them.
-1. Click the **Sync from WhatsApp Manager** button located at the top right of the templates table.
+1. Click the Sync from WhatsApp Manager button located at the top right of the templates table.
 2. Wait for the success message: "Synced successfully."
 3. Your new template should now appear in the list with its latest status.
 
 📸 Screenshot placeholder:
 > [Screenshot: "Sync from WhatsApp Manager" button highlighted in the toolbar]
+{% endstep %}
+{% endstepper %}
 
 ---
 

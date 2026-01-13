@@ -9,29 +9,43 @@ The Web Widget lets visitors start a WhatsApp chat from your site. You can custo
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open Web Widget
+{% stepper %}
+{% step %}
+### Open Web Widget
+
 Go to `Automations` > `Web Widget` to open the widget setup page.
 
 📸 Screenshot placeholder:
 > [Screenshot: Web Widget page with Chat Button Settings and Generate Widget Code]
+{% endstep %}
 
-### Step 2: Customize the chat button
+{% step %}
+### Customize the chat button
+
 Adjust button position, margins, color, border radius, and CTA text under `Chat Button Settings`. Use `Get Preview` to see how it looks.
 
 📸 Screenshot placeholder:
 > [Screenshot: Chat Button Settings panel showing color picker, position, CTA text, and Get Preview]
+{% endstep %}
 
-### Step 3: Set brand and welcome text
+{% step %}
+### Set brand and welcome text
+
 Update brand name, subtitle, welcome message, and contact number in `Brand Setting`. Toggle `Open Widget by Default` if you want it to auto-open.
 
 📸 Screenshot placeholder:
 > [Screenshot: Brand Setting fields for name, subtitle, welcome text, and auto-open toggle]
+{% endstep %}
 
-### Step 4: Generate and embed the code
+{% step %}
+### Generate and embed the code
+
 Click `Generate Widget Code`, then copy the snippet and paste it before the closing </body> tag on every page where you want the widget to appear.
 
 📸 Screenshot placeholder:
 > [Screenshot: Generated code block with Copy button and instruction to place before </body>]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 Visitors see your chat button, click it, and are sent into WhatsApp with your configured greeting and contact number, starting a conversation with your team.

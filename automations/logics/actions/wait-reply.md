@@ -9,17 +9,17 @@ Holds the flow for a set time while waiting for the contact to respond; if no re
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open the flow and edit the Action node
+{% stepper %}
+{% step %}
+### Open the flow and edit the Action node
 In `Automations` > `Message Flows`, open a flow, select the `Action` step, and choose `Wait for Reply`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Action step showing the Wait for Reply option]
 
-### Step 2: Set the wait window
-Enter how long to wait (minutes/hours) and connect the “not answered” path to a follow-up step.
+{% endstep %}
 
-📸 Screenshot placeholder:
-> [Screenshot: Wait for Reply action form with duration and response path]
+{% endstepper %}
 
 ## What happens after it triggers?
 - If the contact replies within the window, the flow can proceed from the incoming message context.

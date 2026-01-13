@@ -8,17 +8,17 @@ Sends a manual WhatsApp message to a specific number from a flow step (available
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open the flow and edit the Action node
+{% stepper %}
+{% step %}
+### Open the flow and edit the Action node
 In `Automations` > `Message Flows`, open a flow, select the `Action` step, and choose `Send WhatsApp Message`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Action step showing the Send WhatsApp Message option]
 
-### Step 2: Write the message and set the number
-Enter the phone number and message content to send, then save the Action block.
+{% endstep %}
 
-📸 Screenshot placeholder:
-> [Screenshot: Send WhatsApp Message action form with phone and message fields]
+{% endstepper %}
 
 ## What happens after it triggers?
 The message is sent to the specified number; the flow continues to the next step.

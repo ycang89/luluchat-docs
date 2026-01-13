@@ -8,17 +8,17 @@ Places the contact into a chosen deal pipeline stage (and optional tags/collabor
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open the flow and edit the Action node
+{% stepper %}
+{% step %}
+### Open the flow and edit the Action node
 In `Automations` > `Message Flows`, open a flow, select the `Action` step, and choose `Add to Deal Stage`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Action step showing the Add to Deal Stage option]
 
-### Step 2: Choose pipeline details
-Select the pipeline, stage, and any tags or collaborators to attach, then save the Action block.
+{% endstep %}
 
-📸 Screenshot placeholder:
-> [Screenshot: Add to Deal Stage action form with pipeline, stage, tags, and collaborators]
+{% endstepper %}
 
 ## What happens after it triggers?
 The contact is added to the specified deal stage with the selected tags/collaborators; the flow continues.

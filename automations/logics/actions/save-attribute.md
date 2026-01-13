@@ -9,17 +9,17 @@ Stores captured values into selected contact attributes when this Action runs.
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open the flow and edit the Action node
+{% stepper %}
+{% step %}
+### Open the flow and edit the Action node
 In `Automations` > `Message Flows`, open a flow, select the `Action` step, and choose `Save to Attribute`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Action step showing the Save to Attribute option]
 
-### Step 2: Select attributes to save
-Choose which attributes to populate from the available data, then save the Action block.
+{% endstep %}
 
-📸 Screenshot placeholder:
-> [Screenshot: Save to Attribute action form with attribute selector]
+{% endstepper %}
 
 ## What happens after it triggers?
 The chosen attributes on the contact record are updated with the mapped values; the flow continues to the next step.
