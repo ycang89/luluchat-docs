@@ -81,7 +81,7 @@ Once the status changes to `ready`, you can start receiving and sending messages
 ### Connecting WhatsApp Cloud (WABA)
 
 {% hint style="info" %}
-**Learn More**: For detailed information about WhatsApp Business App (WABA) features and configuration, see the [WABA Documentation](../whatsapp-business-app-waba/page-1.md).
+**Learn More**: For detailed information about WhatsApp Business App (WABA) features and configuration, see the [WABA Documentation](../whatsapp-business-app-waba/index.md).
 {% endhint %}
 
 {% stepper %}

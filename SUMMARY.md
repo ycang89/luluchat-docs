@@ -124,4 +124,11 @@
 
 ## WhatsApp Business App (WABA)
 
-* [Page 1](whatsapp-business-app-waba/page-1.md)
+* [Overview](whatsapp-business-app-waba/index.md)
+  * [Service Window](whatsapp-business-app-waba/service-window.md)
+  * [Charging & Pricing](whatsapp-business-app-waba/charging-pricing.md)
+  * [Message Template Types](whatsapp-business-app-waba/message-template-types.md)
+  * [Coexistence](whatsapp-business-app-waba/coexistence.md)
+  * [Business Verification](whatsapp-business-app-waba/business-verification.md)
+  * [Blue Tick Verification](whatsapp-business-app-waba/blue-tick-verification.md)
+  * [Messaging Limits & Quality](whatsapp-business-app-waba/messaging-limits-quality.md)
