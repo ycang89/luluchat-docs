@@ -18,7 +18,6 @@ Open `Automations` from the left menu to see tabs for `Message Flows`, `Keywords
 ## Sections in Automations
 - [Message Flows](./message-flows.md)
   - [Message Flow Editor](./message-flows-editor.md)
-  - [Actions Library](./actions/index.md)
   - [Starting & Complete Steps](./steps/index.md)
     - [Trigger](./steps/trigger.md)
     - [Complete](./steps/complete.md)
@@ -34,16 +33,17 @@ Open `Automations` from the left menu to see tabs for `Message Flows`, `Keywords
     - [Smart Delay](./logics/smart-delay.md)
     - [Condition](./logics/condition.md)
     - [Randomizer](./logics/randomizer.md)
+  - Fallback & Consent Flows
+    - [Default Flow](./default-flow.md)
+    - [Away Flow](./away-flow.md)
+    - [Absent Flow](./absent-flow.md)
+    - [Opt-In Flow](./opt-in-flow.md)
+    - [Opt-Out Flow](./opt-out-flow.md)
+  - [Actions Library](./actions/index.md)
 - [Keywords](./keywords.md)
 - [Growth Tools](./growth-tools.md)
 - [Workflows](./workflows.md)
 - [Web Widget](./web-widget.md)
-- Fallback & Consent Flows
-  - [Default Flow](./default-flow.md)
-  - [Away Flow](./away-flow.md)
-  - [Absent Flow](./absent-flow.md)
-  - [Opt-In Flow](./opt-in-flow.md)
-  - [Opt-Out Flow](./opt-out-flow.md)
 
 📸 Screenshot placeholder:
 > [Screenshot: Automations page showing tabs for Message Flows, Keywords, Growth Tools, Workflows, Web Widget]

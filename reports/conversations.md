@@ -78,10 +78,93 @@ Click the **Export** button at the top right of the Conversation List table to d
 - **Charts Updated**: Overview charts reflect the selected period and any team member comparisons.
 - **Export Generated**: If you clicked Export, an Excel file downloads with detailed conversation data.
 
+## Understanding Conversation Metrics
+
+### Conversation Lifecycle Events
+
+Every conversation goes through key lifecycle events that are tracked in the report:
+
+- **Conversation Opened**:
+  - **When**: The time of the first incoming message from either the customer or your team that starts a new conversation.
+  - **Who**: The person or system that sent the first message.
+  - **Note**: A new conversation is only opened when there is no ongoing conversation. If a customer sends a message and there's already an active conversation, it continues that conversation instead of opening a new one.
+
+- **Conversation Closed**:
+  - **When**: The time when someone manually closes the conversation using the "Close Conversation" button.
+  - **Who**: The team member who closed the conversation.
+  - **Note**: Conversations must be manually closed to be tracked. Open conversations are not included in resolution time calculations.
+
+- **First Response**:
+  - **When**: The time when the first message is sent from your side (team member, automation, or system) after the customer's first message.
+  - **Who**: The person or system that sent the first response (could be a team member, automation, workflow, or other system entity).
+  - **Note**: This is the first reply from your side, regardless of whether it's from a human or automated system.
+
+- **First Assignee**:
+  - **When**: The time when the first human team member is assigned to the conversation, and when they first responded after being assigned.
+  - **Who**: The first human team member assigned to handle the conversation.
+  - **Note**: Only human team members count as assignees. Automated systems (automations, workflows) do not count as assignees.
+
+- **Last Assignee**:
+  - **When**: The time when the most recent human team member is assigned (if the conversation was handed off), and when they first responded after being assigned.
+  - **Who**: The most recent human team member assigned to the conversation.
+  - **Note**: If a conversation is reassigned multiple times, this shows only the most recent assignee, not all previous assignees.
+
+### Time Calculations
+
+The report calculates two types of time durations:
+
+**Standard Time (24-hour calculation)**:
+- **First Response Time**: Time from when conversation opened to when first response was sent.
+- **Process Time**: Total time from when conversation opened to when it was closed.
+- **Human Process Time**: Time from when first assignee was assigned to when conversation was closed.
+- **Assignment Response Time**: Time from when first assignee was assigned to when they first responded.
+- **Last Assignment Response Time**: Time from when last assignee was assigned to when they first responded.
+
+**Working Hours Time (SLA calculation)**:
+- Calculated based on working hours profiles when available.
+- **For Team Members**: Uses the assignee's personal working hours profile, or team working hours if no personal profile is set.
+- **For Automated Systems**: Always calculated using 24-hour time (no working hours applied).
+- **Which Profile is Used**: Depends on who performed the action. For example:
+  - If Assignee A sent the first response, Assignee A's working hours profile is used.
+  - If Assignee B closed the conversation, Assignee B's working hours profile is used for closing time calculations.
+
+**Note**: Working hours time is preferred when available because it gives a more accurate picture of actual response performance during business hours.
+
+### Who Can Respond to Conversations?
+
+The report tracks different types of responders:
+
+- **User**: The customer or contact who is messaging you.
+- **WA Owner**: Any activity from WhatsApp mobile app or linked devices that's not going through Luluchat (e.g., someone using the WhatsApp mobile app directly on the phone number).
+- **Team User Name**: Your human team members who are assigned to conversations.
+- **Automation**: Messages sent automatically by Message Flows.
+- **Workflow**: Messages sent automatically by Workflows.
+- **Webhook**: Messages sent via webhook API calls triggered by your business systems.
+- **Broadcast**: Messages sent via the Broadcast feature.
+
+**Important**: Only human team members (Team User Name) count as assignees for assignee-related metrics. Automated systems (Automation, Workflow, Webhook, Broadcast) can send responses but don't count as assignees.
+
+### Conversation Timeline Example
+
+Here's how a typical conversation timeline works:
+
+1. **Customer sends first message** → Conversation is **Opened** (opened time recorded).
+2. **Your team or automation responds** → **First Response** time is calculated (time from opened to first response).
+3. **Team member A is assigned** → **First Assignee** is recorded (Assignee A, assignment time recorded).
+4. **Assignee A responds** → **First Assignee Response Time** is calculated (time from assignment to response).
+5. **Conversation is reassigned to Team member B** → **Last Assignee** is updated (Assignee B, new assignment time recorded).
+6. **Assignee B responds** → **Last Assignee Response Time** is calculated (time from B's assignment to B's response).
+7. **Assignee B closes conversation** → Conversation is **Closed** (closed time recorded, resolution time calculated).
+
+**Note**: If a conversation is reassigned, the "Last Assignee Response Time" resets and starts counting from the new assignment time, not from the original assignment.
+
 ## Important behavior to know
 - **Working Hours vs Total Time**: Response and resolution times can show "working hours" (excluding non-working hours) or "total time" (including all hours). Working hours are preferred when available.
 - **Manual Close Required**: Resolution time only tracks conversations that were manually closed using the "Close Conversation" button in the Inbox. Conversations that remain open are not included in resolution time metrics.
 - **First vs Last Assignee**: If a conversation was reassigned, you'll see both the first and last assignee with their respective response and resolution times.
+- **Assignee Reset**: When a conversation is reassigned, the "Last Assignee Response Time" resets and starts counting from the new assignment, not from the original assignment.
+- **Automated Responses**: Automated systems (Message Flows, Workflows, etc.) can send the first response, but only human team members count as assignees.
+- **New Conversation Rule**: A new conversation is only opened when there's no ongoing conversation. If a customer sends a message while a conversation is still open, it continues the existing conversation.
 - **Tag Timeline**: Hover over the tagging activity column to see a timeline of when tags were added or removed.
 - **Sortable Columns**: Many columns can be sorted by clicking the column header.
 - **Tab-Specific Filters**: The conversation list filters change based on which tab you select (Response Time vs Resolution Time).
