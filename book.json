@@ -1,0 +1,14 @@
+{
+  "gitbook": "3.2.3",
+  "title": "Luluchat Documentation",
+  "description": "Complete documentation for Luluchat platform",
+  "plugins": ["theme-default"],
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    }
+  },
+  "styles": {
+    "website": "styles/website.css"
+  }
+}

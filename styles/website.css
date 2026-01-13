@@ -1,0 +1,198 @@
+/* Custom SVG Icons for GitBook Menu - All icons use #6366F1 color scheme */
+
+/* Introduction Section */
+.book-summary ul.summary > li.chapter[data-path*="introduction"] > a:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-image: url('../assets/icons/introduction.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Getting Started Section */
+.book-summary ul.summary > li.chapter[data-path*="register-account"]:first-of-type > a:before,
+.book-summary ul.summary > li.chapter[data-path*="switch-team-channel"]:first-of-type > a:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-image: url('../assets/icons/getting-started.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Dashboard */
+.book-summary ul.summary li[data-path="dashboard.md"] > a:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-image: url('../assets/icons/dashboard.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Inbox */
+.book-summary ul.summary li[data-path="inbox/index.md"] > a:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-image: url('../assets/icons/inbox.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Automations */
+.book-summary ul.summary li[data-path="automations/index.md"] > a:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-image: url('../assets/icons/automations.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Broadcasts */
+.book-summary ul.summary li[data-path="broadcasts.md"] > a:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-image: url('../assets/icons/broadcasts.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Contacts */
+.book-summary ul.summary li[data-path="contacts/index.md"] > a:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-image: url('../assets/icons/contacts.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Message Templates */
+.book-summary ul.summary li[data-path="message-templates.md"] > a:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-image: url('../assets/icons/message-templates.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Reports */
+.book-summary ul.summary li[data-path="reports/index.md"] > a:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-image: url('../assets/icons/reports.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Forms */
+.book-summary ul.summary li[data-path="forms/index.md"] > a:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-image: url('../assets/icons/forms.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Bookings */
+.book-summary ul.summary li[data-path="bookings/index.md"] > a:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-image: url('../assets/icons/bookings.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Tickets */
+.book-summary ul.summary li[data-path="tickets/index.md"] > a:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-image: url('../assets/icons/tickets.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Deals */
+.book-summary ul.summary li[data-path="deals/index.md"] > a:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-image: url('../assets/icons/deals.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Settings */
+.book-summary ul.summary li[data-path="settings/index.md"] > a:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-image: url('../assets/icons/settings.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
