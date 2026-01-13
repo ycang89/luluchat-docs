@@ -57,6 +57,8 @@ Your reply is sent immediately. Assignments, tags, and list changes apply to the
 - [Close Conversation](./close-conversation.md)
 - [Add an Internal Note](./internal-note.md)
 - [Quick Reply](./quick-reply.md)
+- [Remind Me](./remind-me.md)
+- [Custom Lists](./custom-lists.md)
 - [Incognito Mode](./incognito-mode.md)
 - [Sound Settings (Mute/Unmute)](./sound-settings.md)
 - [Conversation Controls (Pin, Mute, Unread, Archive)](./conversation-controls.md)

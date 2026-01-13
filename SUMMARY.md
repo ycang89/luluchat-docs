@@ -1,12 +1,15 @@
 # Summary
 
 * [Register a Luluchat Account](./register-account.md)
+* [Switch Team and Channel](./switch-team-channel.md)
 * [Dashboard](./dashboard.md)
 * [Inbox](./inbox/index.md)
   * [Connect your Channel](./inbox/connect-channel.md)
   * [Close Conversation](./inbox/close-conversation.md)
   * [Add an Internal Note](./inbox/internal-note.md)
   * [Quick Reply](./inbox/quick-reply.md)
+  * [Remind Me](./inbox/remind-me.md)
+  * [Custom Lists](./inbox/custom-lists.md)
   * [Incognito Mode](./inbox/incognito-mode.md)
   * [Sound Settings (Mute/Unmute)](./inbox/sound-settings.md)
   * [Conversation Controls (Pin, Mute, Unread, Archive)](./inbox/conversation-controls.md)

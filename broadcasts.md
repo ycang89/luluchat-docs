@@ -38,6 +38,10 @@ Choose who will receive the broadcast using one or more of these conditions:
 - **File Upload**: Upload a CSV file of phone numbers (must exist in your Contacts first).
 - **Assignee**: Target contacts assigned to specific team members.
 
+**Important**: Only contacts that meet both of these criteria will receive broadcasts:
+- **Imported Contacts**: Contacts must be imported or added through the Contacts page. Contacts who have only messaged you but haven't been added to your Contacts directory will not receive broadcasts.
+- **Not Opted Out**: Contacts must not have opted out. Opted-out contacts are automatically excluded from all broadcasts.
+
 📸 Screenshot placeholder:
 > [Screenshot: Section 2 - Recipient conditions showing tags, manual selection, and upload options]
 
@@ -52,20 +56,178 @@ Choose who will receive the broadcast using one or more of these conditions:
 Click `Create` to finalize. If not scheduled, it will begin sending (respecting your daily limits and hours).
 
 ## What happens after it triggers?
-The system begins delivering the message flow to each recipient. You can track progress from the Broadcasts list, seeing statistics like how many messages are remaining.
+The system begins delivering the message flow to each recipient. You can track progress from the Broadcasts list, seeing statistics like how many messages are remaining. You can also view detailed message status in the **Broadcast Message Queue** section on the broadcast details page.
+
+## Broadcast Message Queue
+The Broadcast Message Queue provides a detailed view of each message's status in your broadcast. You can access it by opening any broadcast from the Broadcasts list and scrolling to the "Broadcast Message Queue" section at the bottom of the page.
+
+### Message Statuses
+The queue organizes messages into six status categories, accessible via tabs:
+
+#### 1. Delivered (Sent)
+Messages that have been successfully sent to recipients. This tab shows:
+- WhatsApp number
+- Contact name
+- Processed timestamp (when the message was sent)
+
+📸 Screenshot placeholder:
+> [Screenshot: Broadcast Message Queue showing Delivered tab with contact list]
+
+#### 2. Read
+Messages that have been read by recipients. This tab shows:
+- WhatsApp number
+- Contact name
+- Processed timestamp (when the message was sent)
+- Link to open the conversation in Inbox
+
+📸 Screenshot placeholder:
+> [Screenshot: Broadcast Message Queue showing Read tab with contact list and inbox links]
+
+#### 3. Replied
+Messages where recipients have replied to your broadcast. This tab shows:
+- WhatsApp number
+- Contact name
+- Processed timestamp (when the message was sent)
+- Link to open the conversation in Inbox
+
+📸 Screenshot placeholder:
+> [Screenshot: Broadcast Message Queue showing Replied tab with contact list]
+
+#### 4. Replied to Given Option
+Messages where recipients have interacted with buttons or quick reply options in your message flow. For example, if your message includes interactive buttons, this tab shows contacts who clicked on those buttons. This tab shows:
+- WhatsApp number
+- Contact name
+- Processed timestamp (when the message was sent)
+- Link to open the conversation in Inbox
+
+📸 Screenshot placeholder:
+> [Screenshot: Broadcast Message Queue showing Replied to Given Option tab]
+
+#### 5. Failed
+Messages that failed to send. This tab shows:
+- WhatsApp number
+- Contact name
+- Remarks (error details explaining why the message failed)
+- Processed timestamp (when the failure occurred)
+
+You can select multiple failed messages and use the "Resend to Selected" button to retry sending them, or use "Resend All" to retry all failed messages.
+
+📸 Screenshot placeholder:
+> [Screenshot: Broadcast Message Queue showing Failed tab with error remarks and resend options]
+
+#### 6. Remaining
+Messages that are still in the queue waiting to be sent. This tab shows:
+- WhatsApp number
+- Contact name
+
+These messages will be sent according to your broadcast settings (sending hours, daily limits, and message interval).
+
+📸 Screenshot placeholder:
+> [Screenshot: Broadcast Message Queue showing Remaining tab with queued contacts]
+
+### Queue Management Actions
+
+#### Pause/Resume Broadcast
+- **Pause**: Click the `Pause` button in the queue toolbar to temporarily stop sending messages. The broadcast will pause, and remaining messages will stay in the queue.
+- **Resume**: If a broadcast is paused, click the `Resume` button to continue sending messages from where it left off.
+
+📸 Screenshot placeholder:
+> [Screenshot: Broadcast Message Queue toolbar showing Pause/Resume button]
+
+#### Resend Failed Messages
+For messages in the "Failed" tab:
+- **Resend All**: Click `Resend All` to retry sending all failed messages.
+- **Resend to Selected**: Select specific failed messages using the checkboxes, then click `Resend to Selected` to retry only those messages.
+
+📸 Screenshot placeholder:
+> [Screenshot: Failed tab with selected messages and Resend to Selected button]
+
+#### Export Queue Data
+Click the `Export` button to download a CSV file of the current tab's data. This is useful for analyzing broadcast performance or creating reports.
+
+📸 Screenshot placeholder:
+> [Screenshot: Export button in queue toolbar]
+
+### How to use the Queue (Step by Step)
+
+#### Step 1: Open Broadcast Details
+From the Broadcasts list, click on any broadcast to open its details page.
+
+📸 Screenshot placeholder:
+> [Screenshot: Broadcasts list with a broadcast selected]
+
+#### Step 2: Navigate to Message Queue
+Scroll down to the "Broadcast Message Queue" section at the bottom of the broadcast details page.
+
+📸 Screenshot placeholder:
+> [Screenshot: Broadcast details page showing Message Queue section]
+
+#### Step 3: View Status by Tab
+Click on any status tab (Delivered, Read, Replied, Replied to Given Option, Failed, Remaining) to view messages in that status.
+
+📸 Screenshot placeholder:
+> [Screenshot: Message Queue tabs showing different statuses]
+
+#### Step 4: Search and Filter
+Use the search box to find specific contacts by WhatsApp number or contact name within each status tab.
+
+📸 Screenshot placeholder:
+> [Screenshot: Search box in Message Queue]
+
+#### Step 5: Manage Queue (if needed)
+- **Pause/Resume**: Use the Pause/Resume button to control broadcast sending.
+- **Resend Failed**: If there are failed messages, select them and click "Resend to Selected" or "Resend All".
+- **Export**: Click Export to download the queue data for analysis.
+
+📸 Screenshot placeholder:
+> [Screenshot: Queue management actions]
 
 ## Important behavior to know
+- **Contact Eligibility**: Only contacts that are:
+  - **Imported to Contacts**: Contacts must be added or imported through the Contacts page. Contacts who have only messaged you but haven't been added to your Contacts directory will not receive broadcasts.
+  - **Not Opted Out**: Contacts who have opted out are automatically excluded from all broadcasts, regardless of your selection criteria.
 - **Daily Limits and Capacity**: Your daily broadcast capacity is determined by your settings in [Settings: Broadcast](./settings/broadcast.md). It depends on your **Broadcast Message Interval**, **Broadcast Start Time**, and **Broadcast End Time**.
 - **Sending Hours**: Broadcasts only send during your configured sending window. If you schedule a broadcast outside these hours, the system will queue it and begin sending at the next start time.
 - **Channel Connection**: Your channel must be connected (`ready` status) for broadcasts to send.
-- **Pause/Resume**: You can pause an active broadcast at any time from the "More" menu in the list view.
+- **Pause/Resume**: You can pause an active broadcast at any time from the "More" menu in the list view or from the Broadcast Message Queue toolbar. When you resume, sending continues from where it left off.
+- **Message Status Tracking**: Message statuses (Delivered, Read, Replied, etc.) are automatically updated as recipients interact with your messages. The queue provides real-time visibility into broadcast performance.
+- **Failed Messages**: Failed messages remain in the "Failed" tab until you manually resend them. Common failure reasons include invalid phone numbers, opted-out contacts, or temporary delivery issues.
+- **Replied to Given Option**: This status specifically tracks interactions with interactive elements (buttons, quick replies) in your message flow, not just any reply. It helps you identify contacts who engaged with specific call-to-action options.
+- **Remaining Queue**: Messages in the "Remaining" tab will be sent automatically according to your broadcast settings. You cannot manually send individual messages from this queue, but you can pause/resume the entire broadcast.
 
 ## Common issues & solutions
 - **Broadcast not sending**: Check if your channel is connected and if you are within your "Broadcast Sending Hours."
-- **Daily limit reached**: If you exceed your daily quota, the remaining messages will wait until your quota resets.
+- **Daily limit reached**: If you exceed your daily quota, the remaining messages will wait until your quota resets. Check the "Remaining" tab in the Message Queue to see queued messages.
 - **CSV upload failed**: Ensure the phone numbers in your file already exist in your Contacts directory.
+- **Contacts not receiving broadcasts**: 
+  - Verify that contacts are imported or added through the Contacts page. Contacts who have only messaged you but haven't been added to Contacts will not receive broadcasts.
+  - Check if contacts have opted out. Opted-out contacts are automatically excluded from broadcasts.
+  - Ensure contacts match your selection criteria (tags, assignee, etc.).
+- **Fewer recipients than expected**: 
+  - Some contacts may have opted out and are automatically excluded.
+  - Contacts who haven't been imported to your Contacts directory are excluded.
+  - Check that your selection criteria (tags, assignee, etc.) match the contacts you want to reach.
+- **Many messages in "Failed" tab**: 
+  - Review the "Remarks" column to understand why messages failed. Common reasons include invalid phone numbers, opted-out contacts, or temporary delivery issues.
+  - Use "Resend to Selected" or "Resend All" to retry failed messages after addressing the underlying issues.
+  - Check your channel connection status - a disconnected channel will cause all messages to fail.
+- **Messages stuck in "Remaining" tab**: 
+  - Check if the broadcast is paused. If paused, click "Resume" to continue sending.
+  - Verify you're within your "Broadcast Sending Hours" - messages only send during configured hours.
+  - Check if you've reached your daily message limit - remaining messages will queue until the limit resets.
+- **Can't see "Replied to Given Option" messages**: 
+  - This tab only shows contacts who interacted with interactive elements (buttons, quick replies) in your message flow.
+  - If your message flow doesn't include interactive elements, this tab will be empty.
+  - Regular text replies appear in the "Replied" tab, not "Replied to Given Option".
 
 ## Best practice 💡
+- **Import Contacts First**: Before creating a broadcast, ensure all intended recipients are imported or added through the Contacts page. Contacts who have only messaged you but aren't in your Contacts directory won't receive broadcasts.
+- **Check Opt-Out Status**: Review your contact list to identify opted-out contacts before creating broadcasts to avoid confusion about delivery.
 - **Test first**: Send the message flow to a test contact before broadcasting to a large group.
 - **Timing matters**: Schedule broadcasts during your audience's active hours for better engagement.
 - **Use tags**: Segment your audience with tags to ensure your message is relevant to the recipients.
+- **Monitor the Queue**: Regularly check the Broadcast Message Queue to track delivery status, identify failed messages, and monitor engagement (read, reply rates).
+- **Review Failed Messages**: Periodically review the "Failed" tab to identify patterns (e.g., invalid numbers, opt-outs) and clean up your contact list.
+- **Use Interactive Elements**: Include buttons or quick replies in your message flow to track engagement via the "Replied to Given Option" tab and improve response rates.
+- **Export for Analysis**: Use the Export feature to download queue data and analyze broadcast performance over time.
+- **Resume Strategically**: If you pause a broadcast, resume it during your configured sending hours to ensure messages are delivered at optimal times.
