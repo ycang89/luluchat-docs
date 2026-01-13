@@ -4,18 +4,33 @@
 Custom Lists allow you to organize conversations into custom categories that you create. Unlike the default inbox lists (All, Awaiting Reply, Unread, etc.), custom lists let you create your own groupings, such as "VIP Customers", "Pending Orders", or "Follow-up Needed". You can add or remove conversations from these lists to keep your inbox organized and easily find specific conversations.
 
 ## Default System Lists
+
 Luluchat provides several default system lists that automatically organize your conversations based on their status and type. These lists cannot be edited, deleted, or hidden, but they help you quickly find conversations that need attention.
 
+{% tabs %}
+{% tab title="Active Conversations" %}
 | List Name | Description | When to Use |
 |-----------|-------------|-------------|
 | **All** | All chats that are not Closed or Archived | Use this list to focus on the most important chats. This is your main working view, showing all active conversations that require attention. |
-| **Awaiting Reply** | Chats that you have not received a response to | Track conversations where you've sent a message but haven't received a reply yet. Use this to monitor conversations waiting for customer responses. |
-| **Unread** | Chats that have unread messages | Quickly identify conversations with messages you haven't read yet. Helps you prioritize conversations that need your immediate attention. |
 | **Needs Reply** | Chats you have yet to respond to | Find conversations where the customer has sent a message but you haven't replied yet. Use this to ensure you don't miss any customer inquiries. |
-| **Groups** | Conversations that you have with 3 or more people | Filter to show only group conversations. Makes it easy to manage team chats and group discussions separately from one-on-one conversations. |
-| **1:1** | All 1:1 conversations | Focus on individual conversations between you and a single contact. Use this to work on personal customer interactions without group chat distractions. |
+| **Unread** | Chats that have unread messages | Quickly identify conversations with messages you haven't read yet. Helps you prioritize conversations that need your immediate attention. |
+{% endtab %}
+
+{% tab title="Status-Based" %}
+| List Name | Description | When to Use |
+|-----------|-------------|-------------|
+| **Awaiting Reply** | Chats that you have not received a response to | Track conversations where you've sent a message but haven't received a reply yet. Use this to monitor conversations waiting for customer responses. |
 | **Closed** | Chats that have been marked Closed | View conversations you've closed. Closed conversations are removed from your main "All" list to keep your active inbox clean. **Important**: When you receive a new message from a closed chat, it will be automatically reopened and moved back to your active lists. |
 | **Archived** | Chats that have been archived | Access conversations you've manually archived. Archived conversations are hidden from your main inbox view but can be accessed from this list when needed. |
+{% endtab %}
+
+{% tab title="Conversation Type" %}
+| List Name | Description | When to Use |
+|-----------|-------------|-------------|
+| **Groups** | Conversations that you have with 3 or more people | Filter to show only group conversations. Makes it easy to manage team chats and group discussions separately from one-on-one conversations. |
+| **1:1** | All 1:1 conversations | Focus on individual conversations between you and a single contact. Use this to work on personal customer interactions without group chat distractions. |
+{% endtab %}
+{% endtabs %}
 
 ## When to use it?
 - **Organize by Priority**: Create lists for high-priority customers or urgent issues.
@@ -26,29 +41,43 @@ Luluchat provides several default system lists that automatically organize your 
 
 ## How to create a custom list (Step by Step)
 
-### Step 1: Open List Settings
+<steps>
+<step>
+**Open List Settings**
+
 In your Inbox, click the gear icon (⚙️) labeled "List Settings" in the top-right area of the inbox tabs.
 
 📸 Screenshot placeholder:
 > [Screenshot: Inbox showing the List Settings gear icon]
+</step>
 
-### Step 2: Create New List
+<step>
+**Create New List**
+
 In the List Settings modal, click the `Add` button to create a new list.
 
 📸 Screenshot placeholder:
 > [Screenshot: List Settings modal with Add button]
+</step>
 
-### Step 3: Enter List Name
+<step>
+**Enter List Name**
+
 In the "New List" modal, enter a name for your custom list (maximum 30 characters). Choose a descriptive name that clearly indicates the purpose of the list.
 
 📸 Screenshot placeholder:
 > [Screenshot: New List modal with name input field]
+</step>
 
-### Step 4: Save the List
+<step>
+**Save the List**
+
 Click the submit button to create the list. You'll see a success message confirming the list was created. The new list will appear in your inbox tabs.
 
 📸 Screenshot placeholder:
 > [Screenshot: Success message and new list appearing in tabs]
+</step>
+</steps>
 
 ## How to manage custom lists (Step by Step)
 
@@ -99,32 +128,48 @@ Click on any conversation in your Inbox to open it.
 📸 Screenshot placeholder:
 > [Screenshot: Conversation opened in Inbox]
 
-#### Step 2: Access List Assignment
+<step>
+**Access List Assignment**
+
 Click the three-dot menu (⋮) in the conversation header, then select `List Assignment`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Three-dot menu showing "List Assignment" option]
+</step>
 
-#### Step 3: Add to Lists
+<step>
+**Add to Lists**
+
 In the "Add Chat to Lists" modal, you'll see all your custom lists. For each list:
 - If the conversation is **not** in the list, click the `Add` button to add it.
 - If the conversation is **already** in the list, you'll see a `Remove` button instead.
 
 📸 Screenshot placeholder:
 > [Screenshot: Add Chat to Lists modal showing lists with Add/Remove buttons]
+</step>
 
-#### Step 4: Confirm
+<step>
+**Confirm**
+
 The conversation is immediately added or removed from the selected list. You'll see a success message confirming the action.
+</step>
+</steps>
 
 ### Method 2: Bulk Management from List Settings
 
-#### Step 1: Open Manage List
+<steps>
+<step>
+**Open Manage List**
+
 Click the three-dot icon (⋮) on any custom list tab, then select `Manage List`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Custom list dropdown showing "Manage List" option]
+</step>
 
-#### Step 2: View Contacts in List
+<step>
+**View Contacts in List**
+
 The "Manage List" modal opens, showing all contacts. You can:
 - **Search**: Use the search box to find specific contacts.
 - **Filter**: Use filters to narrow down contacts by tags, assignee, or other criteria.
@@ -132,27 +177,38 @@ The "Manage List" modal opens, showing all contacts. You can:
 
 📸 Screenshot placeholder:
 > [Screenshot: Manage List modal showing contact table with Add/Remove buttons]
+</step>
 
-#### Step 3: Add Contacts Individually
+<step>
+**Add Contacts Individually**
+
 For each contact in the table:
 - Click `Add` to add the contact to the list.
 - Click `Remove` to remove the contact from the list.
+</step>
 
-#### Step 4: Bulk Add Contacts
+<step>
+**Bulk Add Contacts**
+
 1. Select multiple contacts by checking the boxes next to their names.
 2. Click the `Bulk Add` button at the bottom of the page.
 3. All selected contacts will be added to the list at once.
 
 📸 Screenshot placeholder:
 > [Screenshot: Multiple contacts selected with Bulk Add button visible]
+</step>
 
-#### Step 5: Bulk Remove Contacts
+<step>
+**Bulk Remove Contacts**
+
 1. Select multiple contacts that are already in the list.
 2. Click the `Bulk Remove` button at the bottom of the page.
 3. All selected contacts will be removed from the list at once.
 
 📸 Screenshot placeholder:
 > [Screenshot: Multiple contacts selected with Bulk Remove button visible]
+</step>
+</steps>
 
 ## How to remove conversations from a list (Step by Step)
 
@@ -173,16 +229,17 @@ For each contact in the table:
 - **Search & Filter**: Conversations in custom lists can still be found through search and other filters.
 - **No Data Loss**: Removing a conversation from a list does not delete the conversation. It remains in your inbox and other lists where it was added.
 
-> [!NOTE]
-> **Important behavior to know**
->
-> - **Custom Lists Only**: You can only add/remove conversations from custom lists you create. Default system lists (All, Awaiting Reply, Unread, Needs Reply, Groups, 1:1, Closed, Archived) are system-managed and automatically update based on conversation status. You cannot manually add or remove conversations from default lists.
-> - **Multiple Lists**: A conversation can be in multiple custom lists at the same time. Adding it to one list doesn't remove it from others.
-> - **List Visibility**: Hidden lists don't appear in your inbox tabs but can be managed and shown again from List Settings. Default system lists are always visible and cannot be hidden.
-> - **List Name Limit**: Custom list names are limited to 30 characters.
-> - **Bulk Operations**: You can add or remove multiple conversations at once using the bulk actions in the "Manage List" modal.
-> - **Default Lists**: System default lists (All, Awaiting Reply, Unread, Needs Reply, Groups, 1:1, Closed, Archived) cannot be edited, deleted, or hidden. They automatically update based on conversation properties and status.
-> - **Automatic Updates**: Default system lists automatically update as conversations change status. For example, when you close a conversation, it automatically appears in "Closed" and disappears from "All". When a closed conversation receives a new message, it automatically reopens and returns to "All".
+{% hint style="info" %}
+**Important behavior to know**
+
+- **Custom Lists Only**: You can only add/remove conversations from custom lists you create. Default system lists (All, Awaiting Reply, Unread, Needs Reply, Groups, 1:1, Closed, Archived) are system-managed and automatically update based on conversation status. You cannot manually add or remove conversations from default lists.
+- **Multiple Lists**: A conversation can be in multiple custom lists at the same time. Adding it to one list doesn't remove it from others.
+- **List Visibility**: Hidden lists don't appear in your inbox tabs but can be managed and shown again from List Settings. Default system lists are always visible and cannot be hidden.
+- **List Name Limit**: Custom list names are limited to 30 characters.
+- **Bulk Operations**: You can add or remove multiple conversations at once using the bulk actions in the "Manage List" modal.
+- **Default Lists**: System default lists (All, Awaiting Reply, Unread, Needs Reply, Groups, 1:1, Closed, Archived) cannot be edited, deleted, or hidden. They automatically update based on conversation properties and status.
+- **Automatic Updates**: Default system lists automatically update as conversations change status. For example, when you close a conversation, it automatically appears in "Closed" and disappears from "All". When a closed conversation receives a new message, it automatically reopens and returns to "All".
+{% endhint %}
 
 ## Common issues & solutions
 - **Can't see List Settings button**:

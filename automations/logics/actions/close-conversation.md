@@ -23,14 +23,15 @@ Add the action where the conversation should end, then save and publish the flow
 ## What happens after it triggers?
 The conversation is marked closed in the inbox; downstream steps still run if connected after this action.
 
-> [!NOTE]
-> **Important behavior to know**
->
-> - **Automatic Removal**: Closed conversations are automatically removed from the "All" list and moved to the "Closed" list in your Inbox.
-> - **Reopening**: If a closed conversation receives a new message, it will automatically reopen and return to the "All" list.
-> - **History Preserved**: Closing does not delete history; it only marks the thread as closed.
-> - **Downstream Actions**: If you add steps after this action, they will still execute; place it at the end of the path you want closed.
-> - **Assignee Retention**: Depending on your Inbox settings, the assignee may or may not be retained when a conversation is closed.
+{% hint style="info" %}
+**Important behavior to know**
+
+- **Automatic Removal**: Closed conversations are automatically removed from the "All" list and moved to the "Closed" list in your Inbox.
+- **Reopening**: If a closed conversation receives a new message, it will automatically reopen and return to the "All" list.
+- **History Preserved**: Closing does not delete history; it only marks the thread as closed.
+- **Downstream Actions**: If you add steps after this action, they will still execute; place it at the end of the path you want closed.
+- **Assignee Retention**: Depending on your Inbox settings, the assignee may or may not be retained when a conversation is closed.
+{% endhint %}
 
 ## Common issues & solutions
 - Conversation stayed open: confirm the action is on the published path and the channel is connected.

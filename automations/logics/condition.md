@@ -8,41 +8,56 @@ This node triggers whenever a contact reaches it during a Message Flow. Luluchat
 
 ## How to set it up (Step by Step)
 
-### Step 1: Add the Node
+<steps>
+<step>
+**Add the Node**
+
 In the Message Flow Editor, click **Add Node (+) > Logics > Condition**.
 
 📸 Screenshot placeholder:
 > [Screenshot: Add Node menu with Logics > Condition highlighted]
+</step>
 
-### Step 2: Define your Rules
+<step>
+**Define your Rules**
+
 Click the node to open the conditions builder. Click **Add a Condition** to select your data source (e.g., Contact Tags, Custom Attribute, or Current Time).
 
 📸 Screenshot placeholder:
 > [Screenshot: Condition builder showing the 'Add a Condition' button]
+</step>
 
-### Step 3: Choose Operator and Value
+<step>
+**Choose Operator and Value**
+
 Select how you want to compare the data (e.g., "includes", "is equal to", "is after") and enter the value to match against.
 
 📸 Screenshot placeholder:
 > [Screenshot: Operator and Value selection in the condition builder]
+</step>
 
-### Step 4: Link your Paths
+<step>
+**Link your Paths**
+
 Define the **Next Step** for when the condition is met (Matched) and a **Fallback Step** (Else) for when it is not.
 
 📸 Screenshot placeholder:
 > [Screenshot: Condition node on the board with Matched and Else paths linked to other nodes]
+</step>
+</steps>
 
 ## What happens after it triggers?
 The contact is immediately routed to the next step in the "Matched" path if the rules are true, or the "Else" path if they are not. This happens silently in the background without the customer seeing any "processing" state.
 
-> [!NOTE]
-> **Important behavior to know**
->
-> - **First Match Wins**: If you have multiple condition sets, Luluchat checks them in order and follows the first one that matches.
-> - **The "Else" Path**: Always ensure you have a default path for contacts who don't meet any of your specific conditions to prevent the flow from getting stuck.
-> - **Real-Time Data**: Luluchat uses the most up-to-date information from the contact's profile at the exact moment they reach the node.
-> - **Case Insensitive**: Text comparisons (like Tag names) are generally case-insensitive.
-> - **Contact Activity Context**: When checking "Last Conversed", "Last Contact Replied", or "Last Replied From You", remember that "you" represents the channel, not the individual team member.
+{% hint style="info" %}
+**Important behavior to know**
+
+- **First Match Wins**: If you have multiple condition sets, Luluchat checks them in order and follows the first one that matches.
+- **The "Else" Path**: Always ensure you have a default path for contacts who don't meet any of your specific conditions to prevent the flow from getting stuck.
+- **Real-Time Data**: Luluchat uses the most up-to-date information from the contact's profile at the exact moment they reach the node.
+- **Case Insensitive**: Text comparisons (like Tag names) are generally case-insensitive.
+- **Contact Activity Context**: When checking "Last Conversed", "Last Contact Replied", or "Last Replied From You", remember that "you" represents the channel, not the individual team member.
+{% endhint %}
 
 ## Common issues & solutions
 - **Wrong Path Taken**: Check the order of your conditions. If a broad rule is above a specific one, the broad rule will capture the contact first.

@@ -124,20 +124,21 @@ Click the submit button to transfer all contacts from Assignee A to Assignee B. 
 - **Workflow Impact**: If you have "Assignee Changes" workflows enabled, they may trigger automatically. Consider disabling them before bulk transfers to avoid unintended automation reactions.
 - **Refresh Required**: You may need to refresh the contacts list to see the updated assignments.
 
-> [!WARNING]
-> **Important behavior to know**
->
-> ### Bulk Add/Remove Tags
-> - **Multiple Selection**: You can select multiple tags to add or remove in a single operation.
-> - **Existing Tags**: Adding a tag that a contact already has won't cause an error - the tag is simply maintained.
-> - **No Impact on Other Tags**: Removing specific tags doesn't affect other tags on the contacts.
-> - **Selection Required**: You must select at least one contact before the Bulk Update button becomes available.
->
-> ### Bulk Transfer Assignee
-> - **All Contacts Transferred**: The transfer affects ALL contacts assigned to the source assignee, regardless of filters or current page view.
-> - **Workflow Considerations**: If you have workflows that trigger on assignee changes, they will fire for each transferred contact. This could cause a chain reaction of automations.
-> - **One-Way Transfer**: This is a complete transfer - contacts move from Assignee A to Assignee B. You cannot undo this action easily.
-> - **Deleted Team Members**: If a team member is deleted, their name will appear with a "[DELETED]" prefix in the dropdown, but you can still transfer their contacts.
+{% hint style="warning" %}
+**Important behavior to know**
+
+### Bulk Add/Remove Tags
+- **Multiple Selection**: You can select multiple tags to add or remove in a single operation.
+- **Existing Tags**: Adding a tag that a contact already has won't cause an error - the tag is simply maintained.
+- **No Impact on Other Tags**: Removing specific tags doesn't affect other tags on the contacts.
+- **Selection Required**: You must select at least one contact before the Bulk Update button becomes available.
+
+### Bulk Transfer Assignee
+- **All Contacts Transferred**: The transfer affects ALL contacts assigned to the source assignee, regardless of filters or current page view.
+- **Workflow Considerations**: If you have workflows that trigger on assignee changes, they will fire for each transferred contact. This could cause a chain reaction of automations.
+- **One-Way Transfer**: This is a complete transfer - contacts move from Assignee A to Assignee B. You cannot undo this action easily.
+- **Deleted Team Members**: If a team member is deleted, their name will appear with a "[DELETED]" prefix in the dropdown, but you can still transfer their contacts.
+{% endhint %}
 
 ## Common issues & solutions
 

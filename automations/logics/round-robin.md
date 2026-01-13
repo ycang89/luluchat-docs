@@ -31,13 +31,14 @@ For each round, click **Choose Next Step** to link it to the desired path or tea
 ## What happens after it triggers?
 The contact is automatically routed to the next round in sequence. The first contact goes to Round 1, the second to Round 2, and so on. Once all rounds have been used, it cycles back to Round 1.
 
-> [!NOTE]
-> **Important behavior to know**
->
-> - **Sequential Cycling**: Round Robin cycles through rounds in strict order. If you have 3 rounds, the 4th contact will go to Round 1, the 5th to Round 2, and so on.
-> - **Persistent Memory**: The node remembers which round was last used, even if contacts arrive hours or days apart. This ensures fair distribution over time.
-> - **Re-ordering**: If you delete a round, the remaining rounds are automatically re-sequenced to maintain the cycle.
-> - **Dynamic Re-ordering**: If you change the order of rounds in the editor, the sequence is updated immediately for future contacts.
+{% hint style="info" %}
+**Important behavior to know**
+
+- **Sequential Cycling**: Round Robin cycles through rounds in strict order. If you have 3 rounds, the 4th contact will go to Round 1, the 5th to Round 2, and so on.
+- **Persistent Memory**: The node remembers which round was last used, even if contacts arrive hours or days apart. This ensures fair distribution over time.
+- **Re-ordering**: If you delete a round, the remaining rounds are automatically re-sequenced to maintain the cycle.
+- **Dynamic Re-ordering**: If you change the order of rounds in the editor, the sequence is updated immediately for future contacts.
+{% endhint %}
 
 ## Common issues & solutions
 - **Uneven distribution**: Round Robin ensures equal distribution over time. If you notice one round getting more traffic, check that all rounds are properly linked and the flow is published.

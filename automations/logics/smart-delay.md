@@ -29,15 +29,16 @@ Set the duration (minutes/hours/days) and ensure the `answered` and `not answere
 - **Fixed Delay**: After the specified time period (minutes, hours, or days), the flow automatically continues to the next step.
 - **Wait for Reply**: The flow pauses and waits for the customer to respond. Once they send any message, the flow continues on the "answered" path. If no reply arrives, it follows the "not answered" path after the delay period ends.
 
-> [!NOTE]
-> **Important behavior to know**
->
-> - **Both Branches Required**: Both the "answered" and "not answered" branches should be connected to avoid stalls. If either path is missing, the flow will stall.
-> - **Reply Detection**: In standard mode, any message from the customer (text, image, or media) counts as a reply. In strict mode, only specific interactions (like clicking a button or submitting a form) will trigger the "answered" path.
-> - **24/7 Operation**: Delay timers run continuously, even during weekends or outside business hours. Messages will be sent when the timer expires, regardless of your team's working hours.
-> - **Manual Override**: If you manually start a new flow for a contact who is currently waiting in a Smart Delay, the pending delay is automatically cleared to prevent conflicting messages.
-> - **Real-Time Timers**: The timer runs in real time; editing the flow after publishing does not change timers already in progress.
-> - **Separate from Delay**: Smart Delay is separate from the basic `Delay` action; it has reply-aware branching capabilities.
+{% hint style="info" %}
+**Important behavior to know**
+
+- **Both Branches Required**: Both the "answered" and "not answered" branches should be connected to avoid stalls. If either path is missing, the flow will stall.
+- **Reply Detection**: In standard mode, any message from the customer (text, image, or media) counts as a reply. In strict mode, only specific interactions (like clicking a button or submitting a form) will trigger the "answered" path.
+- **24/7 Operation**: Delay timers run continuously, even during weekends or outside business hours. Messages will be sent when the timer expires, regardless of your team's working hours.
+- **Manual Override**: If you manually start a new flow for a contact who is currently waiting in a Smart Delay, the pending delay is automatically cleared to prevent conflicting messages.
+- **Real-Time Timers**: The timer runs in real time; editing the flow after publishing does not change timers already in progress.
+- **Separate from Delay**: Smart Delay is separate from the basic `Delay` action; it has reply-aware branching capabilities.
+{% endhint %}
 
 ## Common issues & solutions
 - **Flow stopped**: Ensure both the "answered" and "not answered" paths are connected to next steps. If either path is missing, the flow will stall.

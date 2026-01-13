@@ -11,19 +11,28 @@ Remind Me is a feature that lets you set reminders for conversations in your Inb
 
 ## How to create a reminder (Step by Step)
 
-### Step 1: Open a Conversation
+<steps>
+<step>
+**Open a Conversation**
+
 In your Inbox, click on any conversation to open it.
 
 📸 Screenshot placeholder:
 > [Screenshot: Inbox with a conversation selected and opened]
+</step>
 
-### Step 2: Access Remind Me
+<step>
+**Access Remind Me**
+
 Click the three-dot menu (⋮) or the "Remind me" button in the conversation header bar.
 
 📸 Screenshot placeholder:
 > [Screenshot: Conversation header showing three-dot menu with "Remind me" option]
+</step>
 
-### Step 3: Fill in Reminder Details
+<step>
+**Fill in Reminder Details**
+
 In the "Create a Reminder" modal, configure your reminder:
 
 - **Notify to Team User** (Required): Select one or more team members who should receive the reminder notification. You can select multiple users.
@@ -34,28 +43,42 @@ In the "Create a Reminder" modal, configure your reminder:
 
 📸 Screenshot placeholder:
 > [Screenshot: Create a Reminder modal with all fields filled in]
+</step>
 
-### Step 4: Save the Reminder
+<step>
+**Save the Reminder**
+
 Click the submit button to create the reminder. You'll see a success message confirming the reminder was created with the date and time.
 
 📸 Screenshot placeholder:
 > [Screenshot: Success message showing reminder created confirmation]
+</step>
+</steps>
 
 ## How to view and manage reminders (Step by Step)
 
-### Step 1: Open Notifications
+<steps>
+<step>
+**Open Notifications**
+
 Click the bell icon (🔔) in the header bar to open the notifications panel.
 
 📸 Screenshot placeholder:
 > [Screenshot: Header bar with bell icon highlighted]
+</step>
 
-### Step 2: Switch to Reminders Tab
+<step>
+**Switch to Reminders Tab**
+
 In the notifications panel, click the **"Reminders"** tab to view your reminders.
 
 📸 Screenshot placeholder:
 > [Screenshot: Notifications panel showing Notifications and Reminders tabs]
+</step>
 
-### Step 3: Filter Reminders
+<step>
+**Filter Reminders**
+
 Use the segmented control to filter reminders by status:
 - **Upcoming**: Reminders scheduled for future dates
 - **Overdue**: Reminders that have passed their scheduled time but haven't been marked as done
@@ -63,14 +86,20 @@ Use the segmented control to filter reminders by status:
 
 📸 Screenshot placeholder:
 > [Screenshot: Reminders tab showing Upcoming, Overdue, and Done filter options]
+</step>
 
-### Step 4: Search Reminders (Optional)
+<step>
+**Search Reminders (Optional)**
+
 Use the search box to find specific reminders by title or description.
 
 📸 Screenshot placeholder:
 > [Screenshot: Search box in Reminders tab]
+</step>
 
-### Step 5: Manage Reminders
+<step>
+**Manage Reminders**
+
 For each reminder, you can:
 - **View Details**: Click on a reminder to see its full details.
 - **Edit**: Click the edit icon to modify the reminder (only for reminders you created).
@@ -80,6 +109,8 @@ For each reminder, you can:
 
 📸 Screenshot placeholder:
 > [Screenshot: Reminder list showing action buttons for edit, mark as done, and delete]
+</step>
+</steps>
 
 ## What happens after you create a reminder?
 - **Reminder Created**: The reminder is saved and appears in your Reminders list.
@@ -89,16 +120,17 @@ For each reminder, you can:
 - **Reminder Appears**: The reminder appears in the Reminders tab under "Upcoming" until its scheduled time.
 - **Status Updates**: After the scheduled time passes, the reminder moves to "Overdue" if not marked as done.
 
-> [!NOTE]
-> **Important behavior to know**
->
-> - **Pro Plan Feature**: Mobile push notifications (WhatsApp app notifications) are only available for Pro plan subscribers. All users receive web notifications.
-> - **Time Intervals**: Time selection is limited to 15-minute intervals (e.g., 09:00, 09:15, 09:30, 09:45).
-> - **Default Values**: When creating a reminder, the title is pre-filled with "Follow up with [Contact Name]", the date defaults to tomorrow, and the time defaults to 09:00.
-> - **Edit Permissions**: Only the user who created a reminder can edit it. Other team members can view but not modify reminders created by others.
-> - **Multiple Notifications**: You can select multiple team members to notify. All selected members will receive the notification at the scheduled time.
-> - **Reminder Link**: Each reminder is linked to the specific conversation where it was created. You can click "Go to Chat" to return to that conversation.
-> - **Automatic Status**: Reminders automatically move from "Upcoming" to "Overdue" when their scheduled time passes (if not marked as done).
+{% hint style="info" %}
+**Important behavior to know**
+
+- **Pro Plan Feature**: Mobile push notifications (WhatsApp app notifications) are only available for Pro plan subscribers. All users receive web notifications.
+- **Time Intervals**: Time selection is limited to 15-minute intervals (e.g., 09:00, 09:15, 09:30, 09:45).
+- **Default Values**: When creating a reminder, the title is pre-filled with "Follow up with [Contact Name]", the date defaults to tomorrow, and the time defaults to 09:00.
+- **Edit Permissions**: Only the user who created a reminder can edit it. Other team members can view but not modify reminders created by others.
+- **Multiple Notifications**: You can select multiple team members to notify. All selected members will receive the notification at the scheduled time.
+- **Reminder Link**: Each reminder is linked to the specific conversation where it was created. You can click "Go to Chat" to return to that conversation.
+- **Automatic Status**: Reminders automatically move from "Upcoming" to "Overdue" when their scheduled time passes (if not marked as done).
+{% endhint %}
 
 ## Common issues & solutions
 - **Can't see Remind Me option**:

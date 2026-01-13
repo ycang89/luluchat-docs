@@ -18,11 +18,28 @@ Go to `Automations` > `Keywords` from the left menu.
 > [Screenshot: Keywords page showing a list of keyword entries with their match conditions and linked flows]
 
 ### Step 2: Review Your Keywords
+
 Each row in the list shows:
-- **Match Condition**: How the keyword is matched (is, contain, contain all, begin with, end with).
-- **Keywords**: The actual words or phrases (displayed as tags).
-- **Linked Flow**: Which Message Flow will start when this keyword is triggered.
-- **Edit Button**: Click to open the flow's Starting Step and modify the keyword trigger.
+
+{% columns %}
+{% column %}
+**Match Condition**
+- How the keyword is matched
+- Options: is, contain, contain all, begin with, end with
+{% endcolumn %}
+
+{% column %}
+**Keywords**
+- The actual words or phrases
+- Displayed as tags
+{% endcolumn %}
+
+{% column %}
+**Linked Flow**
+- Which Message Flow will start
+- Click to view flow details
+{% endcolumn %}
+{% endcolumns %}
 
 📸 Screenshot placeholder:
 > [Screenshot: A keyword list item showing "Message contain [sales, discount] tags" and the linked flow name]
@@ -44,16 +61,17 @@ Click the **Export** button to download an Excel file containing all your keywor
 - **Editing**: Clicking "Edit" takes you directly to the Message Flow editor where you can modify the keyword trigger in the Starting Step.
 - **Exporting**: You receive an Excel file with all keyword data for offline review or backup.
 
-> [!NOTE]
-> **Important behavior to know**
->
-> - **Read-Only View**: This page shows keywords but doesn't allow direct editing. To change a keyword, click "Edit" to open the flow's Starting Step.
-> - **All Flows**: The list includes keywords from all Message Flows in your account, not just active ones.
-> - **Search Functionality**: The search box filters keywords by the actual keyword text, not by flow name.
-> - **Case Insensitive**: Keyword matching is case-insensitive. "HELLO", "hello", and "Hello" all match the same keyword.
-> - **Exact Match Required**: For the "is" condition, the entire message must exactly match the keyword (ignoring case).
-> - **First Match Wins**: If multiple keywords match a message, the flow associated with the first matching keyword (in the list order) will trigger.
-> - **Trigger Limitation**: You can configure re-trigger rules in Flow Settings to control how often a keyword can trigger the same flow for the same contact.
+{% hint style="info" %}
+**Important behavior to know**
+
+- **Read-Only View**: This page shows keywords but doesn't allow direct editing. To change a keyword, click "Edit" to open the flow's Starting Step.
+- **All Flows**: The list includes keywords from all Message Flows in your account, not just active ones.
+- **Search Functionality**: The search box filters keywords by the actual keyword text, not by flow name.
+- **Case Insensitive**: Keyword matching is case-insensitive. "HELLO", "hello", and "Hello" all match the same keyword.
+- **Exact Match Required**: For the "is" condition, the entire message must exactly match the keyword (ignoring case).
+- **First Match Wins**: If multiple keywords match a message, the flow associated with the first matching keyword (in the list order) will trigger.
+- **Trigger Limitation**: You can configure re-trigger rules in Flow Settings to control how often a keyword can trigger the same flow for the same contact.
+{% endhint %}
 
 ## Common issues & solutions
 - **Can't find a keyword**: Use the search box to filter the list. Remember that keywords are case-insensitive, so search for any variation.

@@ -1,26 +1,81 @@
 # Contacts
 
 ## What is the Contacts Module?
+
 The Contacts module is your central audience hub. It is where you store, segment, and manage everyone who has ever interacted with your business on WhatsApp. Think of it as your WhatsApp-specific CRM.
 
+{% hint style="info" %}
+**Key Features**
+
+- **Centralized Database**: All your WhatsApp contacts in one place
+- **Smart Segmentation**: Organize contacts with tags and custom attributes
+- **Team Collaboration**: Assign contacts to team members for better management
+- **Bulk Operations**: Import, export, and update multiple contacts at once
+{% endhint %}
+
 ## Audience Overview
+
 In the **Contacts List**, you can see:
-- **Identity**: Contact name, avatar, and WhatsApp number.
-- **Segmentation**: Tags and Lists (Inbox Tabs) applied to each person.
-- **Ownership**: The team member (Assignee) responsible for the relationship.
-- **Engagement**: Total messages sent and received.
-- **Consent**: Opt-in/Opt-out status for marketing messages.
+
+{% columns %}
+{% column %}
+**Identity**
+- Contact name
+- Avatar
+- WhatsApp number
+{% endcolumn %}
+
+{% column %}
+**Segmentation**
+- Tags
+- Lists (Inbox Tabs)
+- Custom attributes
+{% endcolumn %}
+
+{% column %}
+**Management**
+- Assignee (owner)
+- Engagement metrics
+- Opt-in/Opt-out status
+{% endcolumn %}
+{% endcolumns %}
 
 ## Managing Individual Contacts
+
 Click on any contact's name to open their **Details Form**. From here you can:
-- Update their **Display Name** or **Remarks**.
-- Manage their **Tags** and **Assignee**.
-- View and edit **Custom Attributes** (e.g., Company, Email, Birthday).
-- Toggle their **Opt-In** status.
+
+<steps>
+<step>
+**Update Profile Information**
+
+Update their **Display Name** or **Remarks** to personalize how they appear in your workspace.
+</step>
+
+<step>
+**Manage Segmentation**
+
+Manage their **Tags** and **Assignee** to organize and route conversations effectively.
+</step>
+
+<step>
+**Edit Custom Data**
+
+View and edit **Custom Attributes** (e.g., Company, Email, Birthday) to store additional information.
+</step>
+
+<step>
+**Control Messaging**
+
+Toggle their **Opt-In** status to manage consent for marketing messages.
+</step>
+</steps>
 
 📸 Screenshot placeholder:
 > [Screenshot: Contacts list view with several contacts and their tags/assignees]
 
 ## Module Structure
-- [Import & Export](./import-export.md): Bulk add contacts or download your audience data.
-- [Bulk Updates & Actions](./bulk-actions.md): Manage segments of your audience at once.
+
+{% cards %}
+{% card title="Import & Export" description="Bulk add contacts or download your audience data" link="./import-export.md" /%}
+{% card title="Bulk Updates & Actions" description="Manage segments of your audience at once" link="./bulk-actions.md" /%}
+{% endcards %}

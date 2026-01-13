@@ -35,43 +35,58 @@ Message Flows are built using different types of nodes and steps:
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open Message Flows
-Go to `Automations` > `Message Flows`. You’ll see the list plus `Create Message Flow` and `Create from template`.
+<steps>
+<step>
+**Open Message Flows**
+
+Go to `Automations` > `Message Flows`. You'll see the list plus `Create Message Flow` and `Create from template`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Message Flows list showing the Create Message Flow button and Create from template link]
+</step>
 
-### Step 2: Create a flow
+<step>
+**Create a flow**
+
 Select `Create Message Flow` to name your flow (or pick `Create from template` to start faster), then save to open the builder.
 
 📸 Screenshot placeholder:
 > [Screenshot: Create Message Flow modal with name field and Create action]
+</step>
 
-### Step 3: Build and save
+<step>
+**Build and save**
+
 In the flow builder, add steps and messages, then save/publish. If you need a fallback flow (away/absent/opt-in/out/default), configure its message and linked flows from the dedicated options.
 
 📸 Screenshot placeholder:
 > [Screenshot: Flow builder canvas with steps and a Save/Publish control]
+</step>
 
-### Step 4: Link a trigger
+<step>
+**Link a trigger**
+
 Attach the flow to a trigger (keyword, growth tool, web widget, or workflow action) so it starts automatically.
 
 📸 Screenshot placeholder:
 > [Screenshot: Trigger configuration showing a dropdown to select the flow to run]
+</step>
+</steps>
 
 ## What happens after it triggers?
 The flow starts immediately, sending each step in order, routing or tagging as configured, and moving the contact through the designed path.
 
-> [!NOTE]
-> **Important behavior to know**
->
-> - **Activation Required**: Flows must be activated (published) before they can trigger. Draft flows won't run.
-> - **Channel Dependency**: Flows only work when your channel is connected and in `ready` status. Otherwise flows won't fire (you'll see "Channel not connected").
-> - **Trigger Required**: Flows stay inactive until linked to a trigger or set as a fallback (default/away/opt-in/out/absent).
-> - **Publishing**: Publishing saves the current version; drafts won't run.
-> - **One Trigger Per Contact**: By default, a flow triggers once per contact per trigger event, unless you configure re-trigger limitations in Flow Settings.
-> - **Re-trigger Rules**: You can set up re-trigger conditions in Flow Settings, such as "trigger again if X days have passed" or "trigger maximum Y times per period."
-> - **Flow Naming**: Unique, clear flow names help when selecting from trigger dropdowns.
+{% hint style="info" %}
+**Important behavior to know**
+
+- **Activation Required**: Flows must be activated (published) before they can trigger. Draft flows won't run.
+- **Channel Dependency**: Flows only work when your channel is connected and in `ready` status. Otherwise flows won't fire (you'll see "Channel not connected").
+- **Trigger Required**: Flows stay inactive until linked to a trigger or set as a fallback (default/away/opt-in/out/absent).
+- **Publishing**: Publishing saves the current version; drafts won't run.
+- **One Trigger Per Contact**: By default, a flow triggers once per contact per trigger event, unless you configure re-trigger limitations in Flow Settings.
+- **Re-trigger Rules**: You can set up re-trigger conditions in Flow Settings, such as "trigger again if X days have passed" or "trigger maximum Y times per period."
+- **Flow Naming**: Unique, clear flow names help when selecting from trigger dropdowns.
+{% endhint %}
 
 ## Common issues & solutions
 - Flow didn’t run: confirm the channel is connected and the flow is linked to a trigger.

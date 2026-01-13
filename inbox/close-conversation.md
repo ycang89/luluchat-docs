@@ -9,23 +9,34 @@ Closes the current thread in Inbox when you’re done, marking it as resolved wh
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open the conversation
+<steps>
+<step>
+**Open the conversation**
+
 In `Inbox`, select the conversation you want to close.
 
 📸 Screenshot placeholder:
 > [Screenshot: Conversation thread open with action bar visible]
+</step>
 
-### Step 2: Click Close
+<step>
+**Click Close**
+
 Use the `Close` action on the conversation toolbar to mark it resolved.
 
 📸 Screenshot placeholder:
 > [Screenshot: Close button highlighted on the action bar]
+</step>
 
-### Step 3: Confirm status
+<step>
+**Confirm status**
+
 The thread status updates to closed; it leaves open queues but remains searchable in history.
 
 📸 Screenshot placeholder:
 > [Screenshot: Conversation showing closed status indicator]
+</step>
+</steps>
 
 ## What happens after it triggers?
 The conversation moves out of active views, stays in history, and any downstream automations that depend on open status stop for this thread.

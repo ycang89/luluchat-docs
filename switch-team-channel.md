@@ -90,13 +90,16 @@ After switching, you'll see the new channel's phone number displayed in the Chan
   - All conversations and contacts are filtered to the selected channel.
   - If switching to an unconnected channel, you'll see the channel setup page.
 
-## Important behavior to know
+{% hint style="info" %}
+**Important behavior to know**
+
 - **Team Switch Reload**: Switching teams always reloads the page to ensure all data is refreshed for the new team.
 - **Channel Status**: You can switch to channels even if they're not connected, but you'll need to complete the connection setup before using them.
 - **Current Selection**: The current team and channel are always indicated with a selected radio button or "Current Selected" label.
 - **Data Isolation**: Each team has its own contacts, conversations, settings, and channels. Data does not carry over between teams.
 - **Single Team**: If you only belong to one team, the dropdown will show "Current Team" instead of "Switch Teams".
 - **Channel Connection Required**: To use a channel for messaging, it must be connected (status: "ready"). Unconnected channels will show "Connect Now" instead of "Switch".
+{% endhint %}
 
 ## Common issues & solutions
 - **Can't see other teams**:

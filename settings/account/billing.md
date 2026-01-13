@@ -35,12 +35,13 @@ Review the **Billing History** table at the bottom to see past orders, amounts, 
 📸 Screenshot placeholder:
 > [Screenshot: Billing History table]
 
-> [!NOTE]
-> **Important behavior to know**
->
-> - **Auto-Renewal**: Most plans renew automatically at the end of the period.
-> - **Usage Reset**: Monthly message quotas reset on your billing anniversary.
-> - **Unsubscribe Process**: Clicking "Unsubscribe Plan" drafts a cancellation email to the billing team. Your subscription will remain active until the cancellation is processed.
+{% hint style="info" %}
+**Important behavior to know**
+
+- **Auto-Renewal**: Most plans renew automatically at the end of the period.
+- **Usage Reset**: Monthly message quotas reset on your billing anniversary.
+- **Unsubscribe Process**: Clicking "Unsubscribe Plan" drafts a cancellation email to the billing team. Your subscription will remain active until the cancellation is processed.
+{% endhint %}
 
 ## Best practice 💡
 - **Check Limits Early**: Monitor your message and user quotas to avoid service interruptions.

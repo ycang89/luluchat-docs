@@ -1,27 +1,52 @@
 # Reports
 
 ## What is Reports?
+
 Reports is your analytics hub in Luluchat, providing insights into conversations, team performance, tag usage, and system activity. Use Reports to track key metrics, identify trends, and make data-driven decisions about your customer communication strategy.
 
+{% hint style="info" %}
+**Key Benefits**
+
+- **Performance Tracking**: Monitor team response times and productivity
+- **Data-Driven Decisions**: Identify trends and optimize your workflows
+- **Export & Analysis**: Download data for deeper analysis in Excel
+- **Real-Time Insights**: See current metrics updated as activity occurs
+{% endhint %}
+
 ## Available Reports
-- **Conversations**: Track response times, resolution times, and conversation volume
-- **Tags**: Monitor tag growth and see which tags are added or removed over time
-- **Team Users**: Analyze individual team member performance and workload
-- **Logs**: View message activity and new contact growth patterns
+
+{% cards %}
+{% card title="Conversations" description="Track response times, resolution times, and conversation volume" link="./conversations.md" /%}
+{% card title="Tags" description="Monitor tag growth and usage over time" link="./tags.md" /%}
+{% card title="Team Users" description="Analyze individual team member performance" link="./team-users.md" /%}
+{% card title="Logs" description="View message activity and contact growth patterns" link="./logs.md" /%}
+{% endcards %}
 
 ## How to access Reports
+
 Go to `Reports` from the left-hand menu to see all available report types. Each report type has its own dedicated page with specific metrics and filters.
 
 📸 Screenshot placeholder:
 > [Screenshot: Reports menu in the left navigation]
 
 ## Common features across all Reports
-- **Date Range Selection**: All reports allow you to filter data by date range using preset options (Last 7 days, Last 30 days, This month, This year) or custom date ranges.
-- **Export Functionality**: Most reports include an Export button to download data as Excel files for offline analysis.
-- **Real-time Data**: Reports reflect current data from your Luluchat account and update as new activity occurs.
 
-## Related Documentation
-- [Conversations Report](./conversations.md) - Detailed conversation analytics
-- [Tags Report](./tags.md) - Tag growth and usage tracking
-- [Team Users Report](./team-users.md) - Team performance metrics
-- [Logs Report](./logs.md) - Message and contact activity logs
+{% columns %}
+{% column %}
+**Date Range Selection**
+- Preset options (Last 7/30 days, This month/year)
+- Custom date range picker
+{% endcolumn %}
+
+{% column %}
+**Export Functionality**
+- Download as Excel files
+- Offline analysis support
+{% endcolumn %}
+
+{% column %}
+**Real-time Data**
+- Current account data
+- Updates as activity occurs
+{% endcolumn %}
+{% endcolumns %}

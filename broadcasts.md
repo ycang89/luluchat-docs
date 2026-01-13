@@ -10,27 +10,39 @@ Broadcasts allow you to send a message flow to a large group of contacts at once
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open Broadcasts
+<steps>
+<step>
+**Open Broadcasts**
+
 Click `Broadcasts` in the left menu to view your broadcast list.
 
 📸 Screenshot placeholder:
 > [Screenshot: Broadcasts list view with 'Create Broadcast' button]
+</step>
 
-### Step 2: Create a new broadcast
+<step>
+**Create a new broadcast**
+
 Click the `Create Broadcast` button. You will be guided through a 3-step process.
 
 📸 Screenshot placeholder:
 > [Screenshot: Create Broadcast page showing the three configuration sections]
+</step>
 
-### Step 3: Fill up broadcast details
+<step>
+**Fill up broadcast details**
+
 - **Broadcast Name**: Enter an internal name for your reference (e.g., "Monthly Newsletter").
 - **Message Flow**: Choose the message flow you want to deliver. Only activated flows are listed.
 - **Internal Notes**: (Optional) Add notes for your team to provide context about this broadcast.
 
 📸 Screenshot placeholder:
 > [Screenshot: Section 1 - Broadcast details with name and flow selection]
+</step>
 
-### Step 4: Define recipients
+<step>
+**Define recipients**
+
 Choose who will receive the broadcast using one or more of these conditions:
 - **Tags**: Include or exclude contacts based on their tags.
 - **Manual Selection**: Pick specific contacts from your directory.
@@ -38,22 +50,32 @@ Choose who will receive the broadcast using one or more of these conditions:
 - **File Upload**: Upload a CSV file of phone numbers (must exist in your Contacts first).
 - **Assignee**: Target contacts assigned to specific team members.
 
+{% hint style="warning" %}
 **Important**: Only contacts that meet both of these criteria will receive broadcasts:
 - **Imported Contacts**: Contacts must be imported or added through the Contacts page. Contacts who have only messaged you but haven't been added to your Contacts directory will not receive broadcasts.
 - **Not Opted Out**: Contacts must not have opted out. Opted-out contacts are automatically excluded from all broadcasts.
+{% endhint %}
 
 📸 Screenshot placeholder:
 > [Screenshot: Section 2 - Recipient conditions showing tags, manual selection, and upload options]
+</step>
 
-### Step 5: Configure advanced settings
+<step>
+**Configure advanced settings**
+
 - **Scheduling**: Toggle "Yes" to pick a future date and time for the broadcast.
 - **Archive Chat**: Toggle "Yes" to automatically move these conversations to the Archived list in your Inbox after the broadcast is sent.
 
 📸 Screenshot placeholder:
 > [Screenshot: Section 3 - Advanced settings with scheduling and archive toggles]
+</step>
 
-### Step 6: Review and save
+<step>
+**Review and save**
+
 Click `Create` to finalize. If not scheduled, it will begin sending (respecting your daily limits and hours).
+</step>
+</steps>
 
 ## What happens after it triggers?
 The system begins delivering the message flow to each recipient. You can track progress from the Broadcasts list, seeing statistics like how many messages are remaining. You can also view detailed message status in the **Broadcast Message Queue** section on the broadcast details page.
@@ -133,20 +155,21 @@ Use the search box to find specific contacts by WhatsApp number or contact name 
 📸 Screenshot placeholder:
 > [Screenshot: Queue management actions]
 
-> [!NOTE]
-> **Important behavior to know**
->
-> - **Contact Eligibility**: Only contacts that are:
->   - **Imported to Contacts**: Contacts must be added or imported through the Contacts page. Contacts who have only messaged you but haven't been added to your Contacts directory will not receive broadcasts.
->   - **Not Opted Out**: Contacts who have opted out are automatically excluded from all broadcasts, regardless of your selection criteria.
-> - **Daily Limits and Capacity**: Your daily broadcast capacity is determined by your settings in [Settings: Broadcast](./settings/broadcast.md). It depends on your **Broadcast Message Interval**, **Broadcast Start Time**, and **Broadcast End Time**.
-> - **Sending Hours**: Broadcasts only send during your configured sending window. If you schedule a broadcast outside these hours, the system will queue it and begin sending at the next start time.
-> - **Channel Connection**: Your channel must be connected (`ready` status) for broadcasts to send.
-> - **Pause/Resume**: You can pause an active broadcast at any time from the "More" menu in the list view or from the Broadcast Message Queue toolbar. When you resume, sending continues from where it left off.
-> - **Message Status Tracking**: Message statuses (Delivered, Read, Replied, etc.) are automatically updated as recipients interact with your messages. The queue provides real-time visibility into broadcast performance.
-> - **Failed Messages**: Failed messages remain in the "Failed" tab until you manually resend them. Common failure reasons include invalid phone numbers, opted-out contacts, or temporary delivery issues.
-> - **Replied to Given Option**: This status specifically tracks interactions with interactive elements (buttons, quick replies) in your message flow, not just any reply. It helps you identify contacts who engaged with specific call-to-action options.
-> - **Remaining Queue**: Messages in the "Remaining" tab will be sent automatically according to your broadcast settings. You cannot manually send individual messages from this queue, but you can pause/resume the entire broadcast.
+{% hint style="info" %}
+**Important behavior to know**
+
+- **Contact Eligibility**: Only contacts that are:
+  - **Imported to Contacts**: Contacts must be added or imported through the Contacts page. Contacts who have only messaged you but haven't been added to your Contacts directory will not receive broadcasts.
+  - **Not Opted Out**: Contacts who have opted out are automatically excluded from all broadcasts, regardless of your selection criteria.
+- **Daily Limits and Capacity**: Your daily broadcast capacity is determined by your settings in [Settings: Broadcast](./settings/broadcast.md). It depends on your **Broadcast Message Interval**, **Broadcast Start Time**, and **Broadcast End Time**.
+- **Sending Hours**: Broadcasts only send during your configured sending window. If you schedule a broadcast outside these hours, the system will queue it and begin sending at the next start time.
+- **Channel Connection**: Your channel must be connected (`ready` status) for broadcasts to send.
+- **Pause/Resume**: You can pause an active broadcast at any time from the "More" menu in the list view or from the Broadcast Message Queue toolbar. When you resume, sending continues from where it left off.
+- **Message Status Tracking**: Message statuses (Delivered, Read, Replied, etc.) are automatically updated as recipients interact with your messages. The queue provides real-time visibility into broadcast performance.
+- **Failed Messages**: Failed messages remain in the "Failed" tab until you manually resend them. Common failure reasons include invalid phone numbers, opted-out contacts, or temporary delivery issues.
+- **Replied to Given Option**: This status specifically tracks interactions with interactive elements (buttons, quick replies) in your message flow, not just any reply. It helps you identify contacts who engaged with specific call-to-action options.
+- **Remaining Queue**: Messages in the "Remaining" tab will be sent automatically according to your broadcast settings. You cannot manually send individual messages from this queue, but you can pause/resume the entire broadcast.
+{% endhint %}
 
 ## Common issues & solutions
 - **Broadcast not sending**: Check if your channel is connected and if you are within your "Broadcast Sending Hours."
@@ -173,8 +196,9 @@ Use the search box to find specific contacts by WhatsApp number or contact name 
   - If your message flow doesn't include interactive elements, this tab will be empty.
   - Regular text replies appear in the "Replied" tab, not "Replied to Given Option".
 
-> [!TIP]
-> **Best practice**
+{% hint style="success" %}
+**Best practice**
+
 - **Import Contacts First**: Before creating a broadcast, ensure all intended recipients are imported or added through the Contacts page. Contacts who have only messaged you but aren't in your Contacts directory won't receive broadcasts.
 - **Check Opt-Out Status**: Review your contact list to identify opted-out contacts before creating broadcasts to avoid confusion about delivery.
 - **Test first**: Send the message flow to a test contact before broadcasting to a large group.
@@ -185,3 +209,4 @@ Use the search box to find specific contacts by WhatsApp number or contact name 
 - **Use Interactive Elements**: Include buttons or quick replies in your message flow to track engagement via the "Replied to Given Option" tab and improve response rates.
 - **Export for Analysis**: Use the Export feature to download queue data and analyze broadcast performance over time.
 - **Resume Strategically**: If you pause a broadcast, resume it during your configured sending hours to ensure messages are delivered at optimal times.
+{% endhint %}

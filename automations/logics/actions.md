@@ -21,35 +21,53 @@ The Actions node is a background step that performs specific tasks without sendi
 > [Screenshot: Actions node configuration drawer showing multiple actions added]
 
 ## Available Actions
+
 For detailed information on each specific action, see the following:
 
-- [Add Tag](automations/logics/actions/add-tag.md)
-- [Remove Tag](automations/logics/actions/remove-tag.md)
-- [Add Assignee](automations/logics/actions/add-assignee.md)
-- [Add Collaborator](automations/logics/actions/add-collaborator.md)
-- [Assign Inbox Tab](automations/logics/actions/assign-inbox-tab.md)
-- [Delay](automations/logics/actions/delay.md)
-- [Wait for Reply](automations/logics/actions/wait-reply.md)
-- [Smart Delay](automations/logics/smart-delay.md)
-- [Save to Attribute](automations/logics/actions/save-attribute.md)
-- [Update Attribute](automations/logics/actions/update-attribute.md)
-- [Send WhatsApp Message](automations/logics/actions/send-whatsapp-message.md)
-- [Webhook](automations/logics/actions/webhook.md)
-- [Close Inbox Conversation](automations/logics/actions/close-conversation.md)
-- [Opt In](automations/logics/actions/opt-in.md)
-- [Opt Out](automations/logics/actions/opt-out.md)
-- [Add to Deal Stage](automations/logics/actions/add-deal-stage.md)
+{% tabs %}
+{% tab title="Contact Management" %}
+- [Add Tag](./add-tag.md) - Add tags to categorize contacts
+- [Remove Tag](./remove-tag.md) - Remove tags from contacts
+- [Add Assignee](./add-assignee.md) - Assign conversations to team members
+- [Add Collaborator](./add-collaborator.md) - Add team members to conversations
+- [Assign Inbox Tab](./assign-inbox-tab.md) - Move conversations to specific inbox lists
+{% endtab %}
+
+{% tab title="Timing & Flow Control" %}
+- [Delay](./delay.md) - Pause the flow for a specific duration
+- [Wait for Reply](./wait-reply.md) - Pause until contact responds
+- [Smart Delay](./../smart-delay.md) - Wait with reply detection and branching
+{% endtab %}
+
+{% tab title="Data Management" %}
+- [Save to Attribute](./save-attribute.md) - Save data to custom attributes
+- [Update Attribute](./update-attribute.md) - Update existing custom attributes
+- [Add to Deal Stage](./add-deal-stage.md) - Move deals through sales stages
+{% endtab %}
+
+{% tab title="Messaging & Integration" %}
+- [Send WhatsApp Message](./send-whatsapp-message.md) - Send messages programmatically
+- [Webhook](./webhook.md) - Trigger external systems
+{% endtab %}
+
+{% tab title="Conversation Management" %}
+- [Close Inbox Conversation](./close-conversation.md) - Mark conversations as resolved
+- [Opt In](./opt-in.md) - Re-enable messaging for contacts
+- [Opt Out](./opt-out.md) - Disable messaging for contacts
+{% endtab %}
+{% endtabs %}
 
 ## What happens after it triggers?
 All actions within the node are executed immediately and in order (from top to bottom). The contact's profile, tags, and assignments are updated instantly, and the flow continues to the next step.
 
-> [!NOTE]
-> **Important behavior to know**
->
-> - **Execution Order**: Actions are performed in the exact order they appear in the list, from top to bottom.
-> - **Instant Updates**: Changes to tags, assignments, or custom attributes take effect immediately and are visible to all team members.
-> - **Webhook Timing**: External webhooks are sent asynchronously; the flow continues even if your server takes time to respond.
-> - **Sequential Execution**: All actions within a single Actions node execute sequentially, not in parallel. Each action completes before the next one begins.
+{% hint style="info" %}
+**Important behavior to know**
+
+- **Execution Order**: Actions are performed in the exact order they appear in the list, from top to bottom.
+- **Instant Updates**: Changes to tags, assignments, or custom attributes take effect immediately and are visible to all team members.
+- **Webhook Timing**: External webhooks are sent asynchronously; the flow continues even if your server takes time to respond.
+- **Sequential Execution**: All actions within a single Actions node execute sequentially, not in parallel. Each action completes before the next one begins.
+{% endhint %}
 
 ## Common issues & solutions
 - **Multiple actions not working**: Ensure all actions are properly configured. You can add as many actions as needed in a single node (e.g., "Add Tag: New Lead", "Assign: Sales Team", and "Update Attribute: Source=WhatsApp").

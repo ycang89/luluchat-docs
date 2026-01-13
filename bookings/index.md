@@ -1,30 +1,85 @@
 # Bookings
 
 ## What is Bookings?
+
 Bookings is Luluchat's appointment scheduling system that allows you to create booking calendars and manage customer appointments. Customers can book services through a shareable booking link, and you can manage all appointments from a centralized dashboard.
 
-## When to use it?
-- **Service Businesses**: Perfect for salons, clinics, consulting services, or any business that requires appointment scheduling.
-- **Customer Self-Service**: Let customers book appointments 24/7 through a booking link without manual coordination.
-- **Team Scheduling**: Manage multiple staff members and their availability.
-- **Automated Reminders**: Send automatic confirmations and reminders to customers.
+{% hint style="info" %}
+**Perfect For**
+
+- **Service Businesses**: Salons, clinics, consulting services
+- **Customer Self-Service**: 24/7 booking without manual coordination
+- **Team Scheduling**: Manage multiple staff members and availability
+- **Automated Reminders**: Automatic confirmations and reminders
+{% endhint %}
 
 ## Key Features
-- **Booking Calendars**: Create multiple calendars for different services or locations.
-- **Service Management**: Define services with durations, pricing, and availability.
-- **Staff Assignment**: Assign staff members to specific services or time slots.
-- **Flexible Scheduling**: Set working hours, off dates, and booking windows.
-- **Automated Confirmations**: Automatically or manually confirm appointments.
-- **Appointment Management**: View, edit, reschedule, and cancel appointments.
-- **Calendar Views**: See appointments in list or calendar format.
+
+{% columns %}
+{% column %}
+**Booking Calendars**
+- Multiple calendars
+- Different services/locations
+{% endcolumn %}
+
+{% column %}
+**Service Management**
+- Define services
+- Set durations & pricing
+{% endcolumn %}
+
+{% column %}
+**Flexible Scheduling**
+- Working hours
+- Off dates
+- Booking windows
+{% endcolumn %}
+
+{% column %}
+**Appointment Management**
+- View & edit
+- Reschedule & cancel
+- Calendar views
+{% endcolumn %}
+{% endcolumns %}
 
 ## How to get started
-1. **Create a Calendar**: Go to `Bookings` > `Calendars` and click "Create Calendar".
-2. **Configure Services**: Add services that customers can book.
-3. **Set Working Hours**: Define when appointments are available.
-4. **Share Booking Link**: Copy and share the booking link with customers.
-5. **Manage Appointments**: View and manage bookings in `Bookings` > `Appointments`.
+
+<steps>
+<step>
+**Create a Calendar**
+
+Go to `Bookings` > `Calendars` and click "Create Calendar".
+</step>
+
+<step>
+**Configure Services**
+
+Add services that customers can book with durations and pricing.
+</step>
+
+<step>
+**Set Working Hours**
+
+Define when appointments are available for each service.
+</step>
+
+<step>
+**Share Booking Link**
+
+Copy and share the booking link with customers via WhatsApp or your website.
+</step>
+
+<step>
+**Manage Appointments**
+
+View and manage bookings in `Bookings` > `Appointments`.
+</step>
+</steps>
 
 ## Related Documentation
-- [Calendars](./calendars.md) - Learn how to create and configure booking calendars
-- [Appointments](./appointments.md) - Learn how to view and manage customer appointments
+
+{% cards %}
+{% card title="Calendars" description="Learn how to create and configure booking calendars" link="./calendars.md" /%}
+{% card title="Appointments" description="Learn how to view and manage customer appointments" link="./appointments.md" /%}
+{% endcards %}

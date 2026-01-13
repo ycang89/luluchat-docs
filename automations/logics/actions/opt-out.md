@@ -23,14 +23,15 @@ Add this action where users request to stop messages (e.g., after an “opt-out�
 ## What happens after it triggers?
 The contact’s opt-out status is set, preventing further messaging until they opt in again; the flow continues along the path you set.
 
-> [!WARNING]
-> **Important behavior to know**
->
-> - **Permanent Action**: Once a contact opts out, they will not receive any future broadcasts or automated messages from your Message Flows. This is a compliance requirement for WhatsApp messaging.
-> - **Manual Re-opt-in Required**: Contacts who have opted out must manually opt back in before they can receive messages again. You cannot automatically re-add them to your messaging list.
-> - **Broadcast Exclusion**: Opted-out contacts are automatically excluded from all broadcasts, regardless of your selection criteria.
-> - **Compliance**: This action helps you comply with WhatsApp's messaging policies and regulations regarding user consent.
-> - **Use Confirmation Message**: Always use this action alongside a confirmation message so users know they've been unsubscribed.
+{% hint style="warning" %}
+**Important behavior to know**
+
+- **Permanent Action**: Once a contact opts out, they will not receive any future broadcasts or automated messages from your Message Flows. This is a compliance requirement for WhatsApp messaging.
+- **Manual Re-opt-in Required**: Contacts who have opted out must manually opt back in before they can receive messages again. You cannot automatically re-add them to your messaging list.
+- **Broadcast Exclusion**: Opted-out contacts are automatically excluded from all broadcasts, regardless of your selection criteria.
+- **Compliance**: This action helps you comply with WhatsApp's messaging policies and regulations regarding user consent.
+- **Use Confirmation Message**: Always use this action alongside a confirmation message so users know they've been unsubscribed.
+{% endhint %}
 
 ## Common issues & solutions
 - Contact still receives messages: confirm downstream flows respect opt-out and that opt-out runs on the published path.

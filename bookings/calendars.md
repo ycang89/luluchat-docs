@@ -11,19 +11,28 @@ A Booking Calendar is a configurable scheduling system that allows customers to 
 
 ## How to create a calendar (Step by Step)
 
-### Step 1: Open Calendars Page
+<steps>
+<step>
+**Open Calendars Page**
+
 Go to `Bookings` > `Calendars` from the left menu.
 
 📸 Screenshot placeholder:
 > [Screenshot: Calendars list page with "Create Calendar" button]
+</step>
 
-### Step 2: Click Create Calendar
+<step>
+**Click Create Calendar**
+
 Click the **"Create Calendar"** button at the top right of the page.
 
 📸 Screenshot placeholder:
 > [Screenshot: Create Calendar button and modal/form opening]
+</step>
 
-### Step 3: Configure General Settings (Tab 1: General)
+<step>
+**Configure General Settings (Tab 1: General)**
+
 In the "General" tab, configure basic calendar information:
 
 - **Cover Image**: Upload a cover image (recommended: 1065x390 pixels) that appears on the booking page.
@@ -41,8 +50,11 @@ In the "General" tab, configure basic calendar information:
 > [Screenshot: General tab with all fields filled, showing preview on the right side]
 
 Click **Save** to save your general settings.
+</step>
 
-### Step 4: Add Services (Tab 2: Services)
+<step>
+**Add Services (Tab 2: Services)**
+
 In the "Services" tab, add the services customers can book:
 
 1. Click **"Add Service"** button.
@@ -60,8 +72,11 @@ In the "Services" tab, add the services customers can book:
 > [Screenshot: Services tab showing service list and Add Service form]
 
 You can add multiple services to a single calendar. Customers will see all services when booking.
+</step>
 
-### Step 5: Configure Booking Form (Tab 3: Booking Form)
+<step>
+**Configure Booking Form (Tab 3: Booking Form)**
+
 In the "Booking Form" tab, customize the information you collect from customers:
 
 - **Default Fields**: First Name, Last Name, WhatsApp Contact No, and Email are required and cannot be removed, but you can rename them or change their order.
@@ -74,8 +89,11 @@ In the "Booking Form" tab, customize the information you collect from customers:
 > [Screenshot: Booking Form tab showing form builder with default and custom fields]
 
 Click **Save** to save your form configuration.
+</step>
 
-### Step 6: Configure Settings (Tab 4: Settings)
+<step>
+**Configure Settings (Tab 4: Settings)**
+
 In the "Settings" tab, configure booking behavior:
 
 - **Disable No of Guests Selection**: Toggle to hide guest count selection (defaults to 1 guest if disabled).
@@ -91,8 +109,11 @@ In the "Settings" tab, configure booking behavior:
 > [Screenshot: Settings tab with all configuration options]
 
 Click **Save** to save your settings.
+</step>
 
-### Step 7: Set Working Hours (Tab 5: Working Hours)
+<step>
+**Set Working Hours (Tab 5: Working Hours)**
+
 In the "Working Hours" tab, configure when appointments are available:
 
 1. For each day of the week (Monday-Sunday):
@@ -105,8 +126,11 @@ In the "Working Hours" tab, configure when appointments are available:
 > [Screenshot: Working Hours tab showing day-by-day configuration with time selectors]
 
 Click **Save** to save your working hours.
+</step>
 
-### Step 8: Set Off Dates (Tab 6: Off Dates)
+<step>
+**Set Off Dates (Tab 6: Off Dates)**
+
 In the "Off Dates" tab, mark dates when appointments are not available (holidays, closures):
 
 1. Click **"Add Off Date"**.
@@ -115,8 +139,11 @@ In the "Off Dates" tab, mark dates when appointments are not available (holidays
 
 📸 Screenshot placeholder:
 > [Screenshot: Off Dates tab showing list of off dates and Add Off Date form]
+</step>
 
-### Step 9: Configure Notifications (Tab 7: Notifications)
+<step>
+**Configure Notifications (Tab 7: Notifications)**
+
 In the "Notifications" tab, set up automated messages:
 
 1. **Tracked Events**: Select which events trigger notifications:
@@ -134,8 +161,11 @@ In the "Notifications" tab, set up automated messages:
 > [Screenshot: Notifications tab showing tracked events checkboxes and message template fields]
 
 Click **Save** to save your notification settings.
+</step>
 
-### Step 10: Set Up Automation (Tab 8: Automation)
+<step>
+**Set Up Automation (Tab 8: Automation)**
+
 In the "Automation" tab, link Message Flows to booking events:
 
 - **When Appointment is Done**: Select a Message Flow to trigger when an appointment is marked as "Done".
@@ -146,8 +176,11 @@ In the "Automation" tab, link Message Flows to booking events:
 > [Screenshot: Automation tab showing flow selectors for done, cancelled, and no-show events]
 
 Click **Save** to save your automation settings.
+</step>
 
-### Step 11: Publish and Share
+<step>
+**Publish and Share**
+
 Once your calendar is configured:
 
 1. Ensure **"Is Publish"** is toggled **On** in the General tab.
@@ -157,6 +190,8 @@ Once your calendar is configured:
 
 📸 Screenshot placeholder:
 > [Screenshot: Calendars list showing published calendar with QR code and booking link]
+</step>
+</steps>
 
 ## Managing Existing Calendars
 

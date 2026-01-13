@@ -23,13 +23,14 @@ Add this action after the message where the contact grants consent, then save an
 ## What happens after it triggers?
 The contact’s opt-in status is set to allow messaging; the flow continues to the next step.
 
-> [!NOTE]
-> **Important behavior to know**
->
-> - **Consent Required**: Contacts must have previously opted out before they can opt back in. You cannot opt in contacts who have never opted out.
-> - **User Consent**: Use only when you have clear user consent. This action helps you comply with WhatsApp's messaging policies.
-> - **Broadcast Eligibility**: Once a contact opts in, they become eligible to receive broadcasts again (assuming they meet other criteria like being imported to Contacts).
-> - **Opt-in Status**: Opt-in status affects future messaging eligibility for broadcasts and automated flows.
+{% hint style="info" %}
+**Important behavior to know**
+
+- **Consent Required**: Contacts must have previously opted out before they can opt back in. You cannot opt in contacts who have never opted out.
+- **User Consent**: Use only when you have clear user consent. This action helps you comply with WhatsApp's messaging policies.
+- **Broadcast Eligibility**: Once a contact opts in, they become eligible to receive broadcasts again (assuming they meet other criteria like being imported to Contacts).
+- **Opt-in Status**: Opt-in status affects future messaging eligibility for broadcasts and automated flows.
+{% endhint %}
 
 ## Common issues & solutions
 - Status not updated: ensure the action is on the published path and the channel is connected.

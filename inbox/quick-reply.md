@@ -8,23 +8,34 @@ Reusable saved replies you can insert into conversations to respond faster and s
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open the conversation
+<steps>
+<step>
+**Open the conversation**
+
 In `Inbox`, open the conversation where you want to use a Quick Reply.
 
 📸 Screenshot placeholder:
 > [Screenshot: Conversation thread with composer showing Quick Reply option]
+</step>
 
-### Step 2: Insert a Quick Reply
+<step>
+**Insert a Quick Reply**
+
 Click the Quick Reply control or shortcut, pick the reply you need, and insert it into the composer.
 
 📸 Screenshot placeholder:
 > [Screenshot: Quick Reply picker with a list of saved replies]
+</step>
 
-### Step 3: Personalize and send
+<step>
+**Personalize and send**
+
 Edit any placeholders (e.g., names, order IDs) and send the message.
 
 📸 Screenshot placeholder:
 > [Screenshot: Composer with inserted Quick Reply text ready to send]
+</step>
+</steps>
 
 ## What happens after it triggers?
 The selected reply is pasted into the composer; sending delivers it to the contact like any normal message.

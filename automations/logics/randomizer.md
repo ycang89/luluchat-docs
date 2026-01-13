@@ -36,13 +36,14 @@ For each variant (A, B, C, etc.), click **Choose Next Step** to link it to a dif
 ## What happens after it triggers?
 The contact is silently routed to one of the available paths. There is no visible delay or notification to the customer that they have been part of a randomized split.
 
-> [!NOTE]
-> **Important behavior to know**
->
-> - **True Randomness**: Each contact entering the node has a random chance of falling into any of the paths. Over a large number of contacts, the distribution will match your configured percentages.
-> - **No Memory**: If a contact enters the same randomizer twice (e.g., in a looping flow), they may be assigned a different path each time.
-> - **Max Variants**: You can add up to 6 different variants (A through F).
-> - **Precision Distribution**: The system uses a 1000-outcome pool to ensure accurate percentage distribution, so your configured percentages will be very close to the actual distribution over time.
+{% hint style="info" %}
+**Important behavior to know**
+
+- **True Randomness**: Each contact entering the node has a random chance of falling into any of the paths. Over a large number of contacts, the distribution will match your configured percentages.
+- **No Memory**: If a contact enters the same randomizer twice (e.g., in a looping flow), they may be assigned a different path each time.
+- **Max Variants**: You can add up to 6 different variants (A through F).
+- **Precision Distribution**: The system uses a 1000-outcome pool to ensure accurate percentage distribution, so your configured percentages will be very close to the actual distribution over time.
+{% endhint %}
 
 ## Common issues & solutions
 - **Total not 100%**: The editor will show an error if your total distribution doesn't sum to exactly 100. Double-check your math!

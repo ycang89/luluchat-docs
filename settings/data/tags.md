@@ -22,19 +22,21 @@ Click `Create Tag`. Enter a name and choose a color to make the tag easily ident
 - **Export**: Click `Export Tags` to download an Excel file of your entire tag list and usage stats.
 - **Delete**: Click the trash icon to remove a tag.
 
-> [!DANGER]
-> **Delete Tag - Permanent Action**
->
-> Deleting a tag will permanently remove it from all associated contacts. This action cannot be undone. All contacts who had this tag will lose it immediately.
+{% hint style="danger" %}
+**Delete Tag - Permanent Action**
+
+Deleting a tag will permanently remove it from all associated contacts. This action cannot be undone. All contacts who had this tag will lose it immediately.
+{% endhint %}
 
 📸 Screenshot placeholder:
 > [Screenshot: Tag list with priority column and delete icons]
 
-> [!NOTE]
-> **Important behavior to know**
->
-> - **Contact Visibility**: You can see the total number of contacts currently using each tag in the list view.
-> - **Filtering**: Clicking the contact count for a tag will automatically filter your `Contacts` page to show only those people.
+{% hint style="info" %}
+**Important behavior to know**
+
+- **Contact Visibility**: You can see the total number of contacts currently using each tag in the list view.
+- **Filtering**: Clicking the contact count for a tag will automatically filter your `Contacts` page to show only those people.
+{% endhint %}
 
 ## Best practice 💡
 - **Standardized Naming**: Use a clear format like `Source: Facebook` or `Status: VIP` to keep your list organized.

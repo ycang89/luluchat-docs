@@ -23,17 +23,18 @@ Select a **Working Hours** profile to define when your team is active. This affe
 
 ### Step 3: Delete Account
 
-> [!DANGER]
-> **Danger Zone - Permanent Action**
->
-> Deleting your account will permanently erase all your personal data, files, settings, and preferences associated with your account. **This action cannot be undone.**
->
-> **Before proceeding, please be aware:**
-> - All your personal data, files, and settings will be permanently deleted
-> - This action cannot be undone
-> - Deleting your account does **not** automatically cancel active paid subscriptions. You must contact your sales representative or email theblackpocketofficial@gmail.com to cancel billing
-> - If you are part of a team, deleting your account will remove your access and contributions from shared projects
-> - You will be logged out automatically 5 seconds after deletion
+{% hint style="danger" %}
+**Danger Zone - Permanent Action**
+
+Deleting your account will permanently erase all your personal data, files, settings, and preferences associated with your account. **This action cannot be undone.**
+
+**Before proceeding, please be aware:**
+- All your personal data, files, and settings will be permanently deleted
+- This action cannot be undone
+- Deleting your account does **not** automatically cancel active paid subscriptions. You must contact your sales representative or email theblackpocketofficial@gmail.com to cancel billing
+- If you are part of a team, deleting your account will remove your access and contributions from shared projects
+- You will be logged out automatically 5 seconds after deletion
+{% endhint %}
 
 If you need to permanently close your account, use the **Delete Account** section:
 1. Scroll to the **Delete Account** section at the bottom of the Company settings page.
@@ -45,11 +46,13 @@ If you need to permanently close your account, use the **Delete Account** sectio
 📸 Screenshot placeholder:
 > [Screenshot: Delete Account section with warning and confirm button]
 
-> [!WARNING]
-> **Important**: Deleting your account does **not** automatically cancel active paid subscriptions. Contact your sales representative or email theblackpocketofficial@gmail.com to cancel billing before or after account deletion.
+{% hint style="warning" %}
+**Important**: Deleting your account does **not** automatically cancel active paid subscriptions. Contact your sales representative or email theblackpocketofficial@gmail.com to cancel billing before or after account deletion.
+{% endhint %}
 
-> [!NOTE]
-> **Collaborator Impact**: If you are part of a team or organization, deleting your account will remove your access and contributions from shared projects. Inform your team members before deleting your account to prevent disruptions.
+{% hint style="info" %}
+**Collaborator Impact**: If you are part of a team or organization, deleting your account will remove your access and contributions from shared projects. Inform your team members before deleting your account to prevent disruptions.
+{% endhint %}
 
 ## Common issues & solutions
 - **Reports seem inaccurate**: If you recently changed working hours, ensure you triggered a "Regenerate Report" action.

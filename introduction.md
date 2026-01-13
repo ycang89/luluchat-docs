@@ -4,10 +4,14 @@
 
 Luluchat is a customer messaging platform that helps businesses manage, respond to, and automate conversations with their customers, primarily on WhatsApp. Whether you're a small business owner, part of a sales team, or managing customer support, Luluchat makes it easy to:
 
+{% hint style="info" %}
+**Key Benefits**
+
 - **Reply faster** to customer messages
 - **Handle more conversations** with fewer team members
 - **Automate repetitive responses** without coding
 - **Improve customer experience** through consistent, timely messaging
+{% endhint %}
 
 Luluchat is designed for **non-technical users**—you don't need any programming knowledge or technical background to use it. Everything is managed through a simple web interface.
 
@@ -43,25 +47,29 @@ All instructions match exactly what you'll see in the Luluchat web interface, so
 
 If you're new to Luluchat, start here:
 
-1. **[Register a Luluchat Account](./register-account.md)** - Learn how to create your account and complete the onboarding process
-2. **[Switch Team and Channel](./switch-team-channel.md)** - Understand how to navigate between different teams and channels
-3. **[Dashboard](./dashboard.md)** - Get familiar with your workspace overview
+{% cards %}
+{% card title="Register a Luluchat Account" description="Learn how to create your account and complete the onboarding process" link="./register-account.md" /%}
+{% card title="Switch Team and Channel" description="Understand how to navigate between different teams and channels" link="./switch-team-channel.md" /%}
+{% card title="Dashboard" description="Get familiar with your workspace overview" link="./dashboard.md" /%}
+{% endcards %}
 
 ### Core Features
 
 The documentation is organized by the main features you'll use:
 
-- **[Inbox](./inbox/index.md)** - Manage all your customer conversations in one place
-- **[Automations](./automations/index.md)** - Set up automated message flows, keywords, and workflows
-- **[Broadcasts](./broadcasts.md)** - Send messages to large groups of contacts
-- **[Contacts](./contacts/index.md)** - Manage your contact database
-- **[Message Templates](./message-templates.md)** - Create and manage WhatsApp message templates
-- **[Reports](./reports/index.md)** - Analyze your team's performance and conversation metrics
-- **[Forms](./forms/index.md)** - Build forms to collect customer information
-- **[Bookings](./bookings/index.md)** - Manage calendars and appointments
-- **[Tickets](./tickets/index.md)** - Track and manage customer support tickets
-- **[Deals](./deals/index.md)** - Manage your sales pipeline and opportunities
-- **[Settings](./settings/index.md)** - Configure your workspace, team, and preferences
+{% cards %}
+{% card title="Inbox" description="Manage all your customer conversations in one place" link="./inbox/index.md" /%}
+{% card title="Automations" description="Set up automated message flows, keywords, and workflows" link="./automations/index.md" /%}
+{% card title="Broadcasts" description="Send messages to large groups of contacts" link="./broadcasts.md" /%}
+{% card title="Contacts" description="Manage your contact database" link="./contacts/index.md" /%}
+{% card title="Message Templates" description="Create and manage WhatsApp message templates" link="./message-templates.md" /%}
+{% card title="Reports" description="Analyze your team's performance and conversation metrics" link="./reports/index.md" /%}
+{% card title="Forms" description="Build forms to collect customer information" link="./forms/index.md" /%}
+{% card title="Bookings" description="Manage calendars and appointments" link="./bookings/index.md" /%}
+{% card title="Tickets" description="Track and manage customer support tickets" link="./tickets/index.md" /%}
+{% card title="Deals" description="Manage your sales pipeline and opportunities" link="./deals/index.md" /%}
+{% card title="Settings" description="Configure your workspace, team, and preferences" link="./settings/index.md" /%}
+{% endcards %}
 
 ### Finding What You Need
 
@@ -98,8 +106,24 @@ If you can't find what you're looking for in this documentation:
 
 Ready to get started? Begin with:
 
-1. **[Register a Luluchat Account](./register-account.md)** if you haven't already
-2. **[Connect your Channel](./inbox/connect-channel.md)** to link your WhatsApp account
-3. **[Create your first Message Flow](./automations/message-flows.md)** to automate customer responses
+<steps>
+<step>
+**Register a Luluchat Account**
+
+If you haven't already, [create your account](./register-account.md) to get started with Luluchat.
+</step>
+
+<step>
+**Connect your Channel**
+
+[Link your WhatsApp account](./inbox/connect-channel.md) to start managing conversations.
+</step>
+
+<step>
+**Create your first Message Flow**
+
+[Set up automated responses](./automations/message-flows.md) to improve customer experience.
+</step>
+</steps>
 
 Welcome to Luluchat! We're here to help you succeed.

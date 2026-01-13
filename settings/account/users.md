@@ -26,22 +26,25 @@ The **Team User** list displays all active members.
 - **Edit**: Click to change a user's permissions, assigned channels, or modules.
 - **Remove**: Permanently remove a user from the workspace.
 
-> [!WARNING]
-> **Important**: You cannot edit or remove yourself or the workspace Owner.
+{% hint style="warning" %}
+**Important**: You cannot edit or remove yourself or the workspace Owner.
+{% endhint %}
 
 📸 Screenshot placeholder:
 > [Screenshot: Edit and Remove actions on a user row]
 
-> [!WARNING]
-> **Remove User - Permanent Action**
->
-> Removing a user permanently removes them from the workspace. This action cannot be undone. The user will lose access to all shared projects and data immediately.
+{% hint style="warning" %}
+**Remove User - Permanent Action**
 
-> [!NOTE]
-> **Important behavior to know**
->
-> - **User Limits**: Your current plan determines how many teammates you can invite.
-> - **Account Deletion**: If a user deletes their own account, they will appear with an "Account Deleted" tag in this list.
+Removing a user permanently removes them from the workspace. This action cannot be undone. The user will lose access to all shared projects and data immediately.
+{% endhint %}
+
+{% hint style="info" %}
+**Important behavior to know**
+
+- **User Limits**: Your current plan determines how many teammates you can invite.
+- **Account Deletion**: If a user deletes their own account, they will appear with an "Account Deleted" tag in this list.
+{% endhint %}
 
 ## Best practice 💡
 - **Assign Channels**: When editing a user, only give them access to the specific channels they need to manage.
