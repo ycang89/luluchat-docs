@@ -64,66 +64,17 @@ The Broadcast Message Queue provides a detailed view of each message's status in
 ### Message Statuses
 The queue organizes messages into six status categories, accessible via tabs:
 
-#### 1. Delivered (Sent)
-Messages that have been successfully sent to recipients. This tab shows:
-- WhatsApp number
-- Contact name
-- Processed timestamp (when the message was sent)
+| Status | Description | Information Shown | Special Actions |
+|--------|-------------|-------------------|-----------------|
+| **Delivered (Sent)** | Messages that have been successfully sent to recipients | • WhatsApp number<br>• Contact name<br>• Processed timestamp (when the message was sent) | — |
+| **Read** | Messages that have been read by recipients | • WhatsApp number<br>• Contact name<br>• Processed timestamp (when the message was sent)<br>• Link to open the conversation in Inbox | Click inbox link to view conversation |
+| **Replied** | Messages where recipients have replied to your broadcast | • WhatsApp number<br>• Contact name<br>• Processed timestamp (when the message was sent)<br>• Link to open the conversation in Inbox | Click inbox link to view conversation |
+| **Replied to Given Option** | Messages where recipients have interacted with buttons or quick reply options in your message flow. For example, if your message includes interactive buttons, this tab shows contacts who clicked on those buttons | • WhatsApp number<br>• Contact name<br>• Processed timestamp (when the message was sent)<br>• Link to open the conversation in Inbox | Click inbox link to view conversation |
+| **Failed** | Messages that failed to send | • WhatsApp number<br>• Contact name<br>• Remarks (error details explaining why the message failed)<br>• Processed timestamp (when the failure occurred) | Select multiple failed messages and use "Resend to Selected" button to retry sending them, or use "Resend All" to retry all failed messages |
+| **Remaining** | Messages that are still in the queue waiting to be sent | • WhatsApp number<br>• Contact name | These messages will be sent according to your broadcast settings (sending hours, daily limits, and message interval) |
 
 📸 Screenshot placeholder:
-> [Screenshot: Broadcast Message Queue showing Delivered tab with contact list]
-
-#### 2. Read
-Messages that have been read by recipients. This tab shows:
-- WhatsApp number
-- Contact name
-- Processed timestamp (when the message was sent)
-- Link to open the conversation in Inbox
-
-📸 Screenshot placeholder:
-> [Screenshot: Broadcast Message Queue showing Read tab with contact list and inbox links]
-
-#### 3. Replied
-Messages where recipients have replied to your broadcast. This tab shows:
-- WhatsApp number
-- Contact name
-- Processed timestamp (when the message was sent)
-- Link to open the conversation in Inbox
-
-📸 Screenshot placeholder:
-> [Screenshot: Broadcast Message Queue showing Replied tab with contact list]
-
-#### 4. Replied to Given Option
-Messages where recipients have interacted with buttons or quick reply options in your message flow. For example, if your message includes interactive buttons, this tab shows contacts who clicked on those buttons. This tab shows:
-- WhatsApp number
-- Contact name
-- Processed timestamp (when the message was sent)
-- Link to open the conversation in Inbox
-
-📸 Screenshot placeholder:
-> [Screenshot: Broadcast Message Queue showing Replied to Given Option tab]
-
-#### 5. Failed
-Messages that failed to send. This tab shows:
-- WhatsApp number
-- Contact name
-- Remarks (error details explaining why the message failed)
-- Processed timestamp (when the failure occurred)
-
-You can select multiple failed messages and use the "Resend to Selected" button to retry sending them, or use "Resend All" to retry all failed messages.
-
-📸 Screenshot placeholder:
-> [Screenshot: Broadcast Message Queue showing Failed tab with error remarks and resend options]
-
-#### 6. Remaining
-Messages that are still in the queue waiting to be sent. This tab shows:
-- WhatsApp number
-- Contact name
-
-These messages will be sent according to your broadcast settings (sending hours, daily limits, and message interval).
-
-📸 Screenshot placeholder:
-> [Screenshot: Broadcast Message Queue showing Remaining tab with queued contacts]
+> [Screenshot: Broadcast Message Queue showing different status tabs]
 
 ### Queue Management Actions
 

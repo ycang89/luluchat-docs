@@ -6,29 +6,16 @@ Custom Lists allow you to organize conversations into custom categories that you
 ## Default System Lists
 Luluchat provides several default system lists that automatically organize your conversations based on their status and type. These lists cannot be edited, deleted, or hidden, but they help you quickly find conversations that need attention.
 
-### All
-**All chats that are not Closed or Archived.** Use this list to focus on the most important chats. This is your main working view, showing all active conversations that require attention.
-
-### Awaiting Reply
-**Chats that you have not received a response to.** This list shows conversations where you've sent a message but haven't received a reply yet. Use this to track conversations that are waiting for customer responses.
-
-### Unread
-**Chats that have unread messages.** This list displays all conversations with messages you haven't read yet. It helps you quickly identify conversations that need your immediate attention.
-
-### Needs Reply
-**Chats you have yet to respond to.** This list shows conversations where the customer has sent a message but you haven't replied yet. Use this to ensure you don't miss any customer inquiries.
-
-### Groups
-**Conversations that you have with 3 or more people.** This list filters to show only group conversations, making it easy to manage team chats and group discussions separately from one-on-one conversations.
-
-### 1:1
-**All 1:1 conversations.** This list shows only individual conversations between you and a single contact. Use this to focus on personal customer interactions without group chat distractions.
-
-### Closed
-**Chats that have been marked Closed.** When you close a conversation, it moves to this list. Closed conversations are removed from your main "All" list to keep your active inbox clean. **Important**: When you receive a new message from a closed chat, it will be automatically reopened and moved back to your active lists.
-
-### Archived
-**Chats that have been archived.** This list contains conversations you've manually archived. Archived conversations are hidden from your main inbox view but can be accessed from this list when needed.
+| List Name | Description | When to Use |
+|-----------|-------------|-------------|
+| **All** | All chats that are not Closed or Archived | Use this list to focus on the most important chats. This is your main working view, showing all active conversations that require attention. |
+| **Awaiting Reply** | Chats that you have not received a response to | Track conversations where you've sent a message but haven't received a reply yet. Use this to monitor conversations waiting for customer responses. |
+| **Unread** | Chats that have unread messages | Quickly identify conversations with messages you haven't read yet. Helps you prioritize conversations that need your immediate attention. |
+| **Needs Reply** | Chats you have yet to respond to | Find conversations where the customer has sent a message but you haven't replied yet. Use this to ensure you don't miss any customer inquiries. |
+| **Groups** | Conversations that you have with 3 or more people | Filter to show only group conversations. Makes it easy to manage team chats and group discussions separately from one-on-one conversations. |
+| **1:1** | All 1:1 conversations | Focus on individual conversations between you and a single contact. Use this to work on personal customer interactions without group chat distractions. |
+| **Closed** | Chats that have been marked Closed | View conversations you've closed. Closed conversations are removed from your main "All" list to keep your active inbox clean. **Important**: When you receive a new message from a closed chat, it will be automatically reopened and moved back to your active lists. |
+| **Archived** | Chats that have been archived | Access conversations you've manually archived. Archived conversations are hidden from your main inbox view but can be accessed from this list when needed. |
 
 ## When to use it?
 - **Organize by Priority**: Create lists for high-priority customers or urgent issues.
