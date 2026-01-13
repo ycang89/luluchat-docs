@@ -20,8 +20,25 @@ The Actions node is a background step that performs specific tasks without sendi
 📸 Screenshot placeholder:
 > [Screenshot: Actions node configuration drawer showing multiple actions added]
 
-## Actions Library
-For detailed information on each specific action, please refer to the [Actions Library](./actions/index.md).
+## Available Actions
+For detailed information on each specific action, see the following:
+
+- [Add Tag](./actions/add-tag.md)
+- [Remove Tag](./actions/remove-tag.md)
+- [Add Assignee](./actions/add-assignee.md)
+- [Add Collaborator](./actions/add-collaborator.md)
+- [Assign Inbox Tab](./actions/assign-inbox-tab.md)
+- [Delay](./actions/delay.md)
+- [Wait for Reply](./actions/wait-reply.md)
+- [Smart Delay](./smart-delay.md)
+- [Save to Attribute](./actions/save-attribute.md)
+- [Update Attribute](./actions/update-attribute.md)
+- [Send WhatsApp Message](./actions/send-whatsapp-message.md)
+- [Webhook](./actions/webhook.md)
+- [Close Inbox Conversation](./actions/close-conversation.md)
+- [Opt In](./actions/opt-in.md)
+- [Opt Out](./actions/opt-out.md)
+- [Add to Deal Stage](./actions/add-deal-stage.md)
 
 ## What happens after it triggers?
 All actions within the node are executed immediately and in order (from top to bottom). The contact's profile, tags, and assignments are updated instantly, and the flow continues to the next step.

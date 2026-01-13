@@ -29,7 +29,6 @@ Open `Automations` from the left menu to see tabs for `Message Flows`, `Keywords
     - [AI Agent](./content-nodes/ai-agent.md)
   - [Logics](./logics/index.md)
     - [Actions](./logics/actions.md)
-    - [Actions Library](./logics/actions/index.md)
     - [Round Robin](./logics/round-robin.md)
     - [Smart Delay](./logics/smart-delay.md)
     - [Condition](./logics/condition.md)

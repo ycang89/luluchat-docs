@@ -16,8 +16,7 @@ Message Flows are built using different types of nodes and steps:
   - [Form](./content-nodes/form.md): Send forms to collect customer data
   - [AI Agent](./content-nodes/ai-agent.md): Handle open-ended inquiries with AI
 - **[Logics](./logics/index.md)**: Control timing, branching, and background actions
-  - [Actions](./logics/actions.md): Background tasks (tagging, assignment, webhooks)
-  - [Actions Library](./logics/actions/index.md): Complete reference of all available actions
+  - [Actions](./logics/actions.md): Background tasks (tagging, assignment, webhooks) - includes complete reference of all available actions
   - [Round Robin](./logics/round-robin.md): Distribute traffic sequentially
   - [Smart Delay](./logics/smart-delay.md): Pause and branch based on replies
   - [Condition](./logics/condition.md): Create if/else branching logic

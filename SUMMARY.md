@@ -29,7 +29,6 @@
       * [AI Agent](./automations/content-nodes/ai-agent.md)
     * [Logics](./automations/logics/index.md)
       * [Actions](./automations/logics/actions.md)
-      * [Actions Library](./automations/logics/actions/index.md)
       * [Round Robin](./automations/logics/round-robin.md)
       * [Smart Delay](./automations/logics/smart-delay.md)
       * [Condition](./automations/logics/condition.md)
