@@ -69,8 +69,82 @@ The workflow executes its actions in order—sending messages, routing, or updat
 * Partial actions: review the action order and required fields, then republish.
 * Can’t find it: check permissions; some users may not see workflows.
 
+## Example: Tracking New Leads
+
+Here's a practical example of how to use workflows to automatically track new leads when they first contact you:
+
+### Scenario
+When a new contact messages your WhatsApp number for the first time, you want to automatically tag them as a "New Lead" or move them to a "Leads" inbox list for easy tracking and follow-up.
+
+### Workflow Setup
+
+{% stepper %}
+{% step %}
+#### Set the Trigger
+
+1. Create a new workflow and name it "Track New Leads"
+2. In "Choose how workflow starts", select **"When a New Contact comes in"**
+
+This workflow will trigger automatically whenever someone messages your WhatsApp number for the first time.
+
+📸 Screenshot placeholder:
+> [Screenshot: Workflow creation form showing "When a New Contact comes in" selected]
+{% endstep %}
+
+{% step %}
+#### Add an Action
+
+Choose one of these actions to track the new lead:
+
+**Option 1: Add a Tag**
+1. Click "Add Action"
+2. Select **"Add Tag"**
+3. Choose the tag you want to apply (e.g., "New Lead", "Prospect", "Inquiry")
+4. You can select multiple tags if needed
+
+**Option 2: Move to Inbox List**
+1. Click "Add Action"
+2. Select **"Move to Inbox List"**
+3. Choose the custom inbox list where you want to organize new leads (e.g., "Leads", "New Contacts", "Follow Up")
+
+📸 Screenshot placeholder:
+> [Screenshot: Workflow actions showing "Add Tag" and "Move to Inbox List" options]
+{% endstep %}
+
+{% step %}
+#### Save and Activate
+
+1. Click **"Save"** to save your workflow
+2. Toggle the workflow **On** to activate it
+
+The workflow is now active and will automatically run whenever a new contact messages you for the first time.
+
+📸 Screenshot placeholder:
+> [Screenshot: Workflow list showing "Track New Leads" workflow with toggle switched On]
+{% endstep %}
+{% endstepper %}
+
+### What Happens
+
+When a new contact messages your WhatsApp number:
+1. The workflow automatically triggers
+2. The contact is immediately tagged with "New Lead" (if you chose Option 1) or moved to your "Leads" inbox list (if you chose Option 2)
+3. You can now easily find and filter new leads in your Contacts or Inbox
+
+### Use Cases
+
+* **Lead Qualification**: Automatically tag new contacts based on their inquiry type
+* **Team Routing**: Move new leads to specific inbox lists for different team members to handle
+* **Follow-up Reminders**: Combine with other workflows to send automated follow-up messages
+* **Sales Pipeline**: Tag new leads and automatically assign them to your sales team
+
+{% hint style="info" %}
+**Tip**: You can combine both actions in the same workflow! Add both "Add Tag" and "Move to Inbox List" actions to organize new leads in multiple ways. Actions execute in the order you add them.
+{% endhint %}
+
 ## Best practice 💡
 
 * Keep names clear (purpose + trigger).
 * Start with a narrow condition; broaden only after testing.
 * Test with a small audience or test channel before full rollout.
+* Use tags and inbox lists together to create a comprehensive lead tracking system.

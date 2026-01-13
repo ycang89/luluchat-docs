@@ -9,6 +9,7 @@ Message Flows let you design guided replies and routing paths. Use them as the r
 Message Flows are built using different types of nodes and steps:
 
 * [**Message Flow Editor**](message-flows-editor.md): Learn how to use the visual flow builder
+* [**Typing Indicator**](typing-indicator.md): Make automated messages feel more natural with typing indicators
 * [**Starting & Complete Steps**](steps/index.md): Configure how customers enter and exit flows
   * [Trigger](steps/trigger.md): Set up entry points (Keyword, WhatsApp Link, App Event, Webhook)
   * [Complete](steps/complete.md): Mark successful flow completion
@@ -18,7 +19,6 @@ Message Flows are built using different types of nodes and steps:
   * [Start Flow](content-nodes/start-flow.md): Link to other flows for modular design
   * [Form](content-nodes/form.md): Send forms to collect customer data
   * [AI Agent](content-nodes/ai-agent.md): Handle open-ended inquiries with AI
-* [**Typing Indicator**](typing-indicator.md): Make automated messages feel more natural with typing indicators
 * [**Logics**](logics/index.md): Control timing, branching, and background actions
   * [Actions](logics/actions.md): Background tasks (tagging, assignment, webhooks) - includes complete reference of all available actions
   * [Round Robin](logics/round-robin.md): Distribute traffic sequentially
