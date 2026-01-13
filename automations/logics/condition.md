@@ -8,43 +8,39 @@ This node triggers whenever a contact reaches it during a Message Flow. Luluchat
 
 ## How to set it up (Step by Step)
 
-<steps>
-<step>
-**Add the Node**
-
+{% stepper %}
+{% step %}
+### Add the Node
 In the Message Flow Editor, click **Add Node (+) > Logics > Condition**.
 
 📸 Screenshot placeholder:
 > [Screenshot: Add Node menu with Logics > Condition highlighted]
-</step>
+{% endstep %}
 
-<step>
-**Define your Rules**
-
+{% step %}
+### Define your Rules
 Click the node to open the conditions builder. Click **Add a Condition** to select your data source (e.g., Contact Tags, Custom Attribute, or Current Time).
 
 📸 Screenshot placeholder:
 > [Screenshot: Condition builder showing the 'Add a Condition' button]
-</step>
+{% endstep %}
 
-<step>
-**Choose Operator and Value**
-
+{% step %}
+### Choose Operator and Value
 Select how you want to compare the data (e.g., "includes", "is equal to", "is after") and enter the value to match against.
 
 📸 Screenshot placeholder:
 > [Screenshot: Operator and Value selection in the condition builder]
-</step>
+{% endstep %}
 
-<step>
-**Link your Paths**
-
+{% step %}
+### Link your Paths
 Define the **Next Step** for when the condition is met (Matched) and a **Fallback Step** (Else) for when it is not.
 
 📸 Screenshot placeholder:
 > [Screenshot: Condition node on the board with Matched and Else paths linked to other nodes]
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 The contact is immediately routed to the next step in the "Matched" path if the rules are true, or the "Else" path if they are not. This happens silently in the background without the customer seeing any "processing" state.

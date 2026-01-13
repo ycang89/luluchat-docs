@@ -41,43 +41,39 @@ Luluchat provides several default system lists that automatically organize your 
 
 ## How to create a custom list (Step by Step)
 
-<steps>
-<step>
-**Open List Settings**
-
+{% stepper %}
+{% step %}
+### Open List Settings
 In your Inbox, click the gear icon (⚙️) labeled "List Settings" in the top-right area of the inbox tabs.
 
 📸 Screenshot placeholder:
 > [Screenshot: Inbox showing the List Settings gear icon]
-</step>
+{% endstep %}
 
-<step>
-**Create New List**
-
+{% step %}
+### Create New List
 In the List Settings modal, click the `Add` button to create a new list.
 
 📸 Screenshot placeholder:
 > [Screenshot: List Settings modal with Add button]
-</step>
+{% endstep %}
 
-<step>
-**Enter List Name**
-
+{% step %}
+### Enter List Name
 In the "New List" modal, enter a name for your custom list (maximum 30 characters). Choose a descriptive name that clearly indicates the purpose of the list.
 
 📸 Screenshot placeholder:
 > [Screenshot: New List modal with name input field]
-</step>
+{% endstep %}
 
-<step>
-**Save the List**
-
+{% step %}
+### Save the List
 Click the submit button to create the list. You'll see a success message confirming the list was created. The new list will appear in your inbox tabs.
 
 📸 Screenshot placeholder:
 > [Screenshot: Success message and new list appearing in tabs]
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 ## How to manage custom lists (Step by Step)
 
@@ -128,48 +124,43 @@ Click on any conversation in your Inbox to open it.
 📸 Screenshot placeholder:
 > [Screenshot: Conversation opened in Inbox]
 
-<step>
-**Access List Assignment**
-
+{% step %}
+### Access List Assignment
 Click the three-dot menu (⋮) in the conversation header, then select `List Assignment`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Three-dot menu showing "List Assignment" option]
-</step>
+{% endstep %}
 
-<step>
-**Add to Lists**
-
+{% step %}
+### Add to Lists
 In the "Add Chat to Lists" modal, you'll see all your custom lists. For each list:
 - If the conversation is **not** in the list, click the `Add` button to add it.
 - If the conversation is **already** in the list, you'll see a `Remove` button instead.
 
 📸 Screenshot placeholder:
 > [Screenshot: Add Chat to Lists modal showing lists with Add/Remove buttons]
-</step>
+{% endstep %}
 
-<step>
-**Confirm**
-
+{% step %}
+### Confirm
 The conversation is immediately added or removed from the selected list. You'll see a success message confirming the action.
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 ### Method 2: Bulk Management from List Settings
 
-<steps>
-<step>
-**Open Manage List**
-
+{% stepper %}
+{% step %}
+### Open Manage List
 Click the three-dot icon (⋮) on any custom list tab, then select `Manage List`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Custom list dropdown showing "Manage List" option]
-</step>
+{% endstep %}
 
-<step>
-**View Contacts in List**
-
+{% step %}
+### View Contacts in List
 The "Manage List" modal opens, showing all contacts. You can:
 - **Search**: Use the search box to find specific contacts.
 - **Filter**: Use filters to narrow down contacts by tags, assignee, or other criteria.
@@ -177,38 +168,35 @@ The "Manage List" modal opens, showing all contacts. You can:
 
 📸 Screenshot placeholder:
 > [Screenshot: Manage List modal showing contact table with Add/Remove buttons]
-</step>
+{% endstep %}
 
-<step>
-**Add Contacts Individually**
-
+{% step %}
+### Add Contacts Individually
 For each contact in the table:
 - Click `Add` to add the contact to the list.
 - Click `Remove` to remove the contact from the list.
-</step>
+{% endstep %}
 
-<step>
-**Bulk Add Contacts**
-
+{% step %}
+### Bulk Add Contacts
 1. Select multiple contacts by checking the boxes next to their names.
 2. Click the `Bulk Add` button at the bottom of the page.
 3. All selected contacts will be added to the list at once.
 
 📸 Screenshot placeholder:
 > [Screenshot: Multiple contacts selected with Bulk Add button visible]
-</step>
+{% endstep %}
 
-<step>
-**Bulk Remove Contacts**
-
+{% step %}
+### Bulk Remove Contacts
 1. Select multiple contacts that are already in the list.
 2. Click the `Bulk Remove` button at the bottom of the page.
 3. All selected contacts will be removed from the list at once.
 
 📸 Screenshot placeholder:
 > [Screenshot: Multiple contacts selected with Bulk Remove button visible]
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 ## How to remove conversations from a list (Step by Step)
 

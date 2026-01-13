@@ -8,34 +8,31 @@ An internal-only message in Inbox for teammates. Contacts do not see it.
 
 ## How to set it up (Step by Step)
 
-<steps>
-<step>
-**Open the conversation**
-
+{% stepper %}
+{% step %}
+### Open the conversation
 In `Inbox`, open the conversation where you need to leave context.
 
 📸 Screenshot placeholder:
 > [Screenshot: Conversation thread with composer visible]
-</step>
+{% endstep %}
 
-<step>
-**Switch to Internal Note**
-
+{% step %}
+### Switch to Internal Note
 Toggle the composer to `Internal Note` mode.
 
 📸 Screenshot placeholder:
 > [Screenshot: Composer showing Internal Note mode selected]
-</step>
+{% endstep %}
 
-<step>
-**Write and post**
-
+{% step %}
+### Write and post
 Enter the note for teammates and post it. It will appear in the thread marked as internal.
 
 📸 Screenshot placeholder:
 > [Screenshot: Posted internal note with internal badge]
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 The note is visible to teammates in the thread but never sent to the contact.

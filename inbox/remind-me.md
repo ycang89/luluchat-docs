@@ -11,28 +11,25 @@ Remind Me is a feature that lets you set reminders for conversations in your Inb
 
 ## How to create a reminder (Step by Step)
 
-<steps>
-<step>
-**Open a Conversation**
-
+{% stepper %}
+{% step %}
+### Open a Conversation
 In your Inbox, click on any conversation to open it.
 
 📸 Screenshot placeholder:
 > [Screenshot: Inbox with a conversation selected and opened]
-</step>
+{% endstep %}
 
-<step>
-**Access Remind Me**
-
+{% step %}
+### Access Remind Me
 Click the three-dot menu (⋮) or the "Remind me" button in the conversation header bar.
 
 📸 Screenshot placeholder:
 > [Screenshot: Conversation header showing three-dot menu with "Remind me" option]
-</step>
+{% endstep %}
 
-<step>
-**Fill in Reminder Details**
-
+{% step %}
+### Fill in Reminder Details
 In the "Create a Reminder" modal, configure your reminder:
 
 - **Notify to Team User** (Required): Select one or more team members who should receive the reminder notification. You can select multiple users.
@@ -43,42 +40,38 @@ In the "Create a Reminder" modal, configure your reminder:
 
 📸 Screenshot placeholder:
 > [Screenshot: Create a Reminder modal with all fields filled in]
-</step>
+{% endstep %}
 
-<step>
-**Save the Reminder**
-
+{% step %}
+### Save the Reminder
 Click the submit button to create the reminder. You'll see a success message confirming the reminder was created with the date and time.
 
 📸 Screenshot placeholder:
 > [Screenshot: Success message showing reminder created confirmation]
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 ## How to view and manage reminders (Step by Step)
 
-<steps>
-<step>
-**Open Notifications**
-
+{% stepper %}
+{% step %}
+### Open Notifications
 Click the bell icon (🔔) in the header bar to open the notifications panel.
 
 📸 Screenshot placeholder:
 > [Screenshot: Header bar with bell icon highlighted]
-</step>
+{% endstep %}
 
-<step>
-**Switch to Reminders Tab**
-
+{% step %}
+### Switch to Reminders Tab
 In the notifications panel, click the **"Reminders"** tab to view your reminders.
 
 📸 Screenshot placeholder:
 > [Screenshot: Notifications panel showing Notifications and Reminders tabs]
-</step>
+{% endstep %}
 
-<step>
-**Filter Reminders**
-
+{% step %}
+### Filter Reminders
 Use the segmented control to filter reminders by status:
 - **Upcoming**: Reminders scheduled for future dates
 - **Overdue**: Reminders that have passed their scheduled time but haven't been marked as done
@@ -86,20 +79,18 @@ Use the segmented control to filter reminders by status:
 
 📸 Screenshot placeholder:
 > [Screenshot: Reminders tab showing Upcoming, Overdue, and Done filter options]
-</step>
+{% endstep %}
 
-<step>
-**Search Reminders (Optional)**
-
+{% step %}
+### Search Reminders (Optional)
 Use the search box to find specific reminders by title or description.
 
 📸 Screenshot placeholder:
 > [Screenshot: Search box in Reminders tab]
-</step>
+{% endstep %}
 
-<step>
-**Manage Reminders**
-
+{% step %}
+### Manage Reminders
 For each reminder, you can:
 - **View Details**: Click on a reminder to see its full details.
 - **Edit**: Click the edit icon to modify the reminder (only for reminders you created).
@@ -109,8 +100,8 @@ For each reminder, you can:
 
 📸 Screenshot placeholder:
 > [Screenshot: Reminder list showing action buttons for edit, mark as done, and delete]
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 ## What happens after you create a reminder?
 - **Reminder Created**: The reminder is saved and appears in your Reminders list.

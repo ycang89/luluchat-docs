@@ -9,18 +9,18 @@ Account registration is the first step to start using Luluchat. You'll create yo
 
 ## How to register (Step by Step)
 
-<steps>
-<step>
-**Open the Sign Up Page**
+{% stepper %}
+{% step %}
+### Open the Sign Up Page
 
-Navigate to the Luluchat login page and click the **Sign Up** tab.
+Navigate to the Luluchat login page and click the Sign Up tab.
 
 📸 Screenshot placeholder:
 > [Screenshot: Login page with Sign Up tab selected]
-</step>
+{% endstep %}
 
-<step>
-**Enter Your WhatsApp Number**
+{% step %}
+### Enter Your WhatsApp Number
 
 Enter your WhatsApp phone number in the phone input field. Make sure to include your country code (e.g., +60123456789 for Malaysia).
 
@@ -28,32 +28,32 @@ Enter your WhatsApp phone number in the phone input field. Make sure to include 
 > [Screenshot: Phone number input field with country code selector]
 
 {% hint style="warning" %}
-**Important**: This number must be a valid WhatsApp number, as you'll receive a verification code via WhatsApp.
+Important: This number must be a valid WhatsApp number, as you'll receive a verification code via WhatsApp.
 {% endhint %}
-</step>
+{% endstep %}
 
-<step>
-**Enter Your Full Name**
+{% step %}
+### Enter Your Full Name
 
 Type your full name in the name field. This will be displayed as your profile name in Luluchat.
 
 📸 Screenshot placeholder:
 > [Screenshot: Full name input field]
-</step>
+{% endstep %}
 
-<step>
-**Create Your Password**
+{% step %}
+### Create Your Password
 
 Enter a secure password. Your password should be at least 6 characters long for basic security, or 10+ characters for stronger security.
 
 📸 Screenshot placeholder:
 > [Screenshot: Password input field with strength indicator]
-</step>
+{% endstep %}
 
-<step>
-**Request OTP Verification Code**
+{% step %}
+### Request OTP Verification Code
 
-Once you've filled in your phone number, name, and password, click the **Get OTP** button. A 6-digit verification code will be sent to your WhatsApp number.
+Once you've filled in your phone number, name, and password, click the Get OTP button. A 6-digit verification code will be sent to your WhatsApp number.
 
 📸 Screenshot placeholder:
 > [Screenshot: Get OTP button and OTP input field appearing]
@@ -61,26 +61,26 @@ Once you've filled in your phone number, name, and password, click the **Get OTP
 {% hint style="info" %}
 **Note**: The OTP button will be disabled until all required fields (phone, name, password) are filled.
 {% endhint %}
-</step>
+{% endstep %}
 
-<step>
-**Enter OTP Code**
+{% step %}
+### Enter OTP Code
 
 Check your WhatsApp for the 6-digit code and enter it in the OTP field. The code is valid for a limited time.
 
 📸 Screenshot placeholder:
 > [Screenshot: OTP input field with 6-digit code entered]
-</step>
+{% endstep %}
 
-<step>
-**Complete Registration**
+{% step %}
+### Complete Registration
 
-Click the **Sign Up** button. If your OTP is correct, your account will be created and you'll be automatically redirected to the onboarding process.
+Click the Sign Up button. If your OTP is correct, your account will be created and you'll be automatically redirected to the onboarding process.
 
 📸 Screenshot placeholder:
 > [Screenshot: Sign Up button and success message]
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 ## What happens after registration?
 - **Account Created**: Your Luluchat account is successfully created.
@@ -115,19 +115,17 @@ If you forget your password, you can reset it using the "Forgot Password" on the
 
 ### How to Reset Password (Step by Step)
 
-<steps>
-<step>
-**Access Forgot Password**
-
+{% stepper %}
+{% step %}
+### Access Forgot Password
 On the login page, click the **Forgot Password** link below the password field.
 
 📸 Screenshot placeholder:
 > [Screenshot: Login page showing "Forgot Password" link]
-</step>
+{% endstep %}
 
-<step>
-**Enter Your Registered Phone Number**
-
+{% step %}
+### Enter Your Registered Phone Number
 In the "Forgot Password" modal, enter your **registered WhatsApp number** (the phone number you used when creating your Luluchat account).
 
 {% hint style="warning" %}
@@ -136,53 +134,48 @@ In the "Forgot Password" modal, enter your **registered WhatsApp number** (the p
 
 📸 Screenshot placeholder:
 > [Screenshot: Forgot Password modal with phone number input field]
-</step>
+{% endstep %}
 
-<step>
-**Enter New Password**
-
+{% step %}
+### Enter New Password
 Enter your new password in the "Enter your new password" field. The password must be at least 6 characters long.
 
 📸 Screenshot placeholder:
 > [Screenshot: New password input field]
-</step>
+{% endstep %}
 
-<step>
-**Confirm New Password**
-
+{% step %}
+### Confirm New Password
 Re-enter your new password in the "Confirm your new password" field. Both passwords must match.
 
 📸 Screenshot placeholder:
 > [Screenshot: Confirm password input field]
-</step>
+{% endstep %}
 
-<step>
-**Submit Request**
-
+{% step %}
+### Submit Request
 Click the submit button. The system will send an OTP to your registered WhatsApp number.
 
 📸 Screenshot placeholder:
 > [Screenshot: Submit button in Forgot Password modal]
-</step>
+{% endstep %}
 
-<step>
-**Enter OTP**
-
+{% step %}
+### Enter OTP
 After submitting, the modal will show an OTP input field. Check your WhatsApp for the one-time password and enter it in the field.
 
 📸 Screenshot placeholder:
 > [Screenshot: OTP input field in Forgot Password modal]
-</step>
+{% endstep %}
 
-<step>
-**Complete Reset**
-
+{% step %}
+### Complete Reset
 Once you enter the correct OTP, your password will be reset and you'll see a success message. You can now log in with your new password.
 
 📸 Screenshot placeholder:
 > [Screenshot: Success message confirming password reset]
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 {% hint style="warning" %}
 **Important behavior to know**

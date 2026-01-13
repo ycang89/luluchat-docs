@@ -9,43 +9,39 @@ The Inbox is where you see and work on all active conversations. From here you c
 
 ## How to set it up (Step by Step)
 
-<steps>
-<step>
-**Open Inbox**
-
+{% stepper %}
+{% step %}
+### Open Inbox
 Click `Inbox` in the left menu to view your conversation lists.
 
 📸 Screenshot placeholder:
 > [Screenshot: Inbox list view with conversation rows and filters]
-</step>
+{% endstep %}
 
-<step>
-**Pick a conversation**
-
+{% step %}
+### Pick a conversation
 Select a conversation row to open it. You'll see the message thread, contact details, and action bar.
 
 📸 Screenshot placeholder:
 > [Screenshot: Conversation thread open with contact panel visible]
-</step>
+{% endstep %}
 
-<step>
-**Reply and update**
-
+{% step %}
+### Reply and update
 Type your reply, then use the action bar to add tags, assign a teammate, or move the conversation to a list if needed.
 
 📸 Screenshot placeholder:
 > [Screenshot: Reply composer with Tag and Assign controls highlighted]
-</step>
+{% endstep %}
 
-<step>
-**Resolve**
-
+{% step %}
+### Resolve
 When done, close the conversation from the action bar. If it needs follow-up, leave it open and assign or tag accordingly.
 
 📸 Screenshot placeholder:
 > [Screenshot: Close action on the conversation toolbar]
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 Your reply is sent immediately. Assignments, tags, and list changes apply to the conversation, and its status updates for everyone on the team.

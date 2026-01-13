@@ -106,24 +106,21 @@ If you can't find what you're looking for in this documentation:
 
 Ready to get started? Begin with:
 
-<steps>
-<step>
-**Register a Luluchat Account**
-
+{% stepper %}
+{% step %}
+### Register a Luluchat Account
 If you haven't already, [create your account](./register-account.md) to get started with Luluchat.
-</step>
+{% endstep %}
 
-<step>
-**Connect your Channel**
-
+{% step %}
+### Connect your Channel
 [Link your WhatsApp account](./inbox/connect-channel.md) to start managing conversations.
-</step>
+{% endstep %}
 
-<step>
-**Create your first Message Flow**
-
+{% step %}
+### Create your first Message Flow
 [Set up automated responses](./automations/message-flows.md) to improve customer experience.
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 Welcome to Luluchat! We're here to help you succeed.

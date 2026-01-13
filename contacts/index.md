@@ -44,31 +44,27 @@ In the **Contacts List**, you can see:
 
 Click on any contact's name to open their **Details Form**. From here you can:
 
-<steps>
-<step>
-**Update Profile Information**
-
+{% stepper %}
+{% step %}
+### Update Profile Information
 Update their **Display Name** or **Remarks** to personalize how they appear in your workspace.
-</step>
+{% endstep %}
 
-<step>
-**Manage Segmentation**
-
+{% step %}
+### Manage Segmentation
 Manage their **Tags** and **Assignee** to organize and route conversations effectively.
-</step>
+{% endstep %}
 
-<step>
-**Edit Custom Data**
-
+{% step %}
+### Edit Custom Data
 View and edit **Custom Attributes** (e.g., Company, Email, Birthday) to store additional information.
-</step>
+{% endstep %}
 
-<step>
-**Control Messaging**
-
+{% step %}
+### Control Messaging
 Toggle their **Opt-In** status to manage consent for marketing messages.
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 📸 Screenshot placeholder:
 > [Screenshot: Contacts list view with several contacts and their tags/assignees]

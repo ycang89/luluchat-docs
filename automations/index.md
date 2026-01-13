@@ -12,43 +12,39 @@ Automations let you create hands-free replies and routing across message flows, 
 
 ## How to set it up (Step by Step)
 
-<steps>
-<step>
-**Open Automations**
-
+{% stepper %}
+{% step %}
+### Open Automations
 Open `Automations` from the left menu to see tabs for `Message Flows`, `Keywords`, `Growth Tools`, `Workflows`, and `Web Widget`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Automations page showing tabs for Message Flows, Keywords, Growth Tools, Workflows, Web Widget]
-</step>
+{% endstep %}
 
-<step>
-**Choose an automation type**
-
+{% step %}
+### Choose an automation type
 Select the tab you need (for example, `Message Flows`, `Keywords`, `Growth Tools`, `Workflows`, or `Web Widget`) and click its `Create` action (for flows you may see `Create Message Flow`; for workflows `Create Workflow`).
 
 📸 Screenshot placeholder:
 > [Screenshot: Selected Automations tab with the Create button visible]
-</step>
+{% endstep %}
 
-<step>
-**Configure trigger and actions**
-
+{% step %}
+### Configure trigger and actions
 Set the trigger (keyword, entry point, schedule, or event), then define what should happen (auto-reply content, assign/route, add tags, move to channel, or start a flow). Include targeting such as channel, audience, or time window if available, then save.
 
 📸 Screenshot placeholder:
 > [Screenshot: Automation creation form showing trigger selection, action configuration, and save/publish controls]
-</step>
+{% endstep %}
 
-<step>
-**Publish and test**
-
+{% step %}
+### Publish and test
 Enable or publish the automation, then test it in a low-traffic channel or with a test contact to confirm the trigger fires and the right action runs.
 
 📸 Screenshot placeholder:
 > [Screenshot: Automation list showing the new automation in enabled/active state]
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 ## Sections in Automations
 

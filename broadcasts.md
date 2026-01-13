@@ -10,72 +10,72 @@ Broadcasts allow you to send a message flow to a large group of contacts at once
 
 ## How to set it up (Step by Step)
 
-<steps>
-<step>
-**Open Broadcasts**
+{% stepper %}
+{% step %}
+### Open Broadcasts
 
 Click `Broadcasts` in the left menu to view your broadcast list.
 
 📸 Screenshot placeholder:
 > [Screenshot: Broadcasts list view with 'Create Broadcast' button]
-</step>
+{% endstep %}
 
-<step>
-**Create a new broadcast**
+{% step %}
+### Create a new broadcast
 
 Click the `Create Broadcast` button. You will be guided through a 3-step process.
 
 📸 Screenshot placeholder:
 > [Screenshot: Create Broadcast page showing the three configuration sections]
-</step>
+{% endstep %}
 
-<step>
-**Fill up broadcast details**
+{% step %}
+### Fill up broadcast details
 
-- **Broadcast Name**: Enter an internal name for your reference (e.g., "Monthly Newsletter").
-- **Message Flow**: Choose the message flow you want to deliver. Only activated flows are listed.
-- **Internal Notes**: (Optional) Add notes for your team to provide context about this broadcast.
+- Broadcast Name: Enter an internal name for your reference (e.g., "Monthly Newsletter").
+- Message Flow: Choose the message flow you want to deliver. Only activated flows are listed.
+- Internal Notes: (Optional) Add notes for your team to provide context about this broadcast.
 
 📸 Screenshot placeholder:
 > [Screenshot: Section 1 - Broadcast details with name and flow selection]
-</step>
+{% endstep %}
 
-<step>
-**Define recipients**
+{% step %}
+### Define recipients
 
 Choose who will receive the broadcast using one or more of these conditions:
-- **Tags**: Include or exclude contacts based on their tags.
-- **Manual Selection**: Pick specific contacts from your directory.
-- **Inbox List**: Include all contacts from a specific inbox tab.
-- **File Upload**: Upload a CSV file of phone numbers (must exist in your Contacts first).
-- **Assignee**: Target contacts assigned to specific team members.
+- Tags: Include or exclude contacts based on their tags.
+- Manual Selection: Pick specific contacts from your directory.
+- Inbox List: Include all contacts from a specific inbox tab.
+- File Upload: Upload a CSV file of phone numbers (must exist in your Contacts first).
+- Assignee: Target contacts assigned to specific team members.
 
 {% hint style="warning" %}
-**Important**: Only contacts that meet both of these criteria will receive broadcasts:
-- **Imported Contacts**: Contacts must be imported or added through the Contacts page. Contacts who have only messaged you but haven't been added to your Contacts directory will not receive broadcasts.
-- **Not Opted Out**: Contacts must not have opted out. Opted-out contacts are automatically excluded from all broadcasts.
+Important: Only contacts that meet both of these criteria will receive broadcasts:
+- Imported Contacts: Contacts must be imported or added through the Contacts page. Contacts who have only messaged you but haven't been added to your Contacts directory will not receive broadcasts.
+- Not Opted Out: Contacts must not have opted out. Opted-out contacts are automatically excluded from all broadcasts.
 {% endhint %}
 
 📸 Screenshot placeholder:
 > [Screenshot: Section 2 - Recipient conditions showing tags, manual selection, and upload options]
-</step>
+{% endstep %}
 
-<step>
-**Configure advanced settings**
+{% step %}
+### Configure advanced settings
 
-- **Scheduling**: Toggle "Yes" to pick a future date and time for the broadcast.
-- **Archive Chat**: Toggle "Yes" to automatically move these conversations to the Archived list in your Inbox after the broadcast is sent.
+- Scheduling: Toggle "Yes" to pick a future date and time for the broadcast.
+- Archive Chat: Toggle "Yes" to automatically move these conversations to the Archived list in your Inbox after the broadcast is sent.
 
 📸 Screenshot placeholder:
 > [Screenshot: Section 3 - Advanced settings with scheduling and archive toggles]
-</step>
+{% endstep %}
 
-<step>
-**Review and save**
+{% step %}
+### Review and save
 
 Click `Create` to finalize. If not scheduled, it will begin sending (respecting your daily limits and hours).
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 The system begins delivering the message flow to each recipient. You can track progress from the Broadcasts list, seeing statistics like how many messages are remaining. You can also view detailed message status in the **Broadcast Message Queue** section on the broadcast details page.

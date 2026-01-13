@@ -7,55 +7,48 @@ Luluchat makes it easy to bring your existing audience into the platform or expo
 
 If you have a large list of customers, you can add them all at once:
 
-<steps>
-<step>
-**Click Import Contacts**
-
+{% stepper %}
+{% step %}
+### Click Import Contacts
 Click the **Import Contacts** button in the Contacts page.
-</step>
+{% endstep %}
 
-<step>
-**Download Excel Template**
-
+{% step %}
+### Download Excel Template
 Download the **Excel Template** provided by Luluchat to ensure your file format is correct.
-</step>
+{% endstep %}
 
-<step>
-**Fill in Contact Details**
-
+{% step %}
+### Fill in Contact Details
 Fill in your contact details in the template (Name, Phone Number, Tags, etc.).
-</step>
+{% endstep %}
 
-<step>
-**Upload and Import**
-
+{% step %}
+### Upload and Import
 Upload the completed file and click **Import** to add all contacts to your database.
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 ### Exporting Audience Data
 
 To download your contact list:
 
-<steps>
-<step>
-**Apply Filters (Optional)**
-
+{% stepper %}
+{% step %}
+### Apply Filters (Optional)
 Apply any filters (e.g., filter by a specific tag) if you only want a subset of your audience.
-</step>
+{% endstep %}
 
-<step>
-**Click Export**
-
+{% step %}
+### Click Export
 Click the **Export** button in the Contacts page.
-</step>
+{% endstep %}
 
-<step>
-**Download Excel File**
-
+{% step %}
+### Download Excel File
 An Excel file containing all visible contacts and their details will be downloaded automatically.
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 📸 Screenshot placeholder:
 > [Screenshot: Import Contacts modal with the template download link]

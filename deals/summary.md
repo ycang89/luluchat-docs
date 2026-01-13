@@ -8,34 +8,31 @@ This is a reporting view that is always available. It updates dynamically as you
 
 ## How to set it up (Step by Step)
 
-<steps>
-<step>
-**Open Deals Summary**
-
+{% stepper %}
+{% step %}
+### Open Deals Summary
 Click `Deals` in the left menu, then select the `Summary` tab at the top.
 
 📸 Screenshot placeholder:
 > [Screenshot: Deals module with the Summary tab selected]
-</step>
+{% endstep %}
 
-<step>
-**Select your Sales Funnel**
-
+{% step %}
+### Select your Sales Funnel
 Choose the specific deal pipeline you want to analyze from the dropdown menu.
 
 📸 Screenshot placeholder:
 > [Screenshot: Deal pipeline selector highlighted]
-</step>
+{% endstep %}
 
-<step>
-**Filter by Owner or Date**
-
+{% step %}
+### Filter by Owner or Date
 Narrow down the results by selecting a specific Sales Rep (Collaborator) or a Date Range to see performance for a particular period.
 
 📸 Screenshot placeholder:
 > [Screenshot: Filter bar with Owner and Date selectors]
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 The dashboard will populate with your sales metrics, including total deal value, status breakdown (Won/Lost/Open), and your conversion funnel.

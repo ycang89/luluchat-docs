@@ -9,82 +9,74 @@ Connecting your channel links your WhatsApp account (Personal or Business Cloud)
 
 ## How to set it up (Step by Step)
 
-<steps>
-<step>
-**Open Inbox**
-
-Click `Inbox` in the left menu. if your channel is not yet connected, you will automatically be directed to the **Connect your Channel** page.
+{% stepper %}
+{% step %}
+### Open Inbox
+Click `Inbox` in the left menu. if your channel is not yet connected, you will automatically be directed to the Connect your Channel page.
 
 📸 Screenshot placeholder:
 > [Screenshot: Channel selection page showing WhatsApp Personal and WhatsApp Cloud options]
-</step>
+{% endstep %}
 
-<step>
-**Choose your Channel Type**
-
+{% step %}
+### Choose your Channel Type
 Select the type of WhatsApp account you want to connect:
-- **WhatsApp Personal**: For standard WhatsApp or WhatsApp Business app accounts.
-- **WhatsApp Cloud**: For accounts using the official WhatsApp Business API (WABA).
-</step>
-</steps>
+- WhatsApp Personal: For standard WhatsApp or WhatsApp Business app accounts.
+- WhatsApp Cloud: For accounts using the official WhatsApp Business API (WABA).
+{% endstep %}
+{% endstepper %}
 
 ### Connecting WhatsApp Personal
 
-<steps>
-<step>
-**Scan QR Code**
-
-Luluchat will generate a QR code. Open WhatsApp on your phone, go to **Linked Devices**, and scan the code shown on the screen.
+{% stepper %}
+{% step %}
+### Scan QR Code
+Luluchat will generate a QR code. Open WhatsApp on your phone, go to Linked Devices, and scan the code shown on the screen.
 
 📸 Screenshot placeholder:
 > [Screenshot: WhatsApp Personal connection page with QR code]
-</step>
+{% endstep %}
 
-<step>
-**Link with Phone Number (Alternative)**
-
-If you cannot scan the QR code, click **Link with Phone Number**. Enter your phone number to receive a pairing code, then enter that code in your WhatsApp app's "Link with Phone Number" section.
+{% step %}
+### Link with Phone Number (Alternative)
+If you cannot scan the QR code, click Link with Phone Number. Enter your phone number to receive a pairing code, then enter that code in your WhatsApp app's "Link with Phone Number" section.
 
 📸 Screenshot placeholder:
 > [Screenshot: Pairing code entry for phone number linking]
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 ### Connecting WhatsApp Cloud (WABA)
 
-<steps>
-<step>
-**Authenticate with Facebook**
-
+{% stepper %}
+{% step %}
+### Authenticate with Facebook
 Follow the on-screen prompts to log in to your Facebook Business account and authorize Luluchat.
-</step>
+{% endstep %}
 
-<step>
-**Select Phone Number**
-
+{% step %}
+### Select Phone Number
 Choose the specific phone number from your WABA account that you want to use with Luluchat.
-</step>
+{% endstep %}
 
-<step>
-**Enter OTP/PIN**
-
+{% step %}
+### Enter OTP/PIN
 Enter the verification code or PIN provided during the WABA setup process to finalize the connection.
 
 📸 Screenshot placeholder:
 > [Screenshot: WhatsApp Cloud setup form showing phone selection and PIN fields]
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
-<steps>
-<step>
-**Wait for Sync**
-
+{% stepper %}
+{% step %}
+### Wait for Sync
 Once connected, Luluchat will begin syncing your contacts and messages. You will see a "Syncing contacts..." status before the Inbox fully loads.
 
 📸 Screenshot placeholder:
 > [Screenshot: Inbox loading/syncing state]
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 **Note:**
 - Make sure your mobile phone has a good internet connection.

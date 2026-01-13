@@ -45,37 +45,32 @@ Bookings is Luluchat's appointment scheduling system that allows you to create b
 
 ## How to get started
 
-<steps>
-<step>
-**Create a Calendar**
-
+{% stepper %}
+{% step %}
+### Create a Calendar
 Go to `Bookings` > `Calendars` and click "Create Calendar".
-</step>
+{% endstep %}
 
-<step>
-**Configure Services**
-
+{% step %}
+### Configure Services
 Add services that customers can book with durations and pricing.
-</step>
+{% endstep %}
 
-<step>
-**Set Working Hours**
-
+{% step %}
+### Set Working Hours
 Define when appointments are available for each service.
-</step>
+{% endstep %}
 
-<step>
-**Share Booking Link**
-
+{% step %}
+### Share Booking Link
 Copy and share the booking link with customers via WhatsApp or your website.
-</step>
+{% endstep %}
 
-<step>
-**Manage Appointments**
-
+{% step %}
+### Manage Appointments
 View and manage bookings in `Bookings` > `Appointments`.
-</step>
-</steps>
+{% endstep %}
+{% endstepper %}
 
 ## Related Documentation
 
