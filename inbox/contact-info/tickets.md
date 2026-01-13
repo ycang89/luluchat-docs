@@ -1,4 +1,4 @@
-# Tickets (Add Ticket)
+# Tickets
 
 ## What is the Tickets tab?
 Creates a ticket linked to the contact directly from the contact info panel in Inbox.
@@ -8,17 +8,25 @@ Creates a ticket linked to the contact directly from the contact info panel in I
 
 ## How to use (Step by Step)
 
-### Step 1: Open contact info
+{% stepper %}
+{% step %}
+### Open contact info
+
 In `Inbox`, open the conversation and select the `Tickets` tab.
 
 📸 Screenshot placeholder:
 > [Screenshot: Tickets tab with Add Ticket action]
+{% endstep %}
 
-### Step 2: Create a ticket
+{% step %}
+### Create a ticket
+
 Click `Add Ticket`, fill in the required fields (title, details, tags/assignee/board options), and save.
 
 📸 Screenshot placeholder:
 > [Screenshot: Ticket creation form in the Tickets tab]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 A ticket is created and linked to the contact; it appears in Tickets views (summary/board/list).

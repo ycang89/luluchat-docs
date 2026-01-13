@@ -1,4 +1,4 @@
-# Profile (Assignee, Collaborator, Tags, Profile, Custom Attributes, Opt Out)
+# Profile
 
 ## What is the Profile tab?
 The Profile tab in contact info lets you manage ownership, collaborators, tags, profile details, custom attributes, and opt-out status while viewing the conversation.

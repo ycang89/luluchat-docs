@@ -11,45 +11,63 @@ The Tags Report tracks tag growth and usage over time, showing how many contacts
 
 ## How to use it (Step by Step)
 
-### Step 1: Open Tags Report
+{% stepper %}
+{% step %}
+### Open Tags Report
+
 Go to `Reports` > `Tags` from the left menu.
 
 📸 Screenshot placeholder:
 > [Screenshot: Tags report page with date range selector]
+{% endstep %}
 
-### Step 2: Select Date Range
+{% step %}
+### Select Date Range
+
 Choose a date range using the preset options (Last 7 days, Last 30 days, This month, This year) or select a custom range using the date picker.
 
 📸 Screenshot placeholder:
 > [Screenshot: Date range selector with options]
+{% endstep %}
 
-### Step 3: Select Tags to Analyze
+{% step %}
+### Select Tags to Analyze
+
 In the "Select Tags" section, choose one or more tags from the dropdown. You can select multiple tags to compare their growth patterns. The report will show data only for the selected tags.
 
 📸 Screenshot placeholder:
 > [Screenshot: Tag selector dropdown with multiple tags selected]
 
 **Note**: If no tags are selected, the charts and tables will be empty. At least one tag must be selected to view data.
+{% endstep %}
 
-### Step 4: Review Tag Growth Chart
+{% step %}
+### Review Tag Growth Chart
+
 The "All-Time Cumulative Tags" chart shows the cumulative growth of selected tags over time. Each tag appears as a separate line, making it easy to compare growth rates.
 
 📸 Screenshot placeholder:
 > [Screenshot: Line chart showing cumulative tag growth with multiple tag lines]
+{% endstep %}
 
-### Step 5: View Tag Changes Table
+{% step %}
+### View Tag Changes Table
+
 Below the chart, the "Tag Changes" table shows:
-- **Name**: The tag name.
-- **Added this period**: Number of contacts that received this tag during the selected period.
-- **Removed this period**: Number of contacts that had this tag removed during the selected period.
+- Name: The tag name.
+- Added this period: Number of contacts that received this tag during the selected period.
+- Removed this period: Number of contacts that had this tag removed during the selected period.
 
 📸 Screenshot placeholder:
 > [Screenshot: Tag Changes table with columns for name, added, and removed counts]
+{% endstep %}
 
-### Step 6: View Contact Lists (Optional)
+{% step %}
+### View Contact Lists (Optional)
+
 Click the "More" button on any tag row to expand and see detailed contact lists:
-- **Added Contact List**: Shows all contacts that received this tag during the selected period.
-- **Removed Contact List**: Shows all contacts that had this tag removed during the selected period.
+- Added Contact List: Shows all contacts that received this tag during the selected period.
+- Removed Contact List: Shows all contacts that had this tag removed during the selected period.
 
 Each contact list shows:
 - Contact name (clickable to view profile)
@@ -58,12 +76,17 @@ Each contact list shows:
 
 📸 Screenshot placeholder:
 > [Screenshot: Expanded tag row showing tabs for Added and Removed contact lists]
+{% endstep %}
 
-### Step 7: Export Data (Optional)
-Click the **Export** button in the Tag Changes table toolbar to download an Excel file with tag change data.
+{% step %}
+### Export Data (Optional)
+
+Click the Export button in the Tag Changes table toolbar to download an Excel file with tag change data.
 
 📸 Screenshot placeholder:
 > [Screenshot: Export button in the table toolbar]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after you use it?
 - **Charts Displayed**: The cumulative growth chart updates to show selected tags.

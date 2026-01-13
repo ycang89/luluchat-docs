@@ -8,23 +8,34 @@ Controls to mute or enable inbox sound notifications for new messages.
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open Inbox
+{% stepper %}
+{% step %}
+### Open Inbox
+
 Click `Inbox` from the left menu.
 
 📸 Screenshot placeholder:
 > [Screenshot: Inbox header showing sound/mute control]
+{% endstep %}
 
-### Step 2: Toggle sound
+{% step %}
+### Toggle sound
+
 Use the sound icon or setting to switch between muted and unmuted.
 
 📸 Screenshot placeholder:
 > [Screenshot: Sound toggle in muted state]
+{% endstep %}
 
-### Step 3: Confirm your preference
+{% step %}
+### Confirm your preference
+
 Ensure the icon/state matches what you want (muted or with sound).
 
 📸 Screenshot placeholder:
 > [Screenshot: Sound toggle in unmuted state]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 New message alerts play or stay silent based on your setting; it applies to your session/user.

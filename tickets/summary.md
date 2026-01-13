@@ -8,23 +8,34 @@ This is a reporting view that is always available. It updates automatically as y
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open Tickets Summary
+{% stepper %}
+{% step %}
+### Open Tickets Summary
+
 Click `Tickets` in the left menu, then select the `Summary` tab at the top.
 
 📸 Screenshot placeholder:
 > [Screenshot: Tickets module with the Summary tab selected]
+{% endstep %}
 
-### Step 2: Select your Pipeline and Filter
+{% step %}
+### Select your Pipeline and Filter
+
 Use the dropdown menus to select the specific ticketing pipeline you want to analyze. You can also filter by teammate (Collaborator) and a specific Date Range.
 
 📸 Screenshot placeholder:
 > [Screenshot: Filter bar showing Pipeline, Collaborator, and Date Range selectors]
+{% endstep %}
 
-### Step 3: Review the Reports
+{% step %}
+### Review the Reports
+
 Analyze the various charts including Stage Overview, Categories of Work, and Priority Breakdown to understand your team's current status.
 
 📸 Screenshot placeholder:
 > [Screenshot: Tickets Summary page with various charts and filters]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 The data updates in real-time. Any changes made to tickets on the Board or List view will be reflected here, allowing you to see the immediate impact of your team's work.

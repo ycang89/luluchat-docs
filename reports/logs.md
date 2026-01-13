@@ -11,45 +11,62 @@ The Logs Report provides an overview of message activity and new contact growth 
 
 ## How to use it (Step by Step)
 
-### Step 1: Open Logs Report
+{% stepper %}
+{% step %}
+### Open Logs Report
+
 Go to `Reports` > `Logs` from the left menu.
 
 📸 Screenshot placeholder:
 > [Screenshot: Logs report page with date range selector]
+{% endstep %}
 
-### Step 2: Select Date Range
+{% step %}
+### Select Date Range
+
 Choose a date range using the preset options (Last 7 days, Last 30 days, This month, This year) or select a custom range using the date picker.
 
 📸 Screenshot placeholder:
 > [Screenshot: Date range selector with options]
+{% endstep %}
 
-### Step 3: Review Message Performance
+{% step %}
+### Review Message Performance
+
 The "Message Performance" card shows:
-- **Total Messages Sent**: Total number of messages sent from your company during the selected period.
-- **Total Messages Received**: Total number of messages received by your company during the selected period.
-- **Message Trend Chart**: A line chart showing daily message volume (sent and received) over the selected period.
+- Total Messages Sent: Total number of messages sent from your company during the selected period.
+- Total Messages Received: Total number of messages received by your company during the selected period.
+- Message Trend Chart: A line chart showing daily message volume (sent and received) over the selected period.
 
 📸 Screenshot placeholder:
 > [Screenshot: Message Performance card with statistics and line chart]
+{% endstep %}
 
-### Step 4: Review New Contact Growth
+{% step %}
+### Review New Contact Growth
+
 The "New Contact Growth" card shows:
-- **Newly Added Contact**: Total number of new contacts added during the selected period.
-- **Growth Trend Chart**: A line chart showing daily new contact additions over the selected period.
+- Newly Added Contact: Total number of new contacts added during the selected period.
+- Growth Trend Chart: A line chart showing daily new contact additions over the selected period.
 
 📸 Screenshot placeholder:
 > [Screenshot: New Contact Growth card with statistic and line chart]
+{% endstep %}
 
-### Step 5: Analyze Contact Activity Heatmap
+{% step %}
+### Analyze Contact Activity Heatmap
+
 The "New Contact Time Analysis" heatmap shows when new contacts are added throughout the week:
-- **Days of Week**: Rows represent days (Monday through Sunday).
-- **Hours of Day**: Columns represent hours (00:00 through 23:00).
-- **Color Intensity**: Darker colors indicate more new contacts added during that time slot.
+- Days of Week: Rows represent days (Monday through Sunday).
+- Hours of Day: Columns represent hours (00:00 through 23:00).
+- Color Intensity: Darker colors indicate more new contacts added during that time slot.
 
 This helps you identify peak times when new contacts are joining your system.
 
 📸 Screenshot placeholder:
 > [Screenshot: Heatmap showing new contact activity by day and hour]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after you use it?
 - **Charts Displayed**: Message and contact growth charts update to show data for the selected period.

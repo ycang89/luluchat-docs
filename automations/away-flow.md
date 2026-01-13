@@ -9,23 +9,34 @@ A flow that replies when your channel is set to “away,” telling contacts you
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open Message Flows
+{% stepper %}
+{% step %}
+### Open Message Flows
+
 Go to `Automations` → `Message Flows` and select/create the Away Flow.
 
 📸 Screenshot placeholder:
 > [Screenshot: Message Flows list showing Away Flow option]
+{% endstep %}
 
-### Step 2: Configure away response
+{% step %}
+### Configure away response
+
 Add a short away message and optional options/links (e.g., expected reply time, alternative contact). Save/publish.
 
 📸 Screenshot placeholder:
 > [Screenshot: Away Flow builder with away message]
+{% endstep %}
 
-### Step 3: Enable for away mode
+{% step %}
+### Enable for away mode
+
 Mark this flow as the Away Flow and ensure your channel away status is set when needed.
 
 📸 Screenshot placeholder:
 > [Screenshot: Setting indicating Away Flow assignment]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 Contacts receive the away response and any follow-up steps you add (menu, capture intent, handoff scheduling).

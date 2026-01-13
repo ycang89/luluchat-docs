@@ -1,30 +1,48 @@
-# Flows (Manual Send Message Flow)
+# Flows
 
 ## What is the Flows tab?
-Lets you manually trigger a Message Flow for the contact directly from contact info while in Inbox.
+The Flows tab lets you view which Message Flow the contact is currently in and manually trigger a Message Flow for the contact directly from contact info while in Inbox.
 
 ## When does it trigger?
 - When you pick and send a Message Flow from the `Flows` tab in contact info.
 
 ## How to use (Step by Step)
 
-### Step 1: Open contact info
+{% stepper %}
+{% step %}
+### Open contact info
+
 In `Inbox`, open the conversation and select the `Flows` tab.
 
 📸 Screenshot placeholder:
-> [Screenshot: Flows tab with flow picker]
+> [Screenshot: Flows tab showing current flow status]
+{% endstep %}
 
-### Step 2: Choose a flow and send
-Select a published Message Flow and send it to the contact.
+{% step %}
+### View current flow (if active)
+
+If the contact is currently in a Message Flow, you'll see the active flow name and status displayed at the top of the Flows tab. This helps you understand what automation is currently running for this contact.
+
+📸 Screenshot placeholder:
+> [Screenshot: Current flow indicator showing active flow name]
+{% endstep %}
+
+{% step %}
+### Choose a flow and send
+
+Select a published Message Flow from the dropdown and click Send to manually trigger it for the contact.
 
 📸 Screenshot placeholder:
 > [Screenshot: Flow selection dropdown and Send button]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 The selected flow runs immediately for the contact, sending its configured steps.
 
 ## Important behavior to know
-- Only published flows appear; respect opt-out status before sending.
+- **Current Flow Display**: The Flows tab shows which Message Flow the contact is currently in, if any.
+- Only published flows appear in the dropdown; respect opt-out status before sending.
 - Channel connectivity is required.
 
 ## Common issues & solutions

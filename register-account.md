@@ -225,25 +225,34 @@ Onboarding is a quick setup wizard that helps you configure your Luluchat accoun
 
 ## How to complete onboarding (Step by Step)
 
-### Step 1: Welcome Screen
+{% stepper %}
+{% step %}
+### Welcome Screen
+
 You'll see a welcome message: "Welcome, [Your Name]! Our mission is to make you more productive. Finish our onboarding flow, this will only take a minute."
 
-Click **"Let's do it"** to begin.
+Click "Let's do it" to begin.
 
 📸 Screenshot placeholder:
 > [Screenshot: Onboarding welcome screen with "Let's do it" button]
+{% endstep %}
 
-### Step 2: Company Information
+{% step %}
+### Company Information
+
 Enter details about your company:
-- **Company Name** (Required): Enter your company or business name.
-- **Company Website** (Optional): Enter your company website URL (e.g., www.example.com). You can select the protocol (https:// or http://) from the dropdown.
+- Company Name (Required): Enter your company or business name.
+- Company Website (Optional): Enter your company website URL (e.g., www.example.com). You can select the protocol (https:// or http://) from the dropdown.
 
 📸 Screenshot placeholder:
 > [Screenshot: Company information form with name and website fields]
 
-Click **Next** to continue.
+Click Next to continue.
+{% endstep %}
 
-### Step 3: Team Size
+{% step %}
+### Team Size
+
 Select how many people will be working with you in Luluchat:
 - Just me
 - 2-5
@@ -257,9 +266,12 @@ Select how many people will be working with you in Luluchat:
 📸 Screenshot placeholder:
 > [Screenshot: Team size dropdown selector]
 
-Click **Next** to continue.
+Click Next to continue.
+{% endstep %}
 
-### Step 4: How Did You Hear About Us?
+{% step %}
+### How Did You Hear About Us?
+
 Select the channel through which you discovered Luluchat:
 - Google Search Ads
 - Facebook Ads
@@ -272,35 +284,43 @@ Select the channel through which you discovered Luluchat:
 📸 Screenshot placeholder:
 > [Screenshot: "How did you hear about us" dropdown selector]
 
-Click **Next** to continue.
+Click Next to continue.
+{% endstep %}
 
-### Step 5: Your Role & Security
+{% step %}
+### Your Role & Security
+
 Provide information about your role and security preferences:
-- **Which of these best describes your role?** (Required): Select from:
+- Which of these best describes your role? (Required): Select from:
   - Sales
   - Founder
   - Customer Success / Support
   - Human Resources
   - Marketing
   - Other
-- **Is Required Two-Factor Authentication (2FA) for login?** (Optional): Toggle this on if you want to require OTP verification every time someone logs in to your account.
+- Is Required Two-Factor Authentication (2FA) for login? (Optional): Toggle this on if you want to require OTP verification every time someone logs in to your account.
 
 📸 Screenshot placeholder:
 > [Screenshot: Role selector and 2FA toggle switch]
 
-Click **Next** to continue.
+Click Next to continue.
+{% endstep %}
 
-### Step 6: Billing Information
+{% step %}
+### Billing Information
+
 Enter your billing contact details. **Note**: This information is only used for notifications if necessary—no charges will be made.
 
-- **Billing Name** (Required): Your name or the billing contact's name.
-- **Billing Email** (Required): Email address for billing notifications.
-- **Billing Contact Number** (Required): Contact number with country code (e.g., 60123333333).
+- Billing Name (Required): Your name or the billing contact's name.
+- Billing Email (Required): Email address for billing notifications.
+- Billing Contact Number (Required): Contact number with country code (e.g., 60123333333).
 
 📸 Screenshot placeholder:
 > [Screenshot: Billing information form with name, email, and contact number fields]
 
-Click **Submit** to complete onboarding.
+Click Submit to complete onboarding.
+{% endstep %}
+{% endstepper %}
 
 ## What happens after onboarding?
 - **Account Setup Complete**: Your Luluchat account is fully configured.

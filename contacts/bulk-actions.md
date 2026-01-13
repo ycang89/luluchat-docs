@@ -11,105 +11,159 @@ Bulk Updates and Advanced Actions allow you to manage multiple contacts at once,
 
 ## Bulk Add Tags (Step by Step)
 
-### Step 1: Select Contacts
+{% stepper %}
+{% step %}
+### Select Contacts
+
 In the Contacts list, use the checkboxes on the left to select the contacts you want to add tags to. You can select individual contacts or use the checkbox in the table header to select all contacts on the current page.
 
 📸 Screenshot placeholder:
 > [Screenshot: Contacts list with multiple contacts selected using checkboxes]
+{% endstep %}
 
-### Step 2: Open Bulk Update
-After selecting contacts, a toolbar appears at the bottom of the page. Click the **Bulk Update** button.
+{% step %}
+### Open Bulk Update
+
+After selecting contacts, a toolbar appears at the bottom of the page. Click the Bulk Update button.
 
 📸 Screenshot placeholder:
 > [Screenshot: Bottom toolbar showing Bulk Update button with selected contacts count]
+{% endstep %}
 
-### Step 3: Choose Add Tags Action
-In the "Bulk Update Contacts" modal, select **Add Tags** from the "Action" dropdown.
+{% step %}
+### Choose Add Tags Action
+
+In the "Bulk Update Contacts" modal, select Add Tags from the "Action" dropdown.
 
 📸 Screenshot placeholder:
 > [Screenshot: Bulk Update modal with Action dropdown showing "Add Tags" option]
+{% endstep %}
 
-### Step 4: Select Tags
+{% step %}
+### Select Tags
+
 In the "Tags" field, select one or more tags you want to add to the selected contacts. You can select multiple tags at once.
 
 📸 Screenshot placeholder:
 > [Screenshot: Tags dropdown with multiple tags selected]
+{% endstep %}
 
-### Step 5: Submit
+{% step %}
+### Submit
+
 Click the submit button to apply the tags. You'll see a success message confirming that all selected contacts have been updated.
 
 📸 Screenshot placeholder:
 > [Screenshot: Success message confirming tags added]
+{% endstep %}
+{% endstepper %}
 
 ## Bulk Remove Tags (Step by Step)
 
-### Step 1: Select Contacts
+{% stepper %}
+{% step %}
+### Select Contacts
+
 In the Contacts list, use the checkboxes to select the contacts you want to remove tags from.
 
 📸 Screenshot placeholder:
 > [Screenshot: Contacts list with contacts selected]
+{% endstep %}
 
-### Step 2: Open Bulk Update
-Click the **Bulk Update** button in the bottom toolbar.
+{% step %}
+### Open Bulk Update
+
+Click the Bulk Update button in the bottom toolbar.
 
 📸 Screenshot placeholder:
 > [Screenshot: Bulk Update button in toolbar]
+{% endstep %}
 
-### Step 3: Choose Remove Tags Action
-In the "Bulk Update Contacts" modal, select **Remove Tags** from the "Action" dropdown.
+{% step %}
+### Choose Remove Tags Action
+
+In the "Bulk Update Contacts" modal, select Remove Tags from the "Action" dropdown.
 
 📸 Screenshot placeholder:
 > [Screenshot: Bulk Update modal with "Remove Tags" selected in Action dropdown]
+{% endstep %}
 
-### Step 4: Select Tags to Remove
+{% step %}
+### Select Tags to Remove
+
 In the "Tags" field, select the tags you want to remove from the selected contacts. You can select multiple tags to remove them all at once.
 
 📸 Screenshot placeholder:
 > [Screenshot: Tags dropdown showing tags to remove]
+{% endstep %}
 
-### Step 5: Submit
+{% step %}
+### Submit
+
 Click the submit button to remove the tags. You'll see a success message confirming that all selected contacts have been updated.
 
 📸 Screenshot placeholder:
 > [Screenshot: Success message confirming tags removed]
+{% endstep %}
+{% endstepper %}
 
 ## Bulk Transfer Assignee (Step by Step)
 
-### Step 1: Open Advanced Actions
-In the Contacts list, click the **Advanced Actions** button in the top toolbar (not the Bulk Update button).
+{% stepper %}
+{% step %}
+### Open Advanced Actions
+
+In the Contacts list, click the Advanced Actions button in the top toolbar (not the Bulk Update button).
 
 📸 Screenshot placeholder:
 > [Screenshot: Contacts list showing Advanced Actions button in toolbar]
+{% endstep %}
 
-### Step 2: Choose Transfer Assignee Action
-In the "Advanced Actions" modal, select **Transfer Assignee** from the "Action" dropdown.
+{% step %}
+### Choose Transfer Assignee Action
+
+In the "Advanced Actions" modal, select Transfer Assignee from the "Action" dropdown.
 
 📸 Screenshot placeholder:
 > [Screenshot: Advanced Actions modal with "Transfer Assignee" selected]
+{% endstep %}
 
-### Step 3: Select Source Assignee
+{% step %}
+### Select Source Assignee
+
 In the "From Assignee A" field, select the team member whose contacts you want to transfer. This will transfer ALL contacts assigned to this person, not just selected ones.
 
 📸 Screenshot placeholder:
 > [Screenshot: From Assignee A dropdown with team member selected]
+{% endstep %}
 
-### Step 4: Select Destination Assignee
+{% step %}
+### Select Destination Assignee
+
 In the "To Assignee B" field, select the team member who should receive the contacts.
 
 📸 Screenshot placeholder:
 > [Screenshot: To Assignee B dropdown with destination team member selected]
+{% endstep %}
 
-### Step 5: Review Warning
+{% step %}
+### Review Warning
+
 Read the tip about disabling "Assignee Changes" workflows before proceeding, as they could trigger unintended automation reactions.
 
 📸 Screenshot placeholder:
 > [Screenshot: Warning message about disabling workflows]
+{% endstep %}
 
-### Step 6: Submit
+{% step %}
+### Submit
+
 Click the submit button to transfer all contacts from Assignee A to Assignee B. You'll see a success message confirming the transfer. The message will indicate that you may need to refresh the list to see the changes.
 
 📸 Screenshot placeholder:
 > [Screenshot: Success message confirming assignee transfer]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after bulk operations?
 

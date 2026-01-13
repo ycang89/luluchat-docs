@@ -5,26 +5,37 @@ Define personalized data fields to store contact information that matters to you
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open Custom Attributes
+{% stepper %}
+{% step %}
+### Open Custom Attributes
+
 Go to `Settings` > `Data Management` > `Custom Attributes`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Custom Attributes list view]
+{% endstep %}
 
-### Step 2: Create an Attribute
+{% step %}
+### Create an Attribute
+
 Click `Create Custom Attribute`.
-- **Name**: Choose a label that matches your terminology.
-- **Data Type**: Select the type of information (e.g., Text, Number, Date) to ensure data consistency.
+- Name: Choose a label that matches your terminology.
+- Data Type: Select the type of information (e.g., Text, Number, Date) to ensure data consistency.
 
 📸 Screenshot placeholder:
 > [Screenshot: Create Custom Attribute form]
+{% endstep %}
 
-### Step 3: Organize and Export
-- **Export**: Use the `Export Contacts` button to download a spreadsheet of your attributes.
-- **Bulk Actions**: Select multiple attributes to delete them in one go.
+{% step %}
+### Organize and Export
+
+- Export: Use the `Export Contacts` button to download a spreadsheet of your attributes.
+- Bulk Actions: Select multiple attributes to delete them in one go.
 
 📸 Screenshot placeholder:
 > [Screenshot: Attribute list with selection checkboxes and footer toolbar]
+{% endstep %}
+{% endstepper %}
 
 {% hint style="info" %}
 **Important behavior to know**

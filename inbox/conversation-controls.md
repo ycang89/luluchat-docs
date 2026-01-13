@@ -11,13 +11,19 @@ Quick actions to organize and control attention on individual conversations: pin
 
 ## How to use (Step by Step)
 
-### Step 1: Open the conversation
+{% stepper %}
+{% step %}
+### Open the conversation
+
 In `Inbox`, select the conversation you want to control.
 
 📸 Screenshot placeholder:
 > [Screenshot: Conversation thread with top action bar visible]
+{% endstep %}
 
-### Step 2: Apply the control you need
+{% step %}
+### Apply the control you need
+
 - Pin/Unpin: click the pin icon to stick/unstick the conversation to the top of your list.
 - Mute/Unmute: toggle the mute/bell icon to silence/restore notifications for this thread.
 - Mark as Unread: use the unread option to mark it unread (it will show as new in your list).
@@ -25,12 +31,17 @@ In `Inbox`, select the conversation you want to control.
 
 📸 Screenshot placeholder:
 > [Screenshot: Action icons (pin, mute, unread, archive) highlighted]
+{% endstep %}
 
-### Step 3: Confirm the state
+{% step %}
+### Confirm the state
+
 Check the icons/list state to ensure the action applied (pinned indicator, muted bell, unread badge, archive move).
 
 📸 Screenshot placeholder:
 > [Screenshot: Conversation list showing pinned/muted/unread/archive states]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 - Pinned stays at the top of your list until unpinned.
@@ -39,7 +50,6 @@ Check the icons/list state to ensure the action applied (pinned indicator, muted
 - Archived removes it from active view; unarchiving returns it to the main list.
 
 ## Important behavior to know
-- These controls are user-specific; they do not affect other teammates’ views.
 - Archive does not delete or close the conversation; history is preserved.
 - Muting a conversation differs from global sound settings (this is per-conversation).
 

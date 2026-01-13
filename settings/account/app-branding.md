@@ -5,30 +5,44 @@ Personalize the external-facing pages (e.g., Forms, Booking) with your company's
 
 ## How to set it up (Step by Step)
 
-### Step 1: Configure App Namespace
-The **App Namespace** is a unique identifier used in your public URLs.
-- *Example*: Setting it to `my-shop` changes your form URL to `https://form.luluchat.io/my-shop/form-name`.
+{% stepper %}
+{% step %}
+### Configure App Namespace
+
+The App Namespace is a unique identifier used in your public URLs.
+- Example: Setting it to `my-shop` changes your form URL to `https://form.luluchat.io/my-shop/form-name`.
 
 📸 Screenshot placeholder:
 > [Screenshot: App Namespace field showing the URL preview]
+{% endstep %}
 
-### Step 2: Identity Branding
-- **Brand Name**: Enter your company's public-facing name.
-- **Brand Logo**: Upload your logo. This appears on headers and forms.
+{% step %}
+### Identity Branding
+
+- Brand Name: Enter your company's public-facing name.
+- Brand Logo: Upload your logo. This appears on headers and forms.
 
 📸 Screenshot placeholder:
 > [Screenshot: Brand Name field and Logo upload area]
+{% endstep %}
 
-### Step 3: Visual Customization
+{% step %}
+### Visual Customization
+
 Use the color pickers to match the interface to your brand:
-- **Header Background & Text**: Colors for the top navigation bar.
-- **Button Background & Text**: Primary colors for call-to-action buttons.
+- Header Background & Text: Colors for the top navigation bar.
+- Button Background & Text: Primary colors for call-to-action buttons.
 
 📸 Screenshot placeholder:
 > [Screenshot: Color pickers for Header and Button themes]
+{% endstep %}
 
-### Step 4: Save
+{% step %}
+### Save
+
 Click `Save` to apply these changes to all your public app pages.
+{% endstep %}
+{% endstepper %}
 
 ## Important behavior to know
 - **Namespace Uniqueness**: Namespaces must be unique across the entire Luluchat platform.

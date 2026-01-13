@@ -5,26 +5,35 @@ Manage your team by inviting new members and controlling their permissions.
 
 ## How to set it up (Step by Step)
 
-### Step 1: Manage Invitations
-The **Invitation List** shows pending invites.
-- **Invite Team User**: Click to generate a new invitation link.
-- **Copy Invite Link**: Share this link with your teammate.
-- **Extend**: If an invitation expires, click `Extend` to reactivate the link.
+{% stepper %}
+{% step %}
+### Manage Invitations
+
+The Invitation List shows pending invites.
+- Invite Team User: Click to generate a new invitation link.
+- Copy Invite Link: Share this link with your teammate.
+- Extend: If an invitation expires, click `Extend` to reactivate the link.
 
 📸 Screenshot placeholder:
 > [Screenshot: Invitation list with Invite button and Copy options]
+{% endstep %}
 
-### Step 2: View Team Members
-The **Team User** list displays all active members.
-- **Role**: View who is an Owner, Admin, or Agent.
-- **Last Login**: See when each user last accessed the platform.
+{% step %}
+### View Team Members
+
+The Team User list displays all active members.
+- Role: View who is an Owner, Admin, or Agent.
+- Last Login: See when each user last accessed the platform.
 
 📸 Screenshot placeholder:
 > [Screenshot: Team User list showing names and roles]
+{% endstep %}
 
-### Step 3: Edit or Remove Users
-- **Edit**: Click to change a user's permissions, assigned channels, or modules.
-- **Remove**: Permanently remove a user from the workspace.
+{% step %}
+### Edit or Remove Users
+
+- Edit: Click to change a user's permissions, assigned channels, or modules.
+- Remove: Permanently remove a user from the workspace.
 
 {% hint style="warning" %}
 **Important**: You cannot edit or remove yourself or the workspace Owner.

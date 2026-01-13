@@ -5,22 +5,36 @@ Manage the internal labels used to organize and segment your contacts. Tags help
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open Tags Management
+{% stepper %}
+{% step %}
+### Open Tags Management
+
 Go to `Settings` > `Data Management` > `Tags`.
 
 📸 Screenshot placeholder:
 > [Screenshot: Tags management page showing the list of existing tags]
+{% endstep %}
 
-### Step 2: Create a New Tag
+{% step %}
+### Create a New Tag
+
 Click `Create Tag`. Enter a name and choose a color to make the tag easily identifiable in the conversation list.
 
 📸 Screenshot placeholder:
 > [Screenshot: Create Tag modal with name field and color picker]
+{% endstep %}
 
-### Step 3: Manage Existing Tags
-- **Sort Order**: Adjust the priority to control how tags appear in the contact profile.
-- **Export**: Click `Export Tags` to download an Excel file of your entire tag list and usage stats.
-- **Delete**: Click the trash icon to remove a tag.
+{% step %}
+### Manage Existing Tags
+
+- Sort Order: Adjust the priority to control how tags appear in the contact profile.
+- Export: Click `Export Tags` to download an Excel file of your entire tag list and usage stats.
+- Delete: Click the trash icon to remove a tag.
+
+📸 Screenshot placeholder:
+> [Screenshot: Tag list with priority column and delete icons]
+{% endstep %}
+{% endstepper %}
 
 {% hint style="danger" %}
 **Delete Tag - Permanent Action**

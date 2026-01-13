@@ -8,23 +8,34 @@ An overflow/queue flow used when your inbox is too busy or agents are unavailabl
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open Message Flows
+{% stepper %}
+{% step %}
+### Open Message Flows
+
 Go to `Automations` → `Message Flows` and select/create the Absent Flow.
 
 📸 Screenshot placeholder:
 > [Screenshot: Message Flows list showing Absent Flow option]
+{% endstep %}
 
-### Step 2: Configure options
-Provide an absent message and optional menu of flows/actions (e.g., “1. Sales flow”, “2. Support flow”) to route intents. Save/publish.
+{% step %}
+### Configure options
+
+Provide an absent message and optional menu of flows/actions (e.g., "1. Sales flow", "2. Support flow") to route intents. Save/publish.
 
 📸 Screenshot placeholder:
 > [Screenshot: Absent Flow builder with option list]
+{% endstep %}
 
-### Step 3: Enable for absent/overflow
+{% step %}
+### Enable for absent/overflow
+
 Assign this flow as the Absent Flow and ensure the absent/overflow condition is defined in channel settings.
 
 📸 Screenshot placeholder:
 > [Screenshot: Setting indicating Absent Flow assignment]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 Contacts get the absent message and can be routed to the options/flows you provide, keeping them engaged while your team is unavailable.

@@ -22,11 +22,11 @@
   * [Incognito Mode](./inbox/incognito-mode.md)
   * [Sound Settings (Mute/Unmute)](./inbox/sound-settings.md)
   * [Conversation Controls (Pin, Mute, Unread, Archive)](./inbox/conversation-controls.md)
-  * Contact Info Quick Actions
-    * [Profile (Assignee, Collaborator, Tags, Profile, Custom Attributes, Opt Out)](./inbox/contact-info/profile.md)
-    * [Flows (Manual Send Message Flow)](./inbox/contact-info/flows.md)
-    * [Tickets (Add Ticket)](./inbox/contact-info/tickets.md)
-    * [Notes (Internal Note)](./inbox/contact-info/notes.md)
+  * Contact Info
+    * [Profile](./inbox/contact-info/profile.md)
+    * [Flows](./inbox/contact-info/flows.md)
+    * [Tickets](./inbox/contact-info/tickets.md)
+    * [Notes](./inbox/contact-info/notes.md)
 * [Automations](./automations/index.md)
   * [Message Flows](./automations/message-flows.md)
     * [Message Flow Editor](./automations/message-flows-editor.md)

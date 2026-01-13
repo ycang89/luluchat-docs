@@ -9,12 +9,35 @@ The Complete node marks the successful end of a specific path within your flow. 
 - When a support request has been fully resolved via automation.
 
 ## How to set it up (Step by Step)
-1. In the Message Flow Editor, click **Add Node (+) > Starting & Complete Step > Complete**.
-2. Connect the output of your final action or message to this node.
-3. You can give the node a custom title (e.g., "Booking Finished") to make your reports easier to read.
+
+{% stepper %}
+{% step %}
+### Add the Complete Node
+
+In the Message Flow Editor, click **Add Node (+) > Starting & Complete Step > Complete**.
 
 📸 Screenshot placeholder:
-> [Screenshot: Complete node at the end of a flow branch]
+> [Screenshot: Add Node menu with Starting & Complete Step > Complete highlighted]
+{% endstep %}
+
+{% step %}
+### Connect to Your Flow
+
+Connect the output of your final action or message to this node.
+
+📸 Screenshot placeholder:
+> [Screenshot: Flow diagram showing connection to Complete node]
+{% endstep %}
+
+{% step %}
+### Customize the Title (Optional)
+
+You can give the node a custom title (e.g., "Booking Finished") to make your reports easier to read.
+
+📸 Screenshot placeholder:
+> [Screenshot: Complete node at the end of a flow branch with custom title]
+{% endstep %}
+{% endstepper %}
 
 ## Important behavior to know
 - **Dead End**: The Complete node has no output handles. It is the final stop for any contact who reaches it.

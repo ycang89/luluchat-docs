@@ -8,23 +8,34 @@ Captures a contact’s consent and updates their opt-in status, usually after th
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open Message Flows
+{% stepper %}
+{% step %}
+### Open Message Flows
+
 Go to `Automations` → `Message Flows` and create/select the Opt-In Flow.
 
 📸 Screenshot placeholder:
 > [Screenshot: Message Flows list showing Opt-In Flow]
+{% endstep %}
 
-### Step 2: Collect consent
-Prompt the contact to agree (e.g., “Reply YES to continue”). Include clear consent language. Save/publish.
+{% step %}
+### Collect consent
+
+Prompt the contact to agree (e.g., "Reply YES to continue"). Include clear consent language. Save/publish.
 
 📸 Screenshot placeholder:
 > [Screenshot: Opt-In Flow builder with consent prompt]
+{% endstep %}
 
-### Step 3: Update status
+{% step %}
+### Update status
+
 Ensure the flow includes the opt-in action/update so the contact is marked as opted in.
 
 📸 Screenshot placeholder:
 > [Screenshot: Action step marking opt-in]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 Consent is captured; the contact is marked opted in, and the flow can continue to the next steps (welcome, routing).

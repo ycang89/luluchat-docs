@@ -9,23 +9,34 @@ The catch-all message flow that runs when no other specific trigger (keyword, gr
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open Message Flows
+{% stepper %}
+{% step %}
+### Open Message Flows
+
 Go to `Automations` → `Message Flows` and choose to create or edit the Default Flow.
 
 📸 Screenshot placeholder:
 > [Screenshot: Message Flows list showing Default Flow option]
+{% endstep %}
 
-### Step 2: Build the Default Flow
+{% step %}
+### Build the Default Flow
+
 Design the flow with a welcome message and key next steps (e.g., menu, handoff, intake questions). Save/publish.
 
 📸 Screenshot placeholder:
 > [Screenshot: Default Flow builder with welcome and routing steps]
+{% endstep %}
 
-### Step 3: Enable as default
+{% step %}
+### Enable as default
+
 Ensure this flow is marked/assigned as the default for the channel.
 
 📸 Screenshot placeholder:
 > [Screenshot: Setting indicating this flow is set as Default]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 New inbound messages enter this flow and receive the configured steps, providing a response even without other triggers.

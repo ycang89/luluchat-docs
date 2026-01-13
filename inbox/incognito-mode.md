@@ -8,23 +8,34 @@ Incognito hides your presence in a conversation (e.g., typing/seen indicators) w
 
 ## How to set it up (Step by Step)
 
-### Step 1: Open the conversation
+{% stepper %}
+{% step %}
+### Open the conversation
+
 In `Inbox`, open the conversation you want to review privately.
 
 📸 Screenshot placeholder:
 > [Screenshot: Conversation thread with Incognito toggle/button visible]
+{% endstep %}
 
-### Step 2: Turn on Incognito
+{% step %}
+### Turn on Incognito
+
 Click the `Incognito` toggle/button to enter incognito view.
 
 📸 Screenshot placeholder:
 > [Screenshot: Incognito state enabled indicator]
+{% endstep %}
 
-### Step 3: Turn off when done
+{% step %}
+### Turn off when done
+
 Switch Incognito off before replying so normal presence indicators resume.
 
 📸 Screenshot placeholder:
 > [Screenshot: Incognito toggle turned off]
+{% endstep %}
+{% endstepper %}
 
 ## What happens after it triggers?
 Typing/seen signals are suppressed while Incognito is on; once off, normal indicators resume.
