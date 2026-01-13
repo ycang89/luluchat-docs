@@ -32,7 +32,7 @@ Go to `Settings` > `Your Preferences` > `Personal`.
 {% step %}
 #### Configure Security
 
-* Two-Factor Authentication (2FA): Toggle this on to require an OTP code via email/SMS when you log in.
+* Two-Factor Authentication (2FA): Toggle this on to require an OTP code via WhatsApp when you log in.
 
 📸 Screenshot placeholder:
 
