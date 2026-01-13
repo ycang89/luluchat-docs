@@ -22,7 +22,27 @@ Every Message Flow must have a defined beginning and can optionally have explici
 
 ## Steps in this Section
 
-{% cards %}
-{% card title="Trigger (Starting Step)" description="The entry point that defines when the flow starts" link="./trigger.md" /%}
-{% card title="Complete" description="Marks the successful resolution of a flow path" link="./complete.md" /%}
-{% endcards %}
+<table data-view="cards">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th data-hidden data-card-target data-type="content-ref"></th>
+      <th data-hidden data-card-cover data-type="files"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Trigger (Starting Step)</strong></td>
+      <td>The entry point that defines when the flow starts</td>
+      <td><a href="./trigger.md">./trigger.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Complete</strong></td>
+      <td>Marks the successful resolution of a flow path</td>
+      <td><a href="./complete.md">./complete.md</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

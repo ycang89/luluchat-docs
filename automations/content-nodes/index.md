@@ -15,10 +15,45 @@ Content nodes are the primary way you communicate with your customers. These ste
 
 ## Nodes in this Section
 
-{% cards %}
-{% card title="Message" description="Send standard text and media messages" link="./message.md" /%}
-{% card title="Message Template" description="Use pre-approved official WhatsApp templates" link="./message-template.md" /%}
-{% card title="Start Flow" description="Connect different automation flows together" link="./start-flow.md" /%}
-{% card title="Form" description="Send interactive web forms to collect data" link="./form.md" /%}
-{% card title="AI Agent" description="Engage customers with dynamic AI-powered conversations" link="./ai-agent.md" /%}
-{% endcards %}
+<table data-view="cards">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th data-hidden data-card-target data-type="content-ref"></th>
+      <th data-hidden data-card-cover data-type="files"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Message</strong></td>
+      <td>Send standard text and media messages</td>
+      <td><a href="./message.md">./message.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Message Template</strong></td>
+      <td>Use pre-approved official WhatsApp templates</td>
+      <td><a href="./message-template.md">./message-template.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Start Flow</strong></td>
+      <td>Connect different automation flows together</td>
+      <td><a href="./start-flow.md">./start-flow.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Form</strong></td>
+      <td>Send interactive web forms to collect data</td>
+      <td><a href="./form.md">./form.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>AI Agent</strong></td>
+      <td>Engage customers with dynamic AI-powered conversations</td>
+      <td><a href="./ai-agent.md">./ai-agent.md</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

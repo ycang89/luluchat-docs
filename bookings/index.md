@@ -74,7 +74,27 @@ View and manage bookings in `Bookings` > `Appointments`.
 
 ## Related Documentation
 
-{% cards %}
-{% card title="Calendars" description="Learn how to create and configure booking calendars" link="./calendars.md" /%}
-{% card title="Appointments" description="Learn how to view and manage customer appointments" link="./appointments.md" /%}
-{% endcards %}
+<table data-view="cards">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th data-hidden data-card-target data-type="content-ref"></th>
+      <th data-hidden data-card-cover data-type="files"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Calendars</strong></td>
+      <td>Learn how to create and configure booking calendars</td>
+      <td><a href="./calendars.md">./calendars.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Appointments</strong></td>
+      <td>Learn how to view and manage customer appointments</td>
+      <td><a href="./appointments.md">./appointments.md</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

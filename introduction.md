@@ -47,29 +47,119 @@ All instructions match exactly what you'll see in the Luluchat web interface, so
 
 If you're new to Luluchat, start here:
 
-{% cards %}
-{% card title="Register a Luluchat Account" description="Learn how to create your account and complete the onboarding process" link="./register-account.md" /%}
-{% card title="Switch Team and Channel" description="Understand how to navigate between different teams and channels" link="./switch-team-channel.md" /%}
-{% card title="Dashboard" description="Get familiar with your workspace overview" link="./dashboard.md" /%}
-{% endcards %}
+<table data-view="cards">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th data-hidden data-card-target data-type="content-ref"></th>
+      <th data-hidden data-card-cover data-type="files"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Register a Luluchat Account</strong></td>
+      <td>Learn how to create your account and complete the onboarding process</td>
+      <td><a href="./register-account.md">./register-account.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Switch Team and Channel</strong></td>
+      <td>Understand how to navigate between different teams and channels</td>
+      <td><a href="./switch-team-channel.md">./switch-team-channel.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Dashboard</strong></td>
+      <td>Get familiar with your workspace overview</td>
+      <td><a href="./dashboard.md">./dashboard.md</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ### Core Features
 
 The documentation is organized by the main features you'll use:
 
-{% cards %}
-{% card title="Inbox" description="Manage all your customer conversations in one place" link="./inbox/index.md" /%}
-{% card title="Automations" description="Set up automated message flows, keywords, and workflows" link="./automations/index.md" /%}
-{% card title="Broadcasts" description="Send messages to large groups of contacts" link="./broadcasts.md" /%}
-{% card title="Contacts" description="Manage your contact database" link="./contacts/index.md" /%}
-{% card title="Message Templates" description="Create and manage WhatsApp message templates" link="./message-templates.md" /%}
-{% card title="Reports" description="Analyze your team's performance and conversation metrics" link="./reports/index.md" /%}
-{% card title="Forms" description="Build forms to collect customer information" link="./forms/index.md" /%}
-{% card title="Bookings" description="Manage calendars and appointments" link="./bookings/index.md" /%}
-{% card title="Tickets" description="Track and manage customer support tickets" link="./tickets/index.md" /%}
-{% card title="Deals" description="Manage your sales pipeline and opportunities" link="./deals/index.md" /%}
-{% card title="Settings" description="Configure your workspace, team, and preferences" link="./settings/index.md" /%}
-{% endcards %}
+<table data-view="cards">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th data-hidden data-card-target data-type="content-ref"></th>
+      <th data-hidden data-card-cover data-type="files"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Inbox</strong></td>
+      <td>Manage all your customer conversations in one place</td>
+      <td><a href="./inbox/index.md">./inbox/index.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Automations</strong></td>
+      <td>Set up automated message flows, keywords, and workflows</td>
+      <td><a href="./automations/index.md">./automations/index.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Broadcasts</strong></td>
+      <td>Send messages to large groups of contacts</td>
+      <td><a href="./broadcasts.md">./broadcasts.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Contacts</strong></td>
+      <td>Manage your contact database</td>
+      <td><a href="./contacts/index.md">./contacts/index.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Message Templates</strong></td>
+      <td>Create and manage WhatsApp message templates</td>
+      <td><a href="./message-templates.md">./message-templates.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Reports</strong></td>
+      <td>Analyze your team's performance and conversation metrics</td>
+      <td><a href="./reports/index.md">./reports/index.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Forms</strong></td>
+      <td>Build forms to collect customer information</td>
+      <td><a href="./forms/index.md">./forms/index.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Bookings</strong></td>
+      <td>Manage calendars and appointments</td>
+      <td><a href="./bookings/index.md">./bookings/index.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Tickets</strong></td>
+      <td>Track and manage customer support tickets</td>
+      <td><a href="./tickets/index.md">./tickets/index.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Deals</strong></td>
+      <td>Manage your sales pipeline and opportunities</td>
+      <td><a href="./deals/index.md">./deals/index.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Settings</strong></td>
+      <td>Configure your workspace, team, and preferences</td>
+      <td><a href="./settings/index.md">./settings/index.md</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ### Finding What You Need
 

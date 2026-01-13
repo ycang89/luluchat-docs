@@ -20,7 +20,27 @@ Configure the tags and custom attributes used to organize your contacts and auto
 
 ## Sections
 
-{% cards %}
-{% card title="Tags" description="Create and manage contact tags" link="./tags.md" /%}
-{% card title="Custom Attributes" description="Define custom data fields" link="./custom-attributes.md" /%}
-{% endcards %}
+<table data-view="cards">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th data-hidden data-card-target data-type="content-ref"></th>
+      <th data-hidden data-card-cover data-type="files"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Tags</strong></td>
+      <td>Create and manage contact tags</td>
+      <td><a href="./tags.md">./tags.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Custom Attributes</strong></td>
+      <td>Define custom data fields</td>
+      <td><a href="./custom-attributes.md">./custom-attributes.md</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

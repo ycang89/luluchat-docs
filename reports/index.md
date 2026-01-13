@@ -15,12 +15,42 @@ Reports is your analytics hub in Luluchat, providing insights into conversations
 
 ## Available Reports
 
-{% cards %}
-{% card title="Conversations" description="Track response times, resolution times, and conversation volume" link="./conversations.md" /%}
-{% card title="Tags" description="Monitor tag growth and usage over time" link="./tags.md" /%}
-{% card title="Team Users" description="Analyze individual team member performance" link="./team-users.md" /%}
-{% card title="Logs" description="View message activity and contact growth patterns" link="./logs.md" /%}
-{% endcards %}
+<table data-view="cards">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th data-hidden data-card-target data-type="content-ref"></th>
+      <th data-hidden data-card-cover data-type="files"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Conversations</strong></td>
+      <td>Track response times, resolution times, and conversation volume</td>
+      <td><a href="./conversations.md">./conversations.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Tags</strong></td>
+      <td>Monitor tag growth and usage over time</td>
+      <td><a href="./tags.md">./tags.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Team Users</strong></td>
+      <td>Analyze individual team member performance</td>
+      <td><a href="./team-users.md">./team-users.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Logs</strong></td>
+      <td>View message activity and contact growth patterns</td>
+      <td><a href="./logs.md">./logs.md</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ## How to access Reports
 

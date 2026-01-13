@@ -37,8 +37,33 @@ The Forms module allows you to build custom, no-code web forms to collect inform
 
 ## Module Structure
 
-{% cards %}
-{% card title="Building Forms" description="How to create questions and design your form" link="./build.md" /%}
-{% card title="Form Settings & SEO" description="Configure OTP requirements, automated responses, and social sharing" link="./settings.md" /%}
-{% card title="Managing Responses" description="How to view and export the data collected from your audience" link="./responses.md" /%}
-{% endcards %}
+<table data-view="cards">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th data-hidden data-card-target data-type="content-ref"></th>
+      <th data-hidden data-card-cover data-type="files"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Building Forms</strong></td>
+      <td>How to create questions and design your form</td>
+      <td><a href="./build.md">./build.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Form Settings & SEO</strong></td>
+      <td>Configure OTP requirements, automated responses, and social sharing</td>
+      <td><a href="./settings.md">./settings.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Managing Responses</strong></td>
+      <td>How to view and export the data collected from your audience</td>
+      <td><a href="./responses.md">./responses.md</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

@@ -14,10 +14,45 @@ Manage your company profile, billing information, integrations, team users, and 
 
 ## Sections
 
-{% cards %}
-{% card title="Company" description="Workspace profile and company information" link="./company.md" /%}
-{% card title="Billing" description="Plans, usage, and subscription management" link="./billing.md" /%}
-{% card title="Integration" description="Connect external services and tools" link="./integration.md" /%}
-{% card title="Users" description="Manage team members and permissions" link="./users.md" /%}
-{% card title="App Branding" description="Customize workspace appearance" link="./app-branding.md" /%}
-{% endcards %}
+<table data-view="cards">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th data-hidden data-card-target data-type="content-ref"></th>
+      <th data-hidden data-card-cover data-type="files"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Company</strong></td>
+      <td>Workspace profile and company information</td>
+      <td><a href="./company.md">./company.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Billing</strong></td>
+      <td>Plans, usage, and subscription management</td>
+      <td><a href="./billing.md">./billing.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Integration</strong></td>
+      <td>Connect external services and tools</td>
+      <td><a href="./integration.md">./integration.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Users</strong></td>
+      <td>Manage team members and permissions</td>
+      <td><a href="./users.md">./users.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>App Branding</strong></td>
+      <td>Customize workspace appearance</td>
+      <td><a href="./app-branding.md">./app-branding.md</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

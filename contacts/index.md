@@ -71,7 +71,27 @@ Toggle their **Opt-In** status to manage consent for marketing messages.
 
 ## Module Structure
 
-{% cards %}
-{% card title="Import & Export" description="Bulk add contacts or download your audience data" link="./import-export.md" /%}
-{% card title="Bulk Updates & Actions" description="Manage segments of your audience at once" link="./bulk-actions.md" /%}
-{% endcards %}
+<table data-view="cards">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th data-hidden data-card-target data-type="content-ref"></th>
+      <th data-hidden data-card-cover data-type="files"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Import & Export</strong></td>
+      <td>Bulk add contacts or download your audience data</td>
+      <td><a href="./import-export.md">./import-export.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Bulk Updates & Actions</strong></td>
+      <td>Manage segments of your audience at once</td>
+      <td><a href="./bulk-actions.md">./bulk-actions.md</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

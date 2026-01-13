@@ -43,8 +43,33 @@ The Deals module is designed to help you track your sales opportunities. It allo
 
 ## Module Structure
 
-{% cards %}
-{% card title="Summary" description="Visual reports on your sales performance and pipeline health" link="./summary.md" /%}
-{% card title="Board" description="The visual Kanban interface for managing active sales opportunities" link="./board.md" /%}
-{% card title="List" description="A detailed table view of all deals in your pipeline" link="./list.md" /%}
-{% endcards %}
+<table data-view="cards">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th data-hidden data-card-target data-type="content-ref"></th>
+      <th data-hidden data-card-cover data-type="files"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Summary</strong></td>
+      <td>Visual reports on your sales performance and pipeline health</td>
+      <td><a href="./summary.md">./summary.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Board</strong></td>
+      <td>The visual Kanban interface for managing active sales opportunities</td>
+      <td><a href="./board.md">./board.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>List</strong></td>
+      <td>A detailed table view of all deals in your pipeline</td>
+      <td><a href="./list.md">./list.md</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>

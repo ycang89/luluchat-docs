@@ -43,8 +43,33 @@ The Tickets module helps you organize and manage your customer support and inter
 
 ## Module Structure
 
-{% cards %}
-{% card title="Summary" description="High-level reports and overview of your ticketing pipelines" link="./summary.md" /%}
-{% card title="Board" description="The visual Kanban interface for managing active tickets" link="./board.md" /%}
-{% card title="List" description="A searchable table view of all tickets in a pipeline" link="./list.md" /%}
-{% endcards %}
+<table data-view="cards">
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th data-hidden data-card-target data-type="content-ref"></th>
+      <th data-hidden data-card-cover data-type="files"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Summary</strong></td>
+      <td>High-level reports and overview of your ticketing pipelines</td>
+      <td><a href="./summary.md">./summary.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Board</strong></td>
+      <td>The visual Kanban interface for managing active tickets</td>
+      <td><a href="./board.md">./board.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>List</strong></td>
+      <td>A searchable table view of all tickets in a pipeline</td>
+      <td><a href="./list.md">./list.md</a></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
