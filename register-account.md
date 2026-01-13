@@ -81,9 +81,87 @@ Click the **Sign Up** button. If your OTP is correct, your account will be creat
 - **Password too weak**:
   - Use a longer password (10+ characters) with a mix of letters, numbers, and symbols for better security.
 
+## Reset Password
+
+### What is Password Reset?
+If you forget your password, you can reset it using the "Forgot Password" on the login page. The system will send a one-time password (OTP) to your registered WhatsApp number to verify your identity before allowing you to set a new password.
+
+### How to Reset Password (Step by Step)
+
+#### Step 1: Access Forgot Password
+On the login page, click the **Forgot Password** link below the password field.
+
+📸 Screenshot placeholder:
+> [Screenshot: Login page showing "Forgot Password" link]
+
+#### Step 2: Enter Your Registered Phone Number
+In the "Forgot Password" modal, enter your **registered WhatsApp number** (the phone number you used when creating your Luluchat account).
+
+**Important**: You must use the phone number that was registered during account creation, **not** the connected channel number. The OTP will only be sent to your registered account number.
+
+📸 Screenshot placeholder:
+> [Screenshot: Forgot Password modal with phone number input field]
+
+#### Step 3: Enter New Password
+Enter your new password in the "Enter your new password" field. The password must be at least 6 characters long.
+
+📸 Screenshot placeholder:
+> [Screenshot: New password input field]
+
+#### Step 4: Confirm New Password
+Re-enter your new password in the "Confirm your new password" field. Both passwords must match.
+
+📸 Screenshot placeholder:
+> [Screenshot: Confirm password input field]
+
+#### Step 5: Submit Request
+Click the submit button. The system will send an OTP to your registered WhatsApp number.
+
+📸 Screenshot placeholder:
+> [Screenshot: Submit button in Forgot Password modal]
+
+#### Step 6: Enter OTP
+After submitting, the modal will show an OTP input field. Check your WhatsApp for the one-time password and enter it in the field.
+
+📸 Screenshot placeholder:
+> [Screenshot: OTP input field in Forgot Password modal]
+
+#### Step 7: Complete Reset
+Once you enter the correct OTP, your password will be reset and you'll see a success message. You can now log in with your new password.
+
+📸 Screenshot placeholder:
+> [Screenshot: Success message confirming password reset]
+
+### Important behavior to know
+- **Registered Number Only**: You must use the phone number that was registered when you created your Luluchat account. This is different from any connected channel numbers (WhatsApp Personal or WhatsApp Cloud numbers you've connected to your account).
+- **OTP Delivery**: The OTP is sent via WhatsApp to your registered number. If you don't receive it, verify that you're using the correct registered number.
+- **No Account Found**: If the phone number you enter is not registered with Luluchat, you will not receive an OTP. Double-check that you're using the number from your account registration.
+- **Password Requirements**: Your new password must be at least 6 characters long. For better security, use a longer password with a mix of letters, numbers, and symbols.
+- **Password Match**: Both password fields must match exactly. If they don't match, you'll see an error message.
+
+### Common issues & solutions
+- **Not receiving OTP**:
+  - Verify you're using the registered phone number (the one used during account creation), not a connected channel number.
+  - Check your WhatsApp messages on the registered number.
+  - Ensure your registered number has WhatsApp installed and is active.
+
+- **"Number not registered" error**:
+  - The phone number you entered is not associated with any Luluchat account.
+  - Double-check the number you used during registration.
+  - Contact support if you believe your account exists but the number isn't recognized.
+
+- **OTP expired or invalid**:
+  - OTPs have a limited validity period. Request a new OTP if yours has expired.
+  - Ensure you're entering the 6-digit code correctly without spaces.
+
+- **Passwords don't match**:
+  - Make sure both password fields contain exactly the same password.
+  - Check for any extra spaces or characters.
+
 ## Best practice 💡
 - **Use Your Business WhatsApp Number**: Since this number will be used for important notifications, use a number you check regularly.
 - **Save Your Password**: Store your password securely. If you forget it, you can use the "Forgot Password" link on the login page.
+- **Remember Your Registered Number**: Keep track of which phone number you used during registration, as this is required for password resets.
 - **Complete Onboarding Immediately**: Finish the onboarding process right after registration to start using Luluchat fully.
 
 ---
