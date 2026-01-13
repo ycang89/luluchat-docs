@@ -30,7 +30,11 @@ Fill in your contact details in the template (Name, Phone Number, Tags, etc.).
 {% step %}
 #### Upload and Import
 
-Upload the completed file and click **Import** to add all contacts to your database.
+Upload the completed file and click **Import** to submit your import request. The import will be processed in the background.
+
+{% hint style="info" %}
+**Processing Time**: Once you submit the import request, the server will process it in the background. You're free to continue using Luluchat while the import runs. Processing usually takes **1 to 15 minutes**, depending on the number of contacts and server readiness. You'll receive a notification once the import is complete.
+{% endhint %}
 {% endstep %}
 {% endstepper %}
 
@@ -66,3 +70,5 @@ An Excel file containing all visible contacts and their details will be download
 
 * **Phone Number Format**: Always ensure phone numbers include the country code (e.g., 60123456789).
 * **Duplicate Handling**: The system will automatically detect existing contacts based on their phone number and update their information rather than creating duplicates.
+* **Background Processing**: Import requests are processed in the background. You can continue using Luluchat while the import runs. Processing typically takes 1 to 15 minutes depending on the number of contacts and server readiness.
+* **Notifications**: You'll receive a notification once your import is complete. Check your notifications to see when the import has finished.
