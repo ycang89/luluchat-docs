@@ -17,7 +17,7 @@ Quick actions to organize and control attention on individual conversations: pin
 {% step %}
 #### Open the conversation
 
-In `Inbox`, select the conversation you want to control.
+In `Inbox`, mouse over the conversation you want to control.
 
 📸 Screenshot placeholder:
 

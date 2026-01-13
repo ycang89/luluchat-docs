@@ -88,7 +88,7 @@ Your reply is sent immediately. Assignments, tags, and list changes apply to the
 * [Sound Settings (Mute/Unmute)](sound-settings.md)
 * [Conversation Controls (Pin, Mute, Unread, Archive)](conversation-controls.md)
 * Contact Info
-  * [Profile (Assignee, Collaborator, Tags, Profile, Custom Attributes, Opt Out)](/broken/pages/lWmpwmAKmGGLtzz2ofda)
-  * [Flows (Manual Send Message Flow)](/broken/pages/VTgmXDGHVbezPOKHG4hV)
-  * [Tickets (Add Ticket)](/broken/pages/IxqDbBrWeUYHjXWdeKP6)
-  * [Notes (Internal Note)](/broken/pages/9aKyFS5Qg4E7bNUJ59N4)
+  * [Profile](/broken/pages/lWmpwmAKmGGLtzz2ofda)
+  * [Flows](/broken/pages/VTgmXDGHVbezPOKHG4hV)
+  * [Tickets](/broken/pages/IxqDbBrWeUYHjXWdeKP6)
+  * [Notes](/broken/pages/9aKyFS5Qg4E7bNUJ59N4)
