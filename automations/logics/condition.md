@@ -35,10 +35,14 @@ Define the **Next Step** for when the condition is met (Matched) and a **Fallbac
 ## What happens after it triggers?
 The contact is immediately routed to the next step in the "Matched" path if the rules are true, or the "Else" path if they are not. This happens silently in the background without the customer seeing any "processing" state.
 
-## Important behavior to know
-- **First Match Wins**: If you have multiple condition sets, Luluchat checks them in order and follows the first one that matches.
-- **The "Else" Path**: Always ensure you have a default path for contacts who don't meet any of your specific conditions to prevent the flow from getting stuck.
-- **Real-Time Data**: Luluchat uses the most up-to-date information from the contact's profile at the exact moment they reach the node.
+> [!NOTE]
+> **Important behavior to know**
+>
+> - **First Match Wins**: If you have multiple condition sets, Luluchat checks them in order and follows the first one that matches.
+> - **The "Else" Path**: Always ensure you have a default path for contacts who don't meet any of your specific conditions to prevent the flow from getting stuck.
+> - **Real-Time Data**: Luluchat uses the most up-to-date information from the contact's profile at the exact moment they reach the node.
+> - **Case Insensitive**: Text comparisons (like Tag names) are generally case-insensitive.
+> - **Contact Activity Context**: When checking "Last Conversed", "Last Contact Replied", or "Last Replied From You", remember that "you" represents the channel, not the individual team member.
 
 ## Common issues & solutions
 - **Wrong Path Taken**: Check the order of your conditions. If a broad rule is above a specific one, the broad rule will capture the contact first.

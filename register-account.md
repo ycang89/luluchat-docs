@@ -132,12 +132,14 @@ Once you enter the correct OTP, your password will be reset and you'll see a suc
 📸 Screenshot placeholder:
 > [Screenshot: Success message confirming password reset]
 
-### Important behavior to know
-- **Registered Number Only**: You must use the phone number that was registered when you created your Luluchat account. This is different from any connected channel numbers (WhatsApp Personal or WhatsApp Cloud numbers you've connected to your account).
-- **OTP Delivery**: The OTP is sent via WhatsApp to your registered number. If you don't receive it, verify that you're using the correct registered number.
-- **No Account Found**: If the phone number you enter is not registered with Luluchat, you will not receive an OTP. Double-check that you're using the number from your account registration.
-- **Password Requirements**: Your new password must be at least 6 characters long. For better security, use a longer password with a mix of letters, numbers, and symbols.
-- **Password Match**: Both password fields must match exactly. If they don't match, you'll see an error message.
+> [!WARNING]
+> **Important behavior to know**
+>
+> - **Registered Number Only**: You must use the phone number that was registered when you created your Luluchat account. This is different from any connected channel numbers (WhatsApp Personal or WhatsApp Cloud numbers you've connected to your account).
+> - **OTP Delivery**: The OTP is sent via WhatsApp to your registered number. If you don't receive it, verify that you're using the correct registered number.
+> - **No Account Found**: If the phone number you enter is not registered with Luluchat, you will not receive an OTP. Double-check that you're using the number from your account registration.
+> - **Password Requirements**: Your new password must be at least 6 characters long. For better security, use a longer password with a mix of letters, numbers, and symbols.
+> - **Password Match**: Both password fields must match exactly. If they don't match, you'll see an error message.
 
 ### Common issues & solutions
 - **Not receiving OTP**:

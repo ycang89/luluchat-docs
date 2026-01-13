@@ -62,11 +62,16 @@ Attach the flow to a trigger (keyword, growth tool, web widget, or workflow acti
 ## What happens after it triggers?
 The flow starts immediately, sending each step in order, routing or tagging as configured, and moving the contact through the designed path.
 
-## Important behavior to know
-- Channel must be connected; otherwise flows won’t fire (you’ll see “Channel not connected”).
-- Flows stay inactive until linked to a trigger or set as a fallback (default/away/opt-in/out/absent).
-- Publishing saves the current version; drafts won’t run.
-- Unique, clear flow names help when selecting from trigger dropdowns.
+> [!NOTE]
+> **Important behavior to know**
+>
+> - **Activation Required**: Flows must be activated (published) before they can trigger. Draft flows won't run.
+> - **Channel Dependency**: Flows only work when your channel is connected and in `ready` status. Otherwise flows won't fire (you'll see "Channel not connected").
+> - **Trigger Required**: Flows stay inactive until linked to a trigger or set as a fallback (default/away/opt-in/out/absent).
+> - **Publishing**: Publishing saves the current version; drafts won't run.
+> - **One Trigger Per Contact**: By default, a flow triggers once per contact per trigger event, unless you configure re-trigger limitations in Flow Settings.
+> - **Re-trigger Rules**: You can set up re-trigger conditions in Flow Settings, such as "trigger again if X days have passed" or "trigger maximum Y times per period."
+> - **Flow Naming**: Unique, clear flow names help when selecting from trigger dropdowns.
 
 ## Common issues & solutions
 - Flow didn’t run: confirm the channel is connected and the flow is linked to a trigger.

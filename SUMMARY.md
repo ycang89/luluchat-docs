@@ -1,5 +1,9 @@
 # Summary
 
+## Introduction
+
+* [Welcome to Luluchat Documentation](./introduction.md)
+
 ## Getting Started
 
 * [Register a Luluchat Account](./register-account.md)

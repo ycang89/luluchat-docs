@@ -173,14 +173,16 @@ For each contact in the table:
 - **Search & Filter**: Conversations in custom lists can still be found through search and other filters.
 - **No Data Loss**: Removing a conversation from a list does not delete the conversation. It remains in your inbox and other lists where it was added.
 
-## Important behavior to know
-- **Custom Lists Only**: You can only add/remove conversations from custom lists you create. Default system lists (All, Awaiting Reply, Unread, Needs Reply, Groups, 1:1, Closed, Archived) are system-managed and automatically update based on conversation status. You cannot manually add or remove conversations from default lists.
-- **Multiple Lists**: A conversation can be in multiple custom lists at the same time. Adding it to one list doesn't remove it from others.
-- **List Visibility**: Hidden lists don't appear in your inbox tabs but can be managed and shown again from List Settings. Default system lists are always visible and cannot be hidden.
-- **List Name Limit**: Custom list names are limited to 30 characters.
-- **Bulk Operations**: You can add or remove multiple conversations at once using the bulk actions in the "Manage List" modal.
-- **Default Lists**: System default lists (All, Awaiting Reply, Unread, Needs Reply, Groups, 1:1, Closed, Archived) cannot be edited, deleted, or hidden. They automatically update based on conversation properties and status.
-- **Automatic Updates**: Default system lists automatically update as conversations change status. For example, when you close a conversation, it automatically appears in "Closed" and disappears from "All". When a closed conversation receives a new message, it automatically reopens and returns to "All".
+> [!NOTE]
+> **Important behavior to know**
+>
+> - **Custom Lists Only**: You can only add/remove conversations from custom lists you create. Default system lists (All, Awaiting Reply, Unread, Needs Reply, Groups, 1:1, Closed, Archived) are system-managed and automatically update based on conversation status. You cannot manually add or remove conversations from default lists.
+> - **Multiple Lists**: A conversation can be in multiple custom lists at the same time. Adding it to one list doesn't remove it from others.
+> - **List Visibility**: Hidden lists don't appear in your inbox tabs but can be managed and shown again from List Settings. Default system lists are always visible and cannot be hidden.
+> - **List Name Limit**: Custom list names are limited to 30 characters.
+> - **Bulk Operations**: You can add or remove multiple conversations at once using the bulk actions in the "Manage List" modal.
+> - **Default Lists**: System default lists (All, Awaiting Reply, Unread, Needs Reply, Groups, 1:1, Closed, Archived) cannot be edited, deleted, or hidden. They automatically update based on conversation properties and status.
+> - **Automatic Updates**: Default system lists automatically update as conversations change status. For example, when you close a conversation, it automatically appears in "Closed" and disappears from "All". When a closed conversation receives a new message, it automatically reopens and returns to "All".
 
 ## Common issues & solutions
 - **Can't see List Settings button**:

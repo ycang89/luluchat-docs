@@ -89,14 +89,16 @@ For each reminder, you can:
 - **Reminder Appears**: The reminder appears in the Reminders tab under "Upcoming" until its scheduled time.
 - **Status Updates**: After the scheduled time passes, the reminder moves to "Overdue" if not marked as done.
 
-## Important behavior to know
-- **Pro Plan Feature**: Mobile push notifications (WhatsApp app notifications) are only available for Pro plan subscribers. All users receive web notifications.
-- **Time Intervals**: Time selection is limited to 15-minute intervals (e.g., 09:00, 09:15, 09:30, 09:45).
-- **Default Values**: When creating a reminder, the title is pre-filled with "Follow up with [Contact Name]", the date defaults to tomorrow, and the time defaults to 09:00.
-- **Edit Permissions**: Only the user who created a reminder can edit it. Other team members can view but not modify reminders created by others.
-- **Multiple Notifications**: You can select multiple team members to notify. All selected members will receive the notification at the scheduled time.
-- **Reminder Link**: Each reminder is linked to the specific conversation where it was created. You can click "Go to Chat" to return to that conversation.
-- **Automatic Status**: Reminders automatically move from "Upcoming" to "Overdue" when their scheduled time passes (if not marked as done).
+> [!NOTE]
+> **Important behavior to know**
+>
+> - **Pro Plan Feature**: Mobile push notifications (WhatsApp app notifications) are only available for Pro plan subscribers. All users receive web notifications.
+> - **Time Intervals**: Time selection is limited to 15-minute intervals (e.g., 09:00, 09:15, 09:30, 09:45).
+> - **Default Values**: When creating a reminder, the title is pre-filled with "Follow up with [Contact Name]", the date defaults to tomorrow, and the time defaults to 09:00.
+> - **Edit Permissions**: Only the user who created a reminder can edit it. Other team members can view but not modify reminders created by others.
+> - **Multiple Notifications**: You can select multiple team members to notify. All selected members will receive the notification at the scheduled time.
+> - **Reminder Link**: Each reminder is linked to the specific conversation where it was created. You can click "Go to Chat" to return to that conversation.
+> - **Automatic Status**: Reminders automatically move from "Upcoming" to "Overdue" when their scheduled time passes (if not marked as done).
 
 ## Common issues & solutions
 - **Can't see Remind Me option**:

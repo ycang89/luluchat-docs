@@ -43,10 +43,13 @@ For detailed information on each specific action, see the following:
 ## What happens after it triggers?
 All actions within the node are executed immediately and in order (from top to bottom). The contact's profile, tags, and assignments are updated instantly, and the flow continues to the next step.
 
-## Important behavior to know
-- **Execution Order**: Actions are performed in the exact order they appear in the list, from top to bottom.
-- **Instant Updates**: Changes to tags, assignments, or custom attributes take effect immediately and are visible to all team members.
-- **Webhook Timing**: External webhooks are sent asynchronously; the flow continues even if your server takes time to respond.
+> [!NOTE]
+> **Important behavior to know**
+>
+> - **Execution Order**: Actions are performed in the exact order they appear in the list, from top to bottom.
+> - **Instant Updates**: Changes to tags, assignments, or custom attributes take effect immediately and are visible to all team members.
+> - **Webhook Timing**: External webhooks are sent asynchronously; the flow continues even if your server takes time to respond.
+> - **Sequential Execution**: All actions within a single Actions node execute sequentially, not in parallel. Each action completes before the next one begins.
 
 ## Common issues & solutions
 - **Multiple actions not working**: Ensure all actions are properly configured. You can add as many actions as needed in a single node (e.g., "Add Tag: New Lead", "Assign: Sales Team", and "Update Attribute: Source=WhatsApp").

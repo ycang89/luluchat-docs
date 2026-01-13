@@ -44,10 +44,16 @@ Click the **Export** button to download an Excel file containing all your keywor
 - **Editing**: Clicking "Edit" takes you directly to the Message Flow editor where you can modify the keyword trigger in the Starting Step.
 - **Exporting**: You receive an Excel file with all keyword data for offline review or backup.
 
-## Important behavior to know
-- **Read-Only View**: This page shows keywords but doesn't allow direct editing. To change a keyword, click "Edit" to open the flow's Starting Step.
-- **All Flows**: The list includes keywords from all Message Flows in your account, not just active ones.
-- **Search Functionality**: The search box filters keywords by the actual keyword text, not by flow name.
+> [!NOTE]
+> **Important behavior to know**
+>
+> - **Read-Only View**: This page shows keywords but doesn't allow direct editing. To change a keyword, click "Edit" to open the flow's Starting Step.
+> - **All Flows**: The list includes keywords from all Message Flows in your account, not just active ones.
+> - **Search Functionality**: The search box filters keywords by the actual keyword text, not by flow name.
+> - **Case Insensitive**: Keyword matching is case-insensitive. "HELLO", "hello", and "Hello" all match the same keyword.
+> - **Exact Match Required**: For the "is" condition, the entire message must exactly match the keyword (ignoring case).
+> - **First Match Wins**: If multiple keywords match a message, the flow associated with the first matching keyword (in the list order) will trigger.
+> - **Trigger Limitation**: You can configure re-trigger rules in Flow Settings to control how often a keyword can trigger the same flow for the same contact.
 
 ## Common issues & solutions
 - **Can't find a keyword**: Use the search box to filter the list. Remember that keywords are case-insensitive, so search for any variation.

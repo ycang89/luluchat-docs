@@ -26,9 +26,12 @@ Click `Create Custom Attribute`.
 📸 Screenshot placeholder:
 > [Screenshot: Attribute list with selection checkboxes and footer toolbar]
 
-## Important behavior to know
-- **Variable Reuse**: Once defined, custom attributes can be inserted into Message Flows using variables (e.g., `{{Last_Purchase}}`) for personalized automation.
-- **Searchable**: You can filter your contact directory using these custom fields to create targeted lists.
+> [!NOTE]
+> **Important behavior to know**
+>
+> - **Variable Reuse**: Once defined, custom attributes can be inserted into Message Flows using variables (e.g., `{{Last_Purchase}}`) for personalized automation.
+> - **Searchable**: You can filter your contact directory using these custom fields to create targeted lists.
+> - **Bulk Deletion**: When deleting multiple custom attributes at once, ensure you're not removing attributes that are actively used in your Message Flows or contact profiles.
 
 ## Best practice 💡
 - **Clean Terminology**: Avoid duplicate attributes by checking the list before creating new ones.

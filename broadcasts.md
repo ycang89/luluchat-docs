@@ -133,18 +133,20 @@ Use the search box to find specific contacts by WhatsApp number or contact name 
 📸 Screenshot placeholder:
 > [Screenshot: Queue management actions]
 
-## Important behavior to know
-- **Contact Eligibility**: Only contacts that are:
-  - **Imported to Contacts**: Contacts must be added or imported through the Contacts page. Contacts who have only messaged you but haven't been added to your Contacts directory will not receive broadcasts.
-  - **Not Opted Out**: Contacts who have opted out are automatically excluded from all broadcasts, regardless of your selection criteria.
-- **Daily Limits and Capacity**: Your daily broadcast capacity is determined by your settings in [Settings: Broadcast](./settings/broadcast.md). It depends on your **Broadcast Message Interval**, **Broadcast Start Time**, and **Broadcast End Time**.
-- **Sending Hours**: Broadcasts only send during your configured sending window. If you schedule a broadcast outside these hours, the system will queue it and begin sending at the next start time.
-- **Channel Connection**: Your channel must be connected (`ready` status) for broadcasts to send.
-- **Pause/Resume**: You can pause an active broadcast at any time from the "More" menu in the list view or from the Broadcast Message Queue toolbar. When you resume, sending continues from where it left off.
-- **Message Status Tracking**: Message statuses (Delivered, Read, Replied, etc.) are automatically updated as recipients interact with your messages. The queue provides real-time visibility into broadcast performance.
-- **Failed Messages**: Failed messages remain in the "Failed" tab until you manually resend them. Common failure reasons include invalid phone numbers, opted-out contacts, or temporary delivery issues.
-- **Replied to Given Option**: This status specifically tracks interactions with interactive elements (buttons, quick replies) in your message flow, not just any reply. It helps you identify contacts who engaged with specific call-to-action options.
-- **Remaining Queue**: Messages in the "Remaining" tab will be sent automatically according to your broadcast settings. You cannot manually send individual messages from this queue, but you can pause/resume the entire broadcast.
+> [!NOTE]
+> **Important behavior to know**
+>
+> - **Contact Eligibility**: Only contacts that are:
+>   - **Imported to Contacts**: Contacts must be added or imported through the Contacts page. Contacts who have only messaged you but haven't been added to your Contacts directory will not receive broadcasts.
+>   - **Not Opted Out**: Contacts who have opted out are automatically excluded from all broadcasts, regardless of your selection criteria.
+> - **Daily Limits and Capacity**: Your daily broadcast capacity is determined by your settings in [Settings: Broadcast](./settings/broadcast.md). It depends on your **Broadcast Message Interval**, **Broadcast Start Time**, and **Broadcast End Time**.
+> - **Sending Hours**: Broadcasts only send during your configured sending window. If you schedule a broadcast outside these hours, the system will queue it and begin sending at the next start time.
+> - **Channel Connection**: Your channel must be connected (`ready` status) for broadcasts to send.
+> - **Pause/Resume**: You can pause an active broadcast at any time from the "More" menu in the list view or from the Broadcast Message Queue toolbar. When you resume, sending continues from where it left off.
+> - **Message Status Tracking**: Message statuses (Delivered, Read, Replied, etc.) are automatically updated as recipients interact with your messages. The queue provides real-time visibility into broadcast performance.
+> - **Failed Messages**: Failed messages remain in the "Failed" tab until you manually resend them. Common failure reasons include invalid phone numbers, opted-out contacts, or temporary delivery issues.
+> - **Replied to Given Option**: This status specifically tracks interactions with interactive elements (buttons, quick replies) in your message flow, not just any reply. It helps you identify contacts who engaged with specific call-to-action options.
+> - **Remaining Queue**: Messages in the "Remaining" tab will be sent automatically according to your broadcast settings. You cannot manually send individual messages from this queue, but you can pause/resume the entire broadcast.
 
 ## Common issues & solutions
 - **Broadcast not sending**: Check if your channel is connected and if you are within your "Broadcast Sending Hours."
@@ -171,7 +173,8 @@ Use the search box to find specific contacts by WhatsApp number or contact name 
   - If your message flow doesn't include interactive elements, this tab will be empty.
   - Regular text replies appear in the "Replied" tab, not "Replied to Given Option".
 
-## Best practice 💡
+> [!TIP]
+> **Best practice**
 - **Import Contacts First**: Before creating a broadcast, ensure all intended recipients are imported or added through the Contacts page. Contacts who have only messaged you but aren't in your Contacts directory won't receive broadcasts.
 - **Check Opt-Out Status**: Review your contact list to identify opted-out contacts before creating broadcasts to avoid confusion about delivery.
 - **Test first**: Send the message flow to a test contact before broadcasting to a large group.
