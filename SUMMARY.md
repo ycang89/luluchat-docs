@@ -103,6 +103,8 @@
     * [Billing](settings/account/billing.md)
     * [Integration](core-features/index-8/index/integration/README.md)
       * [Zapier Integration](core-features/index-8/index/integration/zapier-integration.md)
+      * [Shopify Integration](core-features/index-8/index/integration/shopify-integration.md)
+      * [ChatGPT Integration](core-features/index-8/index/integration/chatgpt-integration.md)
     * [Users](settings/account/users.md)
     * [App Branding](settings/account/app-branding.md)
   * [Data Management](settings/data/index.md)
