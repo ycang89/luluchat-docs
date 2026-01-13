@@ -132,3 +132,4 @@
   * [Business Verification](whatsapp-business-app-waba/business-verification.md)
   * [Blue Tick Verification](whatsapp-business-app-waba/blue-tick-verification.md)
   * [Messaging Limits & Quality](whatsapp-business-app-waba/messaging-limits-quality.md)
+  * [Migrate WABA Account](whatsapp-business-app-waba/migrate-account.md)

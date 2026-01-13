@@ -38,6 +38,10 @@ To help you understand and effectively use WABA, we've broken down the essential
 {% card title="Messaging Limits & Quality" description="Understand account tiers, messaging limits, and quality rating system" icon="bar-chart" %}
 [Read More →](./messaging-limits-quality.md)
 {% endcard %}
+
+{% card title="Migrate WABA Account" description="Learn how to migrate your WhatsApp Business API account to Luluchat" icon="arrow-right" %}
+[Read More →](./migrate-account.md)
+{% endcard %}
 {% endcards %}
 
 ## Important Behavior to Know
