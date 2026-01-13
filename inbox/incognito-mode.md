@@ -12,33 +12,25 @@ Incognito hides your presence in a conversation (e.g., typing/seen indicators) w
 
 {% stepper %}
 {% step %}
-#### Turn on Incognito
+**Turn on Incognito**
 
 Click the `Incognito` toggle/button to enter incognito view.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Conversation thread with Incognito toggle/button visible]
+<figure><img src="../.gitbook/assets/Screenshot 2026-01-13 at 6.15.40 PM copy.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
-#### Open the conversation
+**Open the conversation**
 
 In `Inbox`, open the conversation you want to review privately.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Incognito state enabled indicator]
+<figure><img src="../.gitbook/assets/Screenshot 2026-01-13 at 6.24.25 PM.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
-#### Turn off when done
+**Turn off when done**
 
 Switch Incognito off before replying so normal presence indicators resume.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Incognito toggle turned off]
 {% endstep %}
 {% endstepper %}
 
