@@ -15,7 +15,7 @@
 * [Inbox](inbox/index.md)
   * [Connect your Channel](inbox/connect-channel.md)
   * [Close Conversation](inbox/close-conversation.md)
-  * [Add an Internal Note](inbox/internal-note.md)
+  * [Add a Note](inbox/internal-note.md)
   * [Quick Reply](inbox/quick-reply.md)
   * [Remind Me](inbox/remind-me.md)
   * [Custom Lists](inbox/custom-lists.md)

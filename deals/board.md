@@ -40,4 +40,4 @@ Opening a deal allows you to update:
 
 ## Best practice 💡
 - **Clean Pipelines**: Archive old or stale deals regularly to keep the board focused on active opportunities.
-- **Collaborator Notes**: Use the internal notes/comments within the Deal Form to keep the team updated on the latest sales discussions.
+- **Collaborator Notes**: Use the notes/comments within the Deal Form to keep the team updated on the latest sales discussions.

@@ -38,7 +38,7 @@ Click the `Create Broadcast` button. You will be guided through a 3-step process
 
 * Broadcast Name: Enter an internal name for your reference (e.g., "Monthly Newsletter").
 * Message Flow: Choose the message flow you want to deliver. Only activated flows are listed.
-* Internal Notes: (Optional) Add notes for your team to provide context about this broadcast.
+* Notes: (Optional) Add notes for your team to provide context about this broadcast.
 
 📸 Screenshot placeholder:
 

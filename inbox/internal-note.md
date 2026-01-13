@@ -1,12 +1,12 @@
-# Add an Internal Note
+# Add a Note
 
-## What is an Internal Note?
+## What is a Note?
 
 An internal-only message in Inbox for teammates. Contacts do not see it.
 
 ## When does it trigger?
 
-* When you select `Internal Note` mode in the composer and post a note.
+* When you select `Note` mode in the message editor and post a note.
 
 ## How to set it up (Step by Step)
 
@@ -18,17 +18,17 @@ In `Inbox`, open the conversation where you need to leave context.
 
 📸 Screenshot placeholder:
 
-> \[Screenshot: Conversation thread with composer visible]
+> [Screenshot: Conversation thread with message editor visible]
 {% endstep %}
 
 {% step %}
-#### Switch to Internal Note
+#### Switch to Note Mode
 
-Toggle the composer to `Internal Note` mode.
+Click the note icon to open the `Note` input box.
 
 📸 Screenshot placeholder:
 
-> \[Screenshot: Composer showing Internal Note mode selected]
+> [Screenshot: Message editor showing Note modal]
 {% endstep %}
 
 {% step %}
@@ -38,7 +38,7 @@ Enter the note for teammates and post it. It will appear in the thread marked as
 
 📸 Screenshot placeholder:
 
-> \[Screenshot: Posted internal note with internal badge]
+> [Screenshot: Posted note with internal badge]
 {% endstep %}
 {% endstepper %}
 
@@ -53,7 +53,7 @@ The note is visible to teammates in the thread but never sent to the contact.
 
 ## Common issues & solutions
 
-* Note sent to customer: ensure the composer is in `Internal Note` mode before posting.
+* Note sent to customer: ensure the message editor is in `Note` mode before posting.
 * Teammate didn’t see it: mention them (if available) and confirm they have access to the conversation.
 
 ## Best practice 💡

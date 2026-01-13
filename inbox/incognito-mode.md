@@ -12,9 +12,9 @@ Incognito hides your presence in a conversation (e.g., typing/seen indicators) w
 
 {% stepper %}
 {% step %}
-#### Open the conversation
+#### Turn on Incognito
 
-In `Inbox`, open the conversation you want to review privately.
+Click the `Incognito` toggle/button to enter incognito view.
 
 📸 Screenshot placeholder:
 
@@ -22,9 +22,9 @@ In `Inbox`, open the conversation you want to review privately.
 {% endstep %}
 
 {% step %}
-#### Turn on Incognito
+#### Open the conversation
 
-Click the `Incognito` toggle/button to enter incognito view.
+In `Inbox`, open the conversation you want to review privately.
 
 📸 Screenshot placeholder:
 

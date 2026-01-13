@@ -39,7 +39,7 @@ Type your reply, then use the action bar to add tags, assign a teammate, or move
 
 📸 Screenshot placeholder:
 
-> \[Screenshot: Reply composer with Tag and Assign controls highlighted]
+> [Screenshot: Message editor with Tag and Assign controls highlighted]
 {% endstep %}
 
 {% step %}
@@ -80,7 +80,7 @@ Your reply is sent immediately. Assignments, tags, and list changes apply to the
 
 * [Connect your Channel](connect-channel.md)
 * [Close Conversation](close-conversation.md)
-* [Add an Internal Note](internal-note.md)
+* [Add a Note](internal-note.md)
 * [Quick Reply](quick-reply.md)
 * [Remind Me](remind-me.md)
 * [Custom Lists](custom-lists.md)

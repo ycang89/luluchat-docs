@@ -6,7 +6,7 @@ Lets you add internal-only notes on the contact while in the conversation. Custo
 
 ## When does it trigger?
 
-* When you post an internal note from the `Notes` tab in contact info.
+* When you post a note from the `Notes` tab in contact info.
 
 ## How to use (Step by Step)
 
@@ -18,7 +18,7 @@ In `Inbox`, open the conversation and select the `Notes` tab.
 
 📸 Screenshot placeholder:
 
-> \[Screenshot: Notes tab with internal note composer]
+> [Screenshot: Notes tab with note message editor]
 {% endstep %}
 
 {% step %}
@@ -28,7 +28,7 @@ Enter the note for teammates and post it; it appears in the thread as internal.
 
 📸 Screenshot placeholder:
 
-> \[Screenshot: Posted internal note with internal badge]
+> [Screenshot: Posted note with internal badge]
 {% endstep %}
 {% endstepper %}
 
@@ -38,7 +38,7 @@ The note is visible to teammates in the conversation but never sent to the conta
 
 ## Important behavior to know
 
-* Internal notes are not delivered to the contact.
+* Notes are not delivered to the contact.
 * Mentioning teammates (if supported) can notify them.
 
 ## Common issues & solutions
