@@ -23,22 +23,22 @@ The Actions node is a background step that performs specific tasks without sendi
 ## Available Actions
 For detailed information on each specific action, see the following:
 
-- [Add Tag](./actions/add-tag.md)
-- [Remove Tag](./actions/remove-tag.md)
-- [Add Assignee](./actions/add-assignee.md)
-- [Add Collaborator](./actions/add-collaborator.md)
-- [Assign Inbox Tab](./actions/assign-inbox-tab.md)
-- [Delay](./actions/delay.md)
-- [Wait for Reply](./actions/wait-reply.md)
-- [Smart Delay](./smart-delay.md)
-- [Save to Attribute](./actions/save-attribute.md)
-- [Update Attribute](./actions/update-attribute.md)
-- [Send WhatsApp Message](./actions/send-whatsapp-message.md)
-- [Webhook](./actions/webhook.md)
-- [Close Inbox Conversation](./actions/close-conversation.md)
-- [Opt In](./actions/opt-in.md)
-- [Opt Out](./actions/opt-out.md)
-- [Add to Deal Stage](./actions/add-deal-stage.md)
+- [Add Tag](automations/logics/actions/add-tag.md)
+- [Remove Tag](automations/logics/actions/remove-tag.md)
+- [Add Assignee](automations/logics/actions/add-assignee.md)
+- [Add Collaborator](automations/logics/actions/add-collaborator.md)
+- [Assign Inbox Tab](automations/logics/actions/assign-inbox-tab.md)
+- [Delay](automations/logics/actions/delay.md)
+- [Wait for Reply](automations/logics/actions/wait-reply.md)
+- [Smart Delay](automations/logics/smart-delay.md)
+- [Save to Attribute](automations/logics/actions/save-attribute.md)
+- [Update Attribute](automations/logics/actions/update-attribute.md)
+- [Send WhatsApp Message](automations/logics/actions/send-whatsapp-message.md)
+- [Webhook](automations/logics/actions/webhook.md)
+- [Close Inbox Conversation](automations/logics/actions/close-conversation.md)
+- [Opt In](automations/logics/actions/opt-in.md)
+- [Opt Out](automations/logics/actions/opt-out.md)
+- [Add to Deal Stage](automations/logics/actions/add-deal-stage.md)
 
 ## What happens after it triggers?
 All actions within the node are executed immediately and in order (from top to bottom). The contact's profile, tags, and assignments are updated instantly, and the flow continues to the next step.
