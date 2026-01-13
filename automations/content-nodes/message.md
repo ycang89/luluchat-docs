@@ -25,6 +25,7 @@ You can add multiple blocks of content within a single Message node:
 ## Important behavior to know
 - **24-Hour Window**: This node only works if the customer has messaged you within the last 24 hours. Outside of this window, you must use a **Message Template**.
 - **Sequential Sending**: If you add multiple content blocks (e.g., an Image followed by Text), they will be sent to the customer in that order.
+- **Typing Indicator**: You can configure a typing indicator for each text message block to make automated messages feel more natural. See [Typing Indicator](../../typing-indicator.md) for details.
 
 ## Best practice 💡
 - **Use Media**: Messages with images or videos often get higher engagement than plain text.

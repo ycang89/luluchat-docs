@@ -39,6 +39,7 @@
       * [Start Flow](automations/content-nodes/start-flow.md)
       * [Form](automations/content-nodes/form.md)
       * [AI Agent](automations/content-nodes/ai-agent.md)
+    * [Typing Indicator](automations/typing-indicator.md)
     * [Logics](automations/logics/index.md)
       * [Actions](automations/logics/actions.md)
         * [Add Tag](automations/logics/actions/add-tag.md)

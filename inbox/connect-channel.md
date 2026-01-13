@@ -74,6 +74,63 @@ After connecting, check the syncing status on your WhatsApp phone. Open WhatsApp
 * You can check the syncing status in your WhatsApp phone by going to **Settings > Linked Devices** to see the progress.
 * After you have connected WhatsApp to Luluchat, you need to log in to your primary phone every 14 days to keep linked devices connected to your WhatsApp account.
 
+## How to Add a New Channel
+
+If you need to connect multiple WhatsApp accounts or want to add another channel to your workspace, you can create additional channels:
+
+{% stepper %}
+{% step %}
+#### Access Channel Management
+
+1. Go to `Inbox` in the left menu.
+2. If you have an existing channel connected, look for the channel selector or channel management option in the header or sidebar.
+3. Alternatively, you can access channel management from the channel connection page.
+
+📸 Screenshot placeholder:
+> [Screenshot: Inbox page showing channel selector or channel management option]
+{% endstep %}
+
+{% step %}
+#### Click Add Channel
+
+1. On the channel management page, you'll see a list of all your existing channels.
+2. Click the **"Add Channel"** button at the bottom of the channel list.
+
+📸 Screenshot placeholder:
+> [Screenshot: Channel list page showing "Add Channel" button]
+{% endstep %}
+
+{% step %}
+#### Connect Your New Channel
+
+1. After clicking "Add Channel", a new channel will be created.
+2. You'll see a success message: "New Channel created, please scan and connect to your WhatsApp now."
+3. The new channel will appear in your channel list with a "Not Connected" status.
+4. Click **"Connect Now"** or select the new channel to start the connection process.
+5. Follow the same connection steps as described in the sections above (either WhatsApp Personal or WhatsApp Cloud).
+
+📸 Screenshot placeholder:
+> [Screenshot: New channel created showing "Connect Now" button]
+{% endstep %}
+{% endstepper %}
+
+### Channel Limits
+
+{% hint style="info" %}
+**Channel Limits**: The number of channels you can create depends on your subscription plan. If you've reached your channel limit, you'll see a message indicating you need to upgrade. Click **"Need More Channel?"** to view upgrade options.
+{% endhint %}
+
+### Managing Multiple Channels
+
+Once you have multiple channels:
+
+* **Switch Between Channels**: Use the channel selector to switch between different channels. Each channel operates independently with its own contacts and conversations.
+* **Current Selected Channel**: The channel you're currently using is marked as "Current Selected" in the channel list.
+* **Channel Status**: Each channel shows its connection status (Connected/Not Connected) so you can easily see which channels are active.
+
+📸 Screenshot placeholder:
+> [Screenshot: Channel list showing multiple channels with status indicators]
+
 ## What happens after it triggers?
 
 Once the status changes to `ready`, you can start receiving and sending messages. Your Message Flows and Broadcasts will now be able to fire for this channel.
@@ -123,12 +180,14 @@ Once connected, Luluchat will begin syncing your contacts and messages. If you h
 {% hint style="info" %}
 **Important behavior to know**
 
-* **One Channel per Workspace**: Most plans allow one active channel connection at a time.
+* **Multiple Channels**: Depending on your plan, you can have multiple channels connected to different WhatsApp accounts. Each channel operates independently with its own contacts and conversations.
+* **Channel Limits**: The number of channels you can create depends on your subscription plan. Check your plan details or contact support if you need more channels.
 * **Stay Connected**: For WhatsApp Personal, ensure your phone remains connected to the internet to maintain the link.
 * **Re-authentication**: If your account is logged out from the phone or the session expires, you will need to repeat the connection steps.
 * **14-Day Login Requirement**: For WhatsApp Personal, you must log in to your primary phone (the one linked to your WhatsApp account) at least once every 14 days to keep the linked device connection active. If you don't log in within 14 days, the connection will be automatically disconnected.
 * **Disconnection Notification**: If your channel becomes disconnected, Luluchat will automatically send a notification message to your registered WhatsApp number to alert you about the disconnection. This helps you quickly identify and resolve connection issues.
 * **Large Contact Lists**: If you have a very large number of contacts (thousands), the initial sync may take up to 15 minutes. Wait for the sync to complete before using the app to ensure all contacts are properly loaded.
+* **Switching Channels**: When you switch between channels, filters and session data are reset. Make sure to save any important work before switching.
 {% endhint %}
 
 ## Common issues & solutions
@@ -147,6 +206,10 @@ Once connected, Luluchat will begin syncing your contacts and messages. If you h
   * Ensure your phone maintains a stable internet connection.
   * Make sure you're using the latest version of WhatsApp.
   * Log in to your primary phone's WhatsApp at least once every 14 days to maintain the link.
+* **Can't add more channels**:
+  * Check if you've reached your plan's channel limit. You may need to upgrade your plan to add more channels.
+  * Click "Need More Channel?" to view upgrade options.
+  * Contact support if you believe you should have access to more channels.
 
 {% hint style="success" %}
 **Best practice**
