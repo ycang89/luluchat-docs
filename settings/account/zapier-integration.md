@@ -127,3 +127,4 @@ When your Zap runs:
 - [Integration Settings](./integration.md) - Learn how to manage your API keys and access tokens
 - [Message Flows](../automations/message-flows.md) - Learn how to create and configure Message Flows
 - [Webhook Trigger](../automations/steps/trigger.md#4-webhook-trigger) - Learn more about Webhook triggers
+- [Webhook Trigger Developer Guide](../developer-guide/webhook-trigger.md) - Technical implementation details for developers

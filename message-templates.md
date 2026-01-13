@@ -89,3 +89,6 @@ Once a template is approved and synced, it becomes available as a selection in:
 * **Keep it Simple**: Use clear and concise language to speed up the approval process.
 * **Test Variables**: Always double-check that your variable mapping is correct before sending a large broadcast.
 * **Check Quality Score**: If your quality score drops to "Low", your template might get paused. Ensure your messages are relevant and not spammy.
+
+## Related Documentation
+- [WhatsApp Business App (WABA)](./whatsapp-business-app-waba/page-1.md) - Learn about WABA features and configuration

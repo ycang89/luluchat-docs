@@ -72,8 +72,13 @@ All actions within the node are executed immediately and in order (from top to b
 ## Common issues & solutions
 - **Multiple actions not working**: Ensure all actions are properly configured. You can add as many actions as needed in a single node (e.g., "Add Tag: New Lead", "Assign: Sales Team", and "Update Attribute: Source=WhatsApp").
 - **Assignment not visible**: Assignments happen immediately. If a teammate doesn't see the conversation, check that the action was saved and the flow was published.
-- **Webhook not received**: Luluchat will attempt to send the webhook to your URL. If your server returns an error, the flow continues to the next step. Check your server logs to see if the request was received.
+- **Webhook not received**: Luluchat will attempt to send the webhook to your URL. If your server returns an error, the flow continues to the next step. Check your server logs to see if the request was received. For technical details, see the [Webhook Action Developer Guide](../../developer-guide/webhook-action.md).
 
 ## Best practice 💡
 - **Silent Tagging**: Use actions to tag customers based on the paths they choose in a flow. This helps you build detailed audience segments without interrupting the conversation.
 - **Auto-Assignment**: Combine actions with "Start Flow" to automatically route high-priority leads to the right team members.
+
+## Related Documentation
+- [Webhook Action](./webhook.md) - Learn how to configure webhook actions in Message Flows
+- [Webhook Action Developer Guide](../../developer-guide/webhook-action.md) - Technical implementation details for developers
+- [Data Formatting](../../developer-guide/data-formatting.md) - Understand supported data types for webhook payloads

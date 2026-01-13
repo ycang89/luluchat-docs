@@ -184,6 +184,8 @@ You can add multiple triggers to a single flow. The flow will start if **any** o
 * **Security**: Enable webhook authentication in Settings > Message Flows to protect your webhook URL.
 * **Response Mapping**: Map webhook response fields to Custom Attributes to personalize your messages.
 
+**For developers**: See the [Webhook Trigger Developer Guide](../../developer-guide/webhook-trigger.md) for technical implementation details, API requirements, and data formatting.
+
 ***
 
 ## What happens after it triggers?
@@ -203,7 +205,7 @@ Once any trigger fires, the flow immediately starts executing from the first ste
 * **Keyword not triggering**: Check that the match condition matches your test message exactly. Remember that "is" requires an exact match, while "contain" is more flexible.
 * **WhatsApp Link not working**: Ensure the link is copied correctly and that the customer's phone has WhatsApp installed. The link must be opened on a device with WhatsApp.
 * **App Event not firing**: Verify that the app integration is properly configured and that the event you selected is actually occurring in that app.
-* **Webhook not received**: Check that your external system is sending a POST request (not GET) and that the `contact_number` field is included in the request body. Verify the webhook URL is correct.
+* **Webhook not received**: Check that your external system is sending a POST request (not GET) and that the `contact_number` field is included in the request body. Verify the webhook URL is correct. For technical details, see the [Webhook Trigger Developer Guide](../developer-guide/webhook-trigger.md).
 
 ## Best practice 💡
 

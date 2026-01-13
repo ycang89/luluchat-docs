@@ -41,3 +41,7 @@ The webhook fires with your payload. The flow follows the success or fail path b
 
 * Test with a small payload first; log responses on the receiving side.
 * Use headers for auth tokens; avoid placing secrets in query strings.
+
+## Related Documentation
+- [Webhook Action Developer Guide](../../developer-guide/webhook-action.md) - Learn about technical implementation, request/response formats, and data handling
+- [Data Formatting](../../developer-guide/data-formatting.md) - Understand supported data types and formats for webhook payloads
