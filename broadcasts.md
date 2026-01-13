@@ -218,6 +218,44 @@ Use the search box to find specific contacts by WhatsApp number or contact name 
   * Review the "Remarks" column to understand why messages failed. Common reasons include invalid phone numbers, opted-out contacts, or temporary delivery issues.
   * Use "Resend to Selected" or "Resend All" to retry failed messages after addressing the underlying issues.
   * Check your channel connection status - a disconnected channel will cause all messages to fail.
+
+## Broadcast Error Types
+
+When a broadcast message fails, the error details are shown in the "Remarks" column of the "Failed" tab in the Broadcast Message Queue. Below is a comprehensive list of possible errors and their descriptions:
+
+| Error Message | Description | Possible Causes | Solution |
+|--------------|-------------|-----------------|----------|
+| **Channel is not ready** | The WhatsApp channel is disconnected or not properly connected | Channel disconnected, authentication expired, or connection lost | Reconnect your WhatsApp channel in [Inbox > Connect Channel](inbox/connect-channel.md) |
+| **Invalid Channel** | The channel ID is invalid or the channel no longer exists | Channel was deleted or corrupted | Contact support or reconnect your channel |
+| **Invalid Channel Data** (WABA only) | The WABA channel configuration is invalid or missing | Channel setup incomplete or corrupted | Reconnect your WABA channel or contact support |
+| **No sending to broadcast** | Attempted to send to a WhatsApp broadcast group (not allowed) | Contact is a WhatsApp broadcast group | Remove broadcast groups from your recipient list |
+| **Contact Opt Out** | The contact has opted out of receiving messages | Contact previously opted out via STOP command or manually | Contact cannot receive broadcasts until they opt back in. Remove from recipient list or wait for opt-in |
+| **Contact has chosen to opt out previously** | The contact has previously opted out | Contact opted out in the past | Remove from recipient list or wait for opt-in |
+| **Insufficient Message Quota** | Daily messaging limit reached | Exceeded daily message quota or plan limits | Wait for quota reset, upgrade your plan, or reduce broadcast size |
+| **Insufficient Quota** | Daily messaging limit reached (alternative message) | Exceeded daily message quota or plan limits | Wait for quota reset, upgrade your plan, or reduce broadcast size |
+| **Send Failed** | General sending failure | Network issues, WhatsApp API errors, or system errors | Check network connection, wait a few minutes and retry using "Resend" |
+| **Send Failed [2]** | General sending failure due to system exception | Network issues, WhatsApp API errors, or system errors | Check network connection, wait a few minutes and retry using "Resend" |
+| **Message failed to send: [error]** | Message delivery failed with specific error from WhatsApp API | Various WhatsApp API errors (rate limiting, invalid number, etc.) | Review the specific error message and address accordingly |
+| **Invalid Number** | The phone number is empty or invalid | Phone number missing or empty in the queue | Verify contact phone numbers in your Contacts directory |
+| **Invalid Conversation** | Contact does not exist in your Contacts directory | Contact not imported or added to Contacts | Import the contact first through [Contacts > Import & Export](contacts/import-export.md) |
+| **Invalid Template** (WABA only) | Message template not found or not approved | Template doesn't exist, is pending approval, or was rejected | Wait for template approval or use an approved template. Check [Message Templates](message-templates.md) |
+| **Invalid Flow** | The selected message flow is invalid or missing | Flow was deleted or doesn't exist | Select a valid, activated message flow for your broadcast |
+| **Invalid Flow [2]** | The selected message flow type is incompatible with WABA | Flow type is not a template flow (WABA requires template flows) | Use a template-type message flow for WABA broadcasts |
+| **No Starting Message In Flow** | The message flow doesn't have a starting message node | Flow configuration is incomplete | Add a starting message node to your flow |
+| **Selected flow does not have starting message.** | The selected flow is missing a starting message | Flow configuration is incomplete | Add a starting message node to your flow |
+| **Message failed to send because more than 24 hours have passed since the customer last replied to this number** (WABA only) | Attempted to send outside the 24-hour service window | No prior conversation with contact within 24 hours | Only send to contacts who have messaged you within the last 24 hours, or use an approved message template |
+| **Broadcast feature has been disabled** | Broadcast feature is not available for your account | Feature disabled in account settings or subscription plan | Enable broadcast feature in settings or upgrade your plan |
+| **Internal Error 500** | Internal server error occurred | Temporary server issue | Wait a few minutes and retry using "Resend" |
+
+{% hint style="info" %}
+**Important behavior to know**
+
+* **Error Details**: The exact error message in the "Remarks" column helps identify the specific issue. Always review this column to understand why messages failed.
+* **Retry Failed Messages**: Most errors can be resolved by fixing the underlying issue (e.g., reconnecting channel, removing opted-out contacts) and then using "Resend to Selected" or "Resend All".
+* **Automatic Pause**: If a broadcast fails due to "Insufficient quota", the broadcast will automatically pause. You'll need to manually resume it after the quota resets.
+* **WABA vs Personal**: Some errors are specific to WhatsApp Business App (WABA) channels, such as template-related errors and service window restrictions. WhatsApp Personal channels have different limitations.
+* **Error Frequency**: If many messages fail with the same error, it's likely a systemic issue (e.g., channel disconnected, quota exceeded) rather than individual contact issues.
+{% endhint %}
 * **Messages stuck in "Remaining" tab**:
   * Check if the broadcast is paused. If paused, click "Resume" to continue sending.
   * Verify you're within your "Broadcast Sending Hours" - messages only send during configured hours.

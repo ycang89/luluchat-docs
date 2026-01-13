@@ -11,111 +11,64 @@ Bulk Updates and Advanced Actions allow you to manage multiple contacts at once,
 * **Mass Updates**: Update contact properties, opt-in status, or list memberships for many contacts at once.
 * **Team Restructuring**: Reassign contacts when team members leave or roles change.
 
-## Bulk Add Tags (Step by Step)
+## Bulk Add/Remove Tags (Step by Step)
 
 {% stepper %}
 {% step %}
 #### Select Contacts
 
-In the Contacts list, use the checkboxes on the left to select the contacts you want to add tags to. You can select individual contacts or use the checkbox in the table header to select all contacts on the current page.
+In the Contacts list, use the checkboxes on the left to select the contacts you want to add or remove tags from. You can select individual contacts or use the checkbox in the table header to select all contacts on the current page.
 
 📸 Screenshot placeholder:
 
-> \[Screenshot: Contacts list with multiple contacts selected using checkboxes]
+> [Screenshot: Contacts list with multiple contacts selected using checkboxes]
 {% endstep %}
 
 {% step %}
 #### Open Bulk Update
 
-After selecting contacts, a toolbar appears at the bottom of the page. Click the Bulk Update button.
+After selecting contacts, a toolbar appears at the bottom of the page. Click the **Bulk Update** button.
 
 📸 Screenshot placeholder:
 
-> \[Screenshot: Bottom toolbar showing Bulk Update button with selected contacts count]
+> [Screenshot: Bottom toolbar showing Bulk Update button with selected contacts count]
 {% endstep %}
 
 {% step %}
-#### Choose Add Tags Action
+#### Choose Add Tags or Remove Tags Action
 
-In the "Bulk Update Contacts" modal, select Add Tags from the "Action" dropdown.
+In the "Bulk Update Contacts" modal, select either:
+- **Add Tags**: To add tags to the selected contacts
+- **Remove Tags**: To remove tags from the selected contacts
+
+Select your desired action from the "Action" dropdown.
 
 📸 Screenshot placeholder:
 
-> \[Screenshot: Bulk Update modal with Action dropdown showing "Add Tags" option]
+> [Screenshot: Bulk Update modal with Action dropdown showing "Add Tags" and "Remove Tags" options]
 {% endstep %}
 
 {% step %}
 #### Select Tags
 
-In the "Tags" field, select one or more tags you want to add to the selected contacts. You can select multiple tags at once.
+In the "Tags" field, select one or more tags you want to add or remove. You can select multiple tags at once.
+
+- **For Add Tags**: The selected tags will be added to all selected contacts (contacts that already have these tags will keep them).
+- **For Remove Tags**: The selected tags will be removed from all selected contacts.
 
 📸 Screenshot placeholder:
 
-> \[Screenshot: Tags dropdown with multiple tags selected]
+> [Screenshot: Tags dropdown with multiple tags selected]
 {% endstep %}
 
 {% step %}
 #### Submit
 
-Click the submit button to apply the tags. You'll see a success message confirming that all selected contacts have been updated.
+Click the submit button to apply the changes. You'll see a success message confirming that all selected contacts have been updated.
 
 📸 Screenshot placeholder:
 
-> \[Screenshot: Success message confirming tags added]
-{% endstep %}
-{% endstepper %}
-
-## Bulk Remove Tags (Step by Step)
-
-{% stepper %}
-{% step %}
-#### Select Contacts
-
-In the Contacts list, use the checkboxes to select the contacts you want to remove tags from.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Contacts list with contacts selected]
-{% endstep %}
-
-{% step %}
-#### Open Bulk Update
-
-Click the Bulk Update button in the bottom toolbar.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Bulk Update button in toolbar]
-{% endstep %}
-
-{% step %}
-#### Choose Remove Tags Action
-
-In the "Bulk Update Contacts" modal, select Remove Tags from the "Action" dropdown.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Bulk Update modal with "Remove Tags" selected in Action dropdown]
-{% endstep %}
-
-{% step %}
-#### Select Tags to Remove
-
-In the "Tags" field, select the tags you want to remove from the selected contacts. You can select multiple tags to remove them all at once.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Tags dropdown showing tags to remove]
-{% endstep %}
-
-{% step %}
-#### Submit
-
-Click the submit button to remove the tags. You'll see a success message confirming that all selected contacts have been updated.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Success message confirming tags removed]
+> [Screenshot: Success message confirming tags added/removed]
 {% endstep %}
 {% endstepper %}
 
@@ -207,6 +160,7 @@ Click the submit button to transfer all contacts from Assignee A to Assignee B. 
 * **Existing Tags**: Adding a tag that a contact already has won't cause an error - the tag is simply maintained.
 * **No Impact on Other Tags**: Removing specific tags doesn't affect other tags on the contacts.
 * **Selection Required**: You must select at least one contact before the Bulk Update button becomes available.
+* **Add vs Remove**: Make sure you select the correct action (Add Tags or Remove Tags) from the dropdown before submitting.
 
 #### Bulk Transfer Assignee
 
@@ -222,9 +176,10 @@ Click the submit button to transfer all contacts from Assignee A to Assignee B. 
   * Ensure you've selected at least one contact using the checkboxes.
   * The Bulk Update button appears in the bottom toolbar after selection.
 * **Tags not updating**:
-  * Verify that you selected the correct action (Add Tags vs Remove Tags).
+  * Verify that you selected the correct action (Add Tags vs Remove Tags) from the Action dropdown.
   * Check that the tags you selected exist in your Tags settings.
   * Refresh the contacts list to see updated tags.
+  * For Remove Tags: Ensure the contacts actually have the tags you're trying to remove.
 * **Transfer Assignee affecting wrong contacts**:
   * Remember that Transfer Assignee affects ALL contacts assigned to the source assignee, not just selected ones.
   * Review the source assignee's contact count before transferring.

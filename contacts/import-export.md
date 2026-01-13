@@ -25,6 +25,16 @@ Download the **Excel Template** provided by Luluchat to ensure your file format 
 #### Fill in Contact Details
 
 Fill in your contact details in the template (Name, Phone Number, Tags, etc.).
+
+**Updating Existing Contacts**: You can use the import to update existing contacts. If a contact with the same phone number already exists, the import will update their information with the new data from your Excel file.
+
+**Tag Column Format**: In the Tags column, you can add multiple tags by separating them with commas. For example:
+- `"old tag, new tag"` will add both "old tag" and "new tag" to the contact
+- If a tag doesn't exist yet, it will be **automatically created** during the import
+- Multiple tags should be separated by commas (e.g., `"VIP, Customer, Newsletter"`)
+
+📸 Screenshot placeholder:
+> [Screenshot: Excel template showing Tags column with comma-separated values]
 {% endstep %}
 
 {% step %}
@@ -60,6 +70,7 @@ Click the **Export** button in the Contacts page.
 
 An Excel file containing all visible contacts and their details will be downloaded automatically.
 {% endstep %}
+
 {% endstepper %}
 
 📸 Screenshot placeholder:
@@ -70,5 +81,8 @@ An Excel file containing all visible contacts and their details will be download
 
 * **Phone Number Format**: Always ensure phone numbers include the country code (e.g., 60123456789).
 * **Duplicate Handling**: The system will automatically detect existing contacts based on their phone number and update their information rather than creating duplicates.
+* **Updating Contacts**: You can update existing contacts by importing an Excel file with the same phone numbers. The import will update the contact's information (name, tags, custom attributes, etc.) with the new data from your file.
+* **Multiple Tags**: In the Tags column, separate multiple tags with commas (e.g., `"old tag, new tag"`). The import will add all specified tags to the contact.
+* **Auto-Create Tags**: If a tag in your import file doesn't exist yet, it will be automatically created during the import process. You don't need to create tags manually before importing.
 * **Background Processing**: Import requests are processed in the background. You can continue using Luluchat while the import runs. Processing typically takes 1 to 15 minutes depending on the number of contacts and server readiness.
 * **Notifications**: You'll receive a notification once your import is complete. Check your notifications to see when the import has finished.
