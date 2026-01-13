@@ -28,20 +28,10 @@ Connect the output of your final action or message to this node.
 📸 Screenshot placeholder:
 > [Screenshot: Flow diagram showing connection to Complete node]
 {% endstep %}
-
-{% step %}
-### Customize the Title (Optional)
-
-You can give the node a custom title (e.g., "Booking Finished") to make your reports easier to read.
-
-📸 Screenshot placeholder:
-> [Screenshot: Complete node at the end of a flow branch with custom title]
-{% endstep %}
 {% endstepper %}
 
 ## Important behavior to know
 - **Dead End**: The Complete node has no output handles. It is the final stop for any contact who reaches it.
-- **Reporting**: Using this node allows Luluchat to track "Completion Rates" for your automations, helping you see which flows are most effective.
 
 ## Best practice 💡
 - **Use for Milestones**: Only place a Complete node when a customer has reached a meaningful goal in the conversation.
