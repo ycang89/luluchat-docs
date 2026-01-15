@@ -27,6 +27,7 @@
     * [Flows](inbox/contact-info/flows.md)
     * [Tickets](inbox/contact-info/tickets.md)
     * [Notes](inbox/contact-info/notes.md)
+  * [Delete Chat History](inbox/delete-chat-history.md)
 * [Automations](automations/index.md)
   * [Message Flows](automations/message-flows.md)
     * [Message Flow Editor](automations/message-flows-editor.md)
