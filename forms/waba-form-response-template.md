@@ -20,7 +20,7 @@ You will:
 You can open WhatsApp Manager in two ways:
 
 * From Meta Business: Go to your **WhatsApp Manager** and open **Message Templates**.
-* From Luluchat: In the **Inbox**, click **Create Template**. This will redirect you to WhatsApp Manager.
+* From Luluchat: In the [**Message Templates**](https://app.luluchat.io/message-templates), click **Create Message Template**. This will redirect you to WhatsApp Manager.
 
 Once you are in the Message Templates page:
 
@@ -120,7 +120,7 @@ After you have created (or at least submitted) the template in WhatsApp Manager,
 #### 2.0 Sync WABA message template
 
 1. Go to [Message Templates](https://app.luluchat.io/message-templates) page and click "Sync from WhatsApp Manager"
-2. You should see "form\_response\_template" in the listing
+2. You should see "form\_response\_template" in the message templates listing.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-01-24 at 7.43.44 PM.png" alt=""><figcaption></figcaption></figure>
 
