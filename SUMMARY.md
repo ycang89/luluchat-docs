@@ -86,6 +86,7 @@
   * [Building Forms](forms/build.md)
   * [Settings & SEO](forms/settings.md)
   * [Managing Responses](forms/responses.md)
+  * [Setup WABA Template for Form Response](forms/waba-form-response-template.md)
 * [Bookings](bookings/index.md)
   * [Calendars](bookings/calendars.md)
   * [Appointments](bookings/appointments.md)
