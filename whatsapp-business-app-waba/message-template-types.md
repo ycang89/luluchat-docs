@@ -138,10 +138,75 @@ All message templates can include these components:
 **Important**: Choosing the wrong category can result in template rejection. Make sure your template content matches the selected category. Promotional content should never be in Utility, Authentication, or Service categories.
 {% endhint %}
 
+{% hint style="info" %}
+**Category Guidelines**: For detailed information on template categorization rules and requirements, refer to [Meta's official Template Categorization documentation](https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/template-categorization?utm_source=chatgpt.com#how-it-works).
+{% endhint %}
+
+## Template Recategorization
+
+### Why Templates Get Recategorized
+
+You may notice that even though you created a template in one category (e.g., **Utility**), when it's sent out, it might be categorized differently (e.g., **Marketing**). This happens because **Meta automatically recategorizes templates** based on their content analysis and usage patterns.
+
+### How Recategorization Works
+
+According to [Meta's template categorization documentation](https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/template-categorization?utm_source=chatgpt.com#how-it-works), Meta uses automated systems to analyze:
+
+1. **Template Content**: The actual text, images, and buttons in your template
+2. **Message Context**: How and when the template is being used
+3. **Customer Interactions**: How recipients respond to the messages
+4. **Conversation Patterns**: The overall flow and purpose of the conversation
+
+Based on this analysis, Meta may recategorize your template to better match its actual purpose and usage.
+
+### Common Recategorization Scenarios
+
+**Utility → Marketing**:
+- If your Utility template contains promotional language, offers, or sales content
+- If it's used primarily for marketing campaigns rather than transactional updates
+- If customer interactions indicate it's being used for promotional purposes
+
+**Service → Marketing**:
+- If service notifications include promotional offers or marketing content
+- If the template is used more for marketing than customer support
+
+**Marketing → Utility/Service**:
+- Less common, but can happen if a Marketing template is actually used for transactional purposes
+- If the content is purely informational without promotional elements
+
+### Impact of Recategorization
+
+When a template is recategorized:
+
+- **Pricing Changes**: The conversation will be charged according to the new category (Marketing typically costs more than Utility/Service)
+- **Category Display**: The category shown in your reports and analytics will reflect the recategorized type
+- **No Manual Override**: You cannot manually change a recategorized template back to your original selection
+
+### How to Avoid Unwanted Recategorization
+
+To prevent your Utility or Service templates from being recategorized as Marketing:
+
+1. **Keep Content Transactional**: Focus on providing information about orders, payments, or account status
+2. **Avoid Promotional Language**: Don't include sales pitches, discounts, or promotional offers
+3. **Use Appropriate Templates**: Create separate Marketing templates for promotional content
+4. **Match Usage to Category**: Use templates for their intended purpose (e.g., don't use Utility templates for marketing campaigns)
+
+{% hint style="info" %}
+**Example**: If you create a Utility template saying "Your order #12345 has been confirmed. Check out our new products here!" - Meta may recategorize it as Marketing because it contains promotional content ("Check out our new products").
+{% endhint %}
+
+### Checking Template Category
+
+After sending messages, you can check the actual category used in:
+- **Conversation Reports**: View the category assigned to each conversation
+- **Billing Reports**: See which category was charged for each message
+- **Template Analytics**: Review how your templates are being categorized in practice
+
 ## Important behavior to know
 
 - **Approval Required**: All templates must be approved by WhatsApp before use. Approval times vary by category.
 - **Category Matching**: The template content must match the selected category. Mismatched content will be rejected.
+- **Automatic Recategorization**: Meta may automatically recategorize your templates based on content analysis and usage patterns. A Utility template you created might be charged as Marketing if it contains promotional content.
 - **Variables**: You can use variables (e.g., `{{1}}`, `{{2}}`) in templates, which you'll fill in when sending the message.
 - **One-Time Use**: Templates are reusable - once approved, you can use them multiple times.
 - **Quality Score**: Your template quality affects approval speed and account standing.
@@ -154,6 +219,7 @@ All message templates can include these components:
   - Formatting errors
   - Missing required information
 - **Wrong Category**: Ensure your template content matches the category. Marketing content must be in Marketing category.
+- **Template Recategorized**: If your Utility template is being charged as Marketing, it's likely because Meta detected promotional content. Review your template content and remove any marketing language, offers, or promotional elements. Create a separate Marketing template for promotional messages.
 - **Slow Approval**: Authentication and Utility templates typically approve faster. Marketing templates take longer due to stricter review.
 - **Variables Not Working**: Ensure variables are properly formatted as `{{1}}`, `{{2}}`, etc., and that you're providing values when sending.
 
@@ -172,3 +238,4 @@ All message templates can include these components:
 - [Messaging Limits & Quality](./messaging-limits-quality.md) - Learn how template quality affects your account rating
 - [Message Templates](../message-templates.md) - Learn how to create and manage templates in Luluchat
 - [Official Template Guidelines](https://developers.facebook.com/docs/whatsapp/business-platform/guides/send-messages) - Meta's official template documentation
+- [Template Categorization Guidelines](https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/template-categorization?utm_source=chatgpt.com#how-it-works) - Meta's official guide on template categorization and recategorization
