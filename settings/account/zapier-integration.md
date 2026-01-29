@@ -9,6 +9,46 @@ Zapier Integration allows you to connect Luluchat with thousands of other apps a
 * When an event occurs in a connected app (trigger) and you've configured Zapier to send that data to Luluchat.
 * When you want to automate sending WhatsApp messages through Luluchat based on actions in other platforms.
 
+## How to Check if Your App is Supported
+
+Before setting up your Zap, you should verify that the third-party app you want to use as a trigger is supported by Zapier. Here's how to check:
+
+{% stepper %}
+{% step %}
+**1. Go to Zapier Apps Directory**
+
+1. Navigate to [https://zapier.com/apps](https://zapier.com/apps) in your browser.
+2. This is Zapier's directory of all supported apps and integrations.
+{% endstep %}
+
+{% step %}
+**2. Search for Your App**
+
+1. In the search input field, type the name of the app you want to connect (for example, "Freshdesk").
+2. As you type, Zapier will show matching results.
+3. Click on the app from the search results to view its details.
+{% endstep %}
+
+{% step %}
+**3. Check Available Triggers**
+
+1. Scroll down on the app's page to find the **Triggers** section.
+2. Click on the **Triggers** tab to see all available trigger events/scenarios that the app supports.
+3. These triggers represent the events that can start your automation (e.g., "New Ticket" in Freshdesk, "New Booking" in Calendly).
+4. Review the available triggers to confirm the event you need is supported.
+{% endstep %}
+
+{% step %}
+**4. Connect to Luluchat**
+
+Once you've confirmed your app and trigger are supported:
+
+1. Follow the steps in the [How to set it up](#how-to-set-it-up-step-by-step) section below to create your Zap.
+2. Use your selected app as the **trigger** (the event that starts the automation).
+3. Add **Luluchat** as the **action** (what happens when the trigger fires).
+{% endstep %}
+{% endstepper %}
+
 ## How to set it up (Step by Step)
 
 {% stepper %}
