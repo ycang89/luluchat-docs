@@ -219,33 +219,173 @@ Use the search box to find specific contacts by WhatsApp number or contact name 
   * Use "Resend to Selected" or "Resend All" to retry failed messages after addressing the underlying issues.
   * Check your channel connection status - a disconnected channel will cause all messages to fail.
 
-## Broadcast Error Types
+## Broadcast Error Messages Reference
 
-When a broadcast message fails, the error details are shown in the "Remarks" column of the "Failed" tab in the Broadcast Message Queue. Below is a comprehensive list of possible errors and their descriptions:
+When a broadcast message fails, the error details are shown in the "Remarks" column of the "Failed" tab in the Broadcast Message Queue. This section provides a comprehensive reference guide for all possible error messages you may encounter.
 
-| Error Message | Description | Possible Causes | Solution |
-|--------------|-------------|-----------------|----------|
-| **Channel is not ready** | The WhatsApp channel is disconnected or not properly connected | Channel disconnected, authentication expired, or connection lost | Reconnect your WhatsApp channel in [Inbox > Connect Channel](inbox/connect-channel.md) |
-| **Invalid Channel** | The channel ID is invalid or the channel no longer exists | Channel was deleted or corrupted | Contact support or reconnect your channel |
-| **Invalid Channel Data** (WABA only) | The WABA channel configuration is invalid or missing | Channel setup incomplete or corrupted | Reconnect your WABA channel or contact support |
-| **No sending to broadcast** | Attempted to send to a WhatsApp broadcast group (not allowed) | Contact is a WhatsApp broadcast group | Remove broadcast groups from your recipient list |
-| **Contact Opt Out** | The contact has opted out of receiving messages | Contact previously opted out via STOP command or manually | Contact cannot receive broadcasts until they opt back in. Remove from recipient list or wait for opt-in |
-| **Contact has chosen to opt out previously** | The contact has previously opted out | Contact opted out in the past | Remove from recipient list or wait for opt-in |
-| **Insufficient Message Quota** | Daily messaging limit reached | Exceeded daily message quota or plan limits | Wait for quota reset, upgrade your plan, or reduce broadcast size |
-| **Insufficient Quota** | Daily messaging limit reached (alternative message) | Exceeded daily message quota or plan limits | Wait for quota reset, upgrade your plan, or reduce broadcast size |
-| **Send Failed** | General sending failure | Network issues, WhatsApp API errors, or system errors | Check network connection, wait a few minutes and retry using "Resend" |
-| **Send Failed [2]** | General sending failure due to system exception | Network issues, WhatsApp API errors, or system errors | Check network connection, wait a few minutes and retry using "Resend" |
-| **Message failed to send: [error]** | Message delivery failed with specific error from WhatsApp API | Various WhatsApp API errors (rate limiting, invalid number, etc.) | Review the specific error message and address accordingly |
-| **Invalid Number** | The phone number is empty or invalid | Phone number missing or empty in the queue | Verify contact phone numbers in your Contacts directory |
-| **Invalid Conversation** | Contact does not exist in your Contacts directory | Contact not imported or added to Contacts | Import the contact first through [Contacts > Import & Export](contacts/import-export.md) |
-| **Invalid Template** (WABA only) | Message template not found or not approved | Template doesn't exist, is pending approval, or was rejected | Wait for template approval or use an approved template. Check [Message Templates](message-templates.md) |
-| **Invalid Flow** | The selected message flow is invalid or missing | Flow was deleted or doesn't exist | Select a valid, activated message flow for your broadcast |
-| **Invalid Flow [2]** | The selected message flow type is incompatible with WABA | Flow type is not a template flow (WABA requires template flows) | Use a template-type message flow for WABA broadcasts |
-| **No Starting Message In Flow** | The message flow doesn't have a starting message node | Flow configuration is incomplete | Add a starting message node to your flow |
-| **Selected flow does not have starting message.** | The selected flow is missing a starting message | Flow configuration is incomplete | Add a starting message node to your flow |
-| **Message failed to send because more than 24 hours have passed since the customer last replied to this number** (WABA only) | Attempted to send outside the 24-hour service window | No prior conversation with contact within 24 hours | Only send to contacts who have messaged you within the last 24 hours, or use an approved message template |
-| **Broadcast feature has been disabled** | Broadcast feature is not available for your account | Feature disabled in account settings or subscription plan | Enable broadcast feature in settings or upgrade your plan |
-| **Internal Error 500** | Internal server error occurred | Temporary server issue | Wait a few minutes and retry using "Resend" |
+{% hint style="info" %}
+**How to Use This Reference**
+
+1. When a message fails, check the "Remarks" column in the "Failed" tab
+2. Find the error message in the sections below
+3. Read the description and follow the recommended solution
+4. Most errors can be resolved and messages can be retried using "Resend to Selected" or "Resend All"
+{% endhint %}
+
+### Channel Connection Errors
+
+#### **Channel is not ready**
+- **What it means**: The WhatsApp channel is disconnected or not properly connected
+- **Why it happens**: Channel disconnected, authentication expired, or connection lost
+- **How to fix**: Reconnect your WhatsApp channel in [Inbox > Connect Channel](inbox/connect-channel.md)
+
+#### **Invalid Channel**
+- **What it means**: The channel ID is invalid or the channel no longer exists
+- **Why it happens**: Channel was deleted or corrupted
+- **How to fix**: Contact support or reconnect your channel
+
+#### **Invalid Channel Data** (WABA only)
+- **What it means**: The WABA channel configuration is invalid or missing
+- **Why it happens**: Channel setup incomplete or corrupted
+- **How to fix**: Reconnect your WABA channel or contact support
+
+### Contact-Related Errors
+
+#### **Contact Opt Out**
+- **What it means**: The contact has opted out of receiving messages
+- **Why it happens**: Contact previously opted out via STOP command or manually
+- **How to fix**: Contact cannot receive broadcasts until they opt back in. Remove from recipient list or wait for opt-in
+
+#### **Contact has chosen to opt out previously**
+- **What it means**: The contact has previously opted out
+- **Why it happens**: Contact opted out in the past
+- **How to fix**: Remove from recipient list or wait for opt-in
+
+#### **Invalid Number**
+- **What it means**: The phone number is empty or invalid
+- **Why it happens**: Phone number missing or empty in the queue
+- **How to fix**: Verify contact phone numbers in your Contacts directory
+
+#### **Invalid Conversation**
+- **What it means**: Contact does not exist in your Contacts directory
+- **Why it happens**: Contact not imported or added to Contacts
+- **How to fix**: Import the contact first through [Contacts > Import & Export](contacts/import-export.md)
+
+#### **No sending to broadcast**
+- **What it means**: Attempted to send to a WhatsApp broadcast group (not allowed)
+- **Why it happens**: Contact is a WhatsApp broadcast group
+- **How to fix**: Remove broadcast groups from your recipient list
+
+### Message Flow Errors
+
+#### **Invalid Flow**
+- **What it means**: The selected message flow is invalid or missing
+- **Why it happens**: Flow was deleted or doesn't exist
+- **How to fix**: Select a valid, activated message flow for your broadcast
+
+#### **Invalid Flow [2]**
+- **What it means**: The selected message flow type is incompatible with WABA
+- **Why it happens**: Flow type is not a template flow (WABA requires template flows)
+- **How to fix**: Use a template-type message flow for WABA broadcasts
+
+#### **No Starting Message In Flow**
+- **What it means**: The message flow doesn't have a starting message node
+- **Why it happens**: Flow configuration is incomplete
+- **How to fix**: Add a starting message node to your flow
+
+#### **Selected flow does not have starting message.**
+- **What it means**: The selected flow is missing a starting message
+- **Why it happens**: Flow configuration is incomplete
+- **How to fix**: Add a starting message node to your flow
+
+#### **Message is queued**
+- **What it means**: The message was successfully queued in WhatsApp's system but did not complete sending
+- **Why it happens**: Message was queued but failed during flow execution, or flow processing error occurred. This typically happens with flow-based broadcasts where the message flow was initiated but didn't complete successfully
+- **How to fix**: Try using "Resend to Selected" or "Resend All" to retry these messages. They may succeed on retry if the underlying issue was temporary
+
+### Template Errors (WABA only)
+
+#### **Invalid Template**
+- **What it means**: Message template not found or not approved
+- **Why it happens**: Template doesn't exist, is pending approval, or was rejected
+- **How to fix**: Wait for template approval or use an approved template. Check [Message Templates](message-templates.md)
+
+### Quota and Limit Errors
+
+#### **Insufficient Message Quota**
+- **What it means**: Daily messaging limit reached
+- **Why it happens**: Exceeded daily message quota or plan limits
+- **How to fix**: Wait for quota reset, upgrade your plan, or reduce broadcast size. The broadcast will automatically pause when this error occurs - resume it after the quota resets
+
+#### **Insufficient Quota**
+- **What it means**: Daily messaging limit reached (alternative message)
+- **Why it happens**: Exceeded daily message quota or plan limits
+- **How to fix**: Wait for quota reset, upgrade your plan, or reduce broadcast size
+
+### Service Window Errors (WABA only)
+
+#### **Message failed to send because more than 24 hours have passed since the customer last replied to this number**
+- **What it means**: Attempted to send outside the 24-hour service window
+- **Why it happens**: No prior conversation with contact within 24 hours
+- **How to fix**: Only send to contacts who have messaged you within the last 24 hours, or use an approved message template
+
+### General Sending Errors
+
+#### **Send Failed**
+- **What it means**: General sending failure
+- **Why it happens**: Network issues, WhatsApp API errors, or system errors
+- **How to fix**: Check network connection, wait a few minutes and retry using "Resend"
+
+#### **Send Failed [2]**
+- **What it means**: General sending failure due to system exception
+- **Why it happens**: Network issues, WhatsApp API errors, or system errors
+- **How to fix**: Check network connection, wait a few minutes and retry using "Resend"
+
+#### **Message failed to send: [error]**
+- **What it means**: Message delivery failed with specific error from WhatsApp API
+- **Why it happens**: Various WhatsApp API errors (rate limiting, invalid number, etc.)
+- **How to fix**: Review the specific error message in the remarks and address accordingly
+
+#### **Internal Error 500**
+- **What it means**: Internal server error occurred
+- **Why it happens**: Temporary server issue
+- **How to fix**: Wait a few minutes and retry using "Resend"
+
+### Feature and Configuration Errors
+
+#### **Broadcast feature has been disabled**
+- **What it means**: Broadcast feature is not available for your account
+- **Why it happens**: Feature disabled in account settings or subscription plan
+- **How to fix**: Enable broadcast feature in settings or upgrade your plan
+
+### Quick Reference Table
+
+For quick lookup, here's a condensed table of all error messages:
+
+| Error Message | Category | Quick Solution |
+|--------------|----------|----------------|
+| Channel is not ready | Channel Connection | Reconnect channel |
+| Invalid Channel | Channel Connection | Reconnect or contact support |
+| Invalid Channel Data | Channel Connection | Reconnect WABA channel |
+| Contact Opt Out | Contact | Remove from list or wait for opt-in |
+| Contact has chosen to opt out previously | Contact | Remove from list or wait for opt-in |
+| Invalid Number | Contact | Verify phone numbers |
+| Invalid Conversation | Contact | Import contact first |
+| No sending to broadcast | Contact | Remove broadcast groups |
+| Invalid Flow | Message Flow | Select valid flow |
+| Invalid Flow [2] | Message Flow | Use template flow for WABA |
+| No Starting Message In Flow | Message Flow | Add starting message |
+| Selected flow does not have starting message. | Message Flow | Add starting message |
+| Message is queued | Message Flow | Retry using Resend |
+| Invalid Template | Template (WABA) | Use approved template |
+| Insufficient Message Quota | Quota | Wait for reset or upgrade |
+| Insufficient Quota | Quota | Wait for reset or upgrade |
+| Message failed to send because more than 24 hours... | Service Window (WABA) | Use template or wait for contact message |
+| Send Failed | General | Retry after checking connection |
+| Send Failed [2] | General | Retry after checking connection |
+| Message failed to send: [error] | General | Review specific error |
+| Internal Error 500 | General | Wait and retry |
+| Broadcast feature has been disabled | Feature | Enable feature or upgrade plan |
 
 {% hint style="info" %}
 **Important behavior to know**
