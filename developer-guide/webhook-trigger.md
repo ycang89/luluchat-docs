@@ -90,13 +90,15 @@ When mapping data in your message flow, you can use the POST body parameters in 
 
 ## **Adding Protection to the API (Optional)**
 
-To secure your webhook API endpoints, you need to create an access token with the appropriate scopes. Follow these steps:
+To secure your webhook API endpoints, you need to enable webhook authorization and create an access token with the appropriate scopes. Follow these steps:
 
-1. Navigate to **Integration > Access Token > Create Access Token**
-2. When creating the access token, ensure you:
+1. Navigate to **Settings > Message Flows**
+2. Turn on **"Enable Webhook Authorization"** toggle
+3. Navigate to **Integration > Access Token > Create Access Token**
+4. When creating the access token, ensure you:
    * Tick all **webhook scopes**
    * Tick all **open API scopes**
-3. Copy and save the access token somewhere secure. You will need this token to authenticate your API requests.
+5. Copy and save the access token somewhere secure. You will need this token to authenticate your API requests.
 
 This access token will be used to authenticate and authorize requests to your webhook endpoints, ensuring that only authorized applications can trigger your webhooks via the API.
 
