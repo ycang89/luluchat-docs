@@ -93,7 +93,11 @@ When mapping data in your message flow, you can use the POST body parameters in 
 To secure your webhook API endpoints, you need to enable webhook authorization and create an access token with the appropriate scopes. Follow these steps:
 
 1. Navigate to **Settings >** [**Message Flows**](https://app.luluchat.io/settings?view=message-flows)
-2. Turn on **"Enable Webhook Authorization"** toggle
+2.  Turn on **"Enable Webhook Authorization"** toggle
+
+    <figure><img src="../.gitbook/assets/Screenshot 2026-02-09 at 2.48.01 PM.png" alt=""><figcaption></figcaption></figure>
+
+
 3. Navigate to **Integration >** [**Access Token** ](https://app.luluchat.io/settings?view=integration)&#x20;
 4. **Click on "Create Access Token" in Access Token section**
 5. When creating the access token, ensure you:
