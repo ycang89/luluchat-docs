@@ -25,7 +25,7 @@ To secure your webhook API endpoints, you need to create an access token with th
 
 This access token will be used to authenticate and authorize requests to your webhook endpoints, ensuring that only authorized applications can trigger your webhooks via the API.
 
-📸 Screenshot placeholder:
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-09 at 1.07.34 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Integration > Access Token > Create Access Token page showing webhook scopes and open API scopes checkboxes]
 
@@ -41,4 +41,3 @@ Note for developer:
 * Luluchat.io will validate the parameter-value sent in body, if the value isn't fulfils the requirement stated in [Data Formatting](/broken/pages/nfUbfeea4EzfUAG2evM2) section, Luluchat.io will **ignore / skip** the param to be set in custom attributes.
 * There is rate limit applied in each of the webhook trigger. Maximum **60 requests** per minute.
 {% endhint %}
-
