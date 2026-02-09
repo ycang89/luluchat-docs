@@ -18,31 +18,33 @@ Details on how the webhook works can be found in our [postman documentation](htt
 
 {% stepper %}
 {% step %}
-#### Create a Webhook Trigger in Message Flow
+**Create a Webhook Trigger in Message Flow**
 
 1. Go to **Message Flow** in the left menu
 2. Create a new message flow or open an existing one
 3. Add a **Webhook Trigger** as the starting step in your message flow
 4. Configure the webhook trigger settings as needed
 
-📸 Screenshot placeholder:
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-09 at 2.18.48 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Message Flow editor showing Webhook Trigger as starting step]
 {% endstep %}
 
 {% step %}
-#### System Integration
+**System Integration**
 
 Integrate the webhook trigger from your system by making an HTTP POST request to the webhook URL.
 
 For detailed API documentation and examples, refer to our [Postman documentation](https://documenter.getpostman.com/view/985588/2s93z9bMoA#03cb48c2-7df1-4aec-a418-8ff42982a984).
 
 **Example POST request:**
-- **URL**: Your webhook URL (obtained from the message flow)
-- **Method**: POST
-- **Body**: JSON with `contact_number` (required) and other parameters
+
+* **URL**: Your webhook URL (obtained from the message flow)
+* **Method**: POST
+* **Body**: JSON with `contact_number` (required) and other parameters
 
 **Example JSON body:**
+
 ```json
 {
   "contact_number": "012312312",
@@ -50,37 +52,41 @@ For detailed API documentation and examples, refer to our [Postman documentation
   "membership_tier": "Gold"
 }
 ```
+
 📸 Screenshot placeholder:
 
 > \[Screenshot: Postman or API client showing POST request to webhook URL]
 {% endstep %}
 
 {% step %}
-#### Data Mapping
+**Data Mapping**
 
 When mapping data in your message flow, you can use the POST body parameters in two ways:
 
 **Option 1: Direct usage in messages**
-- Use `{{data.param_key}}` syntax directly in your message content
-- Example: `{{data.membership_tier}}` will display the membership tier value from the POST body
+
+* Use `{{data.param_key}}` syntax directly in your message content
+* Example: `{{data.membership_tier}}` will display the membership tier value from the POST body
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-09 at 2.20.11 PM.png" alt=""><figcaption></figcaption></figure>
 
 **Option 2: Store in custom attributes**
-- If you need to store the data in custom attributes for later use:
-  1. In your message flow, add a step to set custom attributes
+
+* If you need to store the data in custom attributes for later use:
+  1. In your webhook trigger, add a step to set custom attributes
   2. Map the POST body parameter to the custom attribute
   3. Use `data.param_key` to reference the parameter value
+  4. Then you  can use "Membership Tier" custom attribute in your following message
 
-📸 Screenshot placeholder:
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-09 at 2.23.24 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Message flow showing custom attribute configuration with data mapping from POST body parameters]
 
-**Example:**
-- POST body includes: `{ "contact_number": "012312312", "name": "John", "membership_tier": "Gold" }`
-- In message: Use `{{data.name}}` to display "John" or `{{data.membership_tier}}` to display "Gold"
-- In custom attribute: Map `data.membership_tier` to store the membership tier value
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-09 at 2.20.11 PM (1).png" alt=""><figcaption></figcaption></figure>
+
+> \[Screenshot: Message flow showing custom attribute as the dynamic value]
 {% endstep %}
 {% endstepper %}
-
 
 ## **Adding Protection to the API (Optional)**
 
