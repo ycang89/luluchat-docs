@@ -13,19 +13,21 @@ Details on how the webhook works can be found in our [postman documentation](htt
 * You are required to create a message flow in Luluchat.io platform
 * You are required to include Webhook Trigger as starting step in message flow.
 * You are required to subscribe to Luluchat.io Pro plan to use this service.
+## **Adding Protection to the API**
 
-https(
-{
+To secure your webhook API endpoints, you need to create an access token with the appropriate scopes. Follow these steps:
 
-    url: "webhook url",
-    method: "POST",
-    data: {
-        contact_number: "012312312",
-        name: "john",
-    }
-}
+1. Navigate to **Integration > Access Token > Create Access Token**
+2. When creating the access token, ensure you:
+   * Tick all **webhook scopes**
+   * Tick all **open API scopes**
 
-)
+This access token will be used to authenticate and authorize requests to your webhook endpoints, ensuring that only authorized applications can trigger your webhooks via the API.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-09 at 1.07.34 PM.png" alt=""><figcaption></figcaption></figure>
+
+> \[Screenshot: Integration > Access Token > Create Access Token page showing webhook scopes and open API scopes checkboxes]
+
 
 ## How to set it up (Step by Step)
 
@@ -63,8 +65,7 @@ For detailed API documentation and examples, refer to our [Postman documentation
   "membership_tier": "Gold"
 }
 ```
-
-<figure><img src="../.gitbook/assets/Screenshot 2026-02-09 at 1.07.34 PM.png" alt=""><figcaption></figcaption></figure>
+📸 Screenshot placeholder:
 
 > \[Screenshot: Postman or API client showing POST request to webhook URL]
 {% endstep %}
