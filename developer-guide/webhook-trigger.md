@@ -64,7 +64,7 @@ For detailed API documentation and examples, refer to our [Postman documentation
 }
 ```
 
-📸 Screenshot placeholder:
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-09 at 1.07.34 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Postman or API client showing POST request to webhook URL]
 {% endstep %}
