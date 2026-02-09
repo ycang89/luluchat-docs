@@ -102,6 +102,34 @@ To secure your webhook API endpoints, you need to enable webhook authorization a
 
 This access token will be used to authenticate and authorize requests to your webhook endpoints, ensuring that only authorized applications can trigger your webhooks via the API.
 
+### **Using the Access Token in API Requests**
+
+When making HTTP POST requests to your webhook URL, include the access token in the `Authorization` header using the Bearer token format:
+
+**Header format:**
+```
+Authorization: Bearer {{token}}
+```
+
+Replace `{{token}}` with your actual access token.
+
+**Example request with Authorization header:**
+
+```json
+POST /your-webhook-url
+Headers:
+  Authorization: Bearer your_access_token_here
+  Content-Type: application/json
+Body:
+{
+  "contact_number": "012312312",
+  "name": "John",
+  "membership_tier": "Gold"
+}
+```
+
+**Note:** Once "Enable Webhook Authorization" is turned on, all webhook requests must include a valid access token in the Authorization header. Requests without a valid token will be rejected.
+
 <figure><img src="../.gitbook/assets/Screenshot 2026-02-09 at 1.07.34 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Integration > Access Token > Create Access Token page showing webhook scopes and open API scopes checkboxes]
