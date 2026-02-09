@@ -31,9 +31,9 @@ Details on how the webhook works can be found in our [postman documentation](htt
 {% endstep %}
 
 {% step %}
-#### Customer End Integration
+#### System Integration
 
-Integrate the webhook trigger from your customer's system by making an HTTP POST request to the webhook URL.
+Integrate the webhook trigger from your system by making an HTTP POST request to the webhook URL.
 
 For detailed API documentation and examples, refer to our [Postman documentation](https://documenter.getpostman.com/view/985588/2s93z9bMoA#03cb48c2-7df1-4aec-a418-8ff42982a984).
 
