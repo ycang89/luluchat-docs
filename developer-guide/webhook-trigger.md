@@ -76,7 +76,7 @@ When mapping data in your message flow, you can use the POST body parameters in 
   1. In your webhook trigger, add a step to set custom attributes
   2. Map the POST body parameter to the custom attribute
   3. Use `data.param_key` to reference the parameter value
-  4. Then you  can use "Membership Tier" custom attribute in your following message
+  4. Then you can use "Membership Tier" custom attribute in your following message
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-02-09 at 2.23.24 PM.png" alt=""><figcaption></figcaption></figure>
 
@@ -92,13 +92,19 @@ When mapping data in your message flow, you can use the POST body parameters in 
 
 To secure your webhook API endpoints, you need to enable webhook authorization and create an access token with the appropriate scopes. Follow these steps:
 
-1. Navigate to **Settings > Message Flows**
+1. Navigate to **Settings >** [**Message Flows**](https://app.luluchat.io/settings?view=message-flows)
 2. Turn on **"Enable Webhook Authorization"** toggle
-3. Navigate to **Integration > Access Token > Create Access Token**
-4. When creating the access token, ensure you:
+3. Navigate to **Integration >** [**Access Token** ](https://app.luluchat.io/settings?view=integration)&#x20;
+4. **Click on "Create Access Token" in Access Token section**
+5. When creating the access token, ensure you:
    * Tick all **webhook scopes**
-   * Tick all **open API scopes**
-5. Copy and save the access token somewhere secure. You will need this token to authenticate your API requests.
+   *   Tick all **open API scopes**<br>
+
+       <figure><img src="../.gitbook/assets/Screenshot 2026-02-09 at 1.07.34 PM.png" alt=""><figcaption></figcaption></figure>
+
+> \[Screenshot: Integration > Access Token > Create Access Token page showing webhook scopes and open API scopes checkboxes]
+
+6. Copy and save the access token somewhere secure. You will need this token to authenticate your API requests or refer to next section "**Using the Access Token in API Requests"**.
 
 This access token will be used to authenticate and authorize requests to your webhook endpoints, ensuring that only authorized applications can trigger your webhooks via the API.
 
@@ -107,6 +113,7 @@ This access token will be used to authenticate and authorize requests to your we
 When making HTTP POST requests to your webhook URL, include the access token in the `Authorization` header using the Bearer token format:
 
 **Header format:**
+
 ```
 Authorization: Bearer {{token}}
 ```
@@ -129,10 +136,6 @@ Body:
 ```
 
 **Note:** Once "Enable Webhook Authorization" is turned on, all webhook requests must include a valid access token in the Authorization header. Requests without a valid token will be rejected.
-
-<figure><img src="../.gitbook/assets/Screenshot 2026-02-09 at 1.07.34 PM.png" alt=""><figcaption></figcaption></figure>
-
-> \[Screenshot: Integration > Access Token > Create Access Token page showing webhook scopes and open API scopes checkboxes]
 
 ## **Response**
 
