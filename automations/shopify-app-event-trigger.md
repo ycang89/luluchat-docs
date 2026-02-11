@@ -146,9 +146,9 @@ Once mapped, you can use these Custom Attributes in your messages using the stan
 
 **Note**: Custom Attributes use a different syntax (no dots, title case) compared to Shopify placeholders (with dots, camelCase).
 
-## Using Shopify Custom Attributes in Messages
+### Using Shopify Custom Attributes in Messages
 
-Once you've configured a Shopify App Event trigger, you can use Shopify data in your messages using placeholders. These placeholders will be automatically replaced with actual data from the Shopify event when the message is sent.
+You can use Shopify data in your messages using placeholders. These placeholders will be automatically replaced with actual data from the Shopify event when the message is sent.
 
 ### Available Shopify Placeholders
 
@@ -189,16 +189,6 @@ Once you've configured a Shopify App Event trigger, you can use Shopify data in 
 #### Delivery Information (for Delivery Notification events)
 
 * `{{receiver.name}}` - Delivery recipient name
-
-### How to Use Placeholders in Messages
-
-1. **In Message Steps**: Simply type the placeholder directly in your message content
-2. **In Custom Attributes**: Use placeholders when mapping data to custom attributes
-3. **Case Sensitive**: Placeholders are case-sensitive, so make sure to use the exact format (e.g., `{{order.orderNumber}}` not `{{Order.OrderNumber}}`)
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Message step showing placeholder usage in message content]
 
 ## Important Behavior to Know
 
