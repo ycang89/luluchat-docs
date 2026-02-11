@@ -143,7 +143,7 @@ Enter the **Admin API Access Token** you copied from Shopify and your **Shopify 
 * **Event Sync**: Shopify events (orders, fulfillments, customer updates) can now trigger actions in Luluchat.
 * **Data Available**: Customer and order data from Shopify becomes available for use in Message Flows and automations.
 
-**Next Step**: After connecting, you'll need to configure webhooks in Shopify to enable event notifications. See [Shopify Webhook Configuration](shopify-webhook-configuration.md) for detailed instructions.
+**Next Step**: After connecting, you'll need to configure webhooks in Shopify to enable event notifications. See [Shopify Webhook Configuration](shopify-webhook-configuration) for detailed instructions.
 
 ## Important behavior to know
 
@@ -167,5 +167,5 @@ Enter the **Admin API Access Token** you copied from Shopify and your **Shopify 
 
 ## Related Documentation
 
-* [Shopify Webhook Configuration](shopify-webhook-configuration.md) - Learn how to configure webhooks for Shopify events
-* [Shopify App Event Trigger in Message Flows](../../automations/shopify-app-event-trigger.md) - Learn how to configure Shopify events as triggers and use Shopify data in your messages
+* [Shopify Webhook Configuration](shopify-webhook-configuration) - Learn how to configure webhooks for Shopify events
+* [Shopify App Event Trigger in Message Flows](../../automations/shopify-app-event-trigger) - Learn how to configure Shopify events as triggers and use Shopify data in your messages

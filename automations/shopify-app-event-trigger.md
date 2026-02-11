@@ -8,8 +8,8 @@ The Shopify App Event Trigger allows your Message Flow to automatically start wh
 
 ## Prerequisites
 
-* You must have [Shopify Integration](settings/account/shopify-integration.md) connected in Luluchat
-* You must have [Shopify Webhooks configured](settings/account/shopify-webhook-configuration.md) for the events you want to use
+* You must have [Shopify Integration](../settings/account/shopify-integration) connected in Luluchat
+* You must have [Shopify Webhooks configured](../settings/account/shopify-webhook-configuration) for the events you want to use
 * You need to have created a Message Flow in Luluchat
 
 ## Available Shopify Events
@@ -288,7 +288,7 @@ Once mapped, you can use these Custom Attributes in your messages using the stan
 
 ## Related Documentation
 
-* [Shopify Integration](settings/account/shopify-integration.md) - Learn how to connect Shopify to Luluchat
-* [Shopify Webhook Configuration](settings/account/shopify-webhook-configuration.md) - Learn how to configure webhooks for Shopify events
-* [Message Flows](message-flows.md) - Learn about creating and managing message flows
-* [Trigger Step](steps/trigger.md) - Learn about all trigger types available in message flows
+* [Shopify Integration](../settings/account/shopify-integration) - Learn how to connect Shopify to Luluchat
+* [Shopify Webhook Configuration](../settings/account/shopify-webhook-configuration) - Learn how to configure webhooks for Shopify events
+* [Message Flows](message-flows) - Learn about creating and managing message flows
+* [Trigger Step](steps/trigger) - Learn about all trigger types available in message flows
