@@ -1,4 +1,4 @@
-# Shopify App Event Trigger in Message Flows
+# Shopify App Event Trigger
 
 This guide explains how to configure Shopify app events as triggers in your Message Flows and how to use Shopify custom attributes in your messages.
 
@@ -8,8 +8,8 @@ The Shopify App Event Trigger allows your Message Flow to automatically start wh
 
 ## Prerequisites
 
-* You must have [Shopify Integration](../settings/account/shopify-integration) connected in Luluchat
-* You must have [Shopify Webhooks configured](../settings/account/shopify-webhook-configuration) for the events you want to use
+* You must have [Shopify Integration](../settings/account/shopify-integration/) connected in Luluchat
+* You must have [Shopify Webhooks configured](../settings/account/shopify-webhook-configuration/) for the events you want to use
 * You need to have created a Message Flow in Luluchat
 
 ## Available Shopify Events
@@ -21,58 +21,6 @@ You can configure the following Shopify events as triggers:
 3. **Delivery Notification** - Triggers when a fulfillment is created (order is shipped)
 4. **Order Updated Notification** - Triggers when an order is edited or updated
 5. **Payment Reminder Notification** - Triggers daily at 8:00 AM for unpaid orders with due dates matching today
-
-## How to Configure Shopify App Event Trigger
-
-{% stepper %}
-{% step %}
-**Open Your Message Flow**
-
-1. Go to **Message Flow** in the left menu
-2. Create a new message flow or open an existing one
-3. Click on the **Starting Step** (the first node in your flow)
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Message Flow editor with Starting Step selected]
-{% endstep %}
-
-{% step %}
-**Add App Event Trigger**
-
-1. In the Starting Step configuration panel, click on **App Event**
-2. Select **Shopify** from the App dropdown
-3. Choose the event you want to trigger the flow (e.g., "Order Paid Notification")
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Starting Step configuration showing App Event selected with Shopify app and event dropdown]
-{% endstep %}
-
-{% step %}
-**Map Custom Attributes (Optional)**
-
-1. If you want to store Shopify data in Custom Attributes for later use, click on **Map Attributes**
-2. Select the Custom Attributes you want to populate
-3. Map them to the corresponding Shopify placeholders (e.g., map "Order Number" custom attribute to `{{order.orderNumber}}`)
-4. Click **Save** to confirm the mapping
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Attribute mapping interface showing Custom Attributes mapped to Shopify placeholders]
-{% endstep %}
-
-{% step %}
-**Save Your Configuration**
-
-1. Click **Save** to save your trigger configuration
-2. Your flow will now automatically start when the selected Shopify event occurs
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Starting Step showing Shopify App Event trigger configured]
-{% endstep %}
-{% endstepper %}
 
 ## Using Shopify Custom Attributes in Messages
 
@@ -118,16 +66,6 @@ Once you've configured a Shopify App Event trigger, you can use Shopify data in 
 
 * `{{receiver.name}}` - Delivery recipient name
 
-### How to Use Placeholders in Messages
-
-1. **In Message Steps**: Simply type the placeholder directly in your message content
-2. **In Custom Attributes**: Use placeholders when mapping data to custom attributes
-3. **Case Sensitive**: Placeholders are case-sensitive, so make sure to use the exact format (e.g., `{{order.orderNumber}}` not `{{Order.OrderNumber}}`)
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Message step showing placeholder usage in message content]
-
 ## Example: Order Paid Notification Flow
 
 Let's create a complete example flow that sends a confirmation message when an order is paid.
@@ -140,7 +78,7 @@ Let's create a complete example flow that sends a confirmation message when an o
 2. Name it "Order Confirmation"
 3. Click on the **Starting Step**
 
-📸 Screenshot placeholder:
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-11 at 9.40.30 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: New message flow creation]
 {% endstep %}
@@ -153,7 +91,7 @@ Let's create a complete example flow that sends a confirmation message when an o
 3. Choose **Order Paid Notification** as the event
 4. Click **Save**
 
-📸 Screenshot placeholder:
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-11 at 9.42.00 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: App Event trigger configured for Order Paid Notification]
 {% endstep %}
@@ -185,7 +123,7 @@ We'll send you another update when your order ships!
 Thank you for shopping with us!
 ```
 
-📸 Screenshot placeholder:
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-11 at 9.37.46 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Message step showing the order confirmation message with placeholders]
 {% endstep %}
@@ -239,9 +177,9 @@ You can also map Shopify data to Custom Attributes so you can use them in other 
 4. Repeat for all attributes you want to map
 5. Click **Save**
 
-📸 Screenshot placeholder:
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-11 at 9.39.18 PM.png" alt=""><figcaption></figcaption></figure>
 
-> \[Screenshot: Custom attribute mapping interface showing Order Number mapped to {{order.orderNumber}}]
+> \[Screenshot: Custom attribute mapping interface showing Order Number mapped to \{{order.orderNumber\}}]
 
 ### Using Mapped Custom Attributes
 
@@ -267,12 +205,10 @@ Once mapped, you can use these Custom Attributes in your messages using the stan
   * Check that the event is enabled in the [Shopify App Details page](https://app.luluchat.io/apps/details/shopify)
   * Ensure the order has a valid phone number in the billing or shipping address
   * Verify that your Message Flow is active
-
 * **Placeholders showing as empty**:
   * Check that the Shopify event actually contains the data you're trying to access
   * Some placeholders are only available for specific events (e.g., shipping info only for Delivery Notification)
   * Verify the placeholder syntax is correct (case-sensitive)
-
 * **Custom Attributes not updating**:
   * Ensure you've mapped the attributes correctly in the trigger configuration
   * Check that the Custom Attribute data type matches the Shopify data type
@@ -288,7 +224,7 @@ Once mapped, you can use these Custom Attributes in your messages using the stan
 
 ## Related Documentation
 
-* [Shopify Integration](../settings/account/shopify-integration) - Learn how to connect Shopify to Luluchat
-* [Shopify Webhook Configuration](../settings/account/shopify-webhook-configuration) - Learn how to configure webhooks for Shopify events
-* [Message Flows](message-flows) - Learn about creating and managing message flows
-* [Trigger Step](steps/trigger) - Learn about all trigger types available in message flows
+* [Shopify Integration](../settings/account/shopify-integration/) - Learn how to connect Shopify to Luluchat
+* [Shopify Webhook Configuration](../settings/account/shopify-webhook-configuration/) - Learn how to configure webhooks for Shopify events
+* [Message Flows](message-flows/) - Learn about creating and managing message flows
+* [Trigger Step](steps/trigger/) - Learn about all trigger types available in message flows
