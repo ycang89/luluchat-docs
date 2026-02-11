@@ -91,10 +91,6 @@ Thank you for shopping with us!
 2. Make sure the flow is **Active**
 3. Create a test order in Shopify and complete the payment
 4. Verify that the message is sent with the correct order information
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Flow showing complete order confirmation flow with message step]
 {% endstep %}
 {% endstepper %}
 
@@ -148,7 +144,11 @@ Once mapped, you can use these Custom Attributes in your messages using the stan
 
 ### Using Shopify Custom Attributes in Messages
 
-You can use Shopify data in your messages using placeholders. These placeholders will be automatically replaced with actual data from the Shopify event when the message is sent.
+Or,  you can use Shopify data in your messages using placeholders. These placeholders will be automatically replaced with actual data from the Shopify event when the message is sent.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-11 at 10.14.25 PM.png" alt=""><figcaption></figcaption></figure>
+
+> \[Screenshot: Select Shopify Custom Attributes ]
 
 ### Available Shopify Placeholders
 
