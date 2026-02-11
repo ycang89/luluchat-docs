@@ -33,23 +33,47 @@ To configure webhooks in Shopify, follow these steps:
 2. In the search bar at the top, search for **"webhooks"**
 3. Click on the first result to access the Webhooks settings page
 
-📸 Screenshot placeholder:
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-11 at 8.42.13 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Shopify admin search bar with "webhooks" search term]
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-11 at 8.42.39 PM.png" alt=""><figcaption></figcaption></figure>
+
+> \[Screenshot: Shopify admin first matching webhooks page]
 {% endstep %}
 
 {% step %}
 **Create Webhook for Order Paid Notification**
 
-1. Click **"Create webhook"** button
+1.  Click **"Create webhook"** button
+
+    <figure><img src="../../.gitbook/assets/Screenshot 2026-02-11 at 9.19.12 PM.png" alt=""><figcaption></figcaption></figure>
+
+
+
+    > \[Screenshot: Click create webhook]
+
+
 2. In the **Event** dropdown, select **"Order payment"**
-3. Copy the webhook endpoint URL from Luluchat (found in the Shopify App Details page for the Order Paid Notification event)
-4. Paste the webhook endpoint URL into the **URL** field
-5. Click **"Save webhook"**
+3.  Copy the webhook endpoint URL from Luluchat (found in the Shopify App Details page for the **Order Paid Notification event**)<br>
 
-📸 Screenshot placeholder:
+    <figure><img src="../../.gitbook/assets/Screenshot 2026-02-11 at 9.22.40 PM.png" alt=""><figcaption></figcaption></figure>
 
-> \[Screenshot: Shopify webhook creation form showing "Order payment" event selected with webhook URL field]
+
+
+    > \[Screenshot: Copy the webhook endpoint URL]
+
+
+4.  Paste the webhook endpoint URL into the **URL** field<br>
+
+    <figure><img src="../../.gitbook/assets/Screenshot 2026-02-11 at 8.43.34 PM.png" alt=""><figcaption></figcaption></figure>
+
+
+
+    > \[Screenshot: Paste the webhook endpoint URL into the **URL** field]
+
+
+5. Click **"Save"**
 {% endstep %}
 
 {% step %}
@@ -57,13 +81,25 @@ To configure webhooks in Shopify, follow these steps:
 
 1. Click **"Create webhook"** button
 2. In the **Event** dropdown, select **"Order cancellation"**
-3. Copy the webhook endpoint URL from Luluchat (found in the Shopify App Details page for the Order Cancellation Notification event)
-4. Paste the webhook endpoint URL into the **URL** field
+3.  Copy the webhook endpoint URL from Luluchat (found in the Shopify App Details page for the **Order Cancellation Notification event**)<br>
+
+    <figure><img src="../../.gitbook/assets/Screenshot 2026-02-11 at 9.24.58 PM.png" alt=""><figcaption></figcaption></figure>
+
+
+
+    > \[Screenshot: Copy the webhook endpoint URL]
+
+
+4.  Paste the webhook endpoint URL into the **URL** field<br>
+
+    <figure><img src="../../.gitbook/assets/Screenshot 2026-02-11 at 9.30.07 PM.png" alt=""><figcaption></figcaption></figure>
+
+
+
+    > \[Screenshot: Paste the webhook endpoint URL into the **URL** field]
+
+
 5. Click **"Save webhook"**
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Shopify webhook creation form showing "Order cancellation" event selected]
 {% endstep %}
 
 {% step %}
@@ -71,13 +107,25 @@ To configure webhooks in Shopify, follow these steps:
 
 1. Click **"Create webhook"** button
 2. In the **Event** dropdown, select **"Fulfillment creation"**
-3. Copy the webhook endpoint URL from Luluchat (found in the Shopify App Details page for the Delivery Notification event)
-4. Paste the webhook endpoint URL into the **URL** field
+3.  Copy the webhook endpoint URL from Luluchat (found in the Shopify App Details page for the **Delivery Notification event**)<br>
+
+    <figure><img src="../../.gitbook/assets/Screenshot 2026-02-11 at 9.25.12 PM.png" alt=""><figcaption></figcaption></figure>
+
+
+
+    > \[Screenshot: Copy the webhook endpoint URL]
+
+
+4.  Paste the webhook endpoint URL into the **URL** field<br>
+
+    <figure><img src="../../.gitbook/assets/Screenshot 2026-02-11 at 9.31.32 PM.png" alt=""><figcaption></figcaption></figure>
+
+
+
+    > \[Screenshot: Paste the webhook endpoint URL into the **URL** field]
+
+
 5. Click **"Save webhook"**
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Shopify webhook creation form showing "Fulfillment creation" event selected]
 {% endstep %}
 
 {% step %}
@@ -85,30 +133,49 @@ To configure webhooks in Shopify, follow these steps:
 
 1. Click **"Create webhook"** button
 2. In the **Event** dropdown, select **"Order edit"**
-3. Copy the webhook endpoint URL from Luluchat (found in the Shopify App Details page for the Order Updated Notification event)
-4. Paste the webhook endpoint URL into the **URL** field
+3.  Copy the webhook endpoint URL from Luluchat (found in the Shopify App Details page for the **Order Updated Notification event**)<br>
+
+    <figure><img src="../../.gitbook/assets/Screenshot 2026-02-11 at 9.25.30 PM.png" alt=""><figcaption></figcaption></figure>
+
+
+
+    > \[Screenshot: Copy the webhook endpoint URL]
+
+
+4.  Paste the webhook endpoint URL into the **URL** field<br>
+
+    <figure><img src="../../.gitbook/assets/Screenshot 2026-02-11 at 9.32.23 PM.png" alt=""><figcaption></figcaption></figure>
+
+
+
+    > \[Screenshot: Paste the webhook endpoint URL into the **URL** field]
+
+
 5. Click **"Save webhook"**
+{% endstep %}
 
-📸 Screenshot placeholder:
+{% step %}
+**At the end you should have 4 webhooks configured**
 
-> \[Screenshot: Shopify webhook creation form showing "Order edit" event selected]
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-11 at 8.49.31 PM.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 
 ## Shopify Event to Luluchat Event Mapping
 
-| Shopify Webhook Event | Luluchat Event |
-|----------------------|----------------|
-| Order payment | Order Paid Notification |
-| Order cancellation | Order Cancellation Notification |
-| Fulfillment creation | Delivery Notification |
-| Order edit | Order Updated Notification |
+| Shopify Webhook Event | Luluchat Event                  |
+| --------------------- | ------------------------------- |
+| Order payment         | Order Paid Notification         |
+| Order cancellation    | Order Cancellation Notification |
+| Fulfillment creation  | Delivery Notification           |
+| Order edit            | Order Updated Notification      |
 
 ## Payment Reminder Notification
 
 The **Payment Reminder Notification** is a scheduled event that runs automatically and does not require webhook configuration. The Luluchat system checks for unpaid orders daily at **8:00 AM** in your team's timezone and sends payment reminders for orders with payment due dates matching the current date.
 
 This event:
+
 * Runs automatically once per day
 * Does not require webhook setup in Shopify
 * Checks for orders with `financial_status` of "unpaid" or "pending"
@@ -134,5 +201,5 @@ After setting up webhooks in Shopify:
 
 ## Related Documentation
 
-* [Shopify Integration](shopify-integration) - Learn how to connect your Shopify store to Luluchat
-* [Shopify App Event Trigger in Message Flows](../../automations/shopify-app-event-trigger) - Learn how to configure Shopify events as triggers and use Shopify data in your messages
+* [Shopify Integration](shopify-integration/) - Learn how to connect your Shopify store to Luluchat
+* [Shopify App Event Trigger in Message Flows](../../automations/shopify-app-event-trigger/) - Learn how to configure Shopify events as triggers and use Shopify data in your messages
