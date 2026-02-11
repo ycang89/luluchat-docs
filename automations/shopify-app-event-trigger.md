@@ -22,50 +22,6 @@ You can configure the following Shopify events as triggers:
 4. **Order Updated Notification** - Triggers when an order is edited or updated
 5. **Payment Reminder Notification** - Triggers daily at 8:00 AM for unpaid orders with due dates matching today
 
-## Using Shopify Custom Attributes in Messages
-
-Once you've configured a Shopify App Event trigger, you can use Shopify data in your messages using placeholders. These placeholders will be automatically replaced with actual data from the Shopify event when the message is sent.
-
-### Available Shopify Placeholders
-
-#### Customer Information
-
-* `{{customer.email}}` - Customer's email address
-* `{{customer.name}}` - Customer's full name (first name + last name)
-
-#### Order Information
-
-* `{{order.id}}` - Shopify order ID
-* `{{order.orderNumber}}` - Order number (display number)
-* `{{order.email}}` - Order email address
-* `{{order.currency}}` - Order currency code (e.g., USD, EUR)
-* `{{order.dateCreated}}` - Order creation date (YYYY-MM-DD format)
-* `{{order.dateCancelled}}` - Order cancellation date (if cancelled)
-* `{{order.subtotal}}` - Order subtotal amount
-* `{{order.tax}}` - Total tax amount
-* `{{order.discount}}` - Total discount amount
-* `{{order.lineItemsTotal}}` - Total line items price
-* `{{order.total}}` - Total order amount
-* `{{order.lineItems}}` - List of order line items (numbered list format)
-
-#### Shipping Information
-
-* `{{shipping.name}}` - Shipping recipient name
-* `{{shipping.address}}` - Complete shipping address
-* `{{shipping.total}}` - Shipping cost
-* `{{shipping.trackingCompany}}` - Shipping carrier name
-* `{{shipping.trackingNumber}}` - Tracking number(s)
-* `{{shipping.trackingUrl}}` - Tracking URL(s)
-
-#### Billing Information
-
-* `{{billing.name}}` - Billing recipient name
-* `{{billing.address}}` - Complete billing address
-
-#### Delivery Information (for Delivery Notification events)
-
-* `{{receiver.name}}` - Delivery recipient name
-
 ## Example: Order Paid Notification Flow
 
 Let's create a complete example flow that sends a confirmation message when an order is paid.
@@ -189,6 +145,60 @@ Once mapped, you can use these Custom Attributes in your messages using the stan
 * `{{Customer Name}}` - Will display the customer name from Shopify
 
 **Note**: Custom Attributes use a different syntax (no dots, title case) compared to Shopify placeholders (with dots, camelCase).
+
+## Using Shopify Custom Attributes in Messages
+
+Once you've configured a Shopify App Event trigger, you can use Shopify data in your messages using placeholders. These placeholders will be automatically replaced with actual data from the Shopify event when the message is sent.
+
+### Available Shopify Placeholders
+
+#### Customer Information
+
+* `{{customer.email}}` - Customer's email address
+* `{{customer.name}}` - Customer's full name (first name + last name)
+
+#### Order Information
+
+* `{{order.id}}` - Shopify order ID
+* `{{order.orderNumber}}` - Order number (display number)
+* `{{order.email}}` - Order email address
+* `{{order.currency}}` - Order currency code (e.g., USD, EUR)
+* `{{order.dateCreated}}` - Order creation date (YYYY-MM-DD format)
+* `{{order.dateCancelled}}` - Order cancellation date (if cancelled)
+* `{{order.subtotal}}` - Order subtotal amount
+* `{{order.tax}}` - Total tax amount
+* `{{order.discount}}` - Total discount amount
+* `{{order.lineItemsTotal}}` - Total line items price
+* `{{order.total}}` - Total order amount
+* `{{order.lineItems}}` - List of order line items (numbered list format)
+
+#### Shipping Information
+
+* `{{shipping.name}}` - Shipping recipient name
+* `{{shipping.address}}` - Complete shipping address
+* `{{shipping.total}}` - Shipping cost
+* `{{shipping.trackingCompany}}` - Shipping carrier name
+* `{{shipping.trackingNumber}}` - Tracking number(s)
+* `{{shipping.trackingUrl}}` - Tracking URL(s)
+
+#### Billing Information
+
+* `{{billing.name}}` - Billing recipient name
+* `{{billing.address}}` - Complete billing address
+
+#### Delivery Information (for Delivery Notification events)
+
+* `{{receiver.name}}` - Delivery recipient name
+
+### How to Use Placeholders in Messages
+
+1. **In Message Steps**: Simply type the placeholder directly in your message content
+2. **In Custom Attributes**: Use placeholders when mapping data to custom attributes
+3. **Case Sensitive**: Placeholders are case-sensitive, so make sure to use the exact format (e.g., `{{order.orderNumber}}` not `{{Order.OrderNumber}}`)
+
+📸 Screenshot placeholder:
+
+> \[Screenshot: Message step showing placeholder usage in message content]
 
 ## Important Behavior to Know
 
