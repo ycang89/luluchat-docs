@@ -149,6 +149,8 @@ You can add multiple triggers to a single flow. The flow will start if **any** o
 * The event must include a customer's phone number to trigger the flow.
 * You can map event data (like order ID or customer name) to Custom Attributes for use in your messages.
 
+**For Shopify**: See the [Shopify App Event Trigger Guide](../shopify-app-event-trigger.md) for detailed instructions on configuring Shopify events and using Shopify custom attributes in your messages.
+
 ***
 
 ### 4. Webhook Trigger
