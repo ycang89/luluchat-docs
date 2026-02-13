@@ -13,7 +13,7 @@ Manage your organization's identity, operational hours, and account lifecycle.
 * Company Email: Primary email for business communication.
 * Company Website: Your official website URL.
 
-📸 Screenshot placeholder:
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.14.03 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Company profile form with identity fields]
 
@@ -23,7 +23,7 @@ Select a Working Hours profile to define when your team is active. This affects 
 
 * Note: If you update working hours, click the here link in the description to regenerate your reports.
 
-📸 Screenshot placeholder:
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.15.16 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Working Hours selector dropdown]
 
@@ -53,7 +53,7 @@ If you need to permanently close your account, use the **Delete Account** sectio
 4. Click the **Delete Account** button.
 5. Confirm the deletion in the popup dialog.
 
-📸 Screenshot placeholder:
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.16.00 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Delete Account section with warning and confirm button]
 

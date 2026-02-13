@@ -18,39 +18,21 @@ Google Calendar Integration allows you to connect your Google Calendar account w
 
 Go to `Settings` from the left menu, then select `Account Management` > `Integration`.
 
-📸 Screenshot placeholder:
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.20.28 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Settings page with Integration tab selected]
-{% endstep %}
-
-{% step %}
-#### Open Apps Section
-
-Scroll down to the **Apps** section on the Integration page. You'll see a grid of available integrations.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Integration page showing Apps section with integration cards]
 {% endstep %}
 
 {% step %}
 #### Find Google Calendar
 
 Look for the **Google Calendar** card in the Apps grid. Click on it to open the Google Calendar integration page.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Apps grid showing Google Calendar card]
 {% endstep %}
 
 {% step %}
 #### Connect Your Google Account
 
 On the Google Calendar integration page, click the **"Connect"** or **"Connect Now"** button. This will redirect you to Google's OAuth page.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Google Calendar integration page with Connect button]
 {% endstep %}
 
 {% step %}
@@ -64,20 +46,12 @@ On the Google Calendar integration page, click the **"Connect"** or **"Connect N
 {% hint style="info" %}
 **Permissions Required**: Luluchat needs access to view and manage your Google Calendar events to create appointments and generate meeting links.
 {% endhint %}
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Google OAuth authorization page]
 {% endstep %}
 
 {% step %}
 #### Verify Connection
 
 After authorizing, you'll be redirected back to Luluchat. You should see a success message confirming that your Google Calendar account is connected. The connected account will appear in the "Account Connected" section.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Google Calendar integration page showing connected account]
 {% endstep %}
 {% endstepper %}
 
@@ -100,7 +74,7 @@ Once your Google Calendar is connected, you can use it in your booking calendars
 2. Create a new calendar or edit an existing one.
 3. In the **General** tab, toggle **"Link Google Calendar"** to **"Yes"**.
 
-📸 Screenshot placeholder:
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.22.06 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Calendar General tab showing Link Google Calendar toggle]
 {% endstep %}
@@ -111,9 +85,9 @@ Once your Google Calendar is connected, you can use it in your booking calendars
 1. After enabling "Link Google Calendar", you'll see dropdown menus for:
    * **Google Account**: Select the connected Google account you want to use.
    * **Google Calendar**: Select the specific calendar within that account where events should be created.
-2. Optionally, enable **"Generate Google Meet Link"** if you want to create meeting links for virtual appointments.
+2. Optionally, include google\_meet\_link in template for recipient.
 
-📸 Screenshot placeholder:
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.24.21 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Calendar General tab showing Google Account and Calendar dropdowns]
 {% endstep %}
@@ -124,10 +98,6 @@ Once your Google Calendar is connected, you can use it in your booking calendars
 1. Click **Save** to save your calendar settings.
 2. When a customer books an appointment and it's confirmed, an event will automatically be created in your selected Google Calendar.
 3. If Google Meet is enabled, a meeting link will be generated and included in the event.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Google Calendar showing created appointment event]
 {% endstep %}
 {% endstepper %}
 
@@ -138,10 +108,6 @@ Once your Google Calendar is connected, you can use it in your booking calendars
 1. Go to `Settings` > `Account Management` > `Integration`.
 2. Click on the **Google Calendar** card.
 3. In the "Account Connected" section, you'll see all connected Google accounts with their email addresses.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Google Calendar integration page showing connected accounts list]
 
 ### Disconnect an Account
 

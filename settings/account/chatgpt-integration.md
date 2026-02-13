@@ -23,10 +23,6 @@ ChatGPT Integration allows you to connect OpenAI's ChatGPT with Luluchat, enabli
 #### Sign Up or Log In to OpenAI
 
 Sign up or log in to your OpenAI account at [https://platform.openai.com](https://platform.openai.com).
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: OpenAI platform login page]
 {% endstep %}
 
 {% step %}
@@ -50,7 +46,7 @@ Go to [https://platform.openai.com/account/api-keys](https://platform.openai.com
 
 To access this module, in the side navigation menu, click **Apps**. Alternatively, go to `Settings` > `Account Management` > `Integration` and scroll to the Apps section.
 
-📸 Screenshot placeholder:
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.19.26 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Apps section in Integration settings]
 {% endstep %}
@@ -59,8 +55,6 @@ To access this module, in the side navigation menu, click **Apps**. Alternativel
 #### Click on ChatGPT App
 
 Click on the **ChatGPT** app card to open the connection page.
-
-<figure><img src="../../.gitbook/assets/Screenshot 2023-07-04 at 8.22.24 PM.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}

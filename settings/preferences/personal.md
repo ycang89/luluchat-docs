@@ -8,45 +8,33 @@ Manage your individual profile information, security preferences, and login cred
 
 {% stepper %}
 {% step %}
-#### Open Personal Settings
+**Open Personal Settings**
 
 Go to `Settings` > `Your Preferences` > `Personal`.
 
-📸 Screenshot placeholder:
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.12.01 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Personal settings page showing profile fields]
 {% endstep %}
 
 {% step %}
-#### Update Profile Information
+**Update Profile Information**
 
 * Full Name: Your display name in the platform.
 * Email: Your primary email address for notifications and login.
 * Contact Number: Your registered phone number (cannot be changed directly).
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Profile fields for Name and Email]
 {% endstep %}
 
 {% step %}
-#### Configure Security
+**Configure Security**
 
 * Two-Factor Authentication (2FA): Toggle this on to require an OTP code via WhatsApp when you log in.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: 2FA toggle switch]
 {% endstep %}
 
 {% step %}
-#### Change Password
+**Change Password**
 
 Click the Change Password button to update your login credentials. You will need to enter your current password and a new 6-character minimum password.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Change Password modal]
 {% endstep %}
 {% endstepper %}
 
