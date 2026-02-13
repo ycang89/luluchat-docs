@@ -16,7 +16,7 @@ These settings take effect whenever a contact interacts with an **AI Agent node*
 
 Go to `Settings` in the left menu, then navigate to Tools > AI.
 
-📸 Screenshot placeholder:
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.31.35 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Settings menu with Tools > AI highlighted]
 {% endstep %}
@@ -24,31 +24,27 @@ Go to `Settings` in the left menu, then navigate to Tools > AI.
 {% step %}
 #### Enable MCP
 
-Toggle Enable MCP for AI to "On" to allow your AI agents to perform complex tasks like checking databases or calling external APIs.
+Toggle Enable MCP for AI to "On" to allow your AI agents to perform complex tasks like checking databases or calling external APIs. Use the MCP Tool Permissions list to specifically enable or disable what the AI agent can do. Use Enable All or Disable All for quick management.
 
-📸 Screenshot placeholder:
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.31.35 PM (1).png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: MCP for AI toggle switch set to ON]
 {% endstep %}
 
 {% step %}
-#### Configure Connectivity
+#### Create MCP Token
 
-View your MCP Server URL. You will also need an MCP Token, which you can generate in the `Settings > Account > Integration` tab.
+You will also need an MCP Token, which you can generate in the `Settings > Account > Integration` tab. You will need this for your AI service provider.
 
-📸 Screenshot placeholder:
+<div><figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.34.07 PM.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.34.45 PM.png" alt=""><figcaption></figcaption></figure></div>
 
-> \[Screenshot: MCP Server URL display area]
+> \[Screenshot: Create token for MCP]
 {% endstep %}
 
 {% step %}
-#### Manage Tool Permissions
+#### Configure MCP Server URL
 
-Use the MCP Tool Permissions list to specifically enable or disable what the AI agent can do. Use Enable All or Disable All for quick management.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: List of tool permissions with toggles]
+[https://mcp.luluchat.io/mcp](https://mcp.luluchat.io/mcp) will be your MCP Server URL, pass it to your AI service provider.
 {% endstep %}
 {% endstepper %}
 

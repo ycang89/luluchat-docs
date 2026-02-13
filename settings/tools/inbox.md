@@ -15,7 +15,7 @@ Choose which media types are automatically downloaded when received or sent. Thi
 * Incoming Media: Select Audio, Image, Video, Documents, or Stickers.
 * Outgoing Media: Select which types you send that should be auto-processed.
 
-📸 Screenshot placeholder:
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.31.28 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Media auto-download toggle grid]
 {% endstep %}
@@ -25,10 +25,6 @@ Choose which media types are automatically downloaded when received or sent. Thi
 
 * Keep assignee after conversation closes: Toggle "Yes" to ensure the same teammate remains owner even after a thread is resolved.
 * Show contact number in chat listing: Toggle "Yes" to always display the phone number next to the contact name in your inbox list.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Behavior toggles for Assignee and Contact Number]
 {% endstep %}
 
 {% step %}
@@ -36,10 +32,10 @@ Choose which media types are automatically downloaded when received or sent. Thi
 
 View your current storage usage at the bottom.
 
-* Example: "1.5 GB out of 5.0 GB has been used."
+* Example: "0.5 GB out of 120 GB has been used."
 * Note: If you run out of space, click the link to view subscription upgrade options.
 
-📸 Screenshot placeholder:
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.40.28 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: File storage progress indicator]
 {% endstep %}
@@ -51,10 +47,6 @@ Use the File Storage table to see which contacts are using the most space.
 
 * Manage: Opens the media library for that specific contact.
 * Clear Storage: Permanently deletes all media files for that contact to free up space.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: File storage table with 'Clear Storage' buttons]
 {% endstep %}
 {% endstepper %}
 

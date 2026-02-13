@@ -16,7 +16,7 @@ Make your bot feel more human by showing a "typing..." status before automated m
 * WhatsApp Cloud: Enable for official Business API accounts.
 * Effect: When enabled, the system respects the "Typing Wait Time" configured in your individual Message Flow nodes.
 
-📸 Screenshot placeholder:
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.31.19 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Typing Indicator switches for Personal and Cloud]
 {% endstep %}
@@ -27,11 +27,6 @@ Make your bot feel more human by showing a "typing..." status before automated m
 If your Message Flows call external URLs, use these settings to secure the connection.
 
 * Enable Webhook Authorization: Toggle "On" to require an authorization key for any outgoing webhook requests.
-* Webhook Authorization Key: Click `Reset` to generate a new key. Copy the `Bearer` token to use in your external system's security headers.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Webhook security section with Authorization Key and Reset button]
 {% endstep %}
 {% endstepper %}
 
