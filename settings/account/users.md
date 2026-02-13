@@ -14,7 +14,7 @@ The Invitation List shows pending invites.
 * Copy Invite Link: Share this link with your teammate.
 * Extend: If an invitation expires, click `Extend` to reactivate the link.
 
-📸 Screenshot placeholder:
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.29.14 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Invitation list with Invite button and Copy options]
 
@@ -24,10 +24,6 @@ The Team User list displays all active members.
 
 * Role: View who is an Owner, Admin, or Agent.
 * Last Login: See when each user last accessed the platform.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Team User list showing names and roles]
 
 
 
@@ -39,10 +35,6 @@ The Team User list displays all active members.
 {% hint style="warning" %}
 **Important**: You cannot edit or remove yourself or the workspace Owner.
 {% endhint %}
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Edit and Remove actions on a user row]
 
 {% hint style="warning" %}
 **Remove User - Permanent Action**

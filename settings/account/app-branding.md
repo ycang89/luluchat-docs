@@ -14,7 +14,7 @@ The App Namespace is a unique identifier used in your public URLs.
 
 * Example: Setting it to `my-shop` changes your form URL to `https://form.luluchat.io/my-shop/form-name`.
 
-📸 Screenshot placeholder:
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.27.54 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: App Namespace field showing the URL preview]
 {% endstep %}
@@ -24,10 +24,6 @@ The App Namespace is a unique identifier used in your public URLs.
 
 * Brand Name: Enter your company's public-facing name.
 * Brand Logo: Upload your logo. This appears on headers and forms.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Brand Name field and Logo upload area]
 {% endstep %}
 
 {% step %}
@@ -37,10 +33,6 @@ Use the color pickers to match the interface to your brand:
 
 * Header Background & Text: Colors for the top navigation bar.
 * Button Background & Text: Primary colors for call-to-action buttons.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Color pickers for Header and Button themes]
 {% endstep %}
 
 {% step %}

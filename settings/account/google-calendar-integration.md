@@ -121,7 +121,7 @@ Once your Google Calendar is connected, you can use it in your booking calendars
 **Important**: Disconnecting a Google account will stop automatic event creation for any booking calendars using that account. You'll need to update those calendars to use a different Google account or disable Google Calendar integration.
 {% endhint %}
 
-📸 Screenshot placeholder:
+<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.27.01 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Disconnect button on Google account card]
 
