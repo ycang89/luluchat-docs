@@ -14,17 +14,17 @@ Message Templates are pre-approved message formats used exclusively for **WhatsA
 
 {% stepper %}
 {% step %}
-#### Access Message Templates
+**Access Message Templates**
 
 Click `Message Templates` in the left menu. Here you will see a list of your existing templates and their current approval status.
 
-📸 Screenshot placeholder:
+<figure><img src=".gitbook/assets/Screenshot 2026-02-13 at 4.06.25 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Message Templates list showing template names, status, and languages]
 {% endstep %}
 
 {% step %}
-#### Create a New Template
+**Create a New Template**
 
 Click the Create Message Template button.
 
@@ -35,13 +35,13 @@ Luluchat will show a confirmation dialog explaining that you will be redirected 
 3. Follow Meta's instructions to define your template (Header, Body, Footer, and Buttons).
 4. Submit the template for review.
 
-📸 Screenshot placeholder:
+<figure><img src=".gitbook/assets/Screenshot 2026-02-13 at 4.07.11 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Redirection confirmation dialog to Meta WhatsApp Manager]
 {% endstep %}
 
 {% step %}
-#### Syncing Templates back to Luluchat
+**Syncing Templates back to Luluchat**
 
 Once you have finished creating your template in the Meta WhatsApp Manager, return to Luluchat.
 
@@ -51,7 +51,7 @@ Once you have finished creating your template in the Meta WhatsApp Manager, retu
 2. Wait for the success message: "Synced successfully."
 3. Your new template should now appear in the list with its latest status.
 
-📸 Screenshot placeholder:
+<figure><img src=".gitbook/assets/Screenshot 2026-02-13 at 4.07.38 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: "Sync from WhatsApp Manager" button highlighted in the toolbar]
 {% endstep %}
@@ -91,4 +91,5 @@ Once a template is approved and synced, it becomes available as a selection in:
 * **Check Quality Score**: If your quality score drops to "Low", your template might get paused. Ensure your messages are relevant and not spammy.
 
 ## Related Documentation
-- [WhatsApp Business App (WABA)](./whatsapp-business-app-waba/index.md) - Learn about WABA features and configuration
+
+* [WhatsApp Business App (WABA)](whatsapp-business-app-waba/index.md) - Learn about WABA features and configuration
