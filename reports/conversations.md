@@ -19,7 +19,7 @@ The Conversations Report provides detailed analytics about your customer convers
 
 Go to `Reports` > `Conversations` from the left menu.
 
-📸 Screenshot placeholder:
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 3.52.06 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Conversations report page with date range selector at the top]
 {% endstep %}
@@ -29,7 +29,7 @@ Go to `Reports` > `Conversations` from the left menu.
 
 Choose a date range using the preset options (Last 7 days, Last 30 days, This month, This year) or click the date picker to select a custom range.
 
-📸 Screenshot placeholder:
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 3.52.06 PM (1).png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Date range selector with preset options and custom date picker]
 {% endstep %}
@@ -43,7 +43,7 @@ At the top of the page, you'll see three key charts:
 * Response Time: Displays average response times, with options to compare specific team members.
 * Resolution Time: Shows how long it takes to resolve conversations, with a note that conversations must be manually closed to be tracked.
 
-📸 Screenshot placeholder:
+<div><figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 3.52.40 PM.png" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 3.52.45 PM.png" alt=""><figcaption></figcaption></figure></div>
 
 > \[Screenshot: Three charts showing opened vs closed, response time, and resolution time]
 {% endstep %}
@@ -58,7 +58,7 @@ To compare specific team members' performance:
 3. Select one or two team members from the dropdown.
 4. The chart will update to show their individual performance lines.
 
-📸 Screenshot placeholder:
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 3.53.03 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Assignee selector dropdown and updated chart with multiple lines for comparison]
 {% endstep %}
@@ -73,7 +73,7 @@ Scroll down to the "Conversation List" table, which shows detailed information f
 * Overall Resolution Time: Conversations closed in the selected period.
 * \[Team Member]'s Resolution Time: Conversations closed by a specific team member.
 
-📸 Screenshot placeholder:
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 3.56.18 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Conversation List table with tabs for different views]
 {% endstep %}
@@ -93,10 +93,6 @@ Each row in the table shows:
 #### Export Data (Optional)
 
 Click the Export button at the top right of the Conversation List table to download an Excel file with all conversation data for the selected date range and tab.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Export button in the Conversation List toolbar]
 {% endstep %}
 {% endstepper %}
 
@@ -113,10 +109,6 @@ Each row in the table shows:
 * **Last Assigned List**: The inbox tab where the conversation was last assigned.
 * **Tagging Activity**: Tags added or removed during the conversation (hover to see timeline).
 * **Custom Attributes**: Any custom attribute values associated with the contact.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Expanded conversation row showing all detail columns]
 
 ## What happens after you use it?
 

@@ -19,7 +19,7 @@ The Tags Report tracks tag growth and usage over time, showing how many contacts
 
 Go to `Reports` > `Tags` from the left menu.
 
-📸 Screenshot placeholder:
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 3.59.13 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Tags report page with date range selector]
 {% endstep %}
@@ -28,20 +28,12 @@ Go to `Reports` > `Tags` from the left menu.
 #### Select Date Range
 
 Choose a date range using the preset options (Last 7 days, Last 30 days, This month, This year) or select a custom range using the date picker.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Date range selector with options]
 {% endstep %}
 
 {% step %}
 #### Select Tags to Analyze
 
-In the "Select Tags" section, choose one or more tags from the dropdown. You can select multiple tags to compare their growth patterns. The report will show data only for the selected tags.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Tag selector dropdown with multiple tags selected]
+In the "Select Tags" section, choose one or more tags from the dropdown. You can select multiple tags to compare their growth patterns. The report will show data only for the selec
 
 **Note**: If no tags are selected, the charts and tables will be empty. At least one tag must be selected to view data.
 {% endstep %}
@@ -50,10 +42,6 @@ In the "Select Tags" section, choose one or more tags from the dropdown. You can
 #### Review Tag Growth Chart
 
 The "All-Time Cumulative Tags" chart shows the cumulative growth of selected tags over time. Each tag appears as a separate line, making it easy to compare growth rates.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Line chart showing cumulative tag growth with multiple tag lines]
 {% endstep %}
 
 {% step %}
@@ -65,7 +53,7 @@ Below the chart, the "Tag Changes" table shows:
 * Added this period: Number of contacts that received this tag during the selected period.
 * Removed this period: Number of contacts that had this tag removed during the selected period.
 
-📸 Screenshot placeholder:
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 3.59.24 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Tag Changes table with columns for name, added, and removed counts]
 {% endstep %}
@@ -83,20 +71,12 @@ Each contact list shows:
 * Contact name (clickable to view profile)
 * Contact number
 * Link to open the conversation in Inbox
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Expanded tag row showing tabs for Added and Removed contact lists]
 {% endstep %}
 
 {% step %}
 #### Export Data (Optional)
 
 Click the Export button in the Tag Changes table toolbar to download an Excel file with tag change data.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Export button in the table toolbar]
 {% endstep %}
 {% endstepper %}
 

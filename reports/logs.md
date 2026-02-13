@@ -19,7 +19,7 @@ The Logs Report provides an overview of message activity and new contact growth 
 
 Go to `Reports` > `Logs` from the left menu.
 
-📸 Screenshot placeholder:
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 4.04.15 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Logs report page with date range selector]
 {% endstep %}
@@ -28,10 +28,6 @@ Go to `Reports` > `Logs` from the left menu.
 #### Select Date Range
 
 Choose a date range using the preset options (Last 7 days, Last 30 days, This month, This year) or select a custom range using the date picker.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Date range selector with options]
 {% endstep %}
 
 {% step %}
@@ -42,10 +38,6 @@ The "Message Performance" card shows:
 * Total Messages Sent: Total number of messages sent from your company during the selected period.
 * Total Messages Received: Total number of messages received by your company during the selected period.
 * Message Trend Chart: A line chart showing daily message volume (sent and received) over the selected period.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Message Performance card with statistics and line chart]
 {% endstep %}
 
 {% step %}
@@ -55,10 +47,6 @@ The "New Contact Growth" card shows:
 
 * Newly Added Contact: Total number of new contacts added during the selected period.
 * Growth Trend Chart: A line chart showing daily new contact additions over the selected period.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: New Contact Growth card with statistic and line chart]
 {% endstep %}
 
 {% step %}
@@ -71,10 +59,6 @@ The "New Contact Time Analysis" heatmap shows when new contacts are added throug
 * Color Intensity: Darker colors indicate more new contacts added during that time slot.
 
 This helps you identify peak times when new contacts are joining your system.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Heatmap showing new contact activity by day and hour]
 {% endstep %}
 {% endstepper %}
 

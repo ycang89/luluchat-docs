@@ -19,7 +19,7 @@ The Team Users Report provides performance metrics for each team member, includi
 
 Go to `Reports` > `Team Users` from the left menu.
 
-📸 Screenshot placeholder:
+<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 4.03.25 PM.png" alt=""><figcaption></figcaption></figure>
 
 > \[Screenshot: Team Users report page with date range selector]
 {% endstep %}
@@ -28,10 +28,6 @@ Go to `Reports` > `Team Users` from the left menu.
 #### Select Date Range
 
 Choose a date range using the preset options (Last 7 days, Last 30 days, This month, This year) or select a custom range using the date picker.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Date range selector with preset and custom options]
 {% endstep %}
 
 {% step %}
@@ -48,10 +44,6 @@ The main table shows performance metrics for each team member and system entitie
 * Average Resolution Time: Average time to resolve (close) conversations.
 * Max Response Time: Longest time taken to send a first response.
 * Max Resolution Time: Longest time taken to resolve a conversation.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Team Users performance table with all columns visible]
 {% endstep %}
 
 {% step %}
@@ -67,20 +59,12 @@ Some rows represent system entities rather than human team members:
 * WA Owner: Activity from WhatsApp mobile app or linked devices (not through Luluchat).
 
 Hover over the name to see a tooltip explaining what each entity represents.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Tooltip showing explanation for "AI Agent" entity]
 {% endstep %}
 
 {% step %}
 #### Export Data (Optional)
 
 Click the Export button at the top right of the table to download an Excel file with all team user performance data for the selected date range.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Export button in the table toolbar]
 {% endstep %}
 {% endstepper %}
 
