@@ -1,4 +1,4 @@
-# Connect WhatsApp Cloud (WABA)
+# WhatsApp Cloud
 
 ## What is WhatsApp Cloud connection?
 
@@ -25,8 +25,8 @@ Use this option if you already have, or plan to create, a WhatsApp Business API 
 {% step %}
 **Open Inbox and go to Connect Channel**
 
-1. Click `Inbox` in the left menu.  
-2. If no channel is connected or you want to add a new one, open the **Connect your Channel** page.  
+1. Click `Inbox` in the left menu.
+2. If no channel is connected or you want to add a new one, open the **Connect your Channel** page.
 3. Select **WhatsApp Cloud** as the channel type.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-01-13 at 5.40.48 PM.png" alt=""><figcaption></figcaption></figure>
@@ -35,8 +35,8 @@ Use this option if you already have, or plan to create, a WhatsApp Business API 
 {% step %}
 **Authenticate with Facebook**
 
-1. Click **Continue with Facebook** (or similar CTA) on the Connect Channel screen.  
-2. Log in with your **Facebook Business** account that manages your WABA.  
+1. Click **Continue with Facebook** (or similar CTA) on the Connect Channel screen.
+2. Log in with your **Facebook Business** account that manages your WABA.
 3. Grant Luluchat the requested permissions so it can access your WhatsApp Business assets.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-01-13 at 5.59.41 PM.png" alt=""><figcaption></figcaption></figure>
@@ -45,20 +45,16 @@ Use this option if you already have, or plan to create, a WhatsApp Business API 
 {% step %}
 **Select Phone Number**
 
-1. After authentication, Luluchat will list the phone numbers available under your WABA.  
-2. Choose the specific phone number you want to connect as a channel.  
+1. After authentication, Luluchat will list the phone numbers available under your WABA.
+2. Choose the specific phone number you want to connect as a channel.
 3. Confirm your selection to proceed.
 {% endstep %}
 
 {% step %}
 **Enter Verification PIN**
 
-1. Create or confirm a **verification PIN** for this channel connection.  
+1. Create or confirm a **verification PIN** for this channel connection. You will need to create the PIN yourself; it is not an OTP received from Meta messages.
 2. Keep this PIN safe – you may need it again when re‑authenticating the channel.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: WhatsApp Cloud setup form showing phone selection and PIN fields]
 {% endstep %}
 
 {% step %}
@@ -66,7 +62,7 @@ Use this option if you already have, or plan to create, a WhatsApp Business API 
 
 Once connected, Luluchat begins syncing your contacts and conversations for the selected WABA phone number.
 
-* If you have many contacts or conversations, initial sync can take up to 15 minutes.  
+* If you have many contacts or conversations, initial sync can take up to 15 minutes.
 * You can monitor channel status from the Inbox header or channel settings.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-01-13 at 6.04.04 PM.png" alt=""><figcaption></figcaption></figure>
@@ -77,7 +73,7 @@ Once connected, Luluchat begins syncing your contacts and conversations for the 
 
 Once the WhatsApp Cloud channel status is `ready`:
 
-* Luluchat can send and receive messages for that phone number via the Cloud API.  
+* Luluchat can send and receive messages for that phone number via the Cloud API.
 * You can use **Message Flows** and **Broadcasts** with WABA‑specific behavior:
   * Template messages for starting conversations outside the 24‑hour service window.
   * Session messages (within 24 hours of last user message).
@@ -132,4 +128,3 @@ Use the Meta list to understand whether the issue is quota, template, permission
 * Monitor error messages in Broadcast queues and flow logs to quickly spot quota or template issues.
 * Plan your sending volumes around Meta’s quotas to avoid sudden drops in deliverability.
 {% endhint %}
-
