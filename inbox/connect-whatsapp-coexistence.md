@@ -1,4 +1,4 @@
-# WhatsApp Coexistence (Personal + Cloud)
+# WhatsApp Coexistence
 
 ## What is WhatsApp Coexistence?
 
@@ -26,37 +26,55 @@ These steps describe how to connect your existing **WhatsApp Business app** to L
 {% step %}
 **Choose WhatsApp Cloud in Inbox**
 
-* In Luluchat, open `Inbox` and go to the **Connect your Channel** screen.  
+* In Luluchat, open `Inbox` and go to the **Connect your Channel** screen.
 * Select **WhatsApp Cloud** as the channel type.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-03-12 at 8.34.11 PM.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 **Click Continue with Facebook**
 
 * On the WhatsApp Cloud setup screen, click the **Continue with Facebook** button.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-03-12 at 8.34.16 PM.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 **Follow the embedded signup guide (choose WhatsApp Business App)**
 
-* Follow the embedded signup flow opened by Meta.  
-* When you reach the **WhatsApp Business account** options, choose **Connect a WhatsApp Business App** (not a Cloud API‑only option).
+* Follow the embedded signup flow opened by Meta.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-03-12 at 8.34.30 PM.png" alt=""><figcaption></figcaption></figure>
+
+* When you reach the **WhatsApp Business account** options, choose **Connect a WhatsApp Business App**&#x20;
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-03-12 at 8.34.37 PM.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
 **Enter your phone number and approve “Connect to the business platform”**
 
-* Continue in the embedded signup guide and enter the phone number of your **WhatsApp Business app**.  
-* A QR code will appear on the screen in the embedded flow.  
-* At the same time, your WhatsApp Business app on your phone will receive a notification with the message **"Connect to the business platform"**.  
-* On your phone, tap **Connect** and follow the prompts to share all chat history to Luluchat.  
+* Continue in the embedded signup guide and enter the phone number of your **WhatsApp Business app**.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-03-12 at 8.35.01 PM.png" alt=""><figcaption></figcaption></figure>
+
+* A QR code will appear on the screen in the embedded flow.
+
+<figure><img src="../.gitbook/assets/Screenshot 2026-03-12 at 8.35.19 PM.png" alt=""><figcaption></figcaption></figure>
+
+* At the same time, your WhatsApp Business app on your phone will receive a notification with the message **"Connect to the business platform"**.
+
+<div><figure><img src="../.gitbook/assets/Screenshot_20260309_191345.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/Screenshot_20260309_191352.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/Screenshot_20260309_191359.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/Screenshot_20260309_191430.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/Screenshot_20260309_191458.jpg" alt=""><figcaption></figcaption></figure></div>
+
+* On your phone, tap **Connect** and follow the prompts to share all chat history to Luluchat.
 * You will then be taken to a **Scan QR code** screen on your phone – use it to scan the QR code shown in the embedded signup flow.
 {% endstep %}
 
 {% step %}
 **Wait for the account to connect and finish the embedded flow**
 
-* Wait for the connection and data sharing to complete.  
+* Wait for the connection and data sharing to complete.
 * Continue following the embedded signup steps until you can click **Finish**.
 {% endstep %}
 
@@ -69,7 +87,7 @@ These steps describe how to connect your existing **WhatsApp Business app** to L
 {% step %}
 **Wait to be redirected to Inbox**
 
-* After a short moment, Luluchat will finalize the setup.  
+* After a short moment, Luluchat will finalize the setup.
 * You should then be redirected to `Inbox`, where you will see your imported conversations.
 {% endstep %}
 {% endstepper %}
@@ -104,9 +122,9 @@ These steps describe how to connect your existing **WhatsApp Business app** to L
 
 For coexistence setups that use a **WhatsApp Cloud (WABA)** channel, disconnection must be done from the WhatsApp Business side:
 
-1. Open the **WhatsApp Business app**.  
-2. Go to **Settings > Account > Business Platform**.  
-3. Tap on **Luluchat CRM**.  
+1. Open the **WhatsApp Business app**.
+2. Go to **Settings > Account > Business Platform**.
+3. Tap on **Luluchat CRM**.
 4. Tap **Disconnect** to remove the integration.
 
 After you disconnect in WhatsApp Business, the corresponding Cloud channel in Luluchat will stop working and show as not ready. You can reconnect later by following the Cloud setup guide again.
@@ -121,4 +139,3 @@ After you disconnect in WhatsApp Business, the corresponding Cloud channel in Lu
 * Regularly review usage and consider consolidating if one channel becomes dominant.
 * Monitor channel‑specific errors (e.g. 24‑hour window on Cloud, 14‑day login on Personal) so issues are fixed on the correct side.
 {% endhint %}
-
