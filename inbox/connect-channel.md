@@ -2,20 +2,20 @@
 
 ## What is Channel Connection?
 
-Connecting your channel links your WhatsApp account (Personal or Business Cloud) to Luluchat. This allows you to manage conversations, run automations, and send broadcasts directly from the platform.
+Connecting your channel links your WhatsApp account (Personal, Cloud, or Coexistence) to Luluchat. This allows you to manage conversations, run automations, and send broadcasts directly from the platform.
 
 ## When does it trigger?
 
 * When you first open `Inbox` and no channel is connected.
 * When your existing channel is disconnected or requires re-authentication.
 
-## How to set it up (Step by Step)
+## How to open the Connect Channel page
 
 {% stepper %}
 {% step %}
 **Open Inbox**
 
-Click `Inbox` in the left menu. if your channel is not yet connected, you will automatically be directed to the Connect your Channel page.
+Click `Inbox` in the left menu. If your channel is not yet connected, you will automatically be directed to the **Connect your Channel** page.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-01-13 at 5.40.48 PM.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
@@ -27,126 +27,42 @@ Select the type of WhatsApp account you want to connect:
 
 * WhatsApp Personal: For standard WhatsApp or WhatsApp Business app accounts.
 * WhatsApp Cloud: For accounts using the official WhatsApp Business API (WABA).
+* WhatsApp Coexistence: For setups where Personal and Cloud channels coexist in the same workspace.
 {% endstep %}
 {% endstepper %}
 
-### Connecting WhatsApp Personal
+## Channel types
 
-{% stepper %}
-{% step %}
-**Scan QR Code**
+Use these dedicated guides for step‑by‑step instructions:
 
-Luluchat will generate a QR code. Open WhatsApp on your phone, go to Linked Devices, and scan the code shown on the screen.
+* [WhatsApp Personal](connect-whatsapp-personal.md)
+* [WhatsApp Cloud](connect-whatsapp-cloud.md)
+* [WhatsApp Coexistence](connect-whatsapp-coexistence.md)
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-01-13 at 5.59.16 PM.png" alt=""><figcaption></figcaption></figure>
-{% endstep %}
+Coming soon:
 
-{% step %}
-**Link with Phone Number (Alternative)**
-
-If you cannot scan the QR code, click Link with Phone Number. Enter your phone number to receive a pairing code, then enter that code in your WhatsApp app's "Link with Phone Number" section.
-
-<figure><img src="../.gitbook/assets/Screenshot 2026-01-13 at 6.05.16 PM.png" alt=""><figcaption></figcaption></figure>
-
-After entering your WhatsApp phone number, you will receive a notification prompting you to enter the pairing code. Follow the on-screen instructions to complete the pairing process.
-
-<figure><img src="../.gitbook/assets/Screenshot 2026-01-13 at 6.06.05 PM.png" alt=""><figcaption></figcaption></figure>
-{% endstep %}
-
-{% step %}
-**Check Syncing Status**
-
-After connecting, check the syncing status on your WhatsApp phone. Open WhatsApp on your phone, go to **Settings > Linked Devices**, and you'll see the sync progress for contacts and messages. Wait for the sync to complete before using Luluchat.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: WhatsApp Linked Devices showing sync status]
-{% endstep %}
-{% endstepper %}
-
-**Note:**
-
-* Make sure your mobile phone has a good internet connection.
-* Make sure you have the latest WhatsApp installed on your phone.
-* If you have a very large number of contacts, it may take a while to sync. Please wait for 15 minutes before you start using the app.
-* You can check the syncing status in your WhatsApp phone by going to **Settings > Linked Devices** to see the progress.
-* After you have connected WhatsApp to Luluchat, you need to log in to your primary phone every 14 days to keep linked devices connected to your WhatsApp account.
+* Meta Messenger
+* Instagram
 
 ## What happens after it triggers?
 
-Once the status changes to `ready`, you can start receiving and sending messages. Your Message Flows and Broadcasts will now be able to fire for this channel.
+Once the status changes to `ready` for a channel, you can start receiving and sending messages. Your Message Flows and Broadcasts will now be able to fire for that channel.
 
-### Connecting WhatsApp Cloud (WABA)
-
-{% hint style="info" %}
-**Learn More**: For detailed information about WhatsApp Business App (WABA) features and configuration, see the [WABA Documentation](../whatsapp-business-app-waba/index.md).
-{% endhint %}
-
-{% stepper %}
-{% step %}
-**Authenticate with Facebook**
-
-Follow the on-screen prompts to log in to your Facebook Business account and authorize Luluchat.
-
-<figure><img src="../.gitbook/assets/Screenshot 2026-01-13 at 5.59.41 PM.png" alt=""><figcaption></figcaption></figure>
-{% endstep %}
-
-{% step %}
-**Select Phone Number**
-
-Choose the specific phone number from your WABA account that you want to use with Luluchat.
-{% endstep %}
-
-{% step %}
-**Enter Verification PIN**
-
-Create your own verification PIN to finalize the connection.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: WhatsApp Cloud setup form showing phone selection and PIN fields]
-{% endstep %}
-{% endstepper %}
-
-{% stepper %}
-{% step %}
-**Wait for Sync**
-
-Once connected, Luluchat will begin syncing your contacts and messages. If you have a large number of contacts, the sync process may take up to 15 minutes to complete.
-
-<figure><img src="../.gitbook/assets/Screenshot 2026-01-13 at 6.04.04 PM.png" alt=""><figcaption></figcaption></figure>
-{% endstep %}
-{% endstepper %}
-
-{% hint style="info" %}
-**Important behavior to know**
-
-* **Multiple Channels**: Depending on your plan, you can have multiple channels connected to different WhatsApp accounts. Each channel operates independently with its own contacts and conversations.
-* **Channel Limits**: The number of channels you can create depends on your subscription plan. Check your plan details or contact support if you need more channels.
-* **Stay Connected**: For WhatsApp Personal, ensure your phone remains connected to the internet to maintain the link.
-* **Re-authentication**: If your account is logged out from the phone or the session expires, you will need to repeat the connection steps.
-* **14-Day Login Requirement**: For WhatsApp Personal, you must log in to your primary phone (the one linked to your WhatsApp account) at least once every 14 days to keep the linked device connection active. If you don't log in within 14 days, the connection will be automatically disconnected.
-* **Disconnection Notification**: If your channel becomes disconnected, Luluchat will automatically send a notification message to your registered WhatsApp number to alert you about the disconnection. This helps you quickly identify and resolve connection issues.
-* **Large Contact Lists**: If you have a very large number of contacts (thousands), the initial sync may take up to 15 minutes. Wait for the sync to complete before using the app to ensure all contacts are properly loaded.
-* **Switching Channels**: When you switch between channels, filters and session data are reset. Make sure to save any important work before switching.
-{% endhint %}
+If you connect multiple channels (for example, Personal and Cloud), each channel operates independently with its own contacts and conversations.
 
 ## Common issues & solutions
 
-* **QR Code not loading**: Refresh the page to generate a new code.
-* **Failed to register (WABA)**: Ensure your Facebook Business account has the correct permissions and that the phone number is not used by another WABA integration.
+* **Channel not ready**: Re-open the Connect Channel screen and complete the connection flow for your selected channel type.
 * **Channel disconnected**:
-  * Check your registered WhatsApp number for a disconnection notification message from Luluchat.
-  * Re-scan the QR code or check your phone's linked devices list.
-  * If disconnected due to 14-day inactivity, log in to your primary phone's WhatsApp and reconnect the channel.
-  * Ensure your phone has a stable internet connection.
+  * Check your registered WhatsApp number for a disconnection notification message from Luluchat (for Personal channels).
+  * Re-scan the QR code or re‑authenticate with Facebook, depending on your channel type.
+  * If disconnected due to inactivity, log in to your primary phone's WhatsApp (Personal) or re‑authorize via Facebook (Cloud) and reconnect the channel.
 * **Sync taking too long**:
   * If you have a large number of contacts, wait up to 15 minutes for the initial sync to complete.
-  * Check your internet connection speed - a slow connection will delay the sync process.
+  * Check your internet connection speed – a slow connection will delay the sync process.
 * **Connection lost frequently**:
-  * Ensure your phone maintains a stable internet connection.
+  * Ensure your phone (for Personal channels) maintains a stable internet connection.
   * Make sure you're using the latest version of WhatsApp.
-  * Log in to your primary phone's WhatsApp at least once every 14 days to maintain the link.
 * **Can't add more channels**:
   * Check if you've reached your plan's channel limit. You may need to upgrade your plan to add more channels.
   * Click "Need More Channel?" to view upgrade options.
@@ -155,10 +71,8 @@ Once connected, Luluchat will begin syncing your contacts and messages. If you h
 {% hint style="success" %}
 **Best practice**
 
-* **Use a Dedicated Device**: For WhatsApp Personal, use a stable phone dedicated to business use to avoid accidental disconnections.
-* **Monitor Status**: Check the connection status in the Inbox header regularly to ensure your automations are active.
-* **Keep WhatsApp Updated**: Always use the latest version of WhatsApp on your phone to ensure compatibility and security.
-* **Maintain Internet Connection**: Ensure your phone has a stable internet connection during the connection process and while using Luluchat.
-* **Set Reminders**: Set a reminder to log in to your primary phone's WhatsApp at least once every 14 days to prevent automatic disconnection.
-* **Monitor Notifications**: Pay attention to disconnection notification messages sent to your registered WhatsApp number so you can quickly address connection issues.
+* Connect only the channel types you actually need (Personal, Cloud, or both in Coexistence) so routing stays clear.
+* Monitor the connection status in the Inbox header regularly to ensure your automations are active.
+* Maintain a stable internet connection on your primary phone (Personal) or server (Cloud) during the connection process and while using Luluchat.
+* Set reminders to periodically review channel health and re‑authenticate if needed.
 {% endhint %}

@@ -79,6 +79,9 @@ Your reply is sent immediately. Assignments, tags, and list changes apply to the
 ## Inbox subpages
 
 * [Connect your Channel](connect-channel.md)
+  * [WhatsApp Personal](connect-whatsapp-personal.md)
+  * [WhatsApp Cloud](connect-whatsapp-cloud.md)
+  * [WhatsApp Coexistence](connect-whatsapp-coexistence.md)
 * [Close Conversation](close-conversation.md)
 * [Add a Note](internal-note.md)
 * [Quick Reply](quick-reply.md)
