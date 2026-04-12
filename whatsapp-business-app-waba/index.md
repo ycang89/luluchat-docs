@@ -15,6 +15,10 @@ To help you understand and effectively use WABA, we've broken down the essential
 [Read More →](./service-window.md)
 {% endcard %}
 
+{% card title="WhatsApp Calling" description="Voice calls on WABA: permissions, Meta limits, and how to use calling in Luluchat" icon="phone" %}
+[Read More →](./whatsapp-calling.md)
+{% endcard %}
+
 {% card title="Charging & Pricing" description="Understand conversation-based pricing and how WABA charges work" icon="dollar-sign" %}
 [Read More →](./charging-pricing.md)
 {% endcard %}

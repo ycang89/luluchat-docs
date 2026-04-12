@@ -135,6 +135,7 @@
 
 * [Overview](whatsapp-business-app-waba/index.md)
   * [Service Window](whatsapp-business-app-waba/service-window.md)
+  * [WhatsApp Calling](whatsapp-business-app-waba/whatsapp-calling.md)
   * [Charging & Pricing](whatsapp-business-app-waba/charging-pricing.md)
   * [Message Template Types](whatsapp-business-app-waba/message-template-types.md)
   * [Coexistence](whatsapp-business-app-waba/coexistence.md)
