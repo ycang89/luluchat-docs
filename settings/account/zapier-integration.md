@@ -43,7 +43,7 @@ Before setting up your Zap, you should verify that the third-party app you want 
 
 Once you've confirmed your app and trigger are supported:
 
-1. Follow the steps in the [How to set it up](#how-to-set-it-up-step-by-step) section below to create your Zap.
+1. Follow the steps in the [How to set it up](zapier-integration.md#how-to-set-it-up-step-by-step) section below to create your Zap.
 2. Use your selected app as the **trigger** (the event that starts the automation).
 3. Add **Luluchat** as the **action** (what happens when the trigger fires).
 {% endstep %}
@@ -53,7 +53,7 @@ Once you've confirmed your app and trigger are supported:
 
 {% stepper %}
 {% step %}
-#### Accept the Luluchat Invitation in Zapier
+**Accept the Luluchat Invitation in Zapier**
 
 To start using Luluchat in Zapier, you need to accept the Luluchat invitation. Click the link below to accept the invitation and start building your own Zap:
 
@@ -63,7 +63,7 @@ To start using Luluchat in Zapier, you need to accept the Luluchat invitation. C
 {% endstep %}
 
 {% step %}
-#### Create a New Zap
+**Create a New Zap**
 
 In Zapier, click **Create Zap** to start building a new automation. Choose your trigger app (the app that will start the automation). For example, you might choose Calendly for new booking events.
 
@@ -71,7 +71,7 @@ In Zapier, click **Create Zap** to start building a new automation. Choose your 
 {% endstep %}
 
 {% step %}
-#### Add Luluchat as an Action
+**Add Luluchat as an Action**
 
 After setting up your trigger, click the **plus icon** to **Add a Step**. Search for "luluchat" in the app search field.
 
@@ -79,7 +79,7 @@ After setting up your trigger, click the **plus icon** to **Add a Step**. Search
 {% endstep %}
 
 {% step %}
-#### Choose Send Message Flow Event
+**Choose Send Message Flow Event**
 
 In the Event Selection, choose **Send Message Flow** as the action you want Luluchat to perform.
 
@@ -87,25 +87,26 @@ In the Event Selection, choose **Send Message Flow** as the action you want Lulu
 {% endstep %}
 
 {% step %}
-#### Connect Your Luluchat Account
+**Connect Your Luluchat Account**
 
 Zapier will prompt you to connect your account. A popup will ask for your **Zapier API Key**.
 
 To find your Zapier API Key:
 
-1. Go to `Settings` > `Account Management` > `Integration` in your Luluchat account.
+1. Go to `Settings` > `Account Management` > `Access Token` in your Luluchat account.
 2. Copy the **Zapier API Key** from the Integration settings page.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-05-05 at 8.35.12 PM.png" alt=""><figcaption></figcaption></figure>
+
 3. Paste the key into the Zapier popup and proceed.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-07-12 at 1.02.05 PM.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/Screenshot 2024-07-12 at 1.02.26 PM.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-07-12 at 1.02.48 PM.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
-#### Configure Your Message Flow in Luluchat
+**Configure Your Message Flow in Luluchat**
 
 Before completing the Zap setup, ensure your Message Flow is ready in Luluchat:
 
@@ -117,7 +118,7 @@ Before completing the Zap setup, ensure your Message Flow is ready in Luluchat:
 {% endstep %}
 
 {% step %}
-#### Select Your Message Flow in Zapier
+**Select Your Message Flow in Zapier**
 
 Back in Zapier, in the action configuration:
 
@@ -130,7 +131,7 @@ Back in Zapier, in the action configuration:
 {% endstep %}
 
 {% step %}
-#### Test and Publish Your Zap
+**Test and Publish Your Zap**
 
 You can test your integration at this step to verify it works correctly, or skip the test and publish it for production use.
 
