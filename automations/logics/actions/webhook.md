@@ -12,7 +12,7 @@ Calls an external URL (GET/POST) from the flow, sending data and handling succes
 
 {% stepper %}
 {% step %}
-#### Open the flow and edit the Action node
+**Open the flow and edit the Action node**
 
 In `Automations` > `Message Flows`, open a flow, select the `Action` step, and choose `Webhook`.
 
@@ -43,5 +43,6 @@ The webhook fires with your payload. The flow follows the success or fail path b
 * Use headers for auth tokens; avoid placing secrets in query strings.
 
 ## Related Documentation
-- [Webhook Action Developer Guide](../../developer-guide/webhook-action.md) - Learn about technical implementation, request/response formats, and data handling
-- [Data Formatting](../../developer-guide/data-formatting.md) - Understand supported data types and formats for webhook payloads
+
+* [Webhook Action Developer Guide](../../developer-guide/webhook-action.md) - Learn about technical implementation, request/response formats, and data handling
+* [Data Formatting](../../developer-guide/data-formatting.md) - Understand supported data types and formats for webhook payloads

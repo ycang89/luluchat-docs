@@ -14,51 +14,55 @@ Delete Chat History is a feature that allows you to permanently remove all conve
 
 {% stepper %}
 {% step %}
-#### Access Channel Management
+**Access Channel Management**
 
 1. Go to `Inbox` in the left menu.
 2. If you have an existing channel connected, look for the channel selector or channel management option in the header or sidebar.
 3. Alternatively, you can access channel management from the channel connection page.
 
 📸 Screenshot placeholder:
-> [Screenshot: Inbox page showing channel selector or channel management option]
+
+> \[Screenshot: Inbox page showing channel selector or channel management option]
 {% endstep %}
 
 {% step %}
-#### Open Channel List
+**Open Channel List**
 
 1. On the channel management page, you'll see a list of all your existing channels.
 2. Each channel card shows its status, phone number, and connection information.
 3. Locate the channel you want to disconnect and delete chat history for.
 
 📸 Screenshot placeholder:
-> [Screenshot: Channel list page showing all channels with their status]
+
+> \[Screenshot: Channel list page showing all channels with their status]
 {% endstep %}
 
 {% step %}
-#### Click Disconnect Button
+**Click Disconnect Button**
 
 1. Find the channel you want to disconnect.
 2. Click the **"Disconnect"** button (usually shown as a red/danger button) on the channel card.
 3. A confirmation dialog will appear asking if you're sure you want to disconnect the channel.
 
 📸 Screenshot placeholder:
-> [Screenshot: Channel card showing Disconnect button]
+
+> \[Screenshot: Channel card showing Disconnect button]
 {% endstep %}
 
 {% step %}
-#### Check "Remove chat history" Option
+**Check "Remove chat history" Option**
 
 1. In the confirmation dialog, you'll see a checkbox labeled **"Remove chat history"**.
 2. Check this box if you want to permanently delete all chat history for this channel.
 3. If you leave it unchecked, the channel will be disconnected but all chat history will be preserved.
 
 📸 Screenshot placeholder:
-> [Screenshot: Disconnect confirmation dialog showing "Remove chat history" checkbox]
+
+> \[Screenshot: Disconnect confirmation dialog showing "Remove chat history" checkbox]
 {% endstep %}
 
 {% step %}
-#### Confirm Disconnection
+**Confirm Disconnection**
 
 1. Review your decision carefully, as deleting chat history is permanent.
 2. Click **"Yes, proceed"** to confirm the disconnection.
@@ -66,7 +70,8 @@ Delete Chat History is a feature that allows you to permanently remove all conve
 4. The channel will be disconnected and removed from your active channels list.
 
 📸 Screenshot placeholder:
-> [Screenshot: Confirmation dialog with checked "Remove chat history" and "Yes, proceed" button]
+
+> \[Screenshot: Confirmation dialog with checked "Remove chat history" and "Yes, proceed" button]
 {% endstep %}
 {% endstepper %}
 
@@ -96,15 +101,12 @@ When you disconnect a channel with "Remove chat history" checked:
   * Ensure the channel is in a disconnectable status (not pending, instantiated, disconnecting, or already disconnected).
   * Refresh the channel management page.
   * Check that you have the necessary permissions to disconnect channels.
-
 * **Chat history still visible after disconnect**:
   * If you disconnected without checking "Remove chat history", the history is preserved. You would need to disconnect again with the checkbox checked to delete it.
   * Note: Once a channel is disconnected, you may need to reconnect it first if you want to delete its history (though this is not recommended as a workflow).
-
 * **Accidentally deleted chat history**:
   * Unfortunately, deleted chat history cannot be recovered. Always ensure you have backups of important conversations before deleting.
   * Consider exporting important conversations before disconnecting if you need to preserve them.
-
 * **Want to delete history without disconnecting**:
   * Currently, chat history deletion is only available during channel disconnection. If you need to clean up history while keeping the channel connected, you may need to contact support for alternative solutions.
 
@@ -118,6 +120,6 @@ When you disconnect a channel with "Remove chat history" checked:
 
 ## Related Documentation
 
-- [Connect your Channel](connect-channel.md) - Learn how to connect channels
-- [How to Add a New Channel](connect-channel.md#how-to-add-a-new-channel) - Learn how to add additional channels
-- [Inbox Overview](index.md) - Learn about the Inbox module
+* [Connect your Channel](connect-channel.md) - Learn how to connect channels
+* [How to Add a New Channel](connect-channel.md#how-to-add-a-new-channel) - Learn how to add additional channels
+* [Inbox Overview](index.md) - Learn about the Inbox module

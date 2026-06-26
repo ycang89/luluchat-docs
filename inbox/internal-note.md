@@ -12,33 +12,33 @@ An internal-only message in Inbox for teammates. Contacts do not see it.
 
 {% stepper %}
 {% step %}
-#### Open the conversation
+**Open the conversation**
 
 In `Inbox`, open the conversation where you need to leave context.
 
 📸 Screenshot placeholder:
 
-> [Screenshot: Conversation thread with message editor visible]
+> \[Screenshot: Conversation thread with message editor visible]
 {% endstep %}
 
 {% step %}
-#### Switch to Note Mode
+**Switch to Note Mode**
 
 Click the note icon to open the `Note` input box.
 
 📸 Screenshot placeholder:
 
-> [Screenshot: Message editor showing Note modal]
+> \[Screenshot: Message editor showing Note modal]
 {% endstep %}
 
 {% step %}
-#### Write and post
+**Write and post**
 
 Enter the note for teammates and post it. It will appear in the thread marked as internal.
 
 📸 Screenshot placeholder:
 
-> [Screenshot: Posted note with internal badge]
+> \[Screenshot: Posted note with internal badge]
 {% endstep %}
 {% endstepper %}
 

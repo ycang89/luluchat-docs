@@ -15,7 +15,7 @@ A Booking Calendar is a configurable scheduling system that allows customers to 
 
 {% stepper %}
 {% step %}
-#### Open Calendars Page
+**Open Calendars Page**
 
 Go to `Bookings` > `Calendars` from the left menu.
 
@@ -25,7 +25,7 @@ Go to `Bookings` > `Calendars` from the left menu.
 {% endstep %}
 
 {% step %}
-#### Click Create Calendar
+**Click Create Calendar**
 
 Click the **"Create Calendar"** button at the top right of the page.
 
@@ -35,7 +35,7 @@ Click the **"Create Calendar"** button at the top right of the page.
 {% endstep %}
 
 {% step %}
-#### Configure General Settings (Tab 1: General)
+**Configure General Settings (Tab 1: General)**
 
 In the "General" tab, configure basic calendar information:
 
@@ -59,7 +59,7 @@ Click **Save** to save your general settings.
 {% endstep %}
 
 {% step %}
-#### Add Services (Tab 2: Services)
+**Add Services (Tab 2: Services)**
 
 In the "Services" tab, add the services customers can book:
 
@@ -82,7 +82,7 @@ You can add multiple services to a single calendar. Customers will see all servi
 {% endstep %}
 
 {% step %}
-#### Configure Booking Form (Tab 3: Booking Form)
+**Configure Booking Form (Tab 3: Booking Form)**
 
 In the "Booking Form" tab, customize the information you collect from customers:
 
@@ -100,7 +100,7 @@ Click **Save** to save your form configuration.
 {% endstep %}
 
 {% step %}
-#### Configure Settings (Tab 4: Settings)
+**Configure Settings (Tab 4: Settings)**
 
 In the "Settings" tab, configure booking behavior:
 
@@ -121,7 +121,7 @@ Click **Save** to save your settings.
 {% endstep %}
 
 {% step %}
-#### Set Working Hours (Tab 5: Working Hours)
+**Set Working Hours (Tab 5: Working Hours)**
 
 In the "Working Hours" tab, configure when appointments are available:
 
@@ -139,7 +139,7 @@ Click **Save** to save your working hours.
 {% endstep %}
 
 {% step %}
-#### Set Off Dates (Tab 6: Off Dates)
+**Set Off Dates (Tab 6: Off Dates)**
 
 In the "Off Dates" tab, mark dates when appointments are not available (holidays, closures):
 
@@ -153,7 +153,7 @@ In the "Off Dates" tab, mark dates when appointments are not available (holidays
 {% endstep %}
 
 {% step %}
-#### Configure Notifications (Tab 7: Notifications)
+**Configure Notifications (Tab 7: Notifications)**
 
 In the "Notifications" tab, set up automated messages:
 
@@ -175,7 +175,7 @@ Click **Save** to save your notification settings.
 {% endstep %}
 
 {% step %}
-#### Set Up Automation (Tab 8: Automation)
+**Set Up Automation (Tab 8: Automation)**
 
 In the "Automation" tab, link Message Flows to booking events:
 
@@ -191,7 +191,7 @@ Click **Save** to save your automation settings.
 {% endstep %}
 
 {% step %}
-#### Publish and Share
+**Publish and Share**
 
 Once your calendar is configured:
 

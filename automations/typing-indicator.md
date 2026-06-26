@@ -18,17 +18,18 @@ Before you can use typing indicators in your message flows, you need to enable i
 
 {% stepper %}
 {% step %}
-#### Access Message Flows Settings
+**Access Message Flows Settings**
 
 1. Go to `Settings` > `Tools` > `Message Flows`.
 2. You'll see the "Typing Indicator Settings" section.
 
 📸 Screenshot placeholder:
-> [Screenshot: Message Flows settings page showing Typing Indicator section]
+
+> \[Screenshot: Message Flows settings page showing Typing Indicator section]
 {% endstep %}
 
 {% step %}
-#### Enable for Your Channel Type
+**Enable for Your Channel Type**
 
 Toggle the appropriate switch based on your channel:
 
@@ -38,16 +39,18 @@ Toggle the appropriate switch based on your channel:
 You can enable both if you use multiple channel types.
 
 📸 Screenshot placeholder:
-> [Screenshot: Typing Indicator toggles for Personal and Cloud]
+
+> \[Screenshot: Typing Indicator toggles for Personal and Cloud]
 {% endstep %}
 
 {% step %}
-#### Save Settings
+**Save Settings**
 
 Click **Save** to apply your changes. The typing indicator feature is now enabled for your message flows.
 
 📸 Screenshot placeholder:
-> [Screenshot: Save button in Message Flows settings]
+
+> \[Screenshot: Save button in Message Flows settings]
 {% endstep %}
 {% endstepper %}
 
@@ -57,18 +60,19 @@ Once enabled in settings, you can configure typing wait time for individual Mess
 
 {% stepper %}
 {% step %}
-#### Open Your Message Flow
+**Open Your Message Flow**
 
 1. Go to `Automations` > `Message Flows`.
 2. Open the flow you want to edit, or create a new one.
 3. Add or select a **Message** node in your flow.
 
 📸 Screenshot placeholder:
-> [Screenshot: Message Flow editor with a Message node selected]
+
+> \[Screenshot: Message Flow editor with a Message node selected]
 {% endstep %}
 
 {% step %}
-#### Configure Typing Wait Time
+**Configure Typing Wait Time**
 
 1. In the Message node, you'll see a clock icon (⏰) at the bottom right of each text content block.
 2. Click the clock icon to open the typing indicator configuration.
@@ -77,17 +81,19 @@ Once enabled in settings, you can configure typing wait time for individual Mess
    * **Custom (seconds)**: Set a fixed number of seconds (e.g., 2, 3, 5 seconds) for the typing indicator to show.
 
 📸 Screenshot placeholder:
-> [Screenshot: Message node showing clock icon and typing indicator dropdown with Auto and custom time options]
+
+> \[Screenshot: Message node showing clock icon and typing indicator dropdown with Auto and custom time options]
 {% endstep %}
 
 {% step %}
-#### Save Your Flow
+**Save Your Flow**
 
 1. After configuring the typing wait time, save your Message node.
 2. Save and publish your flow to apply the changes.
 
 📸 Screenshot placeholder:
-> [Screenshot: Save button in flow editor]
+
+> \[Screenshot: Save button in flow editor]
 {% endstep %}
 {% endstepper %}
 
@@ -131,16 +137,13 @@ When a message flow runs with typing indicator enabled:
   * Verify that the Message node has a typing wait time configured (not set to disabled).
   * Ensure your flow is published and active.
   * Check that your channel is connected and in `ready` status.
-
 * **Wait time too short or too long**:
   * If using Auto mode and the timing feels off, try switching to Custom mode and set a specific number of seconds.
   * Adjust the custom wait time to match your desired pacing (typically 2-5 seconds works well).
-
 * **Clock icon not appearing**:
   * Ensure Typing Indicator is enabled in settings first.
   * Refresh the flow editor page.
   * Check that you're editing a Message node (not a Message Template node).
-
 * **Different behavior for Personal vs Cloud**:
   * Remember that Personal and Cloud have separate typing indicator settings. Make sure you've enabled the correct one for your channel type.
 
@@ -154,7 +157,7 @@ When a message flow runs with typing indicator enabled:
 
 ## Related Documentation
 
-- [Message Node](content-nodes/message.md) - Learn how to create and configure Message nodes
-- [Message Flows Settings](../settings/tools/message-flows.md) - Learn how to enable typing indicators globally
-- [Message Flows Editor](message-flows-editor.md) - Learn how to use the flow builder
-- [Message Flows Overview](message-flows.md) - Learn about message flows in general
+* [Message Node](content-nodes/message.md) - Learn how to create and configure Message nodes
+* [Message Flows Settings](../settings/tools/message-flows.md) - Learn how to enable typing indicators globally
+* [Message Flows Editor](message-flows-editor.md) - Learn how to use the flow builder
+* [Message Flows Overview](message-flows.md) - Learn about message flows in general

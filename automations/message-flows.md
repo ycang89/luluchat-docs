@@ -42,7 +42,7 @@ Message Flows are built using different types of nodes and steps:
 
 {% stepper %}
 {% step %}
-#### Open Message Flows
+**Open Message Flows**
 
 Go to `Automations` > `Message Flows`. You'll see the list plus `Create Message Flow` and `Create from template`.
 
@@ -52,7 +52,7 @@ Go to `Automations` > `Message Flows`. You'll see the list plus `Create Message 
 {% endstep %}
 
 {% step %}
-#### Create a flow
+**Create a flow**
 
 Select `Create Message Flow` to name your flow (or pick `Create from template` to start faster), then save to open the builder.
 
@@ -62,7 +62,7 @@ Select `Create Message Flow` to name your flow (or pick `Create from template` t
 {% endstep %}
 
 {% step %}
-#### Build and save
+**Build and save**
 
 In the flow builder, add steps and messages, then save/publish. If you need a fallback flow (away/absent/opt-in/out/default), configure its message and linked flows from the dedicated options.
 
@@ -72,7 +72,7 @@ In the flow builder, add steps and messages, then save/publish. If you need a fa
 {% endstep %}
 
 {% step %}
-#### Link a trigger
+**Link a trigger**
 
 Attach the flow to a trigger (keyword, growth tool, web widget, or workflow action) so it starts automatically.
 

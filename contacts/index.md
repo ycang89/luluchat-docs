@@ -49,25 +49,25 @@ Click on any contact's name to open their **Details Form**. From here you can:
 
 {% stepper %}
 {% step %}
-#### Update Profile Information
+**Update Profile Information**
 
 Update their **Display Name** or **Remarks** to personalize how they appear in your workspace.
 {% endstep %}
 
 {% step %}
-#### Manage Segmentation
+**Manage Segmentation**
 
 Manage their **Tags** and **Assignee** to organize and route conversations effectively.
 {% endstep %}
 
 {% step %}
-#### Edit Custom Data
+**Edit Custom Data**
 
 View and edit **Custom Attributes** (e.g., Company, Email, Birthday) to store additional information.
 {% endstep %}
 
 {% step %}
-#### Control Messaging
+**Control Messaging**
 
 Toggle their **Opt-In** status to manage consent for marketing messages.
 {% endstep %}

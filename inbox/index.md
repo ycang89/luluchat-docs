@@ -13,7 +13,7 @@ The Inbox is where you see and work on all active conversations. From here you c
 
 {% stepper %}
 {% step %}
-#### Open Inbox
+**Open Inbox**
 
 Click `Inbox` in the left menu to view your conversation lists.
 
@@ -23,7 +23,7 @@ Click `Inbox` in the left menu to view your conversation lists.
 {% endstep %}
 
 {% step %}
-#### Pick a conversation
+**Pick a conversation**
 
 Select a conversation row to open it. You'll see the message thread, contact details, and action bar.
 
@@ -33,17 +33,17 @@ Select a conversation row to open it. You'll see the message thread, contact det
 {% endstep %}
 
 {% step %}
-#### Reply and update
+**Reply and update**
 
 Type your reply, then use the action bar to add tags, assign a teammate, or move the conversation to a list if needed.
 
 📸 Screenshot placeholder:
 
-> [Screenshot: Message editor with Tag and Assign controls highlighted]
+> \[Screenshot: Message editor with Tag and Assign controls highlighted]
 {% endstep %}
 
 {% step %}
-#### Resolve
+**Resolve**
 
 When done, close the conversation from the action bar. If it needs follow-up, leave it open and assign or tag accordingly.
 

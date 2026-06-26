@@ -12,23 +12,23 @@ Lets you add internal-only notes on the contact while in the conversation. Custo
 
 {% stepper %}
 {% step %}
-#### Open contact info
+**Open contact info**
 
 In `Inbox`, open the conversation and select the `Notes` tab.
 
 📸 Screenshot placeholder:
 
-> [Screenshot: Notes tab with note message editor]
+> \[Screenshot: Notes tab with note message editor]
 {% endstep %}
 
 {% step %}
-#### Write and post a note
+**Write and post a note**
 
 Enter the note for teammates and post it; it appears in the thread as internal.
 
 📸 Screenshot placeholder:
 
-> [Screenshot: Posted note with internal badge]
+> \[Screenshot: Posted note with internal badge]
 {% endstep %}
 {% endstepper %}
 

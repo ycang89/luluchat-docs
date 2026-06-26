@@ -1,4 +1,4 @@
-# How to Migrate a WhatsApp Business API Account
+# Migrate WABA Account
 
 ## What is WABA Account Migration?
 
@@ -45,37 +45,41 @@ The migration process involves these main steps:
 
 {% stepper %}
 {% step %}
-#### Create or Access Your Meta Business Account
+**Create or Access Your Meta Business Account**
 
 1. Go to [Meta Business Manager](https://business.facebook.com/)
 2. Create a new Meta Business Account (if you don't have one) or access your existing one
 3. Ensure you have admin access to the business account
 
 📸 Screenshot placeholder:
-> [Screenshot: Meta Business Manager dashboard]
+
+> \[Screenshot: Meta Business Manager dashboard]
 {% endstep %}
 
 {% step %}
-#### Set Up WhatsApp Business Account
+**Set Up WhatsApp Business Account**
 
 1. In Meta Business Manager, go to **Business Settings** > **Accounts** > **WhatsApp Accounts**
 2. Click **Add** to create a new WhatsApp Business Account
 3. Follow the setup wizard to create your WABA
 
 📸 Screenshot placeholder:
-> [Screenshot: Creating WhatsApp Business Account in Meta Business Manager]
+
+> \[Screenshot: Creating WhatsApp Business Account in Meta Business Manager]
 {% endstep %}
 
 {% step %}
-#### Get Your WABA Credentials
+**Get Your WABA Credentials**
 
 You'll need these credentials to connect in Luluchat:
+
 * **Phone Number ID**: Found in your WABA settings
 * **Business Account ID**: Your Meta Business Account ID
 * **Permanent Access Token**: Generated in Meta Business Manager
 
 📸 Screenshot placeholder:
-> [Screenshot: WABA settings showing Phone Number ID and Business Account ID]
+
+> \[Screenshot: WABA settings showing Phone Number ID and Business Account ID]
 {% endstep %}
 {% endstepper %}
 
@@ -85,7 +89,7 @@ Before disconnecting, export any critical information:
 
 {% stepper %}
 {% step %}
-#### Export Message Templates
+**Export Message Templates**
 
 1. In your old WABA provider, go to Message Templates
 2. Document all approved templates (name, category, content, buttons, etc.)
@@ -93,29 +97,32 @@ Before disconnecting, export any critical information:
 4. Note which templates are currently in use
 
 📸 Screenshot placeholder:
-> [Screenshot: Message Templates list in old account]
+
+> \[Screenshot: Message Templates list in old account]
 {% endstep %}
 
 {% step %}
-#### Export Contact Data
+**Export Contact Data**
 
 1. Export your contact list if possible
 2. Note any important custom attributes or tags
 3. Document any active conversations or important message history
 
 📸 Screenshot placeholder:
-> [Screenshot: Contact export options]
+
+> \[Screenshot: Contact export options]
 {% endstep %}
 
 {% step %}
-#### Document Business Verification Status
+**Document Business Verification Status**
 
 1. Note your current verification status (if verified)
 2. Save any verification documents or certificates
 3. Document your business information used for verification
 
 📸 Screenshot placeholder:
-> [Screenshot: Business verification status page]
+
+> \[Screenshot: Business verification status page]
 {% endstep %}
 {% endstepper %}
 
@@ -123,7 +130,7 @@ Before disconnecting, export any critical information:
 
 {% stepper %}
 {% step %}
-#### Remove Phone Number from Old WABA
+**Remove Phone Number from Old WABA**
 
 1. Log into your old WhatsApp Business API provider
 2. Navigate to your WABA account settings
@@ -135,18 +142,20 @@ Before disconnecting, export any critical information:
 {% endhint %}
 
 📸 Screenshot placeholder:
-> [Screenshot: Phone number disconnection option in old provider]
+
+> \[Screenshot: Phone number disconnection option in old provider]
 {% endstep %}
 
 {% step %}
-#### Verify Disconnection
+**Verify Disconnection**
 
 1. Confirm that your phone number is no longer associated with the old WABA account
 2. Wait a few minutes to ensure the disconnection is complete
 3. You may receive a notification confirming the disconnection
 
 📸 Screenshot placeholder:
-> [Screenshot: Disconnection confirmation message]
+
+> \[Screenshot: Disconnection confirmation message]
 {% endstep %}
 {% endstepper %}
 
@@ -154,18 +163,19 @@ Before disconnecting, export any critical information:
 
 {% stepper %}
 {% step %}
-#### Open Channel Connection in Luluchat
+**Open Channel Connection in Luluchat**
 
 1. Go to **Inbox** in Luluchat
 2. Click **Connect your Channel** (or navigate to channel settings if already connected)
 3. Select **WhatsApp Cloud** (WABA)
 
 📸 Screenshot placeholder:
-> [Screenshot: Channel connection page with WhatsApp Cloud option]
+
+> \[Screenshot: Channel connection page with WhatsApp Cloud option]
 {% endstep %}
 
 {% step %}
-#### Enter WABA Credentials
+**Enter WABA Credentials**
 
 1. Enter your **Phone Number ID** from Meta Business Manager
 2. Enter your **Business Account ID**
@@ -174,26 +184,29 @@ Before disconnecting, export any critical information:
 
 {% hint style="info" %}
 **Where to Find Credentials**:
-- **Phone Number ID**: Meta Business Manager > WhatsApp Accounts > Your Account > Phone Numbers
-- **Business Account ID**: Meta Business Manager > Business Settings > Accounts > WhatsApp Accounts
-- **Permanent Access Token**: Meta Business Manager > System Users > Generate Token (requires appropriate permissions)
+
+* **Phone Number ID**: Meta Business Manager > WhatsApp Accounts > Your Account > Phone Numbers
+* **Business Account ID**: Meta Business Manager > Business Settings > Accounts > WhatsApp Accounts
+* **Permanent Access Token**: Meta Business Manager > System Users > Generate Token (requires appropriate permissions)
 
 For detailed instructions, see [Connect Your Channel](../inbox/connect-channel.md) and [Integration Settings](../settings/account/integration.md).
 {% endhint %}
 
 📸 Screenshot placeholder:
-> [Screenshot: WABA connection form with credential fields]
+
+> \[Screenshot: WABA connection form with credential fields]
 {% endstep %}
 
 {% step %}
-#### Verify Connection
+**Verify Connection**
 
 1. Wait for Luluchat to verify and connect your WABA account
 2. You should see a confirmation message when the connection is successful
 3. Your phone number should now appear as connected in Luluchat
 
 📸 Screenshot placeholder:
-> [Screenshot: Successful WABA connection confirmation]
+
+> \[Screenshot: Successful WABA connection confirmation]
 {% endstep %}
 {% endstepper %}
 
@@ -201,39 +214,41 @@ For detailed instructions, see [Connect Your Channel](../inbox/connect-channel.m
 
 {% stepper %}
 {% step %}
-#### Access Message Templates
+**Access Message Templates**
 
 1. Go to **Message Templates** in Luluchat
 2. Click **Create Template** or **Sync Templates** (if available)
 
 📸 Screenshot placeholder:
-> [Screenshot: Message Templates page in Luluchat]
+
+> \[Screenshot: Message Templates page in Luluchat]
 {% endstep %}
 
 {% step %}
-#### Recreate Your Templates
+**Recreate Your Templates**
 
 1. For each template from your old account:
-   - Click **Create Template**
-   - Enter the template name, category, and content
-   - Add buttons or interactive elements if applicable
-   - Submit for approval
-
+   * Click **Create Template**
+   * Enter the template name, category, and content
+   * Add buttons or interactive elements if applicable
+   * Submit for approval
 2. **Note**: Templates must be approved by WhatsApp before you can use them. This can take minutes to 24 hours.
 
 📸 Screenshot placeholder:
-> [Screenshot: Creating a new message template]
+
+> \[Screenshot: Creating a new message template]
 {% endstep %}
 
 {% step %}
-#### Update Your Message Flows
+**Update Your Message Flows**
 
 1. Go to **Automations** > **Message Flows**
 2. Update any flows that reference old templates
 3. Replace old template references with your newly created templates
 
 📸 Screenshot placeholder:
-> [Screenshot: Message Flow editor showing template selection]
+
+> \[Screenshot: Message Flow editor showing template selection]
 {% endstep %}
 {% endstepper %}
 
@@ -243,26 +258,28 @@ If your business was verified before, you may need to re-verify:
 
 {% stepper %}
 {% step %}
-#### Check Verification Status
+**Check Verification Status**
 
 1. In Meta Business Manager, check your business verification status
 2. If not verified, you'll see an option to start verification
 
 📸 Screenshot placeholder:
-> [Screenshot: Business verification status in Meta Business Manager]
+
+> \[Screenshot: Business verification status in Meta Business Manager]
 {% endstep %}
 
 {% step %}
-#### Complete Verification Process
+**Complete Verification Process**
 
 1. Follow the business verification process in Meta Business Manager
 2. Submit required documents and information
 3. Wait for approval (this can take several days to weeks)
 
-For detailed information, see [Business Verification](./business-verification.md).
+For detailed information, see [Business Verification](business-verification.md).
 
 📸 Screenshot placeholder:
-> [Screenshot: Business verification application form]
+
+> \[Screenshot: Business verification application form]
 {% endstep %}
 {% endstepper %}
 
@@ -270,36 +287,39 @@ For detailed information, see [Business Verification](./business-verification.md
 
 {% stepper %}
 {% step %}
-#### Test Message Sending
+**Test Message Sending**
 
 1. Send a test message to yourself or a test contact
 2. Verify that messages are delivered correctly
 3. Test template messages if applicable
 
 📸 Screenshot placeholder:
-> [Screenshot: Test message in Inbox]
+
+> \[Screenshot: Test message in Inbox]
 {% endstep %}
 
 {% step %}
-#### Verify Message Flows
+**Verify Message Flows**
 
 1. Test your automated message flows
 2. Ensure all flows are working correctly with new templates
 3. Check that triggers and actions function as expected
 
 📸 Screenshot placeholder:
-> [Screenshot: Testing a message flow]
+
+> \[Screenshot: Testing a message flow]
 {% endstep %}
 
 {% step %}
-#### Check Broadcasts
+**Check Broadcasts**
 
 1. Review your broadcast settings
 2. Test a small broadcast to ensure it works
 3. Verify that broadcast limits and settings are correct
 
 📸 Screenshot placeholder:
-> [Screenshot: Broadcast test results]
+
+> \[Screenshot: Broadcast test results]
 {% endstep %}
 {% endstepper %}
 
@@ -335,9 +355,9 @@ For detailed information, see [Business Verification](./business-verification.md
 
 ## Related Documentation
 
-- [Connect Your Channel](../inbox/connect-channel.md) - Detailed guide on connecting WABA in Luluchat
-- [Integration Settings](../settings/account/integration.md) - How to manage WABA credentials
-- [Message Templates](../message-templates.md) - How to create and manage message templates
-- [Business Verification](./business-verification.md) - Complete guide on business verification
-- [Service Window](./service-window.md) - Understanding the 24-hour messaging window
-- [Messaging Limits & Quality](./messaging-limits-quality.md) - Information about messaging tiers and limits
+* [Connect Your Channel](../inbox/connect-channel.md) - Detailed guide on connecting WABA in Luluchat
+* [Integration Settings](../settings/account/integration.md) - How to manage WABA credentials
+* [Message Templates](../message-templates.md) - How to create and manage message templates
+* [Business Verification](business-verification.md) - Complete guide on business verification
+* [Service Window](service-window.md) - Understanding the 24-hour messaging window
+* [Messaging Limits & Quality](messaging-limits-quality.md) - Information about messaging tiers and limits

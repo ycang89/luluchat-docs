@@ -12,17 +12,17 @@ Reusable saved replies you can insert into conversations to respond faster and s
 
 {% stepper %}
 {% step %}
-#### Open the conversation
+**Open the conversation**
 
 In `Inbox`, open the conversation where you want to use a Quick Reply.
 
 📸 Screenshot placeholder:
 
-> [Screenshot: Conversation thread with message editor showing Quick Reply option]
+> \[Screenshot: Conversation thread with message editor showing Quick Reply option]
 {% endstep %}
 
 {% step %}
-#### Insert a Quick Reply
+**Insert a Quick Reply**
 
 Click the Quick Reply control or shortcut, pick the reply you need, and insert it into the message editor.
 
@@ -32,13 +32,13 @@ Click the Quick Reply control or shortcut, pick the reply you need, and insert i
 {% endstep %}
 
 {% step %}
-#### Personalize and send
+**Personalize and send**
 
 Edit any placeholders (e.g., names, order IDs) and send the message.
 
 📸 Screenshot placeholder:
 
-> [Screenshot: Message editor with inserted Quick Reply text ready to send]
+> \[Screenshot: Message editor with inserted Quick Reply text ready to send]
 {% endstep %}
 {% endstepper %}
 

@@ -17,7 +17,7 @@ The flow starts when any of the configured triggers fire:
 
 {% stepper %}
 {% step %}
-#### Open the Starting Step
+**Open the Starting Step**
 
 Every new flow starts with a **Starting Step** already on the board. Click on it to open the trigger configuration panel.
 
@@ -27,7 +27,7 @@ Every new flow starts with a **Starting Step** already on the board. Click on it
 {% endstep %}
 
 {% step %}
-#### Add a Trigger
+**Add a Trigger**
 
 Click one of the trigger buttons to add it:
 
@@ -42,13 +42,13 @@ Click one of the trigger buttons to add it:
 {% endstep %}
 
 {% step %}
-#### Configure Your Trigger
+**Configure Your Trigger**
 
 Each trigger type has its own configuration. See the sections below for detailed setup instructions.
 {% endstep %}
 
 {% step %}
-#### Add Multiple Triggers (Optional)
+**Add Multiple Triggers (Optional)**
 
 You can add multiple triggers to a single flow. The flow will start if **any** of them fire (e.g., the flow starts if the user types "Hi" OR clicks a specific WhatsApp Link).
 
@@ -149,7 +149,7 @@ You can add multiple triggers to a single flow. The flow will start if **any** o
 * The event must include a customer's phone number to trigger the flow.
 * You can map event data (like order ID or customer name) to Custom Attributes for use in your messages.
 
-**For Shopify**: See the [Shopify App Event Trigger Guide](../shopify-app-event-trigger) for detailed instructions on configuring Shopify events and using Shopify custom attributes in your messages.
+**For Shopify**: See the [Shopify App Event Trigger Guide](../shopify-app-event-trigger/) for detailed instructions on configuring Shopify events and using Shopify custom attributes in your messages.
 
 ***
 
@@ -186,7 +186,28 @@ You can add multiple triggers to a single flow. The flow will start if **any** o
 * **Security**: Enable webhook authentication in Settings > Message Flows to protect your webhook URL.
 * **Response Mapping**: Map webhook response fields to Custom Attributes to personalize your messages.
 
-**For developers**: See the [Webhook Trigger Developer Guide](../../developer-guide/webhook-trigger) for technical implementation details, API requirements, and data formatting.
+**For developers**: See the [Webhook Trigger Developer Guide](../../developer-guide/webhook-trigger/) for technical implementation details, API requirements, and data formatting.
+
+***
+
+### 5. Meta Ad&#x20;
+
+**What it does**: Configure it with Meta Post Id or Ad Id, it will directly trigger this message flow.
+
+**How to configure**:
+
+1. Click **Meta Ad** in the Starting Step configuration.
+2. There is two way to link your Meta Ad, one is link with Post Id , second way is link with Ad Id
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-26 at 6.30.28 PM.png" alt=""><figcaption></figcaption></figure>
+
+3. If source type is ad, get your Ad ID number in the Ads Manager and copy the number
+
+<figure><img src="../../.gitbook/assets/image.webp" alt=""><figcaption></figcaption></figure>
+
+4. if source type is post, go to meta business suite and go to content page, locate “Posts & reels”, select the “…” of the post until you see “copy reel ID” or “copy post ID”, click to copy to flow.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-06-26 at 6.33.50 PM.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -199,7 +220,7 @@ Once any trigger fires, the flow immediately starts executing from the first ste
 * **First Node**: The Starting Step is always the first node executed in any flow.
 * **No Incoming Links**: This node cannot have arrows pointing _to_ it; it only has an arrow pointing _from_ it to the next step.
 * **Multiple Triggers**: You can add multiple triggers to one flow. The flow starts if **any** of them fire.
-* **Trigger Limits**: Configure trigger limits in [Flow Settings](../message-flows-editor) to prevent the same flow from firing too frequently for the same customer.
+* **Trigger Limits**: Configure trigger limits in [Flow Settings](../message-flows-editor/) to prevent the same flow from firing too frequently for the same customer.
 * **Channel-Specific**: Triggers are tied to your connected WhatsApp channel. Ensure your channel is active for triggers to work.
 
 ## Common issues & solutions
@@ -207,7 +228,7 @@ Once any trigger fires, the flow immediately starts executing from the first ste
 * **Keyword not triggering**: Check that the match condition matches your test message exactly. Remember that "is" requires an exact match, while "contain" is more flexible.
 * **WhatsApp Link not working**: Ensure the link is copied correctly and that the customer's phone has WhatsApp installed. The link must be opened on a device with WhatsApp.
 * **App Event not firing**: Verify that the app integration is properly configured and that the event you selected is actually occurring in that app.
-* **Webhook not received**: Check that your external system is sending a POST request (not GET) and that the `contact_number` field is included in the request body. Verify the webhook URL is correct. For technical details, see the [Webhook Trigger Developer Guide](../../developer-guide/webhook-trigger).
+* **Webhook not received**: Check that your external system is sending a POST request (not GET) and that the `contact_number` field is included in the request body. Verify the webhook URL is correct. For technical details, see the [Webhook Trigger Developer Guide](../../developer-guide/webhook-trigger/).
 
 ## Best practice 💡
 

@@ -20,7 +20,7 @@ Shopify Integration allows you to connect your Shopify store with Luluchat, enab
 
 {% stepper %}
 {% step %}
-#### Sign Up or Log In to Shopify
+**Sign Up or Log In to Shopify**
 
 Sign up or log in to your Shopify account at [https://www.shopify.com/](https://www.shopify.com/).
 
@@ -30,7 +30,7 @@ Sign up or log in to your Shopify account at [https://www.shopify.com/](https://
 {% endstep %}
 
 {% step %}
-#### Navigate to Apps and Sales Channels
+**Navigate to Apps and Sales Channels**
 
 Log in to your Shopify account, then go to **Settings** > **Apps and sales channels**.
 
@@ -40,7 +40,7 @@ Log in to your Shopify account, then go to **Settings** > **Apps and sales chann
 {% endstep %}
 
 {% step %}
-#### Create a New App
+**Create a New App**
 
 Click on **Develop Apps**, then click **Create an app**.
 
@@ -48,7 +48,7 @@ Click on **Develop Apps**, then click **Create an app**.
 {% endstep %}
 
 {% step %}
-#### Name Your App
+**Name Your App**
 
 Give the app a **name** (e.g., "Luluchat Integration") and click **Create App**.
 
@@ -56,7 +56,7 @@ Give the app a **name** (e.g., "Luluchat Integration") and click **Create App**.
 {% endstep %}
 
 {% step %}
-#### Configure Admin API Scopes
+**Configure Admin API Scopes**
 
 Click on **Configure Admin API scopes**.
 
@@ -64,7 +64,7 @@ Click on **Configure Admin API scopes**.
 {% endstep %}
 
 {% step %}
-#### Grant Required Access Scopes
+**Grant Required Access Scopes**
 
 **Grant access scope** to this app. Below are the access scopes needed. Use the search field to find each scope and tick the checkbox:
 
@@ -85,7 +85,7 @@ You should have **8 selected scopes** at the end. Click the **Save** button to s
 {% endstep %}
 
 {% step %}
-#### Install the App
+**Install the App**
 
 Click on the **Install app** button to install this custom app to your Shopify store.
 
@@ -95,7 +95,7 @@ Click on the **Install app** button to install this custom app to your Shopify s
 {% endstep %}
 
 {% step %}
-#### Reveal and Copy the Admin API Access Token
+**Reveal and Copy the Admin API Access Token**
 
 Click on the **Reveal token** button once. This will display your **Admin API Access Token**. Be sure to **copy the token** and securely store it for future use when connecting Luluchat.
 
@@ -111,7 +111,7 @@ Click on the **Reveal token** button once. This will display your **Admin API Ac
 
 {% stepper %}
 {% step %}
-#### Access the Apps Section
+**Access the Apps Section**
 
 To access this module, in the side navigation menu, click **Apps**. Alternatively, go to `Settings` > `Account Management` > `Integration` and scroll to the Apps section.
 
@@ -121,7 +121,7 @@ To access this module, in the side navigation menu, click **Apps**. Alternativel
 {% endstep %}
 
 {% step %}
-#### Click on Shopify App
+**Click on Shopify App**
 
 Click on the **Shopify** app card to open the connection page.
 
@@ -129,7 +129,7 @@ Click on the **Shopify** app card to open the connection page.
 {% endstep %}
 
 {% step %}
-#### Enter Your Shopify Credentials
+**Enter Your Shopify Credentials**
 
 Enter the **Admin API Access Token** you copied from Shopify and your **Shopify URL** (just the store name, without .myshopify.com). Once you have filled in the required information, click on the **Connect** button.
 
@@ -143,7 +143,7 @@ Enter the **Admin API Access Token** you copied from Shopify and your **Shopify 
 * **Event Sync**: Shopify events (orders, fulfillments, customer updates) can now trigger actions in Luluchat.
 * **Data Available**: Customer and order data from Shopify becomes available for use in Message Flows and automations.
 
-**Next Step**: After connecting, you'll need to configure webhooks in Shopify to enable event notifications. See [Shopify Webhook Configuration](shopify-webhook-configuration) for detailed instructions.
+**Next Step**: After connecting, you'll need to configure webhooks in Shopify to enable event notifications. See [Shopify Webhook Configuration](shopify-webhook-configuration/) for detailed instructions.
 
 ## Important behavior to know
 
@@ -167,5 +167,5 @@ Enter the **Admin API Access Token** you copied from Shopify and your **Shopify 
 
 ## Related Documentation
 
-* [Shopify Webhook Configuration](shopify-webhook-configuration) - Learn how to configure webhooks for Shopify events
-* [Shopify App Event Trigger in Message Flows](../../automations/shopify-app-event-trigger) - Learn how to configure Shopify events as triggers and use Shopify data in your messages
+* [Shopify Webhook Configuration](shopify-webhook-configuration/) - Learn how to configure webhooks for Shopify events
+* [Shopify App Event Trigger in Message Flows](../../automations/shopify-app-event-trigger/) - Learn how to configure Shopify events as triggers and use Shopify data in your messages

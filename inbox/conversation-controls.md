@@ -15,7 +15,7 @@ Quick actions to organize and control attention on individual conversations: pin
 
 {% stepper %}
 {% step %}
-#### Open the conversation
+**Open the conversation**
 
 In `Inbox`, mouse over the conversation you want to control.
 
@@ -25,7 +25,7 @@ In `Inbox`, mouse over the conversation you want to control.
 {% endstep %}
 
 {% step %}
-#### Apply the control you need
+**Apply the control you need**
 
 * Pin/Unpin: click the pin icon to stick/unstick the conversation to the top of your list.
 * Mute/Unmute: toggle the mute/bell icon to silence/restore notifications for this thread.
@@ -38,7 +38,7 @@ In `Inbox`, mouse over the conversation you want to control.
 {% endstep %}
 
 {% step %}
-#### Confirm the state
+**Confirm the state**
 
 Check the icons/list state to ensure the action applied (pinned indicator, muted bell, unread badge, archive move).
 
