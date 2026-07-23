@@ -80,10 +80,8 @@ You may check out your submitted response using the button below.
 4.  In the **URL** field, enter:
 
     ```
-    https://form.luluchat.io/preview/{{preview_code}}
+    https://form.luluchat.io/preview/
     ```
-
-    * `{{preview_code}}` will be a variable that Luluchat fills with a unique preview code per response.
 5.  In **Add sample URL**, enter a sample URL for review, for example:
 
     ```
