@@ -2,7 +2,7 @@
 
 ## What is Reports?
 
-Reports is your analytics hub in Luluchat, providing insights into conversations, team performance, tag usage, and system activity. Use Reports to track key metrics, identify trends, and make data-driven decisions about your customer communication strategy.
+Reports is your analytics hub in Luluchat, providing insights into conversations, team performance, tag usage, tickets, deals, Meta ad performance, and system activity. Use Reports to track key metrics, identify trends, and make data-driven decisions about your customer communication strategy.
 
 {% hint style="info" %}
 **Key Benefits**
@@ -47,6 +47,24 @@ Reports is your analytics hub in Luluchat, providing insights into conversations
       <td><strong>Logs</strong></td>
       <td>View message activity and contact growth patterns</td>
       <td><a href="./logs.md">./logs.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Tickets</strong></td>
+      <td>Track ticket volume, workload, categories and priorities</td>
+      <td><a href="./tickets.md">./tickets.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Deals</strong></td>
+      <td>Track won and lost deals, pipeline health and monthly sales</td>
+      <td><a href="./deals.md">./deals.md</a></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Meta Ads</strong></td>
+      <td>See which ads and posts start conversations and turn into leads</td>
+      <td><a href="./meta-ads.md">./meta-ads.md</a></td>
       <td></td>
     </tr>
   </tbody>

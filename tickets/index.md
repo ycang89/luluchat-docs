@@ -54,12 +54,6 @@ The Tickets module helps you organize and manage your customer support and inter
   </thead>
   <tbody>
     <tr>
-      <td><strong>Summary</strong></td>
-      <td>High-level reports and overview of your ticketing pipelines</td>
-      <td><a href="./summary.md">./summary.md</a></td>
-      <td></td>
-    </tr>
-    <tr>
       <td><strong>Board</strong></td>
       <td>The visual Kanban interface for managing active tickets</td>
       <td><a href="./board.md">./board.md</a></td>
@@ -71,5 +65,15 @@ The Tickets module helps you organize and manage your customer support and inter
       <td><a href="./list.md">./list.md</a></td>
       <td></td>
     </tr>
+    <tr>
+      <td><strong>Tickets Report</strong></td>
+      <td>Ticket volume, workload and breakdowns, under Reports</td>
+      <td><a href="../reports/tickets.md">../reports/tickets.md</a></td>
+      <td></td>
+    </tr>
   </tbody>
 </table>
+
+{% hint style="info" %}
+The **Summary** tab has moved. Ticket reports are now under `Reports` > `Tickets`. See [Tickets Report](../reports/tickets.md).
+{% endhint %}

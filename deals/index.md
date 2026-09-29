@@ -7,10 +7,11 @@ The Deals module is designed to help you track your sales opportunities. It allo
 {% hint style="info" %}
 **Key Features**
 
-- **Sales Pipelines**: Custom stages for your unique sales funnel
-- **Revenue Tracking**: Assign values and track potential revenue
-- **Contact Integration**: Link deals to contacts for complete journey view
-- **Performance Analytics**: Win rates, conversion metrics, and pipeline health
+- **Sales Pipelines**: Custom stages for your unique sales funnel, with Won and Lost stage types
+- **Revenue Tracking**: Assign amounts and see stage totals at a glance
+- **Contact Integration**: Link deals to contacts and create them straight from the Inbox
+- **Automation**: Create or move deals from message flows, and start flows when a deal changes stage
+- **Reporting**: Won/lost counts, pipeline health and monthly sales in the Deals Report
 {% endhint %}
 
 ## Core Features
@@ -19,25 +20,25 @@ The Deals module is designed to help you track your sales opportunities. It allo
 {% column %}
 **Sales Pipelines**
 - Custom stages
-- Match your funnel
+- Won / Lost stage types
 {% endcolumn %}
 
 {% column %}
 **Revenue Tracking**
-- Assign values
-- Track totals
+- Assign amounts
+- Totals per stage
 {% endcolumn %}
 
 {% column %}
 **Contact Integration**
 - Link to contacts
-- Complete journey
+- Create from Inbox
 {% endcolumn %}
 
 {% column %}
 **Reporting**
-- Win rates
-- Performance metrics
+- Won & lost deals
+- Monthly sales
 {% endcolumn %}
 {% endcolumns %}
 
@@ -54,12 +55,6 @@ The Deals module is designed to help you track your sales opportunities. It allo
   </thead>
   <tbody>
     <tr>
-      <td><strong>Summary</strong></td>
-      <td>Visual reports on your sales performance and pipeline health</td>
-      <td><a href="./summary.md">./summary.md</a></td>
-      <td></td>
-    </tr>
-    <tr>
       <td><strong>Board</strong></td>
       <td>The visual Kanban interface for managing active sales opportunities</td>
       <td><a href="./board.md">./board.md</a></td>
@@ -71,5 +66,21 @@ The Deals module is designed to help you track your sales opportunities. It allo
       <td><a href="./list.md">./list.md</a></td>
       <td></td>
     </tr>
+    <tr>
+      <td><strong>Deals Report</strong></td>
+      <td>Sales performance and pipeline health, under Reports</td>
+      <td><a href="../reports/deals.md">../reports/deals.md</a></td>
+      <td></td>
+    </tr>
   </tbody>
 </table>
+
+{% hint style="info" %}
+The **Summary** tab has moved. Sales reports for your deals are now under `Reports` > `Deals`. See [Deals Report](../reports/deals.md).
+{% endhint %}
+
+## Deals in Automations
+
+* **[Add to Deal Stage](../automations/logics/actions/add-deal-stage.md)**: Create a deal for a contact, or move their deal, from a message flow.
+* **[Deal Stage trigger](../automations/steps/trigger.md)**: Start a message flow when a deal enters a stage, for example send a thank-you message when a deal is *Won*.
+* **[Send Conversions API Event](../automations/logics/actions/send-conversions-api-event.md)**: Report won deals to Meta as a *Purchase* so your ads optimise on real sales.
