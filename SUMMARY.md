@@ -62,6 +62,7 @@
         * [Opt In](automations/logics/actions/opt-in.md)
         * [Opt Out](automations/logics/actions/opt-out.md)
         * [Add to Deal Stage](automations/logics/actions/add-deal-stage.md)
+        * [Send Conversions API Event](automations/logics/actions/send-conversions-api-event.md)
       * [Round Robin](automations/logics/round-robin.md)
       * [Smart Delay](automations/logics/smart-delay.md)
       * [Condition](automations/logics/condition.md)

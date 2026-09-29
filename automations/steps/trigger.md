@@ -12,6 +12,8 @@ The flow starts when any of the configured triggers fire:
 * A customer clicks a **WhatsApp Link** you've shared
 * An external app sends an **App Event** (like Shopify order created)
 * An external system sends a **Webhook** request to Luluchat
+* A deal moves into a selected stage (**Deal Stage**)
+* A booking event happens on a selected calendar (**Booking Event**)
 
 ## How to set it up (Step by Step)
 
@@ -35,10 +37,10 @@ Click one of the trigger buttons to add it:
 * WhatsApp Link: For shareable clickable links
 * App Event: For integrations with external apps
 * Webhook: For custom external system triggers
+* Deal Stage: When a deal moves into selected pipeline stages (requires Deals)
+* Booking Event: When a booking is created, confirmed, cancelled and more (requires Bookings)
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Starting Step configuration showing the four trigger type buttons]
+<figure><img src="../../.gitbook/assets/flow-trigger-buttons.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -211,6 +213,80 @@ You can add multiple triggers to a single flow. The flow will start if **any** o
 
 ***
 
+### 6. Deal Stage Trigger
+
+**What it does**: Starts the flow for the deal's contact whenever a deal is moved into one of the stages you select.
+
+**How to configure**:
+
+1. Click **Deal Stage** in the Starting Step configuration.
+2. Click the new **Deal Stage Changed** card to open its settings.
+3. Select a **Deal Pipeline**.
+4. Select one or more **Deal Stages** from that pipeline.
+5. Click **Save**, then publish the flow.
+
+<figure><img src="../../.gitbook/assets/flow-deal-stage-trigger.png" alt=""><figcaption></figcaption></figure>
+
+**When to use it**:
+
+* **Sales Follow-up**: Send a proposal or check-in message when a deal reaches the *Proposal* stage.
+* **Won Deals**: Thank the customer and report a Purchase to Meta with the [Send Conversions API Event](../logics/actions/send-conversions-api-event.md) action.
+* **Lost Deals**: Start a win-back sequence when a deal is marked *Lost*.
+
+**Important behavior to know**:
+
+* Only available when the **Deals** module is enabled for your team.
+* **One Deal Stage trigger per flow**. To react to more stages, select them all in the same trigger.
+* Both a pipeline and at least one stage are required. The card stays red until both are set.
+* Changing the pipeline clears the selected stages, because stages belong to one pipeline.
+* If the pipeline or a stage is later deleted, publishing the flow fails until you select a current one.
+
+***
+
+### 7. Booking Event Trigger
+
+**What it does**: Starts the flow for the booking's contact when a booking event happens on the calendars you select.
+
+**How to configure**:
+
+1. Click **Booking Event** in the Starting Step configuration.
+2. Click the new **Booking Event** card to open its settings.
+3. Select an **Event** (see the table below).
+4. Select one or more **Calendars**.
+5. Click **Save**, then publish the flow.
+
+<figure><img src="../../.gitbook/assets/flow-booking-event-trigger.png" alt=""><figcaption></figcaption></figure>
+
+**Supported events**:
+
+| Event | Fires when |
+| --- | --- |
+| Booking Created | A new booking is made |
+| Booking Confirmed | A booking is confirmed (manual-confirmation calendars) |
+| Booking Updated | A booking's date, time or details change |
+| Booking Reminder | The booking reminder is sent |
+| Booking Cancelled | A booking is cancelled |
+| Booking Done | A booking is marked as done |
+| Booking No Show | The customer is marked as a no-show |
+
+**When to use it**:
+
+* **Appointment Confirmation**: Send preparation tips once a booking is confirmed.
+* **No-Show Recovery**: Offer to reschedule when a customer misses an appointment.
+* **Post-Visit Follow-up**: Ask for a review when a booking is marked as done.
+
+**Important behavior to know**:
+
+* Only available when the **Bookings** module is enabled for your team.
+* Both the event and at least one calendar are required. The card stays red until they are set.
+* Each trigger listens to one event. To react to several events, add one Booking Event trigger per event.
+
+Once saved, each trigger card turns green and summarises its settings, both in the panel and on the flow board:
+
+<figure><img src="../../.gitbook/assets/flow-triggers-configured.png" alt=""><figcaption></figcaption></figure>
+
+***
+
 ## What happens after it triggers?
 
 Once any trigger fires, the flow immediately starts executing from the first step after the Starting Step. The customer will begin receiving messages or actions according to your flow design.
@@ -228,6 +304,8 @@ Once any trigger fires, the flow immediately starts executing from the first ste
 * **Keyword not triggering**: Check that the match condition matches your test message exactly. Remember that "is" requires an exact match, while "contain" is more flexible.
 * **WhatsApp Link not working**: Ensure the link is copied correctly and that the customer's phone has WhatsApp installed. The link must be opened on a device with WhatsApp.
 * **App Event not firing**: Verify that the app integration is properly configured and that the event you selected is actually occurring in that app.
+* **Deal Stage or Booking Event button missing**: These triggers only show when the Deals or Bookings module is enabled for your team.
+* **"This flow already has a deal trigger"**: A flow can only have one Deal Stage trigger. Keep one and select all the stages you need in it.
 * **Webhook not received**: Check that your external system is sending a POST request (not GET) and that the `contact_number` field is included in the request body. Verify the webhook URL is correct. For technical details, see the [Webhook Trigger Developer Guide](../../developer-guide/webhook-trigger/).
 
 ## Best practice 💡

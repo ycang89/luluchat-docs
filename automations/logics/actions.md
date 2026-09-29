@@ -9,6 +9,7 @@ The Actions node is a background step that performs specific tasks without sendi
 - To update **Custom Attributes** based on the customer's journey.
 - To trigger external systems via a **Webhook**.
 - To manage opt-in/opt-out status.
+- To report conversions (leads, purchases) back to Meta Ads Manager.
 
 ## How to set it up (Step by Step)
 1. In the Message Flow Editor, click **Add Node (+) > Logics > Actions**.
@@ -48,6 +49,7 @@ For detailed information on each specific action, see the following:
 {% tab title="Messaging & Integration" %}
 - [Send WhatsApp Message](./send-whatsapp-message.md) - Send messages programmatically
 - [Webhook](./webhook.md) - Trigger external systems
+- [Send Conversions API Event](./send-conversions-api-event.md) - Report leads and purchases to Meta Ads Manager
 {% endtab %}
 
 {% tab title="Conversation Management" %}
