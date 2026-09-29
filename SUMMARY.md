@@ -133,6 +133,19 @@
 * [Webhook Trigger](developer-guide/webhook-trigger.md)
 * [Webhook Action](developer-guide/webhook-action.md)
 
+## MCP
+
+* [MCP Overview](mcp/index.md)
+* [Connect with an Access Token](mcp/connect.md)
+* [Available Tools](mcp/tools/index.md)
+  * [Contact Management](mcp/tools/contact-management.md)
+  * [Inbox Tabs](mcp/tools/inbox-tabs.md)
+  * [Workspace Management](mcp/tools/workspace-management.md)
+  * [Deal](mcp/tools/deal.md)
+  * [Ticketing](mcp/tools/ticketing.md)
+  * [Forms](mcp/tools/forms.md)
+  * [Booking](mcp/tools/booking.md)
+
 ## WhatsApp Business App (WABA)
 
 * [Overview](whatsapp-business-app-waba/index.md)

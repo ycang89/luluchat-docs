@@ -48,6 +48,10 @@ You will also need an MCP Token, which you can generate in the `Settings > Accou
 {% endstep %}
 {% endstepper %}
 
+{% hint style="info" %}
+For step-by-step setup in Claude, Cursor, VS Code and other AI apps, see [Connect with an Access Token](../../mcp/connect.md). For what each tool does, see [Available Tools](../../mcp/tools/index.md).
+{% endhint %}
+
 ## What happens after it triggers?
 
 Once configured, your AI agents will be able to provide more relevant, data-driven responses. If a tool permission is granted, the AI can "call" that tool to perform a specific action during a live chat.
