@@ -90,7 +90,6 @@
   * [Logs](reports/logs.md)
   * [Tickets](reports/tickets.md)
   * [Deals](reports/deals.md)
-  * [Meta Ads](reports/meta-ads.md)
 * [Forms](forms/index.md)
   * [Building Forms](forms/build.md)
   * [Settings & SEO](forms/settings.md)

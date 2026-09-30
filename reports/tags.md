@@ -2,119 +2,85 @@
 
 ## What is the Tags Report?
 
-The Tags Report tracks tag growth and usage over time, showing how many contacts have been tagged or untagged during a selected period. Use this report to understand tag adoption, identify popular tags, and see which contacts are associated with specific tags.
+The Tags Report (**Tags Growth**) shows how your tags grow over time: how many contacts have each tag, and how many had it added or removed in a period. Use it to see how your contact segments are changing and which contacts were affected.
+
+{% hint style="info" %}
+The screenshots on this page use sample data.
+{% endhint %}
 
 ## When to use it?
 
-* **Tag Strategy**: Monitor which tags are being used most frequently.
-* **Contact Segmentation**: See how your contact segmentation (via tags) is evolving.
-* **Campaign Analysis**: Track tag changes related to specific campaigns or initiatives.
-* **Growth Tracking**: Monitor tag adoption trends over time.
+* **Tag Strategy**: See which tags are growing fastest.
+* **Contact Segmentation**: Follow how your segments change over time.
+* **Campaign Analysis**: Check how many contacts a campaign tagged.
+* **Quality Check**: See exactly which contacts had a tag added or removed.
 
 ## How to use it (Step by Step)
 
 {% stepper %}
 {% step %}
-#### Open Tags Report
+#### Open the Tags Report
 
 Go to `Reports` > `Tags` from the left menu.
-
-<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 3.59.13 PM.png" alt=""><figcaption></figcaption></figure>
-
-> \[Screenshot: Tags report page with date range selector]
 {% endstep %}
 
 {% step %}
-#### Select Date Range
+#### Choose a date range
 
-Choose a date range using the preset options (Last 7 days, Last 30 days, This month, This year) or select a custom range using the date picker.
+Click the date menu at the top right. Choose **Last 30 days** (the default), **Last 14 days**, **Last 7 days**, **Today**, **This Week**, **This Month**, **This Year**, or **Custom Date**.
 {% endstep %}
 
 {% step %}
-#### Select Tags to Analyze
+#### Select tags
 
-In the "Select Tags" section, choose one or more tags from the dropdown. You can select multiple tags to compare their growth patterns. The report will show data only for the selec
-
-**Note**: If no tags are selected, the charts and tables will be empty. At least one tag must be selected to view data.
+Under **Select Tags**, choose one or more tags to compare. Your first tag is selected for you when the page opens.
 {% endstep %}
 
 {% step %}
-#### Review Tag Growth Chart
+#### Review All-Time Cumulative Tags
 
-The "All-Time Cumulative Tags" chart shows the cumulative growth of selected tags over time. Each tag appears as a separate line, making it easy to compare growth rates.
+<figure><img src="../.gitbook/assets/report-tags.png" alt="Tags Growth report with selected tags and All-Time Cumulative Tags chart"><figcaption><p>Tags Growth</p></figcaption></figure>
+
+The **All-Time Cumulative Tags** chart shows:
+
+* **Line**: The total number of contacts with the tag, all-time.
+* **Columns**: New contacts tagged on each day.
+
+The number above the chart for each tag is how many contacts have that tag right now, regardless of the date range.
 {% endstep %}
 
 {% step %}
-#### View Tag Changes Table
+#### Review Tag Changes
 
-Below the chart, the "Tag Changes" table shows:
+The **Tag Changes** table shows, for each selected tag:
 
-* Name: The tag name.
-* Added this period: Number of contacts that received this tag during the selected period.
-* Removed this period: Number of contacts that had this tag removed during the selected period.
+* **Name**: The tag name.
+* **Added this period**: Contacts that got this tag in the selected period.
+* **Removed this period**: Contacts that had this tag removed in the selected period.
 
-<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 3.59.24 PM.png" alt=""><figcaption></figcaption></figure>
+Click **More** on a row to see the contacts in two tabs: **Added Contact List** and **Removed Contact List**. Click a name to open the contact, or the **Inbox** icon to open the conversation.
 
-> \[Screenshot: Tag Changes table with columns for name, added, and removed counts]
-{% endstep %}
-
-{% step %}
-#### View Contact Lists (Optional)
-
-Click the "More" button on any tag row to expand and see detailed contact lists:
-
-* Added Contact List: Shows all contacts that received this tag during the selected period.
-* Removed Contact List: Shows all contacts that had this tag removed during the selected period.
-
-Each contact list shows:
-
-* Contact name (clickable to view profile)
-* Contact number
-* Link to open the conversation in Inbox
-{% endstep %}
-
-{% step %}
-#### Export Data (Optional)
-
-Click the Export button in the Tag Changes table toolbar to download an Excel file with tag change data.
+<figure><img src="../.gitbook/assets/report-tags-changes.png" alt="Tag Changes table with the Added Contact List expanded"><figcaption><p>Tag Changes with the contact list expanded</p></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 
-## What happens after you use it?
-
-* **Charts Displayed**: The cumulative growth chart updates to show selected tags.
-* **Table Populated**: The Tag Changes table shows added/removed counts for selected tags.
-* **Contact Lists Available**: Expanded rows show detailed contact information for tag changes.
-
 ## Important behavior to know
 
-* **Tag Selection Required**: You must select at least one tag to see any data. The report doesn't show all tags by default.
-* **Cumulative Growth**: The chart shows cumulative totals (all-time), not just the selected period. This means the line always trends upward or stays flat—it never decreases.
-* **Period-Specific Changes**: The "Added this period" and "Removed this period" columns only count changes that occurred within your selected date range.
-* **Contact Lists**: The expanded contact lists are paginated, so you can browse through all contacts that had tag changes.
+* **Cumulative line**: The line shows all-time totals, not only the selected period.
+* **Period changes**: "Added this period" and "Removed this period" only count changes within the selected date range.
+* **Paginated lists**: The Added and Removed contact lists are paginated, so you can browse every contact.
 
 ## Common issues & solutions
 
-* **No data showing**:
-  * Make sure you've selected at least one tag from the dropdown.
-  * Check that your date range includes periods when tag changes occurred.
-  * Verify that the selected tags actually exist and have been used.
-* **Chart shows no lines**:
-  * Ensure tags are selected and that those tags have activity in the selected date range.
-  * Try expanding your date range to include more historical data.
-* **Can't find a specific tag**:
-  * All available tags appear in the dropdown. If a tag doesn't appear, it may not exist yet—create it in Settings > Tags first.
-* **Contact lists are empty**:
-  * This means no contacts had the selected tag added or removed during the selected period.
-  * Try expanding your date range or selecting different tags.
+* **No data showing**: Make sure at least one tag is selected, and that the date range includes days when the tag was used.
+* **Can't find a tag**: Only existing tags appear. Create it in [Settings > Tags](../settings/data/tags.md) first.
+* **Contact lists are empty**: No contacts had that tag added or removed in the period. Try a longer range.
 
 ## Best practice 💡
 
-* **Regular Monitoring**: Check tag growth weekly to understand how your contact segmentation is evolving.
-* **Compare Tags**: Select multiple tags to compare their adoption rates and identify which tags are most effective.
-* **Review Contact Lists**: Use the expanded contact lists to verify that tags are being applied correctly.
-* **Export for Analysis**: Export tag change data to analyze trends in Excel or other tools.
-* **Tag Naming**: Use consistent tag naming conventions to make reports easier to interpret.
+* **Compare related tags**: Select tags from the same funnel (e.g. *Hot Lead* and *VIP*) to see how contacts move between them.
+* **Check the contact lists**: Make sure tags are being applied to the right contacts.
+* **Use consistent tag names** so the report is easy to read.
 
 ## Related Documentation
 

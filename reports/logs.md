@@ -2,101 +2,88 @@
 
 ## What is the Logs Report?
 
-The Logs Report provides an overview of message activity and new contact growth over time. Use this report to track message volume, understand communication patterns, and monitor how your contact base is growing.
+The Logs Report gives you an overview of message activity and new contact growth over time. Use it to track message volume, spot busy days, and see how your contact base is growing.
+
+`Reports` opens on this page by default.
+
+{% hint style="info" %}
+The screenshots on this page use sample data.
+{% endhint %}
 
 ## When to use it?
 
-* **Activity Monitoring**: Track overall message volume (sent and received) over time.
-* **Growth Analysis**: Monitor how your contact base is growing.
-* **Pattern Recognition**: Identify peak activity times and days.
-* **Performance Overview**: Get a high-level view of your Luluchat account activity.
+* **Activity Monitoring**: Track how many messages you send and receive over time.
+* **Growth Analysis**: See how many new contacts you're getting.
+* **Pattern Recognition**: Find the days and hours when new contacts usually arrive.
+* **Performance Overview**: Get a quick, high-level view of your account activity.
 
 ## How to use it (Step by Step)
 
 {% stepper %}
 {% step %}
-#### Open Logs Report
+#### Open the Logs Report
 
 Go to `Reports` > `Logs` from the left menu.
-
-<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 4.04.15 PM.png" alt=""><figcaption></figcaption></figure>
-
-> \[Screenshot: Logs report page with date range selector]
 {% endstep %}
 
 {% step %}
-#### Select Date Range
+#### Choose a date range
 
-Choose a date range using the preset options (Last 7 days, Last 30 days, This month, This year) or select a custom range using the date picker.
+Click the date menu at the top right. Choose **Last 30 days** (the default), **Last 14 days**, **Last 7 days**, **Today**, **This Week**, **This Month**, **This Year**, or **Custom Date** to pick your own range.
 {% endstep %}
 
 {% step %}
-#### Review Message Performance
+#### Review Message Performance and New Contact Growth
 
-The "Message Performance" card shows:
+<figure><img src="../.gitbook/assets/report-logs.png" alt="Logs report with Message Performance and New Contact Growth cards"><figcaption><p>Message Performance and New Contact Growth</p></figcaption></figure>
 
-* Total Messages Sent: Total number of messages sent from your company during the selected period.
-* Total Messages Received: Total number of messages received by your company during the selected period.
-* Message Trend Chart: A line chart showing daily message volume (sent and received) over the selected period.
+**Message Performance** shows:
+
+* **Total Messages Sent**: Messages sent from your business in the period.
+* **Total Messages Received**: Messages received from contacts in the period.
+* A line chart of messages sent and received each day.
+
+**New Contact Growth** shows:
+
+* **Newly Added Contact**: New contacts added in the period.
+* A line chart of new contacts each day.
+
+The text above each chart summarises the period and points out the busiest day.
 {% endstep %}
 
 {% step %}
-#### Review New Contact Growth
+#### Find peak times with New Contact Time Analysis
 
-The "New Contact Growth" card shows:
+<figure><img src="../.gitbook/assets/report-logs-heatmap.png" alt="New Contact Time Analysis heatmap by day of week and hour"><figcaption><p>New Contact Time Analysis</p></figcaption></figure>
 
-* Newly Added Contact: Total number of new contacts added during the selected period.
-* Growth Trend Chart: A line chart showing daily new contact additions over the selected period.
-{% endstep %}
+The heatmap shows when new contacts are added:
 
-{% step %}
-#### Analyze Contact Activity Heatmap
+* **Rows**: Days of the week.
+* **Columns**: Hours of the day (00:00 to 23:00).
+* **Colour**: Darker cells mean more new contacts in that hour.
 
-The "New Contact Time Analysis" heatmap shows when new contacts are added throughout the week:
-
-* Days of Week: Rows represent days (Monday through Sunday).
-* Hours of Day: Columns represent hours (00:00 through 23:00).
-* Color Intensity: Darker colors indicate more new contacts added during that time slot.
-
-This helps you identify peak times when new contacts are joining your system.
+The text above the heatmap names the busiest day and hour.
 {% endstep %}
 {% endstepper %}
 
-## What happens after you use it?
-
-* **Charts Displayed**: Message and contact growth charts update to show data for the selected period.
-* **Statistics Updated**: Total counts reflect activity within your selected date range.
-* **Heatmap Populated**: The heatmap visualizes new contact activity patterns.
-
 ## Important behavior to know
 
-* **Date Range Impact**: All statistics and charts reflect only activity within your selected date range.
-* **Daily vs Monthly Format**: Charts automatically adjust their time format based on your date range selection (daily for shorter ranges, monthly for year-long ranges).
-* **Heatmap Data**: The heatmap only shows data when new contacts were actually added. If no contacts were added in a time slot, that cell appears white.
-* **Message Counts**: "Messages Sent" includes all outbound messages (manual, automated, broadcasts). "Messages Received" includes all inbound customer messages.
+* **Date range**: Every number and chart reflects only the selected date range.
+* **Daily or monthly**: Charts show one point per day. With **This Year**, they show one point per month.
+* **Message counts**: "Messages Sent" includes all outbound messages (manual, automated and broadcasts). "Messages Received" includes all inbound messages from contacts.
+* **Empty heatmap**: If no contacts were added in the period, the heatmap shows an empty state.
 
 ## Common issues & solutions
 
-* **No data showing**:
-  * Check that your date range includes periods when messages were sent/received or contacts were added.
-  * Verify that your account has activity in the selected period.
-* **Charts are empty**:
-  * Ensure your date range includes actual activity.
-  * Try expanding your date range to include more historical data.
-* **Heatmap is blank**:
-  * This means no new contacts were added during the selected period.
-  * Try expanding your date range or checking a different time period.
-* **Numbers seem incorrect**:
-  * All counts are based on your selected date range. Make sure you're looking at the right period.
-  * Message counts include all message types (manual, automated, broadcasts).
+* **No data showing**: Check that the date range includes days with activity, or choose a longer range.
+* **Heatmap is empty**: No new contacts were added in the selected period. Try a longer range.
+* **Numbers seem high**: Message counts include automated and broadcast messages, not only messages from your team.
 
 ## Best practice 💡
 
-* **Regular Monitoring**: Check this report weekly to track overall account activity and growth.
-* **Identify Patterns**: Use the heatmap to identify peak times for new contact acquisition, which can inform your marketing and support scheduling.
-* **Compare Periods**: Export data or take screenshots to compare activity across different time periods.
-* **Growth Tracking**: Monitor the "New Contact Growth" chart to track the effectiveness of marketing campaigns or lead generation efforts.
-* **Message Volume Analysis**: Use message volume trends to plan resource allocation and identify busy periods.
+* **Check weekly**: Review this report every week to track overall activity and growth.
+* **Plan around peaks**: Use the heatmap to schedule staff and campaigns for the times new contacts arrive.
+* **Track campaigns**: Watch **New Contact Growth** after a campaign to see its effect.
 
 ## Related Documentation
 

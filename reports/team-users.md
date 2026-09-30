@@ -2,109 +2,126 @@
 
 ## What is the Team Users Report?
 
-The Team Users Report provides performance metrics for each team member, including conversation assignments, resolutions, response times, and workload distribution. Use this report to evaluate individual team member performance, identify training needs, and balance workloads.
+The Team Users Report (**Team Users Performance**) compares your team members, and automated senders, side by side: how many conversations and contacts they handled, and how quickly they responded and resolved them. Use it to review performance, balance workload and spot training needs.
+
+{% hint style="info" %}
+The screenshots on this page use sample data.
+{% endhint %}
 
 ## When to use it?
 
-* **Performance Reviews**: Assess individual team member productivity and response times.
-* **Workload Balancing**: Identify team members who are overloaded or underutilized.
-* **Training Needs**: Spot team members who may need additional support or training.
-* **Team Planning**: Make data-driven decisions about team size and resource allocation.
+* **Performance Reviews**: Compare each team member's workload and speed.
+* **Workload Balancing**: Check that work is shared fairly between people with the same job scope.
+* **Training Needs**: Spot team members who respond or resolve more slowly.
+* **Automation Share**: See how much work automations and broadcasts handle compared with your team.
 
 ## How to use it (Step by Step)
 
 {% stepper %}
 {% step %}
-#### Open Team Users Report
+#### Open the Team Users Report
 
 Go to `Reports` > `Team Users` from the left menu.
-
-<figure><img src="../.gitbook/assets/Screenshot 2026-02-13 at 4.03.25 PM.png" alt=""><figcaption></figcaption></figure>
-
-> \[Screenshot: Team Users report page with date range selector]
 {% endstep %}
 
 {% step %}
-#### Select Date Range
+#### Choose Event Date or Conversation Date
 
-Choose a date range using the preset options (Last 7 days, Last 30 days, This month, This year) or select a custom range using the date picker.
+Use the toggle at the top right to choose how the date range is applied:
+
+* **Event Date** (default): Counts activity that happened within the date range, e.g. conversations closed in September.
+* **Conversation Date**: Counts conversations opened within the date range, with their results even if the response or close happened later.
+
+Your choice is remembered and also applies to the [Conversations Report](conversations.md).
 {% endstep %}
 
 {% step %}
-#### Review Performance Table
+#### Choose a date range
 
-The main table shows performance metrics for each team member and system entities. Each row displays:
-
-* Name: Team member name or system entity (AI Agent, Broadcast, Automation, Workflow, Webhook, WA Owner). Some names have tooltips explaining what they represent.
-* Conversation Assigned: Total number of conversations assigned to this person/entity.
-* Conversation Resolved: Total number of conversations closed/resolved.
-* Contact Assigned: Number of unique contacts assigned.
-* Contact Resolved: Number of unique contacts whose conversations were resolved.
-* Average First Response Time: Average time to send the first response after assignment.
-* Average Resolution Time: Average time to resolve (close) conversations.
-* Max Response Time: Longest time taken to send a first response.
-* Max Resolution Time: Longest time taken to resolve a conversation.
+Click the date menu at the top right. Choose **Last 30 days** (the default), **Last 14 days**, **Last 7 days**, **Today**, **This Week**, **This Month**, **This Year**, or **Custom Date**.
 {% endstep %}
 
 {% step %}
-#### Understand System Entities
+#### Compare team members in the charts
 
-Some rows represent system entities rather than human team members:
+<figure><img src="../.gitbook/assets/report-team-users-charts.png" alt="Team Users Performance charts comparing contacts and conversations handled by each team user"><figcaption><p>Team Users Performance charts</p></figcaption></figure>
 
-* AI Agent: Messages sent by the AI Agent feature.
-* Broadcast: Messages sent via broadcasts.
-* Automation: Messages sent by Message Flows.
-* Workflow: Messages sent by Workflows.
-* Webhook: Messages sent via webhook API calls.
-* WA Owner: Activity from WhatsApp mobile app or linked devices (not through Luluchat).
+Each chart compares your team members on one measure:
 
-Hover over the name to see a tooltip explaining what each entity represents.
+| Chart | What it shows |
+| --- | --- |
+| **Contact Assigned** / **Contact Resolved** | Distinct contacts assigned to or resolved by each person. Each contact counts once. |
+| **Conversations Assigned** / **Conversation Resolved** | Every conversation assigned to or resolved by each person, even several from the same contact. |
+| **Average First Response Time** | How long each person took to send the first response, from when the conversation opened. |
+| **Average Resolution Time** | How long each person took to close a conversation, from when it opened. |
+| **Average First Assignment to First Response Time** | How long each person took to respond after being assigned. |
+| **Average Last Assignment to Resolution Time** | How long each person took to close a conversation after it was last assigned to them. |
 {% endstep %}
 
 {% step %}
-#### Export Data (Optional)
+#### Review the performance table
 
-Click the Export button at the top right of the table to download an Excel file with all team user performance data for the selected date range.
+<figure><img src="../.gitbook/assets/report-team-users-table.png" alt="Team users performance table"><figcaption><p>Performance table</p></figcaption></figure>
+
+The table below the charts lists every team member and automated sender. Scroll right to see all columns:
+
+| Column | Description |
+| --- | --- |
+| **Name** | The team member or automated sender |
+| **Message Sent** | Messages they sent |
+| **Notes Created** | Internal notes they added |
+| **Conversation Assigned** / **Conversation Resolved** | Every conversation assigned to or closed by them |
+| **Contact Assigned** / **Contact Resolved** | Distinct contacts assigned to or resolved by them |
+| **Average First Response Time** | Average time to send the first response in a newly opened conversation |
+| **Average First Assignment to First Response Time** | Average time to respond after being assigned |
+| **Average Response Time per Message** | Average time to reply to each message |
+| **Average First Assignment to Resolution Time** | Average time to close, from when the conversation was first assigned |
+| **Average Last Assignment to Resolution Time** | Average time to close, from when the conversation was last assigned |
+| **Average Resolution Time** | Average time to close, from when the conversation opened |
+| **Max Response Time** / **Max Resolution Time** | The single longest response and resolution |
+
+Hover over a column heading's **?** icon for its definition.
+{% endstep %}
+
+{% step %}
+#### Export (Optional)
+
+Click **Export** above the table to download the data as an Excel file.
 {% endstep %}
 {% endstepper %}
 
-## What happens after you use it?
+## Automated senders
 
-* **Table Populated**: The performance table displays all team members and system entities with their metrics.
-* **Data Filtered**: All metrics reflect only activity within the selected date range.
-* **Export Generated**: If you clicked Export, an Excel file downloads with detailed performance data.
+Besides your team members, the report lists these automated senders. Hover over a name's **?** icon to see what it means.
+
+| Name | What it represents |
+| --- | --- |
+| **AI Agent** | Messages sent by the AI Agent |
+| **Broadcast** | Messages sent by broadcasts |
+| **Automation** | Messages sent by message flows |
+| **Workflow** | Messages sent by workflows |
+| **Webhook** | Messages sent through your webhook API calls |
+| **WA Owner** | Anyone using the WhatsApp number outside Luluchat, e.g. the WhatsApp mobile app or a linked device |
 
 ## Important behavior to know
 
-* **Working Hours vs Total Time**: Response and resolution times prioritize "working hours" (excluding non-working hours) when available, falling back to "total time" if working hours aren't configured.
-* **System Entities Included**: The report includes automated systems (AI Agent, Broadcasts, etc.) alongside human team members, giving you a complete picture of message sources.
-* **Unique Contacts**: "Contact Assigned" and "Contact Resolved" count unique contacts, not total conversations. One contact can have multiple conversations.
-* **Date Range Impact**: All metrics are calculated based on activity within your selected date range. Changing the range will update all numbers.
-* **Max Times**: The "Max Response Time" and "Max Resolution Time" show the longest individual instance, which may be an outlier.
+* **Working hours first**: Times use working hours when they're set up, and fall back to total time otherwise.
+* **Contacts vs conversations**: "Contact" columns count each contact once. "Conversation" columns count every conversation, so one contact can be counted several times.
+* **Max times**: Max Response Time and Max Resolution Time show the single longest case, which may be an outlier.
+* **"-" means no activity**: A dash means the person had no activity of that kind in the period.
 
 ## Common issues & solutions
 
-* **Team member not appearing**:
-  * Check that the team member had activity (assignments or resolutions) during the selected date range.
-  * Verify the team member exists in Settings > Users.
-* **All metrics show "-"**:
-  * This means the person/entity had no activity in the selected date range.
-  * Try expanding your date range to include more historical data.
-* **Response times seem incorrect**:
-  * Response times are calculated from when a conversation is assigned to when the first message is sent.
-  * Working hours are used when available, which may make times appear shorter than expected.
-* **System entities showing high numbers**:
-  * This is normal—automated systems (Broadcasts, Automations) can handle many conversations.
-  * Use this data to understand the balance between automated and human responses.
+* **Team member missing or all "-"**: They had no activity in the selected period. Try a longer range, or check they exist in [Settings > Users](../settings/account/users.md).
+* **Resolution times are empty**: Conversations must be closed with **Close Conversation** in the Inbox to count as resolved.
+* **Numbers differ from the Conversations Report**: Check both reports use the same **Event Date** / **Conversation Date** setting and date range.
 
 ## Best practice 💡
 
-* **Regular Reviews**: Check this report weekly or monthly to track team performance trends.
-* **Compare Metrics**: Look at both average and max times to identify outliers and training opportunities.
-* **Balance Workloads**: Use "Conversation Assigned" to ensure work is distributed evenly across team members.
-* **Set Goals**: Use average response and resolution times to set team performance goals.
-* **Export for Analysis**: Export data regularly to track performance trends over time in Excel.
-* **Consider System Entities**: Remember that automated systems handle many conversations—this is expected and helps scale your support.
+* **Review regularly**: Check this report weekly or monthly to follow trends.
+* **Compare like with like**: Compare team members who share the same job scope.
+* **Look at averages and maximums** together to find outliers.
+* **Close conversations**: Make sure your team closes conversations so resolution times are accurate.
 
 ## Related Documentation
 

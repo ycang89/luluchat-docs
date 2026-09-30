@@ -2,7 +2,7 @@
 
 ## What is Reports?
 
-Reports is your analytics hub in Luluchat, providing insights into conversations, team performance, tag usage, tickets, deals, Meta ad performance, and system activity. Use Reports to track key metrics, identify trends, and make data-driven decisions about your customer communication strategy.
+Reports is your analytics hub in Luluchat, providing insights into conversations, team performance, tag usage, tickets, deals, and system activity. Use Reports to track key metrics, identify trends, and make data-driven decisions about your customer communication strategy.
 
 {% hint style="info" %}
 **Key Benefits**
@@ -61,40 +61,31 @@ Reports is your analytics hub in Luluchat, providing insights into conversations
       <td><a href="./deals.md">./deals.md</a></td>
       <td></td>
     </tr>
-    <tr>
-      <td><strong>Meta Ads</strong></td>
-      <td>See which ads and posts start conversations and turn into leads</td>
-      <td><a href="./meta-ads.md">./meta-ads.md</a></td>
-      <td></td>
-    </tr>
   </tbody>
 </table>
 
 ## How to access Reports
 
-Go to `Reports` from the left-hand menu to see all available report types. Each report type has its own dedicated page with specific metrics and filters.
+Click `Reports` in the left menu and choose a report. `Reports` opens on the [Logs](logs.md) report by default. **Tickets** and **Deals** only appear if your plan and access include those modules.
 
-📸 Screenshot placeholder:
-> [Screenshot: Reports menu in the left navigation]
-
-## Common features across all Reports
+## Common features across Reports
 
 {% columns %}
 {% column %}
-**Date Range Selection**
-- Preset options (Last 7/30 days, This month/year)
-- Custom date range picker
+**Date Range**
+- Last 30 / 14 / 7 days, Today, This Week, This Month, This Year
+- **Custom Date** for any range
 {% endcolumn %}
 
 {% column %}
-**Export Functionality**
-- Download as Excel files
-- Offline analysis support
+**Event Date or Conversation Date**
+- On the Conversations and Team Users reports
+- Count what happened in the period, or follow conversations opened in it
 {% endcolumn %}
 
 {% column %}
-**Real-time Data**
-- Current account data
-- Updates as activity occurs
+**Export**
+- Download Conversations and Team Users data as Excel
+- Click any number in the Tickets and Deals reports to open the matching list
 {% endcolumn %}
 {% endcolumns %}
