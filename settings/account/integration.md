@@ -54,6 +54,8 @@ In the **Access Token** section, you can:
 * Create new access tokens for API authentication
 * Revoke tokens that are no longer in use
 
+See [Open API](../../developer-guide/open-api.md) for which scopes to choose and how to call the API, and [Event Webhooks](../../developer-guide/event-webhooks.md) to receive contact updates from Luluchat.
+
 📸 Screenshot placeholder:
 
 > \[Screenshot: Access Token management table with create and revoke options]

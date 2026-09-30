@@ -133,6 +133,8 @@
 * [Data Formatting](developer-guide/data-formatting.md)
 * [Webhook Trigger](developer-guide/webhook-trigger.md)
 * [Webhook Action](developer-guide/webhook-action.md)
+* [Open API](developer-guide/open-api.md)
+* [Event Webhooks](developer-guide/event-webhooks.md)
 
 ## MCP
 
