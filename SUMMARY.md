@@ -128,6 +128,19 @@
     * [Message Flows](settings/tools/message-flows.md)
     * [Broadcast](settings/tools/broadcast.md)
 
+## WhatsApp Business App (WABA)
+
+* [Overview](whatsapp-business-app-waba/index.md)
+  * [Service Window](whatsapp-business-app-waba/service-window.md)
+  * [WhatsApp Calling](whatsapp-business-app-waba/whatsapp-calling.md)
+  * [Charging & Pricing](whatsapp-business-app-waba/charging-pricing.md)
+  * [Message Template Types](whatsapp-business-app-waba/message-template-types.md)
+  * [Coexistence](whatsapp-business-app-waba/coexistence.md)
+  * [Business Verification](whatsapp-business-app-waba/business-verification.md)
+  * [Blue Tick Verification](whatsapp-business-app-waba/blue-tick-verification.md)
+  * [Messaging Limits & Quality](whatsapp-business-app-waba/messaging-limits-quality.md)
+  * [Migrate WABA Account](whatsapp-business-app-waba/migrate-account.md)
+
 ## DEVELOPER GUIDE
 
 * [Data Formatting](developer-guide/data-formatting.md)
@@ -148,16 +161,3 @@
   * [Ticketing](mcp/tools/ticketing.md)
   * [Forms](mcp/tools/forms.md)
   * [Booking](mcp/tools/booking.md)
-
-## WhatsApp Business App (WABA)
-
-* [Overview](whatsapp-business-app-waba/index.md)
-  * [Service Window](whatsapp-business-app-waba/service-window.md)
-  * [WhatsApp Calling](whatsapp-business-app-waba/whatsapp-calling.md)
-  * [Charging & Pricing](whatsapp-business-app-waba/charging-pricing.md)
-  * [Message Template Types](whatsapp-business-app-waba/message-template-types.md)
-  * [Coexistence](whatsapp-business-app-waba/coexistence.md)
-  * [Business Verification](whatsapp-business-app-waba/business-verification.md)
-  * [Blue Tick Verification](whatsapp-business-app-waba/blue-tick-verification.md)
-  * [Messaging Limits & Quality](whatsapp-business-app-waba/messaging-limits-quality.md)
-  * [Migrate WABA Account](whatsapp-business-app-waba/migrate-account.md)
