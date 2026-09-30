@@ -44,6 +44,7 @@ For detailed information on each specific action, see the following:
 - [Save to Attribute](./save-attribute.md) - Save data to custom attributes
 - [Update Attribute](./update-attribute.md) - Update existing custom attributes
 - [Add to Deal Stage](./add-deal-stage.md) - Move deals through sales stages
+- [Add to Ticket Stage](./add-ticket-stage.md) - Create a ticket for the contact
 {% endtab %}
 
 {% tab title="Messaging & Integration" %}

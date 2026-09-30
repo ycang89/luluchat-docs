@@ -1,84 +1,166 @@
 # Tickets: Board
 
 ## What is the Tickets Board?
-The Board is a visual Kanban interface where you manage your day-to-day ticketing operations. Each ticket is represented as a card, and you can move them between columns (stages) as they progress.
+The Board is a visual Kanban interface where you manage your day-to-day ticketing work. Each ticket is a card, and each column is a stage. Move cards from left to right as the work progresses.
 
-## Managing the Board
+Open it from `Tickets` > `Board` in the left menu, then choose a pipeline at the top.
 
-### Creating a Pipeline
-If you haven't created a pipeline yet, you will be prompted to create one.
-1. Click **Create Ticketing Pipeline**.
-2. Give your pipeline a title and define your initial stages.
-3. **Pipeline Visibility**: Choose between:
-   - **Public**: The system creates a publicly accessible URL for each ticket in this pipeline. Anyone with the link can view the ticket without logging in.
-   - **Private**: Only internal team members can access tickets in this pipeline. Tickets require authentication to view.
+<figure><img src="../.gitbook/assets/tickets-board.png" alt="Tickets Board with Open, In Progress, Pending and Solved stages"><figcaption><p>Tickets Board (sample data)</p></figcaption></figure>
 
-📸 Screenshot placeholder:
-> [Screenshot: Pipeline form showing visibility options with Public/Private dropdown]
+## Pipelines
 
-### Working with Stages
-- **Add Stage**: Scroll to the right of the board and click **Add Stage**.
-- **Edit Stage**: Click the **Settings (gear)** icon on a stage header to rename or archive it.
-- **Rearrange**: Drag and drop stage headers to change their order.
+A pipeline is a set of stages for one type of work, e.g. *Customer Support*, *Returns* or *IT Requests*.
 
-### Managing Ticket Cards
-- **Create Ticket**: Click the **+ (Plus)** icon at the top of any stage column.
-- **Move Ticket**: Click and hold a card, then drag it to a new stage.
-- **View/Edit Ticket**: Click on a card to open the ticket details form.
+### Creating a pipeline
+If you don't have a pipeline yet, click **Create Ticketing Pipeline**. To add another pipeline later, open the pipeline selector at the top of the board and click **Create Ticketing Pipeline** at the bottom of the list. The **Create Ticket Pipeline** form opens:
+
+| Field | Description |
+| --- | --- |
+| **Name of your pipeline** | E.g. *Support Pipeline* |
+| **Pipeline Key** | Up to 5 characters used as the ticket number prefix. With the key `SUP`, tickets are numbered `SUP-1`, `SUP-2` and so on. |
+| **Pipeline visibility** | **Private**: only your team can see tickets. **Public**: each ticket also gets a shareable [public link](#public-link-to-ticket). |
+| **Stages** | A new pipeline starts with *Open*, *In Progress* and *Pending*. Rename, delete or add stages with **+ Stage**. |
+| **Final stage** | Every pipeline ends with a *Solved* stage. You can rename it, but it can't be removed. Luluchat counts tickets in this stage as **Done** in the [Tickets Report](../reports/tickets.md). |
+
+{% hint style="warning" %}
+The **Pipeline Key** can't be changed after the pipeline is created. Choose a short, clear key such as `SUP`, `RET` or `IT`.
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/tickets-pipeline-form.png" alt="Create Ticket Pipeline form with Pipeline Key SUP and default stages" width="400"><figcaption><p>Create Ticket Pipeline form</p></figcaption></figure>
+
+### Editing or deleting a pipeline
+Click **Settings** at the top right of the board:
+- **Edit Ticketing Pipeline**: Change the name or the visibility.
+- **Delete Ticketing Pipeline**: Permanently delete the pipeline.
+
+## Stages
+
+- **Add Stage**: Click **+ Stage** at the right end of the board, enter a stage name and click **Add Stage**. New stages are normal (custom) stages.
+- **Rename**: Click the **pencil** icon on a stage header.
+- **Archive**: Click the **folder** icon on a stage header. The *Solved* stage can't be archived.
+- **Reorder**: Drag a stage header to a new position.
+
+Each stage header shows how many tickets are in it. The *Solved* stage has a green header so you can quickly spot finished work.
+
+## Ticket cards
+
+Each card shows:
+- **Tags** on the ticket
+- **Contact** name. Click it to open the conversation in the Inbox.
+- **Due date**, highlighted when it is due within a week or has passed
+- **Ticket number**, e.g. `SUP-12`
+- **Priority** icon
+- **Collaborators** avatars
+
+Actions on the board:
+- **Create Ticket**: Click **+ Ticket** at the bottom of a stage column. The ticket is created in that stage.
+- **Move Ticket**: Drag a card to another stage, or up and down to reorder it.
+- **View/Edit Ticket**: Click a card to open the ticket form.
 
 ## Filtering the Board
-Use the top bar to filter which cards are visible:
-- **Search Summary**: Search for tickets by their title or description.
-- **Collaborators**: Filter by specific team members or "Unassigned".
-- **Advanced Filters**: Click **Filters** to access deeper filtering by **Tags**, **Due Date**, **Ticket Number**, **Priority**, and **Creation/Update Dates**.
+Use the top bar to narrow down the cards:
+- **Search a summary**: Find tickets by words in the summary (title).
+- **Collaborators**: Show tickets for specific team members, or *Unassigned* tickets with no collaborators.
+- **Filters**: Open the filter panel for more options:
 
-📸 Screenshot placeholder:
-> [Screenshot: Tickets Kanban board with cards in various stages and filters active]
+| Filter | Options |
+| --- | --- |
+| **Collaborators** | One or more team members, or *Unassigned* |
+| **Tags** | One or more ticket tags |
+| **Due Date** | *With due date*, *Overdue*, *Due within 1 week*, *Due within 1 month*, *Due within this month* |
+| **Ticket Number** | Part or all of a ticket number, e.g. `SUP-12` |
+| **Priority** | *Highest*, *High*, *Medium*, *Low*, *Lowest* or *Not set* |
+| **Created At / Updated At** | A date range |
+
+The **Filters** button shows how many filters are active. Click **Clear Filters** in the panel to reset them. Your filters are remembered while the browser tab stays open.
 
 ## The Ticket Form
-When you open a ticket, you can manage:
-- **Summary & Description**: The main details of the request.
-- **Assignee & Collaborators**: Who is responsible for the ticket.
-- **Tags**: Categories for easier searching.
-- **Priority**: Mark the urgency of the task.
-- **Due Date**: Set a deadline for resolution.
-- **Activity Logs & Comments**: Track the history of changes and communicate internally.
+Click a card to open **Edit Ticket [SUP-12]**, or click **+ Ticket** to open **Create a Ticket**.
+
+**Left side: the ticket content**
+
+| Field | Description |
+| --- | --- |
+| **Summary** | A short title for the ticket (required) |
+| **Public Link to Ticket** | Shown only for tickets in a public pipeline. Click the copy icon to copy it. |
+| **Description** | Full details of the request |
+| **Attachment** | Upload files up to 100 MB each |
+| **Comments** | Discuss the ticket with your team. See [Comments](#comments). |
+| **History** | Who created, archived or unarchived the ticket, and who changed its stage or collaborators, and when |
+
+**Right side: the ticket details**
+
+| Field | Description |
+| --- | --- |
+| **Ticket Pipeline** | The pipeline the ticket belongs to |
+| **Stage** | The ticket's current stage (required) |
+| **Collaborator** | The team members working on the ticket |
+| **Reporter** | Who raised the ticket. Defaults to you when you create a ticket. |
+| **Contact** | The customer the ticket is about. Click the **Inbox** icon next to it to open their conversation. |
+| **Tag** | Labels for grouping and filtering. Create new tags with a name and color from the tag dropdown. |
+| **Category** | The type of work, e.g. *Billing* or *Technical Issue*. Create new categories from the dropdown. Categories power the *Categories of work* chart in the [Tickets Report](../reports/tickets.md). |
+| **Priority** | *Highest*, *High*, *Medium*, *Low* or *Lowest*. New tickets default to *Medium*. |
+| **Due Date** | When the ticket should be resolved. Shows **Overdue** in red once the date has passed. |
+
+Click **Create Ticket** or **Save Changes** to save. The created and last updated times are shown under the buttons.
+
+To remove a ticket from the board without deleting it, click **Archive Ticket**. You can restore it later from **Archived Tickets** in the [List](./list.md) view.
+
+<figure><img src="../.gitbook/assets/tickets-form.png" alt="Edit Ticket form with public link, attachments, comments and ticket details"><figcaption><p>Ticket form in a public pipeline (sample data)</p></figcaption></figure>
+
+### Comments
+- Type in **Add a comment...** and click **Submit**. You can attach files to a comment.
+- Type **@** to mention a teammate.
+- Use **Edit** or **Delete** under your comment to change or remove it.
+
+In a **public** pipeline, each comment also has a visibility switch:
+- **Private visibility** (default): Only your team can see the comment.
+- **Public visibility**: The comment is also shown on the public ticket page.
 
 ## Public Link to Ticket
 
-### What is Public Link?
-When a pipeline is set to **Public** visibility, Luluchat automatically generates a publicly accessible URL for each ticket in that pipeline. This allows you to share tickets with external stakeholders (customers, partners, vendors) who don't have access to your Luluchat account.
+### What is it?
+When a pipeline's visibility is **Public**, every ticket in it gets a page that anyone with the link can open without logging in, e.g. `https://ticket.luluchat.io/details/...`. Use it to let customers, partners or vendors follow a ticket's progress.
 
-### How it works
-1. **Pipeline Setting**: When creating or editing a pipeline, set the "Pipeline visibility" to **Public**.
-2. **Automatic Generation**: Once a pipeline is public, every ticket created in that pipeline automatically gets a unique public URL.
-3. **No Authentication Required**: Anyone with the public link can view the ticket details, comments, and attachments without needing to log in to Luluchat.
-4. **Sharing**: You can copy and share the public link with external parties via email, messaging apps, or embed it in other systems.
+### How to share a ticket
+{% stepper %}
+{% step %}
+#### Make the pipeline public
+Create the pipeline with **Pipeline visibility** set to **Public**, or change it with **Settings** > **Edit Ticketing Pipeline**.
+{% endstep %}
 
-### When to use Public Links
-- **Customer Support**: Share ticket links with customers so they can track the status of their requests.
-- **External Collaboration**: Allow vendors, partners, or contractors to view relevant tickets without giving them full account access.
-- **Status Updates**: Provide stakeholders with a way to check ticket progress without requiring them to log in.
-- **Integration**: Embed ticket links in external systems or documentation.
+{% step %}
+#### Copy the link
+Open a ticket. Under **Summary**, click the copy icon next to **Public Link to Ticket**.
+{% endstep %}
+
+{% step %}
+#### Choose what the viewer sees
+Switch the comments you want to share to **Public visibility**. Comments stay private unless you switch them.
+{% endstep %}
+{% endstepper %}
 
 ### Important behavior to know
-- **Pipeline-Level Setting**: The public link feature is enabled at the pipeline level. All tickets in a public pipeline get public links; you cannot make individual tickets public in a private pipeline.
-- **Cannot Change After Creation**: Once a pipeline is created, you cannot change its visibility setting. Plan your pipeline structure accordingly.
-- **Security Consideration**: Public links provide read-only access to ticket information. Anyone with the link can view the ticket, so only share links with trusted parties.
-- **Link Format**: Public ticket URLs are unique and cannot be guessed. Each ticket has its own secure link.
-- **Private Pipelines**: Tickets in private pipelines are only accessible to team members who are logged in to Luluchat.
-
-### How to access Public Links
-The public link for a ticket is typically available in the ticket details view. The exact location may vary, but it's usually displayed in the ticket form or details panel when viewing a ticket from a public pipeline.
-
-📸 Screenshot placeholder:
-> [Screenshot: Ticket details showing public link with copy button]
+- **Pipeline-level setting**: All tickets in a public pipeline have a public link. You can't make only some tickets public.
+- **Read-only**: Visitors can view the ticket but can't change it.
+- **Private comments stay private**: Only comments set to **Public visibility** appear on the public page.
+- **Anyone with the link**: Links can't be guessed, but anyone who has one can open it. Only share it with the right people.
 
 ## Important behavior to know
-- **Archiving**: You can archive tickets or entire stages to keep your board tidy without losing data.
-- **Sync with Inbox**: You can create and view tickets directly from the **Contact Info** panel in the `Inbox`.
-- **Pipeline Visibility**: Public pipelines generate shareable links for each ticket, while private pipelines restrict access to team members only.
+- **Ticket numbers** come from the pipeline key and increase automatically, e.g. `SUP-1`, `SUP-2`.
+- **Solved is "done"**: Tickets count as completed in reports when they're moved to the pipeline's *Solved* stage.
+- **Archiving**: Archived tickets and stages disappear from the board, but their data is kept.
+- **Inbox sync**: Tickets linked to a contact appear in the **Tickets** tab of the contact's [Contact Info](../inbox/contact-info/tickets.md) panel.
+
+## Common issues & solutions
+- **Can't find a ticket**: Clear your filters, or check **Archived Tickets** in the [List](./list.md) view.
+- **Can't archive the Solved stage**: The final Done stage is required and can't be archived. Rename it if needed.
+- **Can't change the ticket number prefix**: The Pipeline Key is fixed once the pipeline is created. Create a new pipeline if you need a different key.
+- **No public link on a ticket**: The pipeline is Private. Edit the pipeline and set visibility to **Public**.
+- **Customer can't see a comment on the public page**: Switch that comment to **Public visibility**.
 
 ## Best practice 💡
-- **Keep it Updated**: Move tickets to the next stage as soon as the work is done to maintain an accurate view of the pipeline.
-- **Use Priority**: Always set a priority for new tickets so the team knows what to tackle first.
+- **Keep it updated**: Move tickets as soon as the work progresses so the board and reports stay accurate.
+- **Always set a priority, category and due date** so the team knows what to tackle first and reports stay meaningful.
+- **Use Solved for finished work** instead of leaving tickets in the last working stage.
+- **Keep internal notes private** and only share customer-facing updates as public comments.

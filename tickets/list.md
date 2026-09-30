@@ -1,22 +1,64 @@
 # Tickets: List
 
 ## What is the Tickets List?
-The List view provides a tabular representation of all tickets within a selected pipeline. It is ideal for bulk reviews, detailed searching, and sorting tickets by specific fields like Ticket Number or Last Updated.
+The List view shows all tickets in a pipeline in a single table. It is the best view for detailed searching, sorting and reviewing many tickets at once.
+
+Open it from `Tickets` > `List` in the left menu, then choose a pipeline at the top.
+
+<figure><img src="../.gitbook/assets/tickets-list.png" alt="Tickets list with filter panel and ticket table"><figcaption><p>Tickets List (sample data)</p></figcaption></figure>
+
+Click **Collapse** to hide the filter panel.
 
 ## Using the List View
 
-### Searching and Filtering
-The List view includes powerful search capabilities:
-- **Search by Number**: Enter the full ticket number (e.g., #1001) to find a specific card instantly.
-- **Filter by Status/Stage**: See all tickets in a specific part of the workflow.
-- **Sortable Columns**: Click on column headers like **Priority** or **Last Updated** to sort the list.
+### Filtering
+Use the filter panel above the table, then click **Query**. Click **Reset** to clear all filters.
 
-### Viewing Ticket Details
-Clicking on any row in the list will open the **Ticket Form**, allowing you to view the full history, comments, and attachments.
+| Filter | Use it to find |
+| --- | --- |
+| **Ticket #** | A specific ticket. The pipeline key is filled in for you, so type only the number, e.g. `12` for `SUP-12`. |
+| **Summary** | Tickets with words in the summary |
+| **Stage** | Tickets in one stage |
+| **Priority** | *Highest*, *High*, *Medium*, *Low*, *Lowest* or *Not set* |
+| **Tags** | Tickets with a tag |
+| **Category** | Tickets in a category, e.g. *Billing* |
+| **Collaborators** | Tickets a team member works on |
+| **Reporter** | Tickets raised by a team member |
+| **Due Date** | *With due date*, *Overdue*, *Due within 1 week*, *Due within 1 month* or *Due within this month* |
+| **Created at / Updated at** | Tickets created or changed between two dates |
 
-📸 Screenshot placeholder:
-> [Screenshot: Tickets list view table showing multiple columns and search bar]
+### Viewing Ticket Data
+Each row is a ticket. Click the ticket number to open the [ticket form](./board.md#the-ticket-form).
+
+| Column | Description |
+| --- | --- |
+| **Ticket #** | The ticket number, e.g. `SUP-12` |
+| **Summary** | The ticket title |
+| **Stage** | The ticket's current stage |
+| **Due date** | When the ticket is due. Overdue tickets are marked. |
+| **Priority** | Priority icon. Hover for the name. |
+| **Created at / Updated at** | When the ticket was created and last changed. Hover for the exact time. |
+| **Tags** | Tags on the ticket |
+| **Category** | The ticket's category |
+| **Collaborators** | Team members working on the ticket |
+| **Reporter** | Who raised the ticket |
+
+Use the page size selector at the bottom to show up to 500 tickets per page.
+
+### Archived Tickets
+Click the **folder** icon above the table (*Archived Tickets*) to see tickets that were archived. Select one or more tickets, then use the buttons at the bottom right of the page:
+- **Bulk Unarchive**: Put them back on the board.
+- **Bulk Delete**: Permanently delete them.
+
+<figure><img src="../.gitbook/assets/tickets-archived.png" alt="Archived Tickets window with two tickets selected"><figcaption><p>Archived Tickets (sample data)</p></figcaption></figure>
+
+{% hint style="danger" %}
+Deleted tickets can't be recovered. Archive tickets instead if you might need them later.
+{% endhint %}
+
+### Opening the List from the Tickets Report
+Clicking a card, chart or count in the [Tickets Report](../reports/tickets.md) opens the List in a new tab, already filtered to the tickets behind that number (for example, *tickets in Pending* or *tickets tagged Refund*). Adjust or reset the filters to broaden the list.
 
 ## When to use List vs Board?
-- **Use Board** for visual tracking and dragging tickets through a process.
-- **Use List** when you need to find a specific ticket number or perform a bulk review of ticket data.
+- **Use Board** for day-to-day work and moving tickets through stages.
+- **Use List** to find a specific ticket, review tickets by category, reporter or collaborator, or clean up archived tickets.
