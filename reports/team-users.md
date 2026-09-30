@@ -29,10 +29,10 @@ Go to `Reports` > `Team Users` from the left menu.
 
 Use the toggle at the top right to choose how the date range is applied:
 
-* **Event Date** (default): Counts activity that happened within the date range, e.g. conversations closed in September.
-* **Conversation Date**: Counts conversations opened within the date range, with their results even if the response or close happened later.
+* **Event Date** (default): The day each metric was recorded, e.g. conversations closed in September. Use it for day-to-day team performance.
+* **Conversation Date**: The day the conversation started. Counts conversations opened in the date range, with their results even if the response or close happened later.
 
-Your choice is remembered and also applies to the [Conversations Report](conversations.md).
+See [Event Date vs Conversation Date](conversations.md#event-date-vs-conversation-date) for a worked example. Your choice is remembered and also applies to the [Conversations Report](conversations.md).
 {% endstep %}
 
 {% step %}

@@ -27,12 +27,12 @@ Go to `Reports` > `Conversations` from the left menu.
 {% step %}
 #### Choose Event Date or Conversation Date
 
-Use the toggle at the top right to choose how the date range is applied:
+Use the toggle at the top right to choose which date the report uses:
 
-* **Event Date** (default): Shows activity that happened within the date range. For example, resolution time counts conversations **closed** in the range.
-* **Conversation Date**: Shows conversations **opened** within the date range, with their results even if the response or close happened later.
+* **Event Date** (default): The day each metric was recorded, e.g. the day the first response was sent, or the day the conversation was closed.
+* **Conversation Date**: The day the conversation started (opened).
 
-Your choice is remembered and also applies to the [Team Users Report](team-users.md).
+See [Event Date vs Conversation Date](#event-date-vs-conversation-date) below for an example. Your choice is remembered and also applies to the [Team Users Report](team-users.md).
 {% endstep %}
 
 {% step %}
@@ -91,6 +91,35 @@ Use **Search** to find a contact, and click a column heading with arrows to sort
 Click **Export** above the list to download the conversations in the current tab as an Excel file.
 {% endstep %}
 {% endstepper %}
+
+## Event Date vs Conversation Date
+
+The two options show the same conversations from two different perspectives. The difference is **which date decides whether a conversation belongs to your date range**, and which day it's plotted on in the charts.
+
+| | **Event Date** | **Conversation Date** |
+| --- | --- | --- |
+| **Date used** | The day the metric was recorded: first response sent, first assignee's response sent, or conversation closed | The day the conversation was opened |
+| **Question it answers** | "How did my team perform **during** this period?" | "How were the conversations that **started** in this period handled?" |
+| **Plotted on** | The day the response was sent or the conversation was closed | The day the conversation opened |
+| **Past periods** | Numbers stay the same once the period is over | Numbers can still change, because conversations opened in the period may be answered or closed later |
+
+### Example
+
+A customer messages you on **30 September at 11:00 PM**. Your team replies on **1 October at 9:00 AM** (first response time: 10 hours) and closes the conversation on **2 October**.
+
+| Date range | **Event Date** | **Conversation Date** |
+| --- | --- | --- |
+| **September** | Not counted in response or resolution time, because the reply and close happened in October | Counted: first response time 10 hours, and its resolution time |
+| **October** | Counted: first response time on 1 Oct, resolution time on 2 Oct | Not counted, because the conversation started in September |
+
+### Which one should I use?
+
+* **Use Event Date** for day-to-day team performance, weekly reviews and staff targets. It shows the work your team actually did in the period, and past periods don't change.
+* **Use Conversation Date** to review the customer experience of conversations that started in a period, e.g. "How fast did we respond to everyone who messaged us during the September campaign?" Check again later: recent numbers fill in as open conversations are answered and closed.
+
+{% hint style="info" %}
+The toggle applies to the three time charts, their breakdowns, the Conversation List and the export. The **Opened vs Closed Conversations** chart always counts each conversation on the day it was opened or closed.
+{% endhint %}
 
 ## Conversation List columns
 
@@ -177,7 +206,7 @@ The report shows who opened, responded to or closed each conversation:
 ## Important behavior to know
 
 * **Close conversations**: Resolution time only counts conversations closed with **Close Conversation** in the Inbox.
-* **Event Date vs Conversation Date**: The same period can show different numbers depending on the toggle. Event Date counts what happened in the period; Conversation Date follows the conversations that started in the period.
+* **Event Date vs Conversation Date**: The same period can show different numbers depending on the toggle. Event Date counts what happened in the period; Conversation Date follows the conversations that started in the period. See [Event Date vs Conversation Date](#event-date-vs-conversation-date).
 * **Working hours first**: Times use working hours when set up, and 24-hour time otherwise.
 * **Reassignment**: When a conversation is reassigned, the last assignee's response time starts from the new assignment.
 * **Tab-specific lists**: The Conversation List and its export depend on the selected tab.
