@@ -2,38 +2,32 @@
 
 ## What is Users?
 
-Manage your team by inviting new members and controlling their permissions.
+Manage your team by inviting new members and controlling what they can access.
+
+Go to `Settings` > `Account Management` > `Users`.
+
+<figure><img src="../../.gitbook/assets/settings-users.png" alt="Users page with the Invitation List and Team User list"><figcaption><p>Users (sample data)</p></figcaption></figure>
 
 ## How to set it up (Step by Step)
 
-#### Manage Invitations
+#### Invite team users
 
-The Invitation List shows pending invites.
+1. Click **Invite Team User** to generate an invitation link.
+2. Share the link with your teammate.
 
-* Invite Team User: Click to generate a new invitation link.
-* Copy Invite Link: Share this link with your teammate.
-* Extend: If an invitation expires, click `Extend` to reactivate the link.
+The **Invitation List** shows each invitation link, when it was generated, when it expires, and its status (e.g. *pending*). If an invitation has expired, click **Extend** to reactivate it.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.29.14 PM.png" alt=""><figcaption></figcaption></figure>
+#### View team members
 
-> \[Screenshot: Invitation list with Invite button and Copy options]
-
-#### View Team Members
-
-The Team User list displays all active members.
-
-* Role: View who is an Owner, Admin, or Agent.
-* Last Login: See when each user last accessed the platform.
-
-
+The **Team User** list shows everyone in your workspace and when they last logged in. The line above the list shows how many team users your plan allows, e.g. *You can invite up to 10 team users*.
 
 ### Edit or Remove Users
 
-* Edit: Click to change a user's permissions, assigned channels, or modules.
-* Remove: Permanently remove a user from the workspace.
+* **Edit**: Change a user's permissions, assigned channels, and which modules they can access.
+* **Remove**: Remove a user from the workspace.
 
 {% hint style="warning" %}
-**Important**: You cannot edit or remove yourself or the workspace Owner.
+**Important**: You can't edit or remove yourself or the workspace owner. Their **Edit** and **Remove** options are greyed out.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -52,4 +46,4 @@ Removing a user permanently removes them from the workspace. This action cannot 
 ## Best practice 💡
 
 * **Assign Channels**: When editing a user, only give them access to the specific channels they need to manage.
-* **Audit Roles**: Regularly review permissions to ensure teammates have the appropriate level of access.
+* **Review access regularly**: Check permissions so teammates only have the access they need.

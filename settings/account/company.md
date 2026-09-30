@@ -13,19 +13,15 @@ Manage your organization's identity, operational hours, and account lifecycle.
 * Company Email: Primary email for business communication.
 * Company Website: Your official website URL.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.14.03 PM.png" alt=""><figcaption></figcaption></figure>
-
-> \[Screenshot: Company profile form with identity fields]
+<figure><img src="../../.gitbook/assets/settings-company.png" alt="Company settings with team, company details and working hours"><figcaption><p>Company settings (sample data)</p></figcaption></figure>
 
 #### Set Working Hours
 
-Select a Working Hours profile to define when your team is active. This affects reporting and can be used in automations.
+Select a **Working Hours** profile to define when your team is active. Reports use it to calculate response and resolution times within working hours. Click **Save** when you are done.
 
 * Note: If you update working hours, click the here link in the description to regenerate your reports.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.15.16 PM.png" alt=""><figcaption></figcaption></figure>
 
-> \[Screenshot: Working Hours selector dropdown]
 
 
 
@@ -53,9 +49,7 @@ If you need to permanently close your account, use the **Delete Account** sectio
 4. Click the **Delete Account** button.
 5. Confirm the deletion in the popup dialog.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.16.00 PM.png" alt=""><figcaption></figcaption></figure>
-
-> \[Screenshot: Delete Account section with warning and confirm button]
+<figure><img src="../../.gitbook/assets/settings-company-delete.png" alt="Delete Account section with warnings and Delete Account button"><figcaption><p>Delete Account section</p></figcaption></figure>
 
 {% hint style="warning" %}
 **Important**: Deleting your account does **not** automatically cancel active paid subscriptions. Contact your sales representative or email theblackpocketofficial@gmail.com to cancel billing before or after account deletion.

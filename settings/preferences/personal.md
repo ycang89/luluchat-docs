@@ -12,9 +12,7 @@ Manage your individual profile information, security preferences, and login cred
 
 Go to `Settings` > `Your Preferences` > `Personal`.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.12.01 PM.png" alt=""><figcaption></figcaption></figure>
-
-> \[Screenshot: Personal settings page showing profile fields]
+<figure><img src="../../.gitbook/assets/settings-personal.png" alt="Personal settings with full name, email and 2FA toggle"><figcaption><p>Personal settings (sample data)</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -28,13 +26,13 @@ Go to `Settings` > `Your Preferences` > `Personal`.
 {% step %}
 **Configure Security**
 
-* Two-Factor Authentication (2FA): Toggle this on to require an OTP code via WhatsApp when you log in.
+* **Is Required Two-Factor Authentication (2FA) for login?**: Turn this on to require an OTP code via WhatsApp when you log in.
 {% endstep %}
 
 {% step %}
 **Change Password**
 
-Click the Change Password button to update your login credentials. You will need to enter your current password and a new 6-character minimum password.
+Click the **Change Password** link next to your phone number to update your login credentials. You will need to enter your current password and a new 6-character minimum password.
 {% endstep %}
 {% endstepper %}
 

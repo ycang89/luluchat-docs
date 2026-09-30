@@ -2,40 +2,54 @@
 
 ## What is Message Flows Settings?
 
-Manage global behavior for automated conversations, including typing indicators and webhook security.
+Manage global behavior for your message flows: the fallback reply for unanswered buttons, typing indicators, and webhook security.
+
+Go to `Settings` > `Tools` > `Message Flows`.
+
+<figure><img src="../../.gitbook/assets/settings-message-flows.png" alt="Message Flows settings with Strict Reply, Typing Indicator and Webhook settings"><figcaption><p>Message Flows settings (sample data)</p></figcaption></figure>
 
 ## How to set it up (Step by Step)
 
 {% stepper %}
 {% step %}
-#### Enable Typing Indicators
+#### Set the Strict Reply fallback message
 
-Make your bot feel more human by showing a "typing..." status before automated messages are sent.
+Under **Strict Reply Settings**, enter the **No Button Response Fallback Template**. This message is sent when a contact receives a message with buttons but replies without tapping one of them, and **Force reply to button** is turned on in that message node.
 
-* WhatsApp Personal: Enable for standard WhatsApp accounts.
-* WhatsApp Cloud: Enable for official Business API accounts.
-* Effect: When enabled, the system respects the "Typing Wait Time" configured in your individual Message Flow nodes.
-
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.31.19 PM.png" alt=""><figcaption></figcaption></figure>
-
-> \[Screenshot: Typing Indicator switches for Personal and Cloud]
+Example: *Please choose one of the options above so we can help you faster 🙏*
 {% endstep %}
 
 {% step %}
-#### Configure Webhook Security
+#### Enable Typing Indicators
 
-If your Message Flows call external URLs, use these settings to secure the connection.
+Make your automated replies feel more human by showing a "typing..." status before messages are sent.
 
-* Enable Webhook Authorization: Toggle "On" to require an authorization key for any outgoing webhook requests.
+* **Enable Typing Indicator for WhatsApp Personal**: Applies to the Send Message node.
+* **Enable Typing Indicator for WhatsApp Cloud**: Applies to the Send WABA Message node.
+* Turning it on also turns on the typing wait time for all message flows.
+{% endstep %}
+
+{% step %}
+#### Secure your flow's webhook URL
+
+**Enable Webhook Authorization** requires an access token when anyone calls the webhook URL of a message flow (the [Webhook Trigger](../../developer-guide/webhook-trigger.md)). When it's on, create an access token with webhook scopes in [Integration](../account/integration.md) and send it in the `Authorization: Bearer` header.
+{% endstep %}
+
+{% step %}
+#### Save
+
+Click **Save** to apply your changes.
 {% endstep %}
 {% endstepper %}
 
 ## Important behavior to know
 
-* **Typing Wait Time**: Typing indicators only show if the specific Message Node in your flow has a delay value set.
-* **Webhook Impact**: Resetting your Authorization Key will break existing integrations until you update your external systems with the new key.
+* **Strict Reply**: The fallback message is only sent from message nodes that have **Force reply to button** turned on.
+* **Typing Wait Time**: Typing indicators only show if the message node in your flow has a delay value set.
+* **Webhook Authorization**: Once it's on, requests to your flow's webhook URL without a valid access token are rejected. Update your systems with a token before turning it on.
 
 ## Best practice 💡
 
+* **Friendly fallback**: Keep the fallback message short and remind the contact to tap a button.
 * **Realistic Delays**: Set typing wait times to match the length of the message (e.g., 2-3 seconds) for a natural feel.
-* **Secure Webhooks**: Always enable Webhook Authorization when sending sensitive contact data to external servers.
+* **Secure Webhooks**: Turn on Webhook Authorization for flows that are triggered from your own systems.

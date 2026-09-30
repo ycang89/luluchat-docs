@@ -15,9 +15,7 @@ Choose which media types are automatically downloaded when received or sent. Thi
 * Incoming Media: Select Audio, Image, Video, Documents, or Stickers.
 * Outgoing Media: Select which types you send that should be auto-processed.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.31.28 PM.png" alt=""><figcaption></figcaption></figure>
-
-> \[Screenshot: Media auto-download toggle grid]
+<figure><img src="../../.gitbook/assets/settings-inbox.png" alt="Inbox settings with media auto-download, conversation options and notification number"><figcaption><p>Inbox settings (sample data)</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -25,6 +23,9 @@ Choose which media types are automatically downloaded when received or sent. Thi
 
 * Keep assignee after conversation closes: Toggle "Yes" to ensure the same teammate remains owner even after a thread is resolved.
 * Show contact number in chat listing: Toggle "Yes" to always display the phone number next to the contact name in your inbox list.
+* WhatsApp number for receive disconnection notifications: Enter a WhatsApp number to be alerted when a channel disconnects.
+
+Click **Save Inbox Settings** to apply your changes.
 {% endstep %}
 
 {% step %}
@@ -35,15 +36,13 @@ View your current storage usage at the bottom.
 * Example: "0.5 GB out of 120 GB has been used."
 * Note: If you run out of space, click the link to view subscription upgrade options.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.40.28 PM.png" alt=""><figcaption></figcaption></figure>
-
-> \[Screenshot: File storage progress indicator]
+<figure><img src="../../.gitbook/assets/settings-inbox-storage.png" alt="File Storage usage and per-contact storage table"><figcaption><p>File Storage</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
 #### Manage Storage Space
 
-Use the File Storage table to see which contacts are using the most space.
+Choose a **Channel** and click **Query** to see which contacts use the most space in that channel.
 
 * Manage: Opens the media library for that specific contact.
 * Clear Storage: Permanently deletes all media files for that contact to free up space.

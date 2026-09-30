@@ -14,9 +14,7 @@ The App Namespace is a unique identifier used in your public URLs.
 
 * Example: Setting it to `my-shop` changes your form URL to `https://form.luluchat.io/my-shop/form-name`.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.27.54 PM.png" alt=""><figcaption></figcaption></figure>
-
-> \[Screenshot: App Namespace field showing the URL preview]
+<figure><img src="../../.gitbook/assets/settings-app-branding.png" alt="App Branding with namespace, brand name, logo and colours"><figcaption><p>App Branding (sample data)</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

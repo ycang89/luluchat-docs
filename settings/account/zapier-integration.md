@@ -93,7 +93,7 @@ Zapier will prompt you to connect your account. A popup will ask for your **Zapi
 
 To find your Zapier API Key:
 
-1. Go to `Settings` > `Account Management` > `Access Token` in your Luluchat account.
+1. Go to `Settings` > `Account Management` > [`Integration`](integration.md) and scroll to **Access Token**.
 2. Create Access Token with following permission in the page
 
 <figure><img src="../../.gitbook/assets/Screenshot 2026-05-05 at 8.35.12 PM.png" alt=""><figcaption></figcaption></figure>
@@ -174,6 +174,6 @@ When your Zap runs:
 ## Related Documentation
 
 * [Integration Settings](integration.md) - Learn how to manage your API keys and access tokens
-* [Message Flows](../automations/message-flows.md) - Learn how to create and configure Message Flows
-* [Webhook Trigger](../automations/steps/trigger.md#4-webhook-trigger) - Learn more about Webhook triggers
-* [Webhook Trigger Developer Guide](../developer-guide/webhook-trigger.md) - Technical implementation details for developers
+* [Message Flows](../../automations/message-flows.md) - Learn how to create and configure Message Flows
+* [Webhook Trigger](../../automations/steps/trigger.md#4-webhook-trigger) - Learn more about Webhook triggers
+* [Webhook Trigger Developer Guide](../../developer-guide/webhook-trigger.md) - Technical implementation details for developers

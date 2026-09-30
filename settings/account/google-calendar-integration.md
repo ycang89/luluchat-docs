@@ -175,6 +175,6 @@ Once your Google Calendar is connected, you can use it in your booking calendars
 ## Related Documentation
 
 * [Integration Settings](integration.md) - Learn how to manage all integrations
-* [Calendars](../bookings/calendars.md) - Learn how to create and configure booking calendars
-* [Appointments](../bookings/appointments.md) - Learn how to manage appointments
-* [Bookings Overview](../bookings/index.md) - Learn about the Bookings module
+* [Calendars](../../bookings/calendars.md) - Learn how to create and configure booking calendars
+* [Appointments](../../bookings/appointments.md) - Learn how to manage appointments
+* [Bookings Overview](../../bookings/index.md) - Learn about the Bookings module

@@ -95,5 +95,5 @@ Enter the **API Key** you copied from OpenAI. Once you have filled in the requir
 ## Related Documentation
 
 * [Integration Settings](integration.md) - Learn how to manage your integrations
-* [AI Agent Node](../automations/content-nodes/ai-agent.md) - Learn how to use AI agents in Message Flows
+* [AI Agent Node](../../automations/content-nodes/ai-agent.md) - Learn how to use AI agents in Message Flows
 * [AI Settings](../tools/ai.md) - Learn about AI configuration options

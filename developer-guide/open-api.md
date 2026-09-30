@@ -59,13 +59,11 @@ A token can only call the endpoints its scopes allow. Tick these options in the 
 | --- | --- | --- |
 | [Get Team Profile](#get-team-profile) | **All Open API scopes** > **Team** | `api:team:*` |
 | [List Message Flows](#list-message-flows) | **All Open API scopes** > **Message Flow** | `api:flow:*` |
-| [List Channels](#list-channels) | **All Open API scopes** | `api:*` |
+| [List Channels](#list-channels) | **All Open API scopes** > **Channel** | `api:channel:*` |
 | [Event Webhooks](event-webhooks.md) | **All Event Webhook Scopes** | `api:event-webhook:*` |
 
 {% hint style="warning" %}
 **Tick the group, not only "Read / Write".** A scope only allows what it names: **Read / Write** (`...:write`) lets you register and remove event webhooks, but **not** list them, which needs **Read Only** (`...:read`). Ticking the group (e.g. **All Event Webhook Scopes**) includes both.
-
-There is no separate Channel option yet, so List Channels needs **All Open API scopes**.
 {% endhint %}
 
 ## Step 2: Call the API

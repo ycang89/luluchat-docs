@@ -16,39 +16,25 @@ These settings take effect every time you launch a **Broadcast**. The system use
 
 Go to `Settings` from the left menu, then select `Broadcast` under the Tools section.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Settings page with 'Broadcast' tab selected]
+<figure><img src="../../.gitbook/assets/settings-broadcast.png" alt="Broadcast settings with message interval and sending hours"><figcaption><p>Broadcast settings (sample data)</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
 #### Configure Message Interval
 
-Select the Broadcast Message Interval. This is the time the system waits between sending messages to each individual contact.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Broadcast Message Interval dropdown selector]
+Select the **Broadcast Message Interval**, from **30 seconds** to **30 minutes**. This is how long the system waits between sends. On WhatsApp Personal channels, one contact is sent per interval. On WhatsApp Cloud (WABA) channels, several contacts are sent per interval; the note under the field shows the exact number.
 {% endstep %}
 
 {% step %}
 #### Set Sending Hours
 
-Pick the Broadcast Start Time and Broadcast End Time. The system will strictly only send messages within this daily window.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Start Time and End Time pickers showing active sending window]
+Pick the **Broadcast Start Time** and **Broadcast End Time**. The system only sends messages within this daily window. The note under the end time shows roughly how many contacts will be sent per day, e.g. a 1-minute interval from 09:00 to 21:00 sends about **720 contacts per day**.
 {% endstep %}
 
 {% step %}
 #### Save Changes
 
-Click the save button to apply your new configuration.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Save button at the bottom of the form]
+Click **Save** to apply your new configuration.
 {% endstep %}
 {% endstepper %}
 
@@ -70,4 +56,4 @@ Once saved, all pending or newly started broadcasts will follow the new rules. F
 ## Best practice 💡
 
 * **Align with Audience**: Set your sending window to when your customers are awake and active.
-* **Start Slow**: When using a new channel, start with a 1-minute interval and gradually decrease it as your channel reputation grows.
+* **Start Slow**: When using a new channel, start with a longer interval (e.g. 1 minute or more) and shorten it gradually as your channel reputation grows.

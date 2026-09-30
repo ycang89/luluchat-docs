@@ -16,19 +16,14 @@ These settings take effect whenever a contact interacts with an **AI Agent node*
 
 Go to `Settings` in the left menu, then navigate to Tools > AI.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.31.35 PM.png" alt=""><figcaption></figcaption></figure>
-
-> \[Screenshot: Settings menu with Tools > AI highlighted]
 {% endstep %}
 
 {% step %}
 #### Enable MCP
 
-Toggle Enable MCP for AI to "On" to allow your AI agents to perform complex tasks like checking databases or calling external APIs. Use the MCP Tool Permissions list to specifically enable or disable what the AI agent can do. Use Enable All or Disable All for quick management.
+Toggle Enable MCP for AI to "On" to allow your AI agents to perform complex tasks like checking databases or calling external APIs. Use the **MCP Tool Permissions** list to turn each tool on or off. Tools are grouped by feature (Contact Management, Inbox Tabs, Workspace Management, Deal, Ticketing, Forms and Booking). Use **Turn On All** or **Turn Off All** for quick changes, then click **Save**. See [Available Tools](../../mcp/tools/index.md) for what each tool does.
 
-<figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.31.35 PM (1).png" alt=""><figcaption></figcaption></figure>
-
-> \[Screenshot: MCP for AI toggle switch set to ON]
+<figure><img src="../../.gitbook/assets/settings-ai.png" alt="AI settings with MCP enabled and MCP Tool Permissions grouped by feature"><figcaption><p>AI settings (sample data)</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -36,9 +31,7 @@ Toggle Enable MCP for AI to "On" to allow your AI agents to perform complex task
 
 You will also need an MCP Token, which you can generate in the `Settings > Account > Integration` tab. You will need this for your AI service provider.
 
-<div><figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.34.07 PM.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/Screenshot 2026-02-13 at 3.34.45 PM.png" alt=""><figcaption></figcaption></figure></div>
-
-> \[Screenshot: Create token for MCP]
+<figure><img src="../../.gitbook/assets/settings-access-token-create.png" alt="Create Access Token dialog with All MCP Tool Scopes option" width="360"><figcaption><p>Create Access Token: tick All MCP Tool Scopes</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

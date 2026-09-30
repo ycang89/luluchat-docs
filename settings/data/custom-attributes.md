@@ -12,9 +12,7 @@ Define personalized data fields to store contact information that matters to you
 
 Go to `Settings` > `Data Management` > `Custom Attributes`.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Custom Attributes list view]
+<figure><img src="../../.gitbook/assets/settings-custom-attributes.png" alt="Custom Attributes list"><figcaption><p>Custom Attributes (sample data)</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -23,22 +21,20 @@ Go to `Settings` > `Data Management` > `Custom Attributes`.
 Click `Create Custom Attribute`.
 
 * Name: Choose a label that matches your terminology.
-* Data Type: Select the type of information (e.g., Text, Number, Date) to ensure data consistency.
+* Data Type: **Text**, **Number**, **Date**, **Time** or **Anniversal Date** (a day and month that repeats every year, e.g. a birthday).
 
-📸 Screenshot placeholder:
+Click **Submit**.
 
-> \[Screenshot: Create Custom Attribute form]
+<figure><img src="../../.gitbook/assets/settings-custom-attributes-create.png" alt="Create Custom Attribute dialog with name and data type" width="440"><figcaption><p>Create Custom Attribute</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
 #### Organize and Export
 
-* Export: Use the `Export Contacts` button to download a spreadsheet of your attributes.
+* Edit: Click an attribute's name to change it.
+* Export: Click `Export Contacts` to download your list of custom attributes as an Excel file.
 * Bulk Actions: Select multiple attributes to delete them in one go.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Attribute list with selection checkboxes and footer toolbar]
 {% endstep %}
 {% endstepper %}
 
