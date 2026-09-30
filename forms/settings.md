@@ -1,31 +1,47 @@
 # Forms: Settings & SEO
 
 ## Configuring Your Form (Step 2)
-The **Form Settings** tab is where you control how the form behaves and how responses are delivered.
+The **2. Form Settings** tab is where you control how the form behaves and how responses are delivered.
+
+<figure><img src="../.gitbook/assets/forms-settings.png" alt="Form Settings tab with OTP, delivery, response message and SEO settings" width="700"><figcaption><p>Form Settings tab (sample data)</p></figcaption></figure>
 
 ### General Settings
-- **Form Name**: The internal name for your reference.
-- **Form Link (Slug)**: Customize the URL of your form (e.g., `luluchat.io/my-team-survey`).
-- **Is Publish**: Toggle this to make the form live or take it offline.
+| Setting | Description |
+| --- | --- |
+| **Form Name** | The internal name for your reference |
+| **Form Link** | The web address of your form. Customize the last part, e.g. `kopi-feedback`. |
+| **Is Publish** | Turn on to make the form live, or off to take it offline |
 
 ### Verification & Delivery
-- **OTP Verification**: If enabled, unidentified recipients must verify their phone number via a WhatsApp OTP code before submitting. This ensures high-quality, verified data.
-- **Delivery Logic**: Choose how you want to deliver form responses to the customer via WhatsApp:
-    - **Do not send**: Only you see the responses.
-    - **Send to all**: Everyone gets a copy of their answers.
-    - **Send only to verified**: Only users who passed OTP or came via a Message Flow get a copy.
+- **Is OTP Verification Required for Recipient?**: If on, people who open the form link directly must verify their WhatsApp number with a one-time code before submitting. People who reach the form through a **Message Flow** are already identified and skip this step.
+- **How should the system deliver form responses to recipients through WhatsApp?**:
+    - **Do not send**: Only your team sees the responses.
+    - **Send only to verified users (OTP verified or through the message flow)**: Only verified people get a copy of their answers.
+    - **Send to all recipients**: Everyone gets a copy of their answers.
+- **Select a channel to send OTP and Form responses to recipients**: The WhatsApp channel used to send the code and the copy of the answers.
+- **Default dial code in the form**: The country code pre-selected in phone number questions.
 
-### Automated Responses
-You can customize the confirmation message customers receive after submitting.
-- Use placeholders like `{{1}}`, `{{2}}`, etc., to reference the answers they just provided.
+### Response Message
+Choose the message customers receive after submitting.
 
-📸 Screenshot placeholder:
-> [Screenshot: Form settings page showing the OTP toggle and message template box]
+**WhatsApp Personal channels**: Turn on **Customize Response Message Template** and write your message in **Response Message Template**. Use placeholders to include the customer's answers: `{{1}}` is the answer to the first question, `{{2}}` the second, and so on. The list of placeholders is shown under the text box.
+
+```
+Hi {{1}}, thank you for your feedback! You rated your visit: {{4}}.
+```
+
+**WhatsApp Cloud (WABA) channels**: Click **Select Message Template** to pick an approved message template. See [Setup WABA Template for Form Response](waba-form-response-template.md).
 
 ### SEO & Sharing
 Customize how your form looks when shared on social media or WhatsApp:
-- **Meta Title & Description**: The text that appears in the link preview.
-- **Meta Image**: Upload a brand logo or promotional banner for the link preview.
+- **Meta Title & Meta Description**: The text that appears in the link preview.
+- **Meta Image**: A brand logo or promotional banner for the link preview (JPG or PNG, under 200 KB).
+
+Click **Submit** at the bottom of the tab to save your changes.
+
+{% hint style="info" %}
+If you change the **Form Link**, a **Save the Form** reminder appears at the top right until you click **Submit**.
+{% endhint %}
 
 ## Important behavior to know
-- **OTP for External Links**: OTP is mostly needed for forms shared as public links. If a user enters a form through an automated **Message Flow**, they are already verified, and OTP is skipped.
+- **OTP for External Links**: OTP is only needed for forms shared as public links. If a customer opens the form from a **Message Flow**, they're already verified, and OTP is skipped.
