@@ -2,7 +2,7 @@
 
 ## What is the Open API?
 
-The Luluchat Open API lets your own systems read data from your Luluchat workspace and manage [Event Webhooks](event-webhooks.md). For example, you can list your channels, check your team details, or look up the message flows you can trigger with a [Webhook Trigger](webhook-trigger.md).
+The Luluchat Open API lets your own systems read data from your Luluchat workspace. For example, you can list your channels, check your team details, or look up the message flows you can trigger with a [Webhook Trigger](webhook-trigger.md).
 
 Full request and response examples are in our [Postman documentation](https://documenter.getpostman.com/view/985588/2s9YJW4RAc).
 
@@ -20,7 +20,6 @@ Every request must use HTTPS and include your access token.
 
 * A Luluchat account with access to `Settings` > `Account` > `Integration`
 * An **access token** with the right scopes (see below)
-* For Event Webhook endpoints: Event Webhook must be enabled for your team (see [Event Webhooks](event-webhooks.md#prerequisites))
 
 ## Step 1: Create an access token
 
@@ -110,13 +109,9 @@ Every response is JSON with the same wrapper:
 | `GET` | `/teams/me` | `api:team:read` | Get your team profile |
 | `GET` | `/channels` | `api:channel:read` | List your channels |
 | `GET` | `/automation-flows` | `api:flow:read` | List your message flows |
-| `GET` | `/event-webhooks/available-events` | `api:event-webhook:read` | List events you can subscribe to |
-| `GET` | `/event-webhooks/registered` | `api:event-webhook:read` | List your subscriptions and signing secret |
-| `POST` | `/event-webhooks/register` | `api:event-webhook:write` | Subscribe a URL to an event |
-| `POST` | `/event-webhooks/remove` | `api:event-webhook:write` | Unsubscribe from an event |
-| `POST` | `/event-webhooks/reset-signing-secret` | `api:event-webhook:write` | Create a new signing secret |
-
-The Event Webhook endpoints are explained step by step in [Event Webhooks](event-webhooks.md).
+{% hint style="info" %}
+Want Luluchat to notify your system when a contact changes? The Event Webhook endpoints use the same base URL and access token, and are documented in [Event Webhooks](event-webhooks.md).
+{% endhint %}
 
 ### Get Team Profile
 
@@ -202,7 +197,6 @@ curl "https://open-api.luluchat.io/v1/automation-flows?status=active" \
 | --- | --- | --- |
 | `Invalid Access Token` | The token is missing, wrong, expired or deleted | Check the `Authorization: Bearer ...` header, or create a new token |
 | `Invalid Scope` | The token doesn't have the scope this endpoint needs | Create a token with the right scope. See [Choosing scopes](#choosing-scopes). |
-| `Event webhook is not enabled for this team.` | Event Webhook isn't enabled for your team | Contact Luluchat support to enable it |
 | `Channel not found.` | The `channel_id` doesn't belong to your team | Get the correct `uuid` from [List Channels](#list-channels) |
 
 {% hint style="warning" %}

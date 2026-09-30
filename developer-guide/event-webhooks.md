@@ -25,6 +25,18 @@ Event Webhooks send data **out of** Luluchat. To start a message flow **from** y
 * **An access token with All Event Webhook Scopes.** See [Open API: Create an access token](open-api.md#step-1-create-an-access-token).
 * **A public HTTPS URL** on your server that accepts `POST` requests with a JSON body.
 
+## Endpoints
+
+All endpoints use the [Open API](open-api.md) base URL `https://open-api.luluchat.io/v1/` and your access token in the `Authorization: Bearer ...` header.
+
+| Method | Path | Scope | Description |
+| --- | --- | --- | --- |
+| `GET` | `/event-webhooks/available-events` | `api:event-webhook:read` | [List events you can subscribe to](#optional-check-the-available-events) |
+| `POST` | `/event-webhooks/register` | `api:event-webhook:write` | [Subscribe a URL to an event](#register-the-webhook) |
+| `GET` | `/event-webhooks/registered` | `api:event-webhook:read` | [List your subscriptions and signing secret](#list-registered-webhooks) |
+| `POST` | `/event-webhooks/remove` | `api:event-webhook:write` | [Unsubscribe from an event](#remove-a-webhook) |
+| `POST` | `/event-webhooks/reset-signing-secret` | `api:event-webhook:write` | [Create a new signing secret](#reset-the-signing-secret) |
+
 ## How to register an event webhook (Step by Step)
 
 All requests go to the [Open API](open-api.md) base URL `https://open-api.luluchat.io/v1/` with your token in the `Authorization` header.
