@@ -2,73 +2,106 @@
 
 ## What are Conversation Controls?
 
-Quick actions to organize and control attention on individual conversations: pin/unpin, mute/unmute, mark as unread, and archive/unarchive.
+Conversation controls are quick actions on each chat in the chat list. They help you keep important chats in view and quiet the rest:
 
-## When do they trigger?
+* **Pin** / **Unpin**: Keep a chat at the top of your chat list.
+* **Mute** / **Unmute**: Stop new-message sounds for one chat.
+* **Mark as unread** / **Mark as Read**: Change the chat's read status.
+* **Archive** / **Unarchive**: Move a chat out of your active lists, or bring it back.
 
-* Pin/Unpin: when you toggle a conversation to keep it at the top of your view.
-* Mute/Unmute: when you silence or restore notifications for a conversation.
-* Mark as Unread: when you mark a thread unread to revisit it later.
-* Archive/Unarchive: when you move a conversation out of active view or bring it back.
+To apply these to many chats at once, use [Bulk Actions](bulk-actions.md).
 
-## How to use (Step by Step)
+## When to use it?
+
+* **Pin** the few chats you are working on right now.
+* **Mute** busy chats (for example, large groups) that you don't need to hear.
+* **Mark as unread** to remind yourself to come back to a chat.
+* **Archive** chats you don't need in your daily view.
+
+## How to use it (Step by Step)
 
 {% stepper %}
 {% step %}
-**Open the conversation**
+#### Find the chat in the chat list
 
-In `Inbox`, mouse over the conversation you want to control.
+In the Inbox, hover over the chat row. A small down arrow (⌄) appears at the bottom right of the row, next to the assignee.
 
 📸 Screenshot placeholder:
 
-> \[Screenshot: Conversation thread with top action bar visible]
+> \[Screenshot: Chat list with mouse hovering over a chat row and the down-arrow icon visible at the bottom right of the row]
 {% endstep %}
 
 {% step %}
-**Apply the control you need**
+#### Open the menu
 
-* Pin/Unpin: click the pin icon to stick/unstick the conversation to the top of your list.
-* Mute/Unmute: toggle the mute/bell icon to silence/restore notifications for this thread.
-* Mark as Unread: use the unread option to mark it unread (it will show as new in your list).
-* Archive/Unarchive: use archive to move it out of active view; unarchive to bring it back.
+Click the down arrow. The menu shows the options that fit the chat's current state:
 
-📸 Screenshot placeholder:
+* **Mute** or **Unmute**
+* **Pin** or **Unpin**
+* **Mark as unread** (if the chat has no unread messages) or **Mark as Read** (if it does)
+* **Archive** or **Unarchive**
 
-> \[Screenshot: Action icons (pin, mute, unread, archive) highlighted]
+<figure><img src="../.gitbook/assets/inbox-row-menu.png" alt="Chat row menu with Mute, Pin, Mark as unread and Archive"><figcaption><p>Chat row menu (sample data)</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
-**Confirm the state**
+#### Choose an action
 
-Check the icons/list state to ensure the action applied (pinned indicator, muted bell, unread badge, archive move).
+Click the option you need. For **Mute**, a small **Mute Notifications** window opens. Choose how long to mute: **8 Hours**, **1 Week** or **Always**, then click **Confirm**.
 
-📸 Screenshot placeholder:
+<figure><img src="../.gitbook/assets/inbox-mute.png" alt="Mute Notifications pop-up with the duration dropdown"><figcaption><p>Mute Notifications (sample data)</p></figcaption></figure>
+{% endstep %}
 
-> \[Screenshot: Conversation list showing pinned/muted/unread/archive states]
+{% step %}
+#### Check the chat row
+
+The chat row updates to show its new state:
+
+* Pinned chats show a pin icon and stay at the top of the list.
+* Muted chats show a bell-with-a-slash icon.
+* Unread chats show a green badge with the number of unread messages, or a small blue badge if marked as unread.
+* Archived chats show an **Archived** label (for example, in search results or the **Archived** list).
+
+<figure><img src="../.gitbook/assets/inbox-chat-list.png" alt="Chat list with a pinned chat, unread count badges and a muted group"><figcaption><p>Pinned, unread and muted chats in the chat list (sample data)</p></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 
 ## What happens after it triggers?
 
-* Pinned stays at the top of your list until unpinned.
-* Muted stops sounds/alerts for that conversation until unmuted.
-* Marked as unread shows as unread in the list to remind you to return.
-* Archived removes it from active view; unarchiving returns it to the main list.
+* **Pin**: The chat stays at the top of your chat list until you unpin it.
+* **Mute**: The Inbox does not play a sound for new messages in this chat until the mute ends or you unmute it.
+* **Mark as unread / Mark as Read**: The chat's unread badge updates for everyone on the team.
+* **Archive**: The chat is removed from your lists (such as **All**, **Unread** and **Need Reply**) and appears in the **Archived** list. **Unarchive** brings it back.
 
 ## Important behavior to know
 
-* Archive does not delete or close the conversation; history is preserved.
-* Muting a conversation differs from global sound settings (this is per-conversation).
+* **Pin limit**: You can pin up to **3** chats per channel. To pin another, unpin one first.
+* **Mute is for WhatsApp Personal channels.** Mute is not supported on WhatsApp Cloud (WABA), Messenger or Instagram channels.
+* **Mute vs Sound Settings**: Mute is per chat. [Sound Settings](sound-settings.md) turn all Inbox sounds on or off for your browser.
+* **Archive is not Close.** Archiving does not close the conversation or delete any messages. To close a conversation, see [Close Conversation](close-conversation.md).
+* **Search still finds archived chats.** You can find them with [Search](search.md) or in the **Archived** list.
+* **Changes are shared.** Pin, mute, read status and archive apply to the chat for the whole team on that channel. For WhatsApp Personal channels, these changes are also synced to the WhatsApp app.
+* **Opening a chat marks it as read**, unless [Incognito Mode](incognito-mode.md) is on.
 
 ## Common issues & solutions
 
-* Can’t find the action: check the conversation action bar or overflow menu; UI may differ by role/layout.
-* Still getting alerts when muted: refresh and confirm the mute icon; check global sound settings too.
-* Pinned not at top: ensure sorting/filtering isn’t overriding pin order.
+* **I can't see the down arrow**: Hover over the chat row. The arrow only appears on hover. If you are in **Bulk Change** mode, click the **Bulk Change** icon again to leave it.
+* **"You can only pin up to 3 chats."**: Unpin another chat first.
+* **Mute is missing or fails**: Mute only works on WhatsApp Personal channels.
+* **Change doesn't show yet**: Changes on WhatsApp Personal channels can take a few seconds. If the chat list shows **Chat List Updated**, click **Reload**.
+* **Can't find an archived chat**: Open the **Archived** list, or search for the contact.
 
 ## Best practice 💡
 
-* Pin priority threads you’re actively working on.
-* Use mark-as-unread as a lightweight follow-up reminder.
-* Mute noisy low-priority threads without archiving if you still need visibility.
-* Archive resolved-but-open threads to keep your active list clean.
+* Pin only the chats you are actively working on. The limit of 3 keeps the top of your list focused.
+* Use **Mark as unread** as a quick "come back later" reminder. For a timed reminder, use [Remind Me](remind-me.md).
+* Mute large or noisy group chats instead of muting the whole Inbox.
+* Archive chats you don't need to see daily, and close chats that are finished.
+
+## Related Documentation
+
+* [Inbox Overview](index.md)
+* [Bulk Actions](bulk-actions.md)
+* [Close Conversation](close-conversation.md)
+* [Sound Settings](sound-settings.md)
+* [Custom Lists](custom-lists.md)

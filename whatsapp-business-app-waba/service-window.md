@@ -40,7 +40,7 @@ The 24-hour service window is a fundamental rule in WhatsApp Business messaging.
 
 ## Best practice 💡
 
-- **Set Reminders**: Use Luluchat's "Remind Me" feature to get notified before the window expires.
+- **Watch the countdown**: The conversation header shows the **Remaining Customer Service Window**, so you can see how much time is left to reply with a normal message. See [Send Messages](../inbox/send-messages.md).
 - **Automate Responses**: Set up Message Flows to automatically respond to common inquiries within the window.
 - **Monitor Conversations**: Regularly check your inbox for conversations approaching the 24-hour limit.
 - **Use Templates Wisely**: When the window expires, choose the appropriate template category (Utility or Service) for faster approval and lower costs.

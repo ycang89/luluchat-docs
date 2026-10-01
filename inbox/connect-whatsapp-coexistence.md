@@ -2,140 +2,161 @@
 
 ## What is WhatsApp Coexistence?
 
-**WhatsApp Coexistence** means running **WhatsApp Personal** and **WhatsApp Cloud (WABA)** channels side by side in the same Luluchat workspace. This lets you:
+**WhatsApp Coexistence** lets you connect the number you already use in the **WhatsApp Business app** to Luluchat through the **WhatsApp Cloud (Business Platform)** – without giving up the app on your phone. This lets you:
 
-* Use a Personal channel for small‑team, phone‑centric conversations.
-* Use a Cloud (WABA) channel for scalable, API‑driven messaging and template‑based outreach.
-* Route conversations and automations through the most appropriate channel for each use case.
+* Keep chatting from the WhatsApp Business app on your phone.
+* Use the same number in Luluchat with WhatsApp Cloud features, such as message templates and Business Platform messaging.
+* Share your existing chat history with Luluchat during setup, so past conversations show up in `Inbox`.
 
-Coexistence does **not** merge two WhatsApp numbers into one – instead, each number becomes its own channel with its own conversations and limits, but they can be managed together from the same workspace.
+In Luluchat, a coexistence channel is a **WhatsApp Cloud** channel. In the **Channels** window it shows **Channel Type: waba (Coexistence)**.
+
+For a comparison of WhatsApp Personal and WhatsApp Business Platform accounts, see [Coexistence](../whatsapp-business-app-waba/coexistence.md).
 
 ## When should you use Coexistence?
 
-Use a coexistence setup when:
+Use coexistence when:
 
-* You already have an active WhatsApp number on the mobile app, but also want a WABA number for campaigns or automation.
-* Different teams handle different types of conversations (e.g. Support on Personal, Marketing on Cloud).
-* You are migrating to WABA but still need to keep the Personal number active for a transition period.
+* You already have an active number in the **WhatsApp Business app** and want to keep using it on your phone.
+* You want that same number to use WhatsApp Cloud features in Luluchat (for example, templates for campaigns or re-engagement).
+* You want to bring your existing WhatsApp Business app chats into Luluchat instead of starting from an empty Inbox.
+
+If you want a brand-new number on the WhatsApp Business Platform only, follow [Connect WhatsApp Cloud](connect-whatsapp-cloud.md) instead.
 
 ## How to set it up (Step by Step)
 
-These steps describe how to connect your existing **WhatsApp Business app** to Luluchat via the **WhatsApp Cloud (Business Platform)** so that coexistence is enabled.
+These steps connect your existing **WhatsApp Business app** to Luluchat via **WhatsApp Cloud**, so coexistence is turned on.
 
 {% stepper %}
 {% step %}
-**Choose WhatsApp Cloud in Inbox**
+#### Choose WhatsApp Cloud in Inbox
 
-* In Luluchat, open `Inbox` and go to the **Connect your Channel** screen.
-* Select **WhatsApp Cloud** as the channel type.
+* In Luluchat, open `Inbox` to see the **Connect your Channel** screen.
+* Click **WhatsApp Cloud**.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-03-12 at 8.34.11 PM.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
-**Click Continue with Facebook**
+#### Click Continue with Facebook
 
-* On the WhatsApp Cloud setup screen, click the **Continue with Facebook** button.
+* On the **WhatsApp Cloud Setup Guide** screen, click **Continue with Facebook**.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-03-12 at 8.34.16 PM.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
-**Follow the embedded signup guide (choose WhatsApp Business App)**
+#### Follow the signup window (choose WhatsApp Business App)
 
-* Follow the embedded signup flow opened by Meta.
+* Follow the signup window opened by Meta.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-03-12 at 8.34.30 PM.png" alt=""><figcaption></figcaption></figure>
 
-* When you reach the **WhatsApp Business account** options, choose **Connect a WhatsApp Business App**&#x20;
+* When you reach the **WhatsApp Business account** options, choose **Connect a WhatsApp Business App**.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-03-12 at 8.34.37 PM.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
-**Enter your phone number and approve “Connect to the business platform”**
+#### Enter your phone number and approve "Connect to the business platform"
 
-* Continue in the embedded signup guide and enter the phone number of your **WhatsApp Business app**.
+* Continue in the signup window and enter the phone number of your **WhatsApp Business app**.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-03-12 at 8.35.01 PM.png" alt=""><figcaption></figcaption></figure>
 
-* A QR code will appear on the screen in the embedded flow.
+* A QR code will appear in the signup window.
 
 <figure><img src="../.gitbook/assets/Screenshot 2026-03-12 at 8.35.19 PM.png" alt=""><figcaption></figcaption></figure>
 
-* At the same time, your WhatsApp Business app on your phone will receive a notification with the message **"Connect to the business platform"**.
+* At the same time, the WhatsApp Business app on your phone receives a notification: **"Connect to the business platform"**.
 
 <div><figure><img src="../.gitbook/assets/Screenshot_20260309_191345.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/Screenshot_20260309_191352.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/Screenshot_20260309_191359.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/Screenshot_20260309_191430.jpg" alt=""><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/Screenshot_20260309_191458.jpg" alt=""><figcaption></figcaption></figure></div>
 
-* On your phone, tap **Connect** and follow the prompts to share all chat history to Luluchat.
-* You will then be taken to a **Scan QR code** screen on your phone – use it to scan the QR code shown in the embedded signup flow.
+* On your phone, tap **Connect** and follow the prompts to share your chat history with Luluchat.
+* Your phone then shows a **Scan QR code** screen – use it to scan the QR code shown in the signup window.
 {% endstep %}
 
 {% step %}
-**Wait for the account to connect and finish the embedded flow**
+#### Finish the signup window
 
 * Wait for the connection and data sharing to complete.
-* Continue following the embedded signup steps until you can click **Finish**.
+* Continue following the steps in the signup window until you can click **Finish**.
 {% endstep %}
 
 {% step %}
-**Click Done on Step 2 in Luluchat**
+#### Click Done in Luluchat (Step 2)
 
-* Back in Luluchat’s WhatsApp Cloud setup, click **Done** on the second step to confirm the connection.
+* Back on Luluchat's **WhatsApp Cloud Setup Guide**, the screen now shows **Step 2: Click "Done" to complete the setup**. You do **not** need to choose a phone number or create a PIN in this flow.
+* Click **Done**.
+
+📸 Screenshot placeholder:
+
+> \[Screenshot: WhatsApp Cloud Setup Guide after the WhatsApp Business App signup, showing only "Step 2: Click "Done" to complete the setup" and the Done button]
 {% endstep %}
 
 {% step %}
-**Wait to be redirected to Inbox**
+#### Wait for Inbox to open
 
-* After a short moment, Luluchat will finalize the setup.
-* You should then be redirected to `Inbox`, where you will see your imported conversations.
+* Luluchat shows "Channel connected." and the page refreshes.
+* Your `Inbox` opens. Your shared conversations will appear as the history import completes.
 {% endstep %}
 {% endstepper %}
 
-## How does it behave in Inbox?
+## What happens after it triggers?
 
-* Each channel appears separately in Inbox filters or channel selectors.
-* Conversations for the Personal number are independent from conversations for the Cloud number.
-* Agents can switch between channels without affecting existing threads.
+* The number keeps working in the WhatsApp Business app on your phone, and also works in Luluchat as a WhatsApp Cloud channel.
+* In the **Channels** window, the channel shows **Channel Type: waba (Coexistence)**.
+* Message Flows and Broadcasts on this channel follow WhatsApp Business Platform rules (24-hour service window and approved templates).
+
+## Important behavior to know
 
 {% hint style="info" %}
 **Important behavior to know**
 
-* **Multiple Channels**: You can connect multiple channels, including more than one Personal or Cloud number, depending on your plan.
-* **Independent Limits**: Each channel respects its own WhatsApp rules:
-  * Personal: multi‑device limits and 14‑day login requirement on the primary phone.
-  * Cloud: WABA quotas, 24‑hour service window, and template rules.
-* **No Auto‑Forwarding**: Messages sent to one number do **not** automatically forward to another. Coexistence is about management convenience, not number aliasing.
+* **It's a Cloud channel**: A coexistence channel follows WhatsApp Cloud rules – the 24-hour service window, template approval, and Meta's messaging limits. See [Connect WhatsApp Cloud](connect-whatsapp-cloud.md).
+* **Sync errors are shown on the channel**: If importing contacts or chat history fails, the channel card in the **Channels** window shows a red **Contact Sync Error** or **History Sync Error** with the error code from Meta.
+* **Disconnect from the phone, not from Luluchat**: The **Disconnect** button for a coexistence channel in Luluchat is greyed out. You must disconnect from the WhatsApp Business app (see below). The button is only available in Luluchat if a contact or history sync error occurred.
+* **Multiple channels**: You can connect other channels (Personal or Cloud) alongside a coexistence channel, depending on your plan. Each channel has its own contacts and conversations, and messages are **not** forwarded between channels.
 {% endhint %}
-
-## Common patterns and examples
-
-* **Support on Personal, Marketing on Cloud**
-  * Keep your long‑used WhatsApp number on the phone for customer support.
-  * Use a dedicated WABA number (Cloud) for campaigns, reminders, and template‑based flows.
-* **Migration from Personal to Cloud**
-  * Temporarily run both channels.
-  * Gradually move traffic and automations to the Cloud channel.
-  * Eventually retire the Personal channel when customers are fully migrated.
 
 ## How to disconnect a coexistence channel
 
-For coexistence setups that use a **WhatsApp Cloud (WABA)** channel, disconnection must be done from the WhatsApp Business side:
+Coexistence channels must be disconnected from the WhatsApp Business app on your phone:
 
 1. Open the **WhatsApp Business app**.
 2. Go to **Settings > Account > Business Platform**.
-3. Tap on **Luluchat CRM**.
+3. Tap on **LuluChat CRM** (it may show as **LuluChat CRM 老板大帮手**).
 4. Tap **Disconnect** to remove the integration.
 
-After you disconnect in WhatsApp Business, the corresponding Cloud channel in Luluchat will stop working and show as not ready. You can reconnect later by following the Cloud setup guide again.
+After you disconnect, the channel in Luluchat stops working and shows as **Not Connected**. You can reconnect later by following the steps on this page again.
 
-## Best practice for coexistence
+## Common issues & solutions
+
+* **The setup screen still asks me to choose a phone number and PIN**:
+  * You didn't pick **Connect a WhatsApp Business App** in the signup window. Click **Continue with Facebook** again and choose that option.
+* **Done button is greyed out**:
+  * Finish all steps in Meta's signup window (until you click **Finish**), then try again.
+* **"Failed to register."**:
+  * Read the reason shown after the message – it comes from Meta. Check that your Facebook account has access to the WhatsApp Business Account, then try again.
+* **No "Connect to the business platform" notification on the phone**:
+  * Make sure the number you entered is the one used in your WhatsApp Business app, and that the app is updated to the latest version.
+* **Contact Sync Error / History Sync Error on the channel**:
+  * Note the error code shown and contact support. In this case the **Disconnect** button becomes available in Luluchat, so you can disconnect and try connecting again.
+* **Can't disconnect from Luluchat**:
+  * This is expected for coexistence channels. Disconnect from the WhatsApp Business app instead (see above).
+
+## Best practice 💡
 
 {% hint style="success" %}
 **Best practice (Coexistence)**
 
-* Name channels clearly (e.g. "Support – Personal", "Marketing – Cloud") so agents always know which is which.
-* Document internally which channel type is allowed for which use case (support, campaigns, notifications, etc.).
-* Regularly review usage and consider consolidating if one channel becomes dominant.
-* Monitor channel‑specific errors (e.g. 24‑hour window on Cloud, 14‑day login on Personal) so issues are fixed on the correct side.
+* Update the WhatsApp Business app on your phone before you start, and keep the phone nearby – you'll need to approve the connection and scan a QR code.
+* Name the channel clearly in the **Channels** window so your team knows it's the same number as the phone app.
+* Agree internally on who replies from the phone and who replies from Luluchat, so customers don't get duplicate answers.
+* Use approved templates for messages sent outside the 24-hour service window.
 {% endhint %}
+
+## Related Documentation
+
+* [Connect your Channel](connect-channel.md)
+* [Connect WhatsApp Cloud](connect-whatsapp-cloud.md)
+* [Coexistence (WABA)](../whatsapp-business-app-waba/coexistence.md)
