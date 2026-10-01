@@ -5,7 +5,7 @@ The List view shows all tickets in a pipeline in a single table. It is the best 
 
 Open it from `Tickets` > `List` in the left menu, then choose a pipeline at the top.
 
-<figure><img src="../.gitbook/assets/tickets-list.png" alt="Tickets list with filter panel and ticket table"><figcaption><p>Tickets List (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tickets-list.png" alt="Tickets list with filter panel and ticket table"><figcaption><p>Tickets List</p></figcaption></figure>
 
 Click **Collapse** to hide the filter panel.
 
@@ -50,7 +50,7 @@ Click the **folder** icon above the table (*Archived Tickets*) to see tickets th
 - **Bulk Unarchive**: Put them back on the board.
 - **Bulk Delete**: Permanently delete them.
 
-<figure><img src="../.gitbook/assets/tickets-archived.png" alt="Archived Tickets window with two tickets selected"><figcaption><p>Archived Tickets (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tickets-archived.png" alt="Archived Tickets window with two tickets selected"><figcaption><p>Archived Tickets</p></figcaption></figure>
 
 {% hint style="danger" %}
 Deleted tickets can't be recovered. Archive tickets instead if you might need them later.

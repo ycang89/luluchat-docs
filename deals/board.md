@@ -5,7 +5,7 @@ The Board is your primary workspace for managing sales. It uses a Kanban layout 
 
 Open it from `Deals` > `Board` in the left menu.
 
-<figure><img src="../.gitbook/assets/deals-board.png" alt="Deals Board with stage totals and deal cards"><figcaption><p>Deals Board (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/deals-board.png" alt="Deals Board with stage totals and deal cards"><figcaption><p>Deals Board</p></figcaption></figure>
 
 ## Managing the Sales Board
 
@@ -66,7 +66,7 @@ Opening a deal lets you update:
 
 Use **Add field** to add custom attributes. At the bottom of an existing deal, the **History** tab shows every change made to the deal and who made it. To remove a deal from the board without deleting it, click **Archive Deal**.
 
-<figure><img src="../.gitbook/assets/deals-form.png" alt="Edit Deal form with the History tab" width="560"><figcaption><p>Deal form with History (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/deals-form.png" alt="Edit Deal form with the History tab" width="560"><figcaption><p>Deal form with History</p></figcaption></figure>
 
 ## Important behavior to know
 - **Contact Sync**: Deals are linked to contact profiles. You can create a deal for a contact directly from the **Contact Info** panel in the `Inbox`.

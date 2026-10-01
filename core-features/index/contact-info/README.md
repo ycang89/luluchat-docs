@@ -4,7 +4,7 @@
 
 The **Contact Info** panel sits on the right side of a conversation in `Inbox`. It shows everything about the contact you're chatting with, so you can update their details, leave notes for your team and follow up on deals, tickets and flows without leaving the chat.
 
-<figure><img src="../../../.gitbook/assets/inbox-overview.png" alt="Inbox with the Contact Info panel on the right showing Profile, Notes, Flows and Tickets tabs"><figcaption><p>Contact Info panel (sample data)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/inbox-overview.png" alt="Inbox with the Contact Info panel on the right showing Profile, Notes, Flows and Tickets tabs"><figcaption><p>Contact Info panel</p></figcaption></figure>
 
 ## When to use it?
 
@@ -24,7 +24,7 @@ In `Inbox`, open a conversation. Click the **Contact Info** icon (the person ico
 
 On a phone, tap the three dots at the top right and choose **Contact Info**.
 
-<figure><img src="../../../.gitbook/assets/inbox-conversation-header.png" alt="Conversation header; the person icon on the far right opens Contact Info"><figcaption><p>The Contact Info (person) icon (sample data)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/inbox-conversation-header.png" alt="Conversation header; the person icon on the far right opens Contact Info"><figcaption><p>The Contact Info (person) icon</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

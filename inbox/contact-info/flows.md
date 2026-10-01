@@ -29,7 +29,7 @@ Each smart delay card shows the **Message Flow** name and the **Next Sending Tim
 
 If nothing is running, you'll see **No active flows**.
 
-<figure><img src="../../.gitbook/assets/inbox-contact-flows.png" alt="Flows tab with an upcoming smart delay message and a current message flow"><figcaption><p>Flows tab (sample data)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/inbox-contact-flows.png" alt="Flows tab with an upcoming smart delay message and a current message flow"><figcaption><p>Flows tab</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -41,9 +41,7 @@ Click **Send Message Flow**. In the window:
 2. To send it later, turn on **Do you want to schedule sending out this message flow?** and choose the sending date and time. This option is only available on the Pro Plan.
 3. Click **Submit**.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Send Message Flow window with a flow selected, the Preview button and the schedule switch]
+<figure><img src="../../.gitbook/assets/inbox-send-message-flow.png" alt="Send Message Flow window with Customer Satisfaction Survey selected, a Preview button, the schedule switch set to No with a PRO badge, and Reset and Submit buttons"><figcaption><p>Send Message Flow window</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

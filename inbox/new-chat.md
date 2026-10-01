@@ -18,7 +18,7 @@
 
 In the Inbox, on the **Chats** tab, click the **+** icon (**New Chat**) at the top right of the chat list.
 
-<figure><img src="../.gitbook/assets/inbox-chat-list.png" alt="Chat list header; the + icon on the far right is New Chat"><figcaption><p>The New Chat (+) icon is on the far right of the chat list header (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-chat-list.png" alt="Chat list header; the + icon on the far right is New Chat"><figcaption><p>The New Chat (+) icon is on the far right of the chat list header</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -28,7 +28,7 @@ In the **New Chat** window, pick the country from the flag dropdown and type the
 
 **Tip**: For Malaysian numbers, you can paste a number starting with `0` or `60` and Luluchat converts it to the `+60` format for you.
 
-<figure><img src="../.gitbook/assets/inbox-new-chat.png" alt="New Chat window with the country code and WhatsApp number field"><figcaption><p>New Chat window (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-new-chat.png" alt="New Chat window with the country code and WhatsApp number field"><figcaption><p>New Chat window</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -45,9 +45,7 @@ Click **Submit** (or press Enter). Luluchat checks the number and opens the chat
 
 Type your message in the message box and send it. See [Send Messages](send-messages.md).
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Newly created empty chat open in the conversation area with the message editor ready]
+<figure><img src="../.gitbook/assets/inbox-new-chat-empty.png" alt="Conversation area for a chat with no messages yet, showing the contact name in the header and an empty message editor ready for typing"><figcaption><p>Empty chat ready for the first message</p></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 

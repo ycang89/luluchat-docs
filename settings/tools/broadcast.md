@@ -16,7 +16,7 @@ These settings take effect every time you launch a **Broadcast**. The system use
 
 Go to `Settings` from the left menu, then select `Broadcast` under the Tools section.
 
-<figure><img src="../../.gitbook/assets/settings-broadcast.png" alt="Broadcast settings with message interval and sending hours"><figcaption><p>Broadcast settings (sample data)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-broadcast.png" alt="Broadcast settings with message interval and sending hours"><figcaption><p>Broadcast settings</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

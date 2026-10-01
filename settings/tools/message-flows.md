@@ -6,7 +6,7 @@ Manage global behavior for your message flows: the fallback reply for unanswered
 
 Go to `Settings` > `Tools` > `Message Flows`.
 
-<figure><img src="../../.gitbook/assets/settings-message-flows.png" alt="Message Flows settings with Strict Reply, Typing Indicator and Webhook settings"><figcaption><p>Message Flows settings (sample data)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-message-flows.png" alt="Message Flows settings with Strict Reply, Typing Indicator and Webhook settings"><figcaption><p>Message Flows settings</p></figcaption></figure>
 
 ## How to set it up (Step by Step)
 

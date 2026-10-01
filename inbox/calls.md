@@ -22,7 +22,7 @@ This page covers using calls in the Inbox. For setup, Meta's rules and limits, s
 
 In **Inbox**, click **Calls** at the top of the chat list (next to **Chats**). This tab is shown on WhatsApp Personal and WhatsApp Cloud channels.
 
-<figure><img src="../.gitbook/assets/inbox-calls.png" alt="Calls tab listing incoming, outgoing and missed calls"><figcaption><p>Calls tab (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-calls.png" alt="Calls tab listing incoming, outgoing and missed calls"><figcaption><p>Calls tab</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -58,9 +58,7 @@ Open the customer's chat. The phone icon appears in the conversation header when
 
 If the customer hasn't allowed calls yet, the phone icon shows **Request call permission**. Click it, check the message (default: *"We'd like to call you regarding your appointment"*, up to 1,024 characters), then click **Send**. You'll see *"Call permission request sent."*
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Request call permission window with the message text box and Send button]
+<figure><img src="../.gitbook/assets/inbox-waba-call-permission.png" alt="Request call permission window with the message box and Send button"><figcaption><p>Request call permission</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -68,9 +66,7 @@ If the customer hasn't allowed calls yet, the phone icon shows **Request call pe
 
 Once the customer allows calls, the same icon shows **Start call**. Click it and allow microphone access if your browser asks.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Conversation header with the phone icon showing the Start call tooltip]
+<figure><img src="../.gitbook/assets/inbox-waba-call-start.png" alt="Conversation header with the phone icon showing the Start call tooltip"><figcaption><p>Start call</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

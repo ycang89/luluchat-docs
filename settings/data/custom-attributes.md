@@ -12,7 +12,7 @@ Define personalized data fields to store contact information that matters to you
 
 Go to `Settings` > `Data Management` > `Custom Attributes`.
 
-<figure><img src="../../.gitbook/assets/settings-custom-attributes.png" alt="Custom Attributes list"><figcaption><p>Custom Attributes (sample data)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-custom-attributes.png" alt="Custom Attributes list"><figcaption><p>Custom Attributes</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

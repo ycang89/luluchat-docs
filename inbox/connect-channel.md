@@ -51,9 +51,9 @@ If you pick a **different** channel type from the one this channel last used, Lu
 * Switching to a different channel type requires deleting the existing contacts and past messages of this channel. This cannot be undone.
 * Click **Delete and Continue** to delete the data and continue with the new channel type, or **Cancel** to go back.
 
-📸 Screenshot placeholder:
+<figure><img src="../.gitbook/assets/inbox-connect-channel-last-connected.png" alt="Connect your Channel page with WhatsApp Personal and WhatsApp Cloud cards, the WhatsApp Personal card showing a Last Connected tag"><figcaption><p>Connect your Channel page with the Last Connected tag</p></figcaption></figure>
 
-> \[Screenshot: Connect your Channel page with the "Last Connected" tag on one card, and the "Switch Channel Type" pop-up with the red "Delete and Continue" button]
+<figure><img src="../.gitbook/assets/inbox-connect-channel-switch.png" alt="Switch Channel Type pop-up warning that switching deletes existing contacts and past messages, with Cancel and a red Delete and Continue button"><figcaption><p>Switch Channel Type pop-up</p></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 

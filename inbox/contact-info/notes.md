@@ -24,7 +24,7 @@ Notes are listed newest first. Each note shows who wrote it, the note text and t
 
 If there are no notes yet, you'll see **No notes yet**.
 
-<figure><img src="../../.gitbook/assets/inbox-contact-notes.png" alt="Notes tab with a pinned note at the top"><figcaption><p>Notes tab (sample data)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/inbox-contact-notes.png" alt="Notes tab with a pinned note at the top"><figcaption><p>Notes tab</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -34,7 +34,7 @@ Click **Add Note** (or **Add your first note** if there are none yet). Type your
 
 Type **@** to mention a teammate. Click **Submit**.
 
-<figure><img src="../../.gitbook/assets/inbox-note.png" alt="Note window with an @mention list"><figcaption><p>Adding a note (sample data)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/inbox-note.png" alt="Note window with an @mention list"><figcaption><p>Adding a note</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -47,9 +47,7 @@ Use the icons at the top right of each note:
 * **Edit Note**: Change the note text.
 * **Delete Note**: Remove the note. Click **Yes** to confirm.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: A note with the Go to Note, Pin Note, Edit Note and Delete Note icons highlighted]
+<figure><img src="../../.gitbook/assets/inbox-note-card-icons.png" alt="Note card by Hafiz Ismail with the Go to Note, Pin Note, Edit Note and Delete Note icons at the top right"><figcaption><p>Note card with its action icons</p></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 

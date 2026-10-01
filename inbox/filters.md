@@ -25,7 +25,7 @@ Filters work together with the list (tab) you have selected, such as **All** or 
 
 In the Inbox, on the **Chats** tab, click the **Filters** icon (funnel) at the top of the chat list. The **Filters** panel opens on the left.
 
-<figure><img src="../.gitbook/assets/inbox-filters.png" alt="Filters panel with Quick Filter and Saved Filters"><figcaption><p>Filters panel (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-filters.png" alt="Filters panel with Quick Filter and Saved Filters"><figcaption><p>Filters panel</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -41,9 +41,7 @@ Under **Quick Filter**, choose one or more values in any of these fields:
 
 The chat list updates as soon as you change a field. Click **Clear** next to **Quick Filter** to remove all quick filters.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Quick Filter section with Assignee set to "(You)" and one tag selected in Tags, and the Clear link visible]
+<figure><img src="../.gitbook/assets/inbox-quick-filter-applied.png" alt="Filters panel with Quick Filter expanded, Assignee set to Aisha Rahman (You), Tags set to VIP, and the Clear link next to Quick Filter"><figcaption><p>Quick Filter with Assignee and Tags set</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -53,9 +51,7 @@ Under **Saved Filters**, click a filter to apply it. It is highlighted while act
 
 Use the **All**, **Private**, **Team** and **Selected** tabs to show filters by who can see them.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Saved Filters list with one filter highlighted as active, showing its colour dot, visibility icon and the clock icon for a time-sensitive filter]
+<figure><img src="../.gitbook/assets/inbox-saved-filter-active.png" alt="Saved Filters list with the All tab selected and the VIP needing reply filter highlighted as active, showing its colour dot, team visibility icon and time-sensitive clock icon"><figcaption><p>Active saved filter</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -72,7 +68,7 @@ Click the **+** (**New Filter**) icon next to **Saved Filters**. In the **New Fi
 * **Channels**: **All channels**, or **Selected channels** (then choose them in **Apply To**). Stages and other channel-specific conditions only apply within the channels the filter covers.
 * **Conditions**: See the next step.
 
-<figure><img src="../.gitbook/assets/inbox-filter-form.png" alt="New Filter window"><figcaption><p>New Filter window (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-filter-form.png" alt="New Filter window"><figcaption><p>New Filter window</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -96,9 +92,7 @@ For user fields, you can pick **Me (current user)** so the filter works for whoe
 
 To mix ALL and ANY, click **Add group**. Each group has its own **Match ALL / ANY of these** setting.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Conditions builder with Match ALL selected, a "Tag contains VIP" condition, a "Last Replied By Contact in last 2 hours" condition, and a group set to Match ANY]
+<figure><img src="../.gitbook/assets/inbox-filter-conditions.png" alt="Conditions builder with Match ALL selected, a Tag contains VIP condition, a Last Replied By Contact in last 2 hours condition, and a group set to Match ANY containing Assignee is unassigned and Tag contains Refund"><figcaption><p>Conditions builder with a nested ANY group</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

@@ -19,7 +19,7 @@ In `Inbox`, open the conversation and select the `Tickets` tab in the Contact In
 
 Each ticket shows its pipeline and stage, summary, due date, created date, priority and collaborators. The due date is highlighted when it is due within a week or has passed.
 
-<figure><img src="../../.gitbook/assets/inbox-contact-tickets.png" alt="Tickets tab in Contact Info showing two tickets" width="380"><figcaption><p>Tickets tab (sample data)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/inbox-contact-tickets.png" alt="Tickets tab in Contact Info showing two tickets" width="380"><figcaption><p>Tickets tab</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

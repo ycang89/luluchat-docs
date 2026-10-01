@@ -5,7 +5,7 @@ Go to `Forms` in the left menu and click a form to open it (or create a new one)
 
 Every new form starts with a title and two required questions, **Name** and **WhatsApp Contact No**. These two are compulsory: you can rename them or change their order, but not remove them.
 
-<figure><img src="../.gitbook/assets/forms-build.png" alt="Build Form tab showing a Customer Feedback form"><figcaption><p>Build Form tab (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/forms-build.png" alt="Build Form tab showing a Customer Feedback form"><figcaption><p>Build Form tab</p></figcaption></figure>
 
 ### Adding Questions
 Click **Add Questions** at the bottom of the form and pick an element:

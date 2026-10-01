@@ -17,7 +17,7 @@ The tab is made up of these sections. Click a section's title to collapse or exp
 | **Group Participants** | Members of a WhatsApp group. Only shown for group conversations. |
 | **Custom Attributes** | Extra fields such as VIP tier or order ID. |
 
-<figure><img src="../../.gitbook/assets/inbox-contact-profile.png" alt="Profile tab with Assignee, Collaborator, Tags, Deals, Profile and Custom Attributes"><figcaption><p>Profile tab (sample data)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/inbox-contact-profile.png" alt="Profile tab with Assignee, Collaborator, Tags, Deals, Profile and Custom Attributes"><figcaption><p>Profile tab</p></figcaption></figure>
 
 ## When to use it?
 
@@ -35,9 +35,7 @@ The tab is made up of these sections. Click a section's title to collapse or exp
 
 In `Inbox`, open a conversation and click the **Contact Info** icon in the conversation header. The **Profile** tab opens first.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Conversation header with the Contact Info icon highlighted and the Profile tab open]
+<figure><img src="../../.gitbook/assets/inbox-profile-header-panel.png" alt="Conversation header icons with the Contact Info icon at the far right, and the Contact Info panel open on the Profile tab showing AI Agent, Assignee, Collaborator and Tags"><figcaption><p>Contact Info panel on the Profile tab</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -57,9 +55,7 @@ Under **Collaborator**, pick one or more teammates. Collaborators receive notifi
 
 Use collaborators when other teammates need to follow or help with the conversation, for example a manager or a specialist.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Assignee and Collaborator sections with one assignee and two collaborators selected]
+<figure><img src="../../.gitbook/assets/inbox-profile-assignee-collab.png" alt="Assignee set to Daniel Wong and Collaborator showing Hafiz Ismail and Priya Nair"><figcaption><p>Assignee and Collaborator sections</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -71,9 +67,9 @@ The **AI Agent** section only appears if you have connected **Praxus AI** or **M
 2. The chat switches to a selection mode. Tick a message in the chat for the AI agent to start reading from, or skip this step.
 3. Click **Start AI Agent** below the chat. The button shows the time of the message you picked, or **(no message history)** if you didn't pick one. Click **Cancel** to go back.
 
-📸 Screenshot placeholder:
+<figure><img src="../../.gitbook/assets/inbox-ai-agent-dropdown.png" alt="AI Agent dropdown open with agents grouped under Minicrew AI and Praxus AI"><figcaption><p>AI Agent dropdown</p></figcaption></figure>
 
-> \[Screenshot: AI Agent dropdown with Minicrew AI and Praxus AI groups, and the Start AI Agent and Cancel buttons below the chat]
+<figure><img src="../../.gitbook/assets/inbox-ai-agent-start.png" alt="After choosing Order Support Bot, the chat shows a checkbox beside each message and Start AI Agent (no message history) and Cancel buttons below the chat"><figcaption><p>Start AI Agent and Cancel buttons below the chat</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -98,7 +94,7 @@ The **Profile** section shows:
 
 Group conversations don't show the contact number or opt-in status. They show a **Group Participants** section with each member's name and number instead.
 
-<figure><img src="../../.gitbook/assets/inbox-contact-profile-details.png" alt="Profile section with WhatsApp Name, Display Name, Contact Number, Opt-In Status and Remarks"><figcaption><p>Profile section (sample data)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/inbox-contact-profile-details.png" alt="Profile section with WhatsApp Name, Display Name, Contact Number, Opt-In Status and Remarks"><figcaption><p>Profile section</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -113,9 +109,7 @@ The **Custom Attributes** section lists the contact's attributes and their value
 
 If the attribute you need doesn't exist yet, type its name in the attribute list, choose a data type and click **Add attribute**. Click **Reload** to fetch the latest values.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Custom Attributes window with two attribute rows, the Assign More Custom Attributes button and Save Changes]
+<figure><img src="../../.gitbook/assets/inbox-custom-attributes-window.png" alt="Custom Attributes window with two rows, email and favourite_outlet with their values, the Assign More Custom Attributes button and Save Changes"><figcaption><p>Custom Attributes window</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -124,12 +118,9 @@ If the attribute you need doesn't exist yet, type its name in the attribute list
 Click the **Manage Storage** icon (the folder icon) at the top of the Contact Info panel. A window lists every media file in this conversation with its **Size** and **Created at** date.
 
 * Filter by **Created at** date range, or sort by size or date.
-* Click the go-to icon to jump to the message that contains the file.
 * Click the delete icon to delete one file, or tick several files and click **Delete**.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Manage Storage window listing media files with Size, Created at and the go-to and delete icons]
+<figure><img src="../../.gitbook/assets/inbox-manage-storage.png" alt="Manage Storage window with a Created at date filter and a table of media files showing preview, Size, Created at and a delete icon for each file"><figcaption><p>Manage Storage window</p></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 

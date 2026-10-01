@@ -24,7 +24,7 @@ In **Inbox**, click the chat where you want to leave a note.
 
 Above the message box, click the **Note** icon. The **Note** window opens.
 
-<figure><img src="../.gitbook/assets/inbox-composer.png" alt="Message composer; the clipboard icon is Note"><figcaption><p>The Note (clipboard) icon in the composer toolbar (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-composer.png" alt="Message composer; the clipboard icon is Note"><figcaption><p>The Note (clipboard) icon in the composer toolbar</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -32,7 +32,7 @@ Above the message box, click the **Note** icon. The **Note** window opens.
 
 Type your note. To mention a teammate, type **@** and pick their name from the list (*"Type @ to mention other team members"*).
 
-<figure><img src="../.gitbook/assets/inbox-note.png" alt="Note window with an @mention list of team members"><figcaption><p>Writing a note with @mention (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-note.png" alt="Note window with an @mention list of team members"><figcaption><p>Writing a note with @mention</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -62,9 +62,7 @@ Click **Note**. The **Note** window opens with the selected message quoted at th
 
 Type your note and click **Submit**. The note shows the quoted message, so everyone knows which message it refers to.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Note in the conversation thread showing a quoted customer message above the note text]
+<figure><img src="../.gitbook/assets/inbox-note-quoted.png" alt="Yellow internal note in the conversation thread showing the quoted customer message from Jason Tan above the note text mentioning @Hafiz Ismail"><figcaption><p>Note with a quoted customer message</p></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 

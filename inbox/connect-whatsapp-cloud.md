@@ -62,9 +62,7 @@ If you close the window or don't finish granting access, Luluchat shows "User ca
 
 Until Step 1 is done, this step shows "Waiting for Step 1 to be completed."
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: WhatsApp Cloud Setup Guide, Step 2 phone number drop-down open, showing "Business name - phone number [VERIFIED]"]
+<figure><img src="../.gitbook/assets/inbox-waba-guide-phone.png" alt="WhatsApp Cloud Setup Guide with the Step 2 phone number list open, showing business name, phone number and VERIFIED"><figcaption><p>Step 2: choose the phone number</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -74,9 +72,7 @@ Until Step 1 is done, this step shows "Waiting for Step 1 to be completed."
 2. Enter any 6 digits you choose. This is **not** a code sent to you by Meta – you create it yourself.
 3. Keep this PIN safe. It is the two-step verification PIN for this number on the WhatsApp Business Platform.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: WhatsApp Cloud Setup Guide, Step 3 showing the six PIN boxes under "Create your own 6-digit PINs"]
+<figure><img src="../.gitbook/assets/inbox-waba-guide-pin.png" alt="WhatsApp Cloud Setup Guide with a phone number selected and the six PIN boxes under Create your own 6-digit PINs"><figcaption><p>Step 3: create a 6-digit PIN</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

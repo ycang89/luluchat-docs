@@ -3,7 +3,7 @@
 ## Configuring Your Form (Step 2)
 The **2. Form Settings** tab is where you control how the form behaves and how responses are delivered.
 
-<figure><img src="../.gitbook/assets/forms-settings.png" alt="Form Settings tab with OTP, delivery, response message and SEO settings" width="700"><figcaption><p>Form Settings tab (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/forms-settings.png" alt="Form Settings tab with OTP, delivery, response message and SEO settings" width="700"><figcaption><p>Form Settings tab</p></figcaption></figure>
 
 ### General Settings
 | Setting | Description |

@@ -58,7 +58,7 @@ New teams also get one example custom list called **Work**. You can rename or de
 
 In the Inbox, click the **+** icon (**New List**) at the top right of the list tabs, next to the **List Settings** gear icon.
 
-<figure><img src="../.gitbook/assets/inbox-list-tabs.png" alt="List tabs; New List (+) and List Settings (gear) are at the top right"><figcaption><p>New List (+) and List Settings (gear) are at the top right of the list tabs (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-list-tabs.png" alt="List tabs; New List (+) and List Settings (gear) are at the top right"><figcaption><p>New List (+) and List Settings (gear) are at the top right of the list tabs</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -66,7 +66,7 @@ In the Inbox, click the **+** icon (**New List**) at the top right of the list t
 
 In the **New List** window, type a **List Name** (up to 30 characters).
 
-<figure><img src="../.gitbook/assets/inbox-new-list.png" alt="New List window with the List Name field"><figcaption><p>New List window (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-new-list.png" alt="New List window with the List Name field"><figcaption><p>New List window</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -88,7 +88,7 @@ All list management is in **List Settings**: click the gear icon at the top righ
 | Add contacts (👤+) | Open **Manage List** to add or remove contacts | Custom lists |
 | Eye icon | Hide or show the list in the tabs. A crossed-out eye means the list is hidden. | All lists |
 
-<figure><img src="../.gitbook/assets/inbox-list-settings.png" alt="List Settings panel with default and custom lists"><figcaption><p>List Settings (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-list-settings.png" alt="List Settings panel with default and custom lists"><figcaption><p>List Settings</p></figcaption></figure>
 
 When you reorder or hide lists, you see "List sequence updated successfully."
 
@@ -110,7 +110,7 @@ Click a chat in the chat list to open it.
 
 Click the **List Assignment** icon in the conversation header (on small screens, open the **⋮** menu and choose **List Assignment**).
 
-<figure><img src="../.gitbook/assets/inbox-conversation-header.png" alt="Conversation header; the card icon between Search Messages and Remind me is List Assignment"><figcaption><p>List Assignment is the card icon in the conversation header (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-conversation-header.png" alt="Conversation header; the card icon between Search Messages and Remind me is List Assignment"><figcaption><p>List Assignment is the card icon in the conversation header</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -118,7 +118,7 @@ Click the **List Assignment** icon in the conversation header (on small screens,
 
 The **Add Chat to Lists** window shows your custom lists. Click **Add** to put the chat in a list, or **Remove** to take it out. You can search lists by name.
 
-<figure><img src="../.gitbook/assets/inbox-list-assignment.png" alt="Add Chat to Lists window"><figcaption><p>Add Chat to Lists window (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-list-assignment.png" alt="Add Chat to Lists window"><figcaption><p>Add Chat to Lists window</p></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 
@@ -130,9 +130,7 @@ The **Add Chat to Lists** window shows your custom lists. Click **Add** to put t
 
 Hover over a custom list tab, click its **⋮** icon and choose **Manage List**. You can also click the add contacts icon (👤+) in **List Settings**.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Custom list tab with its ⋮ menu open showing "Manage List"]
+<figure><img src="../.gitbook/assets/inbox-manage-list-menu.png" alt="Follow Up list tab with its ⋮ menu open showing Manage List"><figcaption><p>Open Manage List from the list tab's ⋮ menu</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -140,9 +138,7 @@ Hover over a custom list tab, click its **⋮** icon and choose **Manage List**.
 
 The **Manage List** window shows your contacts. Use search and filters to find the ones you need. Contacts already in the list show a **Remove** button; others show an **Add** button.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Manage List window showing the contact table with Add and Remove buttons]
+<figure><img src="../.gitbook/assets/inbox-manage-list.png" alt="Manage List window with the contacts table; contacts in the list show Remove, others show Add"><figcaption><p>Manage List window</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -154,11 +150,9 @@ Click **Add** or **Remove** on a contact row.
 {% step %}
 #### Bulk Add or Bulk Remove
 
-Tick the checkboxes of several contacts, then click **Bulk Add** or **Bulk Remove** at the bottom of the window.
+Tick the checkboxes of several contacts, then click **Bulk Add** or **Bulk Remove** in the bar that appears at the bottom of the screen.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Manage List window with several contacts ticked and the Bulk Add / Bulk Remove buttons at the bottom]
+<figure><img src="../.gitbook/assets/inbox-manage-list-bulk.png" alt="Manage List with three contacts ticked and the Bulk Add and Bulk Remove buttons in the bar at the bottom of the screen"><figcaption><p>Selecting several contacts for Bulk Add or Bulk Remove</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

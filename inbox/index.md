@@ -11,7 +11,7 @@ The Inbox has four main areas:
 3. **Conversation area (middle)**: The messages of the open chat, the message editor, and header actions such as **Close**, **Search Messages**, **List Assignment**, **Remind me** and **Contact Info**.
 4. **Contact info panel (right)**: The contact's profile, tags, assignee, deals, tickets, flows and notes. Open it with the **Contact Info** icon or by clicking the contact's name.
 
-<figure><img src="../.gitbook/assets/inbox-overview.png" alt="Inbox with list tabs at the top, chat list on the left, conversation in the middle and Contact Info on the right"><figcaption><p>The Inbox layout (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-overview.png" alt="Inbox with list tabs at the top, chat list on the left, conversation in the middle and Contact Info on the right"><figcaption><p>The Inbox layout</p></figcaption></figure>
 
 ## When to use it?
 
@@ -34,7 +34,7 @@ Click `Inbox` in the left menu. If your channel is not connected yet, you see th
 
 Click a list tab at the top, such as **All** or **Need Reply**. See [Custom Lists](custom-lists.md) for what each list shows and how to create your own.
 
-<figure><img src="../.gitbook/assets/inbox-list-tabs.png" alt="List tabs with chat counts, plus Incognito, Sound, New List and List Settings buttons"><figcaption><p>List tabs (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-list-tabs.png" alt="List tabs with chat counts, plus Incognito, Sound, New List and List Settings buttons"><figcaption><p>List tabs</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -49,7 +49,7 @@ Scroll the chat list, or use the icons at the top of it:
 
 Each chat row shows the contact name, last message, time, unread count, tags and assignee. Hover over a row and click the down arrow for quick actions such as **Pin**, **Mute**, **Mark as unread** and **Archive**. See [Conversation Controls](conversation-controls.md).
 
-<figure><img src="../.gitbook/assets/inbox-chat-list.png" alt="Chat list with Chats and Calls tabs and the Search, Filters, Bulk Change and New Chat icons"><figcaption><p>Chat list (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-chat-list.png" alt="Chat list with Chats and Calls tabs and the Search, Filters, Bulk Change and New Chat icons"><figcaption><p>Chat list</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

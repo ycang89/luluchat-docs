@@ -12,7 +12,7 @@ Manage the internal labels used to organize and segment your contacts. Tags help
 
 Go to `Settings` > `Data Management` > `Tags`.
 
-<figure><img src="../../.gitbook/assets/settings-tags.png" alt="Tags settings with sort order and total contacts"><figcaption><p>Tags (sample data)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-tags.png" alt="Tags settings with sort order and total contacts"><figcaption><p>Tags</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

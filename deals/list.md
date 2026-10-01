@@ -5,7 +5,7 @@ The List view is a spreadsheet-style interface for your deals. It shows all deal
 
 Open it from `Deals` > `List` in the left menu, then choose a pipeline at the top.
 
-<figure><img src="../.gitbook/assets/deals-list.png" alt="Deals list with filters and deal table"><figcaption><p>Deals List (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/deals-list.png" alt="Deals list with filters and deal table"><figcaption><p>Deals List</p></figcaption></figure>
 
 ## Using the List View
 

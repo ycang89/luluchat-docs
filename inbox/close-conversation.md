@@ -26,7 +26,7 @@ In the conversation header, click **Close**. The tooltip reads **Close conversat
 
 On a small screen, tap the three-dot menu (⋮) in the header and choose **Close Conversation**.
 
-<figure><img src="../.gitbook/assets/inbox-conversation-header.png" alt="Conversation header with the Close button"><figcaption><p>The Close button in the conversation header (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-conversation-header.png" alt="Conversation header with the Close button"><figcaption><p>The Close button in the conversation header</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -34,7 +34,7 @@ On a small screen, tap the three-dot menu (⋮) in the header and choose **Close
 
 A confirmation appears: *"Are you sure want to close this conversation? Closed conversations will automatically removed from "All" list and will be add to "Closed" list."* Click **Yes**.
 
-<figure><img src="../.gitbook/assets/inbox-close.png" alt="Close conversation confirmation with Yes and No"><figcaption><p>Close confirmation (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-close.png" alt="Close conversation confirmation with Yes and No"><figcaption><p>Close confirmation</p></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 

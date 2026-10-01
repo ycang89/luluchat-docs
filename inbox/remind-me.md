@@ -30,7 +30,7 @@ In **Inbox**, click the chat you want a reminder for.
 
 In the conversation header, click the bell icon (**Remind me**). On a small screen, tap the three-dot menu (⋮) and choose **Remind me**.
 
-<figure><img src="../.gitbook/assets/inbox-conversation-header.png" alt="Conversation header; the bell icon is Remind me"><figcaption><p>Remind me is the bell icon in the conversation header (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-conversation-header.png" alt="Conversation header; the bell icon is Remind me"><figcaption><p>Remind me is the bell icon in the conversation header</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -44,7 +44,7 @@ The **Create a Reminder** window opens:
 * **Time** (required): 09:00 by default. Times are in 15-minute steps.
 * **Description (optional)**: Extra details.
 
-<figure><img src="../.gitbook/assets/inbox-remind-me.png" alt="Create a Reminder window"><figcaption><p>Create a Reminder (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-remind-me.png" alt="Create a Reminder window"><figcaption><p>Create a Reminder</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -62,9 +62,7 @@ Click **Submit**. You'll see *"A Reminder has been created for "\[title]" at \[d
 
 Click the bell icon (🔔) in the top bar, then click the **Reminders** tab.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Notifications panel with the Reminders tab open, showing Upcoming / Overdue / Done and the search box]
+<figure><img src="../.gitbook/assets/inbox-remind-me-reminders.png" alt="Notifications panel with the Reminders tab open, showing the Upcoming, Overdue and Done tabs, a search box and a list of upcoming reminders with delete, edit and mark-done icons"><figcaption><p>Reminders tab in the Notifications panel</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

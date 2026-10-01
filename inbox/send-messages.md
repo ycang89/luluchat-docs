@@ -37,7 +37,7 @@ Click the message box and type. Press **Shift + Enter** for a new line.
 * Type **/** to insert a [Quick Reply](quick-reply.md).
 * In group chats, type **@** to mention a group member.
 
-<figure><img src="../.gitbook/assets/inbox-composer.png" alt="Message composer with the toolbar icons, the send button and the schedule (clock) button"><figcaption><p>Message composer (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-composer.png" alt="Message composer with the toolbar icons, the send button and the schedule (clock) button"><figcaption><p>Message composer</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -55,7 +55,7 @@ Press **Enter** or click the paper-plane send button. To send later instead, cli
 
 Click **More Actions** (⋮) and choose **Attach Photo/Video** or **Attach Document**.
 
-<figure><img src="../.gitbook/assets/inbox-more-actions.png" alt="More Actions menu"><figcaption><p>More Actions menu (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-more-actions.png" alt="More Actions menu"><figcaption><p>More Actions menu</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -70,9 +70,7 @@ Add one or more files. Photos and MP4 videos can be up to 16MB each. Documents c
 * **Send Attachment** sends the files now.
 * **Attach and Close** keeps the files ready in the composer (a tag shows "1 attachment", "2 attachments", ...). Type a caption, then click send. Click the **x** on the tag to remove all attachments.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Attach Photo/Video window with uploaded images and the Attach and Close / Send Attachment buttons]
+<figure><img src="../.gitbook/assets/inbox-attach-photo.png" alt="Attach Photo/Video window with two uploaded images and the Attach and Close and Send Attachment buttons"><figcaption><p>Attach Photo/Video</p></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 
@@ -81,9 +79,7 @@ Add one or more files. Photos and MP4 videos can be up to 16MB each. Documents c
 * **Drag and drop**: Drag files onto the composer. When you see **Drop document to attach**, let go. Dropped files are always sent as documents.
 * **Paste**: Paste an image from your clipboard into the composer to attach it.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Composer showing the "Drop document to attach" overlay while a file is dragged over it]
+<figure><img src="../.gitbook/assets/inbox-drag-drop.png" alt="Message composer showing the Drop document to attach overlay while a file is dragged over it"><figcaption><p>Dragging a file onto the message box</p></figcaption></figure>
 
 ### Send a voice message
 
@@ -112,9 +108,7 @@ Meta only lets you send free-form messages for a limited time after the customer
 * **Window closed**: Click **Send Message Template**, or **Send Message Flow** to send a flow that starts with a template.
 * **Window open**: Click **More Actions** (⋮) > **Message Template** (WhatsApp Cloud) or **Messenger Template** (Messenger).
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: "WhatsApp's messaging window closed" notice with the Send Message Template and Send Message Flow buttons]
+<figure><img src="../.gitbook/assets/inbox-waba-window-closed.png" alt="WhatsApp's messaging window closed notice with Send Message Template and Send Message Flow buttons"><figcaption><p>Messaging window closed (WhatsApp Cloud)</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -122,9 +116,7 @@ Meta only lets you send free-form messages for a limited time after the customer
 
 Pick a template under **Message Template**. Templates that aren't approved yet show their status in brackets, for example *\[PENDING]*. Fill in any **Header Variables**, **Body Variables** and **Button Variables**, and upload header media if needed. A preview shows on the right.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Send Message Template window with a template selected, body variables filled in and the phone preview]
+<figure><img src="../.gitbook/assets/inbox-waba-template.png" alt="Send Message Template window with refund_update selected, body variables filled in and the phone preview"><figcaption><p>Send Message Template</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -150,13 +142,13 @@ Hover over any message to see its actions:
 | **Translate** | Shows a translation under the message, in **English**, **Chinese**, **Malay** or **Indonesian**. |
 | **Delete** | Deletes your own message after you confirm. Not available on WhatsApp Cloud. |
 
-<figure><img src="../.gitbook/assets/inbox-message-actions.png" alt="Message action menu shown when hovering over a message"><figcaption><p>Message actions (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-message-actions.png" alt="Message action menu shown when hovering over a message"><figcaption><p>Message actions</p></figcaption></figure>
 
 Under each message you send, you can see who sent it (*"Sent by \[name] via luluchat"* or *"Sent via WhatsApp device"*) and its status ticks. A message that failed shows a red error.
 
 ### Use the conversation header
 
-<figure><img src="../.gitbook/assets/inbox-conversation-header.png" alt="Conversation header with Close, Search Messages, List Assignment, Remind me and Contact Info"><figcaption><p>Conversation header (WhatsApp Personal channel) (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-conversation-header.png" alt="Conversation header with Close, Search Messages, List Assignment, Remind me and Contact Info"><figcaption><p>Conversation header (WhatsApp Personal channel)</p></figcaption></figure>
 
 | Control | What it does |
 | --- | --- |

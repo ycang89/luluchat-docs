@@ -12,7 +12,7 @@ Manage your individual profile information, security preferences, and login cred
 
 Go to `Settings` > `Your Preferences` > `Personal`.
 
-<figure><img src="../../.gitbook/assets/settings-personal.png" alt="Personal settings with full name, email and 2FA toggle"><figcaption><p>Personal settings (sample data)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-personal.png" alt="Personal settings with full name, email and 2FA toggle"><figcaption><p>Personal settings</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

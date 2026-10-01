@@ -20,7 +20,7 @@ Quick Replies are saved per channel, so everyone on the team using that channel 
 
 Open a conversation and type **/** in the message box (the placeholder says *"Type backslash (/) to see available quick replies"*). The **Quick Reply** panel opens above the box.
 
-<figure><img src="../.gitbook/assets/inbox-quick-reply.png" alt="Quick Reply panel listing shortcuts above the message box"><figcaption><p>Quick Reply panel (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-quick-reply.png" alt="Quick Reply panel listing shortcuts above the message box"><figcaption><p>Quick Reply panel</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -56,7 +56,7 @@ To close the panel without choosing, press **Esc**, type **/** again, or click t
 
 In the message composer, click **More Actions** (⋮) > **Quick Replies**. The **Manage Quick Replies** window opens with columns **Shortcut**, **Message**, **Sort Order** and **Action**.
 
-<figure><img src="../.gitbook/assets/inbox-manage-quick-replies.png" alt="Manage Quick Replies window"><figcaption><p>Manage Quick Replies (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-manage-quick-replies.png" alt="Manage Quick Replies window"><figcaption><p>Manage Quick Replies</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -73,9 +73,7 @@ Click **Create Quick Reply** and fill in:
 
 Click **Submit** to save.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Create Quick Reply form showing Quick Reply Type options, Shortcut, Message and Sort Order]
+<figure><img src="../.gitbook/assets/inbox-create-quick-reply.png" alt="Create Quick Reply form with Quick Reply Type options, Shortcut set to delivery, a sample message, Sort Order 0, and Reset and Submit buttons"><figcaption><p>Create Quick Reply form</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -120,9 +118,7 @@ Tick the Quick Replies you want. A bar at the bottom shows how many are selected
 
 Click **Cancel Copy** / **Cancel Delete** (or **Cancel**) to leave bulk mode.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Copy Quick Replies to Another Channel window listing target channels with phone number and ID]
+<figure><img src="../.gitbook/assets/inbox-copy-quick-replies.png" alt="Copy 2 Quick Replies to Another Channel window listing the target channel Sales Line with its phone number and ID under Choose a Target Channel"><figcaption><p>Copy Quick Replies to Another Channel window</p></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 

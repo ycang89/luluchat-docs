@@ -88,9 +88,7 @@ These steps connect your existing **WhatsApp Business app** to Luluchat via **Wh
 * Back on Luluchat's **WhatsApp Cloud Setup Guide**, the screen now shows **Step 2: Click "Done" to complete the setup**. You do **not** need to choose a phone number or create a PIN in this flow.
 * Click **Done**.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: WhatsApp Cloud Setup Guide after the WhatsApp Business App signup, showing only "Step 2: Click "Done" to complete the setup" and the Done button]
+<figure><img src="../.gitbook/assets/inbox-waba-guide-coex.png" alt="WhatsApp Cloud Setup Guide after the WhatsApp Business App signup, showing Step 2: Click Done to complete the setup"><figcaption><p>Finish the setup with Done</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

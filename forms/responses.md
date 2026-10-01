@@ -3,7 +3,7 @@
 ## Viewing Submissions (Step 3)
 Once your form is live and customers start submitting, open the form and go to the **3. Responses** tab.
 
-<figure><img src="../.gitbook/assets/forms-responses.png" alt="Responses table with submission date, verification, status and answers"><figcaption><p>Responses tab (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/forms-responses.png" alt="Responses table with submission date, verification, status and answers"><figcaption><p>Responses tab</p></figcaption></figure>
 
 ### The Responses Table
 Each row is one submission. The table shows:

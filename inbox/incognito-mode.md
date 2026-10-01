@@ -20,7 +20,7 @@ The toggle sits at the top right of the Inbox, next to your lists. It shows **In
 
 In the Inbox, click **Incognito Off** at the top right. The button changes to **Incognito On** and is highlighted.
 
-<figure><img src="../.gitbook/assets/inbox-list-tabs.png" alt="Inbox top bar with the Incognito and Sound buttons at the top right"><figcaption><p>The Incognito button at the top right of the Inbox (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-list-tabs.png" alt="Inbox top bar with the Incognito and Sound buttons at the top right"><figcaption><p>The Incognito button at the top right of the Inbox</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

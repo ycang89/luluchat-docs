@@ -25,7 +25,7 @@ Scheduling is a **Pro Plan** feature. On other plans the scheduling options are 
 
 In the message composer, click the clock icon next to the send button (tooltip **Schedule a message**). The **Schedule Message** window opens.
 
-<figure><img src="../.gitbook/assets/inbox-composer.png" alt="Message composer; the clock icon below the send button schedules a message"><figcaption><p>The clock icon below the send button schedules a message (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-composer.png" alt="Message composer; the clock icon below the send button schedules a message"><figcaption><p>The clock icon below the send button schedules a message</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -36,7 +36,7 @@ In the message composer, click the clock icon next to the send button (tooltip *
 
 Click **Set Schedule Time**. (**Reset to Now** clears the schedule so messages send immediately again.)
 
-<figure><img src="../.gitbook/assets/inbox-schedule.png" alt="Schedule Message window"><figcaption><p>Schedule Message window (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-schedule.png" alt="Schedule Message window"><figcaption><p>Schedule Message window</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -60,9 +60,7 @@ In the composer, click **More Actions** (⋮) > **Message Template** (WhatsApp C
 
 Switch on **Do you want to schedule sending out this template?** (or **...this message flow?**) and choose a time under **Choose sending date and time**.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Send Message Template window with the schedule switch turned on and the date/time picker visible]
+<figure><img src="../.gitbook/assets/inbox-waba-template-schedule.png" alt="Send Message Template window with the schedule switch on and the sending date and time field"><figcaption><p>Scheduling a message template</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -80,7 +78,7 @@ Fill in the rest of the template or flow and click **Send**. It will go out at t
 
 Click **More Actions** (⋮) > **Scheduled Messages**. Or, in a chat with scheduled messages, click **Edit** on the banner at the top of the conversation (this opens the list filtered to that contact).
 
-<figure><img src="../.gitbook/assets/inbox-scheduled-banner.png" alt="Scheduled message banner with the Edit button"><figcaption><p>Scheduled message banner (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-scheduled-banner.png" alt="Scheduled message banner with the Edit button"><figcaption><p>Scheduled message banner</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -88,7 +86,7 @@ Click **More Actions** (⋮) > **Scheduled Messages**. Or, in a chat with schedu
 
 The **Scheduled Messages** list shows **Message**, **Recipient**, **Schedule Time** (with *"Scheduled by \[name]"*) and **Action**. Search by **Recipient** to narrow it down.
 
-<figure><img src="../.gitbook/assets/inbox-scheduled-list.png" alt="Scheduled Messages window"><figcaption><p>Scheduled Messages (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-scheduled-list.png" alt="Scheduled Messages window"><figcaption><p>Scheduled Messages</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

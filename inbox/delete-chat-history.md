@@ -18,9 +18,7 @@ When you disconnect a channel, you can also choose to delete its chat history. T
 
 Click **Channels** in the top bar (it shows your current channel's number or name). The **Channels** window lists all your channels.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Top bar with the Channels button highlighted, and the Channels window listing channel cards]
+<figure><img src="../.gitbook/assets/inbox-channels-window.png" alt="Top bar showing the Channels button with the current channel number, and the Channels window listing two channel cards, Support Line and Sales Line, each with Disconnect and Switch or Current Selected buttons"><figcaption><p>Channels button and Channels window</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -28,9 +26,7 @@ Click **Channels** in the top bar (it shows your current channel's number or nam
 
 On the channel card, click **Disconnect**.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Channel card with the red Disconnect button]
+<figure><img src="../.gitbook/assets/inbox-channel-card-disconnect.png" alt="Sales Line channel card showing phone number, channel type, ID and contact count, with a red Disconnect button and a Switch button"><figcaption><p>Channel card with the Disconnect button</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -40,9 +36,7 @@ A confirmation appears: *"Are you sure you want to disconnect this channel? Chec
 
 Leave the box unticked if you only want to disconnect and keep the history.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Disconnect confirmation with the Remove chat history checkbox ticked and the Yes, proceed button]
+<figure><img src="../.gitbook/assets/inbox-disconnect-remove-history.png" alt="Disconnect confirmation pop-up with the Remove chat history checkbox ticked and Cancel and Yes, proceed buttons"><figcaption><p>Disconnect confirmation with Remove chat history ticked</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

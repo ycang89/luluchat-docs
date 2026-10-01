@@ -26,9 +26,7 @@ To apply these to many chats at once, use [Bulk Actions](bulk-actions.md).
 
 In the Inbox, hover over the chat row. A small down arrow (⌄) appears at the bottom right of the row, next to the assignee.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Chat list with mouse hovering over a chat row and the down-arrow icon visible at the bottom right of the row]
+<figure><img src="../.gitbook/assets/inbox-row-hover-arrow.png" alt="Chat list with the mouse over the Mei Ling row, showing the down arrow at the bottom right of the row next to the assignee label"><figcaption><p>Down arrow on a hovered chat row</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -41,7 +39,7 @@ Click the down arrow. The menu shows the options that fit the chat's current sta
 * **Mark as unread** (if the chat has no unread messages) or **Mark as Read** (if it does)
 * **Archive** or **Unarchive**
 
-<figure><img src="../.gitbook/assets/inbox-row-menu.png" alt="Chat row menu with Mute, Pin, Mark as unread and Archive"><figcaption><p>Chat row menu (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-row-menu.png" alt="Chat row menu with Mute, Pin, Mark as unread and Archive"><figcaption><p>Chat row menu</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -49,7 +47,7 @@ Click the down arrow. The menu shows the options that fit the chat's current sta
 
 Click the option you need. For **Mute**, a small **Mute Notifications** window opens. Choose how long to mute: **8 Hours**, **1 Week** or **Always**, then click **Confirm**.
 
-<figure><img src="../.gitbook/assets/inbox-mute.png" alt="Mute Notifications pop-up with the duration dropdown"><figcaption><p>Mute Notifications (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-mute.png" alt="Mute Notifications pop-up with the duration dropdown"><figcaption><p>Mute Notifications</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -62,7 +60,7 @@ The chat row updates to show its new state:
 * Unread chats show a green badge with the number of unread messages, or a small blue badge if marked as unread.
 * Archived chats show an **Archived** label (for example, in search results or the **Archived** list).
 
-<figure><img src="../.gitbook/assets/inbox-chat-list.png" alt="Chat list with a pinned chat, unread count badges and a muted group"><figcaption><p>Pinned, unread and muted chats in the chat list (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-chat-list.png" alt="Chat list with a pinned chat, unread count badges and a muted group"><figcaption><p>Pinned, unread and muted chats in the chat list</p></figcaption></figure>
 {% endstep %}
 {% endstepper %}
 

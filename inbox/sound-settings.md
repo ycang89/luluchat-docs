@@ -24,7 +24,7 @@ Click `Inbox` from the left menu.
 
 At the top right, next to the Incognito button, click **Sound On** to mute. The button changes to **Sound Muted** with a crossed-out speaker icon.
 
-<figure><img src="../.gitbook/assets/inbox-list-tabs.png" alt="Inbox top bar with the Sound button at the top right"><figcaption><p>The Sound button at the top right of the Inbox (shown here as Sound On) (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-list-tabs.png" alt="Inbox top bar with the Sound button at the top right"><figcaption><p>The Sound button at the top right of the Inbox (shown here as Sound On)</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

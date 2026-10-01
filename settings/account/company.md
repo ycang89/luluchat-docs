@@ -13,7 +13,7 @@ Manage your organization's identity, operational hours, and account lifecycle.
 * Company Email: Primary email for business communication.
 * Company Website: Your official website URL.
 
-<figure><img src="../../.gitbook/assets/settings-company.png" alt="Company settings with team, company details and working hours"><figcaption><p>Company settings (sample data)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-company.png" alt="Company settings with team, company details and working hours"><figcaption><p>Company settings</p></figcaption></figure>
 
 #### Set Working Hours
 

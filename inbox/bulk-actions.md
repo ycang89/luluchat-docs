@@ -27,7 +27,7 @@ In the Inbox, on the **Chats** tab, click the **Bulk Change** icon (a checkbox i
 
 A bar appears above the chat list, and each chat shows a checkbox instead of its avatar.
 
-<figure><img src="../.gitbook/assets/inbox-chat-list.png" alt="Chat list header; the checkbox icon is Bulk Change"><figcaption><p>The Bulk Change (checkbox) icon is in the chat list header (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-chat-list.png" alt="Chat list header; the checkbox icon is Bulk Change"><figcaption><p>The Bulk Change (checkbox) icon is in the chat list header</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -37,9 +37,7 @@ Click a chat row (or its checkbox) to select it. Click again to deselect it. The
 
 To select every chat currently loaded in the list, tick the checkbox at the left of the bar. Untick it to clear the selection.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Chat list in Bulk Change mode with three chats ticked and the bar showing "3 selected"]
+<figure><img src="../.gitbook/assets/inbox-bulk-three-selected.png" alt="Chat list in Bulk Change mode with Jason Tan, Mei Ling and Grace Chen ticked, and the bar showing 3 selected with the Select action dropdown"><figcaption><p>Three chats selected in Bulk Change mode</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -54,7 +52,7 @@ Click the **Select action** dropdown in the bar and choose one of:
 * **Unarchive**
 * **Close conversation**
 
-<figure><img src="../.gitbook/assets/inbox-bulk.png" alt="Bulk Change mode with two chats selected and the Select action menu open"><figcaption><p>Choosing a bulk action (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-bulk.png" alt="Bulk Change mode with two chats selected and the Select action menu open"><figcaption><p>Choosing a bulk action</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

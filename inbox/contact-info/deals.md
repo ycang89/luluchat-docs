@@ -31,7 +31,7 @@ The card colour shows the stage type: green for *Won*, red for *Lost*, and yello
 
 If the contact has no deals, you'll see **No deals yet**.
 
-<figure><img src="../../.gitbook/assets/inbox-contact-deals.png" alt="Deals section with an open deal and a won deal, and the Reload and Create links"><figcaption><p>Deals in Contact Info (sample data)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/inbox-contact-deals.png" alt="Deals section with an open deal and a won deal, and the Reload and Create links"><figcaption><p>Deals in Contact Info</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -43,9 +43,7 @@ Choose the **Deal Pipeline** and **Stage**, and add any other details such as co
 
 See [The Deal Form](../../deals/board.md#the-deal-form) for every field.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Create a Deal window opened from Contact Info, with the contact filled in and Deal Pipeline and Stage selected]
+<figure><img src="../../.gitbook/assets/inbox-create-deal-pipeline-stage.png" alt="Create a Deal window with Contact set to Jason Tan, Deal Pipeline set to Sales Pipeline and Stage set to New Lead, plus company, deal owner, amount and other fields"><figcaption><p>Create a Deal window from Contact Info</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

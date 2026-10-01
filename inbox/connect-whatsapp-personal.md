@@ -115,13 +115,9 @@ If the console shows "Clipboard blocked", type `copy(__luluPasskey)` and press E
 2. If Luluchat shows a code, compare it with the code shown on your phone. If they match, click **Codes match — Confirm**.
 3. Keep the window open while WhatsApp finishes linking.
 
-📸 Screenshot placeholder:
+<figure><img src="../.gitbook/assets/inbox-passkey-request.png" alt="WhatsApp needs passkey verification window with the manual steps, Copy code button, paste box with Submit, and the Progress list"><figcaption><p>Passkey verification</p></figcaption></figure>
 
-> \[Screenshot: "WhatsApp needs passkey verification" window showing the manual steps, the "Copy code" button, the paste box with "Submit", and the "Progress" list]
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Passkey confirmation step showing the confirmation code and the "Codes match — Confirm" button]
+<figure><img src="../.gitbook/assets/inbox-passkey-confirm.png" alt="Passkey confirmation step showing the confirmation code and the Codes match — Confirm button"><figcaption><p>Confirm the code shown on your phone</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

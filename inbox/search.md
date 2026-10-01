@@ -26,7 +26,7 @@ In the Inbox, on the **Chats** tab, click the **Search** icon (magnifying glass)
 
 For Messenger and Instagram channels, the search box is always shown at the top of the chat list.
 
-<figure><img src="../.gitbook/assets/inbox-chat-list.png" alt="Chat list header; the magnifying glass icon is Search"><figcaption><p>The Search icon is the magnifying glass in the chat list header (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-chat-list.png" alt="Chat list header; the magnifying glass icon is Search"><figcaption><p>The Search icon is the magnifying glass in the chat list header</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -36,7 +36,7 @@ Type a name, phone number or word. Results appear after you stop typing for a mo
 
 **Tip**: When you paste a phone number, Luluchat removes `+`, `-` and spaces so it matches the saved number.
 
-<figure><img src="../.gitbook/assets/inbox-search.png" alt="Search box with a keyword and the Chats, Contacts and Messages result tabs"><figcaption><p>Search results (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-search.png" alt="Search box with a keyword and the Chats, Contacts and Messages result tabs"><figcaption><p>Search results</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -50,9 +50,7 @@ Use the tabs under the search box:
 
 Click **Load More** at the bottom of a tab to see more results.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Messages tab of the search results with the keyword highlighted in each result]
+<figure><img src="../.gitbook/assets/inbox-search-messages-tab.png" alt="Search results for the keyword refund with the Messages tab selected, listing matching messages with the chat or sender name, date and the keyword in bold"><figcaption><p>Messages tab of the search results</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -70,7 +68,7 @@ Click the back arrow (←) at the left of the search box to clear the search and
 
 Open a chat, then click the **Search Messages** icon (magnifying glass) in the conversation header. A **Search Messages** panel opens on the right.
 
-<figure><img src="../.gitbook/assets/inbox-search-messages.png" alt="Search Messages panel open beside the chat list"><figcaption><p>Search Messages panel (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/inbox-search-messages.png" alt="Search Messages panel on the right of the conversation, with the keyword refund and matching messages highlighted"><figcaption><p>Search Messages panel</p></figcaption></figure>
 {% endstep %}
 
 {% step %}

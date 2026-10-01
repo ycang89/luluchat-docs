@@ -5,7 +5,7 @@ The Board is a visual Kanban interface where you manage your day-to-day ticketin
 
 Open it from `Tickets` > `Board` in the left menu, then choose a pipeline at the top.
 
-<figure><img src="../.gitbook/assets/tickets-board.png" alt="Tickets Board with Open, In Progress, Pending and Solved stages"><figcaption><p>Tickets Board (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tickets-board.png" alt="Tickets Board with Open, In Progress, Pending and Solved stages"><figcaption><p>Tickets Board</p></figcaption></figure>
 
 ## Pipelines
 
@@ -106,7 +106,7 @@ Click **Create Ticket** or **Save Changes** to save. The created and last update
 
 To remove a ticket from the board without deleting it, click **Archive Ticket**. You can restore it later from **Archived Tickets** in the [List](./list.md) view.
 
-<figure><img src="../.gitbook/assets/tickets-form.png" alt="Edit Ticket form with public link, attachments, comments and ticket details"><figcaption><p>Ticket form in a public pipeline (sample data)</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/tickets-form.png" alt="Edit Ticket form with public link, attachments, comments and ticket details"><figcaption><p>Ticket form in a public pipeline</p></figcaption></figure>
 
 ### Comments
 - Type in **Add a comment...** and click **Submit**. You can attach files to a comment.

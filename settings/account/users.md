@@ -6,7 +6,7 @@ Manage your team by inviting new members and controlling what they can access.
 
 Go to `Settings` > `Account Management` > `Users`.
 
-<figure><img src="../../.gitbook/assets/settings-users.png" alt="Users page with the Invitation List and Team User list"><figcaption><p>Users (sample data)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-users.png" alt="Users page with the Invitation List and Team User list"><figcaption><p>Users</p></figcaption></figure>
 
 ## How to set it up (Step by Step)
 

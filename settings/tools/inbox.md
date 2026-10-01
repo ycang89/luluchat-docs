@@ -15,7 +15,7 @@ Choose which media types are automatically downloaded when received or sent. Thi
 * Incoming Media: Select Audio, Image, Video, Documents, or Stickers.
 * Outgoing Media: Select which types you send that should be auto-processed.
 
-<figure><img src="../../.gitbook/assets/settings-inbox.png" alt="Inbox settings with media auto-download, conversation options and notification number"><figcaption><p>Inbox settings (sample data)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/settings-inbox.png" alt="Inbox settings with media auto-download, conversation options and notification number"><figcaption><p>Inbox settings</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
