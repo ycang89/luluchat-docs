@@ -202,4 +202,4 @@ After setting up webhooks in Shopify:
 ## Related Documentation
 
 * [Shopify Integration](shopify-integration/) - Learn how to connect your Shopify store to Luluchat
-* [Shopify App Event Trigger in Message Flows](../../automations/shopify-app-event-trigger/) - Learn how to configure Shopify events as triggers and use Shopify data in your messages
+* [Shopify App Event Trigger in Message Flows](../../automations/shopify-app-event-trigger.md) - Learn how to configure Shopify events as triggers and use Shopify data in your messages

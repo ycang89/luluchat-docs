@@ -2,61 +2,82 @@
 
 ## What is Opt-In Flow?
 
-Captures a contact’s consent and updates their opt-in status, usually after they agree to receive messages.
+The **Opt In** flow lets contacts subscribe to your promotional messages by sending a keyword. Luluchat marks the contact as opted in and sends a confirmation message.
+
+In the app: "Notify customers to express their willingness to receive promotional messages from the business by sending an opt-in message."
 
 ## When does it trigger?
 
-* When the flow is invoked on an opt-in path (e.g., via a trigger or manual run) to register consent.
+* When a contact sends the opt-in keyword. By default the keyword is `OPT_IN` (condition **is**).
+* Only if the Opt In flow is published and its card is switched **On**.
 
 ## How to set it up (Step by Step)
 
 {% stepper %}
 {% step %}
-#### Open Message Flows
+#### Click Configure on the Opt In card
 
-Go to `Automations` → `Message Flows` and create/select the Opt-In Flow.
+Go to **Automations** > **Message Flows**. Under **Basic Message Flow**, click **Configure** on the **Opt In** card. The **Create Opt In Message** window shows a preview and how it works:
 
-📸 Screenshot placeholder:
+1. Contact send in designated opt-in keyword
+2. System will send a predefined acknowledgment message to the customer.
 
-> \[Screenshot: Message Flows list showing Opt-In Flow]
+Click **Create**.
+
+<figure><img src="../.gitbook/assets/flow-fallback-optin-create.png" alt="Create Opt In Message window with a phone preview of the opt-in confirmation message, How does it work steps and a Create button"><figcaption><p>Create Opt In Message</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
-#### Collect consent
+#### Review the ready-made steps
 
-Prompt the contact to agree (e.g., "Reply YES to continue"). Include clear consent language. Save/publish.
+The flow opens in draft mode with three connected steps:
 
-📸 Screenshot placeholder:
+* **Starting Step**: **By Keyword** — Message is `OPT_IN`.
+* **Opt In**: An action that marks the contact as opted in.
+* **Send Message 1**: A confirmation message.
 
-> \[Screenshot: Opt-In Flow builder with consent prompt]
+<figure><img src="../.gitbook/assets/flow-fallback-optin-editor.png" alt="Opt-In Message flow with the Starting Step triggered by the keyword OPT_IN, connected to an Opt In action and then to Send Message 1 thanking the contact for subscribing to Kopi Corner updates"><figcaption><p>Opt In flow</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
-#### Update status
+#### Change the keyword or message (optional)
 
-Ensure the flow includes the opt-in action/update so the contact is marked as opted in.
+* Click the **Starting Step** to change the keyword or add another **Keyword** trigger (for example "SUBSCRIBE").
+* Click **Send Message 1** to change the confirmation text.
+{% endstep %}
 
-📸 Screenshot placeholder:
+{% step %}
+#### Publish
 
-> \[Screenshot: Action step marking opt-in]
+Click **Publish Flow**. Check that the **Opt In** card is switched **On**.
 {% endstep %}
 {% endstepper %}
 
 ## What happens after it triggers?
 
-Consent is captured; the contact is marked opted in, and the flow can continue to the next steps (welcome, routing).
+* The contact is marked as opted in (subscribed) to promotional messages.
+* The contact receives the confirmation message.
 
 ## Important behavior to know
 
-* Use clear consent text; store proof where applicable.
-* Opt-in status allows future messaging; opt-out overrides it.
+* **Fixed steps**: You can't add or delete steps in the Opt In flow, and there's no **Auto Layout** or **Flow Settings**. You can edit the keyword and the message.
+* **Keyword triggers only**: The **Starting Step** only offers the **Keyword** trigger.
+* **Opt Out reverses it**: If the contact later sends the opt-out keyword, the [Opt-Out Flow](opt-out-flow.md) marks them as opted out.
+* **Tell contacts the keyword**: Contacts need to know the exact keyword. With the default **is** condition, the whole message must be the keyword.
 
 ## Common issues & solutions
 
-* Status not updated: ensure the opt-in action runs and the flow is published.
-* Trigger not firing: verify the opt-in path/trigger is set correctly.
+* **Nothing happens when a contact sends OPT_IN**: Check that the card is **On** and that you published the flow. Also check the keyword in the **Starting Step**.
+* **"In Starting Step, the Keyword Trigger is missing keywords."**: Add at least one keyword before publishing.
 
 ## Best practice 💡
 
-* Keep the opt-in ask simple and explicit.
-* Confirm success with a short welcome message.
+* Mention the keyword in your broadcasts and Default Message, for example "Reply OPT_IN to get our weekly promos".
+* Keep the confirmation short and tell contacts how to unsubscribe ("Reply 'OPT_OUT' anytime to stop").
+
+## Related Documentation
+
+* [Opt-Out Flow](opt-out-flow.md)
+* [Opt In action](logics/actions/opt-in.md)
+* [Fallback & Consent Flows](../core-features/index-1/message-flows/fallback-and-consent-flows/README.md)
+* [Trigger](steps/trigger.md)

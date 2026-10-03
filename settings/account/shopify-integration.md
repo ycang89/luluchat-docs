@@ -168,4 +168,4 @@ Enter the **Admin API Access Token** you copied from Shopify and your **Shopify 
 ## Related Documentation
 
 * [Shopify Webhook Configuration](shopify-webhook-configuration/) - Learn how to configure webhooks for Shopify events
-* [Shopify App Event Trigger in Message Flows](../../automations/shopify-app-event-trigger/) - Learn how to configure Shopify events as triggers and use Shopify data in your messages
+* [Shopify App Event Trigger in Message Flows](../../automations/shopify-app-event-trigger.md) - Learn how to configure Shopify events as triggers and use Shopify data in your messages

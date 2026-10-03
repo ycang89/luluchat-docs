@@ -2,67 +2,82 @@
 
 ## What is Round Robin?
 
-Round Robin is a distribution logic that ensures traffic or tasks are divided equally among multiple paths. It works by cycling through a list of "rounds" in order, starting again from the beginning once the last round is reached.
+**Round Robin** sends contacts down a list of paths ("rounds") in turn. The first contact goes to **Round 1**, the next to **Round 2**, and so on. After the last round, it starts again from **Round 1**. This way each round gets an equal share of contacts.
+
+<figure><img src="../../.gitbook/assets/flow-logic-round-robin-canvas.png" alt="Catering Lead Distribution flow: Starting Step with keywords catering and event order, a Catering Welcome message, and a Round Robin step named Share Catering Leads with three rounds. Round 1 links to Assign to Daniel, Round 2 to Assign to Priya and Round 3 to Assign to Hafiz, each an Action step with Add Assignee"><figcaption><p>A Round Robin step sharing catering leads between three team members</p></figcaption></figure>
 
 ## When to use it?
 
-* **Lead Distribution**: Equally distribute new leads among your sales team.
-* **Support Load Balancing**: Ensure support tickets are shared fairly among agents.
-* **Varied Responses**: Cycle through different message variations to keep content fresh.
+* **Lead distribution**: Share new enquiries equally between your sales team. Link each round to an [Actions](actions.md) step that assigns a different team member.
+* **Support load balancing**: Spread new chats evenly across agents or inbox lists.
+* **Rotating content**: Cycle through different welcome messages or offers.
 
 ## How to set it up (Step by Step)
 
 {% stepper %}
 {% step %}
-#### Add the Round Robin Node
+#### Add a Round Robin step
 
-In the Message Flow Editor, click **Add Node (+) > Logics > Round Robin**.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Add Node menu with Logics > Round Robin highlighted]
+Open your flow, click **Edit Flow**, then click **+** (**Add Node**) **> Logic > Round Robin**. A new Round Robin step starts with two rounds.
 {% endstep %}
 
 {% step %}
-#### Configure Rounds
+#### Add or remove rounds
 
-Click the node to open the configuration. Click **+ Add New Step** to create a new round (e.g., Round 1, Round 2, Round 3).
+Click the step to open its settings. Click **+ Add New Step** to add another round. To remove a round, click the bin icon next to it and confirm "Are you sure you want to delete this step?".
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Round Robin configuration drawer with the 'Add New Step' button]
+<figure><img src="../../.gitbook/assets/flow-logic-round-robin-settings.png" alt="Round Robin settings panel for Share Catering Leads with the description text, Round 1 linked to Assign to Daniel, Round 2 linked to Assign to Priya, Round 3 linked to Assign to Hafiz, a bin icon next to each round and the + Add New Step button. The canvas on the right shows the same step selected with its three linked rounds"><figcaption><p>Round Robin settings with three rounds</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
-#### Link Each Round
+#### Choose the next step for each round
 
-For each round, click **Choose Next Step** to link it to the desired path or teammate assignment.
+Under each round, click **Choose Next Step** and pick what happens, for example **Perform Actions** (creates a new Actions step), **Send a Message**, or **Select Existing Step** to link a step that is already on the canvas.
 
-📸 Screenshot placeholder:
+Once linked, the button shows the next step's name, and the node on the canvas reads **Round 1: Assign to Daniel**, and so on. Click the linked button again to open that step's choice, or click the **X** to remove it.
 
-> \[Screenshot: Round Robin node showing several rounds linked to different next steps]
+<figure><img src="../../.gitbook/assets/flow-logic-round-robin-next-step.png" alt="The Choose Next Step popup for Round 2, showing Perform Actions - Assign to Priya with an X button to remove the link"><figcaption><p>Round 2 is linked to the Assign to Priya Actions step</p></figcaption></figure>
+{% endstep %}
+
+{% step %}
+#### Publish the flow
+
+Click **Publish Flow**. If a round has no next step, publishing is blocked with an error (see below).
 {% endstep %}
 {% endstepper %}
 
 ## What happens after it triggers?
 
-The contact is automatically routed to the next round in sequence. The first contact goes to Round 1, the second to Round 2, and so on. Once all rounds have been used, it cycles back to Round 1.
+* Each contact who reaches the step is sent straight to the next round in order. The first contact after publishing goes to **Round 1**.
+* Luluchat remembers which round was used last, so the rotation continues across contacts, even if they arrive hours or days apart.
+* After the last round, the next contact goes back to **Round 1**.
+* Nothing is shown to the contact. They only see what the next step sends.
 
-{% hint style="info" %}
-**Important behavior to know**
+## Important behavior to know
 
-* **Sequential Cycling**: Round Robin cycles through rounds in strict order. If you have 3 rounds, the 4th contact will go to Round 1, the 5th to Round 2, and so on.
-* **Persistent Memory**: The node remembers which round was last used, even if contacts arrive hours or days apart. This ensures fair distribution over time.
-* **Re-ordering**: If you delete a round, the remaining rounds are automatically re-sequenced to maintain the cycle.
-* **Dynamic Re-ordering**: If you change the order of rounds in the editor, the sequence is updated immediately for future contacts.
-{% endhint %}
+* **Strict order, not workload-based**: Rounds are used one after another. Round Robin does not check how busy a team member is or whether they are online.
+* **Equal share over time**: With 3 rounds, contacts 1, 4, 7… go to Round 1, contacts 2, 5, 8… to Round 2, and so on.
+* **Deleting a round**: The remaining rounds are renumbered (Round 3 becomes Round 2). The rotation continues from where it was, so the next contact may not go to Round 1.
+* **Link rounds from the panel**: New rounds have no dot on the canvas yet. Use **Choose Next Step** in the settings panel to link them.
+* **No reordering**: Rounds can't be dragged into a new order. To change the order, change which step each round links to.
 
 ## Common issues & solutions
 
-* **Uneven distribution**: Round Robin ensures equal distribution over time. If you notice one round getting more traffic, check that all rounds are properly linked and the flow is published.
-* **Round deleted**: If you delete a round, the system automatically adjusts the sequence. Contacts will continue to be distributed evenly among the remaining rounds.
+* **"In Round Robin Node "Share Catering Leads", please define the missing steps."**: The step has no rounds. Click **+ Add New Step** and link it.
+* **"In Round Robin Node "Share Catering Leads", Round 2 is missing the next action."**: Round 2 has no next step. Click **Choose Next Step** under Round 2.
+* **The node shows "Please add a step"**: All rounds were deleted. Add at least one round.
+* **One person seems to get more contacts**: The share is equal by count, not by time. Over a short period the numbers can look uneven; they even out as more contacts pass through.
 
 ## Best practice 💡
 
-* **Combine with Actions**: Link each round to an "Actions" node that assigns a different team member to ensure fair workload distribution.
-* **Monitor Performance**: Regularly check if all paths in your Round Robin are performing as expected.
+* Pair each round with an **Actions** step that uses **Add Assignee**, and name the steps after the person (for example "Assign to Priya") so the canvas is easy to read.
+* Put a **Message** before the Round Robin so the customer knows someone will reply soon.
+* When a team member leaves, delete their round and remove them from the linked Actions step.
+
+## Related Documentation
+
+* [Automation Logics](index.md)
+* [Actions](actions.md)
+* [Add Assignee](actions/add-assignee.md)
+* [Randomizer](randomizer.md)
+* [Message Flow Editor](../message-flows-editor.md)

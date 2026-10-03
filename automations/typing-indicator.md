@@ -2,162 +2,97 @@
 
 ## What is Typing Indicator?
 
-The Typing Indicator is a feature that makes your automated messages feel more natural and human-like. When enabled, it shows a "typing..." status in WhatsApp before your message is sent, simulating the experience of a real person typing a message.
+The **Typing Indicator** shows a "typing…" status in WhatsApp before an automated message is sent, so the reply feels like it comes from a real person.
+
+In the app it is described as: "Shows a "typing…" indicator before a message is sent. In Auto mode, the wait time is calculated based on text length; otherwise, a fixed time can be set to override it."
+
+You control it in two places:
+
+* **Settings** > **Tools** > **Message Flows**: Turn the typing indicator on or off for your team.
+* **The Message step in the flow editor**: Choose how long the typing indicator shows for each text, image or file block.
 
 ## When does it trigger?
 
-* When a Message node in your flow is configured with a typing wait time.
-* Only if Typing Indicator is enabled in your Message Flows settings for your channel type (WhatsApp Personal or WhatsApp Cloud).
-* The typing indicator appears before the message is sent, based on the configured wait time.
+* When a flow sends a **Message** step on a WhatsApp Personal or WhatsApp Cloud channel.
+* Only when the typing indicator is turned on in **Settings** > **Tools** > **Message Flows**.
+* It shows before each text, image or file block, for the wait time set on that block.
 
 ## How to set it up (Step by Step)
 
-### Step 1: Enable Typing Indicator in Settings
-
-Before you can use typing indicators in your message flows, you need to enable it globally:
-
 {% stepper %}
 {% step %}
-**Access Message Flows Settings**
+#### Turn on the typing indicator
 
-1. Go to `Settings` > `Tools` > `Message Flows`.
-2. You'll see the "Typing Indicator Settings" section.
+Go to **Settings** > **Tools** > **Message Flows**. Under **Typing Indicator Settings**, turn on:
 
-📸 Screenshot placeholder:
+* **Enable Typing Indicator for WhatsApp Personal**: For the Send Message step.
+* **Enable Typing Indicator for WhatsApp Cloud**: For the Send WABA Message step.
 
-> \[Screenshot: Message Flows settings page showing Typing Indicator section]
+Click **Save**. You see "Message Flow settings have been updated."
+
+<figure><img src="../.gitbook/assets/flow-typing-settings.png" alt="Typing Indicator Settings with Enable Typing Indicator for WhatsApp Personal and Enable Typing Indicator for WhatsApp Cloud both switched On, each with its help text"><figcaption><p>Typing Indicator Settings</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
-**Enable for Your Channel Type**
+#### Open a Message step
 
-Toggle the appropriate switch based on your channel:
+Go to **Automations** > **Message Flows**, open a flow and click **Edit Flow**. Click a **Message** step to open its settings.
 
-* **Enable Typing Indicator for WhatsApp Personal**: Toggle this "On" if you're using WhatsApp Personal channels.
-* **Enable Typing Indicator for WhatsApp Cloud**: Toggle this "On" if you're using WhatsApp Business API (WABA) channels.
+Each text, image or file block shows a clock with its current wait time: **Auto** or a number of seconds (for example **3 sec**). You see the same label on the step on the board.
 
-You can enable both if you use multiple channel types.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Typing Indicator toggles for Personal and Cloud]
+<figure><img src="../.gitbook/assets/flow-typing-node.png" alt="Two message steps on the board: Send Our Menu with the clock label Auto and Opening Hours with the clock label 3 sec"><figcaption><p>Typing wait time shown on message steps</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
-**Save Settings**
+#### Choose the wait time
 
-Click **Save** to apply your changes. The typing indicator feature is now enabled for your message flows.
+Hover over the clock in the block. Under **Show typing indicator**, choose:
 
-📸 Screenshot placeholder:
+* **Auto based on text length (System Default)**: Luluchat works out the wait time from the length of the text.
+* **For 1 second** to **For 15 seconds**: A fixed wait time.
 
-> \[Screenshot: Save button in Message Flows settings]
-{% endstep %}
-{% endstepper %}
+The tooltip above the list also has a **Typing Indicator** switch, so you can turn the team setting on or off without leaving the editor. You see "Typing indicator setting has been updated."
 
-### Step 2: Configure Typing Indicator in Message Nodes
-
-Once enabled in settings, you can configure typing wait time for individual Message nodes:
-
-{% stepper %}
-{% step %}
-**Open Your Message Flow**
-
-1. Go to `Automations` > `Message Flows`.
-2. Open the flow you want to edit, or create a new one.
-3. Add or select a **Message** node in your flow.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Message Flow editor with a Message node selected]
+<figure><img src="../.gitbook/assets/flow-typing-dropdown.png" alt="Send Our Menu step settings with the clock hovered: a tooltip titled What Typing Indicator is? with a Typing Indicator switch set to On, and a Show typing indicator list with Auto based on text length (System Default) highlighted and For 1 second to For 9 seconds visible"><figcaption><p>Choose the typing wait time</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
-**Configure Typing Wait Time**
+#### Publish the flow
 
-1. In the Message node, you'll see a clock icon (⏰) at the bottom right of each text content block.
-2. Click the clock icon to open the typing indicator configuration.
-3. Choose your typing wait time:
-   * **Auto**: The system automatically calculates the wait time based on the message text length (recommended for natural feel).
-   * **Custom (seconds)**: Set a fixed number of seconds (e.g., 2, 3, 5 seconds) for the typing indicator to show.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Message node showing clock icon and typing indicator dropdown with Auto and custom time options]
-{% endstep %}
-
-{% step %}
-**Save Your Flow**
-
-1. After configuring the typing wait time, save your Message node.
-2. Save and publish your flow to apply the changes.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Save button in flow editor]
+Click **Publish Flow** so contacts get the new timing.
 {% endstep %}
 {% endstepper %}
 
 ## What happens after it triggers?
 
-When a message flow runs with typing indicator enabled:
-
-1. **Typing Indicator Shows**: Before the message is sent, WhatsApp displays a "typing..." indicator to the customer.
-2. **Wait Time**: The system waits for the configured duration (Auto or custom seconds).
-3. **Message Sends**: After the wait time, your message is delivered to the customer.
-4. **Natural Experience**: The customer sees the typing indicator, making the automated message feel like it's coming from a real person.
-
-## Typing Wait Time Modes
-
-### Auto Mode
-
-* **How it works**: The system automatically calculates the typing wait time based on the length of your message text.
-* **When to use**: Recommended for most cases as it provides a natural, realistic typing experience.
-* **Calculation**: Longer messages get longer wait times, shorter messages get shorter wait times.
-
-### Custom Mode (Fixed Seconds)
-
-* **How it works**: You set a fixed number of seconds (e.g., 2, 3, 5 seconds) for the typing indicator to show.
-* **When to use**: When you want consistent timing regardless of message length, or when you want to create a specific pacing for your conversation flow.
-* **Options**: Typically ranges from 1 to 10 seconds, depending on your configuration.
+1. The contact sees "typing…" in WhatsApp.
+2. Luluchat waits for the block's wait time (**Auto** or the seconds you chose).
+3. The message is sent.
 
 ## Important behavior to know
 
-* **Settings Required**: Typing indicator must be enabled in `Settings` > `Tools` > `Message Flows` before it will work in your flows. Enabling it in settings activates the feature globally for all message flows.
-* **Per-Node Configuration**: Each Message node can have its own typing wait time configuration. You can use Auto for some messages and custom times for others.
-* **Channel-Specific**: Typing indicator settings are separate for WhatsApp Personal and WhatsApp Cloud. Enable the one that matches your channel type.
-* **Only for Message Nodes**: Typing indicator only applies to Message nodes, not Message Template nodes or other content types.
-* **24-Hour Window**: Typing indicator works within the 24-hour service window. For messages outside this window (using templates), typing indicators may not apply.
-* **Auto Calculation**: In Auto mode, the wait time is calculated based on text length. Very short messages may have minimal wait time, while longer messages will have proportionally longer wait times.
-* **Visual Indicator**: The clock icon (⏰) in the Message node shows your current typing indicator setting. If disabled, it appears grayed out.
+* **Team-wide switch**: The switches in **Settings** > **Tools** > **Message Flows** (and the switch in the editor tooltip) apply to all message flows in your team.
+* **Per block**: Each text, image or file block has its own wait time. New blocks start on **Auto**.
+* **WhatsApp channels only**: The clock only appears on WhatsApp Personal and WhatsApp Cloud channels.
+* **Greyed-out clock**: If the typing indicator is off, the clock is grey and you can't choose a time. Hover over it and turn on the **Typing Indicator** switch.
+* **Which switch the editor uses**: In the flow editor, the clock on Message steps follows **Enable Typing Indicator for WhatsApp Personal**.
 
 ## Common issues & solutions
 
-* **Typing indicator not showing**:
-  * Check that Typing Indicator is enabled in `Settings` > `Tools` > `Message Flows` for your channel type (Personal or Cloud).
-  * Verify that the Message node has a typing wait time configured (not set to disabled).
-  * Ensure your flow is published and active.
-  * Check that your channel is connected and in `ready` status.
-* **Wait time too short or too long**:
-  * If using Auto mode and the timing feels off, try switching to Custom mode and set a specific number of seconds.
-  * Adjust the custom wait time to match your desired pacing (typically 2-5 seconds works well).
-* **Clock icon not appearing**:
-  * Ensure Typing Indicator is enabled in settings first.
-  * Refresh the flow editor page.
-  * Check that you're editing a Message node (not a Message Template node).
-* **Different behavior for Personal vs Cloud**:
-  * Remember that Personal and Cloud have separate typing indicator settings. Make sure you've enabled the correct one for your channel type.
+* **The clock is grey**: The typing indicator is off. Turn it on in **Settings** > **Tools** > **Message Flows**, or with the **Typing Indicator** switch in the clock's tooltip.
+* **No clock at all**: Your current channel isn't a WhatsApp Personal or WhatsApp Cloud channel.
+* **Contacts don't see "typing…"**: Check that the setting is on, that you published the flow after changing the wait time, and that the flow is switched **On**.
+* **Replies feel slow**: Choose a shorter fixed time (for example **For 2 seconds**) instead of **Auto** for long messages.
 
 ## Best practice 💡
 
-* **Use Auto Mode**: Auto mode provides the most natural typing experience as it adapts to message length automatically.
-* **Test Your Timing**: Test your flows with typing indicators to ensure the wait time feels natural and not too slow or too fast.
-* **Consistent Experience**: Consider using similar wait times across related messages in a flow for a consistent user experience.
-* **Balance Speed and Natural Feel**: While longer wait times feel more natural, don't make customers wait too long. 2-5 seconds is usually optimal.
-* **Enable for Both Channel Types**: If you use both WhatsApp Personal and WhatsApp Cloud, enable typing indicators for both in settings.
+* Leave most blocks on **Auto**; it adjusts to the length of each message.
+* Use short fixed times (2–3 seconds) for quick replies such as "Thanks! 😊".
+* Test the flow on your own phone to check the pacing feels natural.
 
 ## Related Documentation
 
-* [Message Node](content-nodes/message.md) - Learn how to create and configure Message nodes
-* [Message Flows Settings](../settings/tools/message-flows.md) - Learn how to enable typing indicators globally
-* [Message Flows Editor](message-flows-editor.md) - Learn how to use the flow builder
-* [Message Flows Overview](message-flows.md) - Learn about message flows in general
+* [Message](content-nodes/message.md)
+* [Message Flows Settings](../settings/tools/message-flows.md)
+* [Message Flow Editor](message-flows-editor.md)
+* [Message Flows](message-flows.md)

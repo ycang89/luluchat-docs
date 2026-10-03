@@ -2,15 +2,27 @@
 
 ## What is Automations?
 
-Automations let you create hands-free replies and routing across message flows, keyword responses, growth entry points, multi-step workflows, and the web widget that captures visitors and directs them to the right path.
+**Automations** is the group in the left menu where you set up everything that replies to and routes your contacts automatically. It has these pages:
 
-## When does it trigger?
+* **Message Flows**: Build automated conversations step by step in a visual editor. This is also where you set up the fallback and consent flows (Default, Away, Absent, Opt In and Opt Out).
+* **Keywords**: See the keyword triggers used across your message flows.
+* **Meta Ads**: See the Meta ad and post triggers used across your message flows, and how often each one was triggered.
+* **Growth Tools**: See your entry points (such as WhatsApp links) and how well they perform.
+* **Workflows**: Run actions on contacts that meet your conditions, on a schedule or when something happens (for example, a new contact comes in or a tag changes).
+* **Web Widget**: Generate a WhatsApp chat button for your website.
 
-* When a contact message matches a keyword you set under `Keywords`.
-* When a visitor engages via the `Web Widget` entry point.
-* When a `Growth Tool` entry point (e.g., embedded form/landing) is submitted.
-* When a scheduled or event-based `Workflow` condition is met (such as new conversation or a defined time window).
-* When a `Message Flow` is invoked by its configured trigger.
+When you click **Automations**, Luluchat opens **Message Flows**.
+
+<figure><img src="../.gitbook/assets/automations-overview.png" alt="Message Flows page opened from the Automations menu, showing the Create Message Flow and Create from template buttons and the Basic Message Flow cards"><figcaption><p>Automations opens on the Message Flows page</p></figcaption></figure>
+
+## When to use it?
+
+* **Answer common questions**: Reply with your menu, prices or opening hours when a contact sends a keyword such as "menu".
+* **Greet new contacts**: Send a welcome message to everyone who messages you, even if they don't use a keyword (Default Message).
+* **Cover after-hours messages**: Let contacts know you're closed and when you'll reply (Away Message).
+* **Capture leads from ads and links**: Start a flow when someone messages you from a Meta ad or a WhatsApp link.
+* **Manage marketing consent**: Let contacts subscribe or unsubscribe with a keyword (Opt In and Opt Out).
+* **Run scheduled follow-ups**: Use a workflow to act on contacts that meet your conditions.
 
 ## How to set it up (Step by Step)
 
@@ -18,41 +30,29 @@ Automations let you create hands-free replies and routing across message flows, 
 {% step %}
 #### Open Automations
 
-Open `Automations` from the left menu to see tabs for `Message Flows`, `Keywords`, `Growth Tools`, `Workflows`, and `Web Widget`.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Automations page showing tabs for Message Flows, Keywords, Growth Tools, Workflows, Web Widget]
+In the left menu, click **Automations**, then choose the page you need: **Message Flows**, **Keywords**, **Meta Ads**, **Growth Tools**, **Workflows** or **Web Widget**.
 {% endstep %}
 
 {% step %}
-#### Choose an automation type
+#### Create a message flow
 
-Select the tab you need (for example, `Message Flows`, `Keywords`, `Growth Tools`, `Workflows`, or `Web Widget`) and click its `Create` action (for flows you may see `Create Message Flow`; for workflows `Create Workflow`).
+On **Message Flows**, click **Create Message Flow** (or **Create from template**). Name the flow and click **Create**. The flow editor opens in draft mode.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Selected Automations tab with the Create button visible]
+See [Message Flows](message-flows.md).
 {% endstep %}
 
 {% step %}
-#### Configure trigger and actions
+#### Add a trigger and steps
 
-Set the trigger (keyword, entry point, schedule, or event), then define what should happen (auto-reply content, assign/route, add tags, move to channel, or start a flow). Include targeting such as channel, audience, or time window if available, then save.
+In the editor, click the **Starting Step** to add a trigger, such as a **Keyword**, **WhatsApp Link** or **Meta Ad**. Then add messages and other steps and connect them.
 
-📸 Screenshot placeholder:
-
-> \[Screenshot: Automation creation form showing trigger selection, action configuration, and save/publish controls]
+See [Message Flow Editor](message-flows-editor.md) and [Trigger](steps/trigger.md).
 {% endstep %}
 
 {% step %}
-#### Publish and test
+#### Publish and turn it on
 
-Enable or publish the automation, then test it in a low-traffic channel or with a test contact to confirm the trigger fires and the right action runs.
-
-📸 Screenshot placeholder:
-
-> \[Screenshot: Automation list showing the new automation in enabled/active state]
+Click **Publish Flow**. Make sure the flow's switch is **On**. Then test it from another phone by sending the keyword.
 {% endstep %}
 {% endstepper %}
 
@@ -60,6 +60,7 @@ Enable or publish the automation, then test it in a low-traffic channel or with 
 
 * [Message Flows](message-flows.md)
   * [Message Flow Editor](message-flows-editor.md)
+  * [Typing Indicator](typing-indicator.md)
   * [Starting & Complete Steps](steps/index.md)
     * [Trigger](steps/trigger.md)
     * [Complete](steps/complete.md)
@@ -75,39 +76,49 @@ Enable or publish the automation, then test it in a low-traffic channel or with 
     * [Smart Delay](logics/smart-delay.md)
     * [Condition](logics/condition.md)
     * [Randomizer](logics/randomizer.md)
-  * Fallback & Consent Flows
+  * [Fallback & Consent Flows](../core-features/index-1/message-flows/fallback-and-consent-flows/README.md)
     * [Default Flow](default-flow.md)
     * [Away Flow](away-flow.md)
     * [Absent Flow](absent-flow.md)
     * [Opt-In Flow](opt-in-flow.md)
     * [Opt-Out Flow](opt-out-flow.md)
 * [Keywords](keywords.md)
+* [Meta Ads](meta-ads.md)
 * [Growth Tools](growth-tools.md)
 * [Workflows](workflows.md)
 * [Web Widget](web-widget.md)
 
 ## What happens after it triggers?
 
-The automation runs immediately with the defined actions: it sends the configured reply or flow, routes or assigns the conversation, applies tags or updates, and (where available) records the run in its log or history.
+* A message flow sends its steps to the contact in the order you connected them: messages, actions (such as adding a tag or assigning a team member), delays and so on.
+* A workflow runs its actions on every contact that meets its conditions.
+* The Web Widget opens a WhatsApp chat with your number from your website.
 
 ## Important behavior to know
 
-* Automations must be enabled; drafts or disabled items will not run.
-* Access controls apply: some tabs or actions stay hidden without the right permission.
-* Keywords match the text you define; use distinct keywords to avoid overlaps.
-* Workflows follow their configured step order; disabled steps are skipped.
-* Web Widget and Growth Tools need to be embedded/published on the target page to trigger.
+* **You only see the pages your plan includes**: Each page under **Automations** appears only if your plan and role give you access to it.
+* **Message flows must be published and On**: Changes you make in the editor are saved as a draft. They only go live after you click **Publish Flow**. A flow that is switched **Off** never runs.
+* **Your channel must be connected**: If your channel isn't connected, the **Message Flows** page shows "Channel not connected — Your message flow will not be triggered until you connect your channel."
+* **Each channel has its own automations**: Flows belong to the channel you're on. Use **Copy Flow to another channel** to reuse a flow on another channel.
 
 ## Common issues & solutions
 
-* Nothing happens: ensure the automation is enabled and the trigger (keyword, entry point, schedule) matches the test exactly.
-* Wrong audience: review channel/audience/time filters and update them.
-* Cannot find a tab: request access from an admin if your role hides it.
-* Widget not firing: confirm the widget snippet is installed on the page and published.
+* **A flow didn't reply**: Check that the flow is **On**, that you clicked **Publish Flow** after your last edit, and that the contact's message matches the trigger.
+* **"Channel not connected" warning**: Reconnect your channel. Flows don't run until it is connected.
+* **A page is missing from the Automations menu**: Your plan or role doesn't include it. Ask your account owner.
 
 ## Best practice 💡
 
-* Test new automations in a low-traffic channel or with a test contact before broad rollout.
-* Keep names clear (purpose + audience) for easier maintenance.
-* Use unique keywords to prevent conflicts.
-* Review logs or histories after launch to fine-tune replies and routing.
+* Set up the **Default Message** and **Away Message** first, so every contact gets a reply.
+* Give flows clear names, such as "Menu & Opening Hours" or "Catering Enquiry", so they're easy to find in pickers.
+* Use folders to group flows by purpose (for example, "Promotions" and "Customer Support").
+* Test every new flow from a second phone before you announce it.
+
+## Related Documentation
+
+* [Message Flows](message-flows.md)
+* [Message Flow Editor](message-flows-editor.md)
+* [Fallback & Consent Flows](../core-features/index-1/message-flows/fallback-and-consent-flows/README.md)
+* [Keywords](keywords.md)
+* [Meta Ads](meta-ads.md)
+* [Workflows](workflows.md)

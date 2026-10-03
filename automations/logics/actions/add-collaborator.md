@@ -2,40 +2,72 @@
 
 ## What is Add Collaborator?
 
-Adds selected teammates as collaborators on the conversation when this Action runs.
+**Add Collaborator** is an action in the [Actions step](../actions.md) of a Message Flow. When a contact reaches the step, the team members you chose are added to the contact as collaborators. The block reads "Will add collaborator to the contact."
 
-## When does it trigger?
+Collaborators are extra team members who follow the chat. They don't replace the assignee.
 
-* When the flow reaches this `Add Collaborator` action while the flow is active and the channel is connected.
+<figure><img src="../../../.gitbook/assets/flow-action-add-collaborator-block.png" alt="Add Collaborator block reading Will add collaborator to the contact, with Priya Nair and Hafiz Ismail"><figcaption><p>Add Collaborator block</p></figcaption></figure>
+
+## When to use it?
+
+* **Bring in specialists**: Add Priya Nair (kitchen) and Hafiz Ismail (delivery) to catering chats while Daniel Wong stays the assignee.
+* **Keep a manager in the loop**: Add the owner to high-value enquiries.
 
 ## How to set it up (Step by Step)
 
 {% stepper %}
 {% step %}
-#### Open the flow and edit the Action node
+#### Open the Actions step
 
-In `Automations` > `Message Flows`, open a flow, select the `Action` step, and choose `Add Collaborator`.
+Go to **Automations** > **Message Flows**, open the flow and click **Edit Flow**. Click an Actions step, or add one (**+** > **Logic** > **Actions**).
+{% endstep %}
 
-📸 Screenshot placeholder:
+{% step %}
+#### Add the action
 
-> \[Screenshot: Action step showing the Add Collaborator option]
+In the step's panel, click **Add Collaborator**. An empty block appears in red with "Please select a collaborator."
+{% endstep %}
+
+{% step %}
+#### Choose the team members
+
+Click the block. In the **Collaborators** window, open the list ("Select a collaborator") and pick one or more team members. Click **OK**.
+
+<figure><img src="../../../.gitbook/assets/flow-action-add-collaborator-modal.png" alt="Collaborators window with Priya Nair and Hafiz Ismail selected and the team list open"><figcaption><p>Pick one or more collaborators</p></figcaption></figure>
+{% endstep %}
+
+{% step %}
+#### Publish
+
+Connect the step to the next step and click **Publish Flow**.
 {% endstep %}
 {% endstepper %}
 
 ## What happens after it triggers?
 
-The chosen collaborators are added to the conversation so they can follow and respond; the flow continues.
+The selected team members are added as collaborators on the contact, and the flow moves on. They show on the contact in the Inbox, and the chat appears when filtering by those collaborators.
 
 ## Important behavior to know
 
-* Collaborators do not replace assignees; they are additional followers.
-* Visibility depends on workspace permissions.
+* Collaborators are added on top of the assignee. The assignee doesn't change.
+* You can add one **Add Collaborator** block per Actions step, but it can hold many people.
+* Team members whose account was deleted are listed with an **Account Deleted** tag and can't be picked.
+* If a chosen team member is later removed from your team, the block turns red and shows "Team User Not found (ID)" with the tooltip "This collaborator no longer exists. Please select another one."
+* To take collaborators off, use **Remove Collaborator**. See [Actions](../actions.md#remove-collaborator).
 
 ## Common issues & solutions
 
-* Collaborator not added: confirm the action is on a published path and the user has access.
-* User not listed: check the teammate’s permissions for this channel.
+* **"In Action Node "…", the Content Block "Add Collaborator" is missing a collaborator."** when publishing: Click the block and pick at least one team member.
+* **"Team User Not found (ID)"** on the block: Remove that person from the block and pick someone else.
+* **A team member is missing from the list**: Make sure they have joined your team.
 
 ## Best practice 💡
 
-* Add collaborators for specialists (e.g., billing, technical) without changing the main assignee.
+* Use **Add Assignee** for the one person who owns the chat, and **Add Collaborator** for helpers.
+* Keep the collaborator list short so people only follow chats they need.
+
+## Related Documentation
+
+* [Actions](../actions.md)
+* [Add Assignee](add-assignee.md)
+* [Filters](../../../inbox/filters.md)

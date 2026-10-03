@@ -54,6 +54,6 @@ Consider the example below:
 {% hint style="warning" %}
 Note for Developer:
 
-* To minimising the response time for the conversation, Luluchat.io is expecting that the request should be responded in 10 seconds. (10 seconds timeout)
+* To minimising the response time for the conversation, Luluchat.io is expecting that the request should be responded in 25 seconds. (25 seconds timeout)
 * The data that introduced to be save in custom attributes must follow the rules / format written in [Data Formatting](/broken/pages/nfUbfeea4EzfUAG2evM2) section
 {% endhint %}

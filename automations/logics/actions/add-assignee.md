@@ -2,41 +2,73 @@
 
 ## What is Add Assignee?
 
-Assigns the conversation to selected team members when this Action runs in a Message Flow.
+**Add Assignee** is an action in the [Actions step](../actions.md) of a Message Flow. When a contact reaches the step, the contact is assigned to the team member you chose. The block reads "Will add assignee to the contact."
 
-## When does it trigger?
+<figure><img src="../../../.gitbook/assets/flow-action-add-assignee-block.png" alt="Add Assignee block reading Will add assignee to the contact, with Daniel Wong"><figcaption><p>Add Assignee block</p></figcaption></figure>
 
-* When the flow reaches this `Add Assignee` action while the flow is active and the channel is connected.
+## When to use it?
+
+* **Route by topic**: Assign catering enquiries to Daniel Wong, who handles events.
+* **Hand off from the bot**: Assign the contact to a person when the flow can't answer.
+* **Make ownership clear**: Every lead from a campaign gets an owner straight away.
 
 ## How to set it up (Step by Step)
 
 {% stepper %}
 {% step %}
-#### Open the flow and edit the Action node
+#### Open the Actions step
 
-In `Automations` > `Message Flows`, open a flow, select the `Action` step, and choose `Add Assignee`.
+Go to **Automations** > **Message Flows**, open the flow and click **Edit Flow**. Click an Actions step, or add one (**+** > **Logic** > **Actions**).
+{% endstep %}
 
-📸 Screenshot placeholder:
+{% step %}
+#### Add the action
 
-> \[Screenshot: Action step showing the Add Assignee option]
+In the step's panel, click **Add Assignee**. An empty block appears in red with "Please select an assignee."
+{% endstep %}
+
+{% step %}
+#### Choose the team member
+
+Click the block. In the **Assignee** window, open the list ("Select an Assignee") and pick one team member. Click **OK**.
+
+<figure><img src="../../../.gitbook/assets/flow-action-add-assignee-modal.png" alt="Assignee window with the list open showing Aisha Rahman, Daniel Wong (selected), Priya Nair and Hafiz Ismail"><figcaption><p>Pick one team member</p></figcaption></figure>
+{% endstep %}
+
+{% step %}
+#### Publish
+
+Connect the step to the next step and click **Publish Flow**.
 {% endstep %}
 {% endstepper %}
 
 ## What happens after it triggers?
 
-The conversation is assigned to the chosen users; routing follows your inbox rules and the flow continues.
+The contact is assigned to the selected team member, and the flow moves on. The assignee shows on the chat in the Inbox, and the chat appears when filtering by that assignee.
 
 ## Important behavior to know
 
-* Only available users can be assigned; permissions may hide some members.
-* If multiple assignees are added, all appear on the conversation.
+* You pick **one** team member per **Add Assignee** block.
+* You can add one **Add Assignee** block per Actions step.
+* Team members whose account was deleted are listed with an **Account Deleted** tag and can't be picked.
+* If the chosen team member is later removed from your team, the block turns red and shows "Team User Not found (ID)". Hover over it to see "This assignee no longer exists. Please select another one."
+* To take the assignee off a contact, use **Remove Assignee**. See [Actions](../actions.md#remove-assignee).
 
 ## Common issues & solutions
 
-* No assignment: ensure the action is on a published path and the channel is connected.
-* User not listed: check that the teammate has access to the workspace/channel.
+* **"In Action Node "…", the Content Block "Add Assignee" is missing an assignee."** when publishing: Click the block and pick a team member.
+* **"Team User Not found (ID)"** on the block: That person is no longer on your team. Click the block and pick someone else.
+* **A team member is missing from the list**: Make sure they have joined your team.
 
 ## Best practice 💡
 
-* Assign to a role-based user group or round-robin before adding specific assignees when possible.
-* Keep assignments close to where the conversation context is clear.
+* Assign by role: send catering leads to the events person, refunds to the person who handles payments.
+* To share leads evenly across several people, use a [Round Robin](../round-robin.md) step where each round leads to an Actions step that assigns a different person.
+* Add teammates who only need to follow along as collaborators instead. See [Add Collaborator](add-collaborator.md).
+
+## Related Documentation
+
+* [Actions](../actions.md)
+* [Add Collaborator](add-collaborator.md)
+* [Round Robin](../round-robin.md)
+* [Filters](../../../inbox/filters.md)

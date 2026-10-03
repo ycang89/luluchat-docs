@@ -2,61 +2,82 @@
 
 ## What is Opt-Out Flow?
 
-Handles unsubscribe requests, marks the contact as opted out, and confirms they will no longer receive messages unless they re-opt in.
+The **Opt Out** flow lets contacts unsubscribe from your promotional messages by sending a keyword. Luluchat marks the contact as opted out and sends a confirmation message.
+
+In the app: "Notify customer by sending an opt-out message to indicate that they no longer want to receive promotional messages."
 
 ## When does it trigger?
 
-* When the flow is invoked on an opt-out path (e.g., via keyword/trigger/manual run) to process an unsubscribe request.
+* When a contact sends the opt-out keyword. By default the keyword is `OPT_OUT` (condition **is**).
+* Only if the Opt Out flow is published and its card is switched **On**.
 
 ## How to set it up (Step by Step)
 
 {% stepper %}
 {% step %}
-#### Open Message Flows
+#### Click Configure on the Opt Out card
 
-Go to `Automations` → `Message Flows` and create/select the Opt-Out Flow.
+Go to **Automations** > **Message Flows**. Under **Basic Message Flow**, click **Configure** on the **Opt Out** card. The **Create Opt Out Message** window shows a preview and how it works:
 
-📸 Screenshot placeholder:
+1. Contact send in designated opt-out keyword
+2. System will send a predefined acknowledgment message to the customer.
 
-> \[Screenshot: Message Flows list showing Opt-Out Flow]
+Click **Create**.
+
+<figure><img src="../.gitbook/assets/flow-fallback-optout-create.png" alt="Create Opt Out Message window with a phone preview of the unsubscribe confirmation message, How does it work steps and a Create button"><figcaption><p>Create Opt Out Message</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
-#### Confirm unsubscribe
+#### Review the ready-made steps
 
-Include a clear confirmation message ("You've been unsubscribed"). Save/publish.
+The flow opens in draft mode with three connected steps:
 
-📸 Screenshot placeholder:
+* **Starting Step**: **By Keyword** — Message is `OPT_OUT`.
+* **Opt Out**: An action that marks the contact as opted out.
+* **Send Message 1**: A confirmation message.
 
-> \[Screenshot: Opt-Out Flow builder with unsubscribe confirmation]
+<figure><img src="../.gitbook/assets/flow-fallback-optout-editor.png" alt="Opt-Out Message flow with the Starting Step triggered by the keyword OPT_OUT, connected to an Opt Out action and then to Send Message 1 confirming the contact has been unsubscribed from Kopi Corner promotions"><figcaption><p>Opt Out flow</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
-#### Update status
+#### Change the keyword or message (optional)
 
-Ensure the flow includes the opt-out action/update so the contact is marked as opted out.
+* Click the **Starting Step** to change the keyword or add another **Keyword** trigger (for example "STOP").
+* Click **Send Message 1** to change the confirmation text.
+{% endstep %}
 
-📸 Screenshot placeholder:
+{% step %}
+#### Publish
 
-> \[Screenshot: Action step marking opt-out]
+Click **Publish Flow**. Check that the **Opt Out** card is switched **On**.
 {% endstep %}
 {% endstepper %}
 
 ## What happens after it triggers?
 
-The contact is marked opted out; further messaging should stop until they opt in again.
+* The contact is marked as opted out (unsubscribed) from promotional messages.
+* The contact receives the confirmation message.
 
 ## Important behavior to know
 
-* Opt-out overrides other messaging; respect it across automations.
-* Provide a path to re-opt in if appropriate (per policy).
+* **Fixed steps**: You can't add or delete steps in the Opt Out flow, and there's no **Auto Layout** or **Flow Settings**. You can edit the keyword and the message.
+* **Keyword triggers only**: The **Starting Step** only offers the **Keyword** trigger.
+* **Opting back in**: If the contact later sends the opt-in keyword, the [Opt-In Flow](opt-in-flow.md) marks them as opted in again.
 
 ## Common issues & solutions
 
-* Messages still sending: verify opt-out status is applied and automations respect it.
-* Trigger not firing: ensure the opt-out keyword/path is set and the flow is published.
+* **Nothing happens when a contact sends OPT_OUT**: Check that the card is **On** and that you published the flow. Also check the keyword in the **Starting Step**.
+* **"In Starting Step, the Keyword Trigger is missing keywords."**: Add at least one keyword before publishing.
 
 ## Best practice 💡
 
-* Keep the confirmation concise; avoid additional marketing content.
-* Log or tag the source of opt-out for compliance.
+* Keep the confirmation short, with no promotions.
+* Tell the contact how to subscribe again, for example "Reply 'OPT_IN' to join again."
+* Add common words such as "STOP" or "UNSUBSCRIBE" as extra keywords.
+
+## Related Documentation
+
+* [Opt-In Flow](opt-in-flow.md)
+* [Opt Out action](logics/actions/opt-out.md)
+* [Fallback & Consent Flows](../core-features/index-1/message-flows/fallback-and-consent-flows/README.md)
+* [Trigger](steps/trigger.md)

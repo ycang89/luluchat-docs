@@ -1,26 +1,70 @@
-# Content: Start Flow
+# Start Flow
 
-## What is the Start Flow Node?
-The Start Flow node allows you to link one automation flow to another. This is essential for building modular and reusable automations.
+## What is the Start Flow node?
+
+The **Start Flow** node moves the contact into another Message Flow. In the app it is described as "a step which allows you to direct your contacts to another Flow in your Flow Builder." It lets you build small, reusable flows and link them together.
+
+<figure><img src="../../.gitbook/assets/flow-node-start-flow.png" alt="Book a Table Flow settings panel and node. Both show the Start Flow card with the description, Flow: Book a Table, and an Open this Flow button. The node is linked from the Book a Table reply of the Main Menu message"><figcaption><p>A Start Flow node that opens the Book a Table flow</p></figcaption></figure>
 
 ## When to use it?
-- **Reusable Components**: Create a "Main Menu" flow that links to several sub-flows.
-- **Complexity Management**: Break a very long, complex journey into smaller, manageable flows.
-- **Consistent Hand-offs**: Route customers from a promotional flow into a standard lead qualification flow.
+
+* **Menus**: A "Main Menu" flow where each reply starts its own flow, such as "Book a Table".
+* **Reusable journeys**: Build "Talk to Staff" or "Collect Address" once and start it from many flows.
+* **Long journeys**: Split a long flow into smaller flows that are easier to manage.
 
 ## How to set it up (Step by Step)
-1. In the Message Flow Editor, click **Add Node (+) > Content > Start Flow**.
-2. Click the node to open the settings.
-3. Select the target **Message Flow** you want to redirect the customer to.
-4. When a contact reaches this node, they will exit the current flow and enter the starting step of the selected flow.
 
-📸 Screenshot placeholder:
-> [Screenshot: Start Flow node with a selection dropdown of available flows]
+{% stepper %}
+{% step %}
+#### Add the node
+
+In draft mode (click **Edit Flow**), click **+** (**Add Node**) and choose **Start Flow** under **Content**.
+
+You can also create one straight from a reply button: open the reply in a [Message](message.md) node and choose **Start Flow**. The new node is named after the reply, for example "Book a Table Flow", and is already linked.
+{% endstep %}
+
+{% step %}
+#### Choose the flow
+
+Click the node, then click the **Start Flow** card in the panel. In the **Flow** window, pick a flow from **Select a message flow**. You can type to search by name. Inactive flows are marked **Inactive**, and flows allowed in group chats are marked **Group**.
+
+<figure><img src="../../.gitbook/assets/flow-node-start-flow-modal.png" alt="Flow window with the flow list open: Welcome Message, Menu &#x26; Opening Hours, Order Status Check, Book a Table (selected), Customer Satisfaction Survey with a red Inactive tag, and Refund Follow-up"><figcaption><p>Choosing the flow to start</p></figcaption></figure>
+
+Click **OK** to save.
+{% endstep %}
+
+{% step %}
+#### Check and publish
+
+The node now shows **Flow:** and the flow's name. Click **Open this Flow** to open that flow in a new tab and check it. Then click **Publish Flow**.
+{% endstep %}
+{% endstepper %}
+
+## What happens after it triggers?
+
+The contact is sent into the selected flow and continues there. The Start Flow node has no **Next Step**, so nothing after it runs in the current flow.
 
 ## Important behavior to know
-- **One-Way Exit**: Once a customer enters a new flow via this node, they do not automatically return to the original flow unless you explicitly add another "Start Flow" node in the target flow.
-- **Endless Loops**: Be careful not to link two flows back to each other in a way that creates an infinite loop.
+
+* **One way**: The contact does not come back to the original flow. To return, add another Start Flow node in the second flow.
+* **Inactive or deleted flows**: If the selected flow is inactive, the node shows **(Inactive)** and turns red. If it was deleted, it shows **(DELETED)**. Pick another flow or turn the target flow back on.
+* **Default Message replies**: In the Default Message flow, **Start Flow** is the only action a reply button can have.
+
+## Common issues & solutions
+
+* **The node is red**: No flow is selected ("Click to select a flow"), or the selected flow is inactive or deleted.
+* **The contact didn't get the second flow**: Check that the target flow is active and published.
+* **Contacts keep bouncing between flows**: Two flows start each other. Remove one of the Start Flow links so the journey can end.
 
 ## Best practice 💡
-- **Standardize**: Create standard sub-flows for things like "Address Collection" or "Contact Support" so you don't have to rebuild them every time.
-- **Modular Design**: Keep your primary flows focused on marketing/engagement and use sub-flows for detailed administrative tasks.
+
+* Name sub-flows clearly, such as "Book a Table" or "Talk to Staff", so they are easy to find in the list.
+* Use one shared sub-flow instead of copying the same steps into many flows.
+* Click **Open this Flow** after linking to make sure you picked the right one.
+
+## Related Documentation
+
+* [Message](message.md)
+* [Message Flows](../message-flows.md)
+* [Default Flow](../default-flow.md)
+* [Complete Step](../steps/complete.md)
