@@ -80,7 +80,7 @@ You can also link the outputs on the canvas: drag from the dot next to **If Matc
 | Group | Fields | Operators |
 | --- | --- | --- |
 | **Contact** | **Last Conversed**, **Last Contact Replied**, **Last Replied From You** | in upcoming, in last, has past, in between, in between time, is before, is before time, is after, is after time, is, is on, is unknown, is known |
-| **Contact** | **Phone Number** | is, is not, contain, doest not contain, starts with |
+| **Contact** | **Phone Number** | is, is not, contain, does not contain, starts with |
 | **Contact** | **Assignee** | is, is assigned, is unassigned |
 | **Contact** | **Collaborator** | include, include all, does not include, does not include all, is known, is none |
 | **Tag** | **Tag** | contain, does not contain, contain all |
@@ -88,10 +88,10 @@ You can also link the outputs on the canvas: drag from the dot next to **If Matc
 | **Event Time** | **Occurrence Date** | is today, in upcoming, in last, has past, in between, is before, is after, is, is on, is unknown, is known |
 | **Conversation** | **Last Assignee** | is, is assigned, is unassigned |
 | **Conversation** | **Last List** | is, in, is assigned, is unassigned |
-| **Conversation** | **Time assigned**, **Time of Responsed after assigned**, **Time of Conversation Opened**, **Time of First Response**, **Time of List Assigned**, **Time of Conversation Closed** | same as **Last Conversed** |
+| **Conversation** | **Time assigned**, **Response time after assignment**, **Time of Conversation Opened**, **Time of First Response**, **Time of List Assigned**, **Time of Conversation Closed** | same as **Last Conversed** |
 | **Chat** | **Chat Status** | is need reply, is awaiting reply |
 | **Deals** | Each deal pipeline (only if your plan has Deals) | is, in (a stage in that pipeline) |
-| **Custom Attributes** | Each custom attribute | Text: is, is not, contain, doest not contain, starts with. Number: is equal to, is not equal to, greater than, lesser than. Date or date & time: the date operators above |
+| **Custom Attributes** | Each custom attribute | Text: is, is not, contain, does not contain, starts with. Number: is equal to, is not equal to, greater than, lesser than. Date or date & time: the date operators above |
 
 Notes:
 

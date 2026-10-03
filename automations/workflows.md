@@ -74,7 +74,7 @@ The fields are grouped like this:
 | Group | Fields | Operators |
 | --- | --- | --- |
 | **Contact** | **Last Conversed**, **Last Contact Replied**, **Last Replied From You** | **in upcoming**, **in last**, **has past** (a number of minutes, hours or days), **in between**, **in between time**, **is before**, **is before time**, **is after**, **is after time**, **is**, **is on** (days of the week), **is unknown**, **is known** |
-| | **Phone Number** | **is**, **is not**, **contain**, **doest not contain**, **starts with** |
+| | **Phone Number** | **is**, **is not**, **contain**, **does not contain**, **starts with** |
 | | **Assignee** | **is**, **is assigned**, **is unassigned** |
 | | **Collaborator** | **include**, **include all**, **does not include**, **does not include all**, **is known**, **is none** |
 | **Tag** | **Tag** | **contain**, **does not contain**, **contain all** |
@@ -82,10 +82,10 @@ The fields are grouped like this:
 | | **Occurrence Date** (the day the workflow runs) | **is today**, **in upcoming**, **in last**, **has past**, **in between**, **is before**, **is after**, **is**, **is on**, **is unknown**, **is known** |
 | **Conversation** | **Last Assignee** | **is**, **is assigned**, **is unassigned** |
 | | **Last List** | **is**, **in**, **is assigned**, **is unassigned** |
-| | **Time assigned**, **Time of Responsed after assigned**, **Time of Conversation Opened**, **Time of First Response**, **Time of List Assigned**, **Time of Conversation Closed** | Same as **Last Conversed** |
+| | **Time assigned**, **Response time after assignment**, **Time of Conversation Opened**, **Time of First Response**, **Time of List Assigned**, **Time of Conversation Closed** | Same as **Last Conversed** |
 | **Chat** | **Chat Status** | **is need reply**, **is awaiting reply** |
 | **Deals** (one field per deal pipeline) | _Pipeline name_ | **is** (one stage), **in** (several stages) |
-| **Custom Attributes** (one field per attribute) | _Attribute name_ | Depends on the attribute type: text (**is**, **is not**, **contain**, **doest not contain**, **starts with**), number (**is equal to**, **is not equal to**, **greater than**, **lesser than**) or date and time (as above) |
+| **Custom Attributes** (one field per attribute) | _Attribute name_ | Depends on the attribute type: text (**is**, **is not**, **contain**, **does not contain**, **starts with**), number (**is equal to**, **is not equal to**, **greater than**, **lesser than**) or date and time (as above) |
 
 **Deals** only appears if your plan includes Deals and you have at least one pipeline. **Custom Attributes** only appears if you have created custom attributes. Use **Occurrence Date** with **is on** to run a workflow only on certain days, for example **Saturday** and **Sunday**.
 
@@ -194,7 +194,7 @@ Other ideas:
 ## Common issues & solutions
 
 * **"Please input Workflow Name."** or **"Please select Trigger Type."**: Fill in the required fields in step 1.
-* **"Please select a interval"**, **"Please select a day"**, **"Please select a date"**, **"Please select a minute"** or **"Please select a time"**: Finish the **Schedule Time** settings for a periodic workflow.
+* **"Please select an interval"**, **"Please select a day"**, **"Please select a date"**, **"Please select a minute"** or **"Please select a time"**: Finish the **Schedule Time** settings for a periodic workflow.
 * **"Please select"**, **"Please select a tag"** or another "Please select…" / "Please enter…" message under a condition or action: That condition or action is missing a value.
 * **"Duplicated actions"**: The same action type was added twice. Remove one. Only **Send Message to a Contact No.** can be used more than once.
 * **"Sorry, your team has reached the maximum workflow limit."**: Delete or reuse an existing workflow, or upgrade your plan.
