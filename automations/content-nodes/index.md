@@ -14,7 +14,7 @@ Content nodes are the steps in a Message Flow that talk to your customer. They s
 | [**Message Template**](message-template.md) | Send a Meta-approved template (WhatsApp Business API channels only). |
 | [**Start Flow**](start-flow.md) | Move the customer into another Message Flow. |
 | [**Form**](form.md) | Send a link to one of your Luluchat Forms and continue when it is submitted. |
-| [**AI Agent**](ai-agent.md) | Let a Minicrew AI or Praxus AI agent handle the conversation. |
+| [**AI Agent**](ai-agent.md) | Let a Minicrew AI agent handle the conversation. |
 
 ## How to add a content node (Step by Step)
 

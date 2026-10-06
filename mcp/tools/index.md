@@ -8,7 +8,7 @@ You don't need to call these tools yourself. Just ask your AI assistant in plain
 
 ## Tool groups
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Contact Management</strong></td><td>Contacts, chat messages, notes, tags, assignee, collaborators, subscription and custom attributes</td><td><a href="contact-management.md">contact-management.md</a></td></tr><tr><td><strong>Inbox Tabs</strong></td><td>List inbox tabs and add or remove contacts from custom tabs</td><td><a href="inbox-tabs.md">inbox-tabs.md</a></td></tr><tr><td><strong>Workspace Management</strong></td><td>List your team members</td><td><a href="workspace-management.md">workspace-management.md</a></td></tr><tr><td><strong>Deal</strong></td><td>Pipelines, stages and deal cards</td><td><a href="deal.md">deal.md</a></td></tr><tr><td><strong>Ticketing</strong></td><td>Pipelines, stages, tickets and ticket comments</td><td><a href="ticketing.md">ticketing.md</a></td></tr><tr><td><strong>Forms</strong></td><td>List forms and create personalised form links</td><td><a href="forms.md">forms.md</a></td></tr><tr><td><strong>Booking</strong></td><td>Calendars and appointments</td><td><a href="booking.md">booking.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Contact Management</strong></td><td>Contacts, chat messages, notes, tags, assignee, collaborators, subscription and custom attributes</td><td><a href="contact-management.md">contact-management.md</a></td></tr><tr><td><strong>Inbox Tabs</strong></td><td>List inbox tabs and add or remove contacts from custom tabs</td><td><a href="inbox-tabs.md">inbox-tabs.md</a></td></tr><tr><td><strong>Workspace Management</strong></td><td>List your channels and team members</td><td><a href="workspace-management.md">workspace-management.md</a></td></tr><tr><td><strong>Deal</strong></td><td>Pipelines, stages and deal cards</td><td><a href="deal.md">deal.md</a></td></tr><tr><td><strong>Ticketing</strong></td><td>Pipelines, stages, tickets and ticket comments</td><td><a href="ticketing.md">ticketing.md</a></td></tr><tr><td><strong>Forms</strong></td><td>List forms and create personalised form links</td><td><a href="forms.md">forms.md</a></td></tr><tr><td><strong>Booking</strong></td><td>Calendars and appointments</td><td><a href="booking.md">booking.md</a></td></tr></tbody></table>
 
 ## All tools at a glance
 
@@ -45,6 +45,7 @@ You don't need to call these tools yourself. Just ask your AI assistant in plain
 
 | Tool | Type | What it does |
 | --- | --- | --- |
+| [`get_channels`](workspace-management.md#get_channels) | Read | List channels and their UUIDs |
 | [`get_team_staff`](workspace-management.md#get_team_staff) | Read | List team members and their IDs |
 
 ### Deal
@@ -93,7 +94,7 @@ Most tools share these parameters:
 
 | Parameter | What it is | Where to find it |
 | --- | --- | --- |
-| `channel_uuid` | The WhatsApp channel to work with, e.g. `550e8400-e29b-41d4-a716-446655440000` | Click **Channels** in the header bar and copy the **ID** on the channel card |
+| `channel_uuid` | The WhatsApp channel to work with, e.g. `550e8400-e29b-41d4-a716-446655440000` | Click **Channels** in the header bar and copy the **ID** on the channel card, or let the assistant look it up with [`get_channels`](workspace-management.md#get_channels) |
 | `contact_number` | The contact's WhatsApp number with country code, e.g. `+60123456789` | The contact's profile in the Inbox |
 
 IDs such as `staff_id`, `tab_id`, `pipeline_uuid`, `stage_uuid`, `deal_uuid`, `ticket_uuid` and `form_id` are looked up by the assistant using the matching `get_...` tool, so you can refer to things by name, e.g. *"assign to Sarah"* or *"move to the Qualified stage"*.

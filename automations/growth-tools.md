@@ -83,6 +83,7 @@ Scan the QR code with your phone (or open the link), send the pre-filled message
 * **Order of triggers**: A [Meta Ad](meta-ads.md) trigger is checked before Growth Tools, and Growth Tools are checked before keywords.
 * **Flow conditions and away hours still apply**: If the flow has conditions the contact doesn't meet, it doesn't start, even though the Opt-In is counted.
 * **Export**: Click **Export** at the top of the list to download your Growth Tools and their results as an Excel file.
+* **Search**: Type in the **Please search for label** box and press **Enter** to show only Growth Tools whose label contains that text. Clear the box and press **Enter** to see them all again.
 
 ## Common issues & solutions
 

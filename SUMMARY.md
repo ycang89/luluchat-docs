@@ -40,6 +40,7 @@
     * [Tickets](inbox/contact-info/tickets.md)
     * [Notes](inbox/contact-info/notes.md)
 * [Automations](automations/index.md)
+  * [Common Scenarios](automations/common-scenarios.md)
   * [Message Flows](automations/message-flows.md)
     * [Message Flow Editor](automations/message-flows-editor.md)
     * [Typing Indicator](automations/typing-indicator.md)

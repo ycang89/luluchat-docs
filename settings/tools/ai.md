@@ -53,7 +53,7 @@ Once configured, your AI agents will be able to provide more relevant, data-driv
 
 * **Advanced Flows Only**: AI Agents and MCP are typically used in complex conversation paths where standard "If/Else" logic isn't enough.
 * **Token Security**: Your MCP token is sensitive. Do not share it with anyone outside your trusted administration team.
-* **Integration Required**: AI features require a valid API key from **Praxus AI** to function.
+* **Integration Required**: AI agents require a connected **Minicrew AI** integration. Praxus AI is no longer supported.
 
 ## Common issues & solutions
 

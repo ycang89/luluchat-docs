@@ -10,7 +10,7 @@ The screenshots on this page use sample data.
 
 ## When to use it?
 
-* When you want to connect apps like Shopify, Google Calendar, ChatGPT, Praxus AI or Minicrew AI.
+* When you want to connect apps like Shopify, Google Calendar, ChatGPT or Minicrew AI.
 * When you need an access token for the [Open API](../../developer-guide/open-api.md), [Event Webhooks](../../developer-guide/event-webhooks.md), [Webhook Trigger](../../developer-guide/webhook-trigger.md) or [MCP](../../mcp/connect.md).
 
 ## How to set it up (Step by Step)
@@ -32,7 +32,7 @@ The **Apps** section lists the apps you can connect. Apps you've connected show 
 * [Shopify Integration](shopify-integration.md)
 * [Google Calendar Integration](google-calendar-integration.md)
 * [ChatGPT Integration](chatgpt-integration.md)
-* **Praxus AI** and **Minicrew AI**: You'll be asked to agree that your message data may be shared with the app before connecting.
+* **Minicrew AI**: You'll be asked to agree that your message data may be shared with the app before connecting.
 {% endstep %}
 
 {% step %}

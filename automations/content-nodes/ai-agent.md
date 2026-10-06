@@ -2,7 +2,7 @@
 
 ## What is the AI Agent node?
 
-The **AI Agent** node hands the conversation to an AI agent you created in **Minicrew AI** or **Praxus AI**. In the app: "An AI Agent will handle the conversation based on your uploaded documents." The agent chats with the contact, and the flow continues through one of four events: **Success**, **Escalate**, **Failed** or **No Reply**.
+The **AI Agent** node hands the conversation to an AI agent you created in **Minicrew AI**. In the app: "An AI Agent will handle the conversation based on your uploaded documents." The agent chats with the contact, and the flow continues through one of four events: **Success**, **Escalate**, **Failed** or **No Reply**.
 
 <figure><img src="../../.gitbook/assets/flow-node-ai-agent.png" alt="AI Agent (Minicrew) settings panel and node. The panel shows AI Agent set to Menu &#x26; Booking Bot and Event Handling: Event 1 Success linked to Anything Else Message, Event 2 Escalate and Event 3 Failed linked to Talk to Staff Message, and Event 4 No Reply with Timeout Duration 30 Minute linked to Still There Message. The node shows the agent name and description and the four event exits"><figcaption><p>An AI Agent node with all four events linked</p></figcaption></figure>
 
@@ -18,7 +18,7 @@ The **AI Agent** node hands the conversation to an AI agent you created in **Min
 {% step %}
 #### Connect your AI provider
 
-Connect **Minicrew AI** (or **Praxus AI**) in **Settings > Account > [Integration](../../settings/account/integration.md)**, and create your agent in that provider.
+Connect **Minicrew AI** in **Settings > Account > [Integration](../../settings/account/integration.md)**, and create your agent in that provider.
 {% endstep %}
 
 {% step %}
@@ -32,9 +32,9 @@ To send contacts here from a reply button, open the reply in a [Message](message
 {% step %}
 #### Choose the agent
 
-In **AI Agent**, choose your agent. Agents are grouped by provider (**Minicrew AI** and **Praxus AI**). Hover over the **i** icon to see an agent's description.
+In **AI Agent**, choose one of your Minicrew AI agents. Hover over the **i** icon to see an agent's description.
 
-<figure><img src="../../.gitbook/assets/flow-node-ai-agent-select.png" alt="AI Agent dropdown open with the Minicrew AI group (Order Support Bot, Menu &#x26; Booking Bot selected) and the Praxus AI group (Refund Assistant)"><figcaption><p>Choosing an AI agent</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/flow-node-ai-agent-select.png" alt="AI Agent dropdown open with the Minicrew AI group: Order Support Bot and Menu &#x26; Booking Bot (selected)"><figcaption><p>Choosing an AI agent</p></figcaption></figure>
 {% endstep %}
 
 {% step %}
@@ -69,15 +69,15 @@ Check that every event is linked (unlinked events show in red on the node), then
 ## Important behavior to know
 
 * **Minicrew AI is required to add the node**: Without a Minicrew AI connection, **Minicrew AI Agent** is greyed out with "Integration with Minicrew is required".
-* **Match the provider**: Nodes added from the menu are Minicrew AI steps. Choose an agent from the **Minicrew AI** group, otherwise the node can't show the agent's name.
-* **Agents come from your provider**: The list is loaded from Minicrew AI and Praxus AI each time you open the node. Create or edit agents in the provider, not in Luluchat.
+* **Praxus AI is no longer supported**: Only Minicrew AI agents can be chosen. An older AI Agent node that still points to a Praxus AI agent shows "Please choose AI Agent". Open it, choose a Minicrew AI agent and publish the flow again.
+* **Agents come from Minicrew AI**: The list is loaded from Minicrew AI each time you open the node. Create or edit agents in Minicrew AI, not in Luluchat.
 
 ## Common issues & solutions
 
-* **"No AI vendor API keys configured"**: No AI provider is connected. Connect Minicrew AI or Praxus AI in **Settings > Account > Integration**.
+* **"No AI vendor API keys configured"**: No AI provider is connected. Connect Minicrew AI in **Settings > Account > Integration**.
 
-* **"Please create an AI Agent in Praxus AI or Minicrew AI"**: You are connected, but have no agents yet. Create one in your provider.
-* **"Please choose AI Agent"** (shown in red on the node): No agent is selected. Click the node and choose one.
+* **"Please create an AI Agent in Minicrew AI"**: You are connected, but have no agents yet. Create one in Minicrew AI.
+* **"Please choose AI Agent"** (shown in red on the node): No agent is selected, or the node still points to a Praxus AI agent. Click the node and choose a Minicrew AI agent.
 * **"Please enter Timeout Duration"**: Enter a number (1 or more) for **No Reply**.
 * **Customers get stuck with the AI**: Make sure **Escalate**, **Failed** and **No Reply** all lead to a step, such as a message that tells them a staff member will reply.
 

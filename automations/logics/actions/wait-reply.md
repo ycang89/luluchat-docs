@@ -70,7 +70,7 @@ On the canvas, the step shows a clock icon (tooltip **Wait for user reply**) and
 
 * **Contacts who don't reply never get a follow-up**: Link the **Not Replied** branch (or **Choose Next Step**) to a step.
 * **"Please enter Delay Duration"**: The wait time is empty. Enter a number.
-* **"Wait for Reply and Save to Attribute cannot coexist in the same node."**: Move **Save to Attribute** to its own Actions step.
+* **"Wait for Reply and Save to Attribute cannot coexist in the same node."**: This step already has **Save to Attribute**. Add **Wait for Reply** in its own Actions step.
 
 ## Best practice 💡
 

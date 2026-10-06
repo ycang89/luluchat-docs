@@ -57,6 +57,8 @@ Most tools need a **Channel UUID** to know which WhatsApp channel to work with.
 2. Each channel card shows `ID: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
 3. Click the copy icon next to it
 
+You can also ask the assistant *"Which Luluchat channels do we have?"*. It uses the [`get_channels`](tools/workspace-management.md#get_channels) tool to list your channels and their UUIDs.
+
 {% hint style="success" %}
 **Tip:** Tell the assistant your Channel UUID once, e.g. put it in the assistant's instructions or project prompt: *"My Luluchat channel\_uuid is 550e8400-e29b-41d4-a716-446655440000."* Then you don't need to repeat it in every request.
 {% endhint %}

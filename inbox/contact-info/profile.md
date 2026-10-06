@@ -61,13 +61,13 @@ Use collaborators when other teammates need to follow or help with the conversat
 {% step %}
 #### Assign an AI Agent (optional)
 
-The **AI Agent** section only appears if you have connected **Praxus AI** or **Minicrew AI** in [Integrations](../../settings/account/integration.md). The AI agent will handle this conversation automatically.
+The **AI Agent** section only appears if you have connected **Minicrew AI** in [Integrations](../../settings/account/integration.md). The AI agent will handle this conversation automatically.
 
-1. Choose an agent from the list. Agents are grouped by app (**Minicrew AI** or **Praxus AI**). Hover the info icon to read an agent's description.
+1. Choose one of your Minicrew AI agents from the list. Hover the info icon to read an agent's description.
 2. The chat switches to a selection mode. Tick a message in the chat for the AI agent to start reading from, or skip this step.
 3. Click **Start AI Agent** below the chat. The button shows the time of the message you picked, or **(no message history)** if you didn't pick one. Click **Cancel** to go back.
 
-<figure><img src="../../.gitbook/assets/inbox-ai-agent-dropdown.png" alt="AI Agent dropdown open with agents grouped under Minicrew AI and Praxus AI"><figcaption><p>AI Agent dropdown</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/inbox-ai-agent-dropdown.png" alt="AI Agent dropdown open with Order Support Bot and Menu &#x26; Booking Bot under Minicrew AI"><figcaption><p>AI Agent dropdown</p></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/inbox-ai-agent-start.png" alt="After choosing Order Support Bot, the chat shows a checkbox beside each message and Start AI Agent (no message history) and Cancel buttons below the chat"><figcaption><p>Start AI Agent and Cancel buttons below the chat</p></figcaption></figure>
 {% endstep %}
@@ -142,7 +142,7 @@ Each change is saved straight away. There is no Save button for the Profile tab 
 
 ## Common issues & solutions
 
-* **AI Agent section is missing**: Connect Praxus AI or Minicrew AI in [Integrations](../../settings/account/integration.md) and make sure you have at least one agent set up there.
+* **AI Agent section is missing**: Connect Minicrew AI in [Integrations](../../settings/account/integration.md) and make sure you have at least one agent set up there.
 * **Can't pick a teammate**: Teammates marked **Account Deleted** can't be assigned. Choose an active teammate.
 * **Display Name or Remarks didn't save**: Click outside the box after typing. If nothing changes, check that you have permission to edit contacts.
 * **Custom attributes look out of date**: Click **Reload** in the Custom Attributes section.

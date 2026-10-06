@@ -61,6 +61,7 @@ The note is saved to the conversation and shows in the chat as an internal note.
 * You can also add a note from the message editor, or add a note about a specific message in the chat. See [Add a Note](../internal-note.md). A note about a message shows that message above the note text.
 * A deleted note stays in the list as "deleted this note", so your team knows something was removed. Deleted notes can't be pinned or edited.
 * Pinning only changes the order in the **Notes** tab.
+* Notes belong to a channel. To bring them to a new channel, use **Export Notes** and **Import Notes** on the Contacts page. See [Import & Export](../../contacts/import-export.md#import-notes).
 
 ## Common issues & solutions
 
@@ -77,3 +78,4 @@ The note is saved to the conversation and shows in the chat as an internal note.
 
 * [Add a Note](../internal-note.md)
 * [Contact Info](../../core-features/index/contact-info/README.md)
+* [Import & Export](../../contacts/import-export.md): Export or import all notes on a channel

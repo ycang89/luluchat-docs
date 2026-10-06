@@ -211,6 +211,7 @@ Other ideas:
 
 ## Related Documentation
 
+* [Common Scenarios](common-scenarios.md): step-by-step recipes for reassigning unanswered chats, adding new leads to a pipeline and sending birthday messages
 * [Custom Lists](../inbox/custom-lists.md)
 * [Tags](../settings/data/tags.md)
 * [Custom Attributes](../settings/data/custom-attributes.md)

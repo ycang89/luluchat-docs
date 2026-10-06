@@ -124,7 +124,7 @@ Two actions make the step wait:
 ## Important behavior to know
 
 * **Each action once per step**: You can add each action only once in the same step. Trying again shows "This action already exists in the current Action Node." **Remove Assignee**, **Remove Collaborator** and **Send WhatsApp Message** can be added more than once. To add the same action twice, use a second Actions step.
-* **Wait for Reply vs Save to Attribute**: Don't put both in the same step. If a step already has **Wait for Reply**, adding **Save to Attribute** shows "Wait for Reply and Save to Attribute cannot coexist in the same node."
+* **Wait for Reply vs Save to Attribute**: A step can have only one of them. If a step already has one, adding the other shows "Wait for Reply and Save to Attribute cannot coexist in the same node."
 * **Clock icon**: A clock icon on the top-left corner of the step means it waits. Hover over it to see **Delay** or **Wait for user reply**.
 * **Order**: Blocks are listed in the order you add them. Use the up and down arrows to reorder them.
 * **Blocks in red** are not set up yet, for example "Please select a tag" or "Please select an assignee." Click the block to finish it.
@@ -137,7 +137,7 @@ Two actions make the step wait:
 
 <figure><img src="../../.gitbook/assets/flow-actions-duplicate-error.png" alt="Error message: This action already exists in the current Action Node."><figcaption><p>Adding the same action twice</p></figcaption></figure>
 
-* **"Wait for Reply and Save to Attribute cannot coexist in the same node."**: Put **Save to Attribute** in its own Actions step.
+* **"Wait for Reply and Save to Attribute cannot coexist in the same node."**: The step already has the other one. Put the one you were adding in its own Actions step.
 * **"Node "Action" has no content."** when publishing: The step is empty. Add at least one action, or delete the step.
 * **"In Action Node "…", the Content Block "Add Tag" is missing a tag."**: An **Add Tag** or **Remove Tag** block has no tag selected.
 * **"In Action Node "…", the Content Block "Add Assignee" is missing an assignee."**: Pick a team member in **Add Assignee**.

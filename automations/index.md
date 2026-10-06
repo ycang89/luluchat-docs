@@ -13,6 +13,10 @@
 
 When you click **Automations**, Luluchat opens **Message Flows**.
 
+{% hint style="success" %}
+Not sure whether you need a Message Flow or a Workflow, or how to set up a specific case? See [Common Scenarios](common-scenarios.md) for step-by-step recipes such as reassigning unanswered chats, adding new leads to a deal pipeline and sending birthday messages.
+{% endhint %}
+
 <figure><img src="../.gitbook/assets/automations-overview.png" alt="Message Flows page opened from the Automations menu, showing the Create Message Flow and Create from template buttons and the Basic Message Flow cards"><figcaption><p>Automations opens on the Message Flows page</p></figcaption></figure>
 
 ## When to use it?
@@ -58,6 +62,7 @@ Click **Publish Flow**. Make sure the flow's switch is **On**. Then test it from
 
 ## Sections in Automations
 
+* [Common Scenarios](common-scenarios.md)
 * [Message Flows](message-flows.md)
   * [Message Flow Editor](message-flows-editor.md)
   * [Typing Indicator](typing-indicator.md)
