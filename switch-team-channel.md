@@ -103,6 +103,7 @@ After switching, you'll see the new channel's phone number displayed in the Chan
   * You're redirected to Dashboard or Inbox (depending on channel status).
   * The header shows the new channel's phone number.
   * All conversations and contacts are filtered to the selected channel.
+  * Your inbox access can differ per channel. On a channel where you have **Assigned conversations only**, the Inbox shows only your assigned chats; on a channel with **No inbox access**, the **Inbox** item is missing from the menu. See [Users](settings/account/users.md#set-a-users-permissions).
   * If switching to an unconnected channel, you'll see the channel setup page.
 
 {% hint style="info" %}
@@ -183,7 +184,7 @@ Once you have multiple channels:
   * If it still doesn't work, try refreshing the page manually or logging out and back in.
 * **Channel not appearing**:
   * Ensure you're in the correct team (channels are team-specific).
-  * Check that the channel exists and you have permission to access it.
+  * Check that the channel exists and you have permission to access it. If your account owner limited you to **Specific Channels**, only those channels are listed.
   * Try refreshing the page.
 * **Can't switch to unconnected channel**:
   * You can switch to unconnected channels, but you'll need to complete the connection setup first.

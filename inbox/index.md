@@ -81,7 +81,7 @@ When the conversation is finished, click **Close** in the conversation header. S
 ## Important behavior to know
 
 * **One channel at a time.** The Inbox shows the channel you have selected. Switch channel to see other conversations.
-* **Restricted access.** If your role only allows assigned chats, you see a **Restricted Contact Access** bar and only chats assigned to you.
+* **Restricted access.** If your inbox access on this channel is **Assigned conversations only**, you see a **Restricted Contact Access** bar and only chats assigned to you. Your access can differ from channel to channel, and on a channel with **No inbox access** the **Inbox** item is missing from the menu. Your account owner sets this in [Settings > Users](../settings/account/users.md#set-a-users-permissions).
 * **Bars above the chat list** tell you what you are looking at: the selected list (for example, "**Need Reply** List Conversations"), **Filters Applied** (with **Reload** and **Clear**), and **Restricted Contact Access**.
 * **Calls tab.** On WhatsApp channels, the **Calls** tab lists your WhatsApp calls. See [Calls](calls.md).
 * **Incognito** and **Sound** settings are saved per browser. See [Incognito Mode](incognito-mode.md) and [Sound Settings](sound-settings.md).
@@ -90,7 +90,8 @@ When the conversation is finished, click **Close** in the conversation header. S
 ## Common issues & solutions
 
 * **Can't find a chat**: Check which list you are on and whether filters are applied (the Filters icon shows a dot). Try [Search](search.md), which looks across the whole channel, including archived chats.
-* **I only see some chats**: You may have restricted access. Ask your account owner to assign you to more chats.
+* **I only see some chats**: Your inbox access on this channel is probably **Assigned conversations only**. Ask your account owner to assign you to more chats, or to change your access for this channel in [Settings > Users](../settings/account/users.md#set-a-users-permissions).
+* **The Inbox is missing from the menu on one channel**: Your account owner gave you **No inbox access** on that channel. Switch to another channel, or ask them to change it.
 * **The chat list looks out of date**: Click **Reload** in the **Chat List Updated** or **Filters Applied** bar.
 * **Message not sent**: Check that your channel is connected. See [Connect your Channel](connect-channel.md).
 
