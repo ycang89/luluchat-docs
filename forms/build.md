@@ -27,6 +27,18 @@ Click **Add Questions** at the bottom of the form and pick an element:
 **File Storage Required**: To use the Files element, you need the "File Storage 200G" add-on. Go to `Settings` > `Account Management` > `Billing` to view and purchase storage add-ons.
 {% endhint %}
 
+#### Supported file types and size limits
+Customers can upload one file per Files question. The maximum size of each file depends on its type:
+
+| File type | Formats | Max size per file |
+| --- | --- | --- |
+| **Images** | JPG, JPEG, PNG | 16 MB |
+| **Audio** | AAC, MP3, M4A, MP4 audio, AMR, OGG | 16 MB |
+| **Video** | MP4, 3GP, MOV | 32 MB |
+| **Documents** | PDF, TXT, CSV, HTML, Word (DOC, DOCX), Excel (XLS, XLSX), PowerPoint (PPT, PPTX), ODS | 100 MB |
+
+Files in any other format are rejected with an invalid-file error.
+
 ### Editing and ordering questions
 - **Edit**: Click a question to open its settings panel.
 - **Reorder**: Use the **Move Up** and **Move Down** arrows next to a question.
@@ -55,7 +67,7 @@ Click **Submit** at the bottom of the tab to save your changes. Use **Open Form 
 
 * **Compulsory fields**: **Name** and **WhatsApp Contact No** are always part of the form. You can rename and reorder them, but not delete them.
 * **File Upload Storage**: The Files element requires the "File Storage 200G" add-on. Without it, you can't add file upload questions. Go to `Settings` > `Account Management` > `Billing` to purchase it.
-* **File Size Limits**: Uploaded files are subject to size limits based on your storage plan. Check your plan details for specific limits.
+* **File Size Limits**: Each uploaded file is limited by its type: 16 MB for images and audio, 32 MB for video, and 100 MB for documents. See [Supported file types and size limits](#supported-file-types-and-size-limits).
 
 ## Best practice 💡
 - **Keep it Short**: Only ask for essential information to increase submission rates.
