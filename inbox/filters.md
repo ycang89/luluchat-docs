@@ -49,7 +49,11 @@ The chat list updates as soon as you change a field. Click **Clear** next to **Q
 
 Under **Saved Filters**, click a filter to apply it. It is highlighted while active. Click it again to turn it off.
 
+The number in brackets next to each filter, such as **(4)**, is how many chats in your current list match it, so you can see at a glance which filters have something waiting without opening each one. Hover over the number for details.
+
 Use the **All**, **Private**, **Team** and **Selected** tabs to show filters by who can see them.
+
+<figure><img src="../.gitbook/assets/inbox-saved-filter-counts.png" alt="Saved Filters list showing a matching chat count in brackets next to each filter name"><figcaption><p>Each saved filter shows how many chats match it</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/inbox-saved-filter-active.png" alt="Saved Filters list with the All tab selected and the VIP needing reply filter highlighted as active, showing its colour dot, team visibility icon and time-sensitive clock icon"><figcaption><p>Active saved filter</p></figcaption></figure>
 {% endstep %}
@@ -118,6 +122,7 @@ Click **Create Filter**. The new filter appears under **Saved Filters**.
 ## Important behavior to know
 
 * **Time-sensitive filters**: A saved filter with a clock icon (tooltip: **Time-sensitive filter**) uses a time-based condition such as **in last**, **has past**, **in upcoming** or **is today**. Its results change as time passes, even if no chat changes, and are refreshed regularly. Click **Reload** in the **Filters Applied** bar to get the latest results.
+* **Matching counts**: The count next to a saved filter follows the list (tab) you are on. On **All** it is the total number of matching chats; on **Unread** it only counts unread chats that match. Counts update on their own as chats are tagged, assigned or closed. A filter scoped to other channels shows no count.
 * **Who can edit**: Only the person who created a saved filter, or the team owner, can edit or remove it. Other people can still use it if they can see it.
 * **Channel scope**: A filter scoped to selected channels shows a channel icon (tooltip: "Scoped to N channel(s)").
 * **Conditions must be complete**: You can't save a filter with no conditions, or with a condition that is missing a value.
@@ -133,6 +138,7 @@ Click **Create Filter**. The new filter appears under **Saved Filters**.
 * **"Please select at least one channel for this filter."**: You chose **Selected channels**. Pick at least one channel in **Apply To**.
 * **I can't edit a saved filter**: The **⋮** menu only appears if you created the filter or you are the team owner.
 * **Results of a time-based filter look out of date**: Click **Reload** in the **Filters Applied** bar.
+* **The count next to a filter doesn't match the chat list**: Check which list (tab) you are on — the count follows it. Close and reopen the **Filters** panel to refresh the counts.
 
 ## Best practice 💡
 
