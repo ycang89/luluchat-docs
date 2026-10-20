@@ -32,7 +32,7 @@ For the first four options, the workflow checks the conditions for the contact i
 
 Go to **Automations** > **Workflows**. The list shows each workflow's **Name** with its **On**/**Off** switch, the number of **Conditions** and **Actions**, and when it was **Last Updated**.
 
-Click **Create Workflow** to make a new one, or click a workflow's name to edit it.
+Click **Create Workflow** to make a new one, or click a workflow's name to edit it. To duplicate, copy, export, import or delete workflows, see [Manage your workflows](#manage-your-workflows).
 
 <figure><img src="../.gitbook/assets/automation-workflows-list.png" alt="Workflows list with four workflows: Track New Leads (On, 0 conditions, 2 actions), Daily Follow-up Reminder (On, 3 conditions, 2 actions), Weekend Catering Routing (On, 2 conditions, 2 actions) and VIP Tag Welcome (Off, 1 condition, 1 action), each with its Last Updated date"><figcaption><p>The Workflows list</p></figcaption></figure>
 {% endstep %}
@@ -149,6 +149,50 @@ To pause or resume a workflow, use its **On**/**Off** switch in the list. You se
 * For **periodic** workflows, each time the schedule runs, the actions run for every contact that meets the conditions at that moment.
 * Actions run in the order shown in step 3.
 
+## Manage your workflows
+
+Use these to reuse a workflow instead of building it again: make a copy on the same channel, copy it to another channel, or move it between accounts with an export file.
+
+#### Work on one workflow
+
+Click the **…** button at the end of a workflow's row:
+
+* **Duplicate**: Makes a copy on this channel. You see "Workflow duplicated as "_name_ (Copied)". It stays off until you turn it on."
+* **Copy to another channel**: Opens **Copy Workflow to Another Channel**. Under **Choose a Target Channel**, click the channel to copy it to.
+* **Export**: Downloads the workflow as a `.json` file.
+* **Delete**: Asks you to confirm in **Delete Workflow**, then deletes the workflow.
+
+<figure><img src="../.gitbook/assets/automation-workflows-row-menu.png" alt="Workflows list with the … menu open on VIP Tag Welcome (Off), showing Duplicate, Copy to another channel, Export and Delete, and an Import button above the list"><figcaption><p>Actions for one workflow</p></figcaption></figure>
+
+{% hint style="warning" %}
+You can only delete a workflow that is switched **Off**. For a workflow that is **On**, **Delete** is greyed out with the tip "Turn off the workflow before deleting it." Deleting can't be undone.
+{% endhint %}
+
+#### Work on several workflows at once
+
+Tick the boxes next to the workflows you want. A bar appears at the bottom showing how many are selected (for example "**2** Workflows selected."), with these buttons:
+
+* **Copy to another channel**: Copies all the selected workflows to the channel you pick.
+* **Export**: Downloads all the selected workflows in one `.json` file.
+* **Delete**: Deletes the selected workflows that are **Off**. Any selected workflow that is **On** is skipped, and the confirmation tells you how many.
+* **Cancel**: Clears your selection.
+
+Your selection is kept when you move between pages of the list.
+
+<figure><img src="../.gitbook/assets/automation-workflows-bulk-actions.png" alt="Workflows list with Daily Follow-up Reminder and VIP Tag Welcome ticked, and a bar at the bottom reading 2 Workflows selected. with Cancel, Copy to another channel, Export and Delete buttons"><figcaption><p>Two workflows selected</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/automation-workflows-copy-channel.png" alt="Copy 2 Workflows to Another Channel window: You are about to copy 2 workflows to another Channel. The copies start turned off. Choose a Target Channel lists Sunrise Bakery Outlet 2 with its phone number, Sunrise Bakery Facebook with its Page ID and sunrise.bakery with its Instagram ID"><figcaption><p>Pick the channel to copy to</p></figcaption></figure>
+
+#### Import workflows
+
+1. Click **Import** above the list.
+2. Pick a workflow `.json` file that was made with **Export** (on this channel, another channel or another account).
+3. The workflows are added to this channel. You see how many were imported, for example "3 Workflows imported successfully". If some couldn't be imported, you also see how many failed and why.
+
+{% hint style="info" %}
+Imported workflows count towards your plan's workflow limit. Duplicated and copied workflows are named "_name_ (Copied)" and start **Off**, so nothing runs until you check them and switch them on.
+{% endhint %}
+
 ## Important behavior to know
 
 * **Off means nothing runs**: A workflow with **Is Active** off (or switched **Off** in the list) doesn't run.
@@ -158,6 +202,8 @@ To pause or resume a workflow, use its **On**/**Off** switch in the list. You se
 * **Inactive flows can't be picked**: In **Message Flow**, inactive flows are marked **[INACTIVE]** and can't be selected.
 * **Changing a field resets the condition**: If you change a condition's field, its operator and value are cleared.
 * **Workflow limit**: Your plan may limit how many workflows you can create.
+* **Copies start Off**: A duplicated, copied or imported workflow doesn't run until you switch it **On**.
+* **Only Off workflows can be deleted**: Switch a workflow **Off** before deleting it. Deleting is permanent.
 
 ## Example: Tracking New Leads
 
@@ -197,7 +243,11 @@ Other ideas:
 * **"Please select an interval"**, **"Please select a day"**, **"Please select a date"**, **"Please select a minute"** or **"Please select a time"**: Finish the **Schedule Time** settings for a periodic workflow.
 * **"Please select"**, **"Please select a tag"** or another "Please select…" / "Please enter…" message under a condition or action: That condition or action is missing a value.
 * **"Duplicated actions"**: The same action type was added twice. Remove one. Only **Send Message to a Contact No.** can be used more than once.
-* **"Sorry, your team has reached the maximum workflow limit."**: Delete or reuse an existing workflow, or upgrade your plan.
+* **"Sorry, your team has reached the maximum workflow limit."**: Delete or reuse an existing workflow, or upgrade your plan. When this happens during an import, you see **Reached Plan Limit** with a **Go to Plans Page** button, and only the workflows that fit your limit are imported.
+* **Delete is greyed out**: The workflow is **On**. Switch it **Off** first.
+* **"Unable to delete the workflow as it is not inactive."**: The workflow was switched on before it could be deleted. Switch it **Off** and try again.
+* **"Invalid import file: not a workflow export file"**: Pick a `.json` file made with **Export** on the Workflows page. Message Flow export files can't be imported here.
+* **"No others Channel available."** when copying: Your account has no other channel you can access. Use **Duplicate** to make a copy on this channel.
 * **Nothing happened**: Check that the workflow is **On**, that the event really happened on this channel, and use **Preview Matched Contacts** to check that the contact meets all the conditions.
 * **A periodic workflow didn't pick anyone**: Add at least one condition, and check the schedule time.
 
@@ -208,6 +258,9 @@ Other ideas:
 * Use **Send Message to a Contact No.** with **{{list_of_contacts}}** to send your team a daily summary.
 * Combine tags and inbox lists to keep leads organised.
 * Switch off workflows you no longer need instead of leaving them running.
+* Use **Duplicate** to build a similar workflow from one that already works, then rename it and change only what differs.
+* After copying a workflow to another channel or importing one, open it and check each condition and action before switching it on. Tags, inbox lists, message flows and team members can differ between channels.
+* Export your important workflows now and then, so you have a backup you can import later.
 
 ## Related Documentation
 
