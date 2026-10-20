@@ -2,9 +2,9 @@
 
 ## What is the Meta Ads page?
 
-The **Meta Ads** page lists every **Meta Ad** trigger set up in your Message Flows. A Meta Ad trigger links a Message Flow to a specific Meta (Facebook or Instagram) ad or post. When someone messages you by clicking that ad or post, Luluchat starts the linked flow straight away.
+The **Meta Ads** page lists every **Meta Ad** trigger set up in your Message Flows. A Meta Ad trigger links a Message Flow to a specific Meta (Facebook or Instagram) ad or post, or to a whole campaign or ad set. When someone messages you by clicking that ad or post, Luluchat starts the linked flow straight away.
 
-For each trigger, the page shows its label, whether it is an **Ad** or a **Post**, its Source ID, how many times it has been **Triggered**, and the flow it starts.
+For each trigger, the page shows its label, whether it is an **Ad**, **Post**, **Campaign** or **Ad Set**, its Source ID, how many times it has been **Triggered**, and the flow it starts.
 
 You don't create Meta Ad triggers on this page. You add them in a Message Flow's **Starting Step**. This page is for reviewing them and jumping to the flow to change them.
 
@@ -13,7 +13,7 @@ You don't create Meta Ad triggers on this page. You add them in a Message Flow's
 A Meta Ad trigger starts its flow when **all** of these are true:
 
 * A customer sends you a message by clicking a Meta ad or post (for example, a click-to-WhatsApp ad).
-* Meta passes that ad's or post's ID with the message, and the ID is the same as the trigger's **Source ID**.
+* Meta passes that ad's or post's ID with the message, and the ID is the same as the trigger's **Source ID**. For a **Campaign** or **Ad Set** trigger, the ad's ID must be one of the trigger's **Ads**.
 * The linked Message Flow is active.
 
 ## How to set it up (Step by Step)
@@ -24,6 +24,8 @@ A Meta Ad trigger starts its flow when **all** of these are true:
 
 * **Ad**: In Meta Ads Manager, find your ad and copy its **Ad ID** number.
 * **Post**: In Meta Business Suite, go to **Content** > **Posts & reels**, click the **…** menu on the post and choose **Copy post ID** (or **Copy reel ID**).
+
+* **Campaign** or **Ad Set**: In Meta Ads Manager, copy the **Campaign ID** or **Ad Set ID**. You'll also need the IDs of the ads inside it. The easiest way is to export them as a CSV file (see the next steps).
 
 See [Trigger (Starting Step)](steps/trigger.md#5-meta-ad-trigger) for screenshots of where to find these IDs.
 {% endstep %}
@@ -42,8 +44,13 @@ Go to **Automations** > **Message Flows** and open the flow you want customers f
 Click the **Meta Ad** box to open the **Meta Ad** window and fill in:
 
 * **Source Label** (optional): A name to help you recognise the ad or post, for example "Merdeka Promo - Free Kopi Ais". It is also shown on the Meta Ads page.
-* **Source Type**: Choose **Ad** for an Ad ID, or **Post** for a post or reel ID.
-* **Source ID**: Paste the Ad ID or Post ID.
+* **Source Type**: Choose **Ad** for an Ad ID, **Post** for a post or reel ID, or **Campaign** / **Ad Set** to cover many ads with one trigger.
+* **Source ID**: Paste the Ad ID or Post ID. For a campaign or ad set, this field is called **Campaign ID** or **Ad Set ID**.
+* **Ads** (Campaign and Ad Set only): The ads in that campaign or ad set that should start this flow. You can:
+  * paste ad IDs, separated by commas, spaces or new lines (you can paste a whole column copied from a spreadsheet), or
+  * click **Import from CSV** and choose the file exported from Meta Ads Manager. Luluchat reads the ad IDs and names from the file and adds them all.
+
+  Click **×** on an ad to remove it, or **Clear all** to start again. The number of ads is shown next to the button.
 
 Click **Save**, then click **Publish Flow**.
 
@@ -56,7 +63,7 @@ Click **Save**, then click **Publish Flow**.
 Go to **Automations** > **Meta Ads**. Each row shows:
 
 * The **Source Label** in bold.
-* An **Ad** or **Post** tag and the **Source ID**.
+* An **Ad**, **Post**, **Campaign** or **Ad Set** tag and the **Source ID**.
 * **Triggered**: How many times a message from this ad or post has matched the trigger.
 * **Flow**: The flow it starts. Click the flow name to open it.
 * **Edit**: Opens the flow in draft mode with the **Starting Step** open, so you can change the trigger.
@@ -75,6 +82,8 @@ Go to **Automations** > **Meta Ads**. Each row shows:
 
 * **Meta Ad triggers are checked first**: When a message comes from a linked ad or post, its flow starts and the message is not checked against [Growth Tools](growth-tools.md) or [Keywords](keywords.md).
 * **The Source ID must match exactly**: Copy the ID from Meta rather than typing it.
+* **Campaign and Ad Set triggers match their listed ads only**: Luluchat checks the ad the customer clicked against the trigger's **Ads** list. If you add new ads to the campaign or ad set in Meta later, add their IDs to the trigger too (for example, export and import the CSV again).
+* **Ad names are shown only right after an import**: The flow saves ad IDs only. When you reopen a saved trigger, the ads are listed by ID.
 * **The flow must be active**: A trigger in an inactive flow does not start the flow.
 * **Flow conditions and away hours still apply**: If the flow has conditions the contact doesn't meet, it does not start. Outside your working hours, the away message may be sent instead, depending on your flow settings.
 * **One flow per message**: If you link the same Source ID to more than one flow, only one of them starts. Link each ad or post to one flow only.
@@ -84,13 +93,17 @@ Go to **Automations** > **Meta Ads**. Each row shows:
 ## Common issues & solutions
 
 * **"Please enter a source ID"** appears in the Meta Ad box: The trigger has no Source ID yet. Click the box, paste the ID in **Source ID** and click **Save**.
+* **"Please add at least one ad"** appears in the Meta Ad box, or publishing says the trigger "has no ads": A **Campaign** or **Ad Set** trigger needs at least one ad. Paste the ad IDs or click **Import from CSV**.
+* **"No ad IDs were found in this file"**: The CSV has no ad ID column. In Meta Ads Manager, export the table from the **Ads** tab and make sure the **Ad ID** column is included.
+* **"Ad IDs contain digits only"**: Something other than an ad ID was pasted, such as an ad name. Those entries are ignored. Paste the numeric IDs only.
 * **The flow doesn't start when I click my ad**: Check that the Source ID is correct, that the flow is active and published, and that the customer opened the chat from the ad or post itself (not from a shared link or a search).
-* **Triggered stays at 0**: Meta did not send a matching ID. Check that you copied the ID of the ad that is running (not the campaign or ad set ID), or the right post or reel.
+* **Triggered stays at 0**: Meta did not send a matching ID. With Source Type **Ad**, check that you copied the ID of the ad that is running (not the campaign or ad set ID; to use those, choose **Campaign** or **Ad Set**). With **Campaign** or **Ad Set**, check that the running ad is in the **Ads** list.
 * **The wrong flow starts**: Another flow may use the same Source ID. Check the Meta Ads page for duplicate IDs.
 
 ## Best practice 💡
 
 * Always fill in **Source Label** with the campaign name, so the Meta Ads page is easy to read.
+* Running many ads with the same offer? Use one **Campaign** or **Ad Set** trigger and import the ads from a CSV, instead of adding one trigger per ad.
 * Use a short, focused flow for each ad, such as a welcome message with the offer and a few buttons.
 * Compare the **Triggered** counts to see which ads bring in the most conversations.
 * When an ad ends, remove its trigger from the flow to keep the list tidy.

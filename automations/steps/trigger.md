@@ -198,15 +198,16 @@ For request examples, see the [Webhook Trigger Developer Guide](../../developer-
 
 ### 5. Meta Ad Trigger
 
-**What it does**: Starts the flow when a customer messages you from a specific Click-to-WhatsApp ad or post on Facebook or Instagram.
+**What it does**: Starts the flow when a customer messages you from a specific Click-to-WhatsApp ad or post on Facebook or Instagram, or from any of the chosen ads in a campaign or ad set.
 
 **How to configure**:
 
 1. Click **Meta Ad** in the Starting Step panel, then click the new **Meta Ad** card.
 2. Optionally enter a **Source Label**, for example "Raya Catering Promo 2026". It's only for your reference.
-3. Choose the **Source Type**: **Ad** or **Post**.
-4. Paste the **Source ID** (the ad ID or post ID).
-5. Click **Save**.
+3. Choose the **Source Type**: **Ad**, **Post**, **Campaign** or **Ad Set**.
+4. Paste the **Source ID** (the ad ID or post ID). For a campaign or ad set, paste the **Campaign ID** or **Ad Set ID**.
+5. For **Campaign** or **Ad Set**, add the ads that should start this flow under **Ads**: paste their ad IDs (separated by commas, spaces or new lines), or click **Import from CSV** and choose the file exported from Meta Ads Manager.
+6. Click **Save**.
 
 <figure><img src="../../.gitbook/assets/flow-trigger-meta-ad.png" alt="Meta Ad window with Source Label Raya Catering Promo 2026, Source Type Ad and Source ID 120210000111222"><figcaption><p>Meta Ad settings</p></figcaption></figure>
 
@@ -216,6 +217,7 @@ For request examples, see the [Webhook Trigger Developer Guide](../../developer-
 
 <figure><img src="../../.gitbook/assets/image.webp" alt="Meta Ads Manager with the ad's more options menu open, showing the ad ID and a Copy button"><figcaption><p>Copy the Ad ID in Meta Ads Manager</p></figcaption></figure>
 
+* **Campaign ID / Ad Set ID and its ads**: In Meta Ads Manager, open the **Campaigns** or **Ad sets** tab and copy the ID. To get the ads inside it, open the **Ads** tab filtered to that campaign or ad set and export the table as a CSV file, with the **Ad ID** column included.
 * **Post ID**: In Meta Business Suite, go to **Content** > **Posts & reels**, click **…** on the post, and choose **Copy post ID** (or **Copy reel ID**).
 
 <figure><img src="../../.gitbook/assets/Screenshot 2026-06-26 at 6.33.50 PM.png" alt="Meta Business Suite Posts and reels list with the post menu open and Copy reel ID highlighted"><figcaption><p>Copy the Post ID in Meta Business Suite</p></figcaption></figure>
@@ -223,6 +225,7 @@ For request examples, see the [Webhook Trigger Developer Guide](../../developer-
 **Important behavior to know**:
 
 * The ID must match exactly.
+* A **Campaign** or **Ad Set** trigger starts the flow only for the ads in its **Ads** list. Ads added to the campaign in Meta later need to be added to the trigger too.
 * The Meta Ad trigger is checked before other triggers. If a message comes from a linked ad, this flow starts even if the message also matches a keyword.
 * See [Meta Ads](../../reports/meta-ads.md) for how leads from ads are reported.
 
