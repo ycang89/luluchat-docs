@@ -39,7 +39,7 @@ If the contact has no deals, you'll see **No deals yet**.
 
 Click **Create** at the top of the section (or **Create a Deal** if the contact has none yet). The contact is filled in for you.
 
-Choose the **Deal Pipeline** and **Stage**, and add any other details such as company, deal amount, deal owner, priority or due date. Click **Create Deal**.
+The **Deal Pipeline** and **Stage** start on the pipeline chosen for this channel in [Inbox settings](../../settings/tools/inbox.md) (or the first pipeline if none is chosen), at its first stage. You can change both. Add any other details such as company, deal amount, deal owner, priority or due date. Click **Create Deal**.
 
 See [The Deal Form](../../deals/board.md#the-deal-form) for every field.
 
@@ -62,13 +62,14 @@ The deal is linked to the contact and appears on the Deals [Board](../../deals/b
 * You need access to Deals to see this section.
 * Archived deals no longer appear here. Find them from **Archived Deals** in the [List](../../deals/list.md) view.
 * A deal's pipeline can only be chosen when you create it.
-* The conversation header also shows the contact's newest deal with its stage. Click the stage to move the deal to another stage, click the arrow to move it to the next stage, or click the **+1 more** link (the number changes with the number of deals) to open Contact Info and see all deals. If the contact has no deal, the header shows a **Create a Deal** button.
+* The conversation header also shows one of the contact's deals with its stage: the newest deal in the pipeline chosen for this channel in [Inbox settings](../../settings/tools/inbox.md), or, if the contact has no deal there, their newest deal from any pipeline. Click the stage to move the deal to another stage, click the arrow to move it to the next stage, or click the **+1 more** link (the number changes with the number of deals) to open Contact Info and see all deals. If the contact has no deal, the header shows a **Create a Deal** button, which creates the deal in the chosen pipeline.
 
 ## Common issues & solutions
 
 * **Can't create a deal**: Make sure a deal pipeline exists. The **Create Deal** button is hidden until there is at least one pipeline. You also need to choose a Stage.
 * **Deal not showing**: Click **Reload**, or check whether the deal was archived or linked to a different contact.
 * **Deals section is missing**: Your plan or role does not include Deals. Ask your admin.
+* **New deals go to the wrong pipeline**: Choose the pipeline for this channel under **Deal pipeline used in the inbox** in [Inbox settings](../../settings/tools/inbox.md).
 
 ## Best practice 💡
 
@@ -82,3 +83,4 @@ The deal is linked to the contact and appears on the Deals [Board](../../deals/b
 * [Deals: Board](../../deals/board.md)
 * [Deals: List](../../deals/list.md)
 * [Contact Info](../../core-features/index/contact-info/README.md)
+* [Inbox settings](../../settings/tools/inbox.md)
