@@ -41,8 +41,20 @@ On the **Contacts** page, click **Import**, then **Import Contacts**.
 Click **Download Template** to get a CSV file in the right format. Fill in your contacts (name, phone number, tags and so on).
 
 * **Tags**: Separate several tags with commas, for example `VIP, Customer, Newsletter`. Tags that don't exist yet are created for you.
+* **Inbox Tabs**: The lists to add the contact to in the Inbox, separated by commas, for example `VIP, Follow Up`. Lists that don't exist yet are created for you. Leave it empty to keep the contact's lists as they are.
 * **Phone numbers**: Always include the country code, for example `60123456789`.
 * **Mandarin or other non-English text**: Save the file as **CSV UTF-8**.
+{% endstep %}
+
+{% step %}
+#### Choose how lists are updated
+
+If your file has lists in the **Inbox Tabs** column, decide this **before** you upload:
+
+* **Not ticked** (default): Contacts that aren't in any list yet are added to the lists in the file. Contacts already in a list keep their lists.
+* **Replace contacts' current lists with the lists in the file** ticked: Each contact's lists are replaced by the lists in its **Inbox Tabs** cell. Lists that aren't in the cell are removed from the contact.
+
+Contacts with an empty **Inbox Tabs** cell are never changed, whichever you choose.
 {% endstep %}
 
 {% step %}
@@ -121,11 +133,15 @@ Open **Notifications** (the bell icon). If every row was imported, the notificat
 
 ## What happens after it triggers?
 
-* **Contacts import**: New contacts are added. Contacts that already exist (same phone number) are updated with the data in your file.
+* **Contacts import**: New contacts are added. Contacts that already exist (same phone number) are updated with the data in your file. Contacts are added to the lists in their **Inbox Tabs** cell, and missing lists are created.
 * **Notes import**: Each note is added to the matching contact on the current channel, keeping its author, its original date, and whether it was pinned. The notes appear in the chat and in the contact's [Notes](../inbox/contact-info/notes.md).
 
 ## Important behavior to know
 
+* **Lists in a contacts import**:
+  * Only your own lists can be set. System lists and lists you have deleted are skipped.
+  * List names can be up to 100 characters. One import creates up to 100 new lists.
+  * A batch update keeps your lists: an **Export Contacts** file has the **Inbox Tabs** column, so you can change lists in the file and import it back with the replace option ticked.
 * **How notes find their contact**: A note is matched by **Phone** first. If there's no phone number, it's matched by **Username** (for Messenger and Instagram contacts).
 * **Notes for contacts who aren't on the channel yet**:
   * With a phone number, the note is saved for that number and appears once the contact is on this channel.
@@ -144,6 +160,8 @@ Open **Notifications** (the bell icon). If every row was imported, the notificat
 * **A row failed with "No phone and no username - the contact cannot be matched on this channel"**: Add the contact's phone number or username to that row.
 * **A row failed with "Created At is missing or not a valid date"**: Keep the date format from the export (for example `2026-09-30 14:05:00`).
 * **A row was skipped with "Note already exists"**: The note was imported before. Nothing to do.
+* **A contact wasn't added to its list, with "list assignment skipped - contact already belongs to a list"**: The contact was already in a list. Import the file again with **Replace contacts' current lists with the lists in the file** ticked.
+* **A list was skipped with "is a system list" or "matches a deleted list"**: Use a different list name in the **Inbox Tabs** column.
 * **I can't see the Export button**: Exporting needs the contact export permission. Ask your team owner.
 
 ## Best practice 💡
