@@ -85,9 +85,15 @@ The fields are grouped like this:
 | | **Time assigned**, **Response time after assignment**, **Time of Conversation Opened**, **Time of First Response**, **Time of List Assigned**, **Time of Conversation Closed** | Same as **Last Conversed** |
 | **Chat** | **Chat Status** | **is need reply**, **is awaiting reply** |
 | **Deals** (one field per deal pipeline) | _Pipeline name_ | **is** (one stage), **in** (several stages) |
-| **Custom Attributes** (one field per attribute) | _Attribute name_ | Depends on the attribute type: text (**is**, **is not**, **contain**, **does not contain**, **starts with**), number (**is equal to**, **is not equal to**, **greater than**, **lesser than**) or date and time (as above) |
+| **Custom Attributes** (one field per attribute) | _Attribute name_ | Depends on the attribute type: text (**is**, **is not**, **contain**, **does not contain**, **starts with**), number (**is equal to**, **is not equal to**, **greater than**, **lesser than**) or date and time (as above). Date and anniversary date attributes also have **is in** (exactly a number of days away) |
 
 **Deals** only appears if your plan includes Deals and you have at least one pipeline. **Custom Attributes** only appears if you have created custom attributes. Use **Occurrence Date** with **is on** to run a workflow only on certain days, for example **Saturday** and **Sunday**.
+
+Use **is in** on a date attribute to reach each contact once, on one exact day. For example, a **Subscription Due Date** that **is in** `30` days matches a contact only on the day that is exactly 30 days before their due date. **in upcoming** `30` days would match them every day for the whole month.
+
+{% hint style="info" %}
+**is in** works with every trigger. On a Periodic schedule it only works when the workflow repeats **Daily**, so with **Hourly**, **Weekly** or **Monthly** it shows as **is in (Daily schedule only)** and can't be selected.
+{% endhint %}
 
 <figure><img src="../.gitbook/assets/automation-workflows-condition-fields.png" alt="A fourth condition added in section 2 with its field list open, showing the Contact group with Last Conversed, Last Contact Replied, Last Replied From You, Phone Number and Assignee"><figcaption><p>Pick a field for the condition</p></figcaption></figure>
 {% endstep %}
