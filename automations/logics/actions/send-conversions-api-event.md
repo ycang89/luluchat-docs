@@ -30,6 +30,7 @@ In **Automations** > **Message Flows**, open the flow and click **Edit Flow**. C
 #### Choose the dataset and event
 
 * **Dataset** (required): The Meta dataset that receives the event, shown as name and ID. If a dataset you just created in Meta is missing, click the reload button (**Reload datasets from Meta**) next to the field.
+* **No dataset yet?** If the channel has no dataset on Meta, a box appears under **Dataset**. Enter a **Dataset name** (your channel name is filled in for you) and click **Create Dataset**. Luluchat creates it on Meta and selects it for you.
 * **Event** (required): The event to send. Events that need extra data say so in the list, e.g. **Purchase (requires value, currency)**.
 
 <figure><img src="../../../.gitbook/assets/flow-capi-dataset-event.png" alt="Send Conversions API Event window with Dataset Kopi Corner WhatsApp (880123456789012) selected and the Event list open, showing Purchase (requires value, currency), AddToCart, InitiateCheckout, ViewContent, LeadSubmitted and OrderCreated (requires value, currency)"><figcaption><p>Choose a dataset and an event</p></figcaption></figure>
@@ -95,7 +96,7 @@ Purchase, AddToCart, InitiateCheckout, ViewContent, LeadSubmitted, OrderCreated,
 
 * **WhatsApp Business needs an ad click**: On WABA channels, the event is only sent if the contact messaged you from a Click-to-WhatsApp ad in the last 7 days. Otherwise it is skipped.
 * **7-day window**: Meta only accepts events within 7 days of the contact's conversation.
-* **Datasets**: Facebook and Instagram channels need a dataset created in Meta Events Manager first.
+* **Datasets**: Each channel sends events to one dataset in Meta. You can create it from this window with **Create Dataset**, or in Meta Events Manager. **Create Dataset** only appears while the channel has no dataset yet.
 * **Empty rows are skipped**: Custom Data rows left empty are not sent.
 * **One per Action step**: You can't add this action twice in the same Action step. Use another Action step to send a second event.
 * **Not on WhatsApp channels**: The action is not available on WhatsApp (non-WABA) channels.
@@ -107,7 +108,8 @@ Purchase, AddToCart, InitiateCheckout, ViewContent, LeadSubmitted, OrderCreated,
 * **"Email or phone number is required."**: Fill in **Email** or **Phone Number**. Keep `{{Contact No}}` in **Phone Number** for WhatsApp contacts.
 * **"Purchase requires: value, currency"**: Add the missing Custom Data parameters and give them values.
 * **The card says "Please provide the customer's email or phone number."**: Open the action and fill in **Email** or **Phone Number**.
-* **The dataset list is empty**: Create a dataset in Meta Events Manager, then click the reload button next to **Dataset**.
+* **The dataset list is empty**: Enter a name and click **Create Dataset** under the **Dataset** field. If you created one in Meta Events Manager instead, click the reload button next to **Dataset**.
+* **"Your access token does not have permission to manage conversion events"**: Reconnect the channel to grant Luluchat the permission, then try **Create Dataset** again.
 * **Events don't appear in Ads Manager**: The contact didn't come from a Click-to-WhatsApp ad in the last 7 days (WABA), or the conversation is older than 7 days.
 
 ## Best practice 💡
