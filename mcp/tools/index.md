@@ -1,6 +1,6 @@
 # Available Tools
 
-The Luluchat MCP Server provides the tools below. They are grouped the same way as the **MCP Tool Permissions** list in `Settings > Tools > AI`, so you can quickly find a tool and turn it on or off.
+The Luluchat MCP Server provides the tools below. They are grouped the same way as the **Tool Permissions** list in `Settings` > `Tools` > `MCP`, so you can quickly find a tool and turn it on or off.
 
 {% hint style="info" %}
 You don't need to call these tools yourself. Just ask your AI assistant in plain language, e.g. *"Create a support ticket for +60123456789 about a failed payment"*, and it picks the right tools.
@@ -101,6 +101,6 @@ IDs such as `staff_id`, `tab_id`, `pipeline_uuid`, `stage_uuid`, `deal_uuid`, `t
 
 ## Important behavior to know
 
-* **Turned-off tools are hidden**: Only tools turned on in `Settings > Tools > AI` can be used.
+* **Turned-off tools are hidden**: Only tools turned on in `Settings` > `Tools` > `MCP` can be used.
 * **Safe to retry**: Most add/remove tools are idempotent. Running them twice doesn't create duplicates or errors.
 * **Team scoped**: Every tool only works with data from the team that owns the access token.

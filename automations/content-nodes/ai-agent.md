@@ -92,6 +92,6 @@ Check that every event is linked (unlinked events show in red on the node), then
 ## Related Documentation
 
 * [Integration](../../settings/account/integration.md)
-* [AI Settings](../../settings/tools/ai.md)
+* [MCP Settings](../../settings/tools/ai.md)
 * [Message](message.md)
 * [Actions](../logics/actions.md)

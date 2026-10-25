@@ -34,7 +34,7 @@ Workspace and personal settings. Use subpages for each settings area.
     </tr>
     <tr>
       <td><strong>Tools</strong></td>
-      <td>AI, Inbox, Message Flows, and Broadcast settings</td>
+      <td>MCP, Inbox, Message Flows, and Broadcast settings</td>
       <td><a href="./tools/index.md">./tools/index.md</a></td>
       <td></td>
     </tr>

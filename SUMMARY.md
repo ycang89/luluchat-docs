@@ -132,7 +132,7 @@
     * [Tags](settings/data/tags.md)
     * [Custom Attributes](settings/data/custom-attributes.md)
   * [Tools](settings/tools/index.md)
-    * [AI](settings/tools/ai.md)
+    * [MCP](settings/tools/ai.md)
     * [Inbox](settings/tools/inbox.md)
     * [Message Flows](settings/tools/message-flows.md)
     * [Broadcast](settings/tools/broadcast.md)
@@ -161,6 +161,7 @@
 ## MCP
 
 * [MCP Overview](mcp/index.md)
+* [Connect with OAuth](mcp/connect-oauth.md)
 * [Connect with an Access Token](mcp/connect.md)
 * [Available Tools](mcp/tools/index.md)
   * [Contact Management](mcp/tools/contact-management.md)

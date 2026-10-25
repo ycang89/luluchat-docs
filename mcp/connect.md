@@ -17,18 +17,22 @@ Authorization: Bearer YOUR_ACCESS_TOKEN
 
 This page shows how to create the token and add it to popular AI apps.
 
+{% hint style="info" %}
+Using Claude or another app that supports OAuth? You can connect without a token. See [Connect with OAuth](connect-oauth.md).
+{% endhint %}
+
 ## How to set it up (Step by Step)
 
 {% stepper %}
 {% step %}
 #### Enable MCP for AI
 
-1. Go to `Settings` in the left menu, then **Tools > AI**
+1. Go to `Settings` > `Tools` > `MCP`
 2. Turn **Enable MCP for AI** to **On**
-3. Under **MCP Tool Permissions**, turn on the tools you want the AI to use (or click **Turn On All**)
+3. Under **Tool Permissions**, turn on the tools you want the AI to use (or click **Turn On All**)
 4. Click **Save**
 
-See [AI Settings](../settings/tools/ai.md) for more details.
+See [MCP Settings](../settings/tools/ai.md) for more details.
 {% endstep %}
 
 {% step %}
@@ -191,8 +195,8 @@ Next, browse the [Available Tools](tools/index.md) to see everything the assista
 
 * **401 / Unauthorized**: The token is wrong, expired or deleted, or the header is missing the `Bearer ` prefix. Create a new token and try again.
 * **Token has no MCP access**: The token was created without **All MCP Tool Scopes**. Create a new token with that scope ticked.
-* **Assistant says a tool is not available / permission denied**: The tool is turned off. Go to `Settings > Tools > AI`, turn it on under **MCP Tool Permissions** and click **Save**.
-* **No tools at all**: Make sure **Enable MCP for AI** is turned on in `Settings > Tools > AI`.
+* **Assistant says a tool is not available / permission denied**: The tool is turned off. Go to `Settings` > `Tools` > `MCP`, turn it on under **Tool Permissions** and click **Save**.
+* **No tools at all**: Make sure **Enable MCP for AI** is turned on in `Settings` > `Tools` > `MCP`.
 * **channel\_access\_denied**: The Channel UUID is wrong or belongs to another team. Copy it again from the **Channels** modal.
 * **contact\_not\_found**: The contact doesn't exist in that channel. Check the phone number includes the country code, e.g. `+60123456789`.
 * **Claude Desktop doesn't show Luluchat**: Check the JSON is valid, Node.js is installed, and fully quit and reopen Claude Desktop.

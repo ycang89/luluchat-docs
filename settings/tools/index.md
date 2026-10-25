@@ -1,6 +1,6 @@
 # Settings: Tools
 
-Configure global settings for AI agents, Inbox behavior, Message Flows, and Broadcasts.
+Configure global settings for MCP, Inbox behavior, Message Flows, and Broadcasts.
 
 {% hint style="info" %}
 **Global Configuration**
@@ -21,8 +21,8 @@ These settings apply across your entire workspace and affect how automations, in
   </thead>
   <tbody>
     <tr>
-      <td><strong>AI</strong></td>
-      <td>Configure AI agent behavior and settings</td>
+      <td><strong>MCP</strong></td>
+      <td>Connect AI apps and choose which tools they can use</td>
       <td><a href="./ai.md">./ai.md</a></td>
       <td></td>
     </tr>
