@@ -34,7 +34,7 @@ Turn **Enable MCP for AI** to **On**. The **Authentication** and **Tool Permissi
 
 Under **Authentication**, copy the **MCP Server URL** (`https://mcp.luluchat.io/mcp`). Then pick how the AI app signs in:
 
-* **OAuth Client** (recommended for Claude and other apps that support OAuth): use the **Client ID** and **Client Secret**. You don't need to paste a token into the app. See [Connect with OAuth](../../mcp/connect-oauth.md).
+* **OAuth Client** (recommended for Claude, Claude Code and other apps that support OAuth): use the **Client ID** and **Client Secret**. You don't need to paste a token into the app. See [Connect with OAuth](../../mcp/connect-oauth.md).
 * **Access Token** (for apps without OAuth, scripts and agents): click **Manage Access Tokens** to create a token with **All MCP Tool Scopes** on the Integration page. See [Connect with an Access Token](../../mcp/connect.md).
 
 <figure><img src="../../.gitbook/assets/settings-mcp-oauth-client.png" alt="MCP settings with Enable MCP for AI turned on, the MCP Server URL and the OAuth Client tab showing Client ID, Client Secret and Scopes"><figcaption><p>Authentication: OAuth Client</p></figcaption></figure>

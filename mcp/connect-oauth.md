@@ -2,7 +2,7 @@
 
 ## What is it?
 
-AI apps that support OAuth, such as Claude, can connect to Luluchat without you copying a token into the app. You give the app three things, then sign in and approve the connection in your browser:
+AI apps that support OAuth, such as Claude and Claude Code, can connect to Luluchat without you copying a token into the app. You give the app three things, then sign in and approve the connection in your browser:
 
 | Item | Where to find it |
 | --- | --- |
@@ -17,6 +17,7 @@ If your AI app doesn't support OAuth, or you're connecting a script or server-si
 ## When to use it?
 
 * When you connect **Claude** (claude.ai or Claude Desktop) with a custom connector
+* When you connect **Claude Code** in your terminal and want to sign in with your browser instead of pasting a token
 * When any AI app asks for an **OAuth Client ID** and **Client Secret** for a remote MCP server
 * When you'd rather not keep a long-lived access token inside an AI app
 
@@ -47,7 +48,7 @@ The Client Secret is **only shown once**. If you lose it, click **Regenerate** t
 {% step %}
 #### Add Luluchat to your AI app
 
-Add a custom connector (or remote MCP server) in your AI app with the MCP Server URL, Client ID and Client Secret. Then complete the sign-in and approval steps that open in your browser.
+Add a custom connector (or remote MCP server) in your AI app with the MCP Server URL, Client ID and Client Secret. Then complete the sign-in and approval steps that open in your browser. Pick your app below.
 {% endstep %}
 {% endstepper %}
 
@@ -62,6 +63,28 @@ Add a custom connector (or remote MCP server) in your AI app with the MCP Server
 5. Click **Add**, then **Connect**, and finish the sign-in steps in your browser
 
 Luluchat now appears in Claude's connectors. Turn it on in a chat from the tools menu.
+{% endtab %}
+
+{% tab title="Claude Code" %}
+Run this command in your terminal and replace `YOUR_CLIENT_ID` with your **Client ID**:
+
+```bash
+claude mcp add --transport http luluchat https://mcp.luluchat.io/mcp \
+  --client-id YOUR_CLIENT_ID --client-secret
+```
+
+1. Claude Code asks for the **Client Secret**. Paste it and press Enter (it's hidden while you type)
+2. Start Claude Code and type `/mcp`
+3. Select **luluchat** and choose **Authenticate**
+4. Sign in to Luluchat in the browser window that opens and approve the connection
+
+Back in Claude Code, `/mcp` shows **luluchat** as connected.
+
+{% hint style="info" %}
+* Add `--scope user` to the command to use Luluchat in every project on your computer. Without it, the connection only applies to the folder you ran the command in.
+* The Client Secret can only be set when you add the server. If you regenerate it, run `claude mcp remove luluchat` and add the server again.
+* For scripts or CI, put the secret in the `MCP_CLIENT_SECRET` environment variable instead of typing it at the prompt.
+{% endhint %}
 {% endtab %}
 
 {% tab title="Other apps" %}
@@ -96,6 +119,8 @@ The assistant should call the `get_team_staff` tool and list your team. Next, br
 * **The app says the client secret is wrong**: The secret was regenerated or mistyped. Click **Regenerate**, copy the new secret and update the connector.
 * **The connection stopped working**: Someone clicked **Regenerate** or **Reset**. Update the connector with the current Client ID and Client Secret and connect again.
 * **The Client Secret shows as generated, but I never copied it**: Click **Regenerate** to get one you can copy.
+* **Claude Code says it can't register the client or the OAuth flow fails before the browser opens**: Luluchat doesn't support automatic client registration. Make sure you added the server with `--client-id` and `--client-secret` as shown above.
+* **Claude Code shows luluchat as needing authentication again**: Type `/mcp`, select **luluchat** and choose **Re-authenticate**. If the secret was regenerated, remove and add the server again first.
 * **No tools at all**: Make sure **Enable MCP for AI** is on and at least one tool is turned on under **Tool Permissions**.
 
 ## Best practice 💡

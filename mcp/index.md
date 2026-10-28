@@ -36,7 +36,7 @@ Go to `Settings` > `Tools` > `MCP` and turn on **Enable MCP for AI**. Here you a
 {% step %}
 #### Choose how the AI app signs in
 
-* **OAuth Client**: for Claude and other apps that support OAuth. Copy the **Client ID** and generate a **Client Secret** in `Settings` > `Tools` > `MCP`. See [Connect with OAuth](connect-oauth.md).
+* **OAuth Client**: for Claude, Claude Code and other apps that support OAuth. Copy the **Client ID** and generate a **Client Secret** in `Settings` > `Tools` > `MCP`. See [Connect with OAuth](connect-oauth.md).
 * **Access Token**: for apps without OAuth, scripts and agents. Create a token with **All MCP Tool Scopes** in `Settings` > `Account Management` > `Integration`. See [Connect with an Access Token](connect.md).
 {% endstep %}
 
@@ -49,7 +49,7 @@ Add the MCP Server URL and your OAuth Client details or access token to your AI 
 
 ## In this section
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Connect with OAuth</strong></td><td>Connect Claude and other OAuth apps with a Client ID and Client Secret, no token to paste</td><td><a href="connect-oauth.md">connect-oauth.md</a></td></tr><tr><td><strong>Connect with an Access Token</strong></td><td>Create a token and connect Claude, Cursor, VS Code or your own AI agent</td><td><a href="connect.md">connect.md</a></td></tr><tr><td><strong>Available Tools</strong></td><td>Every tool the Luluchat MCP Server provides, grouped by feature</td><td><a href="tools/index.md">index.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Connect with OAuth</strong></td><td>Connect Claude, Claude Code and other OAuth apps with a Client ID and Client Secret, no token to paste</td><td><a href="connect-oauth.md">connect-oauth.md</a></td></tr><tr><td><strong>Connect with an Access Token</strong></td><td>Create a token and connect Claude Code, Claude Desktop, Cursor, VS Code or your own AI agent</td><td><a href="connect.md">connect.md</a></td></tr><tr><td><strong>Available Tools</strong></td><td>Every tool the Luluchat MCP Server provides, grouped by feature</td><td><a href="tools/index.md">index.md</a></td></tr></tbody></table>
 
 ## Important behavior to know
 

@@ -87,6 +87,10 @@ claude mcp add --transport http luluchat https://mcp.luluchat.io/mcp \
 ```
 
 Then start Claude Code and type `/mcp` to check that **luluchat** is connected.
+
+{% hint style="info" %}
+Add `--scope user` to use Luluchat in every project on your computer. Prefer signing in with your browser instead of a token? Claude Code also supports the [OAuth Client](connect-oauth.md#connect-your-ai-app).
+{% endhint %}
 {% endtab %}
 
 {% tab title="Claude Desktop" %}
