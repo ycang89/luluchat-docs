@@ -57,12 +57,31 @@ Add a custom connector (or remote MCP server) in your AI app with the MCP Server
 {% tabs %}
 {% tab title="Claude" %}
 1. In Claude (claude.ai or Claude Desktop), open **Settings > Connectors**
-2. Click **Add custom connector**
-3. Enter a name, e.g. `Luluchat`, and the URL `https://mcp.luluchat.io/mcp`
-4. Open **Advanced settings** and paste your **OAuth Client ID** and **OAuth Client Secret**
-5. Click **Add**, then **Connect**, and finish the sign-in steps in your browser
+2. Click **Add**, then **Add custom connector**
 
-Luluchat now appears in Claude's connectors. Turn it on in a chat from the tools menu.
+<figure><img src="../.gitbook/assets/mcp-claude-connectors-add.png" alt="Claude Connectors settings with the Add button highlighted"><figcaption><p>Settings > Connectors > Add</p></figcaption></figure>
+
+3. Enter a name, e.g. `Luluchat`, and the URL `https://mcp.luluchat.io/mcp`, then click **Continue**
+
+<figure><img src="../.gitbook/assets/mcp-claude-add-custom-connector.png" alt="Add custom connector dialog with the name and the Luluchat MCP Server URL filled in"><figcaption><p>Name and MCP Server URL</p></figcaption></figure>
+
+4. Under **Authentication**, keep **Sign in now**. Under **OAuth client**, choose **Use your own OAuth client** and paste your **Client ID** and **Client Secret**. Claude marks both options as **Detected** for Luluchat. Leave **Request headers** empty, then click **Add**
+
+<figure><img src="../.gitbook/assets/mcp-claude-oauth-client.png" alt="Add custom connector dialog with Sign in now selected, Use your own OAuth client selected and the OAuth client ID and secret fields highlighted"><figcaption><p>Authentication and OAuth client</p></figcaption></figure>
+
+5. If you use Claude Desktop, a browser page asks **Finish connecting a connector?**. Click **Continue connecting**
+
+<figure><img src="../.gitbook/assets/mcp-claude-finish-connecting.png" alt="Browser page asking Finish connecting a connector with a Continue connecting button"><figcaption><p>Continue connecting</p></figcaption></figure>
+
+6. On the Luluchat **Authorize Application** page, sign in if asked, check the team name is right and click **Authorize**
+
+<figure><img src="../.gitbook/assets/mcp-luluchat-authorize.png" alt="Luluchat Authorize Application page showing the team name, the Execute MCP tools permission and Deny and Authorize buttons"><figcaption><p>Authorize Luluchat</p></figcaption></figure>
+
+7. Back in Claude, Luluchat shows a tick under **Status** in the connectors list. Start a new chat, turn Luluchat on from the tools menu and send your first prompt (see [Test the connection](#test-the-connection))
+
+{% hint style="info" %}
+The **Authorize** page connects the team you're signed in to in Luluchat. To connect a different team, switch teams in Luluchat first, then connect again.
+{% endhint %}
 {% endtab %}
 
 {% tab title="Claude Code" %}
@@ -100,11 +119,17 @@ The app then opens a browser window for you to sign in and approve the connectio
 
 ## Test the connection
 
-Ask your assistant something simple and read-only, for example:
+Start a new chat and ask your assistant something simple and read-only, for example:
 
 > "Using Luluchat, show me all my team members."
 
-The assistant should call the `get_team_staff` tool and list your team. Next, browse the [Available Tools](tools/index.md) to see everything the assistant can do.
+The assistant should call the `get_team_staff` tool and list your team. If it does, you're connected! 🎉
+
+A good second prompt is:
+
+> "Which Luluchat channels do we have?"
+
+This uses `get_channels` and shows each channel's UUID, which most other tools need. Next, browse the [Available Tools](tools/index.md) to see everything the assistant can do.
 
 ## Important behavior to know
 
