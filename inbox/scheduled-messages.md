@@ -60,6 +60,8 @@ In the composer, click **More Actions** (⋮) > **Message Template** (WhatsApp C
 
 Switch on **Do you want to schedule sending out this template?** (or **...this message flow?**) and choose a time under **Choose sending date and time**.
 
+For a Message Flow, you can also turn on **Cancel scheduled message if user replied** to cancel the flow automatically if the customer replies before it is sent. Use it for follow-up flows.
+
 <figure><img src="../.gitbook/assets/inbox-waba-template-schedule.png" alt="Send Message Template window with the schedule switch on and the sending date and time field"><figcaption><p>Scheduling a message template</p></figcaption></figure>
 {% endstep %}
 

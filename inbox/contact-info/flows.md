@@ -39,7 +39,8 @@ Click **Send Message Flow**. In the window:
 
 1. Choose a **Message Flow**. Click **Preview** to check it first.
 2. To send it later, turn on **Do you want to schedule sending out this message flow?** and choose the sending date and time. This option is only available on the Pro Plan.
-3. Click **Submit**.
+3. Optional: turn on **Cancel scheduled message if user replied** so the flow is not sent if the customer replies before the scheduled time.
+4. Click **Submit**.
 
 <figure><img src="../../.gitbook/assets/inbox-send-message-flow.png" alt="Send Message Flow window with Customer Satisfaction Survey selected, a Preview button, the schedule switch set to No with a PRO badge, and Reset and Submit buttons"><figcaption><p>Send Message Flow window</p></figcaption></figure>
 {% endstep %}
@@ -56,7 +57,7 @@ Click **Reload** to see the latest status.
 ## What happens after it triggers?
 
 * A flow you send now starts straight away for the contact and appears in the **Flows** tab while it runs.
-* A scheduled flow is sent at the time you chose.
+* A scheduled flow is sent at the time you chose. If **Cancel scheduled message if user replied** is on and the customer replies first, it is cancelled and not sent.
 * A removed flow or smart delay stops for this contact only. The flow itself is not changed.
 
 ## Important behavior to know
