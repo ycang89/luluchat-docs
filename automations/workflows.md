@@ -34,6 +34,8 @@ Go to **Automations** > **Workflows**. The list shows each workflow's **Name** w
 
 Click **Create Workflow** to make a new one, or click a workflow's name to edit it. To duplicate, copy, export, import or delete workflows, see [Manage your workflows](#manage-your-workflows).
 
+A workflow marked **Needs attention** is missing a condition value. This happens after an import or a copy, when the value didn't exist on this channel. Its switch is greyed out until you open it and fill in the value. See [Fix a workflow that needs attention](#fix-a-workflow-that-needs-attention).
+
 <figure><img src="../.gitbook/assets/automation-workflows-list.png" alt="Workflows list with four workflows: Track New Leads (On, 0 conditions, 2 actions), Daily Follow-up Reminder (On, 3 conditions, 2 actions), Weekend Catering Routing (On, 2 conditions, 2 actions) and VIP Tag Welcome (Off, 1 condition, 1 action), each with its Last Updated date"><figcaption><p>The Workflows list</p></figcaption></figure>
 {% endstep %}
 
@@ -161,17 +163,22 @@ Use these to reuse a workflow instead of building it again: make a copy on the s
 
 #### Work on one workflow
 
-Click the **…** button at the end of a workflow's row:
+Each workflow's row ends with a **…** button and a red bin (delete) button.
+
+Click **…** for:
 
 * **Duplicate**: Makes a copy on this channel. You see "Workflow duplicated as "_name_ (Copied)". It stays off until you turn it on."
 * **Copy to another channel**: Opens **Copy Workflow to Another Channel**. Under **Choose a Target Channel**, click the channel to copy it to.
 * **Export**: Downloads the workflow as a `.json` file.
-* **Delete**: Asks you to confirm in **Delete Workflow**, then deletes the workflow.
 
-<figure><img src="../.gitbook/assets/automation-workflows-row-menu.png" alt="Workflows list with the … menu open on VIP Tag Welcome (Off), showing Duplicate, Copy to another channel, Export and Delete, and an Import button above the list"><figcaption><p>Actions for one workflow</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/automation-workflows-row-menu.png" alt="Workflows list with the … menu open on VIP Tag Welcome (Off), showing Duplicate, Copy to another channel and Export, with a red bin button next to the … button on every row and an Import button above the list"><figcaption><p>Actions for one workflow</p></figcaption></figure>
+
+Click the red bin button to delete the workflow. You are asked to confirm in **Delete Workflow** first.
+
+<figure><img src="../.gitbook/assets/automation-workflows-delete-confirm.png" alt="Delete Workflow confirmation box over the Workflows list, asking whether to delete VIP Tag Welcome (Imported), with Cancel and Delete buttons"><figcaption><p>Confirm before a workflow is deleted</p></figcaption></figure>
 
 {% hint style="warning" %}
-You can only delete a workflow that is switched **Off**. For a workflow that is **On**, **Delete** is greyed out with the tip "Turn off the workflow before deleting it." Deleting can't be undone.
+You can only delete a workflow that is switched **Off**. For a workflow that is **On**, the bin button is greyed out with the tip "Turn off the workflow before deleting it." Deleting can't be undone.
 {% endhint %}
 
 #### Work on several workflows at once
@@ -194,10 +201,25 @@ Your selection is kept when you move between pages of the list.
 1. Click **Import** above the list.
 2. Pick a workflow `.json` file that was made with **Export** (on this channel, another channel or another account).
 3. The workflows are added to this channel. You see how many were imported, for example "3 Workflows imported successfully". If some couldn't be imported, you also see how many failed and why.
+4. If a workflow referred to something that doesn't exist on this channel, such as a team member, tag or inbox list, it is still imported, but without that value. A **Some imported workflows need attention** window lists these workflows and what was removed. Click **OK**, then fix them as described in [Fix a workflow that needs attention](#fix-a-workflow-that-needs-attention).
+
+<figure><img src="../.gitbook/assets/automation-workflows-import-needs-attention.png" alt="Some imported workflows need attention window: 1 workflow was imported without some of its condition values, because they do not exist on this channel (for example a team member, tag or list). It is marked Needs attention in the list and stays Off until you fill in the missing values. Below it, Add collaborator B to Assignee A: Imported without the team member it referred to; the Assignee condition is now blank."><figcaption><p>An imported workflow lost a value that doesn't exist on this channel</p></figcaption></figure>
 
 {% hint style="info" %}
 Imported workflows count towards your plan's workflow limit. Duplicated and copied workflows are named "_name_ (Copied)" and start **Off**, so nothing runs until you check them and switch them on.
 {% endhint %}
+
+#### Fix a workflow that needs attention
+
+In the list, a workflow that is missing a condition value shows a **Needs attention** tag next to its name, and its **On**/**Off** switch is greyed out with the tip "Fill in the missing condition values before turning this workflow on.".
+
+<figure><img src="../.gitbook/assets/automation-workflows-needs-attention.png" alt="Workflows list where Add collaborator B to Assignee A (Imported) and VIP Tag Welcome (Imported) are Off with a greyed-out switch and a yellow Needs attention tag, while Track New Leads and Daily Follow-up Reminder are On"><figcaption><p>Imported workflows that are missing a value</p></figcaption></figure>
+
+1. Click the workflow's name to open it. A **Some condition values are missing** notice explains what to do.
+2. In **2. Define conditions**, the affected condition has a warning icon next to its number. Pick a value that exists on this channel, or change the condition.
+3. Click **Submit**. The tag disappears and you can switch the workflow **On**.
+
+<figure><img src="../.gitbook/assets/automation-workflows-missing-values-alert.png" alt="Edit page for Add collaborator B to Assignee A (Imported) with a yellow notice Some condition values are missing, and in section 2 the first condition, Assignee is, has a warning icon and an empty value"><figcaption><p>The notice and the marked condition</p></figcaption></figure>
 
 ## Important behavior to know
 
@@ -210,6 +232,7 @@ Imported workflows count towards your plan's workflow limit. Duplicated and copi
 * **Workflow limit**: Your plan may limit how many workflows you can create.
 * **Copies start Off**: A duplicated, copied or imported workflow doesn't run until you switch it **On**.
 * **Only Off workflows can be deleted**: Switch a workflow **Off** before deleting it. Deleting is permanent.
+* **Needs attention workflows can't be switched On**: An imported or copied workflow that lost a condition value stays **Off** until you fill in the value and save it.
 
 ## Example: Tracking New Leads
 
@@ -250,7 +273,9 @@ Other ideas:
 * **"Please select"**, **"Please select a tag"** or another "Please select…" / "Please enter…" message under a condition or action: That condition or action is missing a value.
 * **"Duplicated actions"**: The same action type was added twice. Remove one. Only **Send Message to a Contact No.** can be used more than once.
 * **"Sorry, your team has reached the maximum workflow limit."**: Delete or reuse an existing workflow, or upgrade your plan. When this happens during an import, you see **Reached Plan Limit** with a **Go to Plans Page** button, and only the workflows that fit your limit are imported.
-* **Delete is greyed out**: The workflow is **On**. Switch it **Off** first.
+* **The bin (delete) button is greyed out**: The workflow is **On**. Switch it **Off** first.
+* **The On/Off switch is greyed out** and the workflow shows **Needs attention**: A condition value is missing. Open the workflow, fill in the marked condition and click **Submit**. See [Fix a workflow that needs attention](#fix-a-workflow-that-needs-attention).
+* **"Unable to activate the workflow as some condition values are missing or were removed during import. Please review and save the workflow first."**: Same cause. Open the workflow, fill in the missing value and click **Submit** before switching it on.
 * **"Unable to delete the workflow as it is not inactive."**: The workflow was switched on before it could be deleted. Switch it **Off** and try again.
 * **"Invalid import file: not a workflow export file"**: Pick a `.json` file made with **Export** on the Workflows page. Message Flow export files can't be imported here.
 * **"No others Channel available."** when copying: Your account has no other channel you can access. Use **Duplicate** to make a copy on this channel.
@@ -265,7 +290,7 @@ Other ideas:
 * Combine tags and inbox lists to keep leads organised.
 * Switch off workflows you no longer need instead of leaving them running.
 * Use **Duplicate** to build a similar workflow from one that already works, then rename it and change only what differs.
-* After copying a workflow to another channel or importing one, open it and check each condition and action before switching it on. Tags, inbox lists, message flows and team members can differ between channels.
+* After copying a workflow to another channel or importing one, open it and check each condition and action before switching it on. Tags, inbox lists, message flows and team members can differ between channels. Anything that doesn't exist on the new channel is removed and the workflow is marked **Needs attention**.
 * Export your important workflows now and then, so you have a backup you can import later.
 
 ## Related Documentation
