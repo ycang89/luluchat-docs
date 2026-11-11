@@ -2,9 +2,9 @@
 
 ## What are Event Webhooks?
 
-Event Webhooks let Luluchat notify your system when something changes, for example when a contact is created, updated or tagged. Instead of asking the API for changes over and over, you give Luluchat a URL and it sends a `POST` request to that URL as soon as the event happens.
+Event Webhooks let Luluchat notify your system when something changes, for example when a contact is created, updated or tagged, or when a message is sent or received. Instead of asking the API for changes over and over, you give Luluchat a URL and it sends a `POST` request to that URL as soon as the event happens.
 
-Use it to keep a CRM, database or spreadsheet in sync with your Luluchat contacts.
+Use it to keep a CRM, database or spreadsheet in sync with your Luluchat contacts, or to copy chat messages into your own system.
 
 {% hint style="info" %}
 Event Webhooks send data **out of** Luluchat. To start a message flow **from** your system, use the [Webhook Trigger](webhook-trigger.md) instead.
@@ -18,6 +18,7 @@ Event Webhooks send data **out of** Luluchat. To start a message flow **from** y
 | `contact.updated` | A contact is updated, including its assignee, subscription (opt-in/opt-out), collaborators or custom attributes |
 | `contact.tag-updated` | Tags are added to or removed from a contact |
 | `contact.list-updated` | A contact is added to or removed from a custom list (inbox tab) |
+| `message.all` | A contact sends a message, your team sends one, or an Open API send fails. Works on WhatsApp, WhatsApp Cloud (WABA), Messenger and Instagram channels. See [Message events](#message-events). |
 
 ## Prerequisites
 
@@ -151,7 +152,7 @@ Store `webhook_signing_secret` securely on your server. You'll use it to [verify
 {% step %}
 #### Test it
 
-Make a change in Luluchat, e.g. add a tag to a test contact for `contact.tag-updated`. Your URL should receive a request within a few seconds.
+Make a change in Luluchat, e.g. add a tag to a test contact for `contact.tag-updated`, or send a message to your channel for `message.all`. Your URL should receive a request within a few seconds.
 {% endstep %}
 {% endstepper %}
 
@@ -164,7 +165,11 @@ Content-Type: application/json
 X-Webhook-Signature: sha256=5d41402abc4b2a76b9719d911017c592...
 ```
 
-and a JSON body with the event name, when it happened, and the full contact:
+The JSON body always has `event`, `occurred_at` and `data`. What's in `data` depends on the event.
+
+### Contact events
+
+For the four `contact.*` events, `data` is the full contact:
 
 ```json
 {
@@ -209,6 +214,143 @@ and a JSON body with the event name, when it happened, and the full contact:
 ```
 
 All four contact events send the same `data` shape: the contact **as it is after the change**. Compare it with your own copy to see what changed.
+
+### Message events
+
+One subscription, `message.all`, sends every message on your channels. Register it like any other event (`"event": "message.all"`). `data.type` tells you what happened:
+
+| `data.type` | Sent when |
+| --- | --- |
+| `message.received` | A contact sends a message |
+| `message.sent` | Your team sends a message: from the Luluchat inbox, an automation, workflow, broadcast, AI agent, form, integration or the [Open API](open-api.md), or directly from the phone (WhatsApp) or the Meta inbox (Messenger / Instagram) |
+| `message.failed` | A message you sent through the [Open API](open-api.md) did not go out |
+
+{% hint style="info" %}
+You can't subscribe to `message.received`, `message.sent` or `message.failed` on their own. Register `message.all` and check `data.type`.
+{% endhint %}
+
+```json
+{
+  "event": "message.all",
+  "occurred_at": "2026-11-11T08:15:02.114Z",
+  "data": {
+    "type": "message.received",
+    "changes": [
+      {
+        "chat_id": "60123456789@s.whatsapp.net",
+        "message": {
+          "id": "3EB0A1B2C3D4E5F6",
+          "type": "text",
+          "text": "Hi, is the 3pm slot still available?",
+          "sent_at": "2026-11-11T08:15:00Z",
+          "quoted": null,
+          "ad": null,
+          "link": null,
+          "media": null,
+          "location": null,
+          "contacts": null,
+          "reaction": null,
+          "selection": null,
+          "product": null,
+          "interactive": null,
+          "error": null
+        },
+        "contact": {
+          "id": 10452,
+          "name": "Jason Tan",
+          "display_name": "Jason Tan",
+          "push_name": "Jason",
+          "username": "",
+          "iso_contact_number": "+60123456789"
+        },
+        "sender": {
+          "chat_id": "60123456789@s.whatsapp.net",
+          "name": "Jason",
+          "display_name": "Jason Tan",
+          "username": ""
+        },
+        "sent_by": null,
+        "reference": null,
+        "channel": {
+          "uuid": "3f6c2a1e-8b7d-4c5e-9a10-2b3c4d5e6f70",
+          "type": "whatsapp",
+          "contact_number": "60198765432"
+        }
+      }
+    ]
+  }
+}
+```
+
+Each request carries one message in `data.changes`. Its fields:
+
+| Field | Description |
+| --- | --- |
+| `chat_id` | The chat the message belongs to. Use it to reply. WhatsApp: `<number>@s.whatsapp.net`, or `<id>@g.us` for a group. Messenger: `<id>@fb`. Instagram: `<id>@ig`. |
+| `message` | The message itself. See below. |
+| `contact` | The chat's contact: `id`, `name`, `display_name`, `push_name`, `username`, `iso_contact_number`. In a group, this is the group. `null` if the contact didn't exist yet when the event was sent (a brand-new contact's first message). |
+| `sender` | Who wrote the message: `chat_id`, `name`, `display_name`, `username`. In a group, this is the member who wrote it. For `message.sent`, it's your channel. |
+| `sent_by` | `null` for `message.received`. For `message.sent`: `{ "source", "name" }`, see below. |
+| `reference` | For a message sent through the Open API: the `reference` you passed, or the one the send response gave you. Use it to match the event to your send. `null` otherwise. |
+| `channel` | `uuid`, `type` (`whatsapp`, `waba`, `messenger` or `instagram`) and `contact_number` (the channel's number; the Page ID on Messenger, the Instagram account ID on Instagram). |
+
+#### The `message` object
+
+Every key is always present, and is `null` when it doesn't apply to the message type.
+
+| Key | Description |
+| --- | --- |
+| `id` | Message ID. Use it to ignore duplicates. |
+| `type` | `text`, `image`, `video`, `audio`, `document`, `sticker`, `location`, `contacts`, `reaction`, `button_reply`, `list_reply`, `product`, `interactive` or `unsupported` |
+| `text` | The text, or the caption of a media message |
+| `sent_at` | When the message was sent (UTC) |
+| `quoted` | The message this one replies to: `message_id`, `from_me`, `type`, `text`, plus `media` / `location` / `contacts` / `product` when the original has them. If the original isn't stored in Luluchat, only `message_id` is filled. |
+| `ad` | Set when the chat came from a click-to-WhatsApp, click-to-Messenger or click-to-Instagram ad: `source_type`, `source_id`, `source_url`, `headline`, `body`, `media_type`, `media_url`, `thumbnail_url`, `ctwa_clid` |
+| `link` | Messenger / Instagram only: a shared post or link card, `{ "url", "title" }` |
+| `media` | `image`, `video`, `audio`, `document`, `sticker`: `{ "url", "mime_type", "filename" }` |
+| `location` | `{ "latitude", "longitude", "name", "address" }` |
+| `contacts` | Shared contact cards: `[{ "name", "phones": [], "emails": [] }]` |
+| `reaction` | `{ "emoji", "message_id" }`. `message_id` is the message reacted to. |
+| `selection` | `button_reply`, `list_reply`: the option the contact picked, `{ "id", "title", "description" }` |
+| `product` | `{ "id", "title", "description", "price": { "currency", "amount" }, "url" }` |
+| `interactive` | A template or button message: `{ "header": { "type", "text", "media_url" }, "footer", "buttons": [{ "id", "title" }] }` |
+| `error` | `unsupported` on WhatsApp Cloud (WABA): why Meta couldn't show the message, `{ "code", "title", "message", "details" }` |
+
+#### Where a sent message came from (`sent_by.source`)
+
+| `source` | `name` |
+| --- | --- |
+| `user` | The team member who sent it from the inbox |
+| `workflow` | The workflow name |
+| `open_api` | The access token name |
+| `automation`, `broadcast`, `ai_agent`, `integration`, `form` | `null` |
+| `phone` | `null`. Sent directly from the WhatsApp phone app. |
+| `page_inbox` | `null`. Sent from the Facebook Page inbox, Meta Business Suite or the Instagram app. |
+
+#### `message.failed`
+
+Sent when a message you sent through the Open API didn't go out, or was skipped because an earlier message in the same request failed (`error.code` is then `skipped_previous_failed`). The change has `chat_id`, `contact`, `sent_by`, `reference` and `channel` as above, a short `message` (`{ "type", "text" }`) and an `error`:
+
+```json
+"error": {
+  "code": "skipped_previous_failed",
+  "message": "Not sent: an earlier message in the same request failed."
+}
+```
+
+Use `reference` to match it to your send.
+
+#### What is not sent
+
+* Messages that failed to send, other than Open API sends (`message.failed` above)
+* View-once messages, edits, deleted messages, calls and system notices
+* WhatsApp status updates and channel (newsletter) posts
+
+#### Messenger and Instagram
+
+* `contact.iso_contact_number` is always `null`: these contacts have no phone number.
+* `sender.name` is `null` for messages from the contact: Meta doesn't send a name.
+* Photos or files sent together arrive as one event each. The first keeps Meta's message ID; the others get `.1`, `.2`, … added to it. A reply or ad is only on the first one.
 
 ## Verify the signature
 
@@ -292,8 +434,8 @@ def luluchat_webhook():
 * Luluchat waits up to **10 seconds** for your response.
 * Any `2xx` response counts as delivered.
 * If your server times out, can't be reached, or responds with another status, Luluchat retries **3 more times**: after 10 seconds, 30 seconds and 60 seconds. After that the event is dropped.
-* A retry sends exactly the same body, including `occurred_at`. Use `event` + `data.id` + `occurred_at` to ignore duplicates.
-* Events are delivered in the background, so they may arrive slightly out of order. Use `data.meta.updated` to keep the newest version.
+* A retry sends exactly the same body, including `occurred_at`. To ignore duplicates, use `event` + `data.id` + `occurred_at` for contact events, and `message.id` (or `reference` for `message.failed`) for message events.
+* Events are delivered in the background, so they may arrive slightly out of order. Use `data.meta.updated` to keep the newest contact, and `message.sent_at` to order messages.
 
 ## Manage your webhooks
 
@@ -324,7 +466,7 @@ curl -X POST https://open-api.luluchat.io/v1/event-webhooks/remove \
 | Field | Required | Description |
 | --- | --- | --- |
 | `event` | Yes | The event to unsubscribe from |
-| `channel_id` | No | Only remove the webhook for this channel. Leave it out to remove **every** webhook for this event, including channel-specific ones. |
+| `channel_id` | No | Remove the webhook for this channel. Leave it out to remove the webhook for all channels; webhooks registered for a specific channel stay until you remove them with their `channel_id`. |
 
 ### Reset the signing secret
 
@@ -345,6 +487,7 @@ The old secret stops working immediately. Update your server with the new `webho
 * **Team scoped**: Webhooks only receive events for contacts in the team that owns the token.
 * **Plan and subscription**: If Event Webhook is turned off or your subscription expires, no events are sent.
 * **Bulk imports**: Importing contacts sends events for each contact whose custom lists change, so expect bursts during an import.
+* **Message volume**: `message.all` sends every message in and out of your channels, including broadcasts. Make sure your server can keep up, or subscribe one channel only with `channel_id`.
 
 ## Common issues & solutions
 
