@@ -88,7 +88,7 @@ The **Profile** section shows:
 * **WhatsApp Name**: The name the contact uses on WhatsApp. You can't edit it, but you can copy it. (Other channels show **Name**.)
 * **Username**: Shown only if the contact has one.
 * **Display Name**: The name your team sees in Luluchat. It overrides the WhatsApp Name. Type a new name (up to 100 characters) and click outside the box to save.
-* **Contact Number**: The contact's phone number, which you can copy. Messenger contacts show a **Page-Scoped User ID** and Instagram contacts show an **IG-Scoped User ID** instead.
+* **Contact Number**: The contact's phone number, which you can copy. Not shown for Messenger and Instagram contacts.
 * **Opt-In Status**: Switch between **Opted In** and **Opted Out**.
 * **Remarks**: Free-text notes about the contact. Click outside the box to save.
 
