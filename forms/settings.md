@@ -24,7 +24,7 @@ The **2. Form Settings** tab is where you control how the form behaves and how r
 ### Response Message
 Choose the message customers receive after submitting.
 
-**WhatsApp Personal channels**: Turn on **Customize Response Message Template** and write your message in **Response Message Template**. Use placeholders to include the customer's answers: `{{1}}` is the answer to the first question, `{{2}}` the second, and so on. The list of placeholders is shown under the text box.
+**WhatsApp Personal channels**: Turn on **Customize Response Message Template** and write your message in **Response Message Template**. Use placeholders to include the customer's answers: `{{1}}` is the answer to the first question, `{{2}}` the second, and so on. The list of placeholders is shown under the text box — click the copy icon next to a placeholder to copy it, then paste it into your message.
 
 ```
 Hi {{1}}, thank you for your feedback! You rated your visit: {{4}}.
