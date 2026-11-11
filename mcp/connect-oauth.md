@@ -2,7 +2,7 @@
 
 ## What is it?
 
-AI apps that support OAuth, such as Claude and Claude Code, can connect to Luluchat without you copying a token into the app. You give the app three things, then sign in and approve the connection in your browser:
+AI apps that support OAuth, such as Claude, Claude Code and ChatGPT, can connect to Luluchat without you copying a token into the app. You give the app three things, then sign in and approve the connection in your browser:
 
 | Item | Where to find it |
 | --- | --- |
@@ -17,6 +17,7 @@ If your AI app doesn't support OAuth, or you're connecting a script or server-si
 ## When to use it?
 
 * When you connect **Claude** (claude.ai or Claude Desktop) with a custom connector
+* When you connect **ChatGPT** with a custom MCP server
 * When you connect **Claude Code** in your terminal and want to sign in with your browser instead of pasting a token
 * When any AI app asks for an **OAuth Client ID** and **Client Secret** for a remote MCP server
 * When you'd rather not keep a long-lived access token inside an AI app
@@ -81,6 +82,46 @@ Add a custom connector (or remote MCP server) in your AI app with the MCP Server
 
 {% hint style="info" %}
 The **Authorize** page connects the team you're signed in to in Luluchat. To connect a different team, switch teams in Luluchat first, then connect again.
+{% endhint %}
+{% endtab %}
+
+{% tab title="ChatGPT" %}
+1. Go to [chatgpt.com](https://chatgpt.com) and log in to your ChatGPT account
+2. Click **Plugins** in the left sidebar. At the top right, click **Add** and choose **Add custom MCP server**
+
+<figure><img src="../.gitbook/assets/mcp-chatgpt-add-custom-mcp-server.png" alt="ChatGPT Plugins page with Plugins in the sidebar, the Add button and the Add custom MCP server option highlighted"><figcaption><p>Plugins > Add > Add custom MCP server</p></figcaption></figure>
+
+3. In the **Add custom MCP server** window, fill in:
+   * **Name**: a name you'll recognise, e.g. `Luluchat MCP`
+   * **Connection**: keep **Server URL** selected and enter `https://mcp.luluchat.io/mcp`
+
+   **Authentication** changes to **OAuth** by itself. Read the warning and tick **I understand and want to continue**. Leave **Icon** and **Description** empty if you like. They're optional.
+
+<figure><img src="../.gitbook/assets/mcp-chatgpt-server-details.png" alt="Add custom MCP server form with the Name, the Luluchat Server URL and the I understand and want to continue checkbox highlighted"><figcaption><p>Name, Connection and consent</p></figcaption></figure>
+
+4. Click **Advanced OAuth settings** to open the OAuth panel on the right, then:
+   * Choose **User-Defined OAuth Client** as the client setup method. ChatGPT may show that **DCR** and **CIMD** are unavailable. This is expected because Luluchat uses your own OAuth Client
+   * Paste your Luluchat **Client ID** into **OAuth client ID**
+   * Paste your Luluchat **Client Secret** into **OAuth client secret**
+   * Leave **Callback URL**, **Token endpoint auth method** (`client_secret_post`) and **Scopes** as they are
+
+   Click **Create as a plugin**.
+
+<figure><img src="../.gitbook/assets/mcp-chatgpt-advanced-oauth.png" alt="Add custom MCP server window with Advanced OAuth settings open, User-Defined OAuth Client selected, the OAuth client ID and secret fields and the Create as a plugin button highlighted"><figcaption><p>Advanced OAuth settings</p></figcaption></figure>
+
+5. ChatGPT asks you to **Connect luluchat MCP** and explains what data it may share with the app. Click **Connect luluchat MCP**. A new browser tab opens for Luluchat
+
+<figure><img src="../.gitbook/assets/mcp-chatgpt-connect.png" alt="ChatGPT Connect luluchat MCP window with the Connect luluchat MCP button highlighted"><figcaption><p>Connect luluchat MCP</p></figcaption></figure>
+
+6. On the Luluchat **Authorize Application** page, sign in if asked, check the team name is right and click **Authorize**
+
+<figure><img src="../.gitbook/assets/mcp-luluchat-authorize.png" alt="Luluchat Authorize Application page showing the team name, the Execute MCP tools permission and Deny and Authorize buttons"><figcaption><p>Authorize Luluchat</p></figcaption></figure>
+
+7. You're sent back to ChatGPT, and Luluchat appears under **Installed** on the **Plugins** page. Start a new chat and send your first prompt (see [Test the connection](#test-the-connection))
+
+{% hint style="info" %}
+* The **Authorize** page connects the team you're signed in to in Luluchat. To connect a different team, switch teams in Luluchat first, then connect again.
+* If you click **Regenerate** or **Reset** in Luluchat later, update the OAuth client ID and secret in ChatGPT and connect again.
 {% endhint %}
 {% endtab %}
 
