@@ -33,7 +33,7 @@ At the bottom of the panel, click a block type to add it:
 | **Text** | A message of any length. Use WhatsApp formatting such as `*bold*` and `_italic_`. |
 | **Image** | One image (maximum 16MB) with an optional caption. |
 | **File** | One document, such as a PDF, with an optional caption. Maximum 2GB, or 100MB on WhatsApp Business API channels. |
-| **Video** | One MP4 video with an optional caption. Maximum 64MB, or 16MB on WhatsApp Business API channels. |
+| **Video** | One MP4 video with an optional caption. Maximum 100MB, or 16MB on WhatsApp Business API channels. |
 | **Audio** | Record a voice message with the microphone (**Upload Voice Message**) or upload an audio file (**Upload Audio File**). |
 
 Blocks are sent in order from top to bottom. Use the icons on the right of each block to **Delete**, **Move Up** or **Move Down**.
