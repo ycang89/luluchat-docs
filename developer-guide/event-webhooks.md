@@ -20,9 +20,19 @@ Event Webhooks send data **out of** Luluchat. To start a message flow **from** y
 | `contact.list-updated` | A contact is added to or removed from a custom list (inbox tab) |
 | `message.all` | A contact sends a message, your team sends one, or an Open API send fails. Works on WhatsApp, WhatsApp Cloud (WABA), Messenger and Instagram channels. See [Message events](#message-events). |
 
+## Availability by plan
+
+| | Starter | Pro | Business |
+| --- | --- | --- | --- |
+| Event Webhook | Not included | Included | Included |
+
+Only teams whose plan includes Event Webhook can register webhooks and receive events. On Starter, registering a webhook is refused and no events are sent. To use Event Webhooks, upgrade to Pro or Business in `Plans`.
+
+Event Webhooks have no per-minute limit, but the [Open API calls](open-api.md#rate-limits-by-plan) you make to register or manage webhooks count toward your Open API write and read limits.
+
 ## Prerequisites
 
-* **Event Webhook enabled for your team.** It is off by default. Check `Settings` > `Account` > `Integration` > **Event Webhook**: it shows *Event webhook is enabled* when it's on. Otherwise, contact Luluchat support to enable it.
+* **A Pro or Business plan.** See [Availability by plan](#availability-by-plan). Check `Settings` > `Account` > `Integration` > **Event Webhook**: it shows *Event webhook is enabled* when it's on.
 * **An access token with All Event Webhook Scopes.** See [Open API: Create an access token](open-api.md#step-1-create-an-access-token).
 * **A public HTTPS URL** on your server that accepts `POST` requests with a JSON body.
 
@@ -485,13 +495,13 @@ The old secret stops working immediately. Update your server with the new `webho
 ## Important behavior to know
 
 * **Team scoped**: Webhooks only receive events for contacts in the team that owns the token.
-* **Plan and subscription**: If Event Webhook is turned off or your subscription expires, no events are sent.
+* **Plan and subscription**: If your plan doesn't include Event Webhook (for example after moving to Starter) or your subscription expires, no events are sent.
 * **Bulk imports**: Importing contacts sends events for each contact whose custom lists change, so expect bursts during an import.
 * **Message volume**: `message.all` sends every message in and out of your channels, including broadcasts. Make sure your server can keep up, or subscribe one channel only with `channel_id`.
 
 ## Common issues & solutions
 
-* **`Event webhook is not enabled for this team.`**: Contact Luluchat support to enable Event Webhook.
+* **`Event webhook is not enabled for this team.`**: Your plan doesn't include Event Webhook. Upgrade to Pro or Business. See [Availability by plan](#availability-by-plan).
 * **`Invalid Scope` when listing webhooks**: The token only has **Read / Write**. Create a token with **All Event Webhook Scopes**.
 * **`Channel not found.`**: The `channel_id` isn't a channel `uuid` in your team. Get it from [List Channels](open-api.md#list-channels).
 * **Nothing arrives**: Check that the URL is public and uses HTTPS, that it returns `2xx` within 10 seconds, and that the webhook shows up in [List registered webhooks](#list-registered-webhooks).

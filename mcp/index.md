@@ -51,6 +51,23 @@ Add the MCP Server URL and your OAuth Client details or access token to your AI 
 
 <table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Connect with OAuth</strong></td><td>Connect Claude, Claude Code, ChatGPT and other OAuth apps with a Client ID and Client Secret, no token to paste</td><td><a href="connect-oauth.md">connect-oauth.md</a></td></tr><tr><td><strong>Connect with an Access Token</strong></td><td>Create a token and connect Claude Code, Claude Desktop, Cursor, VS Code or your own AI agent</td><td><a href="connect.md">connect.md</a></td></tr><tr><td><strong>Available Tools</strong></td><td>Every tool the Luluchat MCP Server provides, grouped by feature</td><td><a href="tools/index.md">index.md</a></td></tr></tbody></table>
 
+## Rate limits by plan
+
+Each team can make a set number of MCP tool calls per minute, based on its Luluchat plan.
+
+| | Starter | Pro | Business |
+| --- | --- | --- | --- |
+| MCP tool calls per minute | 20 | 60 | 120 |
+
+{% hint style="info" %}
+**Free trial** follows the Starter limit. After you change plan, the new limit applies within 1 minute.
+{% endhint %}
+
+* **What counts**: Only tool calls, for example `get_contact` or `add_tag_to_contact`. Connecting, listing the available tools and calls refused because a tool is turned off or the input is invalid are not counted.
+* **Per team**: Every AI app and access token connected to the same team shares this limit.
+* **Separate from the Open API**: MCP tool calls don't use up your [Open API limits](../developer-guide/open-api.md#rate-limits-by-plan), and Open API requests don't use up your MCP limit.
+* **Over the limit**: The tool returns a rate-limit error with the number of seconds until you can call it again. Most AI assistants show this message and try again later.
+
 ## Important behavior to know
 
 * **Workspace scoped**: The OAuth Client and access tokens belong to one team (workspace). The AI can only see and change data in that team.

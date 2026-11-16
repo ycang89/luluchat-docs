@@ -311,6 +311,27 @@ Removes the contact's assignee. The body takes an optional `requested_by`, as ab
 **Retrying safely.** Send an `Idempotency-Key` header (any printable string up to 255 characters, unique per request) with assign and unassign calls. A retry with the same key and body returns the first response instead of applying the change twice, and is marked with an `Idempotent-Replayed` header. The same key with a different body is rejected. Keys are remembered for 24 hours.
 {% endhint %}
 
+## Rate limits by plan
+
+Each team can make a set number of Open API requests per minute, based on its Luluchat plan. Reads and writes are counted separately:
+
+* **Read**: every `GET` request, for example [List Channels](#list-channels) or [Get Contact](#get-contact)
+* **Write**: every other request (`POST`, `PUT`, `PATCH`, `DELETE`), for example [Assign a Contact](#assign-a-contact)
+
+| Requests per minute | Starter | Pro | Business |
+| --- | --- | --- | --- |
+| Read | 20 | 120 | 250 |
+| Write | 20 | 60 | 120 |
+
+{% hint style="info" %}
+**Free trial** follows the Starter limits. After you change plan, the new limits apply within 1 minute.
+{% endhint %}
+
+* **Per team, not per token**: All access tokens of a team share the same limit, so creating more tokens does not raise it.
+* **Separate budgets**: Using up your writes does not block reads, and the other way round. [MCP](../mcp/index.md#rate-limits-by-plan) tool calls have their own limit and don't count here.
+* **Over the limit**: The API answers with HTTP `429` and `{"status": false, "message": "Too Many Attempts.", "http_status": 429}`. The `Retry-After` header tells you how many seconds to wait before trying again.
+* **Track your usage**: Every response includes `X-RateLimit-Limit` (your limit per minute) and `X-RateLimit-Remaining` (requests left in the current minute).
+
 ## Errors
 
 | Message | What it means | How to fix it |
@@ -321,6 +342,7 @@ Removes the contact's assignee. The body takes an optional `requested_by`, as ab
 | `Record not found.` on `/contacts/{id}` | The contact `id` doesn't belong to your team | Use the `contact_id` Luluchat sent you, from the same team the token belongs to |
 | `Invalid assignee` | The `user_id` is not a member of your team | Pick an `id` from [List Team Members](#list-team-members) |
 | `Assignee has no access to this contact's channel` | The member can't see the contact's channel | Pick a member whose `channels` includes the contact's channel |
+| `Too Many Attempts.` (HTTP `429`) | Your team went over its requests per minute | Wait for the seconds in the `Retry-After` header, then retry. See [Rate limits by plan](#rate-limits-by-plan). |
 
 {% hint style="warning" %}
 **Old API keys no longer work.** Authenticating with the team API key was deprecated on 31 March 2026. Use an access token instead. `Invalid API Key` means the token wasn't recognised at all: check you created it in the same Luluchat environment you're calling, and that it hasn't been deleted.
@@ -330,5 +352,6 @@ Removes the contact's assignee. The body takes an optional `requested_by`, as ab
 
 * **One token per integration**: Create a separate token for each system so you can revoke one without breaking the others.
 * **Least privilege**: Only tick the scopes the integration needs.
+* **Stay under the rate limit**: Spread bulk jobs over time, and on a `429` wait for `Retry-After` before retrying instead of retrying straight away.
 * **Keep tokens secret**: Store tokens in environment variables or a secrets manager. Never put them in front-end code or a code repository.
 * **Watch Last Used**: The Access Token table shows when each token was last used. Delete tokens that are no longer needed.
