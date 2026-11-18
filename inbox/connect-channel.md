@@ -2,12 +2,14 @@
 
 ## What is Channel Connection?
 
-Connecting your channel links your WhatsApp number to Luluchat. Once connected, you can manage conversations, run automations, and send broadcasts directly from the platform.
+Connecting your channel links your WhatsApp number, Facebook Page or Instagram account to Luluchat. Once connected, you can manage conversations, run automations, and send broadcasts directly from the platform.
 
 On the **Connect your Channel** page you can choose:
 
 * **WhatsApp Personal**: Link a WhatsApp or WhatsApp Business app account as a linked device (QR code or pairing code).
 * **WhatsApp Cloud**: Connect through Meta's official WhatsApp Business Platform (Cloud API) by signing in with Facebook. This is also where you set up **WhatsApp Coexistence** (keep using your WhatsApp Business app on your phone while Luluchat connects through the Cloud API).
+* **Meta Messenger**: Connect a Facebook Page by signing in with Facebook, so Messenger chats with your Page arrive in Luluchat.
+* **Instagram Messenger**: Connect an Instagram Professional account through its linked Facebook Page, so Instagram DMs arrive in Luluchat.
 
 ## When does it trigger?
 
@@ -37,6 +39,8 @@ Click the card for the channel type you want to connect:
 
 * **WhatsApp Personal**: see [Connect WhatsApp Personal](connect-whatsapp-personal.md).
 * **WhatsApp Cloud**: see [Connect WhatsApp Cloud](connect-whatsapp-cloud.md), or [Connect WhatsApp Coexistence](connect-whatsapp-coexistence.md) if you want to connect your existing WhatsApp Business app number.
+* **Meta Messenger**: see [Meta Messenger](connect-messenger.md).
+* **Instagram Messenger**: see [Instagram Messenger](connect-instagram.md).
 
 To go back and pick a different type, click **Back to Channel Selection** at the top left of the setup screen.
 {% endstep %}
@@ -64,11 +68,8 @@ Use these dedicated guides for step-by-step instructions:
 * [WhatsApp Personal](connect-whatsapp-personal.md)
 * [WhatsApp Cloud](connect-whatsapp-cloud.md)
 * [WhatsApp Coexistence](connect-whatsapp-coexistence.md)
-
-Coming soon:
-
-* Meta Messenger
-* Instagram Messenger
+* [Meta Messenger](connect-messenger.md)
+* [Instagram Messenger](connect-instagram.md)
 
 ## What happens after it triggers?
 
@@ -89,7 +90,7 @@ If you have more than one channel (for example, one Personal and one Cloud numbe
   * Open `Inbox` (or click **Connect Now** on the current channel in the **Channels** window) and complete the connection again for your channel type.
 * **Channel disconnected**:
   * For WhatsApp Personal, Luluchat sends a disconnection notice to your registered WhatsApp number.
-  * Re-connect by scanning the QR code / using a pairing code (Personal), or by signing in with Facebook again (Cloud).
+  * Re-connect by scanning the QR code / using a pairing code (Personal), or by signing in with Facebook again (Cloud, Messenger and Instagram).
   * If a Personal channel was disconnected because the phone was inactive, open WhatsApp on your primary phone first, then reconnect.
 * **Sync taking too long** (WhatsApp Personal):
   * If you have a large number of contacts, wait up to 15 minutes for the first sync to finish.

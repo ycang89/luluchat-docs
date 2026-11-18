@@ -17,6 +17,8 @@
     * [WhatsApp Personal](inbox/connect-whatsapp-personal.md)
     * [WhatsApp Cloud](inbox/connect-whatsapp-cloud.md)
     * [WhatsApp Coexistence](inbox/connect-whatsapp-coexistence.md)
+    * [Meta Messenger](inbox/connect-messenger.md)
+    * [Instagram Messenger](inbox/connect-instagram.md)
   * [New Chat](inbox/new-chat.md)
   * [Search](inbox/search.md)
   * [Filters](inbox/filters.md)
