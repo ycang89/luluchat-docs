@@ -95,6 +95,7 @@
   * [Import & Export](contacts/import-export.md)
   * [Bulk Updates & Actions](contacts/bulk-actions.md)
 * [Message Templates](message-templates.md)
+* [Messenger Templates](messenger-templates.md)
 * [Reports](reports/index.md)
   * [Conversations](reports/conversations.md)
   * [Tags](reports/tags.md)

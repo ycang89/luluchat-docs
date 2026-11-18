@@ -79,7 +79,7 @@ If the connection fails, you will see "Failed to register." followed by the reas
 
 Once the Messenger channel is connected:
 
-* New Messenger messages sent to your Page appear in `Inbox`. The **Channels** button at the top right shows the Messenger icon and the channel name.
+* New Messenger messages sent to your Page appear in `Inbox`. Past conversations from before you connected are not imported. The **Channels** button at the top right shows the Messenger icon and the channel name.
 * Each contact's **Contact Info** shows their name and **Page-Scoped User ID**.
 * You can reply from Luluchat, assign chats, add tags and notes, and run Message Flows on the channel.
 * In the **Channels** window, the channel shows **Channel Type: Meta Messenger** and the connected **Facebook Page**.
@@ -94,11 +94,19 @@ Once the Messenger channel is connected:
 * **Messaging window**: Meta only lets businesses message a customer for a limited time after the customer's last message:
   * **First 24 hours**: You can send anything, including automated flow and bot messages.
   * **From 24 hours to 7 days**: Only a real person may reply, to follow up on what the customer asked. Automated and promotional messages aren't allowed.
-  * **After 7 days**: Only utility message templates can be sent. See [Send a message template](send-messages.md#send-a-message-template-whatsapp-cloud-and-messenger).
+  * **After 7 days**: Only utility message templates can be sent. See [Messenger Templates](../messenger-templates.md).
+* **Automations and AI replies work within 24 hours**: Message Flows, keyword replies and AI agent replies should only send within 24 hours of the customer's last message. A flow step that runs later (for example, after a long **Delay**) breaks Meta's rules. After 7 days it can't be sent at all: the message shows as failed in the chat with the reason. This is a Meta rule, not a broken flow. When the customer writes again, the 24-hour window reopens.
+* **Old chats are not imported**: Only messages received after you connect appear in `Inbox`. Conversations from before the connection stay in Facebook Messenger and Meta Business Suite and are not synced to Luluchat.
+* **Broadcasts send utility templates only**: A Broadcast on a Messenger channel must use a Message Flow that starts with a **Message Template** step using an approved utility template. Other flows fail for each recipient. Promotions can't be broadcast on Messenger. See [Messenger Templates](../messenger-templates.md).
 * **Customers start the chat**: You can't start a new Messenger conversation from Luluchat. The customer must message your Page first.
 * **One channel, one Page**: Each channel connects one Facebook Page. To connect another Page, add a new channel.
 * **Channel Limits**: Your subscription plan controls how many channels you can connect. Contact support if you need more.
 * **Disconnecting**: Open **Channels** (top right) and click **Disconnect** on the channel. Tick **Remove chat history** if you also want to delete chat history, then click **Yes, proceed**.
+* **Reconnecting later**:
+  * **Same Page, history kept**: If you didn't tick **Remove chat history**, reconnecting the same Page brings back your contacts and past conversations.
+  * **Same Page, history removed**: If you ticked **Remove chat history**, your contacts stay but past conversations are gone for good.
+  * **Different platform** (for example, from Messenger to WhatsApp): Luluchat asks you to confirm **Switch Channel Type**. Continuing deletes the channel's contacts and past messages, and this can't be undone. Export your contacts first if you need them.
+  * **Different Page**: Contacts from the old Page stay in the channel but can't be messaged from the new one. Use a new channel for a different Page.
 {% endhint %}
 
 ## Common issues & solutions
@@ -112,6 +120,10 @@ Once the Messenger channel is connected:
   * Make sure your Facebook account has access to manage that Page.
 * **"Failed to register."**:
   * Read the reason shown after the message, fix it, and click **Done** again.
+* **My old Messenger chats are missing**:
+  * Luluchat only shows messages received after you connected. Older chats are still in Facebook Messenger and Meta Business Suite.
+* **My flow stopped sending / "The 7-day messaging window has expired."**:
+  * The customer's last message was over 7 days ago. Send an approved utility template, or wait for the customer to write again.
 * **Can't reply to a customer**:
   * The messaging window may have closed. After 7 days, send an approved utility message template, or wait for the customer to message you again.
 
@@ -130,3 +142,4 @@ Once the Messenger channel is connected:
 * [Connect your Channel](connect-channel.md)
 * [Instagram Messenger](connect-instagram.md)
 * [Send Messages](send-messages.md)
+* [Messenger Templates](../messenger-templates.md)

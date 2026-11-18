@@ -4,7 +4,7 @@
 
 The **Message Template** node (shown as **Send Message Template** on the canvas) sends one of your Meta-approved WhatsApp message templates. You fill in the template's variables, and you can link each of its quick reply buttons to the next step in your flow.
 
-It is only available on **WhatsApp Business API** channels.
+It is available on **WhatsApp Business API** and **Meta Messenger** channels.
 
 <figure><img src="../../.gitbook/assets/flow-node-template.png" alt="Send Message Template panel and node. The panel has a Select Message Template button and a preview of order_ready_pickup with header Your order is ready, body Hi {{Full Name}}, your order {{order_no}} is ready for pickup at Kopi Corner Bangsar, footer Kopi Corner, the Force reply to button switch, two buttons I'm on my way and Change pickup time, and Choose Next Step. The node shows the same preview with both buttons linked"><figcaption><p>A Message Template node with two linked quick replies</p></figcaption></figure>
 
@@ -66,14 +66,14 @@ Use **Choose Next Step** (or the **Next Step** handle) for the path after the te
 
 ## Important behavior to know
 
-* **WhatsApp Business API only**: The node is hidden in the **Add Node** menu on other channel types.
+* **WhatsApp Business API and Meta Messenger only**: The node is hidden in the **Add Node** menu on other channel types. On Messenger it uses your [Messenger Templates](../../messenger-templates.md), and Postback buttons can be linked like quick reply buttons.
 * **Buttons come from the template**: You can't add or delete buttons in the node. Change the template to change its buttons.
 * **Changing the template**: If you pick a different template, its buttons start unlinked, so link them again.
 * **Variables are per contact**: Placeholders such as `{{Full Name}}` are replaced with each contact's own details when sent.
 
 ## Common issues & solutions
 
-* **I can't find Message Template in the Add Node menu**: The current channel isn't a WhatsApp Business API channel.
+* **I can't find Message Template in the Add Node menu**: The current channel isn't a WhatsApp Business API or Meta Messenger channel. Instagram has no message templates.
 * **The template isn't in the list**: Check it exists in [Message Templates](../../message-templates.md) for this channel. Approval can take some time.
 * **"Please select a Message Template."**: Choose a template before clicking **Save**.
 * **"Please fill up all the body’s variables."** / **"Please fill up all the header’s variables."**: Every variable needs a value.
@@ -89,6 +89,7 @@ Use **Choose Next Step** (or the **Next Step** handle) for the path after the te
 ## Related Documentation
 
 * [Message Templates](../../message-templates.md)
+* [Messenger Templates](../../messenger-templates.md)
 * [Message](message.md)
 * [Broadcasts](../../broadcasts.md)
 * [Content Nodes](index.md)

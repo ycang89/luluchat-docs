@@ -89,7 +89,7 @@ If the connection fails, you will see "Failed to register." followed by the reas
 
 Once the Instagram channel is connected:
 
-* New Instagram DMs sent to your account appear in `Inbox`. The **Channels** button at the top right shows the Instagram icon and the channel name.
+* New Instagram DMs sent to your account appear in `Inbox`. Past conversations from before you connected are not imported. The **Channels** button at the top right shows the Instagram icon and the channel name.
 * Each contact's **Contact Info** shows their name, Instagram username and **IG-Scoped User ID**.
 * You can reply from Luluchat, assign chats, add tags and notes, and run Message Flows on the channel.
 * In the **Channels** window, the channel shows **Channel Type: Instagram Messenger** and the connected Instagram account.
@@ -105,10 +105,19 @@ Once the Instagram channel is connected:
   * **First 24 hours**: You can send anything, including automated flow and bot messages.
   * **From 24 hours to 7 days**: Only a real person may reply, to follow up on what the customer asked. Automated and promotional messages aren't allowed.
   * **After 7 days**: Nothing can be sent until the customer writes again. Instagram has no message templates.
+* **Automations and AI replies work within 24 hours**: Message Flows, keyword replies and AI agent replies should only send within 24 hours of the customer's last message. A flow step that runs later (for example, after a long **Delay**) breaks Meta's rules. After 7 days it can't be sent at all: the message shows as failed in the chat with the reason. This is a Meta rule, not a broken flow. When the customer writes again, the 24-hour window reopens.
+* **Old chats are not imported**: Only messages received after you connect appear in `Inbox`. Conversations from before the connection stay in the Instagram app and are not synced to Luluchat.
+* **Photos and videos only, no files**: On Instagram you can send text, photos, videos (MP4) and voice messages. Documents such as PDFs can't be sent, so **Attach Document** isn't shown. Share a link to the file instead.
+* **No Broadcasts**: Instagram doesn't allow bulk messages, so **Broadcasts** is hidden while an Instagram channel is selected. Use Message Flows to reply to customers who message you.
 * **Customers start the chat**: You can't start a new Instagram conversation from Luluchat. The customer must message your Instagram account first.
 * **One channel, one Instagram account**: Each channel connects one Facebook Page and its linked Instagram account. To connect another account, add a new channel.
 * **Channel Limits**: Your subscription plan controls how many channels you can connect. Contact support if you need more.
 * **Disconnecting**: Open **Channels** (top right) and click **Disconnect** on the channel. Tick **Remove chat history** if you also want to delete chat history, then click **Yes, proceed**.
+* **Reconnecting later**:
+  * **Same Instagram account, history kept**: If you didn't tick **Remove chat history**, reconnecting the same Instagram account brings back your contacts and past conversations.
+  * **Same Instagram account, history removed**: If you ticked **Remove chat history**, your contacts stay but past conversations are gone for good.
+  * **Different platform** (for example, from Instagram to WhatsApp): Luluchat asks you to confirm **Switch Channel Type**. Continuing deletes the channel's contacts and past messages, and this can't be undone. Export your contacts first if you need them.
+  * **Different Instagram account**: Contacts from the old Instagram account stay in the channel but can't be messaged from the new one. Use a new channel for a different Instagram account.
 {% endhint %}
 
 ## Common issues & solutions
@@ -125,6 +134,14 @@ Once the Instagram channel is connected:
   * Make sure your Facebook account has access to manage that Page.
 * **"Failed to register."**:
   * Read the reason shown after the message, fix it, and click **Done** again.
+* **My old Instagram chats are missing**:
+  * Luluchat only shows messages received after you connected. Older chats are still in the Instagram app.
+* **I can't send a PDF or document**:
+  * Instagram only accepts photos, videos and voice messages. Send a link to the file instead.
+* **I can't find Broadcasts**:
+  * Broadcasts aren't available for Instagram channels.
+* **My flow stopped sending / "The 7-day messaging window has expired."**:
+  * The customer's last message was over 7 days ago. Instagram has no message templates, so wait for the customer to write again.
 * **Messages not arriving**:
   * In the Instagram app, go to **Settings** > **Messages and story replies** > **Message controls** and make sure **Allow access to messages** under **Connected tools** is turned on.
 
