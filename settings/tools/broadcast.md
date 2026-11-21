@@ -22,7 +22,7 @@ Go to `Settings` from the left menu, then select `Broadcast` under the Tools sec
 {% step %}
 #### Configure Message Interval
 
-Select the **Broadcast Message Interval**, from **30 seconds** to **30 minutes**. This is how long the system waits between sends. On WhatsApp Personal channels, one contact is sent per interval. On WhatsApp Cloud (WABA) channels, several contacts are sent per interval; the note under the field shows the exact number.
+Select the **Broadcast Message Interval**, from **30 seconds** to **30 minutes**. This is how long the system waits between sends. On WhatsApp Personal channels, one contact is sent per interval. On WhatsApp Cloud (WABA) channels, up to 100 contacts are sent per interval, spread over a few seconds to stay within Meta's sending limits.
 {% endstep %}
 
 {% step %}
