@@ -2,7 +2,7 @@
 
 ## What are Content Nodes?
 
-Content nodes are the steps in a Message Flow that talk to your customer. They send messages, official WhatsApp templates and form links, pass the customer to another flow, or hand the chat to an AI agent.
+Content nodes are the steps in a Message Flow that send content. They send messages, official WhatsApp templates and form links, post to your WhatsApp groups, pass the customer to another flow, or hand the chat to an AI agent.
 
 <figure><img src="../../.gitbook/assets/flow-node-overview.png" alt="Kopi Corner Main Menu flow: a keyword Starting Step leads to a Main Menu message with an image and four reply buttons. View Full Menu goes to a message with a PDF, a video and a voice note; Book a Table goes to a Start Flow step; Give Feedback goes to a Form step whose After Submit leads to a thank-you message; Ask a Question goes to an AI Agent step with Success, Escalate, Failed and No Reply exits"><figcaption><p>A sample flow that uses every content node</p></figcaption></figure>
 
@@ -12,6 +12,7 @@ Content nodes are the steps in a Message Flow that talk to your customer. They s
 | --- | --- |
 | [**Message**](message.md) | Send text, images, files, videos and audio, with reply buttons. |
 | [**Message Template**](message-template.md) | Send a Meta-approved template (WhatsApp Business API channels only). |
+| [**Group Message**](group-message.md) | Post a message to your WhatsApp groups, e.g. new lead details for the sales team (WhatsApp channels only). |
 | [**Start Flow**](start-flow.md) | Move the customer into another Message Flow. |
 | [**Form**](form.md) | Send a link to one of your Luluchat Forms and continue when it is submitted. |
 | [**AI Agent**](ai-agent.md) | Let a Minicrew AI agent handle the conversation. |
@@ -55,6 +56,7 @@ When a contact reaches a content node, Luluchat sends the content (or starts the
 ## Important behavior to know
 
 * **Message Template** only appears in the menu when the current channel is a WhatsApp Business API channel.
+* **Group Message** only appears in the menu when the current channel is a WhatsApp channel.
 * **Form** is a paid feature. Without it, the button is greyed out with the note "This is Paid Feature".
 * **Minicrew AI Agent** is greyed out with the note "Integration with Minicrew is required" until you connect Minicrew AI in [Integration](../../settings/account/integration.md).
 * **Start Flow** and **AI Agent** have no **Next Step**. The contact continues in the other flow, or through the AI Agent's event exits.

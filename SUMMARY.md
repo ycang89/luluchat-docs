@@ -53,6 +53,7 @@
     * [Content Nodes](automations/content-nodes/index.md)
       * [Message](automations/content-nodes/message.md)
       * [Message Template](automations/content-nodes/message-template.md)
+      * [Group Message](automations/content-nodes/group-message.md)
       * [Start Flow](automations/content-nodes/start-flow.md)
       * [Form](automations/content-nodes/form.md)
       * [AI Agent](automations/content-nodes/ai-agent.md)

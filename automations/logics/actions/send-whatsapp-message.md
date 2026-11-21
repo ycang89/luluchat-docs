@@ -87,5 +87,6 @@ Click **Submit**. The card now shows the message and the numbers it goes to. Cli
 ## Related Documentation
 
 * [Message](../../content-nodes/message.md)
+* [Group Message](../../content-nodes/group-message.md): post to a WhatsApp group instead of phone numbers
 * [Add to Ticket Stage](add-ticket-stage.md)
 * [Logic: Actions](../actions.md)
